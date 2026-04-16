@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Demo PreTeXt Course</title>
+    <title>Applied Mathematics for Civil Engineers</title>
 
-    <subtitle>PTX 101 Spring 2026</subtitle>
+    <subtitle>M 246 Fall 2026</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -18,6 +18,10 @@
 
       <!-- Course syllabus -->
       <xi:include href="./syllabus/syllabus.ptx" />
+
+      <xi:include href="./syllabus/outline.ptx" />
+
+      <xi:include href="./syllabus/learning_outcomes.ptx" />
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 

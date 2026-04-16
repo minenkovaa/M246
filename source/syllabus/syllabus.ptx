@@ -12,23 +12,22 @@
     <title>Course Information</title>
 
     <p>
-      This is the syllabus for <term>Demo PreTeXt Course (PTX 101, section 007)</term> for Spring 2026.
-      It is a 0 credit course.
+      This is the syllabus for <term>M246 Applied Math for CE</term> for Fall 2026.
+      It is a 4 credit course.
       <dl>
       <li>
         <title>Instructor</title>
 
         <p>
-          Prof.
-          Levin, Ross Hall 2240D, <url href="mailto:oscar.levin@unco.edu">oscar.levin@unco.edu</url>.
+          Dr. Anastasia Minenkova, Dana Hall 237, <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>.
         </p>
       </li>
 
       <li>
-        <title>Student Hours</title>
+        <title>Office Hours</title>
 
         <p>
-          Tuesday and Friday 10-12 on Zoom
+          TBD.  Check Blackboard for the most up to date information on office hours.
         </p>
       </li>
 
@@ -36,7 +35,7 @@
         <title>Class meets</title>
 
         <p>
-          MWF 10-11 in Ross 2090
+          TTh 8:00-9:30 a.m. in Dana Hall 205
         </p>
       </li>
 
@@ -44,9 +43,7 @@
         <title>Course Description</title>
 
         <p>
-          This course is entirely fictional.
-          There isn't even a catalog to pull a description from.
-          But if there were, it would have a course description and that course description would be put here for students to read (but likely because the university administration requires it be included in a syllabus).
+          Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)
         </p>
       </li>
 
@@ -54,18 +51,7 @@
         <title>Prerequisite</title>
 
         <p>
-          TEX 100 or suitable score on the typesetting placement exam.
-        </p>
-      </li>
-
-      <li>
-        <title>Textbook and course materials</title>
-
-        <p>
-          <pubtitle><pretext/>
-          for Instructors</pubtitle>
-          by Oscar Levin.
-          You can view an accessible online copy of this free, open source textbook at <url href="https://pfi.mathtech.org"/>.
+          M145.
         </p>
       </li>
       </dl>
@@ -112,18 +98,54 @@
   <subsection xml:id="sec-assessments">
     <title>Assessments and Grades</title>
 
-    <p>
-      Your grade in this course will be based on a combination of your effort to master the material and the number of learning targets you master during the course.
-    </p>
+    <table>
+  <title>Grade Breakdown</title>
 
-    <p>
-      Unlike a traditional course in which you earn points for completing various tasks to various levels of success, grading in this course is done using <term>standards based grading</term>.
-      One advantage of this method is that you will have multiple opportunities to demonstrate your mastery of particular standards, and what matters is how many of these standards you demonstrate mastery on by the end of the course.
-    </p>
+  <tabular left="minor">
+    <col halign="left" />
+    <col halign="center" right="minor" />
 
-    <p>
-      We call each standard a <term>learning target</term> and list these next.
-    </p>
+    <row header="yes">
+      <cell>Assignment Category</cell>
+      <cell>Percentage of Grade</cell>
+    </row>
+
+    <row>
+      <cell>Homework / Quizzes</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Class Participation (including Reflection Posts)</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>MATLAB Labs</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Project</cell>
+      <cell>10%</cell>
+    </row>
+
+    <row>
+      <cell>Presentations</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Midterm Exam</cell>
+      <cell>10%</cell>
+    </row>
+
+    <row>
+      <cell>Final Exam</cell>
+      <cell>10%</cell>
+    </row>
+  </tabular>
+</table>
 
 
     <paragraphs>
