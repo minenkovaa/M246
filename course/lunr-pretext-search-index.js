@@ -161,6 +161,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Homework",
   "body": " Homework    "
+},
+{
+  "id": "resources",
+  "level": "1",
+  "url": "resources.html",
+  "type": "Section",
+  "number": "",
+  "title": "Resources used in compiling this course",
+  "body": " Resources used in compiling this course        Course Information  This is the syllabus for M246 Applied Math for CE for Fall 2026. It is a 4 credit course.   Instructor  Dr. Anastasia Minenkova, Dana Hall 237, minenkova@hartford.edu .    Office Hours  TBD. Check Blackboard for the most up to date information on office hours.    Class meets  TTh 8:00-9:30 a.m. in Dana Hall 205    Course Description  Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)    Prerequisite  M145.      "
+},
+{
+  "id": "new-2",
+  "level": "2",
+  "url": "resources.html#new-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "M246 Applied Math for CE "
 }
 ]
 
