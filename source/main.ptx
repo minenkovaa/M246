@@ -37,6 +37,19 @@
 
       <xi:include href="./notes/week01.ptx"/>
       <xi:include href="./notes/week02.ptx"/>
+      <xi:include href="./notes/week03.ptx"/>
+      <xi:include href="./notes/week04.ptx"/>
+      <xi:include href="./notes/week05.ptx"/>
+      <xi:include href="./notes/week06.ptx"/>
+      <xi:include href="./notes/week07.ptx"/>
+      <xi:include href="./notes/week08.ptx"/>
+      <xi:include href="./notes/week09.ptx"/>
+      <xi:include href="./notes/week10.ptx"/>
+      <xi:include href="./notes/week11.ptx"/>
+      <xi:include href="./notes/week12.ptx"/>
+      <xi:include href="./notes/week13.ptx"/>
+      <xi:include href="./notes/week14.ptx"/>
+      <xi:include href="./notes/week15.ptx"/>
       <!-- etc. -->
 
     </chapter>
@@ -73,6 +86,11 @@
     
     <chapter xml:id="Resources">
       <title>Resources Used in Preparation of This Course</title>
+      <introduction>
+        <p>
+          The following resources were used in the preparation of this course.
+        </p>
+      </introduction>
       <xi:include href="./Resources.ptx"/>
     </chapter>
 
