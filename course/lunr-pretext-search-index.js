@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26     "
+  "body": " Week 1   Tuesday      Thursday     "
 },
 {
   "id": "notes-week-02",
@@ -124,7 +124,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 2",
-  "body": " Week 2   Monday      Wednesday      Friday     "
+  "body": " Week 2   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-03",
+  "level": "1",
+  "url": "notes-week-03.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 3",
+  "body": " Week 3   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-04",
+  "level": "1",
+  "url": "notes-week-04.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 4",
+  "body": " Week 4   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-05",
+  "level": "1",
+  "url": "notes-week-05.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 5",
+  "body": " Week 5   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-06",
+  "level": "1",
+  "url": "notes-week-06.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 6",
+  "body": " Week 6   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-07",
+  "level": "1",
+  "url": "notes-week-07.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 7",
+  "body": " Week 7   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-08",
+  "level": "1",
+  "url": "notes-week-08.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 8",
+  "body": " Week 8   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-09",
+  "level": "1",
+  "url": "notes-week-09.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 9",
+  "body": " Week 9   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-10",
+  "level": "1",
+  "url": "notes-week-10.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 10",
+  "body": " Week 10   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-11",
+  "level": "1",
+  "url": "notes-week-11.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 11",
+  "body": " Week 11   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-12",
+  "level": "1",
+  "url": "notes-week-12.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 12",
+  "body": " Week 12   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-13",
+  "level": "1",
+  "url": "notes-week-13.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 13",
+  "body": " Week 13   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-14",
+  "level": "1",
+  "url": "notes-week-14.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 14",
+  "body": " Week 14   Tuesday      Thursday     "
+},
+{
+  "id": "notes-week-15",
+  "level": "1",
+  "url": "notes-week-15.html",
+  "type": "Section",
+  "number": "",
+  "title": "Week 15",
+  "body": " Week 15   Tuesday      Thursday     "
 },
 {
   "id": "activity-01-intro-activity",
