@@ -114,8 +114,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-01.html",
   "type": "Section",
   "number": "",
-  "title": "Week 1",
-  "body": " Week 1   Tuesday      Thursday     "
+  "title": "Week 1. Matrix operations; properties",
+  "body": " Week 1. Matrix operations; properties   Tuesday  Introduction to course.    Thursday  Matrix operations and their properties.   "
 },
 {
   "id": "notes-week-02",
@@ -123,8 +123,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-02.html",
   "type": "Section",
   "number": "",
-  "title": "Week 2",
-  "body": " Week 2   Tuesday      Thursday     "
+  "title": "Week 2: Determinants; inverses; rank",
+  "body": " Week 2: Determinants; inverses; rank   Tuesday  Determinants and their properties.    Thursday  Inverses and rank.   "
 },
 {
   "id": "notes-week-03",
@@ -132,8 +132,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-03.html",
   "type": "Section",
   "number": "",
-  "title": "Week 3",
-  "body": " Week 3   Tuesday      Thursday     "
+  "title": "Week 3: Systems; eigenvalues\/eigenvectors",
+  "body": " Week 3: Systems; eigenvalues\/eigenvectors   Tuesday  Systems of equations and their solution.    Thursday  Eigenvalues and eigenvectors.   "
 },
 {
   "id": "notes-week-04",
@@ -141,8 +141,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-04.html",
   "type": "Section",
   "number": "",
-  "title": "Week 4",
-  "body": " Week 4   Tuesday      Thursday     "
+  "title": "Week 4: Partial derivatives; higher-order derivatives",
+  "body": " Week 4: Partial derivatives; higher-order derivatives   Tuesday  Partial derivatives and their properties.    Thursday  Higher-order derivatives and their properties.   "
 },
 {
   "id": "notes-week-05",
@@ -150,8 +150,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-05.html",
   "type": "Section",
   "number": "",
-  "title": "Week 5",
-  "body": " Week 5   Tuesday      Thursday     "
+  "title": "Week 5: Multiple integrals; vector calculus",
+  "body": " Week 5: Multiple integrals; vector calculus   Tuesday  Multiple integrals and their properties.    Thursday  Vector calculus.   "
 },
 {
   "id": "notes-week-06",
@@ -159,8 +159,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-06.html",
   "type": "Section",
   "number": "",
-  "title": "Week 6",
-  "body": " Week 6   Tuesday      Thursday     "
+  "title": "Week 6: First-order ODEs (separable, linear, exact)",
+  "body": " Week 6: First-order ODEs (separable, linear, exact)   Tuesday  First-order ODEs: separable and linear equations.    Thursday  First-order ODEs: exact equations.   "
 },
 {
   "id": "notes-week-07",
@@ -168,8 +168,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-07.html",
   "type": "Section",
   "number": "",
-  "title": "Week 7",
-  "body": " Week 7   Tuesday      Thursday     "
+  "title": "Week 7: Second-order linear ODEs",
+  "body": " Week 7: Second-order linear ODEs   Tuesday  Second-order linear ODEs with constant coefficients.    Thursday  Second-order linear ODEs with variable coefficients.   "
 },
 {
   "id": "notes-week-08",
@@ -177,8 +177,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-08.html",
   "type": "Section",
   "number": "",
-  "title": "Week 8",
-  "body": " Week 8   Tuesday      Thursday     "
+  "title": "Week 8: Systems; Laplace transform; numerical intro",
+  "body": " Week 8: Systems; Laplace transform; numerical intro   Tuesday  Systems of ODEs and their solution.    Thursday  Laplace transform and its application to solving ODEs; introduction to numerical methods for ODEs.   "
 },
 {
   "id": "notes-week-09",
@@ -186,8 +186,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-09.html",
   "type": "Section",
   "number": "",
-  "title": "Week 9",
-  "body": " Week 9   Tuesday      Thursday     "
+  "title": "Week 9: PDE, their Classification; physical interpretation",
+  "body": " Week 9: PDE, their Classification; physical interpretation   Tuesday  Classification of PDEs.    Thursday  Physical interpretation of PDEs.   "
 },
 {
   "id": "notes-week-10",
@@ -195,8 +195,8 @@ var ptx_lunr_docs = [
   "url": "notes-week-10.html",
   "type": "Section",
   "number": "",
-  "title": "Week 10",
-  "body": " Week 10   Tuesday      Thursday     "
+  "title": "Week 10: Heat and wave equations",
+  "body": " Week 10: Heat and wave equations   Tuesday  Heat and wave equations and their solution.    Thursday  Physical interpretation of heat and wave equations.   "
 },
 {
   "id": "notes-week-11",
