@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-07">
-  <title>Week 7</title>
+  <title>Week 7: Second-order linear ODEs</title>
 
   <subsection>
     <title>Tuesday</title>
 
-    <p>
+    <p> Second-order linear ODEs with constant coefficients.
     </p>
   </subsection>
 
@@ -14,7 +14,7 @@
   <subsection>
     <title>Thursday</title>
 
-    <p>
+    <p> Second-order linear ODEs with variable coefficients.
     </p>
   </subsection>
 

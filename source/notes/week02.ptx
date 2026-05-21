@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-02">
-  <title>Week 2</title>
+  <title>Week 2: Determinants; inverses; rank </title>
 
   <subsection>
     <title>Tuesday</title>
 
-    <p>
+    <p> Determinants and their properties.
     </p>
   </subsection>
 
@@ -14,8 +14,9 @@
   <subsection>
     <title>Thursday</title>
 
-    <p>
+    <p> Inverses and rank.
     </p>
   </subsection>
+  
 
 </section>
