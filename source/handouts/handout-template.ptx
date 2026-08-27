@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <handout>
-<title>Handout Title</title>
+<title>Review</title>
 
   <page>
     <p workspace="1in">
-      A first paragraph with some space for notes below it.
+    <alert> The height H, in feet, of a river is recorded t hours after midnight, April 1. What are the units of H'(t)? </alert>
     </p>
-
+ <p workspace="3in">
+    <alert> You need to design an open, rectangular stormwater drainage ditch. The total perimeter of the cross-section (the bottom plus the two vertical sides) is fixed due to a fixed amount of precast concrete lining available.
+    </alert>
+    </p>
+     <p workspace="3in">
+    <alert> Consider a thin plate in the shape of an isosceles triangle, submerged in water with a weight-density of 62.4 lbs per cubic ft. If the bottom of the plate is 10 ft below the surface of the water, what is the total fluid force exerted on this plate?</alert>
+    </p>
   </page>
 </handout>

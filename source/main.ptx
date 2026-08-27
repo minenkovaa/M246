@@ -73,7 +73,7 @@
     <chapter xml:id="handouts">
       <title>Handouts</title>
       <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+      <xi:include href="./handouts/handout-template.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

@@ -7,16 +7,91 @@
   <!-- Optional introduction -->
   <introduction>
     <p>
-      This is the introduction to the activity.
+      We are setting up our routine:
     </p>
+    <tabular>
+      <row>
+        <cell>1. Pair-share</cell>
+        <cell>A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.</cell>
+      </row>
+         <row>
+        <cell>2. Gallery Walk:</cell>
+        <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
+      </row>
+    </tabular>
   </introduction>
+
+  <list>
+  <title> Steps of Gallery Walk:</title>
+<ul>
+  <li>
+    <p>
+      Assign Roles and Norms
+    </p>
+  </li>
+  <li>
+    <p>
+     Come up with a Solution and Write it on the Board
+    </p>
+  </li>
+  <li>
+    <p>
+      Rotate and Analyze
+    </p>
+  </li>
+    <li>
+    <p>
+      Leave Feedback
+    </p>
+  </li>
+      <li>
+    <p>
+      Return and Refine
+    </p>
+  </li>
+</ul>
+</list>
 
   <!-- Exercises start here. -->
   <exercise workspace="2in">
     <statement>
       <p>
-        This is the first exercise.
+A rancher has 1400 feet of fencing in which to construct adjacent, equally sized rectangular pens, as shown below. What dimensions should these pens have to maximize the enclosed area?
       </p>
+    </statement>
+  </exercise>
+    <exercise workspace="2in">
+    <statement>
+      <p>
+A power line is to be run to an offshore facility in the manner described in Example 4.3.6. in APEX Calculus Online. The offshore facility is 
+ miles at sea and 
+ miles along the shoreline from the power plant. It costs 
+ per mile to lay a power line underground and 
+ to run the line underwater.
+How much of the power line should be run underground? What is the minimum overall cost?
+      </p>
+    </statement>
+  </exercise>
+      <exercise workspace="2in">
+    <statement>
+      <p>
+Find the surface area of the described solid of revolution, formed by revolving y=2x on [0,1] about the x-axis.
+      </p>
+    </statement>
+  </exercise>
+      <exercise workspace="2in">
+    <statement>
+      <p>
+ A 100 ft rope, weighing 0.1 lb/ft, hangs over the edge of a tall building.
+ How much work is done pulling the entire rope to the top of the building?
+   </p>
+    </statement>
+  </exercise>
+        <exercise workspace="2in">
+    <statement>
+      <p>
+ A 100 ft rope, weighing 0.1 lb/ft, hangs over the edge of a tall building.
+ How much rope is pulled in when half of the total work is done?     </p>
     </statement>
   </exercise>
 
