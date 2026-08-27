@@ -259,25 +259,70 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Introduction Activity",
-  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
+  "body": " Introduction Activity    We are setting up our routine:    1. Pair-share  A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.    2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine        A rancher has 1400 feet of fencing in which to construct adjacent, equally sized rectangular pens, as shown below. What dimensions should these pens have to maximize the enclosed area?      A power line is to be run to an offshore facility in the manner described in Example 4.3.6. in APEX Calculus Online. The offshore facility is miles at sea and miles along the shoreline from the power plant. It costs per mile to lay a power line underground and to run the line underwater. How much of the power line should be run underground? What is the minimum overall cost?      Find the surface area of the described solid of revolution, formed by revolving y=2x on [0,1] about the x-axis.      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much work is done pulling the entire rope to the top of the building?      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much rope is pulled in when half of the total work is done?    "
 },
 {
   "id": "activity-01-intro-activity-3",
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
+  "type": "List",
+  "number": "10",
+  "title": "Steps of Gallery Walk:",
+  "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
+},
+{
+  "id": "activity-01-intro-activity-4",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-4",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  This is the first exercise.   "
+  "body": "  A rancher has 1400 feet of fencing in which to construct adjacent, equally sized rectangular pens, as shown below. What dimensions should these pens have to maximize the enclosed area?   "
 },
 {
-  "id": "handouts",
+  "id": "activity-01-intro-activity-5",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A power line is to be run to an offshore facility in the manner described in Example 4.3.6. in APEX Calculus Online. The offshore facility is miles at sea and miles along the shoreline from the power plant. It costs per mile to lay a power line underground and to run the line underwater. How much of the power line should be run underground? What is the minimum overall cost?   "
+},
+{
+  "id": "activity-01-intro-activity-6",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find the surface area of the described solid of revolution, formed by revolving y=2x on [0,1] about the x-axis.   "
+},
+{
+  "id": "activity-01-intro-activity-7",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much work is done pulling the entire rope to the top of the building?   "
+},
+{
+  "id": "activity-01-intro-activity-8",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#activity-01-intro-activity-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much rope is pulled in when half of the total work is done?   "
+},
+{
+  "id": "handouts-2",
   "level": "1",
-  "url": "handouts.html",
-  "type": "Chapter",
+  "url": "handouts-2.html",
+  "type": "Handout",
   "number": "",
-  "title": "Handouts",
-  "body": " Handouts    "
+  "title": "Review",
+  "body": " Review    The height H, in feet, of a river is recorded t hours after midnight, April 1. What are the units of H'(t)?    You need to design an open, rectangular stormwater drainage ditch. The total perimeter of the cross-section (the bottom plus the two vertical sides) is fixed due to a fixed amount of precast concrete lining available.    Consider a thin plate in the shape of an isosceles triangle, submerged in water with a weight-density of 62.4 lbs per cubic ft. If the bottom of the plate is 10 ft below the surface of the water, what is the total fluid force exerted on this plate?    "
 },
 {
   "id": "homework",
@@ -298,11 +343,11 @@ var ptx_lunr_docs = [
   "body": " Resources used in compiling this course        Key Open Educational Resources   Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)      "
 },
 {
-  "id": "oer-list",
+  "id": "oer-list2",
   "level": "2",
-  "url": "resources.html#oer-list",
+  "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "10",
+  "number": "11",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
 }
