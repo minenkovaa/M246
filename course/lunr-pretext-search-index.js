@@ -124,7 +124,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1. Matrix operations; properties",
-  "body": " Week 1. Matrix operations; properties   Tuesday  Introduction to course.    Thursday  Matrix operations and their properties.   "
+  "body": " Week 1. Matrix operations; properties   Learning Outcomes  By the end of this module, you should be able to:   Understand what a matrix is and why matrices represent data.  Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.  Recognize elementary matrices and explain how left\/right multiplication implements row\/column operations.     Introduction  Matrices are rectangular arrays of numbers. An matrix has rows and columns.  Operations depend on size:   You can add matrices only if they have the same size.  You can multiply by (middle dimensions match); the result is .     Matrix Notation     A diagonal matrix is a square matrix whose off-diagonal entries are zero. The identity matrix  is diagonal with ones on the diagonal.  Two matrices are equal if and only if they have the same size and identical entries.    Addition and Scalar Multiplication   Let . The sum of and is         Let and . The scalar multiple of by is          For matrices of the same size and scalars :       Matrix Multiplication   If and , then    The row-column rule is        Powers of a Matrix  For a square matrix ,     Transpose of a Matrix   If , then is obtained by turning rows into columns.             Elementary Matrices   An elementary matrix is obtained from the identity matrix by a single elementary row operation.   Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.         Quick Recap   Addition and scalar multiplication are entrywise.  Matrix multiplication requires compatible dimensions.  Transpose swaps rows and columns.  Elementary matrices implement row or column operations.      "
+},
+{
+  "id": "matrix-notation-5",
+  "level": "2",
+  "url": "notes-week-01.html#matrix-notation-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "diagonal matrix identity matrix "
+},
+{
+  "id": "addition-scalar-multiplication-2",
+  "level": "2",
+  "url": "notes-week-01.html#addition-scalar-multiplication-2",
+  "type": "Definition",
+  "number": "10",
+  "title": "",
+  "body": " Let . The sum of and is   "
+},
+{
+  "id": "addition-scalar-multiplication-3",
+  "level": "2",
+  "url": "notes-week-01.html#addition-scalar-multiplication-3",
+  "type": "Example",
+  "number": "11",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "addition-scalar-multiplication-4",
+  "level": "2",
+  "url": "notes-week-01.html#addition-scalar-multiplication-4",
+  "type": "Definition",
+  "number": "12",
+  "title": "",
+  "body": " Let and . The scalar multiple of by is   "
+},
+{
+  "id": "addition-scalar-multiplication-5",
+  "level": "2",
+  "url": "notes-week-01.html#addition-scalar-multiplication-5",
+  "type": "Example",
+  "number": "13",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "addition-scalar-multiplication-6",
+  "level": "2",
+  "url": "notes-week-01.html#addition-scalar-multiplication-6",
+  "type": "Theorem",
+  "number": "14",
+  "title": "",
+  "body": "  For matrices of the same size and scalars :    "
+},
+{
+  "id": "matrix-multiplication-2",
+  "level": "2",
+  "url": "notes-week-01.html#matrix-multiplication-2",
+  "type": "Definition",
+  "number": "15",
+  "title": "",
+  "body": " If and , then   "
+},
+{
+  "id": "matrix-multiplication-5",
+  "level": "2",
+  "url": "notes-week-01.html#matrix-multiplication-5",
+  "type": "Example",
+  "number": "16",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "transpose-2",
+  "level": "2",
+  "url": "notes-week-01.html#transpose-2",
+  "type": "Definition",
+  "number": "17",
+  "title": "",
+  "body": " If , then is obtained by turning rows into columns.  "
+},
+{
+  "id": "transpose-3",
+  "level": "2",
+  "url": "notes-week-01.html#transpose-3",
+  "type": "Example",
+  "number": "18",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "transpose-4",
+  "level": "2",
+  "url": "notes-week-01.html#transpose-4",
+  "type": "Theorem",
+  "number": "19",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "elementary-matrices-2",
+  "level": "2",
+  "url": "notes-week-01.html#elementary-matrices-2",
+  "type": "Definition",
+  "number": "20",
+  "title": "",
+  "body": " An elementary matrix is obtained from the identity matrix by a single elementary row operation.  "
+},
+{
+  "id": "elementary-matrices-3",
+  "level": "2",
+  "url": "notes-week-01.html#elementary-matrices-3",
+  "type": "Example",
+  "number": "21",
+  "title": "",
+  "body": "Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.      "
 },
 {
   "id": "notes-week-02",
@@ -266,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "10",
+  "number": "22",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -347,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "11",
+  "number": "23",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
 }
