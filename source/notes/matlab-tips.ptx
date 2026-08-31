@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="matlab-tips">
+
+    <title>Useful MATLAB Commands for Linear Algebra with Syntax Tips</title>
+
+    <subsection>
+      <title>Basic Matrix Operations</title>
+      <ul>
+        <li>
+          <c>A = [1 2; 3 4]</c>
+          <p><alert>Tip:</alert> Use semicolons to separate rows.</p>
+        </li>
+        <li>
+          <c>B = zeros(3,3)</c>
+          <p><alert>Tip:</alert> Arguments are (rows, columns).</p>
+        </li>
+        <li>
+          <c>C = ones(2,4)</c>
+          <p><alert>Tip:</alert> Creates a matrix filled with ones.</p>
+        </li>
+        <li>
+          <c>D = eye(3)</c>
+          <p><alert>Tip:</alert> Generates a 3×3 identity matrix.</p>
+        </li>
+        <li>
+          <c>size(A)</c>
+          <p><alert>Tip:</alert> Returns a vector [rows, columns].</p>
+        </li>
+        <li>
+          <c>length(A)</c>
+          <p><alert>Tip:</alert> Returns the largest dimension.</p>
+        </li>
+        <li>
+          <c>A'</c>
+          <p><alert>Tip:</alert> Transposes matrix <c>A</c>; use <c>A.'</c> for non-conjugate transpose.</p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection>
+      <title>Matrix Arithmetic</title>
+      <ul>
+        <li>
+          <c>A + B</c>
+          <p><alert>Tip:</alert> Matrices must be the same size.</p>
+        </li>
+        <li>
+          <c>A - B</c>
+          <p><alert>Tip:</alert> Subtraction also requires matching dimensions.</p>
+        </li>
+        <li>
+          <c>A * B</c>
+          <p><alert>Tip:</alert> Inner dimensions must agree (for example, A is m×n and B is n×p).</p>
+        </li>
+        <li>
+          <c>A .* B</c>
+          <p><alert>Tip:</alert> Element-wise multiplication; matrices must be the same size.</p>
+        </li>
+        <li>
+          <c>A \ B</c>
+          <p><alert>Tip:</alert> Solves <c>A*x = B</c>; use when <c>A</c> is square or overdetermined.</p>
+        </li>
+        <li>
+          <c>inv(A)</c>
+          <p><alert>Tip:</alert> Use only if <c>A</c> is square and nonsingular.</p>
+        </li>
+        <li>
+          <c>det(A)</c>
+          <p><alert>Tip:</alert> Returns the determinant; only for square matrices.</p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection>
+      <title>Linear Algebra Functions</title>
+      <ul>
+        <li>
+          <c>rref(A)</c>
+        </li>
+        <li>
+          <c>rank(A)</c>
+          <p><alert>Tip:</alert> Useful for checking linear independence.</p>
+        </li>
+        <li>
+          <c>null(A)</c>
+          <p><alert>Tip:</alert> Returns a basis for the null space.</p>
+        </li>
+        <li>
+          <c>orth(A)</c>
+          <p><alert>Tip:</alert> Returns an orthonormal basis for the column space.</p>
+        </li>
+        <li>
+          <c>eig(A)</c>
+          <p><alert>Tip:</alert> Use <c>[V,D] = eig(A)</c> for eigenvectors and eigenvalues.</p>
+        </li>
+        <li>
+          <c>svd(A)</c>
+          <p><alert>Tip:</alert> Returns singular values and decomposition matrices.</p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection>
+      <title>Plotting and Visualization</title>
+      <ul>
+        <li>
+          <c>plot(x, y)</c>
+          <p><alert>Tip:</alert> Vectors <c>x</c> and <c>y</c> must be the same length.</p>
+        </li>
+        <li>
+          <c>meshgrid</c>
+          <p><alert>Tip:</alert> Use for generating 2D grids for surface plots.</p>
+        </li>
+        <li>
+          <c>surf(X, Y, Z)</c>
+          <p><alert>Tip:</alert> <c>X</c>, <c>Y</c>, and <c>Z</c> must be the same size.</p>
+        </li>
+        <li>
+          <c>imagesc(A)</c>
+          <p><alert>Tip:</alert> Visualizes matrix values as colors.</p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection>
+      <title>Miscellaneous</title>
+      <ul>
+        <li>
+          <c>clc</c>
+          <p><alert>Tip:</alert> Clears the command window.</p>
+        </li>
+        <li>
+          <c>clear</c>
+          <p><alert>Tip:</alert> Removes all variables from the workspace.</p>
+        </li>
+        <li>
+          <c>disp(A)</c>
+          <p><alert>Tip:</alert> Displays matrix <c>A</c> without printing the variable name.</p>
+        </li>
+      </ul>
+    </subsection>
+
+</section>
