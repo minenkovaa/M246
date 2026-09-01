@@ -505,6 +505,60 @@ var ptx_lunr_docs = [
   "body": " Review    The height H, in feet, of a river is recorded t hours after midnight, April 1. What are the units of H'(t)?    You need to design an open, rectangular stormwater drainage ditch. The total perimeter of the cross-section (the bottom plus the two vertical sides) is fixed due to a fixed amount of precast concrete lining available.    Consider a thin plate in the shape of an isosceles triangle, submerged in water with a weight-density of 62.4 lbs per cubic ft. If the bottom of the plate is 10 ft below the surface of the water, what is the total fluid force exerted on this plate?    "
 },
 {
+  "id": "handouts-3",
+  "level": "1",
+  "url": "handouts-3.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Matrix Activity 1",
+  "body": " Matrix Activity 1     Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.     Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.     Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?     Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?     Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.    "
+},
+{
+  "id": "handouts-3-2",
+  "level": "2",
+  "url": "handouts-3.html#handouts-3-2",
+  "type": "Checkpoint",
+  "number": "24",
+  "title": "Matrix Addition.",
+  "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
+},
+{
+  "id": "handouts-3-3",
+  "level": "2",
+  "url": "handouts-3.html#handouts-3-3",
+  "type": "Checkpoint",
+  "number": "25",
+  "title": "Matrix Subtraction.",
+  "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
+},
+{
+  "id": "handouts-3-4",
+  "level": "2",
+  "url": "handouts-3.html#handouts-3-4",
+  "type": "Checkpoint",
+  "number": "26",
+  "title": "Scalar Multiplication.",
+  "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
+},
+{
+  "id": "handouts-3-5",
+  "level": "2",
+  "url": "handouts-3.html#handouts-3-5",
+  "type": "Checkpoint",
+  "number": "27",
+  "title": "Identity Matrix.",
+  "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
+},
+{
+  "id": "handouts-3-6",
+  "level": "2",
+  "url": "handouts-3.html#handouts-3-6",
+  "type": "Checkpoint",
+  "number": "28",
+  "title": "Zero Matrix.",
+  "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
+},
+{
   "id": "homework",
   "level": "1",
   "url": "homework.html",
@@ -527,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "24",
+  "number": "29",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
 }
