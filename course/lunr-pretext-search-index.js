@@ -433,6 +433,69 @@ var ptx_lunr_docs = [
   "body": "  A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much rope is pulled in when half of the total work is done?   "
 },
 {
+  "id": "matrix-activity",
+  "level": "1",
+  "url": "matrix-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Matrix Activity 1",
+  "body": " Matrix Activity 1    We are setting up our routine:    1. Think-pair-share  Which of the matrix operations work the same for real numbers.   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine       Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.     Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.     Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?     Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?     Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.    "
+},
+{
+  "id": "matrix-activity-3",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-3",
+  "type": "List",
+  "number": "23",
+  "title": "Steps of Gallery Walk:",
+  "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
+},
+{
+  "id": "matrix-activity-4",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Matrix Addition.",
+  "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
+},
+{
+  "id": "matrix-activity-5",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Matrix Subtraction.",
+  "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
+},
+{
+  "id": "matrix-activity-6",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Scalar Multiplication.",
+  "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
+},
+{
+  "id": "matrix-activity-7",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Identity Matrix.",
+  "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
+},
+{
+  "id": "matrix-activity-8",
+  "level": "2",
+  "url": "matrix-activity.html#matrix-activity-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Zero Matrix.",
+  "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
@@ -464,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "23",
+  "number": "24",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
 }
