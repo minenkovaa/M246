@@ -137,7 +137,12 @@
     <title>Recommended additional readings</title>
     <ul>
         <li>
-          <em>Applied Linear Algebra and Differential Equations</em>,
+          <em>Linear Algebra: An Interactive Introduction</em>,
+          Text:
+          <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">https://ximera.osu.edu/oerlinalg/LinearAlgebra</url>
+        </li>
+          <li>
+          <em>Interactive Linear Algebra</em>,
           LibreTexts:
           <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)</url>
         </li>
