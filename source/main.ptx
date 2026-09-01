@@ -76,6 +76,7 @@
       <title>Handouts</title>
       <!-- Include handouts -->
       <xi:include href="./handouts/handout-template.ptx"/>
+      <xi:include href="./handouts/matrix-handout1.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
