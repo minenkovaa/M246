@@ -34,7 +34,7 @@
           They are not a substitute for attending class and not a substitute for reading the textbook.
         </p>
       </introduction>
-
+<xi:include href="./notes/matlab-tips.ptx" />
       <xi:include href="./notes/week01.ptx"/>
       <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
@@ -68,6 +68,7 @@
       <xi:include href="./activities/01-intro-activity.ptx"/>
 
       <xi:include href="./activities/matrix-activity1.ptx"/>
+      <xi:include href="./activities/matrix-activity2.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -77,15 +78,16 @@
       <!-- Include handouts -->
       <xi:include href="./handouts/handout-template.ptx"/>
       <xi:include href="./handouts/matrix-handout1.ptx"/>
+      <xi:include href="./handouts/matrix-handout2.ptx"/>
     </chapter>
 
-    <chapter xml:id="homework">
+    <!--<chapter xml:id="homework">
       <title>Homework</title>
 
-      <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+       Include homework files
+    <xi:include href="./homework/homework01.ptx"/>
 
-    </chapter>
+    </chapter>-->
     
     <chapter xml:id="Resources">
       <title>Resources Used in Preparation of This Course</title>

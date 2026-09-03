@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="matrix-activity2">
+  <title>Matrix Activity 1</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+
+    <p>
+      We are setting up our routine:
+    </p>
+    <tabular>
+      <row>
+        <cell>1. Think-pair-share</cell>
+        <cell>What does multiplication by given matrices do to the picture? </cell></row>
+         <row>
+        <cell>2. Gallery Walk:</cell>
+        <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
+      </row>
+    </tabular>
+  </introduction>
+  <p>
+    <alert>Matrix Transformations</alert>
+
+    <interactive geogebra="csevq2at" width="75%"
+    height="75%"/>
+    </p>
+  <list>
+  <title> Steps of Gallery Walk:</title>
+<ul>
+  <li>
+    <p>
+      Assign Roles and Norms
+    </p>
+  </li>
+  <li>
+    <p>
+     Come up with a Solution and Write it on the Board
+    </p>
+  </li>
+  <li>
+    <p>
+      Rotate and Analyze
+    </p>
+  </li>
+    <li>
+    <p>
+      Leave Feedback
+    </p>
+  </li>
+      <li>
+    <p>
+      Return and Refine
+    </p>
+  </li>
+</ul>
+</list>
+
+
+</worksheet>

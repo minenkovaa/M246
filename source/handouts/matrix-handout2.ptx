@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Matrix Activity 2</title>
+
+  <!-- Optional introduction -->
+
+  <!-- Exercises start here. -->
+  <exercise workspace="1in">
+    <title> Commutativity</title>
+
+    <p>Given</p>
+
+    <me>
+A=\begin{bmatrix} 2 &amp; 1 \\ 3 &amp; 4 \end{bmatrix}
+\qquad
+B=\begin{bmatrix} 1 &amp; 0 \\ 1 &amp; 1 \end{bmatrix}
+    </me>
+
+    <ol>
+        <li><p>Compute <m>A\cdot B</m>.</p></li>
+        <li><p>Compute <m>B\cdot A</m>.</p></li>
+        <li><p>Verify whether <m>A\cdot B= B\cdot A</m>. </p></li>
+        <li><p>What multiplying by <m>B</m> does to <m>A</m>?</p></li>
+    </ol>
+</exercise>
+  <exercise workspace="1in">
+    <title> Divisors of Zero</title>
+
+    <p>Given</p>
+    <me>
+A=\begin{bmatrix} 1 &amp; -1 \\ -2 &amp; 2 \end{bmatrix}
+\qquad
+B=\begin{bmatrix} 2 &amp; 3 \\ 1 &amp; 2 \end{bmatrix}
+    </me>
+
+    <ol>
+        <li><p>Compute <m>A\cdot B</m>.</p></li>
+        <li><p>Compute <m>B\cdot A</m>.</p></li>
+        <li><p>Verify whether <m>A\cdot B= B\cdot A</m>. </p></li>
+        <li><p>What multiplying by <m>A</m> from the left does to <m>B</m> and why?</p></li>
+    </ol>
+</exercise>
+
+  <exercise workspace="1in">
+    <title> Is solving matrix equations easy?!</title>
+
+    <p>Given</p>
+<me>
+A=\begin{bmatrix} 1 &amp; -1 \\ -2 &amp; 2 \end{bmatrix}
+\qquad
+B=\begin{bmatrix} 2 &amp; 5 \\ 3 &amp; 2 \end{bmatrix}\qquad
+C=\begin{bmatrix} 4 &amp; 2 \\ 5 &amp; -1 \end{bmatrix}
+    </me>
+
+    <ol>
+        <li><p>Compute <m>A\cdot B</m>.</p></li>
+        <li><p>Compute <m>A\cdot C</m>.</p></li>
+        <li><p>Verify whether <m>A\cdot C= A\cdot B</m>. </p></li>
+        <li><p>Does it agree with what we know about numbers?</p></li>
+    </ol>
+</exercise>
+  <exercise workspace="1in">
+    <title> Transpose and Matrix Multiplication</title>
+
+    <p>Given</p>
+<me>
+A=\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}
+\qquad
+B=\begin{bmatrix} 2 &amp; 1 \\ 0 &amp; 3 \end{bmatrix}
+    </me>
+
+    <ol>
+<li><p>Compute <m>A\cdot B</m>.</p></li>
+        <li><p>Compute <m>(A\cdot B)^\top</m>.</p></li>
+        <li><p>Compute <m>A^\top</m> and <m>B^\top</m>.</p></li>
+        <li><p>Compute <m>B^\top\cdot A^\top</m>.</p></li>
+        <li><p>Compute <m>A^\top\cdot B^\top</m>.</p></li>
+        <li><p>Based on your computations, describe what taking the transpose does to the order of matrix multiplication.</p></li>
+    </ol>
+</exercise>
+
+<exercise workspace="1in">
+    <title> Distributive Property of Matrix Multiplication</title>
+    <p>Given</p>
+
+    <me>
+A=\begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 1 \end{bmatrix}
+\qquad
+B=\begin{bmatrix} 2 &amp; 0 \\ 1 &amp; 4 \end{bmatrix}
+\qquad
+C=\begin{bmatrix} 3 &amp; 1 \\ 2 &amp; -1 \end{bmatrix}
+    </me>
+
+    <ol>
+        <li><p>Compute <m>B+C</m>.</p></li>
+        <li><p>Compute <m>A(B+C)</m>.</p></li>
+        <li><p>Compute <m>AB</m>.</p></li>
+        <li><p>Compute <m>AC</m>.</p></li>
+        <li><p>Compute <m>AB+AC</m>.</p></li>
+        <li><p>Verify whether <m>A(B+C)=AB+AC</m>.</p></li>
+        <li><p>How does this property compare with the distributive property of multiplication over addition for real numbers?</p></li>
+    </ol>
+</exercise>
+</handout>
