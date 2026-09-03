@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 5: Multiple integrals; vector calculus</title>
+<title>Matrix Activity 2</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-06.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="matrix-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -210,9 +210,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="matlab-tips.html" class="internal"><span class="title">Useful MATLAB Commands for Linear Algebra with Syntax Tips</span></a></div>
 <ul class="structural toc-item-list">
@@ -258,9 +258,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-05.html" class="internal"><span class="title">Week 5: Multiple integrals; vector calculus</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-2" class="internal"><span class="title">Tuesday</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
@@ -337,12 +337,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -361,22 +361,79 @@ eBookConfig.enable_chatcodes =  false;
 </li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-05"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 5: Multiple integrals; vector calculus</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="matrix-activity2" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Activity 2</span><div class="print-links"><a href="?printpreview=matrix-activity2" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="subsection" id="notes-week-05-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
-</h3>
-<div class="para" id="notes-week-05-2-2">Multiple integrals and their properties.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-05-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="matrix-activity2-2"><div class="para" id="matrix-activity2-2-1">We are setting up our routine:<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-05-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-05-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
-</h3>
-<div class="para" id="notes-week-05-3-2">Vector calculus.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-05-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1. Think-pair-share</td>
+<td class="l m b0 r0 l0 t0 lines">What does multiplication by given matrices do to the picture?</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2. Gallery Walk:</td>
+<td class="l m b0 r0 l0 t0 lines">A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</td>
+</tr>
+</table></div></section><div class="para" id="matrix-activity2-3">
+<em class="alert">Matrix Transformations</em> <div class="interactive-iframe-container"><iframe src="https://www.geogebra.org/material/iframe/id/csevq2at/scaleContainerClass/interactive-iframe-container/width/800/height/800/allowUpscale/true/autoHeight/true/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="matrix-activity2-3-2" style="width:450px; height:450px; display: block; "></iframe></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-05-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 5: Multiple integrals; vector calculus"><a href="#notes-week-05" title="Copy heading and permalink for Section: Week 5: Multiple integrals; vector calculus" aria-label="Copy heading and permalink for Section: Week 5: Multiple integrals; vector calculus">🔗</a></div></section></div>
+<figure class="list table-like" id="matrix-activity2-4"><figcaption><span class="type">List</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Steps of Gallery Walk:<div class="autopermalink" data-description="List 24: Steps of Gallery Walk:"><a href="#matrix-activity2-4" title="Copy heading and permalink for List 24: Steps of Gallery Walk:" aria-label="Copy heading and permalink for List 24: Steps of Gallery Walk:">🔗</a></div></figcaption><div class="named-list-content"><ul class="disc" id="matrix-activity2-4-2">
+<li id="matrix-activity2-4-2-1">
+<div class="para" id="matrix-activity2-4-2-1-1">Assign Roles and Norms<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-activity2-4-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-activity2-4-2-2">
+<div class="para" id="matrix-activity2-4-2-2-1">Come up with a Solution and Write it on the Board<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-activity2-4-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-activity2-4-2-3">
+<div class="para" id="matrix-activity2-4-2-3-1">Rotate and Analyze<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-activity2-4-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-activity2-4-2-4">
+<div class="para" id="matrix-activity2-4-2-4-1">Leave Feedback<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-activity2-4-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matrix-activity2-4-2-5">
+<div class="para" id="matrix-activity2-4-2-5-1">Return and Refine<div class="autopermalink" data-description="Paragraph"><a href="#matrix-activity2-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matrix-activity2-4-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></div></figure><div class="autopermalink" data-description="Worksheet: Matrix Activity 2"><a href="#matrix-activity2" title="Copy heading and permalink for Worksheet: Matrix Activity 2" aria-label="Copy heading and permalink for Worksheet: Matrix Activity 2">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-06.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="matrix-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

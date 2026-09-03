@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 5: Multiple integrals; vector calculus</title>
+<title>Useful MATLAB Commands for Linear Algebra with Syntax Tips</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -135,7 +135,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-06.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-01.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -213,9 +213,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="matlab-tips.html" class="internal"><span class="title">Useful MATLAB Commands for Linear Algebra with Syntax Tips</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-2" class="internal"><span class="title">Basic Matrix Operations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-3" class="internal"><span class="title">Matrix Arithmetic</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-4" class="internal"><span class="title">Linear Algebra Functions</span></a></div></li>
@@ -258,9 +258,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-05.html" class="internal"><span class="title">Week 5: Multiple integrals; vector calculus</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-2" class="internal"><span class="title">Tuesday</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
@@ -361,22 +361,197 @@ eBookConfig.enable_chatcodes =  false;
 </li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-05"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 5: Multiple integrals; vector calculus</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="matlab-tips"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Useful MATLAB Commands for Linear Algebra with Syntax Tips</span>
 </h2>
-<section class="subsection" id="notes-week-05-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
+<section class="subsection" id="matlab-tips-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic Matrix Operations</span>
 </h3>
-<div class="para" id="notes-week-05-2-2">Multiple integrals and their properties.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-05-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="matlab-tips-2-2">
+<li id="matlab-tips-2-2-1">
+<code class="code-inline tex2jax_ignore">A = [1 2; 3 4]</code><div class="para" id="matlab-tips-2-2-1-2">
+<em class="alert">Tip:</em> Use semicolons to separate rows.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-05-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-05-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-2">
+<code class="code-inline tex2jax_ignore">B = zeros(3,3)</code><div class="para" id="matlab-tips-2-2-2-2">
+<em class="alert">Tip:</em> Arguments are (rows, columns).<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-3">
+<code class="code-inline tex2jax_ignore">C = ones(2,4)</code><div class="para" id="matlab-tips-2-2-3-2">
+<em class="alert">Tip:</em> Creates a matrix filled with ones.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-4">
+<code class="code-inline tex2jax_ignore">D = eye(3)</code><div class="para" id="matlab-tips-2-2-4-2">
+<em class="alert">Tip:</em> Generates a 3×3 identity matrix.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-5">
+<code class="code-inline tex2jax_ignore">size(A)</code><div class="para" id="matlab-tips-2-2-5-2">
+<em class="alert">Tip:</em> Returns a vector [rows, columns].<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-6">
+<code class="code-inline tex2jax_ignore">length(A)</code><div class="para" id="matlab-tips-2-2-6-2">
+<em class="alert">Tip:</em> Returns the largest dimension.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-2-2-7">
+<code class="code-inline tex2jax_ignore">A'</code><div class="para" id="matlab-tips-2-2-7-2">
+<em class="alert">Tip:</em> Transposes matrix <code class="code-inline tex2jax_ignore">A</code>; use <code class="code-inline tex2jax_ignore">A.'</code> for non-conjugate transpose.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-2-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-2-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Basic Matrix Operations"><a href="#matlab-tips-2" title="Copy heading and permalink for Subsection: Basic Matrix Operations" aria-label="Copy heading and permalink for Subsection: Basic Matrix Operations">🔗</a></div></section><section class="subsection" id="matlab-tips-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Arithmetic</span>
 </h3>
-<div class="para" id="notes-week-05-3-2">Vector calculus.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-05-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="matlab-tips-3-2">
+<li id="matlab-tips-3-2-1">
+<code class="code-inline tex2jax_ignore">A + B</code><div class="para" id="matlab-tips-3-2-1-2">
+<em class="alert">Tip:</em> Matrices must be the same size.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-05-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 5: Multiple integrals; vector calculus"><a href="#notes-week-05" title="Copy heading and permalink for Section: Week 5: Multiple integrals; vector calculus" aria-label="Copy heading and permalink for Section: Week 5: Multiple integrals; vector calculus">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-2">
+<code class="code-inline tex2jax_ignore">A - B</code><div class="para" id="matlab-tips-3-2-2-2">
+<em class="alert">Tip:</em> Subtraction also requires matching dimensions.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-3">
+<code class="code-inline tex2jax_ignore">A * B</code><div class="para" id="matlab-tips-3-2-3-2">
+<em class="alert">Tip:</em> Inner dimensions must agree (for example, A is m×n and B is n×p).<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-4">
+<code class="code-inline tex2jax_ignore">A .* B</code><div class="para" id="matlab-tips-3-2-4-2">
+<em class="alert">Tip:</em> Element-wise multiplication; matrices must be the same size.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-5">
+<code class="code-inline tex2jax_ignore">A \ B</code><div class="para" id="matlab-tips-3-2-5-2">
+<em class="alert">Tip:</em> Solves <code class="code-inline tex2jax_ignore">A*x = B</code>; use when <code class="code-inline tex2jax_ignore">A</code> is square or overdetermined.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-6">
+<code class="code-inline tex2jax_ignore">inv(A)</code><div class="para" id="matlab-tips-3-2-6-2">
+<em class="alert">Tip:</em> Use only if <code class="code-inline tex2jax_ignore">A</code> is square and nonsingular.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-3-2-7">
+<code class="code-inline tex2jax_ignore">det(A)</code><div class="para" id="matlab-tips-3-2-7-2">
+<em class="alert">Tip:</em> Returns the determinant; only for square matrices.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-3-2-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-3-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Matrix Arithmetic"><a href="#matlab-tips-3" title="Copy heading and permalink for Subsection: Matrix Arithmetic" aria-label="Copy heading and permalink for Subsection: Matrix Arithmetic">🔗</a></div></section><section class="subsection" id="matlab-tips-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Algebra Functions</span>
+</h3>
+<ul class="disc" id="matlab-tips-4-2">
+<li id="matlab-tips-4-2-1">
+<div class="para" id="p-derived-matlab-tips-4-2-1"><code class="code-inline tex2jax_ignore">rref(A)</code></div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-4-2-2">
+<code class="code-inline tex2jax_ignore">rank(A)</code><div class="para" id="matlab-tips-4-2-2-2">
+<em class="alert">Tip:</em> Useful for checking linear independence.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-4-2-3">
+<code class="code-inline tex2jax_ignore">null(A)</code><div class="para" id="matlab-tips-4-2-3-2">
+<em class="alert">Tip:</em> Returns a basis for the null space.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-4-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-4-2-4">
+<code class="code-inline tex2jax_ignore">orth(A)</code><div class="para" id="matlab-tips-4-2-4-2">
+<em class="alert">Tip:</em> Returns an orthonormal basis for the column space.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-4-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-4-2-5">
+<code class="code-inline tex2jax_ignore">eig(A)</code><div class="para" id="matlab-tips-4-2-5-2">
+<em class="alert">Tip:</em> Use <code class="code-inline tex2jax_ignore">[V,D] = eig(A)</code> for eigenvectors and eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-4-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-4-2-6">
+<code class="code-inline tex2jax_ignore">svd(A)</code><div class="para" id="matlab-tips-4-2-6-2">
+<em class="alert">Tip:</em> Returns singular values and decomposition matrices.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-4-2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-4-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Linear Algebra Functions"><a href="#matlab-tips-4" title="Copy heading and permalink for Subsection: Linear Algebra Functions" aria-label="Copy heading and permalink for Subsection: Linear Algebra Functions">🔗</a></div></section><section class="subsection" id="matlab-tips-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Plotting and Visualization</span>
+</h3>
+<ul class="disc" id="matlab-tips-5-2">
+<li id="matlab-tips-5-2-1">
+<code class="code-inline tex2jax_ignore">plot(x, y)</code><div class="para" id="matlab-tips-5-2-1-2">
+<em class="alert">Tip:</em> Vectors <code class="code-inline tex2jax_ignore">x</code> and <code class="code-inline tex2jax_ignore">y</code> must be the same length.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-5-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-5-2-2">
+<code class="code-inline tex2jax_ignore">meshgrid</code><div class="para" id="matlab-tips-5-2-2-2">
+<em class="alert">Tip:</em> Use for generating 2D grids for surface plots.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-5-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-5-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-5-2-3">
+<code class="code-inline tex2jax_ignore">surf(X, Y, Z)</code><div class="para" id="matlab-tips-5-2-3-2">
+<em class="alert">Tip:</em> <code class="code-inline tex2jax_ignore">X</code>, <code class="code-inline tex2jax_ignore">Y</code>, and <code class="code-inline tex2jax_ignore">Z</code> must be the same size.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-5-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-5-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-5-2-4">
+<code class="code-inline tex2jax_ignore">imagesc(A)</code><div class="para" id="matlab-tips-5-2-4-2">
+<em class="alert">Tip:</em> Visualizes matrix values as colors.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-5-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-5-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Plotting and Visualization"><a href="#matlab-tips-5" title="Copy heading and permalink for Subsection: Plotting and Visualization" aria-label="Copy heading and permalink for Subsection: Plotting and Visualization">🔗</a></div></section><section class="subsection" id="matlab-tips-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Miscellaneous</span>
+</h3>
+<ul class="disc" id="matlab-tips-6-2">
+<li id="matlab-tips-6-2-1">
+<code class="code-inline tex2jax_ignore">clc</code><div class="para" id="matlab-tips-6-2-1-2">
+<em class="alert">Tip:</em> Clears the command window.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-6-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-6-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-6-2-2">
+<code class="code-inline tex2jax_ignore">clear</code><div class="para" id="matlab-tips-6-2-2-2">
+<em class="alert">Tip:</em> Removes all variables from the workspace.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-6-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="matlab-tips-6-2-3">
+<code class="code-inline tex2jax_ignore">disp(A)</code><div class="para" id="matlab-tips-6-2-3-2">
+<em class="alert">Tip:</em> Displays matrix <code class="code-inline tex2jax_ignore">A</code> without printing the variable name.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-tips-6-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#matlab-tips-6-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Miscellaneous"><a href="#matlab-tips-6" title="Copy heading and permalink for Subsection: Miscellaneous" aria-label="Copy heading and permalink for Subsection: Miscellaneous">🔗</a></div></section><div class="autopermalink" data-description="Section: Useful MATLAB Commands for Linear Algebra with Syntax Tips"><a href="#matlab-tips" title="Copy heading and permalink for Section: Useful MATLAB Commands for Linear Algebra with Syntax Tips" aria-label="Copy heading and permalink for Section: Useful MATLAB Commands for Linear Algebra with Syntax Tips">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-06.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-01.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

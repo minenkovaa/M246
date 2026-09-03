@@ -118,6 +118,15 @@ var ptx_lunr_docs = [
   "body": " Module 5 topics:    Model Formulation  Identify physical parameters and assumptions; translate engineering problems into mathematical models; validate models against constraints.    Analytical and Numerical Solutions  Select appropriate analytical or numerical methods; implement numerical schemes such as Euler and Runge–Kutta; compare results.    Computational Tools  Implement models in MATLAB or Python; visualize results; interpret outputs in an engineering context.    "
 },
 {
+  "id": "matlab-tips",
+  "level": "1",
+  "url": "matlab-tips.html",
+  "type": "Section",
+  "number": "",
+  "title": "Useful MATLAB Commands for Linear Algebra with Syntax Tips",
+  "body": " Useful MATLAB Commands for Linear Algebra with Syntax Tips   Basic Matrix Operations    A = [1 2; 3 4]  Tip: Use semicolons to separate rows.    B = zeros(3,3)  Tip: Arguments are (rows, columns).    C = ones(2,4)  Tip: Creates a matrix filled with ones.    D = eye(3)  Tip: Generates a 3×3 identity matrix.    size(A)  Tip: Returns a vector [rows, columns].    length(A)  Tip: Returns the largest dimension.    A'  Tip: Transposes matrix A ; use A.' for non-conjugate transpose.      Matrix Arithmetic    A + B  Tip: Matrices must be the same size.    A - B  Tip: Subtraction also requires matching dimensions.    A * B  Tip: Inner dimensions must agree (for example, A is m×n and B is n×p).    A .* B  Tip: Element-wise multiplication; matrices must be the same size.    A \\ B  Tip: Solves A*x = B ; use when A is square or overdetermined.    inv(A)  Tip: Use only if A is square and nonsingular.    det(A)  Tip: Returns the determinant; only for square matrices.      Linear Algebra Functions    rref(A)    rank(A)  Tip: Useful for checking linear independence.    null(A)  Tip: Returns a basis for the null space.    orth(A)  Tip: Returns an orthonormal basis for the column space.    eig(A)  Tip: Use [V,D] = eig(A) for eigenvectors and eigenvalues.    svd(A)  Tip: Returns singular values and decomposition matrices.      Plotting and Visualization    plot(x, y)  Tip: Vectors x and y must be the same length.    meshgrid  Tip: Use for generating 2D grids for surface plots.    surf(X, Y, Z)  Tip:  X , Y , and Z must be the same size.    imagesc(A)  Tip: Visualizes matrix values as colors.      Miscellaneous    clc  Tip: Clears the command window.    clear  Tip: Removes all variables from the workspace.    disp(A)  Tip: Displays matrix A without printing the variable name.     "
+},
+{
   "id": "notes-week-01",
   "level": "1",
   "url": "notes-week-01.html",
@@ -496,6 +505,24 @@ var ptx_lunr_docs = [
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
 {
+  "id": "matrix-activity2",
+  "level": "1",
+  "url": "matrix-activity2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Matrix Activity 2",
+  "body": " Matrix Activity 2    We are setting up our routine:    1. Think-pair-share  What does multiplication by given matrices do to the picture?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Matrix Transformations     Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
+},
+{
+  "id": "matrix-activity2-4",
+  "level": "2",
+  "url": "matrix-activity2.html#matrix-activity2-4",
+  "type": "List",
+  "number": "24",
+  "title": "Steps of Gallery Walk:",
+  "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
@@ -518,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "24",
+  "number": "25",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -527,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "25",
+  "number": "26",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -536,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "26",
+  "number": "27",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -545,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "27",
+  "number": "28",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -554,18 +581,63 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "28",
+  "number": "29",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
 {
-  "id": "homework",
+  "id": "handouts-4",
   "level": "1",
-  "url": "homework.html",
-  "type": "Chapter",
+  "url": "handouts-4.html",
+  "type": "Handout",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "Matrix Activity 2",
+  "body": " Matrix Activity 2     Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?     Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?     Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?     Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.     Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?    "
+},
+{
+  "id": "handouts-4-2",
+  "level": "2",
+  "url": "handouts-4.html#handouts-4-2",
+  "type": "Checkpoint",
+  "number": "30",
+  "title": "Commutativity.",
+  "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
+},
+{
+  "id": "handouts-4-3",
+  "level": "2",
+  "url": "handouts-4.html#handouts-4-3",
+  "type": "Checkpoint",
+  "number": "31",
+  "title": "Divisors of Zero.",
+  "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
+},
+{
+  "id": "handouts-4-4",
+  "level": "2",
+  "url": "handouts-4.html#handouts-4-4",
+  "type": "Checkpoint",
+  "number": "32",
+  "title": "Is solving matrix equations easy?!",
+  "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
+},
+{
+  "id": "handouts-4-5",
+  "level": "2",
+  "url": "handouts-4.html#handouts-4-5",
+  "type": "Checkpoint",
+  "number": "33",
+  "title": "Transpose and Matrix Multiplication.",
+  "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
+},
+{
+  "id": "handouts-4-6",
+  "level": "2",
+  "url": "handouts-4.html#handouts-4-6",
+  "type": "Checkpoint",
+  "number": "34",
+  "title": "Distributive Property of Matrix Multiplication.",
+  "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
 {
   "id": "resources",
@@ -581,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "29",
+  "number": "35",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
 }
