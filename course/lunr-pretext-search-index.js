@@ -640,6 +640,60 @@ var ptx_lunr_docs = [
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
 {
+  "id": "homework-2",
+  "level": "1",
+  "url": "homework-2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 01",
+  "body": " Homework 01    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors   #  Matrix A  Matrix B  Matrix C  Vector u  Vector v    1                  2                 3                    Add matrices: and .     Scale matrices by a real number: .     Perform matrix-vector multiplication: and .     Perform matrix-matrix multiplication: , , and .     Compute the transpose of a matrix: , , and .    "
+},
+{
+  "id": "homework-2-4",
+  "level": "2",
+  "url": "homework-2.html#homework-2-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Add matrices: and .   "
+},
+{
+  "id": "homework-2-5",
+  "level": "2",
+  "url": "homework-2.html#homework-2-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Scale matrices by a real number: .   "
+},
+{
+  "id": "homework-2-6",
+  "level": "2",
+  "url": "homework-2.html#homework-2-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Perform matrix-vector multiplication: and .   "
+},
+{
+  "id": "homework-2-7",
+  "level": "2",
+  "url": "homework-2.html#homework-2-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": " Perform matrix-matrix multiplication: , , and .   "
+},
+{
+  "id": "homework-2-8",
+  "level": "2",
+  "url": "homework-2.html#homework-2-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Compute the transpose of a matrix: , , and .   "
+},
+{
   "id": "resources",
   "level": "1",
   "url": "resources.html",
