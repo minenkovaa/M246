@@ -4,18 +4,77 @@
   <title>Homework 01</title>
   <introduction>
     <p>
-      <alert>Instructions:</alert> Complete all the exercises below and submit your work by the due date.
+      <alert>Instructions:</alert> Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework.</p><p>
+      Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.
     </p>
   </introduction>
 
-  <page>
-    <exercise>
+<tabular bottom="minor">
+<title>Matrices <m>A,B,C</m> and vectors <m>u,v</m></title>
+
+
+  <row  bottom="major">
+    <cell><p>#</p></cell>
+    <cell><p>Matrix A</p></cell>
+    <cell><p>Matrix B</p></cell>
+    <cell><p>Matrix C</p></cell>
+    <cell><p>Vector u</p></cell>
+    <cell><p>Vector v</p></cell>
+  </row>  <row>
+    <cell><p>1</p></cell>
+    <cell><p><m> \begin{bmatrix} -1 &amp;  -1 &amp;  -4 \\ 2 &amp;  -5 &amp;  -4 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -4 &amp;  -5 &amp;  5 \\ -6 &amp;  -3 &amp;  4 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -1 &amp;  1 &amp;  3 \\ 4 &amp;  1 &amp;  -6 \\ 2 &amp;  0 &amp;  -4 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -1 \\ 4 \\ 2 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} 2 \\ -4 \\ 5 \\ 7 \end{bmatrix} </m> </p></cell>
+  </row> <row>
+    <cell><p>2</p></cell>
+    <cell><p><m> \begin{bmatrix} 1 &amp;  3 &amp;  5 \\ -6 &amp;  0 &amp;  -2\end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -1 &amp;  -7 &amp;  -3 \\ 1 &amp;  -7 &amp;  -1\end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -4 &amp;  -2 &amp;  7 \\ 1 &amp;  -6 &amp;  0 \\ 1 &amp;  7 &amp;  -4 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} 2 \\ 0 \\ -7 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix}-2 \\ -5 \\ -4 \\ 7 \end{bmatrix} </m> </p></cell>
+  </row><row  bottom="major">
+    <cell><p>3</p></cell>
+    <cell><p><m> \begin{bmatrix} 0 &amp;  3 &amp;  6 \\ -1 &amp;  -6 &amp;  7 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -1 &amp;  3 &amp;  -6 \\ -5 &amp;  -3 &amp;  2\end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} -7 &amp;  -1 &amp;  -2 \\ -5 &amp;  1 &amp;  -1 \\ -4 &amp;  7 &amp;  5 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix}-7 \\ 3 \\ -4 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} 0 \\ -3 \\ 1 \\ -1  \end{bmatrix} </m> </p></cell>
+  </row>
+  </tabular>
+ 
+    <exercise workspace="3in">
       <statement>
         <p>
-          This is the first homework exercise.
+        Add matrices: <m>A+B</m> and <m>A+C</m>.
+                </p>
+      </statement>
+    </exercise>
+ 
+    <exercise workspace="3in">
+      <statement><p>
+        Scale matrices by a real number: <m>5A</m>.                </p>
+      </statement>
+    </exercise>
+  
+    <exercise workspace="3in">
+      <statement><p>
+        Perform matrix-vector multiplication: <m>C\cdot u</m> and <m>C\cdot v</m>.                </p>
+      </statement>
+    </exercise>
+ 
+    <exercise workspace="3in">
+      <statement><p>
+        Perform matrix-matrix multiplication: <m>A\cdot B</m>, <m>C\cdot B</m>, and <m>A\cdot C</m>.                </p>
+      </statement>
+    </exercise>
+  
+    <exercise workspace="3in">
+      <statement><p>
+        Compute the transpose of a matrix: <m>A^\top</m>, <m>C^\top</m>, and <m>v^\top</m>.
         </p>
       </statement>
     </exercise>
 
-  </page>
 </worksheet>

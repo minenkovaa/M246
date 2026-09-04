@@ -81,13 +81,13 @@
       <xi:include href="./handouts/matrix-handout2.ptx"/>
     </chapter>
 
-    <!--<chapter xml:id="homework">
+    <chapter xml:id="homework">
       <title>Homework</title>
 
-       Include homework files
-    <xi:include href="./homework/homework01.ptx"/>
 
-    </chapter>-->
+    <xi:include href="./homework/homework-01.ptx"/>
+
+    </chapter>
     
     <chapter xml:id="Resources">
       <title>Resources Used in Preparation of This Course</title>
