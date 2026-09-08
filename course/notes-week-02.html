@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -240,8 +241,23 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2: Determinants; inverses; rank</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -343,6 +359,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="inverse-activity2.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -351,6 +368,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Review</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -368,17 +386,900 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-02"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 2: Determinants; inverses; rank</span>
 </h2>
-<section class="subsection" id="notes-week-02-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
-</h3>
-<div class="para" id="notes-week-02-2-2">Determinants and their properties.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-02-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="notes-week-02-2"><div class="para" id="notes-week-02-2-1">In this module, we will discuss how to:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-02-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-02-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-02-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
+<ul class="disc" id="notes-week-02-2-2">
+<li id="notes-week-02-2-2-1">
+<div class="para" id="p-derived-notes-week-02-2-2-1">use Gaussian Elimination to determine whether a matrix is invertible,</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-02-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-02-2-2-2">
+<div class="para" id="p-derived-notes-week-02-2-2-2">find the inverse of an invertible matrix,</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-02-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-02-2-2-3">
+<div class="para" id="p-derived-notes-week-02-2-2-3">compute the determinant of a given matrix,</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-02-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-02-2-2-4">
+<div class="para" id="p-derived-notes-week-02-2-2-4">use the determinant to determine whether a matrix is invertible,</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-02-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-02-2-2-5">
+<div class="para" id="p-derived-notes-week-02-2-2-5">analyze the determinant of a product and inverses of matrices.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-02-2-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></section><section class="subsection" id="invertibility"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Invertibility of a Matrix</span>
 </h3>
-<div class="para" id="notes-week-02-3-2">Inverses and rank.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-02-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="invertibility-2">A square matrix <span class="process-math">\(A\)</span> (size <span class="process-math">\(n\times n\)</span>) is <dfn class="terminology">invertible</dfn> or <dfn class="terminology">nonsingular</dfn> if there exists an <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(C\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-02-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 2: Determinants; inverses; rank"><a href="#notes-week-02" title="Copy heading and permalink for Section: Week 2: Determinants; inverses; rank" aria-label="Copy heading and permalink for Section: Week 2: Determinants; inverses; rank">🔗</a></div></section></div>
+<div class="displaymath process-math" id="invertibility-3">
+\begin{equation*}
+CA = I_n \quad\text{and}\quad AC = I_n.
+\end{equation*}
+</div>
+<div class="para" id="invertibility-4">That matrix is unique and is denoted <span class="process-math">\(A^{-1}\text{.}\)</span> If no such matrix exists, then <span class="process-math">\(A\)</span> is <dfn class="terminology">singular</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="invertibility-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The 2 × 2 Case.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="invertibility-5-2">If<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-5-3">
+\begin{equation*}
+A=
+\begin{bmatrix}
+a   &amp;   b\\
+c   &amp;   d
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para" id="invertibility-5-4">and <span class="process-math">\(ad-bc\neq 0\text{,}\)</span> then<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-5-5">
+\begin{equation*}
+A^{-1}
+=
+\frac{1}{ad-bc}
+\begin{bmatrix}
+d   &amp;   -b\\
+-c   &amp;   a
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 22: The 2 × 2 Case"><a href="#invertibility-5" title="Copy heading and permalink for Example 22: The 2 × 2 Case" aria-label="Copy heading and permalink for Example 22: The 2 × 2 Case">🔗</a></div></article></details><details id="invertibility-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding an Inverse.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="invertibility-6-2">Find the inverse of<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-6-3">
+\begin{equation*}
+B=
+\begin{bmatrix}
+3   &amp;   1\\
+4   &amp;   2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<details id="invertibility-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="invertibility-6-4-1">Since<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-6-4-2">
+\begin{equation*}
+\det(B)=3\cdot2-1\cdot4=2\neq0,
+\end{equation*}
+</div>
+<div class="para" id="invertibility-6-4-3">the matrix is invertible and<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-6-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-6-4-4">
+\begin{equation*}
+B^{-1}
+=
+\frac12
+\begin{bmatrix}
+2   &amp;   -1\\
+-4   &amp;   3
+\end{bmatrix}
+=
+\begin{bmatrix}
+1   &amp;   -\frac12\\
+-2   &amp;   \frac32
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="invertibility-6-4-5">A quick verification gives<div class="autopermalink" data-description="Paragraph"><a href="#invertibility-6-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="invertibility-6-4-6">
+\begin{equation*}
+BB^{-1}=I_2.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 23.1"><a href="#invertibility-6-4" title="Copy heading and permalink for Solution 23.1" aria-label="Copy heading and permalink for Solution 23.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 23: Finding an Inverse"><a href="#invertibility-6" title="Copy heading and permalink for Example 23: Finding an Inverse" aria-label="Copy heading and permalink for Example 23: Finding an Inverse">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Invertibility of a Matrix"><a href="#invertibility" title="Copy heading and permalink for Subsection: Invertibility of a Matrix" aria-label="Copy heading and permalink for Subsection: Invertibility of a Matrix">🔗</a></div></section><section class="subsection" id="inverse-properties"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of Inverse Matrices</span>
+</h3>
+<section class="subsubsection" id="inverse-of-inverse"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Inverse of an Inverse</span>
+</h4>
+<article class="theorem theorem-like" id="inverse-of-inverse-2"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="inverse-of-inverse-2-1-1">If <span class="process-math">\(A\)</span> is invertible, then<div class="autopermalink" data-description="Paragraph"><a href="#inverse-of-inverse-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-of-inverse-2-1-2">
+\begin{equation*}
+(A^{-1})^{-1}=A.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Theorem 24"><a href="#inverse-of-inverse-2" title="Copy heading and permalink for Theorem 24" aria-label="Copy heading and permalink for Theorem 24">🔗</a></div></article><details id="inverse-of-inverse-2-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="inverse-of-inverse-2-2-1">Since<div class="autopermalink" data-description="Paragraph"><a href="#inverse-of-inverse-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-of-inverse-2-2-2">
+\begin{equation*}
+A^{-1}A=I
+\quad\text{and}\quad
+AA^{-1}=I,
+\end{equation*}
+</div>
+<div class="para" id="inverse-of-inverse-2-2-3">the matrix <span class="process-math">\(A\)</span> acts as the inverse of <span class="process-math">\(A^{-1}\text{.}\)</span> Hence<div class="autopermalink" data-description="Paragraph"><a href="#inverse-of-inverse-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-of-inverse-2-2-4">
+\begin{equation*}
+(A^{-1})^{-1}=A.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Proof 24.1"><a href="#inverse-of-inverse-2-2" title="Copy heading and permalink for Proof 24.1" aria-label="Copy heading and permalink for Proof 24.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection: The Inverse of an Inverse"><a href="#inverse-of-inverse" title="Copy heading and permalink for Subsubsection: The Inverse of an Inverse" aria-label="Copy heading and permalink for Subsubsection: The Inverse of an Inverse">🔗</a></div></section><section class="subsubsection" id="inverse-product"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inverse of a Product</span>
+</h4>
+<article class="theorem theorem-like" id="inverse-product-2"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="displaymath process-math" id="inverse-product-2-1-1">
+\begin{equation*}
+(AB)^{-1}=B^{-1}A^{-1}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Theorem 25"><a href="#inverse-product-2" title="Copy heading and permalink for Theorem 25" aria-label="Copy heading and permalink for Theorem 25">🔗</a></div></article><details id="inverse-product-2-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="displaymath process-math" id="inverse-product-2-2-1">
+\begin{equation*}
+(AB)(B^{-1}A^{-1})
+=
+A(BB^{-1})A^{-1}
+=
+AA^{-1}
+=
+I.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="inverse-product-2-2-2">
+\begin{equation*}
+(B^{-1}A^{-1})(AB)
+=
+B^{-1}(A^{-1}A)B
+=
+B^{-1}B
+=
+I.
+\end{equation*}
+</div>
+<div class="para" id="inverse-product-2-2-3">Therefore<div class="autopermalink" data-description="Paragraph"><a href="#inverse-product-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-product-2-2-4">
+\begin{equation*}
+(AB)^{-1}=B^{-1}A^{-1}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Proof 25.1"><a href="#inverse-product-2-2" title="Copy heading and permalink for Proof 25.1" aria-label="Copy heading and permalink for Proof 25.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection: Inverse of a Product"><a href="#inverse-product" title="Copy heading and permalink for Subsubsection: Inverse of a Product" aria-label="Copy heading and permalink for Subsubsection: Inverse of a Product">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Properties of Inverse Matrices"><a href="#inverse-properties" title="Copy heading and permalink for Subsection: Properties of Inverse Matrices" aria-label="Copy heading and permalink for Subsection: Properties of Inverse Matrices">🔗</a></div></section><section class="subsection" id="row-operations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Elementary Row Operations and Row Equivalence</span>
+</h3>
+<div class="para" id="row-operations-2">Three elementary row operations:<div class="autopermalink" data-description="Paragraph"><a href="#row-operations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="row-operations-3">
+<li id="row-operations-3-1">
+<div class="para" id="p-derived-row-operations-3-1">Add a multiple of one row to another row.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="row-operations-3-2">
+<div class="para" id="p-derived-row-operations-3-2">Interchange two rows.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="row-operations-3-3">
+<div class="para" id="p-derived-row-operations-3-3">Multiply a row by a nonzero constant.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Elementary Row Operations and Row Equivalence"><a href="#row-operations" title="Copy heading and permalink for Subsection: Elementary Row Operations and Row Equivalence" aria-label="Copy heading and permalink for Subsection: Elementary Row Operations and Row Equivalence">🔗</a></div></section><section class="subsection" id="rref"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span>
+</h3>
+<article class="definition definition-like" id="rref-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="rref-2-1-1">A matrix is in REF if:<div class="autopermalink" data-description="Paragraph"><a href="#rref-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="rref-2-1-2">
+<li id="rref-2-1-2-1">
+<div class="para" id="p-derived-rref-2-1-2-1">All nonzero rows are above zero rows.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-2-1-2-2">
+<div class="para" id="p-derived-rref-2-1-2-2">Leading entries move to the right as rows descend.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-2-1-2-3">
+<div class="para" id="p-derived-rref-2-1-2-3">Entries below a leading entry are zero.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-2-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul> <div class="para" id="rref-2-1-3">A matrix is in RREF if additionally:<div class="autopermalink" data-description="Paragraph"><a href="#rref-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="rref-2-1-4">
+<li id="rref-2-1-4-1">
+<div class="para" id="p-derived-rref-2-1-4-1">Every leading entry equals 1.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-2-1-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-2-1-4-2">
+<div class="para" id="p-derived-rref-2-1-4-2">Each leading 1 is the only nonzero entry in its column.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-2-1-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Definition 26"><a href="#rref-2" title="Copy heading and permalink for Definition 26" aria-label="Copy heading and permalink for Definition 26">🔗</a></div></article><article class="theorem theorem-like" id="rref-3"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="rref-3-1-1">Every matrix is row-equivalent to exactly one RREF.<div class="autopermalink" data-description="Paragraph"><a href="#rref-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 27"><a href="#rref-3" title="Copy heading and permalink for Theorem 27" aria-label="Copy heading and permalink for Theorem 27">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Row-Echelon and Reduced Row-Echelon Forms"><a href="#rref" title="Copy heading and permalink for Subsection: Row-Echelon and Reduced Row-Echelon Forms" aria-label="Copy heading and permalink for Subsection: Row-Echelon and Reduced Row-Echelon Forms">🔗</a></div></section><section class="subsection" id="inverse-augmented-matrices"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span>
+</h3>
+<div class="para" id="inverse-augmented-matrices-2">
+<em class="alert">Method.</em> Construct <span class="process-math">\(\bigl[A \mid I\bigr]\)</span> and row-reduce:<div class="autopermalink" data-description="Paragraph"><a href="#inverse-augmented-matrices-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-augmented-matrices-3">
+\begin{equation*}
+\left[A \mid I\right]
+\xrightarrow{\text{row reduce}}
+\left[I \mid A^{-1}\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-augmented-matrices-4">If you cannot reach <span class="process-math">\(I\)</span> on the left, then <span class="process-math">\(A\)</span> is not invertible.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-augmented-matrices-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-augmented-matrices-5">
+<em class="alert">Note.</em> For <span class="process-math">\(2\times 2\)</span> matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-augmented-matrices-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="inverse-3x3-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example: Finding the Inverse of a 3 × 3 Matrix.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="inverse-3x3-example-2">We now compute the inverse of a <span class="process-math">\(3\times 3\)</span> matrix using the augmented matrix method.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-3x3-example-3">Let<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-4">
+\begin{equation*}
+A=
+\begin{bmatrix}
+2   &amp;   1   &amp;   3\\
+1   &amp;   0   &amp;   2\\
+3   &amp;   1   &amp;   4
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-5">To find <span class="process-math">\(A^{-1}\)</span> (if it exists), we row-reduce the augmented matrix <span class="process-math">\(\bigl[A\mid I_3\bigr]\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-6">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+2   &amp;   1   &amp;   3   &amp;   1   &amp;   0   &amp;   0\\
+1   &amp;   0   &amp;   2   &amp;   0   &amp;   1   &amp;   0\\
+3   &amp;   1   &amp;   4   &amp;   0   &amp;   0   &amp;   1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-7">
+<em class="alert">Step 1: Make a pivot in row 1 (swap <span class="process-math">\(R_1\)</span> and <span class="process-math">\(R_2\)</span>).</em><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-8">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1   &amp;   0   &amp;   2   &amp;   0   &amp;   1   &amp;   0\\
+2   &amp;   1   &amp;   3   &amp;   1   &amp;   0   &amp;   0\\
+3   &amp;   1   &amp;   4   &amp;   0   &amp;   0   &amp;   1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-9">
+<em class="alert">Step 2: Zero out below pivot 1 using <span class="process-math">\(R_2\gets R_2-2R_1\)</span> and <span class="process-math">\(R_3\gets R_3-3R_1\text{.}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-10">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1   &amp;   0   &amp;   2   &amp;   0   &amp;   1   &amp;   0\\
+0   &amp;   1   &amp;   -1   &amp;   1   &amp;   -2   &amp;   0\\
+0   &amp;   1   &amp;   -2   &amp;   0   &amp;   -3   &amp;   1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-11">
+<em class="alert">Step 3: Fix the pivot in row 2 and eliminate below it: <span class="process-math">\(R_3\gets R_3-R_2\text{.}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-12">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1   &amp;   0   &amp;   2   &amp;   0   &amp;   1   &amp;   0\\
+0   &amp;   1   &amp;   -1   &amp;   1   &amp;   -2   &amp;   0\\
+0   &amp;   0   &amp;   -1   &amp;   -1   &amp;   -1   &amp;   1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-13">
+<em class="alert">Step 4: Make the pivot in row 3 equal to 1 by <span class="process-math">\(R_3\gets -R_3\text{.}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-14">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1   &amp;   0   &amp;   2   &amp;   0   &amp;   1   &amp;   0\\
+0   &amp;   1   &amp;   -1   &amp;   1   &amp;   -2   &amp;   0\\
+0   &amp;   0   &amp;   1   &amp;   1   &amp;   1   &amp;   -1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-15">
+<em class="alert">Step 5: Clear above the pivot in column 3.</em><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-3x3-example-16">Use <span class="process-math">\(R_1\gets R_1-2R_3\)</span> and <span class="process-math">\(R_2\gets R_2+R_3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-17">
+\begin{equation*}
+\left[
+\begin{array}{ccc|ccc}
+1   &amp;   0   &amp;   0   &amp;   -2   &amp;   -1   &amp;   2\\
+0   &amp;   1   &amp;   0   &amp;   2   &amp;   -1   &amp;   -1\\
+0   &amp;   0   &amp;   1   &amp;   1   &amp;   1   &amp;   -1
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-18">The left block is now <span class="process-math">\(I_3\text{,}\)</span> so the right block is <span class="process-math">\(A^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-19">
+\begin{equation*}
+A^{-1}
+=
+\begin{bmatrix}
+-2   &amp;   -1   &amp;   2\\
+2   &amp;   -1   &amp;   -1\\
+1   &amp;   1   &amp;   -1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-20">
+<em class="alert">Check your work.</em> A quick check confirms<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="inverse-3x3-example-21">
+\begin{equation*}
+AA^{-1}=I_3.
+\end{equation*}
+</div>
+<div class="para" id="inverse-3x3-example-22">Thus <span class="process-math">\(A\)</span> is invertible, and the computation is correct.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-3x3-example-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 28: Example: Finding the Inverse of a 3 × 3 Matrix"><a href="#inverse-3x3-example" title="Copy heading and permalink for Example 28: Example: Finding the Inverse of a 3 × 3 Matrix" aria-label="Copy heading and permalink for Example 28: Example: Finding the Inverse of a 3 × 3 Matrix">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Computing A^{-1} via Augmented Matrices"><a href="#inverse-augmented-matrices" title="Copy heading and permalink for Subsection: Computing A^{-1} via Augmented Matrices" aria-label="Copy heading and permalink for Subsection: Computing A^{-1} via Augmented Matrices">🔗</a></div></section><section class="subsection" id="determinants"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinants</span>
+</h3>
+<div class="para" id="determinants-2">
+<em class="alert">Concept.</em> The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales <em class="emphasis">area</em> (in <span class="process-math">\(\mathbb{R}^2\)</span>) or <em class="emphasis">volume</em> (in <span class="process-math">\(\mathbb{R}^3\)</span>). If <span class="process-math">\(\det(A)=0\text{,}\)</span> then <span class="process-math">\(A\)</span> flattens some dimension and is not invertible.<div class="autopermalink" data-description="Paragraph"><a href="#determinants-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsubsection" id="computing-determinants"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How to Compute Determinants</span>
+</h4>
+<div class="para" id="computing-determinants-2">
+<em class="alert">For <span class="process-math">\(2\times2\text{:}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-3">
+\begin{equation*}
+\det
+\begin{bmatrix}
+a  &amp;  b\\
+c  &amp;  d
+\end{bmatrix}
+=
+ad-bc.
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-4">
+<em class="alert">Cofactor expansion (Laplace).</em> For <span class="process-math">\(A=[a_{ij}]_{n\times n}\)</span> and <span class="process-math">\(n\ge 2\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-5">
+\begin{equation*}
+\det(A)
+=
+\sum_{j=1}^{n}
+(-1)^{1+j}
+a_{1j}\det(A_{1j}),
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-6">where <span class="process-math">\(A_{1j}\)</span> is the matrix obtained by deleting row <span class="process-math">\(1\)</span> and column <span class="process-math">\(j\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-determinants-7">
+<em class="alert">Cofactor expansion diagram (first row).</em><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/computing-determinants-8.svg" role="img" class="contained"></div>
+<details id="computing-determinants-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cofactor Expansion Example.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="computing-determinants-9-2">
+\begin{equation*}
+\det
+\begin{bmatrix}
+1 &amp; 3 &amp; 0\\
+5 &amp; 0 &amp; 2\\
+2 &amp; 1 &amp; 1
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-9-3">
+\begin{equation*}
+=
+1\cdot
+\det
+\begin{bmatrix}
+0 &amp; 2\\
+1 &amp; 1
+\end{bmatrix}
+-
+3\cdot
+\det
+\begin{bmatrix}
+5 &amp; 2\\
+2 &amp; 1
+\end{bmatrix}
++
+0\cdot(\cdots)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-9-4">
+\begin{equation*}
+=
+1(0\cdot1-2\cdot1)
+-
+3(5\cdot1-2\cdot2)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-9-5">
+\begin{equation*}
+=
+-2-3(1)
+=
+-5.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 29: Cofactor Expansion Example"><a href="#computing-determinants-9" title="Copy heading and permalink for Example 29: Cofactor Expansion Example" aria-label="Copy heading and permalink for Example 29: Cofactor Expansion Example">🔗</a></div></article></details><article class="theorem theorem-like" id="computing-determinants-10"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cofactor Expansion Along Any Row or Column.</span>
+</h5>
+<div class="para" id="computing-determinants-10-2">
+<em class="emphasis">Row expansion:</em> For any fixed row <span class="process-math">\(i\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-10-3">
+\begin{equation*}
+\det(A)
+=
+\sum_{j=1}^{n}
+a_{ij}C_{ij}.
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-10-4">
+<em class="emphasis">Column expansion:</em> For any fixed column <span class="process-math">\(j\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-10-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-10-5">
+\begin{equation*}
+\det(A)
+=
+\sum_{i=1}^{n}
+a_{ij}C_{ij}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Theorem 30: Cofactor Expansion Along Any Row or Column"><a href="#computing-determinants-10" title="Copy heading and permalink for Theorem 30: Cofactor Expansion Along Any Row or Column" aria-label="Copy heading and permalink for Theorem 30: Cofactor Expansion Along Any Row or Column">🔗</a></div></article><details id="computing-determinants-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinant of a 4 × 4 Matrix.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="computing-determinants-11-2">Find the determinant of<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-3">
+\begin{equation*}
+A=
+\begin{bmatrix}
+3  &amp;  7  &amp;  1  &amp;  1\\
+0  &amp;  2  &amp;  2  &amp;  2\\
+0  &amp;  0  &amp;  3  &amp;  2\\
+0  &amp;  0  &amp;  1  &amp;  1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-4">Using cofactor expansion along the first row:<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-5">
+\begin{equation*}
+\det(A)
+=
+3\det(A_{11})
+-
+7\det(A_{12})
++
+\det(A_{13})
+-
+\det(A_{14}).
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-6">Compute each cofactor.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-determinants-11-7">The submatrix <span class="process-math">\(A_{11}\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-8">
+\begin{equation*}
+\begin{bmatrix}
+2  &amp;  2  &amp;  2\\
+0  &amp;  3  &amp;  2\\
+0  &amp;  1  &amp;  1
+\end{bmatrix},
+\qquad
+C_{11}=(+1)\det(A_{11}).
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-9">The submatrix <span class="process-math">\(A_{12}\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-10">
+\begin{equation*}
+\begin{bmatrix}
+0  &amp;  2  &amp;  2\\
+0  &amp;  3  &amp;  2\\
+0  &amp;  1  &amp;  1
+\end{bmatrix},
+\qquad
+C_{12}=(-1)\det(A_{12}).
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-11">The submatrix <span class="process-math">\(A_{13}\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-12">
+\begin{equation*}
+\begin{bmatrix}
+0  &amp;  2  &amp;  2\\
+0  &amp;  0  &amp;  2\\
+0  &amp;  0  &amp;  1
+\end{bmatrix},
+\qquad
+C_{13}=(+1)\det(A_{13}).
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-13">The submatrix <span class="process-math">\(A_{14}\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-14">
+\begin{equation*}
+\begin{bmatrix}
+0  &amp;  2  &amp;  2\\
+0  &amp;  0  &amp;  3\\
+0  &amp;  0  &amp;  1
+\end{bmatrix},
+\qquad
+C_{14}=(-1)\det(A_{14}).
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-15">Now compute the determinants of the <span class="process-math">\(3\times3\)</span> matrices:<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-16">
+\begin{equation*}
+\det(A_{11})
+=
+2
+\det
+\begin{bmatrix}
+3  &amp;  2\\
+1  &amp;  1
+\end{bmatrix}
+-
+2
+\det
+\begin{bmatrix}
+0  &amp;  2\\
+0  &amp;  1
+\end{bmatrix}
++
+2
+\det
+\begin{bmatrix}
+0  &amp;  3\\
+0  &amp;  1
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-17">
+\begin{equation*}
+=
+2(3\cdot1-2\cdot1).
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-18">
+\begin{equation*}
+\det(A_{11})=2.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-19">
+\begin{equation*}
+\det(A_{12})
+=
+0\cdot
+\det
+\begin{bmatrix}
+3  &amp;  2\\
+1  &amp;  1
+\end{bmatrix}
+-
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  2\\
+0  &amp;  1
+\end{bmatrix}
++
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  3\\
+0  &amp;  1
+\end{bmatrix}
+=
+0.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-20">
+\begin{equation*}
+\det(A_{13})
+=
+0\cdot
+\det
+\begin{bmatrix}
+0  &amp;  2\\
+0  &amp;  1
+\end{bmatrix}
+-
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  2\\
+0  &amp;  1
+\end{bmatrix}
++
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  0\\
+0  &amp;  0
+\end{bmatrix}
+=
+0.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-21">
+\begin{equation*}
+\det(A_{14})
+=
+0\cdot
+\det
+\begin{bmatrix}
+0  &amp;  3\\
+0  &amp;  1
+\end{bmatrix}
+-
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  3\\
+0  &amp;  1
+\end{bmatrix}
++
+2\cdot
+\det
+\begin{bmatrix}
+0  &amp;  0\\
+0  &amp;  0
+\end{bmatrix}
+=
+0.
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-22">Thus the full cofactor expansion gives<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-23">
+\begin{equation*}
+\det(A)
+=
+3(2)-7(0)+1(0)-1(0)
+=
+6.
+\end{equation*}
+</div>
+<div class="para" id="computing-determinants-11-24">As an alternative, let us use the first column expansion:<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-11-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-25">
+\begin{equation*}
+\det(A)
+=
+\det
+\begin{bmatrix}
+3  &amp;  7  &amp;  1  &amp;  1\\
+0  &amp;  2  &amp;  2  &amp;  2\\
+0  &amp;  0  &amp;  3  &amp;  2\\
+0  &amp;  0  &amp;  1  &amp;  1
+\end{bmatrix}
+=
+3\det
+\begin{bmatrix}
+2  &amp;  2  &amp;  2\\
+0  &amp;  3  &amp;  2\\
+0  &amp;  1  &amp;  1
+\end{bmatrix}
++0+0+0
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="computing-determinants-11-26">
+\begin{equation*}
+=
+3\cdot2
+\det
+\begin{bmatrix}
+3  &amp;  2\\
+1  &amp;  1
+\end{bmatrix}
+=
+3\cdot2\cdot1
+=
+6.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 31: Determinant of a 4 × 4 Matrix"><a href="#computing-determinants-11" title="Copy heading and permalink for Example 31: Determinant of a 4 × 4 Matrix" aria-label="Copy heading and permalink for Example 31: Determinant of a 4 × 4 Matrix">🔗</a></div></article></details><div class="para" id="computing-determinants-12">
+<em class="alert">Row-operations and determinants.</em><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="computing-determinants-13">
+<li id="computing-determinants-13-1">
+<div class="para" id="p-derived-computing-determinants-13-1">Add a multiple of one row to another: the determinant is <em class="emphasis">unchanged</em>.</div>
+<div class="autopermalink" data-description="Item"><a href="#computing-determinants-13-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="computing-determinants-13-2">
+<div class="para" id="p-derived-computing-determinants-13-2">Swap two rows: the determinant changes sign.</div>
+<div class="autopermalink" data-description="Item"><a href="#computing-determinants-13-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="computing-determinants-13-3">
+<div class="para" id="p-derived-computing-determinants-13-3">Multiply a row by <span class="process-math">\(k\text{:}\)</span> the determinant is multiplied by <span class="process-math">\(k\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#computing-determinants-13-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="computing-determinants-14">
+<em class="alert">Row-operation diagrams (applied to a 2 × 2 matrix).</em><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-determinants-15">
+<em class="emphasis">Add a multiple of one row:</em> <span class="process-math">\(\mathrm{Row}_2\to\mathrm{Row}_2+k\mathrm{Row}_1\)</span> keeps the determinant unchanged.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-determinants-16">
+<em class="emphasis">Swap two rows:</em> the sign of the determinant flips.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-determinants-17">
+<em class="emphasis">Scale one row:</em> the determinant scales by the same factor.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: How to Compute Determinants"><a href="#computing-determinants" title="Copy heading and permalink for Subsubsection: How to Compute Determinants" aria-label="Copy heading and permalink for Subsubsection: How to Compute Determinants">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Determinants"><a href="#determinants" title="Copy heading and permalink for Subsection: Determinants" aria-label="Copy heading and permalink for Subsection: Determinants">🔗</a></div></section><section class="subsection" id="determinant-invertibility-rules"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span>
+</h3>
+<div class="para" id="determinant-invertibility-rules-2">
+<em class="alert">Invertibility test.</em> A square matrix <span class="process-math">\(A\)</span> is invertible if and only if <span class="process-math">\(\det(A)\neq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#determinant-invertibility-rules-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="determinant-invertibility-rules-3">
+<em class="alert">Useful properties.</em><div class="autopermalink" data-description="Paragraph"><a href="#determinant-invertibility-rules-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="determinant-invertibility-rules-4">
+<li id="determinant-invertibility-rules-4-1">
+<div class="para" id="p-derived-determinant-invertibility-rules-4-1"><span class="process-math">\(\det(A^\top)=\det(A)\text{.}\)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#determinant-invertibility-rules-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="determinant-invertibility-rules-4-2">
+<div class="para" id="p-derived-determinant-invertibility-rules-4-2">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are <span class="process-math">\(n\times n\)</span> matrices, then <span class="process-math">\(\det(AB)=\det(A)\det(B)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#determinant-invertibility-rules-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="determinant-invertibility-rules-4-3">
+<div class="para" id="p-derived-determinant-invertibility-rules-4-3">If <span class="process-math">\(A\)</span> is invertible, then <span class="process-math">\(\det(A^{-1})=\dfrac{1}{\det(A)}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#determinant-invertibility-rules-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="determinant-invertibility-rules-4-4">
+<div class="para" id="p-derived-determinant-invertibility-rules-4-4">If <span class="process-math">\(A\)</span> is triangular, then <span class="process-math">\(\det(A)\)</span> is the product of its diagonal entries.</div>
+<div class="autopermalink" data-description="Item"><a href="#determinant-invertibility-rules-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Determinant and Invertibility  and  Product/Inverse Rules"><a href="#determinant-invertibility-rules" title="Copy heading and permalink for Subsection: Determinant and Invertibility  and  Product/Inverse Rules" aria-label="Copy heading and permalink for Subsection: Determinant and Invertibility  and  Product/Inverse Rules">🔗</a></div></section><section class="subsection" id="inverse-matrix-theorem"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Characterization of Invertible Matrices (Equivalences)</span>
+</h3>
+<div class="para" id="inverse-matrix-theorem-2">For an <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(A\text{,}\)</span> the following twelve statements are all <em class="alert">equivalent</em>. This collection is sometimes called the <em class="emphasis">Inverse Matrix Theorem</em>. Any one of these being true guarantees all the others.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-matrix-theorem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal ol-marker-1" id="inverse-matrix-theorem-3">
+<li id="inverse-matrix-theorem-3-1">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-1">
+<span class="process-math">\(A\)</span> is invertible.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#inverse-matrix-theorem-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-2">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-2">
+<span class="process-math">\(A\)</span> is row equivalent to the identity matrix <span class="process-math">\(I_n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#inverse-matrix-theorem-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-3">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-3">
+<span class="process-math">\(A\)</span> has <span class="process-math">\(n\)</span> pivot positions (one in each row and each column).</div>
+<div class="autopermalink" data-description="Item 3"><a href="#inverse-matrix-theorem-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-4">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-4">The equation <span class="process-math">\(A\mathbf{x}=\mathbf{0}\)</span> has only the trivial solution <span class="process-math">\(\mathbf{x}=\mathbf{0}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#inverse-matrix-theorem-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-5">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-5">The columns of <span class="process-math">\(A\)</span> are linearly independent.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#inverse-matrix-theorem-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-6">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-6">The linear transformation <span class="process-math">\(T(\mathbf{x})=A\mathbf{x}\)</span> is one-to-one.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#inverse-matrix-theorem-3-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-7">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-7">The equation <span class="process-math">\(A\mathbf{x}=\mathbf{b}\)</span> has at least one solution for every <span class="process-math">\(\mathbf{b}\in\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#inverse-matrix-theorem-3-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-8">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-8">The columns of <span class="process-math">\(A\)</span> span <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#inverse-matrix-theorem-3-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-9">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-9">The linear transformation <span class="process-math">\(T(\mathbf{x})=A\mathbf{x}\)</span> maps <span class="process-math">\(\mathbb{R}^n\)</span> onto <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#inverse-matrix-theorem-3-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-10">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-10">There exists a matrix <span class="process-math">\(C\)</span> such that <span class="process-math">\(CA=I_n\)</span> (that is, <span class="process-math">\(A\)</span> has a left inverse).</div>
+<div class="autopermalink" data-description="Item 10"><a href="#inverse-matrix-theorem-3-10" title="Copy heading and permalink for Item 10" aria-label="Copy heading and permalink for Item 10">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-11">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-11">There exists a matrix <span class="process-math">\(D\)</span> such that <span class="process-math">\(AD=I_n\)</span> (that is, <span class="process-math">\(A\)</span> has a right inverse).</div>
+<div class="autopermalink" data-description="Item 11"><a href="#inverse-matrix-theorem-3-11" title="Copy heading and permalink for Item 11" aria-label="Copy heading and permalink for Item 11">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-3-12">
+<div class="para" id="p-derived-inverse-matrix-theorem-3-12">
+<span class="process-math">\(A^\top\)</span> is invertible.</div>
+<div class="autopermalink" data-description="Item 12"><a href="#inverse-matrix-theorem-3-12" title="Copy heading and permalink for Item 12" aria-label="Copy heading and permalink for Item 12">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="inverse-matrix-theorem-4">
+<em class="alert">Interpretation.</em> These twelve statements connect algebra, geometry, and linear transformations:<div class="autopermalink" data-description="Paragraph"><a href="#inverse-matrix-theorem-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="inverse-matrix-theorem-5">
+<li id="inverse-matrix-theorem-5-1">
+<div class="para" id="p-derived-inverse-matrix-theorem-5-1">(1)–(3) are row-operation and pivot statements.</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-matrix-theorem-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-5-2">
+<div class="para" id="p-derived-inverse-matrix-theorem-5-2">(4)–(6) relate to one-to-one behavior.</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-matrix-theorem-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-5-3">
+<div class="para" id="p-derived-inverse-matrix-theorem-5-3">(7)–(9) relate to onto behavior and existence of solutions.</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-matrix-theorem-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-matrix-theorem-5-4">
+<div class="para" id="p-derived-inverse-matrix-theorem-5-4">(10)–(12) describe left and right inverses and invertibility of the transpose.</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-matrix-theorem-5-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="inverse-matrix-theorem-6">Together, they provide many equivalent ways to detect invertibility.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-matrix-theorem-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Characterization of Invertible Matrices (Equivalences)"><a href="#inverse-matrix-theorem" title="Copy heading and permalink for Subsection: Characterization of Invertible Matrices (Equivalences)" aria-label="Copy heading and permalink for Subsection: Characterization of Invertible Matrices (Equivalences)">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 2: Determinants; inverses; rank"><a href="#notes-week-02" title="Copy heading and permalink for Section: Week 2: Determinants; inverses; rank" aria-label="Copy heading and permalink for Section: Week 2: Determinants; inverses; rank">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="notes-week-01.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-03.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

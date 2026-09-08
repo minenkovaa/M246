@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -240,8 +241,23 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2: Determinants; inverses; rank</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -343,6 +359,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="inverse-activity2.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -351,6 +368,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Review</span></a></div></li>
 <li class="toc-item toc-handout active"><div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -394,7 +412,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Activity 1</span><div class="print-links"><a href="?printpreview=handouts-3" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <details id="handouts-3-2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Addition.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Addition.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-3-2-2">Given<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="handouts-3-2-3">
@@ -408,27 +426,27 @@ B=\begin{bmatrix} 5 &amp; 0 \\ 1 &amp; 2 \end{bmatrix}
 <li id="handouts-3-2-4-1">
 <div class="para" id="handouts-3-2-4-1-1">Compute <span class="process-math">\(A+B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 25.a"><a href="#handouts-3-2-4-1" title="Copy heading and permalink for Item 25.a" aria-label="Copy heading and permalink for Item 25.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 36.a"><a href="#handouts-3-2-4-1" title="Copy heading and permalink for Item 36.a" aria-label="Copy heading and permalink for Item 36.a">🔗</a></div>
 </li>
 <li id="handouts-3-2-4-2">
 <div class="para" id="handouts-3-2-4-2-1">Verify whether <span class="process-math">\(A+B=B+A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 25.b"><a href="#handouts-3-2-4-2" title="Copy heading and permalink for Item 25.b" aria-label="Copy heading and permalink for Item 25.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 36.b"><a href="#handouts-3-2-4-2" title="Copy heading and permalink for Item 36.b" aria-label="Copy heading and permalink for Item 36.b">🔗</a></div>
 </li>
 <li id="handouts-3-2-4-3">
 <div class="para" id="handouts-3-2-4-3-1">What property does this illustrate?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 25.c"><a href="#handouts-3-2-4-3" title="Copy heading and permalink for Item 25.c" aria-label="Copy heading and permalink for Item 25.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 36.c"><a href="#handouts-3-2-4-3" title="Copy heading and permalink for Item 36.c" aria-label="Copy heading and permalink for Item 36.c">🔗</a></div>
 </li>
 <li id="handouts-3-2-4-4">
 <div class="para" id="handouts-3-2-4-4-1">Explain why matrices must have the same dimensions to be added.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-2-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 25.d"><a href="#handouts-3-2-4-4" title="Copy heading and permalink for Item 25.d" aria-label="Copy heading and permalink for Item 25.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 36.d"><a href="#handouts-3-2-4-4" title="Copy heading and permalink for Item 36.d" aria-label="Copy heading and permalink for Item 36.d">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Checkpoint 25: Matrix Addition"><a href="#handouts-3-2" title="Copy heading and permalink for Checkpoint 25: Matrix Addition" aria-label="Copy heading and permalink for Checkpoint 25: Matrix Addition">🔗</a></div></article></details><details id="handouts-3-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Subtraction.</span>
+<div class="autopermalink" data-description="Checkpoint 36: Matrix Addition"><a href="#handouts-3-2" title="Copy heading and permalink for Checkpoint 36: Matrix Addition" aria-label="Copy heading and permalink for Checkpoint 36: Matrix Addition">🔗</a></div></article></details><details id="handouts-3-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Subtraction.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-3-3-2">Given<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="handouts-3-3-3">
@@ -442,27 +460,27 @@ B=\begin{bmatrix} 4 &amp; 1 \\ 5 &amp; 2 \end{bmatrix}
 <li id="handouts-3-3-4-1">
 <div class="para" id="handouts-3-3-4-1-1">Find <span class="process-math">\(A-B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 26.a"><a href="#handouts-3-3-4-1" title="Copy heading and permalink for Item 26.a" aria-label="Copy heading and permalink for Item 26.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 37.a"><a href="#handouts-3-3-4-1" title="Copy heading and permalink for Item 37.a" aria-label="Copy heading and permalink for Item 37.a">🔗</a></div>
 </li>
 <li id="handouts-3-3-4-2">
 <div class="para" id="handouts-3-3-4-2-1">Find <span class="process-math">\(B-A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 26.b"><a href="#handouts-3-3-4-2" title="Copy heading and permalink for Item 26.b" aria-label="Copy heading and permalink for Item 26.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 37.b"><a href="#handouts-3-3-4-2" title="Copy heading and permalink for Item 37.b" aria-label="Copy heading and permalink for Item 37.b">🔗</a></div>
 </li>
 <li id="handouts-3-3-4-3">
 <div class="para" id="handouts-3-3-4-3-1">Compare the results.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 26.c"><a href="#handouts-3-3-4-3" title="Copy heading and permalink for Item 26.c" aria-label="Copy heading and permalink for Item 26.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 37.c"><a href="#handouts-3-3-4-3" title="Copy heading and permalink for Item 37.c" aria-label="Copy heading and permalink for Item 37.c">🔗</a></div>
 </li>
 <li id="handouts-3-3-4-4">
 <div class="para" id="handouts-3-3-4-4-1">Is matrix subtraction commutative? Explain using your results.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-3-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 26.d"><a href="#handouts-3-3-4-4" title="Copy heading and permalink for Item 26.d" aria-label="Copy heading and permalink for Item 26.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 37.d"><a href="#handouts-3-3-4-4" title="Copy heading and permalink for Item 37.d" aria-label="Copy heading and permalink for Item 37.d">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Checkpoint 26: Matrix Subtraction"><a href="#handouts-3-3" title="Copy heading and permalink for Checkpoint 26: Matrix Subtraction" aria-label="Copy heading and permalink for Checkpoint 26: Matrix Subtraction">🔗</a></div></article></details><details id="handouts-3-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scalar Multiplication.</span>
+<div class="autopermalink" data-description="Checkpoint 37: Matrix Subtraction"><a href="#handouts-3-3" title="Copy heading and permalink for Checkpoint 37: Matrix Subtraction" aria-label="Copy heading and permalink for Checkpoint 37: Matrix Subtraction">🔗</a></div></article></details><details id="handouts-3-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scalar Multiplication.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-3-4-2">Given<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="handouts-3-4-3">
@@ -474,27 +492,27 @@ C=\begin{bmatrix} 2 &amp; -1 \\ 4 &amp; 3 \end{bmatrix}
 <li id="handouts-3-4-4-1">
 <div class="para" id="handouts-3-4-4-1-1">Calculate <span class="process-math">\(3C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 27.a"><a href="#handouts-3-4-4-1" title="Copy heading and permalink for Item 27.a" aria-label="Copy heading and permalink for Item 27.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 38.a"><a href="#handouts-3-4-4-1" title="Copy heading and permalink for Item 38.a" aria-label="Copy heading and permalink for Item 38.a">🔗</a></div>
 </li>
 <li id="handouts-3-4-4-2">
 <div class="para" id="handouts-3-4-4-2-1">Calculate <span class="process-math">\(-2C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 27.b"><a href="#handouts-3-4-4-2" title="Copy heading and permalink for Item 27.b" aria-label="Copy heading and permalink for Item 27.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 38.b"><a href="#handouts-3-4-4-2" title="Copy heading and permalink for Item 38.b" aria-label="Copy heading and permalink for Item 38.b">🔗</a></div>
 </li>
 <li id="handouts-3-4-4-3">
 <div class="para" id="handouts-3-4-4-3-1">Describe what happens to each matrix entry during scalar multiplication.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 27.c"><a href="#handouts-3-4-4-3" title="Copy heading and permalink for Item 27.c" aria-label="Copy heading and permalink for Item 27.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 38.c"><a href="#handouts-3-4-4-3" title="Copy heading and permalink for Item 38.c" aria-label="Copy heading and permalink for Item 38.c">🔗</a></div>
 </li>
 <li id="handouts-3-4-4-4">
 <div class="para" id="handouts-3-4-4-4-1">How does scalar multiplication affect the values in a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-4-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 27.d"><a href="#handouts-3-4-4-4" title="Copy heading and permalink for Item 27.d" aria-label="Copy heading and permalink for Item 27.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 38.d"><a href="#handouts-3-4-4-4" title="Copy heading and permalink for Item 38.d" aria-label="Copy heading and permalink for Item 38.d">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Checkpoint 27: Scalar Multiplication"><a href="#handouts-3-4" title="Copy heading and permalink for Checkpoint 27: Scalar Multiplication" aria-label="Copy heading and permalink for Checkpoint 27: Scalar Multiplication">🔗</a></div></article></details><details id="handouts-3-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identity Matrix.</span>
+<div class="autopermalink" data-description="Checkpoint 38: Scalar Multiplication"><a href="#handouts-3-4" title="Copy heading and permalink for Checkpoint 38: Scalar Multiplication" aria-label="Copy heading and permalink for Checkpoint 38: Scalar Multiplication">🔗</a></div></article></details><details id="handouts-3-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Identity Matrix.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-3-5-2">Given<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="handouts-3-5-3">
@@ -508,27 +526,27 @@ I=\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}
 <li id="handouts-3-5-4-1">
 <div class="para" id="handouts-3-5-4-1-1">Compute <span class="process-math">\(AI\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 28.a"><a href="#handouts-3-5-4-1" title="Copy heading and permalink for Item 28.a" aria-label="Copy heading and permalink for Item 28.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 39.a"><a href="#handouts-3-5-4-1" title="Copy heading and permalink for Item 39.a" aria-label="Copy heading and permalink for Item 39.a">🔗</a></div>
 </li>
 <li id="handouts-3-5-4-2">
 <div class="para" id="handouts-3-5-4-2-1">Compute <span class="process-math">\(IA\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 28.b"><a href="#handouts-3-5-4-2" title="Copy heading and permalink for Item 28.b" aria-label="Copy heading and permalink for Item 28.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 39.b"><a href="#handouts-3-5-4-2" title="Copy heading and permalink for Item 39.b" aria-label="Copy heading and permalink for Item 39.b">🔗</a></div>
 </li>
 <li id="handouts-3-5-4-3">
 <div class="para" id="handouts-3-5-4-3-1">Compare each result with matrix <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 28.c"><a href="#handouts-3-5-4-3" title="Copy heading and permalink for Item 28.c" aria-label="Copy heading and permalink for Item 28.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 39.c"><a href="#handouts-3-5-4-3" title="Copy heading and permalink for Item 39.c" aria-label="Copy heading and permalink for Item 39.c">🔗</a></div>
 </li>
 <li id="handouts-3-5-4-4">
 <div class="para" id="handouts-3-5-4-4-1">Why is the identity matrix called the multiplicative identity?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-5-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 28.d"><a href="#handouts-3-5-4-4" title="Copy heading and permalink for Item 28.d" aria-label="Copy heading and permalink for Item 28.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 39.d"><a href="#handouts-3-5-4-4" title="Copy heading and permalink for Item 39.d" aria-label="Copy heading and permalink for Item 39.d">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Checkpoint 28: Identity Matrix"><a href="#handouts-3-5" title="Copy heading and permalink for Checkpoint 28: Identity Matrix" aria-label="Copy heading and permalink for Checkpoint 28: Identity Matrix">🔗</a></div></article></details><details id="handouts-3-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Zero Matrix.</span>
+<div class="autopermalink" data-description="Checkpoint 39: Identity Matrix"><a href="#handouts-3-5" title="Copy heading and permalink for Checkpoint 39: Identity Matrix" aria-label="Copy heading and permalink for Checkpoint 39: Identity Matrix">🔗</a></div></article></details><details id="handouts-3-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Zero Matrix.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-3-6-2">Given<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="handouts-3-6-3">
@@ -542,26 +560,26 @@ O=\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}
 <li id="handouts-3-6-4-1">
 <div class="para" id="handouts-3-6-4-1-1">Compute <span class="process-math">\(A+O\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 29.a"><a href="#handouts-3-6-4-1" title="Copy heading and permalink for Item 29.a" aria-label="Copy heading and permalink for Item 29.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 40.a"><a href="#handouts-3-6-4-1" title="Copy heading and permalink for Item 40.a" aria-label="Copy heading and permalink for Item 40.a">🔗</a></div>
 </li>
 <li id="handouts-3-6-4-2">
 <div class="para" id="handouts-3-6-4-2-1">Compute <span class="process-math">\(A-O\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 29.b"><a href="#handouts-3-6-4-2" title="Copy heading and permalink for Item 29.b" aria-label="Copy heading and permalink for Item 29.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 40.b"><a href="#handouts-3-6-4-2" title="Copy heading and permalink for Item 40.b" aria-label="Copy heading and permalink for Item 40.b">🔗</a></div>
 </li>
 <li id="handouts-3-6-4-3">
 <div class="para" id="handouts-3-6-4-3-1">Compute <span class="process-math">\(AO\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 29.c"><a href="#handouts-3-6-4-3" title="Copy heading and permalink for Item 29.c" aria-label="Copy heading and permalink for Item 29.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 40.c"><a href="#handouts-3-6-4-3" title="Copy heading and permalink for Item 40.c" aria-label="Copy heading and permalink for Item 40.c">🔗</a></div>
 </li>
 <li id="handouts-3-6-4-4">
 <div class="para" id="handouts-3-6-4-4-1">Compare the role of the zero in numbers and matrices.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-3-6-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 29.d"><a href="#handouts-3-6-4-4" title="Copy heading and permalink for Item 29.d" aria-label="Copy heading and permalink for Item 29.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 40.d"><a href="#handouts-3-6-4-4" title="Copy heading and permalink for Item 40.d" aria-label="Copy heading and permalink for Item 40.d">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="1in"></div>
-<div class="autopermalink" data-description="Checkpoint 29: Zero Matrix"><a href="#handouts-3-6" title="Copy heading and permalink for Checkpoint 29: Zero Matrix" aria-label="Copy heading and permalink for Checkpoint 29: Zero Matrix">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Matrix Activity 1"><a href="#handouts-3" title="Copy heading and permalink for Handout: Matrix Activity 1" aria-label="Copy heading and permalink for Handout: Matrix Activity 1">🔗</a></div></section>
+<div class="autopermalink" data-description="Checkpoint 40: Zero Matrix"><a href="#handouts-3-6" title="Copy heading and permalink for Checkpoint 40: Zero Matrix" aria-label="Copy heading and permalink for Checkpoint 40: Zero Matrix">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Matrix Activity 1"><a href="#handouts-3" title="Copy heading and permalink for Handout: Matrix Activity 1" aria-label="Copy heading and permalink for Handout: Matrix Activity 1">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="handouts-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

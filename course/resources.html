@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -240,8 +241,23 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2: Determinants; inverses; rank</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -343,6 +359,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="inverse-activity2.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -351,6 +368,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Review</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -371,10 +389,10 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="resources-2"><div class="para" id="resources-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#resources-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div></section><section class="subsection" id="morereadings"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Key Open Educational Resources</span>
 </h3>
-<figure class="list table-like" id="oer-list2"><figcaption><span class="type">List</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Recommended additional readings<div class="autopermalink" data-description="List 35: Recommended additional readings"><a href="#oer-list2" title="Copy heading and permalink for List 35: Recommended additional readings" aria-label="Copy heading and permalink for List 35: Recommended additional readings">🔗</a></div></figcaption><div class="named-list-content"><ul class="disc" id="oer-list2-2">
+<figure class="list table-like" id="oer-list2"><figcaption><span class="type">List</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Recommended additional readings<div class="autopermalink" data-description="List 51: Recommended additional readings"><a href="#oer-list2" title="Copy heading and permalink for List 51: Recommended additional readings" aria-label="Copy heading and permalink for List 51: Recommended additional readings">🔗</a></div></figcaption><div class="named-list-content"><ul class="disc" id="oer-list2-2">
 <li id="oer-list2-2-1">
 <div class="para" id="p-derived-oer-list2-2-1">
-<em class="emphasis">Applied Linear Algebra and Differential Equations</em>, LibreTexts: <a class="external" href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)" target="_blank">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)</a>
+<em class="emphasis">Applied Linear Algebra and Differential Equations</em>, LibreTexts: <a class="external" href="https://math.libretexts.org/Bookshelves/Differential_Equations/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)" target="_blank">https://math.libretexts.org/Bookshelves/Differential_Equations/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)</a>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#oer-list2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -392,7 +410,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li id="oer-list2-2-4">
 <div class="para" id="p-derived-oer-list2-2-4">
-<em class="emphasis">Numerical Methods with Applications</em>, Engineering LibreTexts: <a class="external" href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)" target="_blank">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)</a>
+<em class="emphasis">Numerical Methods with Applications</em>, Engineering LibreTexts: <a class="external" href="https://math.libretexts.org/Workbench/Numerical_Methods_with_Applications_(Kaw)" target="_blank">https://math.libretexts.org/Workbench/Numerical_Methods_with_Applications_(Kaw)</a>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#oer-list2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>

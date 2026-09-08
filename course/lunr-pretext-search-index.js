@@ -259,7 +259,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 2: Determinants; inverses; rank",
-  "body": " Week 2: Determinants; inverses; rank   Tuesday  Determinants and their properties.    Thursday  Inverses and rank.   "
+  "body": " Week 2: Determinants; inverses; rank   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.     Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).       Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.   Swap two rows: the sign of the determinant flips.   Scale one row: the determinant scales by the same factor.     Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
+},
+{
+  "id": "invertibility-2",
+  "level": "2",
+  "url": "notes-week-02.html#invertibility-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "invertible nonsingular "
+},
+{
+  "id": "invertibility-4",
+  "level": "2",
+  "url": "notes-week-02.html#invertibility-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "singular "
+},
+{
+  "id": "invertibility-5",
+  "level": "2",
+  "url": "notes-week-02.html#invertibility-5",
+  "type": "Example",
+  "number": "22",
+  "title": "The 2 × 2 Case.",
+  "body": " The 2 × 2 Case  If   and , then   "
+},
+{
+  "id": "invertibility-6",
+  "level": "2",
+  "url": "notes-week-02.html#invertibility-6",
+  "type": "Example",
+  "number": "23",
+  "title": "Finding an Inverse.",
+  "body": " Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives    "
+},
+{
+  "id": "inverse-of-inverse-2",
+  "level": "2",
+  "url": "notes-week-02.html#inverse-of-inverse-2",
+  "type": "Theorem",
+  "number": "24",
+  "title": "",
+  "body": "  If is invertible, then     Since   the matrix acts as the inverse of . Hence    "
+},
+{
+  "id": "inverse-product-2",
+  "level": "2",
+  "url": "notes-week-02.html#inverse-product-2",
+  "type": "Theorem",
+  "number": "25",
+  "title": "",
+  "body": "       Therefore    "
+},
+{
+  "id": "rref-2",
+  "level": "2",
+  "url": "notes-week-02.html#rref-2",
+  "type": "Definition",
+  "number": "26",
+  "title": "",
+  "body": "  A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.    "
+},
+{
+  "id": "rref-3",
+  "level": "2",
+  "url": "notes-week-02.html#rref-3",
+  "type": "Theorem",
+  "number": "27",
+  "title": "",
+  "body": "  Every matrix is row-equivalent to exactly one RREF.   "
+},
+{
+  "id": "inverse-3x3-example",
+  "level": "2",
+  "url": "notes-week-02.html#inverse-3x3-example",
+  "type": "Example",
+  "number": "28",
+  "title": "Example: Finding the Inverse of a 3 × 3 Matrix.",
+  "body": " Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.  "
+},
+{
+  "id": "computing-determinants-9",
+  "level": "2",
+  "url": "notes-week-02.html#computing-determinants-9",
+  "type": "Example",
+  "number": "29",
+  "title": "Cofactor Expansion Example.",
+  "body": " Cofactor Expansion Example      "
+},
+{
+  "id": "computing-determinants-10",
+  "level": "2",
+  "url": "notes-week-02.html#computing-determinants-10",
+  "type": "Theorem",
+  "number": "30",
+  "title": "Cofactor Expansion Along Any Row or Column.",
+  "body": " Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,   "
+},
+{
+  "id": "computing-determinants-11",
+  "level": "2",
+  "url": "notes-week-02.html#computing-determinants-11",
+  "type": "Example",
+  "number": "31",
+  "title": "Determinant of a 4 × 4 Matrix.",
+  "body": " Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:   "
 },
 {
   "id": "notes-week-03",
@@ -392,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "22",
+  "number": "32",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -455,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "23",
+  "number": "33",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -518,7 +626,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "24",
+  "number": "34",
+  "title": "Steps of Gallery Walk:",
+  "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
+},
+{
+  "id": "inverse-activity2",
+  "level": "1",
+  "url": "inverse-activity2.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Inverse Matrix Activity",
+  "body": " Inverse Matrix Activity    We are setting up our routine:    1. Think-pair-share  What does inverse mean for numbers?    How do you think division works for matrices? What potential issues you might think of?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
+},
+{
+  "id": "inverse-activity2-3",
+  "level": "2",
+  "url": "inverse-activity2.html#inverse-activity2-3",
+  "type": "List",
+  "number": "35",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -545,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "25",
+  "number": "36",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -554,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "26",
+  "number": "37",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -563,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "27",
+  "number": "38",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -572,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "28",
+  "number": "39",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -581,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "29",
+  "number": "40",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -599,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "30",
+  "number": "41",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -608,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "31",
+  "number": "42",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -617,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "32",
+  "number": "43",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -626,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "33",
+  "number": "44",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -635,9 +761,63 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "34",
+  "number": "45",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
+},
+{
+  "id": "handouts-5",
+  "level": "1",
+  "url": "handouts-5.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Inverse Matrix Activity",
+  "body": " Inverse Matrix Activity     Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?     Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?     Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.     Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.     Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.    "
+},
+{
+  "id": "handouts-5-2",
+  "level": "2",
+  "url": "handouts-5.html#handouts-5-2",
+  "type": "Checkpoint",
+  "number": "46",
+  "title": "Find the Inverse.",
+  "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
+},
+{
+  "id": "handouts-5-3",
+  "level": "2",
+  "url": "handouts-5.html#handouts-5-3",
+  "type": "Checkpoint",
+  "number": "47",
+  "title": "Verify the Inverse.",
+  "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
+},
+{
+  "id": "handouts-5-4",
+  "level": "2",
+  "url": "handouts-5.html#handouts-5-4",
+  "type": "Checkpoint",
+  "number": "48",
+  "title": "Error Analysis.",
+  "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
+},
+{
+  "id": "handouts-5-5",
+  "level": "2",
+  "url": "handouts-5.html#handouts-5-5",
+  "type": "Checkpoint",
+  "number": "49",
+  "title": "Solve a Matrix Equation.",
+  "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
+},
+{
+  "id": "handouts-5-6",
+  "level": "2",
+  "url": "handouts-5.html#handouts-5-6",
+  "type": "Checkpoint",
+  "number": "50",
+  "title": "Solve a Matrix Equation.",
+  "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
 {
   "id": "homework-2",
@@ -700,16 +880,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Resources used in compiling this course",
-  "body": " Resources used in compiling this course        Key Open Educational Resources   Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)      "
+  "body": " Resources used in compiling this course        Key Open Educational Resources   Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)      "
 },
 {
   "id": "oer-list2",
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "35",
+  "number": "51",
   "title": "Recommended additional readings",
-  "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
+  "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
 ]
 
