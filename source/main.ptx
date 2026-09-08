@@ -69,6 +69,7 @@
 
       <xi:include href="./activities/matrix-activity1.ptx"/>
       <xi:include href="./activities/matrix-activity2.ptx"/>
+      <xi:include href="./activities/inverse-activity.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -79,6 +80,7 @@
       <xi:include href="./handouts/handout-template.ptx"/>
       <xi:include href="./handouts/matrix-handout1.ptx"/>
       <xi:include href="./handouts/matrix-handout2.ptx"/>
+      <xi:include href="./handouts/inverse-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

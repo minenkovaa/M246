@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Inverse Matrix Activity</title>
+
+  <!-- Optional introduction -->
+
+  <!-- Exercises start here. -->
+<exercise workspace="2in">
+    <title>Find the Inverse</title>
+
+    <p>
+
+            <me>
+                \begin{bmatrix}
+                1 &amp; 1 \\
+                4 &amp; 4
+                \end{bmatrix}\quad
+                \begin{bmatrix}
+                2 &amp; 1 \\
+                5 &amp; 3
+                \end{bmatrix}
+         \quad
+                \begin{bmatrix}
+                1 &amp; 3\\
+                1 &amp; 3
+                \end{bmatrix}
+          </me><me>
+                \begin{bmatrix}
+                4 &amp; -2 \\
+                1 &amp; 3
+                \end{bmatrix}
+        \quad
+                \begin{bmatrix}
+                1&amp; 2 \\
+                2 &amp; 4
+                \end{bmatrix}
+        
+    </me></p>
+<ol>
+        <li>Compute the inverses if possible.</li>
+        <li>How can you tell whether a <m>2\times2</m> matrix has no inverse?</li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2in">
+    <title>Verify the Inverse</title>
+    <p>
+        <m>
+        A=
+        \begin{bmatrix}
+        2 &amp; 1\\
+        3 &amp; 2
+        \end{bmatrix}
+        \qquad
+        B=
+        \begin{bmatrix}
+        2 &amp; -1\\
+        -3 &amp; 2
+        \end{bmatrix}
+        </m>
+    </p>
+  <ol>
+        <li>Compute <m>A\cdot B</m></li>
+        <li>Compute <m>B\cdot A</m></li>
+        <li>If two matrices are inverses, what should their product be?</li>
+</ol>
+
+
+</exercise>
+
+<exercise workspace="2in">
+    <title>Error Analysis</title>
+
+    <p>A student found the inverse below.</p>
+
+    <p>
+        Original matrix:
+        <m>
+        \begin{bmatrix}
+        3 &amp; 1\\
+        2 &amp; 5
+        \end{bmatrix}
+        </m>
+    </p>
+
+    <p>
+        Student's work:
+        <m>
+        A^{-1}=
+        \frac{1}{13}
+        \begin{bmatrix}
+        5 &amp; 1\\
+        2 &amp; 3
+        \end{bmatrix}
+        </m>
+    </p>
+
+    <ol>
+        <li>Identify the mistake(s).</li>
+        <li>Find the correct inverse.</li>
+        <li>Explain the correct procedure for finding the inverse of a <m>2\times2</m> matrix.</li>
+    </ol>
+
+</exercise>
+
+<exercise workspace="2in">
+    <title> Solve a Matrix Equation</title>
+
+    <p>Use inverse matrices to solve for <m>X</m>.</p>
+
+    <p>
+        <m>
+        \begin{bmatrix}
+        2 &amp; 1\\
+        1 &amp; 1
+        \end{bmatrix}
+        X
+        =
+        \begin{bmatrix}
+        7 &amp;1\\
+        4 &amp;1
+        \end{bmatrix}
+        </m>
+    </p>
+
+    <ol>
+        <li>Find the inverse of the coefficient matrix.</li>
+        <li>Multiply both sides by the inverse(from left or right?).</li>
+        <li>State the solution matrix.</li>
+    </ol>
+</exercise>
+
+<exercise>
+    <title> Solve a Matrix Equation</title>
+
+    <p>Use inverse matrices to solve for <m>X</m>.</p>
+
+    <p>
+        <me>
+        \begin{bmatrix}
+        3 &amp; 2\\
+        1 &amp; 4
+        \end{bmatrix}
+             \begin{bmatrix}
+        x\\
+        y
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+        16\\
+        18
+        \end{bmatrix}
+        </me>
+        Where:
+
+x = number of Product A sold
+y = number of Product B sold
+    </p>
+
+    <ol>
+        <li>Use an inverse matrix to solve for x and y.</li><li>
+Interpret your answer in context.</li><li>
+Explain why an inverse matrix method might not work.</li>
+    </ol>
+
+    </exercise>
+</handout>

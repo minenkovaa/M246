@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="matrix-activity2">
-  <title>Matrix Activity 1</title>
+<worksheet xml:id="inverse-activity2">
+  <title>Inverse Matrix Activity</title>
 
   <!-- Optional introduction -->
   <introduction>
@@ -13,19 +13,16 @@
     <tabular>
       <row>
         <cell>1. Think-pair-share</cell>
-        <cell>What does multiplication by given matrices do to the picture? </cell></row>
+        <cell>What does inverse mean for numbers?</cell></row>  <row>
+        <cell></cell>
+       <cell> How do you think division works for matrices? What potential issues you might think of? </cell></row>
          <row>
         <cell>2. Gallery Walk:</cell>
         <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
       </row>
     </tabular>
   </introduction>
-  <p>
-    <alert>Matrix Transformations</alert>
 
-    <interactive geogebra="csevq2at" width="75%"
-    height="75%"/>
-    </p>
   <list>
   <title> Steps of Gallery Walk:</title>
 <ul>
