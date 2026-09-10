@@ -369,11 +369,15 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-6.html" class="internal"><span class="title">Determinants Activity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 01</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 02</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="Resources.html" class="internal"><span class="title">Resources Used in Preparation of This Course</span></a></div>
@@ -1154,14 +1158,35 @@ C_{14}=(-1)\det(A_{14}).
 <div class="para" id="computing-determinants-14">
 <em class="alert">Row-operation diagrams (applied to a 2 × 2 matrix).</em><div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="computing-determinants-15">
-<em class="emphasis">Add a multiple of one row:</em> <span class="process-math">\(\mathrm{Row}_2\to\mathrm{Row}_2+k\mathrm{Row}_1\)</span> keeps the determinant unchanged.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="computing-determinants-15">
+<div class="para">
+<em class="emphasis">Add a multiple of one row:</em> <span class="process-math">\(\mathrm{Row}_2\to\mathrm{Row}_2+k\mathrm{Row}_1\)</span> keeps the determinant unchanged.</div>
+<div class="displaymath process-math" id="computing-determinants-15-3">
+\begin{equation*}
+\begin{vmatrix} 1&amp;2\\3&amp; 4\end{vmatrix}=\begin{vmatrix}1+5\cdot3&amp;2+5\cdot4\\3&amp;4\end{vmatrix}
+\end{equation*}
 </div>
-<div class="para" id="computing-determinants-16">
-<em class="emphasis">Swap two rows:</em> the sign of the determinant flips.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="computing-determinants-17">
-<em class="emphasis">Scale one row:</em> the determinant scales by the same factor.<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="computing-determinants-16">
+<div class="para">
+<em class="emphasis">Swap two rows:</em> the sign of the determinant flips.</div>
+<div class="displaymath process-math" id="computing-determinants-16-2">
+\begin{equation*}
+\begin{vmatrix} 1&amp;2\\3&amp; 4\end{vmatrix}=-\begin{vmatrix}3&amp; 4\\1&amp;2\end{vmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="computing-determinants-17">
+<div class="para">
+<em class="emphasis">Scale one row:</em> the determinant scales by the same factor.</div>
+<div class="displaymath process-math" id="computing-determinants-17-2">
+\begin{equation*}
+\begin{vmatrix} 5&amp;10\\3&amp; 4\end{vmatrix}=5\cdot \begin{vmatrix}1&amp;2\\3&amp;4\end{vmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#computing-determinants-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsubsection: How to Compute Determinants"><a href="#computing-determinants" title="Copy heading and permalink for Subsubsection: How to Compute Determinants" aria-label="Copy heading and permalink for Subsubsection: How to Compute Determinants">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Determinants"><a href="#determinants" title="Copy heading and permalink for Subsection: Determinants" aria-label="Copy heading and permalink for Subsection: Determinants">🔗</a></div></section><section class="subsection" id="determinant-invertibility-rules"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span>

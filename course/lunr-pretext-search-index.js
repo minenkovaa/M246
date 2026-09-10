@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 2: Determinants; inverses; rank",
-  "body": " Week 2: Determinants; inverses; rank   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.     Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).       Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.   Swap two rows: the sign of the determinant flips.   Scale one row: the determinant scales by the same factor.     Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
+  "body": " Week 2: Determinants; inverses; rank   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.     Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).       Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.    Swap two rows: the sign of the determinant flips.    Scale one row: the determinant scales by the same factor.      Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
 },
 {
   "id": "invertibility-2",
@@ -820,6 +820,60 @@ var ptx_lunr_docs = [
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
 {
+  "id": "handouts-6",
+  "level": "1",
+  "url": "handouts-6.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Determinants Activity",
+  "body": " Determinants Activity   Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?    Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.    Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.    Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.    Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .   "
+},
+{
+  "id": "handouts-6-2",
+  "level": "2",
+  "url": "handouts-6.html#handouts-6-2",
+  "type": "Checkpoint",
+  "number": "51",
+  "title": "Find the Determinant.",
+  "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
+},
+{
+  "id": "handouts-6-3",
+  "level": "2",
+  "url": "handouts-6.html#handouts-6-3",
+  "type": "Checkpoint",
+  "number": "52",
+  "title": "Determinant of a Product.",
+  "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
+},
+{
+  "id": "handouts-6-4",
+  "level": "2",
+  "url": "handouts-6.html#handouts-6-4",
+  "type": "Checkpoint",
+  "number": "53",
+  "title": "Can You Add Determinants?",
+  "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
+},
+{
+  "id": "handouts-6-5",
+  "level": "2",
+  "url": "handouts-6.html#handouts-6-5",
+  "type": "Checkpoint",
+  "number": "54",
+  "title": "Effect of Row Operations.",
+  "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
+},
+{
+  "id": "handouts-6-6",
+  "level": "2",
+  "url": "handouts-6.html#handouts-6-6",
+  "type": "Checkpoint",
+  "number": "55",
+  "title": "Determinants of Inverses and Transposes.",
+  "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -874,6 +928,42 @@ var ptx_lunr_docs = [
   "body": " Compute the transpose of a matrix: , , and .   "
 },
 {
+  "id": "homework-3",
+  "level": "1",
+  "url": "homework-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 02",
+  "body": " Homework 02    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors   #  Matrix A  Matrix B  Matrix C    1              Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.     Compute the determinants of .     Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .   "
+},
+{
+  "id": "homework-3-4",
+  "level": "2",
+  "url": "homework-3.html#homework-3-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.   "
+},
+{
+  "id": "homework-3-5",
+  "level": "2",
+  "url": "homework-3.html#homework-3-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Compute the determinants of .   "
+},
+{
+  "id": "homework-3-6",
+  "level": "2",
+  "url": "homework-3.html#homework-3-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .  "
+},
+{
   "id": "resources",
   "level": "1",
   "url": "resources.html",
@@ -887,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "51",
+  "number": "56",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
