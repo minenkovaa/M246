@@ -81,6 +81,7 @@
       <xi:include href="./handouts/matrix-handout1.ptx"/>
       <xi:include href="./handouts/matrix-handout2.ptx"/>
       <xi:include href="./handouts/inverse-handout.ptx"/>
+      <xi:include href="./handouts/determinants-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
@@ -88,6 +89,7 @@
 
 
     <xi:include href="./homework/homework-01.ptx"/>
+    <xi:include href="./homework/homework-02.ptx"/>
 
     </chapter>
     

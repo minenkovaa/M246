@@ -873,17 +873,21 @@ the determinant is multiplied by <m>k</m>.
 <em>Add a multiple of one row:</em>
 <m>\mathrm{Row}_2\to\mathrm{Row}_2+k\mathrm{Row}_1</m>
 keeps the determinant unchanged.
+<me>\begin{vmatrix} 1&amp;2\\3&amp; 4\end{vmatrix}=\begin{vmatrix}1+5\cdot3&amp;2+5\cdot4\\3&amp;4\end{vmatrix}</me>
 </p>
 
 <p>
 <em>Swap two rows:</em>
 the sign of the determinant flips.
+<me>\begin{vmatrix} 1&amp;2\\3&amp; 4\end{vmatrix}=-\begin{vmatrix}3&amp; 4\\1&amp;2\end{vmatrix}</me>
 </p>
 
 
 <p>
 <em>Scale one row:</em>
 the determinant scales by the same factor.
+<me>\begin{vmatrix} 5&amp;10\\3&amp; 4\end{vmatrix}=5\cdot \begin{vmatrix}1&amp;2\\3&amp;4\end{vmatrix}</me>
+
 </p>
 
 

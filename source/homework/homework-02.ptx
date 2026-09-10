@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Homework 02</title>
+  <introduction>
+    <p>
+      <alert>Instructions:</alert> Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework.</p><p>
+      Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.
+    </p>
+  </introduction>
+
+<tabular bottom="minor">
+<title>Matrices <m>A,B,C</m> and vectors <m>u,v</m></title>
+
+
+  <row  bottom="major">
+    <cell><p>#</p></cell>
+    <cell><p>Matrix A</p></cell>
+    <cell><p>Matrix B</p></cell>
+    <cell><p>Matrix C</p></cell>
+  </row>  <row>
+    <cell><p>1</p></cell>
+    <cell><p><m> \begin{bmatrix}1 &amp; 2 &amp; 0\\-1 &amp; 3 &amp; 4\\2 &amp; 1 &amp; 1 \end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} 1 &amp; 2 &amp; 3\\2 &amp; 5 &amp; 8\\0 &amp; 1 &amp; 2\end{bmatrix} </m> </p></cell>
+    <cell><p> <m> \begin{bmatrix} 1 &amp; 0 &amp; 2 &amp; 0\\-3 &amp; 4 &amp; 1 &amp; 0\\0 &amp; 2 &amp; -5 &amp; 1\\0 &amp; 0 &amp; 3 &amp; 1\end{bmatrix} </m> </p></cell>
+  </row> 
+   </tabular>
+ 
+    <exercise workspace="3in">
+      <statement>
+        <p>
+       Use Gaussian Elimination determine whether matrices . <m>A,\ B</m> and <m>C</m> are invertible, and if they are, find their inverses.
+                </p>
+      </statement>
+    </exercise>
+ 
+    <exercise workspace="3in">
+      <statement><p>
+     Compute the determinants of <m>A,\ B,\ C</m>.                </p>
+      </statement>
+    </exercise>
+  
+    <exercise workspace="3in">
+      <statement><p>
+      Assume for given <m>3\times3</m> matrices <m>X, Y,</m> and <m>Z</m>: <m>\det X=2</m>, <m>\det Y=-3</m>, and <m>\det Z=0</m>. Which of <m>X,\ Y,</m> and <m>Z</m> are invertible and which are not? Why or why not?
+    Then find the determinant of <m>X\cdot Y</m>, <m>X^{-1}</m>, and <m>3X\cdot Y</m>. 
+    </p></statement>
+    </exercise>
+
+</worksheet>
