@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 2: Determinants; inverses; rank",
-  "body": " Week 2: Determinants; inverses; rank   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.     Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).       Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.    Swap two rows: the sign of the determinant flips.    Scale one row: the determinant scales by the same factor.      Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
+  "body": " Week 2: Determinants; inverses; rank   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.     Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).    First-row cofactor expansion and the associated minor matrix.  A three-by-three matrix is shown with its first row and first column marked as the selected entries. An arrow points to the two-by-two minor matrix A sub 11, formed by deleting the first row and first column. The minor contains entries a sub 22, a sub 23, a sub 32, and a sub 33.     Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.    Swap two rows: the sign of the determinant flips.    Scale one row: the determinant scales by the same factor.      Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
 },
 {
   "id": "invertibility-2",
@@ -376,7 +376,385 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 3: Systems; eigenvalues\/eigenvectors",
-  "body": " Week 3: Systems; eigenvalues\/eigenvectors   Tuesday  Systems of equations and their solution.    Thursday  Eigenvalues and eigenvectors.   "
+  "body": " Week 3: Systems; eigenvalues\/eigenvectors   Tuesday  Systems of equations and their solution.    After completing this module, you should be able to:   Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).  Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.  Analyze solution sets using RREF.  Compute the rank of a matrix and identify pivot positions and pivot columns.     What is a Linear Equation?    An equation is linear in variables if it can be written as   Here are constants.     Linear:   Not linear:       Solutions and Solution Sets    A solution is an ordered -tuple that satisfies every equation in the system.  The set of all solutions is the solution set .      Every vector   is a solution.     Two Fundamental Questions   Is the system consistent?  If consistent, is the solution unique?     A system is consistent if it has at least one solution and inconsistent otherwise.      Systems of Linear Equations and Matrices  The coefficient matrix is   The augmented matrix is     Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.   These operations preserve the solution set.    Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Gaussian Elimination (Algorithm)   Write the augmented matrix.  Reduce to REF.  Check consistency.  Continue to RREF.  Read off the solution.     Rank of a Matrix    The rank of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.      Geometric Interpretation   Unique solution: lines intersect at one point.  No solution: lines are parallel.  Infinitely many solutions: lines coincide.      Pivot Columns (Visual Explanation)  Pivot positions correspond to basic variables. Non-pivot columns correspond to free variables. Rank equals the number of pivot positions.     Quick Reference   Solutions may be unique, infinite, or nonexistent.    Thursday  Eigenvalues and eigenvectors.   After completing this module, you should be able to:   E1 Determine eigenvalues and eigenvectors of a matrix.  E2 Relate eigenvectors to solving via row-reduction.  E3 Use the characteristic equation to compute eigenvalues.  E4 Distinguish algebraic and geometric multiplicities.  E5 Determine when a matrix is diagonalizable and compute a diagonalization.  E6 Understand similarity and its effect on eigenvalues.  E7 Handle complex eigenvalues\/eigenvectors for real matrices.     Consider   Recall:   Let us explore:     Visualization of Eigenvectors       Eigenvalues and Eigenvectors   Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .    The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.    The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.     Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .    Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.     If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.     Eigenvalues of a triangularmatrix  Eigenvalues of a triangular matrix     What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,     Is invertible? No, because is on the diagonal. Therefore, .    The scalar is an eigenvalue of if and only if is not invertible.  Equivalently, is an eigenvalue of if and only if the homogeneous system   has a nontrivial solution.  Indeed,     Eigenvectors for Distinct Eigenvalues are Independent (E2)    If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.     This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.     Difference Equations Application  Consider the discrete-time dynamical system (difference equation)   If can be written as an eigenvector expansion   then repeated substitution gives   This provides an explicit description of the solution whenever enough eigenvectors are available to express the initial state .    Characteristic Equation   The characteristic equation of is   The polynomial is called the characteristic polynomial .    A scalar is an eigenvalue of if and only if it satisfies .    For   the characteristic polynomial is   Solve to find the eigenvalues.    Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .     Algebraic vs. Geometric Multiplicity   Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace      For every eigenvalue ,     Geometric multiplicity counts how many linearly independent eigenvectors correspond to . Algebraic multiplicity counts how many times appears as a root of the characteristic polynomial.    A matrix is diagonalizable precisely when, for every eigenvalue , the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is .    Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.     Similarity   Matrices are similar if there exists an invertible matrix such that   Equivalently,      If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.     The converse is not true in general.   Even though these matrices have the same characteristic polynomial, they are not similar.    Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.     Complex Eigenvalues   Complex Numbers (Brief Review)  A complex number has the form , where . If , then its complex conjugate is .     If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.     For    Therefore, , so the eigenvalues are      Diagonalization   A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that     Why It Matters: Powers of a Matrix  If   then   and is easy to compute because one simply raises each diagonal entry to the th power.    Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.    The equation   implies   Writing the columns explicitly,   Therefore,   Thus each column of is an eigenvector of corresponding to the eigenvalue .   How to Diagonalize a Matrix   To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.       Multiplicity Conditions    Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .       Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:      A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .     Summary   Eigenvalues satisfy .  Eigenvectors corresponding to are the nontrivial solutions of .  Eigenvectors corresponding to distinct eigenvalues are linearly independent.  Algebraic multiplicity counts how many times an eigenvalue appears as a root of the characteristic polynomial, while geometric multiplicity is the dimension of the eigenspace.  For real matrices, complex eigenvalues occur in conjugate pairs.  A matrix is diagonalizable if and only if it has linearly independent eigenvectors. If , then .    "
+},
+{
+  "id": "notes-week-03-3",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-3",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " After completing this module, you should be able to:   Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).  Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.  Analyze solution sets using RREF.  Compute the rank of a matrix and identify pivot positions and pivot columns.   "
+},
+{
+  "id": "linear-equations-2",
+  "level": "2",
+  "url": "notes-week-03.html#linear-equations-2",
+  "type": "Definition",
+  "number": "32",
+  "title": "",
+  "body": "  An equation is linear in variables if it can be written as   Here are constants.   "
+},
+{
+  "id": "linear-equations-3",
+  "level": "2",
+  "url": "notes-week-03.html#linear-equations-3",
+  "type": "Example",
+  "number": "33",
+  "title": "",
+  "body": " Linear:   Not linear:    "
+},
+{
+  "id": "solutions-2",
+  "level": "2",
+  "url": "notes-week-03.html#solutions-2",
+  "type": "Definition",
+  "number": "34",
+  "title": "",
+  "body": "  A solution is an ordered -tuple that satisfies every equation in the system.  The set of all solutions is the solution set .   "
+},
+{
+  "id": "solutions-3",
+  "level": "2",
+  "url": "notes-week-03.html#solutions-3",
+  "type": "Example",
+  "number": "35",
+  "title": "",
+  "body": "  Every vector   is a solution.  "
+},
+{
+  "id": "fundamental-questions-3",
+  "level": "2",
+  "url": "notes-week-03.html#fundamental-questions-3",
+  "type": "Definition",
+  "number": "36",
+  "title": "",
+  "body": "  A system is consistent if it has at least one solution and inconsistent otherwise.   "
+},
+{
+  "id": "rref-review-2",
+  "level": "2",
+  "url": "notes-week-03.html#rref-review-2",
+  "type": "Definition",
+  "number": "37",
+  "title": "",
+  "body": "  A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.    "
+},
+{
+  "id": "rref-review-3",
+  "level": "2",
+  "url": "notes-week-03.html#rref-review-3",
+  "type": "Theorem",
+  "number": "38",
+  "title": "",
+  "body": "  Every matrix is row-equivalent to exactly one RREF.   "
+},
+{
+  "id": "rank-2",
+  "level": "2",
+  "url": "notes-week-03.html#rank-2",
+  "type": "Definition",
+  "number": "39",
+  "title": "",
+  "body": "  The rank of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.   "
+},
+{
+  "id": "notes-week-03-15-3",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-15-3",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " After completing this module, you should be able to:   E1 Determine eigenvalues and eigenvectors of a matrix.  E2 Relate eigenvectors to solving via row-reduction.  E3 Use the characteristic equation to compute eigenvalues.  E4 Distinguish algebraic and geometric multiplicities.  E5 Determine when a matrix is diagonalizable and compute a diagonalization.  E6 Understand similarity and its effect on eigenvalues.  E7 Handle complex eigenvalues\/eigenvectors for real matrices.   "
+},
+{
+  "id": "notes-week-03-16-2",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-16-2",
+  "type": "Definition",
+  "number": "40",
+  "title": "",
+  "body": " Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .  "
+},
+{
+  "id": "notes-week-03-16-3",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-16-3",
+  "type": "Remark",
+  "number": "41",
+  "title": "",
+  "body": " The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.  "
+},
+{
+  "id": "notes-week-03-16-4",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-16-4",
+  "type": "Remark",
+  "number": "42",
+  "title": "",
+  "body": " The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.  "
+},
+{
+  "id": "notes-week-03-17",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-17",
+  "type": "Example",
+  "number": "43",
+  "title": "",
+  "body": " Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .  "
+},
+{
+  "id": "notes-week-03-18",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-18",
+  "type": "Example",
+  "number": "44",
+  "title": "",
+  "body": " Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.  "
+},
+{
+  "id": "notes-week-03-19",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-19",
+  "type": "Theorem",
+  "number": "45",
+  "title": "",
+  "body": "  If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.   "
+},
+{
+  "id": "notes-week-03-21",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-21",
+  "type": "Example",
+  "number": "46",
+  "title": "",
+  "body": " What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,   "
+},
+{
+  "id": "notes-week-03-22",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-22",
+  "type": "Remark",
+  "number": "47",
+  "title": "",
+  "body": " Is invertible? No, because is on the diagonal. Therefore, .  "
+},
+{
+  "id": "notes-week-03-23",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-23",
+  "type": "Remark",
+  "number": "48",
+  "title": "",
+  "body": " The scalar is an eigenvalue of if and only if is not invertible.  Equivalently, is an eigenvalue of if and only if the homogeneous system   has a nontrivial solution.  Indeed,   "
+},
+{
+  "id": "independent-eigenvectors-2",
+  "level": "2",
+  "url": "notes-week-03.html#independent-eigenvectors-2",
+  "type": "Theorem",
+  "number": "49",
+  "title": "",
+  "body": "  If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.   "
+},
+{
+  "id": "independent-eigenvectors-3",
+  "level": "2",
+  "url": "notes-week-03.html#independent-eigenvectors-3",
+  "type": "Remark",
+  "number": "50",
+  "title": "",
+  "body": " This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.  "
+},
+{
+  "id": "characteristic-equation-2",
+  "level": "2",
+  "url": "notes-week-03.html#characteristic-equation-2",
+  "type": "Definition",
+  "number": "51",
+  "title": "",
+  "body": " The characteristic equation of is   The polynomial is called the characteristic polynomial .  "
+},
+{
+  "id": "characteristic-equation-3",
+  "level": "2",
+  "url": "notes-week-03.html#characteristic-equation-3",
+  "type": "Remark",
+  "number": "52",
+  "title": "",
+  "body": " A scalar is an eigenvalue of if and only if it satisfies .  "
+},
+{
+  "id": "characteristic-equation-4",
+  "level": "2",
+  "url": "notes-week-03.html#characteristic-equation-4",
+  "type": "Example",
+  "number": "53",
+  "title": "",
+  "body": " For   the characteristic polynomial is   Solve to find the eigenvalues.  "
+},
+{
+  "id": "characteristic-equation-5",
+  "level": "2",
+  "url": "notes-week-03.html#characteristic-equation-5",
+  "type": "Example",
+  "number": "54",
+  "title": "",
+  "body": " Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .  "
+},
+{
+  "id": "algebraic-vs-geometric-multiplicity-2",
+  "level": "2",
+  "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-2",
+  "type": "Definition",
+  "number": "55",
+  "title": "",
+  "body": " Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace    "
+},
+{
+  "id": "algebraic-vs-geometric-multiplicity-3",
+  "level": "2",
+  "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-3",
+  "type": "Remark",
+  "number": "56",
+  "title": "",
+  "body": " For every eigenvalue ,   "
+},
+{
+  "id": "algebraic-vs-geometric-multiplicity-4",
+  "level": "2",
+  "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-4",
+  "type": "Remark",
+  "number": "57",
+  "title": "",
+  "body": " Geometric multiplicity counts how many linearly independent eigenvectors correspond to . Algebraic multiplicity counts how many times appears as a root of the characteristic polynomial.  "
+},
+{
+  "id": "algebraic-vs-geometric-multiplicity-5",
+  "level": "2",
+  "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-5",
+  "type": "Remark",
+  "number": "58",
+  "title": "",
+  "body": " A matrix is diagonalizable precisely when, for every eigenvalue , the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is .  "
+},
+{
+  "id": "algebraic-vs-geometric-multiplicity-6",
+  "level": "2",
+  "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-6",
+  "type": "Example",
+  "number": "59",
+  "title": "",
+  "body": " Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.  "
+},
+{
+  "id": "similarity-2",
+  "level": "2",
+  "url": "notes-week-03.html#similarity-2",
+  "type": "Definition",
+  "number": "60",
+  "title": "",
+  "body": " Matrices are similar if there exists an invertible matrix such that   Equivalently,   "
+},
+{
+  "id": "similarity-3",
+  "level": "2",
+  "url": "notes-week-03.html#similarity-3",
+  "type": "Theorem",
+  "number": "61",
+  "title": "",
+  "body": "  If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.   "
+},
+{
+  "id": "similarity-4",
+  "level": "2",
+  "url": "notes-week-03.html#similarity-4",
+  "type": "Remark",
+  "number": "62",
+  "title": "",
+  "body": " The converse is not true in general.   Even though these matrices have the same characteristic polynomial, they are not similar.  "
+},
+{
+  "id": "similarity-5",
+  "level": "2",
+  "url": "notes-week-03.html#similarity-5",
+  "type": "Remark",
+  "number": "63",
+  "title": "",
+  "body": " Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.  "
+},
+{
+  "id": "complex-eigenvalues-3",
+  "level": "2",
+  "url": "notes-week-03.html#complex-eigenvalues-3",
+  "type": "Theorem",
+  "number": "64",
+  "title": "",
+  "body": "  If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.   "
+},
+{
+  "id": "complex-eigenvalues-4",
+  "level": "2",
+  "url": "notes-week-03.html#complex-eigenvalues-4",
+  "type": "Example",
+  "number": "65",
+  "title": "",
+  "body": " For    Therefore, , so the eigenvalues are   "
+},
+{
+  "id": "diagonalization-2",
+  "level": "2",
+  "url": "notes-week-03.html#diagonalization-2",
+  "type": "Definition",
+  "number": "66",
+  "title": "",
+  "body": " A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that   "
+},
+{
+  "id": "diagonalization-4",
+  "level": "2",
+  "url": "notes-week-03.html#diagonalization-4",
+  "type": "Theorem",
+  "number": "67",
+  "title": "Diagonalization Theorem.",
+  "body": " Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.   "
+},
+{
+  "id": "diagonalization-14-2",
+  "level": "2",
+  "url": "notes-week-03.html#diagonalization-14-2",
+  "type": "Algorithm",
+  "number": "68",
+  "title": "",
+  "body": " To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.   "
+},
+{
+  "id": "notes-week-03-31-2",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-31-2",
+  "type": "Theorem",
+  "number": "69",
+  "title": "",
+  "body": "  Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .    "
+},
+{
+  "id": "notes-week-03-32",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-32",
+  "type": "Example",
+  "number": "70",
+  "title": "Full Diagonalization of a Matrix.",
+  "body": " Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:    "
+},
+{
+  "id": "notes-week-03-33",
+  "level": "2",
+  "url": "notes-week-03.html#notes-week-03-33",
+  "type": "Example",
+  "number": "73",
+  "title": "A Non-Diagonalizable Matrix.",
+  "body": " A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .   "
 },
 {
   "id": "notes-week-04",
@@ -500,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "32",
+  "number": "75",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -563,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "33",
+  "number": "76",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -626,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "34",
+  "number": "77",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -644,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "35",
+  "number": "78",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -671,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "36",
+  "number": "79",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -680,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "37",
+  "number": "80",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -689,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "38",
+  "number": "81",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -698,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "39",
+  "number": "82",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -707,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "40",
+  "number": "83",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -725,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "41",
+  "number": "84",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -734,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "42",
+  "number": "85",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -743,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "43",
+  "number": "86",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -752,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "44",
+  "number": "87",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -761,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "45",
+  "number": "88",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
@@ -779,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-2",
   "type": "Checkpoint",
-  "number": "46",
+  "number": "89",
   "title": "Find the Inverse.",
   "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
 },
@@ -788,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-3",
   "type": "Checkpoint",
-  "number": "47",
+  "number": "90",
   "title": "Verify the Inverse.",
   "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
 },
@@ -797,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-4",
   "type": "Checkpoint",
-  "number": "48",
+  "number": "91",
   "title": "Error Analysis.",
   "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
 },
@@ -806,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-5",
   "type": "Checkpoint",
-  "number": "49",
+  "number": "92",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
 },
@@ -815,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-6",
   "type": "Checkpoint",
-  "number": "50",
+  "number": "93",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
@@ -833,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-2",
   "type": "Checkpoint",
-  "number": "51",
+  "number": "94",
   "title": "Find the Determinant.",
   "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
 },
@@ -842,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-3",
   "type": "Checkpoint",
-  "number": "52",
+  "number": "95",
   "title": "Determinant of a Product.",
   "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
 },
@@ -851,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-4",
   "type": "Checkpoint",
-  "number": "53",
+  "number": "96",
   "title": "Can You Add Determinants?",
   "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
 },
@@ -860,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-5",
   "type": "Checkpoint",
-  "number": "54",
+  "number": "97",
   "title": "Effect of Row Operations.",
   "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
 },
@@ -869,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-6",
   "type": "Checkpoint",
-  "number": "55",
+  "number": "98",
   "title": "Determinants of Inverses and Transposes.",
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
@@ -977,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "56",
+  "number": "99",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }

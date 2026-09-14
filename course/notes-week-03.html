@@ -102,7 +102,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.10';
+eBookConfig.runestone_version = '8.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -110,7 +110,7 @@ eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.561f7165d9bf3626.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -264,7 +264,36 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="notes-week-03.html" class="internal"><span class="title">Week 3: Systems; eigenvalues/eigenvectors</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#linear-equations" class="internal"><span class="title">What is a Linear Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#solutions" class="internal"><span class="title">Solutions and Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#fundamental-questions" class="internal"><span class="title">Two Fundamental Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#matrices-for-systems" class="internal"><span class="title">Systems of Linear Equations and Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#row-operations-review" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#rref-review" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#gaussian-elimination" class="internal"><span class="title">Gaussian Elimination (Algorithm)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#rank" class="internal"><span class="title">Rank of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#geometric-interpretation" class="internal"><span class="title">Geometric Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#pivot-columns" class="internal"><span class="title">Pivot Columns (Visual Explanation)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-15" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-16" class="internal"><span class="title">Eigenvalues and Eigenvectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-week-03.html#independent-eigenvectors" class="internal"><span class="title">Eigenvectors for Distinct Eigenvalues are Independent (E2)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#difference-equations-application" class="internal"><span class="title">Difference Equations Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#characteristic-equation" class="internal"><span class="title">Characteristic Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#algebraic-vs-geometric-multiplicity" class="internal"><span class="title">Algebraic vs. Geometric Multiplicity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#similarity" class="internal"><span class="title">Similarity</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-03.html#complex-eigenvalues" class="internal"><span class="title">Complex Eigenvalues</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#complex-eigenvalues-2" class="internal"><span class="title">Complex Numbers (Brief Review)</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-03.html#diagonalization" class="internal"><span class="title">Diagonalization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#diagonalization-3" class="internal"><span class="title">Why It Matters: Powers of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#diagonalization-14" class="internal"><span class="title">How to Diagonalize a Matrix</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-31" class="internal"><span class="title">Multiplicity Conditions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -395,12 +424,1328 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para" id="notes-week-03-2-2">Systems of equations and their solution.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-03-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-03-3"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-03-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><article class="objectives goal-like" id="notes-week-03-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="notes-week-03-3-2">
+<li id="notes-week-03-3-2-1">
+<div class="para" id="p-derived-notes-week-03-3-2-1">Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-3-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-3-2-2">
+<div class="para" id="p-derived-notes-week-03-3-2-2">Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-3-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-3-2-3">
+<div class="para" id="p-derived-notes-week-03-3-2-3">Analyze solution sets using RREF.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-3-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-3-2-4">
+<div class="para" id="p-derived-notes-week-03-3-2-4">Compute the rank of a matrix and identify pivot positions and pivot columns.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-3-2-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives"><a href="#notes-week-03-3" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="subsection" id="linear-equations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What is a Linear Equation?</span>
+</h3>
+<article class="definition definition-like" id="linear-equations-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="linear-equations-2-1-1">An equation is <dfn class="terminology">linear</dfn> in variables <span class="process-math">\(x_1,\ldots,x_n\)</span> if it can be written as<div class="autopermalink" data-description="Paragraph"><a href="#linear-equations-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="eq-linear">
+\begin{equation*}
+a_1x_1+a_2x_2+\cdots+a_nx_n=b.
+\end{equation*}
+</div>
+<div class="para" id="linear-equations-2-1-3">Here <span class="process-math">\(a_1,\ldots,a_n,b\in\mathbb R\)</span> are constants.<div class="autopermalink" data-description="Paragraph"><a href="#linear-equations-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 32"><a href="#linear-equations-2" title="Copy heading and permalink for Definition 32" aria-label="Copy heading and permalink for Definition 32">🔗</a></div></article><details id="linear-equations-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="linear-equations-3-1">
+<em class="alert">Linear:</em><div class="autopermalink" data-description="Paragraph"><a href="#linear-equations-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="linear-equations-3-2">
+\begin{equation*}
+2x+3y-z=1,\qquad
+x-y+4z=0,\qquad
+7x=-5.
+\end{equation*}
+</div>
+<div class="para" id="linear-equations-3-3">
+<em class="alert">Not linear:</em><div class="autopermalink" data-description="Paragraph"><a href="#linear-equations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="linear-equations-3-4">
+\begin{equation*}
+xy=5,\qquad
+x^2+y=3,
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="linear-equations-3-5">
+\begin{equation*}
+\sin(x)+y=0,\qquad
+e^z-x=2.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 33"><a href="#linear-equations-3" title="Copy heading and permalink for Example 33" aria-label="Copy heading and permalink for Example 33">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: What is a Linear Equation?"><a href="#linear-equations" title="Copy heading and permalink for Subsection: What is a Linear Equation?" aria-label="Copy heading and permalink for Subsection: What is a Linear Equation?">🔗</a></div></section><section class="subsection" id="solutions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solutions and Solution Sets</span>
+</h3>
+<article class="definition definition-like" id="solutions-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="solutions-2-1-1">A <dfn class="terminology">solution</dfn> is an ordered <span class="process-math">\(n\)</span>-tuple that satisfies every equation in the system.<div class="autopermalink" data-description="Paragraph"><a href="#solutions-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="solutions-2-1-2">The set of all solutions is the <dfn class="terminology">solution set</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#solutions-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 34"><a href="#solutions-2" title="Copy heading and permalink for Definition 34" aria-label="Copy heading and permalink for Definition 34">🔗</a></div></article><details id="solutions-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="solutions-3-1">
+\begin{equation*}
+\begin{cases}
+x_1+x_2=3\\
+2x_1+2x_2=6
+\end{cases}
+\end{equation*}
+</div>
+<div class="para" id="solutions-3-2">Every vector<div class="autopermalink" data-description="Paragraph"><a href="#solutions-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="solutions-3-3">
+\begin{equation*}
+\begin{bmatrix}
+t\\
+3-t
+\end{bmatrix},
+\qquad t\in\mathbb R,
+\end{equation*}
+</div>
+<div class="para" id="solutions-3-4">is a solution.<div class="autopermalink" data-description="Paragraph"><a href="#solutions-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 35"><a href="#solutions-3" title="Copy heading and permalink for Example 35" aria-label="Copy heading and permalink for Example 35">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Solutions and Solution Sets"><a href="#solutions" title="Copy heading and permalink for Subsection: Solutions and Solution Sets" aria-label="Copy heading and permalink for Subsection: Solutions and Solution Sets">🔗</a></div></section><section class="subsection" id="fundamental-questions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two Fundamental Questions</span>
+</h3>
+<ol class="decimal" id="fundamental-questions-2">
+<li id="fundamental-questions-2-1">
+<div class="para" id="p-derived-fundamental-questions-2-1">Is the system consistent?</div>
+<div class="autopermalink" data-description="Item 1"><a href="#fundamental-questions-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="fundamental-questions-2-2">
+<div class="para" id="p-derived-fundamental-questions-2-2">If consistent, is the solution unique?</div>
+<div class="autopermalink" data-description="Item 2"><a href="#fundamental-questions-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<article class="definition definition-like" id="fundamental-questions-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="fundamental-questions-3-1-1">A system is <dfn class="terminology">consistent</dfn> if it has at least one solution and <dfn class="terminology">inconsistent</dfn> otherwise.<div class="autopermalink" data-description="Paragraph"><a href="#fundamental-questions-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 36"><a href="#fundamental-questions-3" title="Copy heading and permalink for Definition 36" aria-label="Copy heading and permalink for Definition 36">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Two Fundamental Questions"><a href="#fundamental-questions" title="Copy heading and permalink for Subsection: Two Fundamental Questions" aria-label="Copy heading and permalink for Subsection: Two Fundamental Questions">🔗</a></div></section><section class="subsection" id="matrices-for-systems"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Systems of Linear Equations and Matrices</span>
+</h3>
+<div class="para" id="matrices-for-systems-2">The coefficient matrix is<div class="autopermalink" data-description="Paragraph"><a href="#matrices-for-systems-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrices-for-systems-3">
+\begin{equation*}
+A=
+\begin{bmatrix}
+a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
+a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="matrices-for-systems-4">The augmented matrix is<div class="autopermalink" data-description="Paragraph"><a href="#matrices-for-systems-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="matrices-for-systems-5">
+\begin{equation*}
+[A|b]
+=
+\left[
+\begin{array}{cccc|c}
+a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}&amp;b_1\\
+a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}&amp;b_2\\
+\vdots&amp;\vdots&amp;\ddots&amp;\vdots&amp;\vdots\\
+a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}&amp;b_m
+\end{array}
+\right].
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsection: Systems of Linear Equations and Matrices"><a href="#matrices-for-systems" title="Copy heading and permalink for Subsection: Systems of Linear Equations and Matrices" aria-label="Copy heading and permalink for Subsection: Systems of Linear Equations and Matrices">🔗</a></div></section><section class="subsection" id="row-operations-review"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Elementary Row Operations and Row Equivalence</span>
+</h3>
+<div class="para" id="row-operations-review-2">Three elementary row operations:<div class="autopermalink" data-description="Paragraph"><a href="#row-operations-review-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="row-operations-review-3">
+<li id="row-operations-review-3-1">
+<div class="para" id="p-derived-row-operations-review-3-1">Add a multiple of one row to another row.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-review-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="row-operations-review-3-2">
+<div class="para" id="p-derived-row-operations-review-3-2">Interchange two rows.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-review-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="row-operations-review-3-3">
+<div class="para" id="p-derived-row-operations-review-3-3">Multiply a row by a nonzero constant.</div>
+<div class="autopermalink" data-description="Item"><a href="#row-operations-review-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="row-operations-review-4">These operations preserve the solution set.<div class="autopermalink" data-description="Paragraph"><a href="#row-operations-review-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Elementary Row Operations and Row Equivalence"><a href="#row-operations-review" title="Copy heading and permalink for Subsection: Elementary Row Operations and Row Equivalence" aria-label="Copy heading and permalink for Subsection: Elementary Row Operations and Row Equivalence">🔗</a></div></section><section class="subsection" id="rref-review"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span>
+</h3>
+<article class="definition definition-like" id="rref-review-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="rref-review-2-1-1">A matrix is in REF if:<div class="autopermalink" data-description="Paragraph"><a href="#rref-review-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="rref-review-2-1-2">
+<li id="rref-review-2-1-2-1">
+<div class="para" id="p-derived-rref-review-2-1-2-1">All nonzero rows are above zero rows.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-review-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-review-2-1-2-2">
+<div class="para" id="p-derived-rref-review-2-1-2-2">Leading entries move to the right as rows descend.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-review-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-review-2-1-2-3">
+<div class="para" id="p-derived-rref-review-2-1-2-3">Entries below a leading entry are zero.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-review-2-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul> <div class="para" id="rref-review-2-1-3">A matrix is in RREF if additionally:<div class="autopermalink" data-description="Paragraph"><a href="#rref-review-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="rref-review-2-1-4">
+<li id="rref-review-2-1-4-1">
+<div class="para" id="p-derived-rref-review-2-1-4-1">Every leading entry equals 1.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-review-2-1-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="rref-review-2-1-4-2">
+<div class="para" id="p-derived-rref-review-2-1-4-2">Each leading 1 is the only nonzero entry in its column.</div>
+<div class="autopermalink" data-description="Item"><a href="#rref-review-2-1-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Definition 37"><a href="#rref-review-2" title="Copy heading and permalink for Definition 37" aria-label="Copy heading and permalink for Definition 37">🔗</a></div></article><article class="theorem theorem-like" id="rref-review-3"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="rref-review-3-1-1">Every matrix is row-equivalent to exactly one RREF.<div class="autopermalink" data-description="Paragraph"><a href="#rref-review-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 38"><a href="#rref-review-3" title="Copy heading and permalink for Theorem 38" aria-label="Copy heading and permalink for Theorem 38">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Row-Echelon and Reduced Row-Echelon Forms"><a href="#rref-review" title="Copy heading and permalink for Subsection: Row-Echelon and Reduced Row-Echelon Forms" aria-label="Copy heading and permalink for Subsection: Row-Echelon and Reduced Row-Echelon Forms">🔗</a></div></section><section class="subsection" id="gaussian-elimination"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gaussian Elimination (Algorithm)</span>
+</h3>
+<ol class="decimal" id="gaussian-elimination-2">
+<li id="gaussian-elimination-2-1">
+<div class="para" id="p-derived-gaussian-elimination-2-1">Write the augmented matrix.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#gaussian-elimination-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="gaussian-elimination-2-2">
+<div class="para" id="p-derived-gaussian-elimination-2-2">Reduce to REF.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#gaussian-elimination-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="gaussian-elimination-2-3">
+<div class="para" id="p-derived-gaussian-elimination-2-3">Check consistency.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#gaussian-elimination-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="gaussian-elimination-2-4">
+<div class="para" id="p-derived-gaussian-elimination-2-4">Continue to RREF.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#gaussian-elimination-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="gaussian-elimination-2-5">
+<div class="para" id="p-derived-gaussian-elimination-2-5">Read off the solution.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#gaussian-elimination-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: Gaussian Elimination (Algorithm)"><a href="#gaussian-elimination" title="Copy heading and permalink for Subsection: Gaussian Elimination (Algorithm)" aria-label="Copy heading and permalink for Subsection: Gaussian Elimination (Algorithm)">🔗</a></div></section><section class="subsection" id="rank"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rank of a Matrix</span>
+</h3>
+<article class="definition definition-like" id="rank-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="rank-2-1-1">The <dfn class="terminology">rank</dfn> of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.<div class="autopermalink" data-description="Paragraph"><a href="#rank-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 39"><a href="#rank-2" title="Copy heading and permalink for Definition 39" aria-label="Copy heading and permalink for Definition 39">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Rank of a Matrix"><a href="#rank" title="Copy heading and permalink for Subsection: Rank of a Matrix" aria-label="Copy heading and permalink for Subsection: Rank of a Matrix">🔗</a></div></section><section class="subsection" id="geometric-interpretation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Interpretation</span>
+</h3>
+<ul class="disc" id="geometric-interpretation-2">
+<li id="geometric-interpretation-2-1">
+<div class="para" id="p-derived-geometric-interpretation-2-1">Unique solution: lines intersect at one point.</div>
+<div class="autopermalink" data-description="Item"><a href="#geometric-interpretation-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="geometric-interpretation-2-2">
+<div class="para" id="p-derived-geometric-interpretation-2-2">No solution: lines are parallel.</div>
+<div class="autopermalink" data-description="Item"><a href="#geometric-interpretation-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="geometric-interpretation-2-3">
+<div class="para" id="p-derived-geometric-interpretation-2-3">Infinitely many solutions: lines coincide.</div>
+<div class="autopermalink" data-description="Item"><a href="#geometric-interpretation-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Geometric Interpretation"><a href="#geometric-interpretation" title="Copy heading and permalink for Subsection: Geometric Interpretation" aria-label="Copy heading and permalink for Subsection: Geometric Interpretation">🔗</a></div></section><section class="subsection" id="pivot-columns"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pivot Columns (Visual Explanation)</span>
+</h3>
+<div class="para" id="pivot-columns-2">Pivot positions correspond to basic variables. Non-pivot columns correspond to free variables. Rank equals the number of pivot positions.<div class="autopermalink" data-description="Paragraph"><a href="#pivot-columns-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Pivot Columns (Visual Explanation)"><a href="#pivot-columns" title="Copy heading and permalink for Subsection: Pivot Columns (Visual Explanation)" aria-label="Copy heading and permalink for Subsection: Pivot Columns (Visual Explanation)">🔗</a></div></section><section class="subsection" id="SEquick-reference"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quick Reference</span>
+</h3>
+<div class="displaymath process-math" id="SEquick-reference-2">
+\begin{gather*}
+\text{Consistency}
+\Leftrightarrow
+\text{no row }
+[0\;0\;\cdots\;0\,|\,b],
+\ b\neq0.\\
+\operatorname{rank}(A)
+=
+\text{number of pivot positions}.
+\end{gather*}
+</div>
+<div class="para" id="SEquick-reference-3">Solutions may be unique, infinite, or nonexistent.<div class="autopermalink" data-description="Paragraph"><a href="#SEquick-reference-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Quick Reference"><a href="#SEquick-reference" title="Copy heading and permalink for Subsection: Quick Reference" aria-label="Copy heading and permalink for Subsection: Quick Reference">🔗</a></div></section><section class="subsection" id="notes-week-03-15"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
 </h3>
-<div class="para" id="notes-week-03-3-2">Eigenvalues and eigenvectors.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="notes-week-03-15-2">Eigenvalues and eigenvectors.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-03-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 3: Systems; eigenvalues/eigenvectors"><a href="#notes-week-03" title="Copy heading and permalink for Section: Week 3: Systems; eigenvalues/eigenvectors" aria-label="Copy heading and permalink for Section: Week 3: Systems; eigenvalues/eigenvectors">🔗</a></div></section></div>
+<article class="objectives goal-like" id="notes-week-03-15-3"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="notes-week-03-15-3-2">
+<li id="notes-week-03-15-3-2-1">
+<div class="para" id="p-derived-notes-week-03-15-3-2-1">
+<em class="emphasis">E1</em> Determine eigenvalues and eigenvectors of a matrix.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-2">
+<div class="para" id="p-derived-notes-week-03-15-3-2-2">
+<em class="emphasis">E2</em> Relate eigenvectors to solving <span class="process-math">\((A-\lambda I)x=0\)</span> via row-reduction.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-3">
+<div class="para" id="p-derived-notes-week-03-15-3-2-3">
+<em class="emphasis">E3</em> Use the characteristic equation to compute eigenvalues.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-4">
+<div class="para" id="p-derived-notes-week-03-15-3-2-4">
+<em class="emphasis">E4</em> Distinguish algebraic and geometric multiplicities.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-5">
+<div class="para" id="p-derived-notes-week-03-15-3-2-5">
+<em class="emphasis">E5</em> Determine when a matrix is diagonalizable and compute a diagonalization.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-5" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-6">
+<div class="para" id="p-derived-notes-week-03-15-3-2-6">
+<em class="emphasis">E6</em> Understand similarity and its effect on eigenvalues.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-6" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="notes-week-03-15-3-2-7">
+<div class="para" id="p-derived-notes-week-03-15-3-2-7">
+<em class="emphasis">E7</em> Handle complex eigenvalues/eigenvectors for real matrices.</div>
+<div class="autopermalink" data-description="Objective"><a href="#notes-week-03-15-3-2-7" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives"><a href="#notes-week-03-15-3" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="introduction" id="notes-week-03-15-4"><div class="para logical" id="notes-week-03-15-4-1">
+<div class="para">Consider</div>
+<div class="displaymath process-math" id="notes-week-03-15-4-1-1">
+\begin{equation*}
+A=\begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-15-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-15-4-2">Recall:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-15-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-15-4-3">
+\begin{equation*}
+e_1=\begin{bmatrix}1\\0\end{bmatrix},
+\qquad
+e_2=\begin{bmatrix}0\\1\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-15-4-4">Let us explore:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-15-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-15-4-5">
+\begin{equation*}
+A e_1
+=
+\begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}
+\begin{bmatrix}1\\0\end{bmatrix}
+=
+\begin{bmatrix}2\\0\end{bmatrix}
+=
+2e_1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="notes-week-03-15-4-6">
+\begin{equation*}
+A e_2
+=
+\begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}
+\begin{bmatrix}0\\1\end{bmatrix}
+=
+\begin{bmatrix}0\\3\end{bmatrix}
+=
+3e_2
+\end{equation*}
+</div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="generated/latex-image/notes-week-03-15-4-7.svg" role="img" class="contained" alt="Visualization of Eigenvectors"></div></section><div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-03-15" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><section class="subsection" id="notes-week-03-16"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eigenvalues and Eigenvectors</span>
+</h3>
+<article class="definition definition-like" id="notes-week-03-16-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="notes-week-03-16-2-1">Let <span class="process-math">\(A\in\mathbb{R}^{n\times n}\text{.}\)</span> A nonzero vector <span class="process-math">\(x\in\mathbb{R}^n\)</span> is an eigenvector of <span class="process-math">\(A\)</span> if<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-16-2-2">
+\begin{equation*}
+Ax=\lambda x
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-16-2-3">for some scalar <span class="process-math">\(\lambda\text{.}\)</span> The scalar <span class="process-math">\(\lambda\)</span> is called an eigenvalue of <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-16-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 40"><a href="#notes-week-03-16-2" title="Copy heading and permalink for Definition 40" aria-label="Copy heading and permalink for Definition 40">🔗</a></div></article><article class="remark remark-like" id="notes-week-03-16-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="notes-week-03-16-3-1">The eigenvector is required to be nonzero. The zero vector satisfies <span class="process-math">\(A0=\lambda0\)</span> for every <span class="process-math">\(\lambda\text{,}\)</span> so it is excluded.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-16-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 41"><a href="#notes-week-03-16-3" title="Copy heading and permalink for Remark 41" aria-label="Copy heading and permalink for Remark 41">🔗</a></div></article><article class="remark remark-like" id="notes-week-03-16-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="notes-week-03-16-4-1">The eigenvector equation is equivalent to the homogeneous system<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-16-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-16-4-2">
+\begin{equation*}
+Ax=\lambda x
+\Longleftrightarrow
+(A-\lambda I)x=0.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-16-4-3">Thus, <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(A\)</span> iff <span class="process-math">\((A-\lambda I)x=0\)</span> has a nontrivial solution.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-16-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 42"><a href="#notes-week-03-16-4" title="Copy heading and permalink for Remark 42" aria-label="Copy heading and permalink for Remark 42">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Eigenvalues and Eigenvectors"><a href="#notes-week-03-16" title="Copy heading and permalink for Subsection: Eigenvalues and Eigenvectors" aria-label="Copy heading and permalink for Subsection: Eigenvalues and Eigenvectors">🔗</a></div></section><details id="notes-week-03-17" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="notes-week-03-17-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-17-2">
+\begin{equation*}
+A=
+\begin{bmatrix}
+2 &amp;1 &amp;0 &amp;0 &amp;0\\
+0 &amp;2 &amp;0 &amp;0 &amp;0\\
+0 &amp;0 &amp;0 &amp;0 &amp;0\\
+0 &amp;0 &amp;0 &amp;2 &amp;1\\
+0 &amp;0 &amp;0 &amp;0 &amp;2
+\end{bmatrix},
+\qquad
+v_1=
+\begin{bmatrix}
+1\\0\\0\\2\\0
+\end{bmatrix},
+\qquad
+v_2=
+\begin{bmatrix}
+0\\0\\2\\0\\0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-17-3">Compute:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-17-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-17-4">
+\begin{equation*}
+Av_1=
+\begin{bmatrix}
+2\\0\\0\\4\\0
+\end{bmatrix}
+=2v_1.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-17-5">Therefore, <span class="process-math">\(v_1\)</span> is an eigenvector of <span class="process-math">\(A\)</span> corresponding to the eigenvalue <span class="process-math">\(\lambda=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-17-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-17-6">Also,<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-17-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-17-7">
+\begin{equation*}
+Av_2=
+\begin{bmatrix}
+0\\0\\0\\0\\0
+\end{bmatrix}
+=0\cdot v_2.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-17-8">Therefore, <span class="process-math">\(v_2\)</span> is an eigenvector of <span class="process-math">\(A\)</span> corresponding to the eigenvalue <span class="process-math">\(\lambda=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-17-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 43"><a href="#notes-week-03-17" title="Copy heading and permalink for Example 43" aria-label="Copy heading and permalink for Example 43">🔗</a></div></article></details><details id="notes-week-03-18" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="notes-week-03-18-1">Check whether <span class="process-math">\(\lambda=10\)</span> is an eigenvalue of<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-18-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-18-2">
+\begin{equation*}
+B=\begin{bmatrix}
+3 &amp;7\\
+10 &amp;2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-18-3">Compute<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-18-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-18-4">
+\begin{equation*}
+B-10I=
+\begin{bmatrix}
+-7 &amp;7\\
+10 &amp;-8
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-18-5">If <span class="process-math">\((B-10I)x=0\)</span> has only the trivial solution, then <span class="process-math">\(\lambda=10\)</span> is not an eigenvalue. Row-reduce to confirm.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-18-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 44"><a href="#notes-week-03-18" title="Copy heading and permalink for Example 44" aria-label="Copy heading and permalink for Example 44">🔗</a></div></article></details><article class="theorem theorem-like" id="notes-week-03-19"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="notes-week-03-19-1-1">If <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 45"><a href="#notes-week-03-19" title="Copy heading and permalink for Theorem 45" aria-label="Copy heading and permalink for Theorem 45">🔗</a></div></article><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/notes-week-03-20.svg" role="img" class="contained"></div>
+<details id="notes-week-03-21" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="notes-week-03-21-1">What are the eigenvalues of<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-21-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-21-2">
+\begin{equation*}
+A=
+\begin{bmatrix}
+1  &amp; 0  &amp; 0\\
+2  &amp; 3  &amp; 0\\
+5  &amp; 4  &amp; 0
+\end{bmatrix}
+\qquad\text{and}\qquad
+B=
+\begin{bmatrix}
+10  &amp; 4  &amp; 0\\
+0  &amp; -1  &amp; 4\\
+0  &amp; 0  &amp; -1
+\end{bmatrix} \, ?
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-21-3">By the theorem on eigenvalues of triangular matrices,<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-21-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-21-4">
+\begin{equation*}
+\operatorname{Eig}(A)=\{1,\,3,\,0\},
+\qquad
+\operatorname{Eig}(B)=\{10,\,-1,\,-1\}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 46"><a href="#notes-week-03-21" title="Copy heading and permalink for Example 46" aria-label="Copy heading and permalink for Example 46">🔗</a></div></article></details><article class="remark remark-like" id="notes-week-03-22"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="notes-week-03-22-1">Is <span class="process-math">\(A\)</span> invertible? No, because <span class="process-math">\(0\)</span> is on the diagonal. Therefore, <span class="process-math">\(\det(A)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-22-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 47"><a href="#notes-week-03-22" title="Copy heading and permalink for Remark 47" aria-label="Copy heading and permalink for Remark 47">🔗</a></div></article><article class="remark remark-like" id="notes-week-03-23"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="notes-week-03-23-1">The scalar <span class="process-math">\(0\)</span> is an eigenvalue of <span class="process-math">\(A\)</span> if and only if <span class="process-math">\(A\)</span> is not invertible.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-23-2">Equivalently, <span class="process-math">\(0\)</span> is an eigenvalue of <span class="process-math">\(A\)</span> if and only if the homogeneous system<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-23-3">
+\begin{equation*}
+Ax=0
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-23-4">has a nontrivial solution.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-23-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-23-5">Indeed,<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-23-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-23-6">
+\begin{equation*}
+0\text{ is an eigenvalue}
+\iff
+(A-0I)x=Ax=0
+\text{ has a nontrivial solution}
+\iff
+A\text{ is not invertible}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Remark 48"><a href="#notes-week-03-23" title="Copy heading and permalink for Remark 48" aria-label="Copy heading and permalink for Remark 48">🔗</a></div></article><section class="section" id="independent-eigenvectors"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eigenvectors for Distinct Eigenvalues are Independent (E2)</span>
+</h3>
+<article class="theorem theorem-like" id="independent-eigenvectors-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="independent-eigenvectors-2-1-1">If <span class="process-math">\(v_1,\dots,v_r\)</span> are eigenvectors of <span class="process-math">\(A\)</span> corresponding to distinct eigenvalues <span class="process-math">\(\lambda_1,\dots,\lambda_r\text{,}\)</span> then <span class="process-math">\(\{v_1,\dots,v_r\}\)</span> is a linearly independent set.<div class="autopermalink" data-description="Paragraph"><a href="#independent-eigenvectors-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 49"><a href="#independent-eigenvectors-2" title="Copy heading and permalink for Theorem 49" aria-label="Copy heading and permalink for Theorem 49">🔗</a></div></article><article class="remark remark-like" id="independent-eigenvectors-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="independent-eigenvectors-3-1">This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.<div class="autopermalink" data-description="Paragraph"><a href="#independent-eigenvectors-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 50"><a href="#independent-eigenvectors-3" title="Copy heading and permalink for Remark 50" aria-label="Copy heading and permalink for Remark 50">🔗</a></div></article><div class="autopermalink" data-description="Section: Eigenvectors for Distinct Eigenvalues are Independent (E2)"><a href="#independent-eigenvectors" title="Copy heading and permalink for Section: Eigenvectors for Distinct Eigenvalues are Independent (E2)" aria-label="Copy heading and permalink for Section: Eigenvectors for Distinct Eigenvalues are Independent (E2)">🔗</a></div></section><section class="subsection" id="difference-equations-application"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Difference Equations Application</span>
+</h3>
+<div class="para" id="difference-equations-application-2">Consider the discrete-time dynamical system (difference equation)<div class="autopermalink" data-description="Paragraph"><a href="#difference-equations-application-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difference-equations-application-3">
+\begin{equation*}
+x_{k+1}=Ax_k,
+\qquad
+k=0,1,2,\dots
+\end{equation*}
+</div>
+<div class="para" id="difference-equations-application-4">If <span class="process-math">\(x_0\)</span> can be written as an eigenvector expansion<div class="autopermalink" data-description="Paragraph"><a href="#difference-equations-application-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difference-equations-application-5">
+\begin{equation*}
+x_0=c_1v_1+\cdots+c_rv_r,
+\qquad
+\text{where }
+Av_i=\lambda_i v_i,
+\end{equation*}
+</div>
+<div class="para" id="difference-equations-application-6">then repeated substitution gives<div class="autopermalink" data-description="Paragraph"><a href="#difference-equations-application-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difference-equations-application-7">
+\begin{equation*}
+x_k=A^k x_0
+=
+c_1\lambda_1^k v_1
++\cdots+
+c_r\lambda_r^k v_r.
+\end{equation*}
+</div>
+<div class="para" id="difference-equations-application-8">This provides an explicit description of the solution whenever enough eigenvectors are available to express the initial state <span class="process-math">\(x_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difference-equations-application-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Difference Equations Application"><a href="#difference-equations-application" title="Copy heading and permalink for Subsection: Difference Equations Application" aria-label="Copy heading and permalink for Subsection: Difference Equations Application">🔗</a></div></section><section class="subsection" id="characteristic-equation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Characteristic Equation</span>
+</h3>
+<article class="definition definition-like" id="characteristic-equation-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="characteristic-equation-2-1">The <dfn class="terminology">characteristic equation</dfn> of <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-2-2">
+\begin{equation*}
+\det(A-\lambda I)=0.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-2-3">The polynomial <span class="process-math">\(p_A(\lambda)=\det(A-\lambda I)\)</span> is called the <dfn class="terminology">characteristic polynomial</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 51"><a href="#characteristic-equation-2" title="Copy heading and permalink for Definition 51" aria-label="Copy heading and permalink for Definition 51">🔗</a></div></article><article class="remark remark-like" id="characteristic-equation-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="characteristic-equation-3-1">A scalar <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(A\)</span> if and only if it satisfies <span class="process-math">\(\det(A-\lambda I)=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 52"><a href="#characteristic-equation-3" title="Copy heading and permalink for Remark 52" aria-label="Copy heading and permalink for Remark 52">🔗</a></div></article><details id="characteristic-equation-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="characteristic-equation-4-1">For<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-4-2">
+\begin{equation*}
+A=\begin{bmatrix}
+2 &amp;3\\
+5 &amp;4
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-4-3">the characteristic polynomial is<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-4-4">
+\begin{equation*}
+p_A(\lambda)
+=
+\det\begin{bmatrix}
+2-\lambda  &amp; 3\\
+5  &amp; 4-\lambda
+\end{bmatrix}
+=
+(2-\lambda)(4-\lambda)-15.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-4-5">Solve <span class="process-math">\(p_A(\lambda)=0\)</span> to find the eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 53"><a href="#characteristic-equation-4" title="Copy heading and permalink for Example 53" aria-label="Copy heading and permalink for Example 53">🔗</a></div></article></details><details id="characteristic-equation-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="characteristic-equation-5-1">Let<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-5-2">
+\begin{equation*}
+B=
+\begin{bmatrix}
+3  &amp; 0  &amp; 4\\
+0  &amp; 1  &amp; 5\\
+0  &amp; 0  &amp; 3
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-5-3">Compute the characteristic polynomial:<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-5-4">
+\begin{equation*}
+\det(B-\lambda I)
+=
+\begin{vmatrix}
+3-\lambda  &amp; 0  &amp; 4\\
+0  &amp; 1-\lambda  &amp; 5\\
+0  &amp; 0  &amp; 3-\lambda
+\end{vmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-5-5">Since <span class="process-math">\(B-\lambda I\)</span> is triangular,<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-5-6">
+\begin{equation*}
+\det(B-\lambda I)
+=
+(3-\lambda)(1-\lambda)(3-\lambda)
+=
+(3-\lambda)^2(1-\lambda).
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-5-7">Therefore, the characteristic equation is<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-5-8">
+\begin{equation*}
+(3-\lambda)^2(1-\lambda)=0.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-5-9">Thus the eigenvalues are<div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="characteristic-equation-5-10">
+\begin{equation*}
+\lambda_{1,2}=3,
+\qquad
+\lambda_3=1.
+\end{equation*}
+</div>
+<div class="para" id="characteristic-equation-5-11">The eigenvalue <span class="process-math">\(3\)</span> has algebraic multiplicity <span class="process-math">\(2\text{,}\)</span> while the eigenvalue <span class="process-math">\(1\)</span> has algebraic multiplicity <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#characteristic-equation-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 54"><a href="#characteristic-equation-5" title="Copy heading and permalink for Example 54" aria-label="Copy heading and permalink for Example 54">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Characteristic Equation"><a href="#characteristic-equation" title="Copy heading and permalink for Subsection: Characteristic Equation" aria-label="Copy heading and permalink for Subsection: Characteristic Equation">🔗</a></div></section><section class="subsection" id="algebraic-vs-geometric-multiplicity"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algebraic vs. Geometric Multiplicity</span>
+</h3>
+<article class="definition definition-like" id="algebraic-vs-geometric-multiplicity-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="algebraic-vs-geometric-multiplicity-2-1">Let <span class="process-math">\(\lambda\)</span> be an eigenvalue of <span class="process-math">\(A\in\mathbb{R}^{n\times n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="algebraic-vs-geometric-multiplicity-2-2">
+<li id="algebraic-vs-geometric-multiplicity-2-2-1">
+<div class="para" id="p-derived-algebraic-vs-geometric-multiplicity-2-2-1">The <dfn class="terminology">algebraic multiplicity</dfn> of <span class="process-math">\(\lambda\)</span> is the number of times it appears as a root of the characteristic polynomial <span class="process-math">\(p_A(\lambda)=\det(A-\lambda I)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebraic-vs-geometric-multiplicity-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebraic-vs-geometric-multiplicity-2-2-2">
+<div class="para" id="p-derived-algebraic-vs-geometric-multiplicity-2-2-2">The <dfn class="terminology">geometric multiplicity</dfn> of <span class="process-math">\(\lambda\)</span> is the dimension of the eigenspace<div class="displaymath process-math" id="algebraic-vs-geometric-multiplicity-2-2-2-3">
+\begin{equation*}
+E(\lambda,A)=\operatorname{Null}(A-\lambda I).
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebraic-vs-geometric-multiplicity-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Definition 55"><a href="#algebraic-vs-geometric-multiplicity-2" title="Copy heading and permalink for Definition 55" aria-label="Copy heading and permalink for Definition 55">🔗</a></div></article><article class="remark remark-like" id="algebraic-vs-geometric-multiplicity-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">56</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="algebraic-vs-geometric-multiplicity-3-1">For every eigenvalue <span class="process-math">\(\lambda\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="algebraic-vs-geometric-multiplicity-3-2">
+\begin{equation*}
+\text{geometric multiplicity}
+\le
+\text{algebraic multiplicity}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Remark 56"><a href="#algebraic-vs-geometric-multiplicity-3" title="Copy heading and permalink for Remark 56" aria-label="Copy heading and permalink for Remark 56">🔗</a></div></article><article class="remark remark-like" id="algebraic-vs-geometric-multiplicity-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="algebraic-vs-geometric-multiplicity-4-1">Geometric multiplicity counts how many linearly independent eigenvectors correspond to <span class="process-math">\(\lambda\text{.}\)</span> Algebraic multiplicity counts how many times <span class="process-math">\(\lambda\)</span> appears as a root of the characteristic polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 57"><a href="#algebraic-vs-geometric-multiplicity-4" title="Copy heading and permalink for Remark 57" aria-label="Copy heading and permalink for Remark 57">🔗</a></div></article><article class="remark remark-like" id="algebraic-vs-geometric-multiplicity-5"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">58</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="algebraic-vs-geometric-multiplicity-5-1">A matrix is diagonalizable precisely when, for every eigenvalue <span class="process-math">\(\lambda\text{,}\)</span> the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 58"><a href="#algebraic-vs-geometric-multiplicity-5" title="Copy heading and permalink for Remark 58" aria-label="Copy heading and permalink for Remark 58">🔗</a></div></article><details id="algebraic-vs-geometric-multiplicity-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">59</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="algebraic-vs-geometric-multiplicity-6-1">Suppose the characteristic polynomial of a <span class="process-math">\(4\times 4\)</span> matrix is<div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="algebraic-vs-geometric-multiplicity-6-2">
+\begin{equation*}
+p_A(\lambda)=(\lambda-2)^3(\lambda-5).
+\end{equation*}
+</div>
+<div class="para" id="algebraic-vs-geometric-multiplicity-6-3">Then:<div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="algebraic-vs-geometric-multiplicity-6-4">
+<li id="algebraic-vs-geometric-multiplicity-6-4-1">
+<div class="para" id="p-derived-algebraic-vs-geometric-multiplicity-6-4-1">the algebraic multiplicity of <span class="process-math">\(\lambda=2\)</span> is <span class="process-math">\(3\text{;}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebraic-vs-geometric-multiplicity-6-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="algebraic-vs-geometric-multiplicity-6-4-2">
+<div class="para" id="p-derived-algebraic-vs-geometric-multiplicity-6-4-2">the algebraic multiplicity of <span class="process-math">\(\lambda=5\)</span> is <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#algebraic-vs-geometric-multiplicity-6-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="algebraic-vs-geometric-multiplicity-6-5">If <span class="process-math">\(\dim E(2,A)=2\)</span> (instead of <span class="process-math">\(3\)</span>), then <span class="process-math">\(A\)</span> is not diagonalizable even though <span class="process-math">\(\lambda=2\)</span> appears three times algebraically.<div class="autopermalink" data-description="Paragraph"><a href="#algebraic-vs-geometric-multiplicity-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 59"><a href="#algebraic-vs-geometric-multiplicity-6" title="Copy heading and permalink for Example 59" aria-label="Copy heading and permalink for Example 59">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Algebraic vs. Geometric Multiplicity"><a href="#algebraic-vs-geometric-multiplicity" title="Copy heading and permalink for Subsection: Algebraic vs. Geometric Multiplicity" aria-label="Copy heading and permalink for Subsection: Algebraic vs. Geometric Multiplicity">🔗</a></div></section><section class="subsection" id="similarity"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Similarity</span>
+</h3>
+<article class="definition definition-like" id="similarity-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">60</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="similarity-2-1">Matrices <span class="process-math">\(A,B\in\mathbb{R}^{n\times n}\)</span> are <dfn class="terminology">similar</dfn> if there exists an invertible matrix <span class="process-math">\(P\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#similarity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="similarity-2-2">
+\begin{equation*}
+A=PBP^{-1}.
+\end{equation*}
+</div>
+<div class="para" id="similarity-2-3">Equivalently,<div class="autopermalink" data-description="Paragraph"><a href="#similarity-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="similarity-2-4">
+\begin{equation*}
+B=P^{-1}AP.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 60"><a href="#similarity-2" title="Copy heading and permalink for Definition 60" aria-label="Copy heading and permalink for Definition 60">🔗</a></div></article><article class="theorem theorem-like" id="similarity-3"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">61</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="similarity-3-1-1">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).<div class="autopermalink" data-description="Paragraph"><a href="#similarity-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 61"><a href="#similarity-3" title="Copy heading and permalink for Theorem 61" aria-label="Copy heading and permalink for Theorem 61">🔗</a></div></article><details id="similarity-3-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="displaymath process-math" id="similarity-3-2-1">
+\begin{equation*}
+\det(A-\lambda I)
+=
+\det(PBP^{-1}-\lambda I)
+=
+\det\!\left(P(B-\lambda I)P^{-1}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="similarity-3-2-2">
+\begin{equation*}
+=
+\det(P)\,
+\det(B-\lambda I)\,
+\det(P^{-1})
+=
+\det(B-\lambda I).
+\end{equation*}
+</div>
+<div class="para" id="similarity-3-2-3">Therefore, the characteristic polynomials of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equal.<div class="autopermalink" data-description="Paragraph"><a href="#similarity-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 61.1"><a href="#similarity-3-2" title="Copy heading and permalink for Proof 61.1" aria-label="Copy heading and permalink for Proof 61.1">🔗</a></div></article></details><article class="remark remark-like" id="similarity-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">62</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="similarity-4-1">The converse is not true in general.<div class="autopermalink" data-description="Paragraph"><a href="#similarity-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="similarity-4-2">
+\begin{equation*}
+\begin{bmatrix}
+2  &amp; 1\\
+0  &amp; 2
+\end{bmatrix}
+\qquad\Longrightarrow\qquad
+(\lambda-2)^2=0,
+\qquad\qquad
+\begin{bmatrix}
+2  &amp; 0\\
+0  &amp; 2
+\end{bmatrix}
+\qquad\Longrightarrow\qquad
+(\lambda-2)^2=0.
+\end{equation*}
+</div>
+<div class="para" id="similarity-4-3">Even though these matrices have the same characteristic polynomial, they are not similar.<div class="autopermalink" data-description="Paragraph"><a href="#similarity-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 62"><a href="#similarity-4" title="Copy heading and permalink for Remark 62" aria-label="Copy heading and permalink for Remark 62">🔗</a></div></article><article class="remark remark-like" id="similarity-5"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">63</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="similarity-5-1">Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.<div class="autopermalink" data-description="Paragraph"><a href="#similarity-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 63"><a href="#similarity-5" title="Copy heading and permalink for Remark 63" aria-label="Copy heading and permalink for Remark 63">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Similarity"><a href="#similarity" title="Copy heading and permalink for Subsection: Similarity" aria-label="Copy heading and permalink for Subsection: Similarity">🔗</a></div></section><section class="subsection" id="complex-eigenvalues"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Complex Eigenvalues</span>
+</h3>
+<section class="subsubsection" id="complex-eigenvalues-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Complex Numbers (Brief Review)</span>
+</h4>
+<div class="para" id="complex-eigenvalues-2-2">A complex number has the form <span class="process-math">\(x+iy\text{,}\)</span> where <span class="process-math">\(i^2=-1\text{.}\)</span> If <span class="process-math">\(\lambda=a+bi\text{,}\)</span> then its complex conjugate is <span class="process-math">\(\overline{\lambda}=a-bi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#complex-eigenvalues-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Complex Numbers (Brief Review)"><a href="#complex-eigenvalues-2" title="Copy heading and permalink for Subsubsection: Complex Numbers (Brief Review)" aria-label="Copy heading and permalink for Subsubsection: Complex Numbers (Brief Review)">🔗</a></div></section><article class="theorem theorem-like" id="complex-eigenvalues-3"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="complex-eigenvalues-3-1-1">If <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> and <span class="process-math">\(\lambda\in\mathbb{C}\)</span> is an eigenvalue of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(\overline{\lambda}\)</span> is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.<div class="autopermalink" data-description="Paragraph"><a href="#complex-eigenvalues-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 64"><a href="#complex-eigenvalues-3" title="Copy heading and permalink for Theorem 64" aria-label="Copy heading and permalink for Theorem 64">🔗</a></div></article><details id="complex-eigenvalues-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="complex-eigenvalues-4-1">For<div class="autopermalink" data-description="Paragraph"><a href="#complex-eigenvalues-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="complex-eigenvalues-4-2">
+\begin{equation*}
+A=
+\begin{bmatrix}
+0 &amp;1\\
+-1 &amp;0
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="complex-eigenvalues-4-3">
+\begin{equation*}
+\det(A-\lambda I)
+=
+\det\begin{bmatrix}
+-\lambda &amp;1\\
+-1 &amp;-\lambda
+\end{bmatrix}
+=
+\lambda^2+1.
+\end{equation*}
+</div>
+<div class="para" id="complex-eigenvalues-4-4">Therefore, <span class="process-math">\(\lambda^2+1=0\text{,}\)</span> so the eigenvalues are<div class="autopermalink" data-description="Paragraph"><a href="#complex-eigenvalues-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="complex-eigenvalues-4-5">
+\begin{equation*}
+\lambda=i,
+\qquad
+\lambda=-i.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 65"><a href="#complex-eigenvalues-4" title="Copy heading and permalink for Example 65" aria-label="Copy heading and permalink for Example 65">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Complex Eigenvalues"><a href="#complex-eigenvalues" title="Copy heading and permalink for Subsection: Complex Eigenvalues" aria-label="Copy heading and permalink for Subsection: Complex Eigenvalues">🔗</a></div></section><section class="subsection" id="diagonalization"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Diagonalization</span>
+</h3>
+<article class="definition definition-like" id="diagonalization-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="diagonalization-2-1">A matrix <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> is <dfn class="terminology">diagonalizable</dfn> if it is similar to a diagonal matrix. That is, there exist an invertible matrix <span class="process-math">\(P\)</span> and a diagonal matrix <span class="process-math">\(D\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-2-2">
+\begin{equation*}
+A=PDP^{-1}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 66"><a href="#diagonalization-2" title="Copy heading and permalink for Definition 66" aria-label="Copy heading and permalink for Definition 66">🔗</a></div></article><section class="subsubsection" id="diagonalization-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Why It Matters: Powers of a Matrix</span>
+</h4>
+<div class="para" id="diagonalization-3-2">If<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-3-3">
+\begin{equation*}
+A=PDP^{-1},
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-3-4">then<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-3-5">
+\begin{equation*}
+A^k=PD^kP^{-1},
+\qquad
+k\in\mathbb{N},
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-3-6">and <span class="process-math">\(D^k\)</span> is easy to compute because one simply raises each diagonal entry to the <span class="process-math">\(k\)</span>th power.<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Why It Matters: Powers of a Matrix"><a href="#diagonalization-3" title="Copy heading and permalink for Subsubsection: Why It Matters: Powers of a Matrix" aria-label="Copy heading and permalink for Subsubsection: Why It Matters: Powers of a Matrix">🔗</a></div></section><article class="theorem theorem-like" id="diagonalization-4"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">67</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Diagonalization Theorem.</span>
+</h4>
+<div class="para" id="diagonalization-4-2-1">A matrix <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> is diagonalizable if and only if <span class="process-math">\(A\)</span> has <span class="process-math">\(n\)</span> linearly independent eigenvectors.<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="diagonalization-4-2-2">Moreover, if <span class="process-math">\(A\)</span> is diagonalizable, then<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-4-2-3">
+\begin{equation*}
+A=PDP^{-1},
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-4-2-4">where the columns of <span class="process-math">\(P\)</span> are eigenvectors of <span class="process-math">\(A\text{,}\)</span> and the diagonal entries of <span class="process-math">\(D\)</span> are the corresponding eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 67: Diagonalization Theorem"><a href="#diagonalization-4" title="Copy heading and permalink for Theorem 67: Diagonalization Theorem" aria-label="Copy heading and permalink for Theorem 67: Diagonalization Theorem">🔗</a></div></article><div class="para" id="diagonalization-5">The equation<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-6">
+\begin{equation*}
+A=PDP^{-1}
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-7">implies<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-8">
+\begin{equation*}
+AP=PD.
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-9">Writing the columns explicitly,<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-10">
+\begin{equation*}
+A
+\begin{bmatrix}
+p_1  &amp; p_2  &amp; \cdots  &amp; p_n
+\end{bmatrix}
+=
+PD
+=
+\begin{bmatrix}
+d_1p_1  &amp; d_2p_2  &amp; \cdots  &amp; d_np_n
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-11">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="diagonalization-12">
+\begin{equation*}
+Ap_1=d_1p_1,
+\qquad
+Ap_2=d_2p_2,
+\qquad
+\ldots,
+\qquad
+Ap_n=d_np_n.
+\end{equation*}
+</div>
+<div class="para" id="diagonalization-13">Thus each column <span class="process-math">\(p_i\)</span> of <span class="process-math">\(P\)</span> is an eigenvector of <span class="process-math">\(A\)</span> corresponding to the eigenvalue <span class="process-math">\(d_i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsubsection" id="diagonalization-14"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How to Diagonalize a Matrix</span>
+</h4>
+<article class="algorithm theorem-like" id="diagonalization-14-2"><h5 class="heading">
+<span class="type">Algorithm</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">68</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="diagonalization-14-2-1">To diagonalize <span class="process-math">\(A\in\mathbb{R}^{n\times n}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#diagonalization-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="diagonalization-14-2-2">
+<li id="diagonalization-14-2-2-1">
+<div class="para" id="p-derived-diagonalization-14-2-2-1">Find the eigenvalues by solving <span class="process-math">\(\det(A-\lambda I)=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#diagonalization-14-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="diagonalization-14-2-2-2">
+<div class="para" id="p-derived-diagonalization-14-2-2-2">For each eigenvalue <span class="process-math">\(\lambda\text{,}\)</span> find a basis for <span class="process-math">\(E(\lambda,A)=\operatorname{Null}(A-\lambda I)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#diagonalization-14-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="diagonalization-14-2-2-3">
+<div class="para" id="p-derived-diagonalization-14-2-2-3">Count the total number of linearly independent eigenvectors obtained. If this number is <span class="process-math">\(n\text{,}\)</span> then <span class="process-math">\(A\)</span> is diagonalizable; otherwise, it is not.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#diagonalization-14-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Algorithm 68"><a href="#diagonalization-14-2" title="Copy heading and permalink for Algorithm 68" aria-label="Copy heading and permalink for Algorithm 68">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: How to Diagonalize a Matrix"><a href="#diagonalization-14" title="Copy heading and permalink for Subsubsection: How to Diagonalize a Matrix" aria-label="Copy heading and permalink for Subsubsection: How to Diagonalize a Matrix">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Diagonalization"><a href="#diagonalization" title="Copy heading and permalink for Subsection: Diagonalization" aria-label="Copy heading and permalink for Subsection: Diagonalization">🔗</a></div></section><section class="subsection" id="notes-week-03-31"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiplicity Conditions</span>
+</h3>
+<article class="theorem theorem-like" id="notes-week-03-31-2"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="notes-week-03-31-2-1-1">Let <span class="process-math">\(A\in\mathbb{R}^{n\times n}\)</span> have distinct eigenvalues <span class="process-math">\(\lambda_1,\dots,\lambda_p\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-31-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="lower-alpha ol-marker-2" id="notes-week-03-31-2-1-2">
+<li id="notes-week-03-31-2-1-2-1">
+<div class="para" id="p-derived-notes-week-03-31-2-1-2-1">For each <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(\dim E(\lambda_k,A)\)</span> is less than or equal to the algebraic multiplicity of <span class="process-math">\(\lambda_k\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#notes-week-03-31-2-1-2-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="notes-week-03-31-2-1-2-2">
+<div class="para" id="p-derived-notes-week-03-31-2-1-2-2">
+<span class="process-math">\(A\)</span> is diagonalizable if and only if<div class="displaymath process-math" id="notes-week-03-31-2-1-2-2-2">
+\begin{equation*}
+\dim E(\lambda_1,A)
++\cdots+
+\dim E(\lambda_p,A)
+= n.
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#notes-week-03-31-2-1-2-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="notes-week-03-31-2-1-2-3">
+<div class="para" id="p-derived-notes-week-03-31-2-1-2-3">If <span class="process-math">\(A\)</span> is diagonalizable and <span class="process-math">\(B_k\)</span> is a basis for <span class="process-math">\(E(\lambda_k,A)\text{,}\)</span> then <span class="process-math">\(B_1\cup\cdots\cup B_p\)</span> is an eigenvector basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#notes-week-03-31-2-1-2-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Theorem 69"><a href="#notes-week-03-31-2" title="Copy heading and permalink for Theorem 69" aria-label="Copy heading and permalink for Theorem 69">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Multiplicity Conditions"><a href="#notes-week-03-31" title="Copy heading and permalink for Subsection: Multiplicity Conditions" aria-label="Copy heading and permalink for Subsection: Multiplicity Conditions">🔗</a></div></section><details id="notes-week-03-32" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Full Diagonalization of a Matrix.</span>
+</h3></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="notes-week-03-32-4"><h4 class="heading">
+<span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 1: Find Eigenvalues.</span>
+</h4>
+<div class="para" id="notes-week-03-32-4-2">Compute the characteristic polynomial:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-4-3">
+\begin{equation*}
+\det(A-\lambda I)
+=
+\begin{vmatrix}
+4-\lambda  &amp; 1\\
+2  &amp; 3-\lambda
+\end{vmatrix}
+=
+(4-\lambda)(3-\lambda)-2.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-4-4">Expanding gives<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-4-5">
+\begin{equation*}
+\lambda^2-7\lambda+10.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-4-6">Solve the characteristic equation:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-4-7">
+\begin{equation*}
+\lambda^2-7\lambda+10=0
+\iff
+(\lambda-5)(\lambda-2)=0.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-4-8">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-4-9">
+\begin{equation*}
+\lambda_1=5,
+\qquad
+\lambda_2=2.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-4-10">Each eigenvalue has algebraic multiplicity <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 70.a: Step 1: Find Eigenvalues"><a href="#notes-week-03-32-4" title="Copy heading and permalink for Task 70.a: Step 1: Find Eigenvalues" aria-label="Copy heading and permalink for Task 70.a: Step 1: Find Eigenvalues">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-32-5"><h4 class="heading">
+<span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 2: Find Eigenvectors.</span>
+</h4>
+<div class="para" id="notes-week-03-32-5-2">
+<em class="emphasis">Eigenvalue</em> <span class="process-math">\(\lambda=5\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-3">
+\begin{equation*}
+A-5I=
+\begin{bmatrix}
+-1  &amp; 1\\
+2  &amp; -2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-5-4">Solve <span class="process-math">\((A-5I)x=0\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-5">
+\begin{equation*}
+-x_1+x_2=0
+\qquad\Rightarrow\qquad
+x_2=x_1.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-5-6">Taking <span class="process-math">\(x_1=1\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-7">
+\begin{equation*}
+v_1=
+\begin{bmatrix}
+1\\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-5-8">
+<em class="emphasis">Eigenvalue</em> <span class="process-math">\(\lambda=2\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-9">
+\begin{equation*}
+A-2I=
+\begin{bmatrix}
+2  &amp; 1\\
+2  &amp; 1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-5-10">Solve <span class="process-math">\((A-2I)x=0\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-11">
+\begin{equation*}
+2x_1+x_2=0
+\qquad\Rightarrow\qquad
+x_2=-2x_1.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-5-12">Taking <span class="process-math">\(x_1=1\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-5-13">
+\begin{equation*}
+v_2=
+\begin{bmatrix}
+1\\
+-2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Task 70.b: Step 2: Find Eigenvectors"><a href="#notes-week-03-32-5" title="Copy heading and permalink for Task 70.b: Step 2: Find Eigenvectors" aria-label="Copy heading and permalink for Task 70.b: Step 2: Find Eigenvectors">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-32-7"><h4 class="heading">
+<span class="codenumber">(c)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 3: Form the Matrices P and D.</span>
+</h4>
+<div class="para" id="notes-week-03-32-7-2">Place the eigenvectors as columns of <span class="process-math">\(P\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-7-3">
+\begin{equation*}
+P=
+\begin{bmatrix}
+1  &amp; 1\\
+1  &amp; -2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-32-7-4">Form the diagonal matrix using the corresponding eigenvalues:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-32-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-32-7-5">
+\begin{equation*}
+D=
+\begin{bmatrix}
+5  &amp; 0\\
+0  &amp; 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Task 70.c: Step 3: Form the Matrices P and D"><a href="#notes-week-03-32-7" title="Copy heading and permalink for Task 70.c: Step 3: Form the Matrices P and D" aria-label="Copy heading and permalink for Task 70.c: Step 3: Form the Matrices P and D">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-32-8"><h4 class="heading">
+<span class="codenumber">(d)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 4: Final Diagonalization.</span>
+</h4>
+<div class="displaymath process-math" id="notes-week-03-32-8-2">
+\begin{equation*}
+A=PDP^{-1}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Task 70.d: Step 4: Final Diagonalization"><a href="#notes-week-03-32-8" title="Copy heading and permalink for Task 70.d: Step 4: Final Diagonalization" aria-label="Copy heading and permalink for Task 70.d: Step 4: Final Diagonalization">🔗</a></div></article><div class="autopermalink" data-description="Example 70: Full Diagonalization of a Matrix"><a href="#notes-week-03-32" title="Copy heading and permalink for Example 70: Full Diagonalization of a Matrix" aria-label="Copy heading and permalink for Example 70: Full Diagonalization of a Matrix">🔗</a></div></article></details><details id="notes-week-03-33" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Non-Diagonalizable Matrix.</span>
+</h3></summary><article class="example example-like knowl__content"><article class="task exercise-like" id="notes-week-03-33-5"><h4 class="heading">
+<span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 1: Find Eigenvalues.</span>
+</h4>
+<div class="para" id="notes-week-03-33-5-2">Compute the characteristic polynomial:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-5-3">
+\begin{equation*}
+\det(A-\lambda I)
+=
+\begin{vmatrix}
+4-\lambda  &amp; 1\\
+0  &amp; 4-\lambda
+\end{vmatrix}
+=
+(4-\lambda)^2.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-5-4">Therefore the only eigenvalue is<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-5-5">
+\begin{equation*}
+\lambda=4,
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-5-6">with algebraic multiplicity <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 73.a: Step 1: Find Eigenvalues"><a href="#notes-week-03-33-5" title="Copy heading and permalink for Task 73.a: Step 1: Find Eigenvalues" aria-label="Copy heading and permalink for Task 73.a: Step 1: Find Eigenvalues">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-33-6"><h4 class="heading">
+<span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 2: Compute the Eigenspace.</span>
+</h4>
+<div class="para" id="notes-week-03-33-6-2">Solve<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-6-3">
+\begin{equation*}
+(A-4I)x=0,
+\qquad
+A-4I=
+\begin{bmatrix}
+0  &amp; 1\\
+0  &amp; 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-6-4">Let <span class="process-math">\(x=\begin{bmatrix}x_1\\x_2\end{bmatrix}\text{.}\)</span> The system becomes<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-6-5">
+\begin{equation*}
+x_2=0.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-6-6">There is no condition on <span class="process-math">\(x_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-33-6-7">Thus<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-6-8">
+\begin{equation*}
+E(4,A)
+=
+\left\{
+\begin{bmatrix}
+x_1\\
+0
+\end{bmatrix}
+:
+x_1\in\mathbb{R}
+\right\}
+=
+\operatorname{span}
+\left\{
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+\right\}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-6-9">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-6-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-6-10">
+\begin{equation*}
+\dim E(4,A)=1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Task 73.b: Step 2: Compute the Eigenspace"><a href="#notes-week-03-33-6" title="Copy heading and permalink for Task 73.b: Step 2: Compute the Eigenspace" aria-label="Copy heading and permalink for Task 73.b: Step 2: Compute the Eigenspace">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-33-7"><h4 class="heading">
+<span class="codenumber">(c)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Step 3: Compare Multiplicities.</span>
+</h4>
+<div class="para" id="notes-week-03-33-7-2">We have<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-7-3">
+\begin{equation*}
+\text{Algebraic multiplicity}=2,
+\qquad
+\text{Geometric multiplicity}=1.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-7-4">Since <span class="process-math">\(\textrm{dim} E(4,A)&lt; \text{algebraic multiplicity},\)</span> the matrix does not have enough linearly independent eigenvectors to be diagonalizable.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 73.c: Step 3: Compare Multiplicities"><a href="#notes-week-03-33-7" title="Copy heading and permalink for Task 73.c: Step 3: Compare Multiplicities" aria-label="Copy heading and permalink for Task 73.c: Step 3: Compare Multiplicities">🔗</a></div></article><article class="task exercise-like" id="notes-week-03-33-8"><h4 class="heading">
+<span class="codenumber">(d)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conclusion.</span>
+</h4>
+<div class="para" id="notes-week-03-33-8-2">Because <span class="process-math">\(A\)</span> does not have two linearly independent eigenvectors, it is not diagonalizable.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-week-03-33-8-3">In fact, <span class="process-math">\(A\)</span> is already in Jordan form:<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="notes-week-03-33-8-4">
+\begin{equation*}
+A=
+\begin{bmatrix}
+4  &amp; 1\\
+0  &amp; 4
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="notes-week-03-33-8-5">This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-03-33-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 73.d: Conclusion"><a href="#notes-week-03-33-8" title="Copy heading and permalink for Task 73.d: Conclusion" aria-label="Copy heading and permalink for Task 73.d: Conclusion">🔗</a></div></article><div class="autopermalink" data-description="Example 73: A Non-Diagonalizable Matrix"><a href="#notes-week-03-33" title="Copy heading and permalink for Example 73: A Non-Diagonalizable Matrix" aria-label="Copy heading and permalink for Example 73: A Non-Diagonalizable Matrix">🔗</a></div></article></details> <ul class="disc" id="notes-week-03-34-2">
+<li id="notes-week-03-34-2-1">
+<div class="para" id="p-derived-notes-week-03-34-2-1">Eigenvalues <span class="process-math">\(\lambda\)</span> satisfy <span class="process-math">\(\det(A-\lambda I)=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-03-34-2-2">
+<div class="para" id="p-derived-notes-week-03-34-2-2">Eigenvectors corresponding to <span class="process-math">\(\lambda\)</span> are the nontrivial solutions of <span class="process-math">\((A-\lambda I)x=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-03-34-2-3">
+<div class="para" id="p-derived-notes-week-03-34-2-3">Eigenvectors corresponding to distinct eigenvalues are linearly independent.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-03-34-2-4">
+<div class="para" id="p-derived-notes-week-03-34-2-4">Algebraic multiplicity counts how many times an eigenvalue appears as a root of the characteristic polynomial, while geometric multiplicity is the dimension of the eigenspace.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-03-34-2-5">
+<div class="para" id="p-derived-notes-week-03-34-2-5">For real matrices, complex eigenvalues occur in conjugate pairs.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-week-03-34-2-6">
+<div class="para" id="p-derived-notes-week-03-34-2-6">A matrix is diagonalizable if and only if it has <span class="process-math">\(n\)</span> linearly independent eigenvectors. If <span class="process-math">\(A=PDP^{-1}\text{,}\)</span> then <span class="process-math">\(A^k=PD^kP^{-1}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-week-03-34-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Section: Week 3: Systems; eigenvalues/eigenvectors"><a href="#notes-week-03" title="Copy heading and permalink for Section: Week 3: Systems; eigenvalues/eigenvectors" aria-label="Copy heading and permalink for Section: Week 3: Systems; eigenvalues/eigenvectors">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="notes-week-02.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-04.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
