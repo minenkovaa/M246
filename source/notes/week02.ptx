@@ -476,6 +476,14 @@ where <m>A_{1j}</m> is the matrix obtained by deleting row
 </p>
 
 <image>
+  <caption>First-row cofactor expansion and the associated minor matrix.</caption>
+  <description>
+    A three-by-three matrix is shown with its first row and first column
+    marked as the selected entries. An arrow points to the two-by-two
+    minor matrix A sub 11, formed by deleting the first row and first
+    column. The minor contains entries a sub 22, a sub 23, a sub 32,
+    and a sub 33.
+  </description>
     <latex-image>
 \begin{tikzpicture}[scale=1.1]
 
@@ -886,7 +894,7 @@ the sign of the determinant flips.
 <p>
 <em>Scale one row:</em>
 the determinant scales by the same factor.
-<me>\begin{vmatrix} 5&amp;10\\3&amp; 4\end{vmatrix}=5\cdot \begin{vmatrix}1&amp;2\\3&amp;4\end{vmatrix}</me>
+<me>\begin{vmatrix} 5&amp;10\\3&amp; 4\end{vmatrix}=5\cdot \begin{vmatrix} 1&amp;2\\3&amp; 4\end{vmatrix}</me>
 
 </p>
 

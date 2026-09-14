@@ -9,13 +9,1597 @@
     <p> Systems of equations and their solution.
     </p>
   </subsection>
+ <objectives>
+    <p>After completing this module, you should be able to:</p>
+    <ul>
+      <li>Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).</li>
+      <li>Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.</li>
+      <li>Analyze solution sets using RREF.</li>
+      <li>Compute the rank of a matrix and identify pivot positions and pivot columns.</li>
+    </ul>
+  </objectives>
 
+  <subsection xml:id="linear-equations">
+    <title>What is a Linear Equation?</title>
+
+    <definition>
+      <statement>
+        <p>
+          An equation is <term>linear</term> in variables
+          <m>x_1,\ldots,x_n</m> if it can be written as
+        </p>
+
+        <me xml:id="eq-linear">
+          a_1x_1+a_2x_2+\cdots+a_nx_n=b.
+        </me>
+
+        <p>
+          Here <m>a_1,\ldots,a_n,b\in\mathbb R</m> are constants.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <p><alert>Linear:</alert></p>
+
+      <me>
+      2x+3y-z=1,\qquad
+      x-y+4z=0,\qquad
+      7x=-5.
+      </me>
+
+      <p><alert>Not linear:</alert></p>
+
+      <me>
+      xy=5,\qquad
+      x^2+y=3,
+      </me>
+
+      <me>
+      \sin(x)+y=0,\qquad
+      e^z-x=2.
+      </me>
+    </example>
+  </subsection>
+
+  <subsection xml:id="solutions">
+    <title>Solutions and Solution Sets</title>
+
+    <definition>
+      <statement>
+        <p>
+          A <term>solution</term> is an ordered
+          <m>n</m>-tuple that satisfies every equation in the system.
+        </p>
+
+        <p>
+          The set of all solutions is the
+          <term>solution set</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <me>
+      \begin{cases}
+      x_1+x_2=3\\
+      2x_1+2x_2=6
+      \end{cases}
+      </me>
+
+      <p>
+        Every vector
+      </p>
+
+      <me>
+      \begin{bmatrix}
+      t\\
+      3-t
+      \end{bmatrix},
+      \qquad t\in\mathbb R,
+      </me>
+
+      <p>
+        is a solution.
+      </p>
+    </example>
+  </subsection>
+
+  <subsection xml:id="fundamental-questions">
+    <title>Two Fundamental Questions</title>
+
+    <ol>
+      <li>Is the system consistent?</li>
+      <li>If consistent, is the solution unique?</li>
+    </ol>
+
+    <definition>
+      <statement>
+        <p>
+          A system is <term>consistent</term> if it has at least
+          one solution and <term>inconsistent</term> otherwise.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="matrices-for-systems">
+    <title>Systems of Linear Equations and Matrices</title>
+
+    <p>
+      The coefficient matrix is
+    </p>
+
+    <me>
+    A=
+    \begin{bmatrix}
+    a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
+    a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
+    \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+    a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}
+    \end{bmatrix}.
+    </me>
+
+    <p>
+      The augmented matrix is
+    </p>
+
+    <me>
+    [A|b]
+    =
+    \left[
+    \begin{array}{cccc|c}
+    a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}&amp;b_1\\
+    a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}&amp;b_2\\
+    \vdots&amp;\vdots&amp;\ddots&amp;\vdots&amp;\vdots\\
+    a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}&amp;b_m
+    \end{array}
+    \right].
+    </me>
+  </subsection>
+
+  <subsection xml:id="row-operations-review">
+    <title>Elementary Row Operations and Row Equivalence</title>
+
+    <p>
+      Three elementary row operations:
+    </p>
+
+    <ul>
+      <li>Add a multiple of one row to another row.</li>
+      <li>Interchange two rows.</li>
+      <li>Multiply a row by a nonzero constant.</li>
+    </ul>
+
+    <p>
+      These operations preserve the solution set.
+    </p>
+  </subsection>
+
+  <subsection xml:id="rref-review">
+    <title>Row-Echelon and Reduced Row-Echelon Forms</title>
+
+    <definition>
+      <statement>
+        <p>A matrix is in REF if:</p>
+
+        <ul>
+          <li>All nonzero rows are above zero rows.</li>
+          <li>Leading entries move to the right as rows descend.</li>
+          <li>Entries below a leading entry are zero.</li>
+        </ul>
+
+        <p>A matrix is in RREF if additionally:</p>
+
+        <ul>
+          <li>Every leading entry equals 1.</li>
+          <li>Each leading 1 is the only nonzero entry in its column.</li>
+        </ul>
+      </statement>
+    </definition>
+
+    <theorem>
+      <statement>
+        <p>
+          Every matrix is row-equivalent to exactly one RREF.
+        </p>
+      </statement>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="gaussian-elimination">
+    <title>Gaussian Elimination (Algorithm)</title>
+
+    <ol>
+      <li>Write the augmented matrix.</li>
+      <li>Reduce to REF.</li>
+      <li>Check consistency.</li>
+      <li>Continue to RREF.</li>
+      <li>Read off the solution.</li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="rank">
+    <title>Rank of a Matrix</title>
+
+    <definition>
+      <statement>
+        <p>
+          The <term>rank</term> of a matrix is the
+          number of pivot positions, equivalently the
+          number of nonzero rows in REF.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="geometric-interpretation">
+    <title>Geometric Interpretation</title>
+
+    <ul>
+      <li>Unique solution: lines intersect at one point.</li>
+      <li>No solution: lines are parallel.</li>
+      <li>Infinitely many solutions: lines coincide.</li>
+    </ul>
+
+    <!-- Put your TikZ pictures here as latex-image figures -->
+  </subsection>
+
+  <subsection xml:id="pivot-columns">
+    <title>Pivot Columns (Visual Explanation)</title>
+
+    <p>
+      Pivot positions correspond to basic variables.
+      Non-pivot columns correspond to free variables.
+      Rank equals the number of pivot positions.
+    </p>
+
+    <!-- Put pivot-column TikZ figure here in a latex-image -->
+  </subsection>
+
+  <subsection xml:id="SEquick-reference">
+    <title>Quick Reference</title>
+
+    <md>
+      <mrow>
+      \text{Consistency}
+      \Leftrightarrow
+      \text{no row }
+      [0\;0\;\cdots\;0\,|\,b],
+      \ b\neq0.
+      </mrow>
+
+      <mrow>
+      \operatorname{rank}(A)
+      =
+      \text{number of pivot positions}.
+      </mrow>
+    </md>
+
+    <p>
+      Solutions may be unique, infinite, or nonexistent.
+    </p>
+  </subsection>
 
   <subsection>
     <title>Thursday</title>
 
     <p> Eigenvalues and eigenvectors.
     </p>
-  </subsection>
 
+      <objectives>
+
+        <p>After completing this module, you should be able to:</p>
+
+        <ul>
+          <li><em>E1</em> Determine eigenvalues and eigenvectors of a matrix.</li>
+          <li><em>E2</em> Relate eigenvectors to solving <m>(A-\lambda I)x=0</m> via row-reduction.</li>
+          <li><em>E3</em> Use the characteristic equation to compute eigenvalues.</li>
+          <li><em>E4</em> Distinguish algebraic and geometric multiplicities.</li>
+          <li><em>E5</em> Determine when a matrix is diagonalizable and compute a diagonalization.</li>
+          <li><em>E6</em> Understand similarity and its effect on eigenvalues.</li>
+          <li><em>E7</em> Handle complex eigenvalues/eigenvectors for real matrices.</li>
+        </ul>
+</objectives>
+<introduction>
+        <p>
+          Consider
+          <me>
+            A=\begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}.
+          </me>
+        </p>
+
+        <p>Recall:</p>
+
+        <md>
+          e_1=\begin{bmatrix}1\\0\end{bmatrix},
+          \qquad
+          e_2=\begin{bmatrix}0\\1\end{bmatrix}.
+        </md>
+
+        <p>Let us explore:</p>
+
+        <me>
+          A e_1
+          =
+          \begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}
+          \begin{bmatrix}1\\0\end{bmatrix}
+          =
+          \begin{bmatrix}2\\0\end{bmatrix}
+          =
+          2e_1
+        </me>
+
+        <me>
+          A e_2
+          =
+          \begin{bmatrix}2 &amp;0\\0 &amp;3\end{bmatrix}
+          \begin{bmatrix}0\\1\end{bmatrix}
+          =
+          \begin{bmatrix}0\\3\end{bmatrix}
+          =
+          3e_2
+        </me>
+        <image width="30%">
+          <shortdescription>Visualization of Eigenvectors</shortdescription>
+          <latex-image>
+          \begin{tikzpicture}
+  % axes
+  \draw[->, very thick, blue!50] (0,0) -- (2,0);
+    \draw[->, thick, blue!60!black] (0,0) -- (1,0);
+  \draw[->, very thick, green] (0,0) -- (0,3);
+    \draw[->,  thick, green!60!black] (0,0) -- (0,1);
+
+  % labels
+  \node[below] at (1,0) {$e_1$};
+  \node[left] at (0,1) {$e_2$};
+
+  % a vector along e2 (to mimic the sketch)
+  \node[left] at (0,2.6) {$3e_2$};
+    \node[below] at (2,0) {$2e_1$};
+
+  % origin dot (optional)
+  \fill (0,0) circle (1.5pt);
+\end{tikzpicture}
+</latex-image>
+        </image>
+      </introduction>
+  </subsection>
+      <subsection>
+        <title>Eigenvalues and Eigenvectors</title>
+
+        <definition>
+          <p>
+            Let <m>A\in\mathbb{R}^{n\times n}</m>. A nonzero vector
+            <m>x\in\mathbb{R}^n</m> is an eigenvector of <m>A</m> if
+          </p>
+
+          <me>Ax=\lambda x</me>
+
+          <p>
+            for some scalar <m>\lambda</m>. The scalar
+            <m>\lambda</m> is called an eigenvalue of <m>A</m>.
+          </p>
+        </definition>
+
+        <remark>
+          <p>
+            The eigenvector is required to be nonzero. The zero vector
+            satisfies <m>A0=\lambda0</m> for every <m>\lambda</m>, so it
+            is excluded.
+          </p>
+        </remark>
+
+        <remark>
+          <p>
+            The eigenvector equation is equivalent to the homogeneous system
+          </p>
+
+          <me>
+            Ax=\lambda x
+            \Longleftrightarrow
+            (A-\lambda I)x=0.
+          </me>
+
+          <p>
+            Thus, <m>\lambda</m> is an eigenvalue of <m>A</m> iff
+            <m>(A-\lambda I)x=0</m> has a nontrivial solution.
+          </p>
+        </remark>
+      </subsection>
+        <example>
+  <p>Let</p>
+
+  <md>
+    A=
+    \begin{bmatrix}
+    2 &amp;1 &amp;0 &amp;0 &amp;0\\
+    0 &amp;2 &amp;0 &amp;0 &amp;0\\
+    0 &amp;0 &amp;0 &amp;0 &amp;0\\
+    0 &amp;0 &amp;0 &amp;2 &amp;1\\
+    0 &amp;0 &amp;0 &amp;0 &amp;2
+    \end{bmatrix},
+    \qquad
+    v_1=
+    \begin{bmatrix}
+    1\\0\\0\\2\\0
+    \end{bmatrix},
+    \qquad
+    v_2=
+    \begin{bmatrix}
+    0\\0\\2\\0\\0
+    \end{bmatrix}.
+  </md>
+
+  <p>Compute:</p>
+
+  <me>
+    Av_1=
+    \begin{bmatrix}
+    2\\0\\0\\4\\0
+    \end{bmatrix}
+    =2v_1.
+  </me>
+
+  <p>
+    Therefore, <m>v_1</m> is an eigenvector of <m>A</m>
+    corresponding to the eigenvalue <m>\lambda=2</m>.
+  </p>
+
+  <p>Also,</p>
+
+  <me>
+    Av_2=
+    \begin{bmatrix}
+    0\\0\\0\\0\\0
+    \end{bmatrix}
+    =0\cdot v_2.
+  </me>
+
+  <p>
+    Therefore, <m>v_2</m> is an eigenvector of <m>A</m>
+    corresponding to the eigenvalue <m>\lambda=0</m>.
+  </p>
+</example>
+
+<example>
+  <p>
+    Check whether <m>\lambda=10</m> is an eigenvalue of
+  </p>
+
+  <me>
+    B=\begin{bmatrix}
+    3 &amp;7\\
+    10 &amp;2
+    \end{bmatrix}.
+  </me>
+
+  <p>Compute</p>
+
+  <me>
+    B-10I=
+    \begin{bmatrix}
+    -7 &amp;7\\
+    10 &amp;-8
+    \end{bmatrix}.
+  </me>
+
+  <p>
+    If <m>(B-10I)x=0</m> has only the trivial solution,
+    then <m>\lambda=10</m> is not an eigenvalue.
+    Row-reduce to confirm.
+  </p>
+</example>
+
+<theorem>
+  <statement>
+    <p>
+      If <m>A\in\mathbb{R}^{n\times n}</m> is triangular
+      (upper or lower triangular), then its eigenvalues are
+      the entries on its main diagonal.
+    </p>
+  </statement>
+</theorem>
+
+<image>
+<shortdesc>Eigenvalues of a triangularmatrix</shortdesc>
+<alttext>Eigenvalues of a triangular matrix</alttext>
+<latex-image>
+\begin{tikzpicture} 
+%-------------------------------------------------- % Left: Lower triangular %-------------------------------------------------- 
+\fill[teal!30] (0,0) -- (0,2.2) -- (2.2,0) -- cycle; 
+\draw[very thick,teal!70!black] (0,0) rectangle (2.2,2.2); 
+\draw[very thick,teal!70!black] (0,2.2) -- (2.2,0); 
+\node[teal!70!black] at (1.65,1.55) {$0$}; \draw[->,thick,teal!70!black] (1.1,2.7) -- (1.1,2.25); 
+%-------------------------------------------------- % Middle: Upper triangular %-------------------------------------------------- 
+\fill[teal!30] (5.6,2.2) -- (3.4,2.2) -- (5.6,0) -- cycle; 
+\draw[very thick,teal!70!black] (3.4,0) rectangle (5.6,2.2); 
+\draw[very thick,teal!70!black] (3.4,2.2) -- (5.6,0); 
+\node[teal!70!black] at (4.05,0.65) {$0$}; 
+\draw[->,thick,teal!70!black] (4.5,2.7) -- (4.5,2.25); 
+%-------------------------------------------------- % Right: Diagonal matrix / eigenvalues %-------------------------------------------------- 
+\draw[very thick,teal!70!black] (6.8,0) rectangle (9.0,2.2); 
+\draw[very thick,teal!70!black] (6.8,1.9) -- (8.7,0); 
+\draw[very thick,teal!70!black] (7.1,2.2) -- (9.0,0.3); 
+\node at (7.15,1.95) {$\lambda_1$}; \node at (7.55,1.55) {$\lambda_2$}; 
+\node at (7.95,1.15) {$\lambda_3$}; \node at (8.75,0.35) {$\lambda_n$}; 
+\node at (8.45,1.55) {$0$}; \node at (7.45,0.65) {$0$}; \node at (8.35,0.75) {$\ddots$}; 
+\draw[->,thick,teal!70!black] (7.9,2.7) -- (7.9,2.25); 
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<example>
+  <p>What are the eigenvalues of</p>
+
+  <md>
+    A=
+    \begin{bmatrix}
+    1  &amp; 0  &amp; 0\\
+    2  &amp; 3  &amp; 0\\
+    5  &amp; 4  &amp; 0
+    \end{bmatrix}
+    \qquad\text{and}\qquad
+    B=
+    \begin{bmatrix}
+    10  &amp; 4  &amp; 0\\
+    0  &amp; -1  &amp; 4\\
+    0  &amp; 0  &amp; -1
+    \end{bmatrix} \, ?
+  </md>
+
+  <p>
+    By the theorem on eigenvalues of triangular matrices,
+  </p>
+
+  <me>
+    \operatorname{Eig}(A)=\{1,\,3,\,0\},
+    \qquad
+    \operatorname{Eig}(B)=\{10,\,-1,\,-1\}.
+  </me>
+</example>
+
+<remark>
+  <p>
+    Is <m>A</m> invertible? No, because <m>0</m> is on the diagonal.
+    Therefore,
+    <m>\det(A)=0</m>.
+  </p>
+</remark>
+
+<remark>
+  <p>
+    The scalar <m>0</m> is an eigenvalue of <m>A</m> if and only if
+    <m>A</m> is not invertible.
+  </p>
+
+  <p>
+    Equivalently, <m>0</m> is an eigenvalue of <m>A</m> if and only if
+    the homogeneous system
+  </p>
+
+  <me>
+    Ax=0
+  </me>
+
+  <p>
+    has a nontrivial solution.
+  </p>
+
+  <p>Indeed,</p>
+
+  <me>
+    0\text{ is an eigenvalue}
+    \iff
+    (A-0I)x=Ax=0
+    \text{ has a nontrivial solution}
+    \iff
+    A\text{ is not invertible}.
+  </me>
+</remark>
+<section xml:id="independent-eigenvectors">
+  <title>Eigenvectors for Distinct Eigenvalues are Independent (E2)</title>
+
+  <theorem>
+    <statement>
+      <p>
+        If <m>v_1,\dots,v_r</m> are eigenvectors of <m>A</m>
+        corresponding to distinct eigenvalues
+        <m>\lambda_1,\dots,\lambda_r</m>, then
+        <m>\{v_1,\dots,v_r\}</m> is a linearly independent set.
+      </p>
+    </statement>
+  </theorem>
+
+  <remark>
+    <p>
+      This is a key reason eigenvectors provide an efficient
+      coordinate system when the corresponding eigenvalues are distinct.
+    </p>
+  </remark>
+</section>
+
+<subsection xml:id="difference-equations-application">
+  <title>Difference Equations Application</title>
+
+  <p>
+    Consider the discrete-time dynamical system (difference equation)
+  </p>
+
+  <me>
+    x_{k+1}=Ax_k,
+    \qquad
+    k=0,1,2,\dots
+  </me>
+
+  <p>
+    If <m>x_0</m> can be written as an eigenvector expansion
+  </p>
+
+  <me>
+    x_0=c_1v_1+\cdots+c_rv_r,
+    \qquad
+    \text{where }
+    Av_i=\lambda_i v_i,
+  </me>
+
+  <p>
+    then repeated substitution gives
+  </p>
+
+  <me>
+    x_k=A^k x_0
+    =
+    c_1\lambda_1^k v_1
+    +\cdots+
+    c_r\lambda_r^k v_r.
+  </me>
+
+  <p>
+    This provides an explicit description of the solution whenever
+    enough eigenvectors are available to express the initial state
+    <m>x_0</m>.
+  </p>
+</subsection>
+
+<subsection xml:id="characteristic-equation">
+  <title>Characteristic Equation</title>
+
+  <definition>
+    <p>
+      The <term>characteristic equation</term> of
+      <m>A\in\mathbb{R}^{n\times n}</m> is
+    </p>
+
+    <me>
+      \det(A-\lambda I)=0.
+    </me>
+
+    <p>
+      The polynomial
+      <m>p_A(\lambda)=\det(A-\lambda I)</m>
+      is called the <term>characteristic polynomial</term>.
+    </p>
+  </definition>
+
+  <remark>
+    <p>
+      A scalar <m>\lambda</m> is an eigenvalue of <m>A</m>
+      if and only if it satisfies
+      <m>\det(A-\lambda I)=0</m>.
+    </p>
+  </remark>
+
+  <example>
+    <p>For</p>
+
+    <me>
+      A=\begin{bmatrix}
+      2 &amp;3\\
+      5 &amp;4
+      \end{bmatrix},
+    </me>
+
+    <p>the characteristic polynomial is</p>
+
+    <me>
+      p_A(\lambda)
+      =
+      \det\begin{bmatrix}
+      2-\lambda  &amp; 3\\
+      5  &amp; 4-\lambda
+      \end{bmatrix}
+      =
+      (2-\lambda)(4-\lambda)-15.
+    </me>
+
+    <p>
+      Solve <m>p_A(\lambda)=0</m> to find the eigenvalues.
+    </p>
+  </example>
+
+  <example>
+    <p>Let</p>
+
+    <me>
+      B=
+      \begin{bmatrix}
+      3  &amp; 0  &amp; 4\\
+      0  &amp; 1  &amp; 5\\
+      0  &amp; 0  &amp; 3
+      \end{bmatrix}.
+    </me>
+
+    <p>Compute the characteristic polynomial:</p>
+
+    <me>
+      \det(B-\lambda I)
+      =
+      \begin{vmatrix}
+      3-\lambda  &amp; 0  &amp; 4\\
+      0  &amp; 1-\lambda  &amp; 5\\
+      0  &amp; 0  &amp; 3-\lambda
+      \end{vmatrix}.
+    </me>
+
+    <p>
+      Since <m>B-\lambda I</m> is triangular,
+    </p>
+
+    <me>
+      \det(B-\lambda I)
+      =
+      (3-\lambda)(1-\lambda)(3-\lambda)
+      =
+      (3-\lambda)^2(1-\lambda).
+    </me>
+
+    <p>
+      Therefore, the characteristic equation is
+    </p>
+
+    <me>
+      (3-\lambda)^2(1-\lambda)=0.
+    </me>
+
+    <p>
+      Thus the eigenvalues are
+    </p>
+
+    <me>
+      \lambda_{1,2}=3,
+      \qquad
+      \lambda_3=1.
+    </me>
+
+    <p>
+      The eigenvalue <m>3</m> has algebraic multiplicity
+      <m>2</m>, while the eigenvalue <m>1</m> has algebraic
+      multiplicity <m>1</m>.
+    </p>
+  </example>
+
+</subsection>
+
+<subsection xml:id="algebraic-vs-geometric-multiplicity">
+  <title>Algebraic vs. Geometric Multiplicity</title>
+
+  <definition>
+    <p>
+      Let <m>\lambda</m> be an eigenvalue of
+      <m>A\in\mathbb{R}^{n\times n}</m>.
+    </p>
+
+    <ul>
+      <li>
+        The <term>algebraic multiplicity</term> of
+        <m>\lambda</m> is the number of times it appears as a root
+        of the characteristic polynomial
+        <m>p_A(\lambda)=\det(A-\lambda I)</m>.
+      </li>
+
+      <li>
+        The <term>geometric multiplicity</term> of
+        <m>\lambda</m> is the dimension of the eigenspace
+        <me>
+          E(\lambda,A)=\operatorname{Null}(A-\lambda I).
+        </me>
+      </li>
+    </ul>
+  </definition>
+
+  <remark>
+    <p>
+      For every eigenvalue <m>\lambda</m>,
+    </p>
+
+    <me>
+      \text{geometric multiplicity}
+      \le
+      \text{algebraic multiplicity}.
+    </me>
+  </remark>
+
+  <remark>
+    <p>
+      Geometric multiplicity counts how many linearly independent
+      eigenvectors correspond to <m>\lambda</m>.
+      Algebraic multiplicity counts how many times
+      <m>\lambda</m> appears as a root of the characteristic
+      polynomial.
+    </p>
+  </remark>
+
+  <remark>
+    <p>
+      A matrix is diagonalizable precisely when, for every
+      eigenvalue <m>\lambda</m>, the geometric multiplicity equals
+      the algebraic multiplicity and the total number of linearly
+      independent eigenvectors is <m>n</m>.
+    </p>
+  </remark>
+
+  <example>
+    <p>
+      Suppose the characteristic polynomial of a
+      <m>4\times 4</m> matrix is
+    </p>
+
+    <me>
+      p_A(\lambda)=(\lambda-2)^3(\lambda-5).
+    </me>
+
+    <p>Then:</p>
+
+    <ul>
+      <li>
+        the algebraic multiplicity of <m>\lambda=2</m> is
+        <m>3</m>;
+      </li>
+      <li>
+        the algebraic multiplicity of <m>\lambda=5</m> is
+        <m>1</m>.
+      </li>
+    </ul>
+
+    <p>
+      If <m>\dim E(2,A)=2</m> (instead of <m>3</m>), then
+      <m>A</m> is not diagonalizable even though
+      <m>\lambda=2</m> appears three times algebraically.
+    </p>
+  </example>
+</subsection>
+
+<subsection xml:id="similarity">
+  <title>Similarity</title>
+
+  <definition>
+    <p>
+      Matrices <m>A,B\in\mathbb{R}^{n\times n}</m> are
+      <term>similar</term> if there exists an invertible matrix
+      <m>P</m> such that
+    </p>
+
+    <me>
+      A=PBP^{-1}.
+    </me>
+
+    <p>
+      Equivalently,
+    </p>
+
+    <me>
+      B=P^{-1}AP.
+    </me>
+  </definition>
+
+  <theorem>
+    <statement>
+      <p>
+        If <m>A</m> and <m>B</m> are similar, then they have the
+        same characteristic polynomial and hence the same
+        eigenvalues (including multiplicities).
+      </p>
+    </statement>
+
+    <proof>
+      <me>
+        \det(A-\lambda I)
+        =
+        \det(PBP^{-1}-\lambda I)
+        =
+        \det\!\left(P(B-\lambda I)P^{-1}\right)
+      </me>
+
+      <me>
+        =
+        \det(P)\,
+        \det(B-\lambda I)\,
+        \det(P^{-1})
+        =
+        \det(B-\lambda I).
+      </me>
+
+      <p>
+        Therefore, the characteristic polynomials of
+        <m>A</m> and <m>B</m> are equal.
+      </p>
+    </proof>
+  </theorem>
+
+  <remark>
+    <p>
+      The converse is not true in general.
+    </p>
+
+    <md>
+      \begin{bmatrix}
+      2  &amp; 1\\
+      0  &amp; 2
+      \end{bmatrix}
+      \qquad\Longrightarrow\qquad
+      (\lambda-2)^2=0,
+      \qquad\qquad
+      \begin{bmatrix}
+      2  &amp; 0\\
+      0  &amp; 2
+      \end{bmatrix}
+      \qquad\Longrightarrow\qquad
+      (\lambda-2)^2=0.
+    </md>
+
+    <p>
+      Even though these matrices have the same characteristic
+      polynomial, they are not similar.
+    </p>
+  </remark>
+
+  <remark>
+    <p>
+      Row equivalence does not preserve eigenvalues in general.
+      Consequently, row reduction is not an eigenvalue-preserving
+      operation.
+    </p>
+  </remark>
+</subsection>
+
+<subsection xml:id="complex-eigenvalues">
+  <title>Complex Eigenvalues</title>
+
+  <subsubsection>
+    <title>Complex Numbers (Brief Review)</title>
+
+    <p>
+      A complex number has the form <m>x+iy</m>, where
+      <m>i^2=-1</m>. If <m>\lambda=a+bi</m>, then its complex
+      conjugate is <m>\overline{\lambda}=a-bi</m>.
+    </p>
+  </subsubsection>
+
+  <theorem>
+    <statement>
+      <p>
+        If <m>A\in\mathbb{R}^{n\times n}</m> and
+        <m>\lambda\in\mathbb{C}</m> is an eigenvalue of
+        <m>A</m>, then <m>\overline{\lambda}</m> is also an
+        eigenvalue. Complex eigenvalues of real matrices occur
+        in conjugate pairs.
+      </p>
+    </statement>
+  </theorem>
+
+  <example>
+    <p>For</p>
+
+    <me>
+      A=
+      \begin{bmatrix}
+      0 &amp;1\\
+      -1 &amp;0
+      \end{bmatrix},
+    </me>
+
+    <me>
+      \det(A-\lambda I)
+      =
+      \det\begin{bmatrix}
+      -\lambda &amp;1\\
+      -1 &amp;-\lambda
+      \end{bmatrix}
+      =
+      \lambda^2+1.
+    </me>
+
+    <p>
+      Therefore,
+      <m>\lambda^2+1=0</m>, so the eigenvalues are
+    </p>
+
+    <me>
+      \lambda=i,
+      \qquad
+      \lambda=-i.
+    </me>
+  </example>
+
+</subsection>
+<subsection xml:id="diagonalization">
+  <title>Diagonalization</title>
+
+  <definition>
+    <p>
+      A matrix <m>A\in\mathbb{R}^{n\times n}</m> is
+      <term>diagonalizable</term> if it is similar to a diagonal
+      matrix. That is, there exist an invertible matrix <m>P</m>
+      and a diagonal matrix <m>D</m> such that
+    </p>
+
+    <me>
+      A=PDP^{-1}.
+    </me>
+  </definition>
+
+  <subsubsection>
+    <title>Why It Matters: Powers of a Matrix</title>
+
+    <p>
+      If
+    </p>
+
+    <me>
+      A=PDP^{-1},
+    </me>
+
+    <p>
+      then
+    </p>
+
+    <me>
+      A^k=PD^kP^{-1},
+      \qquad
+      k\in\mathbb{N},
+    </me>
+
+    <p>
+      and <m>D^k</m> is easy to compute because one simply raises
+      each diagonal entry to the <m>k</m>th power.
+    </p>
+  </subsubsection>
+
+  <theorem>
+    <title>Diagonalization Theorem</title>
+
+    <statement>
+      <p>
+        A matrix <m>A\in\mathbb{R}^{n\times n}</m> is diagonalizable
+        if and only if <m>A</m> has <m>n</m> linearly independent
+        eigenvectors.
+      </p>
+
+      <p>
+        Moreover, if <m>A</m> is diagonalizable, then
+      </p>
+
+      <me>
+        A=PDP^{-1},
+      </me>
+
+      <p>
+        where the columns of <m>P</m> are eigenvectors of
+        <m>A</m>, and the diagonal entries of <m>D</m> are the
+        corresponding eigenvalues.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    The equation
+  </p>
+
+  <me>
+    A=PDP^{-1}
+  </me>
+
+  <p>
+    implies
+  </p>
+
+  <me>
+    AP=PD.
+  </me>
+
+  <p>
+    Writing the columns explicitly,
+  </p>
+
+  <me>
+    A
+    \begin{bmatrix}
+    p_1  &amp; p_2  &amp; \cdots  &amp; p_n
+    \end{bmatrix}
+    =
+    PD
+    =
+    \begin{bmatrix}
+    d_1p_1  &amp; d_2p_2  &amp; \cdots  &amp; d_np_n
+    \end{bmatrix}.
+  </me>
+
+  <p>
+    Therefore,
+  </p>
+
+  <me>
+    Ap_1=d_1p_1,
+    \qquad
+    Ap_2=d_2p_2,
+    \qquad
+    \ldots,
+    \qquad
+    Ap_n=d_np_n.
+  </me>
+
+  <p>
+    Thus each column <m>p_i</m> of <m>P</m> is an eigenvector of
+    <m>A</m> corresponding to the eigenvalue <m>d_i</m>.
+  </p>
+
+  <subsubsection>
+    <title>How to Diagonalize a Matrix</title>
+
+    <algorithm>
+      <p>
+        To diagonalize <m>A\in\mathbb{R}^{n\times n}</m>:
+      </p>
+
+      <ol>
+        <li>
+          Find the eigenvalues by solving
+          <m>\det(A-\lambda I)=0</m>.
+        </li>
+
+        <li>
+          For each eigenvalue <m>\lambda</m>, find a basis for
+          <m>E(\lambda,A)=\operatorname{Null}(A-\lambda I)</m>.
+        </li>
+
+        <li>
+          Count the total number of linearly independent
+          eigenvectors obtained. If this number is <m>n</m>, then
+          <m>A</m> is diagonalizable; otherwise, it is not.
+        </li>
+      </ol>
+    </algorithm>
+  </subsubsection>
+  </subsection>
+  <subsection>
+  <title>Multiplicity Conditions</title>
+
+  <theorem>
+    <statement>
+      <p>
+        Let <m>A\in\mathbb{R}^{n\times n}</m> have distinct
+        eigenvalues <m>\lambda_1,\dots,\lambda_p</m>.
+      </p>
+
+      <ol label="a">
+        <li>
+          For each <m>k</m>,
+          <m>\dim E(\lambda_k,A)</m> is less than or equal to the
+          algebraic multiplicity of <m>\lambda_k</m>.
+        </li>
+
+        <li>
+          <m>A</m> is diagonalizable if and only if
+          <me>
+            \dim E(\lambda_1,A)
+            +\cdots+
+            \dim E(\lambda_p,A)
+            = n.
+          </me>
+        </li>
+
+        <li>
+          If <m>A</m> is diagonalizable and
+          <m>B_k</m> is a basis for
+          <m>E(\lambda_k,A)</m>, then
+          <m>B_1\cup\cdots\cup B_p</m>
+          is an eigenvector basis for
+          <m>\mathbb{R}^n</m>.
+        </li>
+      </ol>
+    </statement>
+  </theorem>
+</subsection>
+
+<example>
+  <title>Full Diagonalization of a Matrix</title>
+
+  <p>Diagonalize the matrix</p>
+
+  <me>
+    A=
+    \begin{bmatrix}
+    4  &amp; 1\\
+    2  &amp; 3
+    \end{bmatrix}.
+  </me>
+
+  <task>
+    <title>Step 1: Find Eigenvalues</title>
+
+    <p>Compute the characteristic polynomial:</p>
+
+    <me>
+      \det(A-\lambda I)
+      =
+      \begin{vmatrix}
+      4-\lambda  &amp; 1\\
+      2  &amp; 3-\lambda
+      \end{vmatrix}
+      =
+      (4-\lambda)(3-\lambda)-2.
+    </me>
+
+    <p>Expanding gives</p>
+
+    <me>
+      \lambda^2-7\lambda+10.
+    </me>
+
+    <p>Solve the characteristic equation:</p>
+
+    <me>
+      \lambda^2-7\lambda+10=0
+      \iff
+      (\lambda-5)(\lambda-2)=0.
+    </me>
+
+    <p>
+      Therefore,
+    </p>
+
+    <me>
+      \lambda_1=5,
+      \qquad
+      \lambda_2=2.
+    </me>
+
+    <p>
+      Each eigenvalue has algebraic multiplicity
+      <m>1</m>.
+    </p>
+  </task>
+
+  <task>
+    <title>Step 2: Find Eigenvectors</title>
+
+    <p><em>Eigenvalue</em> <m>\lambda=5</m>:</p>
+
+    <me>
+      A-5I=
+      \begin{bmatrix}
+      -1  &amp; 1\\
+      2  &amp; -2
+      \end{bmatrix}.
+    </me>
+
+    <p>Solve <m>(A-5I)x=0</m>:</p>
+
+    <me>
+      -x_1+x_2=0
+      \qquad\Rightarrow\qquad
+      x_2=x_1.
+    </me>
+
+    <p>Taking <m>x_1=1</m> gives</p>
+
+    <me>
+      v_1=
+      \begin{bmatrix}
+      1\\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p><em>Eigenvalue</em> <m>\lambda=2</m>:</p>
+
+    <me>
+      A-2I=
+      \begin{bmatrix}
+      2  &amp; 1\\
+      2  &amp; 1
+      \end{bmatrix}.
+    </me>
+
+    <p>Solve <m>(A-2I)x=0</m>:</p>
+
+    <me>
+      2x_1+x_2=0
+      \qquad\Rightarrow\qquad
+      x_2=-2x_1.
+    </me>
+
+    <p>Taking <m>x_1=1</m> gives</p>
+
+    <me>
+      v_2=
+      \begin{bmatrix}
+      1\\
+      -2
+      \end{bmatrix}.
+    </me>
+  </task>
+
+  <remark>
+    <p>
+      Each eigenspace has dimension <m>1</m>, which matches its
+      algebraic multiplicity. Therefore,
+      <m>A</m> is diagonalizable.
+    </p>
+  </remark>
+
+  <task>
+    <title>Step 3: Form the Matrices P and D</title>
+
+    <p>Place the eigenvectors as columns of <m>P</m>:</p>
+
+    <me>
+      P=
+      \begin{bmatrix}
+      1  &amp; 1\\
+      1  &amp; -2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Form the diagonal matrix using the corresponding
+      eigenvalues:
+    </p>
+
+    <me>
+      D=
+      \begin{bmatrix}
+      5  &amp; 0\\
+      0  &amp; 2
+      \end{bmatrix}.
+    </me>
+  </task>
+
+  <task>
+    <title>Step 4: Final Diagonalization</title>
+
+    <me>
+      A=PDP^{-1}.
+    </me>
+  </task>
+
+  <remark>
+    <p>
+      This representation makes powers of <m>A</m> easy to compute:
+    </p>
+
+    <me>
+      A^k=PD^kP^{-1},
+      \qquad
+      D^k=
+      \begin{bmatrix}
+      5^k  &amp; 0\\
+      0  &amp; 2^k
+      \end{bmatrix}.
+    </me>
+  </remark>
+</example>
+
+<example>
+  <title>A Non-Diagonalizable Matrix</title>
+
+  <p>
+    Show that the matrix
+  </p>
+
+  <me>
+    A=
+    \begin{bmatrix}
+    4  &amp; 1\\
+    0  &amp; 4
+    \end{bmatrix}
+  </me>
+
+  <p>
+    is not diagonalizable.
+  </p>
+
+  <task>
+    <title>Step 1: Find Eigenvalues</title>
+
+    <p>
+      Compute the characteristic polynomial:
+    </p>
+
+    <me>
+      \det(A-\lambda I)
+      =
+      \begin{vmatrix}
+      4-\lambda  &amp; 1\\
+      0  &amp; 4-\lambda
+      \end{vmatrix}
+      =
+      (4-\lambda)^2.
+    </me>
+
+    <p>
+      Therefore the only eigenvalue is
+    </p>
+
+    <me>
+      \lambda=4,
+    </me>
+
+    <p>
+      with algebraic multiplicity <m>2</m>.
+    </p>
+  </task>
+
+  <task>
+    <title>Step 2: Compute the Eigenspace</title>
+
+    <p>
+      Solve
+    </p>
+
+    <me>
+      (A-4I)x=0,
+      \qquad
+      A-4I=
+      \begin{bmatrix}
+      0  &amp; 1\\
+      0  &amp; 0
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Let
+      <m>x=\begin{bmatrix}x_1\\x_2\end{bmatrix}</m>.
+      The system becomes
+    </p>
+
+    <me>
+      x_2=0.
+    </me>
+
+    <p>
+      There is no condition on <m>x_1</m>.
+    </p>
+
+    <p>
+      Thus
+    </p>
+
+    <me>
+      E(4,A)
+      =
+      \left\{
+      \begin{bmatrix}
+      x_1\\
+      0
+      \end{bmatrix}
+      :
+      x_1\in\mathbb{R}
+      \right\}
+      =
+      \operatorname{span}
+      \left\{
+      \begin{bmatrix}
+      1\\
+      0
+      \end{bmatrix}
+      \right\}.
+    </me>
+
+    <p>
+      Therefore,
+    </p>
+
+    <me>
+      \dim E(4,A)=1.
+    </me>
+  </task>
+
+  <task>
+    <title>Step 3: Compare Multiplicities</title>
+
+    <p>
+      We have
+    </p>
+
+    <me>
+      \text{Algebraic multiplicity}=2,
+      \qquad
+      \text{Geometric multiplicity}=1.
+    </me>
+
+    <p>
+      Since
+    <m>
+      \textrm{dim} E(4,A)&lt; \text{algebraic multiplicity},
+    </m>
+      the matrix does not have enough linearly independent
+      eigenvectors to be diagonalizable.
+    </p>
+  </task>
+
+  <task>
+    <title>Conclusion</title>
+
+    <p>
+      Because <m>A</m> does not have two linearly independent
+      eigenvectors, it is not diagonalizable.
+    </p>
+
+    <p>
+      In fact, <m>A</m> is already in Jordan form:
+    </p>
+
+    <me>
+      A=
+      \begin{bmatrix}
+      4  &amp; 1\\
+      0  &amp; 4
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      This matrix is nearly diagonal, but the eigenspace has
+      insufficient dimension for diagonalization.
+    </p>
+  </task>
+
+  <remark>
+    <p>
+      This matrix is the standard <m>2\times2</m> Jordan block
+      corresponding to the eigenvalue <m>4</m>.
+    </p>
+  </remark>
+</example>
+
+<summary>
+  <title>Summary</title>
+
+  <ul>
+    <li>
+      Eigenvalues <m>\lambda</m> satisfy
+      <m>\det(A-\lambda I)=0</m>.
+    </li>
+
+    <li>
+      Eigenvectors corresponding to <m>\lambda</m> are the
+      nontrivial solutions of
+      <m>(A-\lambda I)x=0</m>.
+    </li>
+
+    <li>
+      Eigenvectors corresponding to distinct eigenvalues are
+      linearly independent.
+    </li>
+
+    <li>
+      Algebraic multiplicity counts how many times an eigenvalue
+      appears as a root of the characteristic polynomial, while
+      geometric multiplicity is the dimension of the eigenspace.
+    </li>
+
+    <li>
+      For real matrices, complex eigenvalues occur in conjugate
+      pairs.
+    </li>
+
+    <li>
+      A matrix is diagonalizable if and only if it has
+      <m>n</m> linearly independent eigenvectors. If
+      <m>A=PDP^{-1}</m>, then
+      <m>A^k=PD^kP^{-1}</m>.
+    </li>
+  </ul>
+</summary>
 </section>
