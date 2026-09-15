@@ -292,13 +292,13 @@
         <p>After completing this module, you should be able to:</p>
 
         <ul>
-          <li><em>E1</em> Determine eigenvalues and eigenvectors of a matrix.</li>
-          <li><em>E2</em> Relate eigenvectors to solving <m>(A-\lambda I)x=0</m> via row-reduction.</li>
-          <li><em>E3</em> Use the characteristic equation to compute eigenvalues.</li>
-          <li><em>E4</em> Distinguish algebraic and geometric multiplicities.</li>
-          <li><em>E5</em> Determine when a matrix is diagonalizable and compute a diagonalization.</li>
-          <li><em>E6</em> Understand similarity and its effect on eigenvalues.</li>
-          <li><em>E7</em> Handle complex eigenvalues/eigenvectors for real matrices.</li>
+          <li> Determine eigenvalues and eigenvectors of a matrix.</li>
+          <li> Relate eigenvectors to solving <m>(A-\lambda I)x=0</m> via row-reduction.</li>
+          <li> Use the characteristic equation to compute eigenvalues.</li>
+          <li> Distinguish algebraic and geometric multiplicities.</li>
+          <li> Determine when a matrix is diagonalizable and compute a diagonalization.</li>
+          <li> Understand similarity and its effect on eigenvalues.</li>
+          <li> Handle complex eigenvalues/eigenvectors for real matrices.</li>
         </ul>
 </objectives>
 <introduction>
