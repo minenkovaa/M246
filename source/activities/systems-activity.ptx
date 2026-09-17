@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="systems-activity">
+  <title>Systems of Equations Activity</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+
+    <p>
+      We are working on building up our skills in solving linear systems.
+    </p>
+    <tabular>
+    <col width="0.35\textwidth"/>
+    <col width="0.5\textwidth"/>
+      <row>
+        <cell><alert>Mission Possible: Find the Solution</alert></cell>
+        <cell>Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions. </cell></row>
+    </tabular>
+  </introduction>
+
+    
+<tabular>
+
+    <col right="minor" width="33%"/>
+    <col right="minor" width="33%"/>
+    <col width="33%"/>
+
+  <row>
+    <cell>
+      <m>
+      \left\{
+      \begin{aligned}
+      2x+y-z&amp;=4\\
+      x+3y+2z&amp;=2\\
+      10y+10z&amp;=1
+      \end{aligned}
+      \right.\qquad
+      </m>
+      <workspace lines="15"/>
+    </cell>
+
+    <cell>
+      <m>\qquad
+      \left\{
+      \begin{aligned}
+      2x+y-z&amp;=-1\\
+      x+3y+2z&amp;=2\\
+      x+3z&amp;=7
+      \end{aligned}
+      \right.\qquad
+      </m>
+      <workspace lines="15"/>
+    </cell>
+
+    <cell>
+      <m>\qquad
+      \left\{
+      \begin{aligned}
+      2x+y-z&amp;=0\\
+      x+3y+2z&amp;=0\\
+      10y+10z&amp;=0
+      \end{aligned}
+      \right.\qquad
+      </m>
+      <workspace lines="15"/>
+    </cell>
+  </row>
+</tabular>
+
+
+
+</worksheet>
