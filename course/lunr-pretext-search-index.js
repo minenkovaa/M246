@@ -1027,6 +1027,15 @@ var ptx_lunr_docs = [
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
 {
+  "id": "systems-activity",
+  "level": "1",
+  "url": "systems-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Systems of Equations Activity",
+  "body": " Systems of Equations Activity    We are working on building up our skills in solving linear systems.      Mission Possible: Find the Solution  Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions.                       "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
