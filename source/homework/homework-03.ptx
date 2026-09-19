@@ -4,31 +4,27 @@
   <title>Homework 03</title>
   <introduction>
     <p>
-      <alert>Instructions:</alert> Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab3_YourLastName.m and find eigenvalues and eigenvectors, and check that your diagonalization is correct by multiplying <m>PDP^{-1}</m> for your homework.</p><p>
+      <alert>Instructions:</alert> Complete the exercises  and aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab3_YourLastName.m and find eigenvalues and eigenvectors, and check that your diagonalization is correct by multiplying <m>PDP^{-1}</m> for your homework.</p><p>
       This is a guided exercise to make sure you can apply the concepts that we have learned in a new setting. You may use MATLAB to double-check your calculations, but you must show your work.
     </p>
   </introduction>
 
    <p> <alert>Guided Practice: Eigenvalues, Eigenvectors, and Diagonalization</alert></p>
 
-    <p><small>
-        For each matrix, find the eigenvalues, eigenvectors, and a diagonalization
-        of the matrix (if possible). Show all work.</small></p>
-
 <ol>
         <li>
-            <p>Find the characteristic polynomial <m>\det(A-\lambda I)</m> and set it equal 0.</p></li><li>
+            <p>Find the characteristic polynomial <m>\small\det(A-\lambda I)</m> and set it equal 0.</p></li><li>
                 <p>
-                 The solutions of the previous step is the eigenvalues. They can be repeated, they can be real numbers as well as complex numbers. Find all of them.
+                 The solutions of the previous step are the eigenvalues. They can be repeated, they can be real as well as complex numbers. Find all of them.
                 </p>
             </li>
             <li>
                 <p>
-                    Find eigenvectors corresponding to each distinct eigenvalue (if you have repeated ones , perform this step only once) by solving <m>A-\lambda I=0</m> and then pick a non-zero solution as <m>\mathbf{v}_i</m> for each eigenvalue.
+                    Find eigenvectors corresponding to each distinct eigenvalue (if you have repeated ones, perform this step only once) by solving <m>\small(A-\lambda I)x=0</m> and then pick a non-zero solution as <m>\mathbf{v}_i</m> for each eigenvalue.
                 </p>
                 <p>
-                    At this step you will get infinitely many solution with one or more free variables. Here is how you can pick non-zero solution: set one of the free variables to 1 and the rest to 0. This will give you a non-zero solution. Then repeat it with the rest of the free variables one by one, e.g.:
-                   <me>
+                    At this step you will get infinitely many solutions with one or more free variables. Here is how you can pick non-zero solutions: set one of the free variables to 1 and the rest to 0. This will give you a non-zero solution. Then repeat it with the rest of the free variables one by one, e.g.:
+                   <me>\small
                     \begin{cases}
                     x=2y+3z\\
                     y\text{ is free}\\
@@ -38,7 +34,7 @@
                     2y+3z\\
                     y\\
                     z
-                    \end{bmatrix}\text{ is the pattern, then},\quad
+                    \end{bmatrix}\text{ is a solution},\quad
                     v_1=\begin{bmatrix}
                     2\\
                     1\\
@@ -50,19 +46,19 @@
                     1
                     \end{bmatrix}(y=0,z=1)
                    </me>
+            
                 </p>
             </li>
             <li>
                 <p>
+            
                     If we get enough eigenvectors this way, we can construct the matrix <m>P</m> by putting the eigenvectors as columns and <m>D</m>, a diagonal matrix with the eigenvalues on the diagonal in the order that corresponds to the eigenvectors in <m>P</m>. Make sure that <m>P</m> is invertible, otherwise the matrix is not diagonalizable.
-                </p>
-                <p>
                     For example if <m>v_1</m> and <m>v_2</m> are eigenvectors corresponding to <m>\lambda_1</m> and <m>\lambda_2</m> respectively, then
                     <me>
                        P=\begin{bmatrix}
                        v_1 &amp; v_2
                        \end{bmatrix},\quad\text{and}\quad
-                       D=\begin{bmatrix}
+                       D=\small\begin{bmatrix}
                        \lambda_1 &amp; 0\\
                        0 &amp; \lambda_2
                        \end{bmatrix}.
