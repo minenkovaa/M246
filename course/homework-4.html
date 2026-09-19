@@ -447,32 +447,31 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homework 03</span><div class="print-links"><a href="?printpreview=homework-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <section class="introduction" id="homework-4-2"><div class="para" id="homework-4-2-1">
-<em class="alert">Instructions:</em> Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab3_YourLastName.m and find eigenvalues and eigenvectors, and check that your diagonalization is correct by multiplying <span class="process-math">\(PDP^{-1}\)</span> for your homework.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="alert">Instructions:</em> Complete the exercises  and aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab3_YourLastName.m and find eigenvalues and eigenvectors, and check that your diagonalization is correct by multiplying <span class="process-math">\(PDP^{-1}\)</span> for your homework.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="homework-4-2-2">This is a guided exercise to make sure you can apply the concepts that we have learned in a new setting. You may use MATLAB to double-check your calculations, but you must show your work.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><div class="para" id="homework-4-3">
 <em class="alert">Guided Practice: Eigenvalues, Eigenvectors, and Diagonalization</em><div class="autopermalink" data-description="Paragraph"><a href="#homework-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="homework-4-4">For each matrix, find the eigenvalues, eigenvectors, and a diagonalization of the matrix (if possible). Show all work.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="lower-alpha lower-alpha-level-1" id="homework-4-4">
+<li id="homework-4-4-1">
+<div class="para" id="homework-4-4-1-1">Find the characteristic polynomial <span class="process-math">\(\small\det(A-\lambda I)\)</span> and set it equal 0.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<ol class="lower-alpha lower-alpha-level-1" id="homework-4-5">
-<li id="homework-4-5-1">
-<div class="para" id="homework-4-5-1-1">Find the characteristic polynomial <span class="process-math">\(\det(A-\lambda I)\)</span> and set it equal 0.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item a"><a href="#homework-4-5-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#homework-4-4-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
-<li id="homework-4-5-2">
-<div class="para" id="homework-4-5-2-1">The solutions of the previous step is the eigenvalues. They can be repeated, they can be real numbers as well as complex numbers. Find all of them.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="homework-4-4-2">
+<div class="para" id="homework-4-4-2-1">The solutions of the previous step are the eigenvalues. They can be repeated, they can be real as well as complex numbers. Find all of them.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#homework-4-5-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#homework-4-4-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
-<li id="homework-4-5-3">
-<div class="para" id="homework-4-5-3-1">Find eigenvectors corresponding to each distinct eigenvalue (if you have repeated ones , perform this step only once) by solving <span class="process-math">\(A-\lambda I=0\)</span> and then pick a non-zero solution as <span class="process-math">\(\mathbf{v}_i\)</span> for each eigenvalue.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="homework-4-4-3">
+<div class="para" id="homework-4-4-3-1">Find eigenvectors corresponding to each distinct eigenvalue (if you have repeated ones, perform this step only once) by solving <span class="process-math">\(\small(A-\lambda I)x=0\)</span> and then pick a non-zero solution as <span class="process-math">\(\mathbf{v}_i\)</span> for each eigenvalue.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="homework-4-5-3-2">
-<div class="para">At this step you will get infinitely many solution with one or more free variables. Here is how you can pick non-zero solution: set one of the free variables to 1 and the rest to 0. This will give you a non-zero solution. Then repeat it with the rest of the free variables one by one, e.g.:</div>
-<div class="displaymath process-math" id="homework-4-5-3-2-1">
+<div class="para logical" id="homework-4-4-3-2">
+<div class="para">At this step you will get infinitely many solutions with one or more free variables. Here is how you can pick non-zero solutions: set one of the free variables to 1 and the rest to 0. This will give you a non-zero solution. Then repeat it with the rest of the free variables one by one, e.g.:</div>
+<div class="displaymath process-math" id="homework-4-4-3-2-1">
 \begin{equation*}
+\small
 \begin{cases}
 x=2y+3z\\
 y\text{ is free}\\
@@ -482,7 +481,7 @@ z\text{ is free}
 2y+3z\\
 y\\
 z
-\end{bmatrix}\text{ is the pattern, then},\quad
+\end{bmatrix}\text{ is a solution},\quad
 v_1=\begin{bmatrix}
 2\\
 1\\
@@ -495,29 +494,27 @@ v_2=\begin{bmatrix}
 \end{bmatrix}(y=0,z=1)
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#homework-4-5-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#homework-4-4-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
 </li>
-<li id="homework-4-5-4">
-<div class="para" id="homework-4-5-4-1">If we get enough eigenvectors this way, we can construct the matrix <span class="process-math">\(P\)</span> by putting the eigenvectors as columns and <span class="process-math">\(D\text{,}\)</span> a diagonal matrix with the eigenvalues on the diagonal in the order that corresponds to the eigenvectors in <span class="process-math">\(P\text{.}\)</span> Make sure that <span class="process-math">\(P\)</span> is invertible, otherwise the matrix is not diagonalizable.<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="homework-4-5-4-2">
-<div class="para">For example if <span class="process-math">\(v_1\)</span> and <span class="process-math">\(v_2\)</span> are eigenvectors corresponding to <span class="process-math">\(\lambda_1\)</span> and <span class="process-math">\(\lambda_2\)</span> respectively, then</div>
-<div class="displaymath process-math" id="homework-4-5-4-2-5">
+<li id="homework-4-4-4">
+<div class="para logical" id="homework-4-4-4-1">
+<div class="para">If we get enough eigenvectors this way, we can construct the matrix <span class="process-math">\(P\)</span> by putting the eigenvectors as columns and <span class="process-math">\(D\text{,}\)</span> a diagonal matrix with the eigenvalues on the diagonal in the order that corresponds to the eigenvectors in <span class="process-math">\(P\text{.}\)</span> Make sure that <span class="process-math">\(P\)</span> is invertible, otherwise the matrix is not diagonalizable. For example if <span class="process-math">\(v_1\)</span> and <span class="process-math">\(v_2\)</span> are eigenvectors corresponding to <span class="process-math">\(\lambda_1\)</span> and <span class="process-math">\(\lambda_2\)</span> respectively, then</div>
+<div class="displaymath process-math" id="homework-4-4-4-1-9">
 \begin{equation*}
 P=\begin{bmatrix}
 v_1 &amp; v_2
 \end{bmatrix},\quad\text{and}\quad
-D=\begin{bmatrix}
+D=\small\begin{bmatrix}
 \lambda_1 &amp; 0\\
 0 &amp; \lambda_2
 \end{bmatrix}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-5-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework-4-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#homework-4-5-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#homework-4-4-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 </ol>
 <article class="exercise exercise-like" id="practice-2x2"><h3 class="heading">
