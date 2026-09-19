@@ -11,9 +11,9 @@
 
    <p> <alert>Guided Practice: Eigenvalues, Eigenvectors, and Diagonalization</alert></p>
 
-    <p>
+    <p><small>
         For each matrix, find the eigenvalues, eigenvectors, and a diagonalization
-        of the matrix (if possible). Show all work.</p>
+        of the matrix (if possible). Show all work.</small></p>
 
 <ol>
         <li>
