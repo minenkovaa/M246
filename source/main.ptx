@@ -71,6 +71,7 @@
       <xi:include href="./activities/matrix-activity2.ptx"/>
       <xi:include href="./activities/inverse-activity.ptx"/>
       <xi:include href="./activities/systems-activity.ptx"/>
+      <xi:include href="./activities/modelingLA-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
