@@ -82,6 +82,7 @@
       <xi:include href="./handouts/matrix-handout2.ptx"/>
       <xi:include href="./handouts/inverse-handout.ptx"/>
       <xi:include href="./handouts/determinants-handout.ptx"/>
+      <xi:include href="./handouts/modelLA-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+  <title>Modeling Activity 1</title>
+
+  <!-- Optional introduction -->
+
+  <!-- Exercises start here. -->
+  <exercise>
+    <title>Cement Mixing</title>
+
+    <p>Problem Statement:</p>
+    <p>In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:
+<ol>
+<li>
+Residential foundations </li>
+<li>
+Garage slabs </li>
+<li>
+Basement walls </li>
+<li>
+Parking structures </li>
+<li>
+Sidewalks subjected to freeze-thaw cycles </li>
+<li>
+Bridge decks and bridge approaches </li>
+<li>
+Reinforced concrete beams and columns in moderate-load structures </li>
+</ol>
+This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.</p>
+<p> <alert>Concrete Mix Feasibility Problem</alert></p><p>
+
+A contractor must prepare a batch of concrete for a bridge deck.
+The concrete mixture consists of three ingredients: cement, sand, and gravel. 
+The contractor must determine the mass of each ingredient to satisfy the following requirements.
+</p>
+<ul>
+    <li>
+        <p>
+            The total mass of the concrete batch must be 1,000 kilograms.
+        </p>
+    </li>
+    <li>
+        <p>
+            The mass of sand must be twice the mass of cement.
+        </p>
+    </li>
+    <li>
+        <p>
+            The mass of gravel must be three times the mass of cement.
+        </p>
+    </li>
+</ul>
+<p> Determine whether a feasible mix exists and if it does, find the masses of each ingredient.</p>
+</exercise>
+
+  <exercise workspace="1in">
+    <title>Step 1: Linear system as a mathematical model</title>
+
+    <p>Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.</p>
+ 
+</exercise>
+
+  <exercise workspace="2in">
+    <title> Step 2: Solve using Gaussian Elimination</title>
+
+    <p>Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.</p>
+
+</exercise>
+  <exercise workspace="1in">
+    <title> Step 3: Interpretation</title>
+    <p>
+        What does the solution mean in the context of the problem? If there is no solution, explain why.
+    </p>
+</exercise>
+</handout>
