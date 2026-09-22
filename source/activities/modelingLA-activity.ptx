@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="modelingLA-activity">
+  <title>Modeling Activity</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+
+    <p>
+      We are working on building up our modeling skills using linear algebra.
+    </p><p>
+  <alert>Design Quest: Model• Solve• Decide</alert></p>
+  <p>
+   We will follow the workflow shown below:</p><p>
+
+Problem → Visualization/Model → Mathematical Solution → MATLAB (to assist/check) → Engineering Decision/Interpretation
+
+</p><p>Your work should clearly demonstrate each stage of the process.   </p>
+  </introduction>
+
+<ol>
+
+  <li>
+   <p>Problem</p>
+    <ol>
+      <li>Read the problem carefully.</li>
+      <li>Identify the engineering context and objective.</li>
+      <li>Define all unknown variables, parameters, units, and constraints.</li>
+      <li>State what quantity or decision is being sought.</li>
+    </ol>
+  </li>
+
+  <li>
+   <p>Visualization/Model</p>
+    <ol>
+      <li>Create a sketch, diagram, system schematic, or other appropriate representation.</li>
+      <li>Label all known quantities and unknown variables.</li>
+      <li>If a sketch is not practical, provide a written description of the system.</li>
+      <li>Develop the governing equations from the problem statement and engineering principles.</li>
+      <li>Clearly show how each equation is obtained.</li>
+      <li>Include all constraints, balance equations, equilibrium equations, ratio relationships, or design requirements.</li>
+      <li>Verify that the number of equations and unknowns are identified.</li>
+    </ol>
+  </li>
+
+  <li>
+   <p>Mathematical Solution</p>
+    <ol>
+      <li>Use appropriate mathematical concepts and methods to solve the governing equations.</li>
+      <li>Show all steps of the solution.</li>
+    </ol>
+  </li>
+
+  <li>
+   <p>MATLAB (to assist/check)</p>
+    <ol>
+      <li>Write the MATLAB commands needed to solve the problem or check the solution.</li>
+      <li>Use appropriate MATLAB functions such as <c>rref</c>, <c>rank</c>, <c>det</c>, <c>eig</c>, <c>inv</c>, or the backslash operator <c>\</c> when appropriate.</li>
+      <li>Include brief comments explaining your code.</li>
+      <li>Interpret the MATLAB output rather than simply reporting it.</li>
+    </ol>
+  </li>
+
+  <li>
+   <p>Engineering Decision</p>
+    <ol>
+      <li>Interpret the mathematical solution in the context of the engineering problem.</li>
+      <li>Explain whether the design, system, or configuration is feasible.</li>
+      <li>Discuss any engineering implications.</li>
+      <li>State assumptions and limitations.</li>
+      <li>Make a recommendation supported by your calculations.</li>
+    </ol>
+  </li>
+
+</ol>
+</worksheet>
