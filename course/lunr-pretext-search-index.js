@@ -1261,6 +1261,51 @@ var ptx_lunr_docs = [
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
 {
+  "id": "handouts-7",
+  "level": "1",
+  "url": "handouts-7.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Modeling Activity 1",
+  "body": " Modeling Activity 1     Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.    Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.    Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.    Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.   "
+},
+{
+  "id": "handouts-7-2",
+  "level": "2",
+  "url": "handouts-7.html#handouts-7-2",
+  "type": "Checkpoint",
+  "number": "99",
+  "title": "Cement Mixing.",
+  "body": " Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.  "
+},
+{
+  "id": "handouts-7-3",
+  "level": "2",
+  "url": "handouts-7.html#handouts-7-3",
+  "type": "Checkpoint",
+  "number": "100",
+  "title": "Step 1: Linear system as a mathematical model.",
+  "body": " Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.  "
+},
+{
+  "id": "handouts-7-4",
+  "level": "2",
+  "url": "handouts-7.html#handouts-7-4",
+  "type": "Checkpoint",
+  "number": "101",
+  "title": "Step 2: Solve using Gaussian Elimination.",
+  "body": " Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.  "
+},
+{
+  "id": "handouts-7-5",
+  "level": "2",
+  "url": "handouts-7.html#handouts-7-5",
+  "type": "Checkpoint",
+  "number": "102",
+  "title": "Step 3: Interpretation.",
+  "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -1400,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "99",
+  "number": "103",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
