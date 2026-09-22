@@ -1036,6 +1036,15 @@ var ptx_lunr_docs = [
   "body": " Systems of Equations Activity    We are working on building up our skills in solving linear systems.      Mission Possible: Find the Solution  Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions.                       "
 },
 {
+  "id": "modelingLA-activity",
+  "level": "1",
+  "url": "modelingLA-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Modeling Activity",
+  "body": " Modeling Activity    We are working on building up our modeling skills using linear algebra.  Design Quest: Model• Solve• Decide  We will follow the workflow shown below: Problem → Visualization\/Model → Mathematical Solution → MATLAB (to assist\/check) → Engineering Decision\/Interpretation Your work should clearly demonstrate each stage of the process.     Problem   Read the problem carefully.  Identify the engineering context and objective.  Define all unknown variables, parameters, units, and constraints.  State what quantity or decision is being sought.     Visualization\/Model   Create a sketch, diagram, system schematic, or other appropriate representation.  Label all known quantities and unknown variables.  If a sketch is not practical, provide a written description of the system.  Develop the governing equations from the problem statement and engineering principles.  Clearly show how each equation is obtained.  Include all constraints, balance equations, equilibrium equations, ratio relationships, or design requirements.  Verify that the number of equations and unknowns are identified.     Mathematical Solution   Use appropriate mathematical concepts and methods to solve the governing equations.  Show all steps of the solution.     MATLAB (to assist\/check)   Write the MATLAB commands needed to solve the problem or check the solution.  Use appropriate MATLAB functions such as rref , rank , det , eig , inv , or the backslash operator \\ when appropriate.  Include brief comments explaining your code.  Interpret the MATLAB output rather than simply reporting it.     Engineering Decision   Interpret the mathematical solution in the context of the engineering problem.  Explain whether the design, system, or configuration is feasible.  Discuss any engineering implications.  State assumptions and limitations.  Make a recommendation supported by your calculations.     "
+},
+{
   "id": "handouts-2",
   "level": "1",
   "url": "handouts-2.html",
