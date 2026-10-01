@@ -1315,6 +1315,114 @@ var ptx_lunr_docs = [
   "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
 },
 {
+  "id": "handouts-8",
+  "level": "1",
+  "url": "handouts-8.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Surfaces and Vectors",
+  "body": " Surfaces and Vectors   Show all work and justify your answers. Explain the geometry whenever possible and include sketches where appropriate.    Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).          Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and     Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .     Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.     Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?    "
+},
+{
+  "id": "handouts-8-3",
+  "level": "2",
+  "url": "handouts-8.html#handouts-8-3",
+  "type": "Checkpoint",
+  "number": "103",
+  "title": "Recognizing Surfaces.",
+  "body": " Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).        "
+},
+{
+  "id": "handouts-8-4",
+  "level": "2",
+  "url": "handouts-8.html#handouts-8-4",
+  "type": "Checkpoint",
+  "number": "104",
+  "title": "Intersections of Surfaces.",
+  "body": " Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and   "
+},
+{
+  "id": "handouts-8-5",
+  "level": "2",
+  "url": "handouts-8.html#handouts-8-5",
+  "type": "Checkpoint",
+  "number": "105",
+  "title": "Possible Intersections of Two Spheres.",
+  "body": " Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .   "
+},
+{
+  "id": "handouts-8-6",
+  "level": "2",
+  "url": "handouts-8.html#handouts-8-6",
+  "type": "Checkpoint",
+  "number": "106",
+  "title": "Vector Operations.",
+  "body": " Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.   "
+},
+{
+  "id": "handouts-8-7",
+  "level": "2",
+  "url": "handouts-8.html#handouts-8-7",
+  "type": "Checkpoint",
+  "number": "107",
+  "title": "Orthogonal Vectors.",
+  "body": " Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?   "
+},
+{
+  "id": "handouts-9",
+  "level": "1",
+  "url": "handouts-9.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Limits, Partial Derivatives, and Optimization",
+  "body": " Limits, Partial Derivatives, and Optimization   Show all work and justify your conclusions. Explain geometric meanings whenever appropriate.     A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.     First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.     Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?     Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.     Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.    "
+},
+{
+  "id": "handouts-9-3",
+  "level": "2",
+  "url": "handouts-9.html#handouts-9-3",
+  "type": "Checkpoint",
+  "number": "108",
+  "title": "A Limit That Does Not Exist.",
+  "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
+},
+{
+  "id": "handouts-9-4",
+  "level": "2",
+  "url": "handouts-9.html#handouts-9-4",
+  "type": "Checkpoint",
+  "number": "109",
+  "title": "First and Second Partial Derivatives.",
+  "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
+},
+{
+  "id": "handouts-9-5",
+  "level": "2",
+  "url": "handouts-9.html#handouts-9-5",
+  "type": "Checkpoint",
+  "number": "110",
+  "title": "Directional Derivative and Elevation.",
+  "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
+},
+{
+  "id": "handouts-9-6",
+  "level": "2",
+  "url": "handouts-9.html#handouts-9-6",
+  "type": "Checkpoint",
+  "number": "111",
+  "title": "Critical Point and Hessian: Local Maximum.",
+  "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
+},
+{
+  "id": "handouts-9-7",
+  "level": "2",
+  "url": "handouts-9.html#handouts-9-7",
+  "type": "Checkpoint",
+  "number": "112",
+  "title": "Critical Point and Hessian: Local Minimum.",
+  "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -1454,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "103",
+  "number": "113",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
