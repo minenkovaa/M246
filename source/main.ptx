@@ -84,6 +84,8 @@
       <xi:include href="./handouts/inverse-handout.ptx"/>
       <xi:include href="./handouts/determinants-handout.ptx"/>
       <xi:include href="./handouts/modelLA-handout.ptx"/>
+      <xi:include href="./handouts/vectorsurface-handout.ptx"/>
+      <xi:include href="./handouts/partial-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<handout>
+<title>Surfaces and Vectors</title>
+
+<introduction>
+<p>
+Show all work and justify your answers. Explain the geometry whenever possible and include sketches where appropriate.
+
+<url href="https://opentext.uleth.ca/apex-calculus/chapter_planar_curves.html"/>
+</p></introduction>
+
+<exercise workspace="2in">
+<title>Recognizing Surfaces</title>
+
+<p>
+For each equation below:
+</p>
+
+<ol marker="a">
+<li>Identify the surface.</li>
+<li>Explain how you recognized it.</li>
+<li>Sketch the surface (use Geogebra 3D to help).</li>
+</ol>
+
+<p><m>x^2+y^2=9</m></p>
+
+<p><m>\dfrac{x^2}{4}+\dfrac{y^2}{9}+\dfrac{z^2}{16}=1</m></p>
+
+<p><m>z=9-x^2-y^2</m></p>
+
+<p><m>x^2-y^2-z^2=1</m></p>
+
+<p><m>y=x^2-z^2</m></p>
+
+</exercise>
+
+<exercise workspace="2in">
+<title>Intersections of Surfaces</title>
+
+<p>
+For each pair of surfaces:
+</p>
+
+<ol marker="a">
+<li>Find the intersection.</li>
+<li>Describe the geometric object obtained.</li>
+<li>State where it lies in space.</li>
+<li>Sketch the surfaces and their intersection.</li>
+</ol>
+
+<p>
+<m>z=x^2+y^2</m>
+and
+<m>x=0</m>
+</p>
+
+<p>
+<m>x^2+y^2+z^2=9</m>
+and
+<m>z=x^2+y^2</m>
+</p>
+
+
+
+</exercise>
+
+<exercise workspace="2in">
+<title>Possible Intersections of Two Spheres</title>
+
+<p>
+Suppose two spheres have centers <m>C_1</m> and <m>C_2</m>, and let <m>d</m> denote the distance between their centers.
+</p>
+
+<p>
+List and describe all possible intersections of two spheres.
+</p>
+
+<ol marker="a">
+<li>Describe each possible geometric intersection.</li>
+<li>Draw a sketch for each case.</li>
+<li>State the relationship between the radii and the distance <m>d</m>.</li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2in">
+<title>Vector Operations</title>
+
+<p>
+Let
+<m>
+\mathbf{u}=\langle 2,-1,3\rangle,
+\qquad
+\mathbf{v}=\langle -4,5,1\rangle.
+</m>
+</p>
+
+<ol marker="a">
+<li>Compute <m>\mathbf{u}+\mathbf{v}</m>.</li>
+
+<li>Find <m>\|\mathbf{u}\|</m>.</li>
+
+<li>Compute <m>\mathbf{u}\cdot\mathbf{v}</m>.</li>
+
+<li>Compute <m>\mathbf{u}\times\mathbf{v}</m>.</li>
+
+<li>
+Verify that the cross product is orthogonal to both vectors.
+</li>
+
+</ol>
+
+</exercise>
+
+<exercise workspace="2in">
+<title>Orthogonal Vectors</title>
+
+<p>
+Let
+<m>
+\mathbf{v}=\langle 2,-3,1\rangle.
+</m>
+</p>
+
+<ol marker="a">
+<li>
+Find a nonzero vector <m>\mathbf{w}</m> such that
+<m>
+\mathbf{v}\cdot\mathbf{w}=0.
+</m>
+</li>
+
+<li>
+Find a nonzero vector <m>\mathbf{u}</m> that is orthogonal to both
+<m>\mathbf{v}</m> and <m>\mathbf{w}</m>.
+</li>
+
+<li>
+Explain how you found <m>\mathbf{u}</m>.
+</li>
+
+<li>
+What geometric relationship exists among
+<m>\mathbf{u}</m>,
+<m>\mathbf{v}</m>, and
+<m>\mathbf{w}</m>?
+</li>
+
+</ol>
+
+</exercise>
+
+</handout>
