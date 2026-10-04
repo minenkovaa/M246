@@ -763,7 +763,178 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 4: Partial derivatives; higher-order derivatives",
-  "body": " Week 4: Partial derivatives; higher-order derivatives   Tuesday  Partial derivatives and their properties.    Thursday  Higher-order derivatives and their properties.   "
+  "body": " Week 4: Partial derivatives; higher-order derivatives   In single-variable calculus we studied functions whose inputs are real numbers. In this chapter we investigate functions whose inputs are points in the plane. Such functions may represent elevation, temperature, pressure, population density, or cost over a geographic region.  Many ideas from Calculus I reappear in this richer setting: limits, derivatives, tangent lines, maxima, and minima. At the same time, new phenomena emerge because points in the plane can move in infinitely many directions.    Limits and Continuity  In one-variable calculus a point can approach a target value from the left or from the right. In the plane, however, a point may approach a target along infinitely many paths.      Why does checking only one or two paths toward a point fail to prove that a limit exists?    Let be defined near the point . We say when the values of become arbitrarily close to whenever is sufficiently close to .    A function is continuous at if     Most functions encountered in calculus, including polynomials, trigonometric functions, exponentials, and rational functions where defined, are continuous on their domains.     Partial Derivatives  For a function of two variables we may ask how the output changes when only one input changes. This leads to the notion of a partial derivative.   Coordinate Traces  Fixing one variable produces a curve obtained from the surface. The slope of this curve determines a partial derivative.       The partial derivative of with respect to is The partial derivative of with respect to is     When computing , treat as a constant. When computing , treat as a constant.    Find the first partial derivatives of    and      Directional Derivatives and the Gradient  Partial derivatives measure rates of change in the coordinate directions. What if we move in an arbitrary direction?   A Hiking Interpretation       Which hiker appears to gain elevation faster?  Which direction seems closest to perpendicular to the contour lines?  Which direction should produce the greatest rate of increase?      Let be a unit vector. The directional derivative of in the direction is     The gradient of is     The gradient points in the direction of greatest increase of a function.    The gradient is perpendicular to level curves.     Higher-Order Partial Derivatives   Second-order partial derivatives include     Verify Clairaut's theorem for    and therefore Also, so Consequently,     If the mixed partial derivatives are continuous on an open region, then      Optimization  Optimization in several variables extends the ideas of local maxima and local minima from Calculus I.   From One Dimension to Two Dimensions           Saddle Points  Two-dimensional functions exhibit a behavior that has no analogue in one dimension.     A saddle point increases in some directions and decreases in others.    A point is a critical point if or one or both partial derivatives fail to exist.    For a critical point,     Let be a critical point.   If and , then is a local minimum.  If and , then is a local maximum.  If , then is a saddle point.  If , the test is inconclusive.     Examine a contour map containing several marked points. Without computing derivatives, determine which points appear to be   local maxima,  local minima,  saddle points,  ordinary points.     "
+},
+{
+  "id": "sec-limits-4",
+  "level": "2",
+  "url": "notes-week-04.html#sec-limits-4",
+  "type": "Investigation",
+  "number": "1",
+  "title": "",
+  "body": " Why does checking only one or two paths toward a point fail to prove that a limit exists?  "
+},
+{
+  "id": "def-limit-2d",
+  "level": "2",
+  "url": "notes-week-04.html#def-limit-2d",
+  "type": "Definition",
+  "number": "75",
+  "title": "",
+  "body": " Let be defined near the point . We say when the values of become arbitrarily close to whenever is sufficiently close to .  "
+},
+{
+  "id": "sec-limits-6",
+  "level": "2",
+  "url": "notes-week-04.html#sec-limits-6",
+  "type": "Definition",
+  "number": "76",
+  "title": "",
+  "body": " A function is continuous at if   "
+},
+{
+  "id": "sec-limits-7",
+  "level": "2",
+  "url": "notes-week-04.html#sec-limits-7",
+  "type": "Remark",
+  "number": "77",
+  "title": "",
+  "body": " Most functions encountered in calculus, including polynomials, trigonometric functions, exponentials, and rational functions where defined, are continuous on their domains.  "
+},
+{
+  "id": "def-partials",
+  "level": "2",
+  "url": "notes-week-04.html#def-partials",
+  "type": "Definition",
+  "number": "78",
+  "title": "",
+  "body": " The partial derivative of with respect to is The partial derivative of with respect to is   "
+},
+{
+  "id": "sec-partials-5",
+  "level": "2",
+  "url": "notes-week-04.html#sec-partials-5",
+  "type": "Remark",
+  "number": "79",
+  "title": "",
+  "body": " When computing , treat as a constant. When computing , treat as a constant.  "
+},
+{
+  "id": "sec-partials-6",
+  "level": "2",
+  "url": "notes-week-04.html#sec-partials-6",
+  "type": "Example",
+  "number": "80",
+  "title": "",
+  "body": " Find the first partial derivatives of    and   "
+},
+{
+  "id": "sec-directional-3-3",
+  "level": "2",
+  "url": "notes-week-04.html#sec-directional-3-3",
+  "type": "Investigation",
+  "number": "2",
+  "title": "",
+  "body": "  Which hiker appears to gain elevation faster?  Which direction seems closest to perpendicular to the contour lines?  Which direction should produce the greatest rate of increase?   "
+},
+{
+  "id": "sec-directional-4",
+  "level": "2",
+  "url": "notes-week-04.html#sec-directional-4",
+  "type": "Definition",
+  "number": "81",
+  "title": "",
+  "body": " Let be a unit vector. The directional derivative of in the direction is   "
+},
+{
+  "id": "sec-directional-5",
+  "level": "2",
+  "url": "notes-week-04.html#sec-directional-5",
+  "type": "Definition",
+  "number": "82",
+  "title": "",
+  "body": " The gradient of is   "
+},
+{
+  "id": "sec-directional-6",
+  "level": "2",
+  "url": "notes-week-04.html#sec-directional-6",
+  "type": "Theorem",
+  "number": "83",
+  "title": "",
+  "body": " The gradient points in the direction of greatest increase of a function.  "
+},
+{
+  "id": "sec-directional-7",
+  "level": "2",
+  "url": "notes-week-04.html#sec-directional-7",
+  "type": "Theorem",
+  "number": "84",
+  "title": "",
+  "body": " The gradient is perpendicular to level curves.  "
+},
+{
+  "id": "sec-second-partials-2",
+  "level": "2",
+  "url": "notes-week-04.html#sec-second-partials-2",
+  "type": "Definition",
+  "number": "85",
+  "title": "",
+  "body": " Second-order partial derivatives include   "
+},
+{
+  "id": "sec-second-partials-3",
+  "level": "2",
+  "url": "notes-week-04.html#sec-second-partials-3",
+  "type": "Example",
+  "number": "86",
+  "title": "",
+  "body": " Verify Clairaut's theorem for    and therefore Also, so Consequently,   "
+},
+{
+  "id": "thm-clairaut",
+  "level": "2",
+  "url": "notes-week-04.html#thm-clairaut",
+  "type": "Theorem",
+  "number": "87",
+  "title": "",
+  "body": " If the mixed partial derivatives are continuous on an open region, then   "
+},
+{
+  "id": "sec-optimization-5",
+  "level": "2",
+  "url": "notes-week-04.html#sec-optimization-5",
+  "type": "Definition",
+  "number": "88",
+  "title": "",
+  "body": " A point is a critical point if or one or both partial derivatives fail to exist.  "
+},
+{
+  "id": "sec-optimization-6",
+  "level": "2",
+  "url": "notes-week-04.html#sec-optimization-6",
+  "type": "Definition",
+  "number": "89",
+  "title": "",
+  "body": " For a critical point,   "
+},
+{
+  "id": "sec-optimization-7",
+  "level": "2",
+  "url": "notes-week-04.html#sec-optimization-7",
+  "type": "Theorem",
+  "number": "90",
+  "title": "",
+  "body": " Let be a critical point.   If and , then is a local minimum.  If and , then is a local maximum.  If , then is a saddle point.  If , the test is inconclusive.   "
+},
+{
+  "id": "sec-optimization-8",
+  "level": "2",
+  "url": "notes-week-04.html#sec-optimization-8",
+  "type": "Investigation",
+  "number": "3",
+  "title": "",
+  "body": " Examine a contour map containing several marked points. Without computing derivatives, determine which points appear to be   local maxima,  local minima,  saddle points,  ordinary points.   "
 },
 {
   "id": "notes-week-05",
@@ -878,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "75",
+  "number": "91",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -941,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "76",
+  "number": "92",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1004,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "77",
+  "number": "93",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1022,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "78",
+  "number": "94",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1067,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "79",
+  "number": "95",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -1076,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "80",
+  "number": "96",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -1085,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "81",
+  "number": "97",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -1094,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "82",
+  "number": "98",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -1103,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "83",
+  "number": "99",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -1121,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "84",
+  "number": "100",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -1130,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "85",
+  "number": "101",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -1139,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "86",
+  "number": "102",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -1148,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "87",
+  "number": "103",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -1157,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "88",
+  "number": "104",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
@@ -1175,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-2",
   "type": "Checkpoint",
-  "number": "89",
+  "number": "105",
   "title": "Find the Inverse.",
   "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
 },
@@ -1184,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-3",
   "type": "Checkpoint",
-  "number": "90",
+  "number": "106",
   "title": "Verify the Inverse.",
   "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
 },
@@ -1193,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-4",
   "type": "Checkpoint",
-  "number": "91",
+  "number": "107",
   "title": "Error Analysis.",
   "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
 },
@@ -1202,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-5",
   "type": "Checkpoint",
-  "number": "92",
+  "number": "108",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
 },
@@ -1211,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-6",
   "type": "Checkpoint",
-  "number": "93",
+  "number": "109",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
@@ -1229,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-2",
   "type": "Checkpoint",
-  "number": "94",
+  "number": "110",
   "title": "Find the Determinant.",
   "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
 },
@@ -1238,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-3",
   "type": "Checkpoint",
-  "number": "95",
+  "number": "111",
   "title": "Determinant of a Product.",
   "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
 },
@@ -1247,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-4",
   "type": "Checkpoint",
-  "number": "96",
+  "number": "112",
   "title": "Can You Add Determinants?",
   "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
 },
@@ -1256,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-5",
   "type": "Checkpoint",
-  "number": "97",
+  "number": "113",
   "title": "Effect of Row Operations.",
   "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
 },
@@ -1265,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-6",
   "type": "Checkpoint",
-  "number": "98",
+  "number": "114",
   "title": "Determinants of Inverses and Transposes.",
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
@@ -1283,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-2",
   "type": "Checkpoint",
-  "number": "99",
+  "number": "115",
   "title": "Cement Mixing.",
   "body": " Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.  "
 },
@@ -1292,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-3",
   "type": "Checkpoint",
-  "number": "100",
+  "number": "116",
   "title": "Step 1: Linear system as a mathematical model.",
   "body": " Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.  "
 },
@@ -1301,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-4",
   "type": "Checkpoint",
-  "number": "101",
+  "number": "117",
   "title": "Step 2: Solve using Gaussian Elimination.",
   "body": " Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.  "
 },
@@ -1310,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-5",
   "type": "Checkpoint",
-  "number": "102",
+  "number": "118",
   "title": "Step 3: Interpretation.",
   "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
 },
@@ -1328,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-3",
   "type": "Checkpoint",
-  "number": "103",
+  "number": "119",
   "title": "Recognizing Surfaces.",
   "body": " Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).        "
 },
@@ -1337,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-4",
   "type": "Checkpoint",
-  "number": "104",
+  "number": "120",
   "title": "Intersections of Surfaces.",
   "body": " Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and   "
 },
@@ -1346,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-5",
   "type": "Checkpoint",
-  "number": "105",
+  "number": "121",
   "title": "Possible Intersections of Two Spheres.",
   "body": " Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .   "
 },
@@ -1355,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-6",
   "type": "Checkpoint",
-  "number": "106",
+  "number": "122",
   "title": "Vector Operations.",
   "body": " Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.   "
 },
@@ -1364,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-7",
   "type": "Checkpoint",
-  "number": "107",
+  "number": "123",
   "title": "Orthogonal Vectors.",
   "body": " Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?   "
 },
@@ -1382,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-3",
   "type": "Checkpoint",
-  "number": "108",
+  "number": "124",
   "title": "A Limit That Does Not Exist.",
   "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
 },
@@ -1391,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-4",
   "type": "Checkpoint",
-  "number": "109",
+  "number": "125",
   "title": "First and Second Partial Derivatives.",
   "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
 },
@@ -1400,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-5",
   "type": "Checkpoint",
-  "number": "110",
+  "number": "126",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -1409,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-6",
   "type": "Checkpoint",
-  "number": "111",
+  "number": "127",
   "title": "Critical Point and Hessian: Local Maximum.",
   "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
 },
@@ -1418,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-7",
   "type": "Checkpoint",
-  "number": "112",
+  "number": "128",
   "title": "Critical Point and Hessian: Local Minimum.",
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
@@ -1562,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "113",
+  "number": "129",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }

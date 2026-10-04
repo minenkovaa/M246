@@ -299,8 +299,23 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-04.html" class="internal"><span class="title">Week 4: Partial derivatives; higher-order derivatives</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-limits" class="internal"><span class="title">Limits and Continuity</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-04.html#sec-partials" class="internal"><span class="title">Partial Derivatives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-partials-3" class="internal"><span class="title">Coordinate Traces</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-04.html#sec-directional" class="internal"><span class="title">Directional Derivatives and the Gradient</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-directional-3" class="internal"><span class="title">A Hiking Interpretation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-second-partials" class="internal"><span class="title">Higher-Order Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-04.html#sec-optimization" class="internal"><span class="title">Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-optimization-3" class="internal"><span class="title">From One Dimension to Two Dimensions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-04.html#sec-optimization-4" class="internal"><span class="title">Saddle Points</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -452,89 +467,89 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <section class="introduction" id="handouts-9-2"><div class="para" id="handouts-9-2-1">Show all work and justify your conclusions. Explain geometric meanings whenever appropriate. <a class="external" href="https://opentext.uleth.ca/apex-calculus/chapter_multi.html" target="_blank"><code class="code-inline tex2jax_ignore">https://opentext.uleth.ca/apex-calculus/chapter_multi.html</code></a><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><details id="handouts-9-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">108</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Limit That Does Not Exist.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">124</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Limit That Does Not Exist.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-9-3-2">Consider <span class="process-math">\(f(x,y)=\frac{x^2y}{x^4+y^2}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha ol-marker-2" id="handouts-9-3-3">
 <li id="handouts-9-3-3-1">
 <div class="para" id="p-derived-handouts-9-3-3-1">Evaluate <span class="process-math">\(\lim_{x\to 0}f(x,0).\)</span>
 </div>
-<div class="autopermalink" data-description="Item 108.a"><a href="#handouts-9-3-3-1" title="Copy heading and permalink for Item 108.a" aria-label="Copy heading and permalink for Item 108.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.a"><a href="#handouts-9-3-3-1" title="Copy heading and permalink for Item 124.a" aria-label="Copy heading and permalink for Item 124.a">🔗</a></div>
 </li>
 <li id="handouts-9-3-3-2">
 <div class="para" id="p-derived-handouts-9-3-3-2">Evaluate <span class="process-math">\(\lim_{y\to 0}f(0,y).\)</span>
 </div>
-<div class="autopermalink" data-description="Item 108.b"><a href="#handouts-9-3-3-2" title="Copy heading and permalink for Item 108.b" aria-label="Copy heading and permalink for Item 108.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.b"><a href="#handouts-9-3-3-2" title="Copy heading and permalink for Item 124.b" aria-label="Copy heading and permalink for Item 124.b">🔗</a></div>
 </li>
 <li id="handouts-9-3-3-3">
 <div class="para" id="p-derived-handouts-9-3-3-3">Based on parts (a) and (b), what might you expect for <span class="process-math">\(\lim_{(x,y)\to(0,0)}f(x,y)?\)</span>
 </div>
-<div class="autopermalink" data-description="Item 108.c"><a href="#handouts-9-3-3-3" title="Copy heading and permalink for Item 108.c" aria-label="Copy heading and permalink for Item 108.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.c"><a href="#handouts-9-3-3-3" title="Copy heading and permalink for Item 124.c" aria-label="Copy heading and permalink for Item 124.c">🔗</a></div>
 </li>
 <li id="handouts-9-3-3-4">
 <span class="process-math">\(y=x^2.\)</span><div class="para" id="handouts-9-3-3-4-2">
 <em class="emphasis">Hint:</em> Substitute <span class="process-math">\(y=x^2\)</span> into the formula.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-3-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 108.d"><a href="#handouts-9-3-3-4" title="Copy heading and permalink for Item 108.d" aria-label="Copy heading and permalink for Item 108.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.d"><a href="#handouts-9-3-3-4" title="Copy heading and permalink for Item 124.d" aria-label="Copy heading and permalink for Item 124.d">🔗</a></div>
 </li>
 <li id="handouts-9-3-3-5">
 <div class="para" id="p-derived-handouts-9-3-3-5">Determine whether <span class="process-math">\(\lim_{(x,y)\to(0,0)}f(x,y)\)</span> exists.</div>
-<div class="autopermalink" data-description="Item 108.e"><a href="#handouts-9-3-3-5" title="Copy heading and permalink for Item 108.e" aria-label="Copy heading and permalink for Item 108.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.e"><a href="#handouts-9-3-3-5" title="Copy heading and permalink for Item 124.e" aria-label="Copy heading and permalink for Item 124.e">🔗</a></div>
 </li>
 <li id="handouts-9-3-3-6">
 <div class="para" id="p-derived-handouts-9-3-3-6">Explain why checking only the coordinate axes is not sufficient.</div>
-<div class="autopermalink" data-description="Item 108.f"><a href="#handouts-9-3-3-6" title="Copy heading and permalink for Item 108.f" aria-label="Copy heading and permalink for Item 108.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 124.f"><a href="#handouts-9-3-3-6" title="Copy heading and permalink for Item 124.f" aria-label="Copy heading and permalink for Item 124.f">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 108: A Limit That Does Not Exist"><a href="#handouts-9-3" title="Copy heading and permalink for Checkpoint 108: A Limit That Does Not Exist" aria-label="Copy heading and permalink for Checkpoint 108: A Limit That Does Not Exist">🔗</a></div></article></details><details id="handouts-9-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">109</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">First and Second Partial Derivatives.</span>
+<div class="autopermalink" data-description="Checkpoint 124: A Limit That Does Not Exist"><a href="#handouts-9-3" title="Copy heading and permalink for Checkpoint 124: A Limit That Does Not Exist" aria-label="Copy heading and permalink for Checkpoint 124: A Limit That Does Not Exist">🔗</a></div></article></details><details id="handouts-9-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">125</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">First and Second Partial Derivatives.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-9-4-2">Let <span class="process-math">\(f(x,y)=x^3y^2+2x^2y-y^3.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha ol-marker-2" id="handouts-9-4-3">
 <li id="handouts-9-4-3-1">
 <div class="para" id="p-derived-handouts-9-4-3-1">Find <span class="process-math">\(f_x\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.a"><a href="#handouts-9-4-3-1" title="Copy heading and permalink for Item 109.a" aria-label="Copy heading and permalink for Item 109.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.a"><a href="#handouts-9-4-3-1" title="Copy heading and permalink for Item 125.a" aria-label="Copy heading and permalink for Item 125.a">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-2">
 <div class="para" id="p-derived-handouts-9-4-3-2">Find <span class="process-math">\(f_y\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.b"><a href="#handouts-9-4-3-2" title="Copy heading and permalink for Item 109.b" aria-label="Copy heading and permalink for Item 109.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.b"><a href="#handouts-9-4-3-2" title="Copy heading and permalink for Item 125.b" aria-label="Copy heading and permalink for Item 125.b">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-3">
 <div class="para" id="p-derived-handouts-9-4-3-3">Find <span class="process-math">\(f_{xx}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.c"><a href="#handouts-9-4-3-3" title="Copy heading and permalink for Item 109.c" aria-label="Copy heading and permalink for Item 109.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.c"><a href="#handouts-9-4-3-3" title="Copy heading and permalink for Item 125.c" aria-label="Copy heading and permalink for Item 125.c">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-4">
 <div class="para" id="p-derived-handouts-9-4-3-4">Find <span class="process-math">\(f_{yy}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.d"><a href="#handouts-9-4-3-4" title="Copy heading and permalink for Item 109.d" aria-label="Copy heading and permalink for Item 109.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.d"><a href="#handouts-9-4-3-4" title="Copy heading and permalink for Item 125.d" aria-label="Copy heading and permalink for Item 125.d">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-5">
 <div class="para" id="p-derived-handouts-9-4-3-5">Find <span class="process-math">\(f_{xy}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.e"><a href="#handouts-9-4-3-5" title="Copy heading and permalink for Item 109.e" aria-label="Copy heading and permalink for Item 109.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.e"><a href="#handouts-9-4-3-5" title="Copy heading and permalink for Item 125.e" aria-label="Copy heading and permalink for Item 125.e">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-6">
 <div class="para" id="p-derived-handouts-9-4-3-6">Find <span class="process-math">\(f_{yx}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.f"><a href="#handouts-9-4-3-6" title="Copy heading and permalink for Item 109.f" aria-label="Copy heading and permalink for Item 109.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.f"><a href="#handouts-9-4-3-6" title="Copy heading and permalink for Item 125.f" aria-label="Copy heading and permalink for Item 125.f">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-7">
 <div class="para" id="p-derived-handouts-9-4-3-7">Compare <span class="process-math">\(f_{xy}\)</span> and <span class="process-math">\(f_{yx}\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 109.g"><a href="#handouts-9-4-3-7" title="Copy heading and permalink for Item 109.g" aria-label="Copy heading and permalink for Item 109.g">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.g"><a href="#handouts-9-4-3-7" title="Copy heading and permalink for Item 125.g" aria-label="Copy heading and permalink for Item 125.g">🔗</a></div>
 </li>
 <li id="handouts-9-4-3-8">
 <div class="para" id="p-derived-handouts-9-4-3-8">State a theorem that explains your observation.</div>
-<div class="autopermalink" data-description="Item 109.h"><a href="#handouts-9-4-3-8" title="Copy heading and permalink for Item 109.h" aria-label="Copy heading and permalink for Item 109.h">🔗</a></div>
+<div class="autopermalink" data-description="Item 125.h"><a href="#handouts-9-4-3-8" title="Copy heading and permalink for Item 125.h" aria-label="Copy heading and permalink for Item 125.h">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 109: First and Second Partial Derivatives"><a href="#handouts-9-4" title="Copy heading and permalink for Checkpoint 109: First and Second Partial Derivatives" aria-label="Copy heading and permalink for Checkpoint 109: First and Second Partial Derivatives">🔗</a></div></article></details><details id="handouts-9-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">110</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Directional Derivative and Elevation.</span>
+<div class="autopermalink" data-description="Checkpoint 125: First and Second Partial Derivatives"><a href="#handouts-9-4" title="Copy heading and permalink for Checkpoint 125: First and Second Partial Derivatives" aria-label="Copy heading and permalink for Checkpoint 125: First and Second Partial Derivatives">🔗</a></div></article></details><details id="handouts-9-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">126</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Directional Derivative and Elevation.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-9-5-2">Let <span class="process-math">\(f(x,y)=x^2+xy+y^2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="handouts-9-5-3">Consider the point <span class="process-math">\((1,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -543,45 +558,45 @@ eBookConfig.enable_chatcodes =  false;
 <li id="handouts-9-5-4-1">
 <div class="para" id="p-derived-handouts-9-5-4-1">Find <span class="process-math">\(\nabla f(x,y)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 110.a"><a href="#handouts-9-5-4-1" title="Copy heading and permalink for Item 110.a" aria-label="Copy heading and permalink for Item 110.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.a"><a href="#handouts-9-5-4-1" title="Copy heading and permalink for Item 126.a" aria-label="Copy heading and permalink for Item 126.a">🔗</a></div>
 </li>
 <li id="handouts-9-5-4-2">
 <div class="para" id="p-derived-handouts-9-5-4-2">Evaluate <span class="process-math">\(\nabla f(1,1)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 110.b"><a href="#handouts-9-5-4-2" title="Copy heading and permalink for Item 110.b" aria-label="Copy heading and permalink for Item 110.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.b"><a href="#handouts-9-5-4-2" title="Copy heading and permalink for Item 126.b" aria-label="Copy heading and permalink for Item 126.b">🔗</a></div>
 </li>
 <li id="handouts-9-5-4-3">
 <div class="para" id="p-derived-handouts-9-5-4-3">Convert <span class="process-math">\((1,2)\)</span> to a unit vector.</div>
-<div class="autopermalink" data-description="Item 110.c"><a href="#handouts-9-5-4-3" title="Copy heading and permalink for Item 110.c" aria-label="Copy heading and permalink for Item 110.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.c"><a href="#handouts-9-5-4-3" title="Copy heading and permalink for Item 126.c" aria-label="Copy heading and permalink for Item 126.c">🔗</a></div>
 </li>
 <li id="handouts-9-5-4-4">
 <div class="para" id="p-derived-handouts-9-5-4-4">Find the directional derivative at <span class="process-math">\((1,1)\)</span> in the direction <span class="process-math">\((1,2)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 110.d"><a href="#handouts-9-5-4-4" title="Copy heading and permalink for Item 110.d" aria-label="Copy heading and permalink for Item 110.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.d"><a href="#handouts-9-5-4-4" title="Copy heading and permalink for Item 126.d" aria-label="Copy heading and permalink for Item 126.d">🔗</a></div>
 </li>
 <li id="handouts-9-5-4-5">
 <div class="para" id="p-derived-handouts-9-5-4-5">Interpret the directional derivative geometrically.</div>
-<div class="autopermalink" data-description="Item 110.e"><a href="#handouts-9-5-4-5" title="Copy heading and permalink for Item 110.e" aria-label="Copy heading and permalink for Item 110.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.e"><a href="#handouts-9-5-4-5" title="Copy heading and permalink for Item 126.e" aria-label="Copy heading and permalink for Item 126.e">🔗</a></div>
 </li>
 <li id="handouts-9-5-4-6">
 <div class="para" id="p-derived-handouts-9-5-4-6">What does your answer say about the elevation of the surface as you move in the direction <span class="process-math">\((1,2)\text{?}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 110.f"><a href="#handouts-9-5-4-6" title="Copy heading and permalink for Item 110.f" aria-label="Copy heading and permalink for Item 110.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 126.f"><a href="#handouts-9-5-4-6" title="Copy heading and permalink for Item 126.f" aria-label="Copy heading and permalink for Item 126.f">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 110: Directional Derivative and Elevation"><a href="#handouts-9-5" title="Copy heading and permalink for Checkpoint 110: Directional Derivative and Elevation" aria-label="Copy heading and permalink for Checkpoint 110: Directional Derivative and Elevation">🔗</a></div></article></details><details id="handouts-9-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">111</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Point and Hessian: Local Maximum.</span>
+<div class="autopermalink" data-description="Checkpoint 126: Directional Derivative and Elevation"><a href="#handouts-9-5" title="Copy heading and permalink for Checkpoint 126: Directional Derivative and Elevation" aria-label="Copy heading and permalink for Checkpoint 126: Directional Derivative and Elevation">🔗</a></div></article></details><details id="handouts-9-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">127</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Point and Hessian: Local Maximum.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-9-6-2">Consider <span class="process-math">\(f(x,y)=10-x^2-y^2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha ol-marker-2" id="handouts-9-6-3">
 <li id="handouts-9-6-3-1">
 <div class="para" id="p-derived-handouts-9-6-3-1">Find all first partial derivatives.</div>
-<div class="autopermalink" data-description="Item 111.a"><a href="#handouts-9-6-3-1" title="Copy heading and permalink for Item 111.a" aria-label="Copy heading and permalink for Item 111.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.a"><a href="#handouts-9-6-3-1" title="Copy heading and permalink for Item 127.a" aria-label="Copy heading and permalink for Item 127.a">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-2">
 <div class="para" id="p-derived-handouts-9-6-3-2">Find all critical points.</div>
-<div class="autopermalink" data-description="Item 111.b"><a href="#handouts-9-6-3-2" title="Copy heading and permalink for Item 111.b" aria-label="Copy heading and permalink for Item 111.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.b"><a href="#handouts-9-6-3-2" title="Copy heading and permalink for Item 127.b" aria-label="Copy heading and permalink for Item 127.b">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-3">
 <div class="para" id="p-derived-handouts-9-6-3-3">Compute the Hessian matrix <span class="process-math">\(H=
@@ -590,69 +605,69 @@ f_{xx} &amp; f_{xy}\\
 f_{yx} &amp; f_{yy}
 \end{bmatrix}.\)</span>
 </div>
-<div class="autopermalink" data-description="Item 111.c"><a href="#handouts-9-6-3-3" title="Copy heading and permalink for Item 111.c" aria-label="Copy heading and permalink for Item 111.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.c"><a href="#handouts-9-6-3-3" title="Copy heading and permalink for Item 127.c" aria-label="Copy heading and permalink for Item 127.c">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-4">
 <div class="para" id="p-derived-handouts-9-6-3-4">Evaluate the Hessian at each critical point.</div>
-<div class="autopermalink" data-description="Item 111.d"><a href="#handouts-9-6-3-4" title="Copy heading and permalink for Item 111.d" aria-label="Copy heading and permalink for Item 111.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.d"><a href="#handouts-9-6-3-4" title="Copy heading and permalink for Item 127.d" aria-label="Copy heading and permalink for Item 127.d">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-5">
 <div class="para" id="p-derived-handouts-9-6-3-5">Use the Second Derivative Test.</div>
-<div class="autopermalink" data-description="Item 111.e"><a href="#handouts-9-6-3-5" title="Copy heading and permalink for Item 111.e" aria-label="Copy heading and permalink for Item 111.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.e"><a href="#handouts-9-6-3-5" title="Copy heading and permalink for Item 127.e" aria-label="Copy heading and permalink for Item 127.e">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-6">
 <div class="para" id="p-derived-handouts-9-6-3-6">Classify the critical point.</div>
-<div class="autopermalink" data-description="Item 111.f"><a href="#handouts-9-6-3-6" title="Copy heading and permalink for Item 111.f" aria-label="Copy heading and permalink for Item 111.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.f"><a href="#handouts-9-6-3-6" title="Copy heading and permalink for Item 127.f" aria-label="Copy heading and permalink for Item 127.f">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-7">
 <div class="para" id="p-derived-handouts-9-6-3-7">Graph the surface in GeoGebra 3D.</div>
-<div class="autopermalink" data-description="Item 111.g"><a href="#handouts-9-6-3-7" title="Copy heading and permalink for Item 111.g" aria-label="Copy heading and permalink for Item 111.g">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.g"><a href="#handouts-9-6-3-7" title="Copy heading and permalink for Item 127.g" aria-label="Copy heading and permalink for Item 127.g">🔗</a></div>
 </li>
 <li id="handouts-9-6-3-8">
 <div class="para" id="p-derived-handouts-9-6-3-8">Describe the shape near the critical point and explain why it is a maximum.</div>
-<div class="autopermalink" data-description="Item 111.h"><a href="#handouts-9-6-3-8" title="Copy heading and permalink for Item 111.h" aria-label="Copy heading and permalink for Item 111.h">🔗</a></div>
+<div class="autopermalink" data-description="Item 127.h"><a href="#handouts-9-6-3-8" title="Copy heading and permalink for Item 127.h" aria-label="Copy heading and permalink for Item 127.h">🔗</a></div>
 </li>
 </ol>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 111: Critical Point and Hessian: Local Maximum"><a href="#handouts-9-6" title="Copy heading and permalink for Checkpoint 111: Critical Point and Hessian: Local Maximum" aria-label="Copy heading and permalink for Checkpoint 111: Critical Point and Hessian: Local Maximum">🔗</a></div></article></details><details id="handouts-9-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">112</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Point and Hessian: Local Minimum.</span>
+<div class="autopermalink" data-description="Checkpoint 127: Critical Point and Hessian: Local Maximum"><a href="#handouts-9-6" title="Copy heading and permalink for Checkpoint 127: Critical Point and Hessian: Local Maximum" aria-label="Copy heading and permalink for Checkpoint 127: Critical Point and Hessian: Local Maximum">🔗</a></div></article></details><details id="handouts-9-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">128</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Point and Hessian: Local Minimum.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-9-7-2">Consider <span class="process-math">\(f(x,y)=x^2+y^2+2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-9-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha ol-marker-2" id="handouts-9-7-3">
 <li id="handouts-9-7-3-1">
 <div class="para" id="p-derived-handouts-9-7-3-1">Find all first partial derivatives.</div>
-<div class="autopermalink" data-description="Item 112.a"><a href="#handouts-9-7-3-1" title="Copy heading and permalink for Item 112.a" aria-label="Copy heading and permalink for Item 112.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.a"><a href="#handouts-9-7-3-1" title="Copy heading and permalink for Item 128.a" aria-label="Copy heading and permalink for Item 128.a">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-2">
 <div class="para" id="p-derived-handouts-9-7-3-2">Find all critical points.</div>
-<div class="autopermalink" data-description="Item 112.b"><a href="#handouts-9-7-3-2" title="Copy heading and permalink for Item 112.b" aria-label="Copy heading and permalink for Item 112.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.b"><a href="#handouts-9-7-3-2" title="Copy heading and permalink for Item 128.b" aria-label="Copy heading and permalink for Item 128.b">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-3">
 <div class="para" id="p-derived-handouts-9-7-3-3">Compute the Hessian matrix.</div>
-<div class="autopermalink" data-description="Item 112.c"><a href="#handouts-9-7-3-3" title="Copy heading and permalink for Item 112.c" aria-label="Copy heading and permalink for Item 112.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.c"><a href="#handouts-9-7-3-3" title="Copy heading and permalink for Item 128.c" aria-label="Copy heading and permalink for Item 128.c">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-4">
 <div class="para" id="p-derived-handouts-9-7-3-4">Evaluate the Hessian at each critical point.</div>
-<div class="autopermalink" data-description="Item 112.d"><a href="#handouts-9-7-3-4" title="Copy heading and permalink for Item 112.d" aria-label="Copy heading and permalink for Item 112.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.d"><a href="#handouts-9-7-3-4" title="Copy heading and permalink for Item 128.d" aria-label="Copy heading and permalink for Item 128.d">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-5">
 <div class="para" id="p-derived-handouts-9-7-3-5">Use the Second Derivative Test.</div>
-<div class="autopermalink" data-description="Item 112.e"><a href="#handouts-9-7-3-5" title="Copy heading and permalink for Item 112.e" aria-label="Copy heading and permalink for Item 112.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.e"><a href="#handouts-9-7-3-5" title="Copy heading and permalink for Item 128.e" aria-label="Copy heading and permalink for Item 128.e">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-6">
 <div class="para" id="p-derived-handouts-9-7-3-6">Classify the critical point.</div>
-<div class="autopermalink" data-description="Item 112.f"><a href="#handouts-9-7-3-6" title="Copy heading and permalink for Item 112.f" aria-label="Copy heading and permalink for Item 112.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.f"><a href="#handouts-9-7-3-6" title="Copy heading and permalink for Item 128.f" aria-label="Copy heading and permalink for Item 128.f">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-7">
 <div class="para" id="p-derived-handouts-9-7-3-7">Graph the surface in GeoGebra 3D.</div>
-<div class="autopermalink" data-description="Item 112.g"><a href="#handouts-9-7-3-7" title="Copy heading and permalink for Item 112.g" aria-label="Copy heading and permalink for Item 112.g">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.g"><a href="#handouts-9-7-3-7" title="Copy heading and permalink for Item 128.g" aria-label="Copy heading and permalink for Item 128.g">🔗</a></div>
 </li>
 <li id="handouts-9-7-3-8">
 <div class="para" id="p-derived-handouts-9-7-3-8">Describe the shape near the critical point and explain why it is a minimum.</div>
-<div class="autopermalink" data-description="Item 112.h"><a href="#handouts-9-7-3-8" title="Copy heading and permalink for Item 112.h" aria-label="Copy heading and permalink for Item 112.h">🔗</a></div>
+<div class="autopermalink" data-description="Item 128.h"><a href="#handouts-9-7-3-8" title="Copy heading and permalink for Item 128.h" aria-label="Copy heading and permalink for Item 128.h">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Checkpoint 112: Critical Point and Hessian: Local Minimum"><a href="#handouts-9-7" title="Copy heading and permalink for Checkpoint 112: Critical Point and Hessian: Local Minimum" aria-label="Copy heading and permalink for Checkpoint 112: Critical Point and Hessian: Local Minimum">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Limits, Partial Derivatives, and Optimization"><a href="#handouts-9" title="Copy heading and permalink for Handout: Limits, Partial Derivatives, and Optimization" aria-label="Copy heading and permalink for Handout: Limits, Partial Derivatives, and Optimization">🔗</a></div></section>
+<div class="autopermalink" data-description="Checkpoint 128: Critical Point and Hessian: Local Minimum"><a href="#handouts-9-7" title="Copy heading and permalink for Checkpoint 128: Critical Point and Hessian: Local Minimum" aria-label="Copy heading and permalink for Checkpoint 128: Critical Point and Hessian: Local Minimum">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Limits, Partial Derivatives, and Optimization"><a href="#handouts-9" title="Copy heading and permalink for Handout: Limits, Partial Derivatives, and Optimization" aria-label="Copy heading and permalink for Handout: Limits, Partial Derivatives, and Optimization">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="handouts-8.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="homework.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
