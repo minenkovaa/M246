@@ -85,6 +85,7 @@
       <xi:include href="./handouts/determinants-handout.ptx"/>
       <xi:include href="./handouts/modelLA-handout.ptx"/>
       <xi:include href="./handouts/vectorsurface-handout.ptx"/>
+      <xi:include href="./handouts/graphicpartial-handout.ptx"/>      
       <xi:include href="./handouts/partial-handout.ptx"/>
     </chapter>
 
