@@ -763,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 4: Partial derivatives; higher-order derivatives",
-  "body": " Week 4: Partial derivatives; higher-order derivatives   In single-variable calculus we studied functions whose inputs are real numbers. In this chapter we investigate functions whose inputs are points in the plane. Such functions may represent elevation, temperature, pressure, population density, or cost over a geographic region.  Many ideas from Calculus I reappear in this richer setting: limits, derivatives, tangent lines, maxima, and minima. At the same time, new phenomena emerge because points in the plane can move in infinitely many directions.    Limits and Continuity  In one-variable calculus a point can approach a target value from the left or from the right. In the plane, however, a point may approach a target along infinitely many paths.      Why does checking only one or two paths toward a point fail to prove that a limit exists?    Let be defined near the point . We say when the values of become arbitrarily close to whenever is sufficiently close to .    A function is continuous at if     Most functions encountered in calculus, including polynomials, trigonometric functions, exponentials, and rational functions where defined, are continuous on their domains.     Partial Derivatives  For a function of two variables we may ask how the output changes when only one input changes. This leads to the notion of a partial derivative.   Coordinate Traces  Fixing one variable produces a curve obtained from the surface. The slope of this curve determines a partial derivative.       The partial derivative of with respect to is The partial derivative of with respect to is     When computing , treat as a constant. When computing , treat as a constant.    Find the first partial derivatives of    and      Directional Derivatives and the Gradient  Partial derivatives measure rates of change in the coordinate directions. What if we move in an arbitrary direction?   A Hiking Interpretation       Which hiker appears to gain elevation faster?  Which direction seems closest to perpendicular to the contour lines?  Which direction should produce the greatest rate of increase?      Let be a unit vector. The directional derivative of in the direction is     The gradient of is     The gradient points in the direction of greatest increase of a function.    The gradient is perpendicular to level curves.     Higher-Order Partial Derivatives   Second-order partial derivatives include     Verify Clairaut's theorem for    and therefore Also, so Consequently,     If the mixed partial derivatives are continuous on an open region, then      Optimization  Optimization in several variables extends the ideas of local maxima and local minima from Calculus I.   From One Dimension to Two Dimensions           Saddle Points  Two-dimensional functions exhibit a behavior that has no analogue in one dimension.     A saddle point increases in some directions and decreases in others.    A point is a critical point if or one or both partial derivatives fail to exist.    For a critical point,     Let be a critical point.   If and , then is a local minimum.  If and , then is a local maximum.  If , then is a saddle point.  If , the test is inconclusive.     Examine a contour map containing several marked points. Without computing derivatives, determine which points appear to be   local maxima,  local minima,  saddle points,  ordinary points.     "
+  "body": " Week 4: Partial derivatives; higher-order derivatives   In single-variable calculus we studied functions whose inputs are real numbers. In this chapter we investigate functions whose inputs are points in the plane. Such functions may represent elevation, temperature, pressure, population density, or cost over a geographic region.  Many ideas from Calculus I reappear in this richer setting: limits, derivatives, tangent lines, maxima, and minima. At the same time, new phenomena emerge because points in the plane can move in infinitely many directions.    Limits and Continuity  In one-variable calculus a point can approach a target value from the left or from the right. In the plane, however, a point may approach a target along infinitely many paths.      Why does checking only one or two paths toward a point fail to prove that a limit exists?    Let be defined near the point . We say when the values of become arbitrarily close to whenever is sufficiently close to .    A function is continuous at if     Most functions encountered in calculus, including polynomials, trigonometric functions, exponentials, and rational functions where defined, are continuous on their domains.     Partial Derivatives  For a function of two variables we may ask how the output changes when only one input changes. This leads to the notion of a partial derivative.   Coordinate Traces  Fixing one variable produces a curve obtained from the surface. The slope of this curve determines a partial derivative.       The partial derivative of with respect to is The partial derivative of with respect to is     When computing , treat as a constant. When computing , treat as a constant.    Find the first partial derivatives of    and      Directional Derivatives and the Gradient  Partial derivatives measure rates of change in the coordinate directions. What if we move in an arbitrary direction?   A Hiking Interpretation       Which hiker appears to gain elevation faster?  Which direction seems closest to perpendicular to the contour lines?  Which direction should produce the greatest rate of increase?      Let be a unit vector. The directional derivative of in the direction is     The gradient of is     The gradient points in the direction of greatest increase of a function.    The gradient is perpendicular to level curves.     Higher-Order Partial Derivatives   Second-order partial derivatives include     Verify Clairaut's theorem for    and therefore Also, so Consequently,     If the mixed partial derivatives are continuous on an open region, then      Optimization  Optimization in several variables extends the ideas of local maxima and local minima from Calculus I.   From One Dimension to Two Dimensions      Saddle Points  Two-dimensional functions exhibit a behavior that has no analogue in one dimension.     A saddle point increases in some directions and decreases in others.    A point is a critical point if or one or both partial derivatives fail to exist.    For a critical point,     Let be a critical point.   If and , then is a local minimum.  If and , then is a local maximum.  If , then is a saddle point.  If , the test is inconclusive.     Examine a contour map containing several marked points. Without computing derivatives, determine which points appear to be   local maxima,  local minima,  saddle points,  ordinary points.     "
 },
 {
   "id": "sec-limits-4",
@@ -1545,8 +1545,8 @@ var ptx_lunr_docs = [
   "url": "handouts-9.html",
   "type": "Handout",
   "number": "",
-  "title": "Limits, Partial Derivatives, and Optimization",
-  "body": " Limits, Partial Derivatives, and Optimization   Show all work and justify your conclusions. Explain geometric meanings whenever appropriate.     A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.     First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.     Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?     Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.     Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.    "
+  "title": "Exploring Multivariable Calculus",
+  "body": " Exploring Multivariable Calculus   At each station, work with your group to analyze diagrams, make predictions, and record observations. Focus on explaining your reasoning.  Leave enough information at each station so another group can understand your thinking.    How Many Ways Can You Approach a Point?   Investigate why limits in several variables are more complicated than limits in one variable.       How many different paths can approach a point in the plane?  Why might this create challenges when evaluating limits?  Describe a strategy for showing a limit does NOT exist.     Reading Slopes from Surfaces      What does fixing create?  What information does the slope of the curve provide?  What do you think measures?  How would the interpretation change for ?     Directional Derivative and Elevation  Let      Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?     Which Points Matter?  The figure below contains three separate contour maps.   The upper-left map represents a hill. Elevation increases as you move toward the center of the nested contours.  The upper-right map represents a valley. Elevation decreases as you move toward the center of the nested contours.  The lower map represents a mountain pass. Moving through the center in one direction increases elevation, while moving through the center in a perpendicular direction decreases elevation.   Points , , , and are marked for investigation. Use only the contour information to classify the points before using any calculus.        Identify all local maxima.  Identify all local minima.  Identify all saddle points.  Identify points that are neither.  Defend your reasoning using geometry.     Where Can a Maximum Occur?  A continuous function is defined on an open disk and another one on a closed triangle.   Must a maximum exist?  Must a minimum exist?  Where can a maximum occur? (inside? edge? vertex?)  Construct examples supporting your answer.    "
 },
 {
   "id": "handouts-9-3",
@@ -1554,8 +1554,8 @@ var ptx_lunr_docs = [
   "url": "handouts-9.html#handouts-9-3",
   "type": "Checkpoint",
   "number": "124",
-  "title": "A Limit That Does Not Exist.",
-  "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
+  "title": "How Many Ways Can You Approach a Point?",
+  "body": " How Many Ways Can You Approach a Point?   Investigate why limits in several variables are more complicated than limits in one variable.       How many different paths can approach a point in the plane?  Why might this create challenges when evaluating limits?  Describe a strategy for showing a limit does NOT exist.   "
 },
 {
   "id": "handouts-9-4",
@@ -1563,8 +1563,8 @@ var ptx_lunr_docs = [
   "url": "handouts-9.html#handouts-9-4",
   "type": "Checkpoint",
   "number": "125",
-  "title": "First and Second Partial Derivatives.",
-  "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
+  "title": "Reading Slopes from Surfaces.",
+  "body": " Reading Slopes from Surfaces      What does fixing create?  What information does the slope of the curve provide?  What do you think measures?  How would the interpretation change for ?   "
 },
 {
   "id": "handouts-9-5",
@@ -1573,7 +1573,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "126",
   "title": "Directional Derivative and Elevation.",
-  "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
+  "body": " Directional Derivative and Elevation  Let      Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
 {
   "id": "handouts-9-6",
@@ -1581,8 +1581,8 @@ var ptx_lunr_docs = [
   "url": "handouts-9.html#handouts-9-6",
   "type": "Checkpoint",
   "number": "127",
-  "title": "Critical Point and Hessian: Local Maximum.",
-  "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
+  "title": "Which Points Matter?",
+  "body": " Which Points Matter?  The figure below contains three separate contour maps.   The upper-left map represents a hill. Elevation increases as you move toward the center of the nested contours.  The upper-right map represents a valley. Elevation decreases as you move toward the center of the nested contours.  The lower map represents a mountain pass. Moving through the center in one direction increases elevation, while moving through the center in a perpendicular direction decreases elevation.   Points , , , and are marked for investigation. Use only the contour information to classify the points before using any calculus.        Identify all local maxima.  Identify all local minima.  Identify all saddle points.  Identify points that are neither.  Defend your reasoning using geometry.   "
 },
 {
   "id": "handouts-9-7",
@@ -1590,6 +1590,60 @@ var ptx_lunr_docs = [
   "url": "handouts-9.html#handouts-9-7",
   "type": "Checkpoint",
   "number": "128",
+  "title": "Where Can a Maximum Occur?",
+  "body": " Where Can a Maximum Occur?  A continuous function is defined on an open disk and another one on a closed triangle.   Must a maximum exist?  Must a minimum exist?  Where can a maximum occur? (inside? edge? vertex?)  Construct examples supporting your answer.   "
+},
+{
+  "id": "handouts-10",
+  "level": "1",
+  "url": "handouts-10.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Limits, Partial Derivatives, and Optimization",
+  "body": " Limits, Partial Derivatives, and Optimization   Show all work and justify your conclusions. Explain geometric meanings whenever appropriate.     A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.     First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.     Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?     Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.     Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.    "
+},
+{
+  "id": "handouts-10-3",
+  "level": "2",
+  "url": "handouts-10.html#handouts-10-3",
+  "type": "Checkpoint",
+  "number": "129",
+  "title": "A Limit That Does Not Exist.",
+  "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
+},
+{
+  "id": "handouts-10-4",
+  "level": "2",
+  "url": "handouts-10.html#handouts-10-4",
+  "type": "Checkpoint",
+  "number": "130",
+  "title": "First and Second Partial Derivatives.",
+  "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
+},
+{
+  "id": "handouts-10-5",
+  "level": "2",
+  "url": "handouts-10.html#handouts-10-5",
+  "type": "Checkpoint",
+  "number": "131",
+  "title": "Directional Derivative and Elevation.",
+  "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
+},
+{
+  "id": "handouts-10-6",
+  "level": "2",
+  "url": "handouts-10.html#handouts-10-6",
+  "type": "Checkpoint",
+  "number": "132",
+  "title": "Critical Point and Hessian: Local Maximum.",
+  "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
+},
+{
+  "id": "handouts-10-7",
+  "level": "2",
+  "url": "handouts-10.html#handouts-10-7",
+  "type": "Checkpoint",
+  "number": "133",
   "title": "Critical Point and Hessian: Local Minimum.",
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
@@ -1733,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "129",
+  "number": "134",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
