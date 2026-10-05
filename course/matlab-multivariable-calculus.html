@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 6: First-order ODEs (separable, linear, exact)</title>
+<title>MATLAB Tips for Multivariable Calculus</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-05.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-07.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-05.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -318,9 +318,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="matlab-multivariable-calculus.html" class="internal"><span class="title">MATLAB Tips for Multivariable Calculus</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#creating-grids" class="internal"><span class="title">Creating a Grid</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#surface-plots" class="internal"><span class="title">Surface Plots</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#contour-plots" class="internal"><span class="title">Contour Plots</span></a></div></li>
@@ -346,9 +346,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-06.html" class="internal"><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-2" class="internal"><span class="title">Tuesday</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-3" class="internal"><span class="title">Thursday</span></a></div></li>
 </ul>
@@ -459,22 +459,298 @@ eBookConfig.enable_chatcodes =  false;
 </li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-06"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="matlab-multivariable-calculus"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">MATLAB Tips for Multivariable Calculus</span>
 </h2>
-<section class="subsection" id="notes-week-06-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
-</h3>
-<div class="para" id="notes-week-06-2-2">First-order ODEs: separable and linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-06-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="matlab-multivariable-calculus-2">This page summarizes MATLAB commands commonly used in multivariable calculus. Use these examples as templates and modify them for your own problems.<div class="autopermalink" data-description="Paragraph"><a href="#matlab-multivariable-calculus-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-06-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-06-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
+<section class="subsection" id="creating-grids"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Creating a Grid</span>
 </h3>
-<div class="para" id="notes-week-06-3-2">First-order ODEs: exact equations.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-06-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="creating-grids-2">Most surface plots require a mesh of points.<div class="autopermalink" data-description="Paragraph"><a href="#creating-grids-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-06-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 6: First-order ODEs (separable, linear, exact)"><a href="#notes-week-06" title="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)" aria-label="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)">🔗</a></div></section></div>
+<pre class="code-display tex2jax_ignore clipboardable">
+[x,y] = meshgrid(-2:0.1:2,-2:0.1:2);
+</pre>
+<div class="para" id="creating-grids-4">MATLAB creates matrices containing all combinations of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values.<div class="autopermalink" data-description="Paragraph"><a href="#creating-grids-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Creating a Grid"><a href="#creating-grids" title="Copy heading and permalink for Subsection: Creating a Grid" aria-label="Copy heading and permalink for Subsection: Creating a Grid">🔗</a></div></section><section class="subsection" id="surface-plots"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Surface Plots</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+[x,y] = meshgrid(-2:0.1:2,-2:0.1:2);
+
+z = x.^2 + y.^2;
+
+surf(x,y,z)
+</pre>
+<div class="para" id="surface-plots-3">Useful commands:<div class="autopermalink" data-description="Paragraph"><a href="#surface-plots-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+shading interp
+colorbar
+xlabel('x')
+ylabel('y')
+zlabel('z')
+title('Surface Plot')
+</pre>
+<div class="para" id="surface-plots-5">Alternative surface displays:<div class="autopermalink" data-description="Paragraph"><a href="#surface-plots-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+mesh(x,y,z)
+surfc(x,y,z)
+</pre>
+<div class="autopermalink" data-description="Subsection: Surface Plots"><a href="#surface-plots" title="Copy heading and permalink for Subsection: Surface Plots" aria-label="Copy heading and permalink for Subsection: Surface Plots">🔗</a></div></section><section class="subsection" id="contour-plots"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Contour Plots</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+[x,y] = meshgrid(-2:0.05:2,-2:0.05:2);
+
+z = x.^2 - y.^2;
+
+contour(x,y,z)
+</pre>
+<div class="para" id="contour-plots-3">Specify the number of contour levels:<div class="autopermalink" data-description="Paragraph"><a href="#contour-plots-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+contour(x,y,z,20)
+</pre>
+<div class="para" id="contour-plots-5">Filled contour plot:<div class="autopermalink" data-description="Paragraph"><a href="#contour-plots-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+contourf(x,y,z)
+colorbar
+</pre>
+<div class="autopermalink" data-description="Subsection: Contour Plots"><a href="#contour-plots" title="Copy heading and permalink for Subsection: Contour Plots" aria-label="Copy heading and permalink for Subsection: Contour Plots">🔗</a></div></section><section class="subsection" id="symbolic-partials"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial Derivatives</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y
+
+f = x^2*y + sin(x*y);
+
+fx = diff(f,x)
+fy = diff(f,y)
+</pre>
+<div class="para" id="symbolic-partials-3">Second derivatives:<div class="autopermalink" data-description="Paragraph"><a href="#symbolic-partials-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+fxx = diff(f,x,2)
+fyy = diff(f,y,2)
+fxy = diff(diff(f,x),y)
+</pre>
+<div class="autopermalink" data-description="Subsection: Partial Derivatives"><a href="#symbolic-partials" title="Copy heading and permalink for Subsection: Partial Derivatives" aria-label="Copy heading and permalink for Subsection: Partial Derivatives">🔗</a></div></section><section class="subsection" id="gradient"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gradient</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y
+
+f = x^2*y + sin(x*y);
+
+gradf = gradient(f,[x y])
+</pre>
+<div class="para" id="gradient-3">Evaluate the gradient at a point:<div class="autopermalink" data-description="Paragraph"><a href="#gradient-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+subs(gradf,[x y],[1 2])
+</pre>
+<div class="autopermalink" data-description="Subsection: Gradient"><a href="#gradient" title="Copy heading and permalink for Subsection: Gradient" aria-label="Copy heading and permalink for Subsection: Gradient">🔗</a></div></section><section class="subsection" id="tangent-plane"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tangent Plane</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y
+
+f = x^2 + y^2;
+
+fx = diff(f,x);
+fy = diff(f,y);
+
+a = 1;
+b = 2;
+
+T = subs(f,[x y],[a b]) ...
+    + subs(fx,[x y],[a b])*(x-a) ...
+    + subs(fy,[x y],[a b])*(y-b);
+</pre>
+<div class="para" id="tangent-plane-3">The variable <code class="code-inline tex2jax_ignore">T</code> stores the tangent plane approximation.<div class="autopermalink" data-description="Paragraph"><a href="#tangent-plane-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Tangent Plane"><a href="#tangent-plane" title="Copy heading and permalink for Subsection: Tangent Plane" aria-label="Copy heading and permalink for Subsection: Tangent Plane">🔗</a></div></section><section class="subsection" id="3d-curves"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Space Curves</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+t = linspace(0,4*pi,500);
+
+x = cos(t);
+y = sin(t);
+z = t;
+
+plot3(x,y,z,'LineWidth',2)
+grid on
+</pre>
+<div class="para" id="3d-curves-3">Common commands:<div class="autopermalink" data-description="Paragraph"><a href="#3d-curves-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+axis equal
+view(45,30)
+</pre>
+<div class="autopermalink" data-description="Subsection: Space Curves"><a href="#3d-curves" title="Copy heading and permalink for Subsection: Space Curves" aria-label="Copy heading and permalink for Subsection: Space Curves">🔗</a></div></section><section class="subsection" id="vector-fields"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector Fields</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+[x,y] = meshgrid(-2:0.3:2,-2:0.3:2);
+
+u = y;
+v = -x;
+
+quiver(x,y,u,v)
+axis equal
+</pre>
+<div class="para" id="vector-fields-3">The command <code class="code-inline tex2jax_ignore">quiver</code> draws vectors.<div class="autopermalink" data-description="Paragraph"><a href="#vector-fields-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Vector Fields"><a href="#vector-fields" title="Copy heading and permalink for Subsection: Vector Fields" aria-label="Copy heading and permalink for Subsection: Vector Fields">🔗</a></div></section><section class="subsection" id="vector-fields-3d"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three-Dimensional Vector Fields</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+[x,y,z] = meshgrid(-1:0.5:1);
+
+u = x;
+v = y;
+w = z;
+
+quiver3(x,y,z,u,v,w)
+</pre>
+<div class="autopermalink" data-description="Subsection: Three-Dimensional Vector Fields"><a href="#vector-fields-3d" title="Copy heading and permalink for Subsection: Three-Dimensional Vector Fields" aria-label="Copy heading and permalink for Subsection: Three-Dimensional Vector Fields">🔗</a></div></section><section class="subsection" id="double-integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Double Integrals</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y
+
+f = x*y;
+
+int(int(f,y,0,1),x,0,2)
+</pre>
+<div class="para" id="double-integrals-3">Equivalent notation:<div class="autopermalink" data-description="Paragraph"><a href="#double-integrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+int(f,y,0,1)
+ans = int(ans,x,0,2)
+</pre>
+<div class="autopermalink" data-description="Subsection: Double Integrals"><a href="#double-integrals" title="Copy heading and permalink for Subsection: Double Integrals" aria-label="Copy heading and permalink for Subsection: Double Integrals">🔗</a></div></section><section class="subsection" id="triple-integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Triple Integrals</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y z
+
+f = x+y+z;
+
+int(int(int(f,z,0,1),y,0,1),x,0,1)
+</pre>
+<div class="autopermalink" data-description="Subsection: Triple Integrals"><a href="#triple-integrals" title="Copy heading and permalink for Subsection: Triple Integrals" aria-label="Copy heading and permalink for Subsection: Triple Integrals">🔗</a></div></section><section class="subsection" id="implicit-surfaces"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Implicit Surfaces</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+fimplicit3(@(x,y,z) ...
+x.^2 + y.^2 + z.^2 - 4)
+</pre>
+<div class="para" id="implicit-surfaces-3">Example: a sphere of radius 2.<div class="autopermalink" data-description="Paragraph"><a href="#implicit-surfaces-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Implicit Surfaces"><a href="#implicit-surfaces" title="Copy heading and permalink for Subsection: Implicit Surfaces" aria-label="Copy heading and permalink for Subsection: Implicit Surfaces">🔗</a></div></section><section class="subsection" id="parametric-surfaces"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parametric Surfaces</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+[u,v] = meshgrid( ...
+linspace(0,2*pi,50), ...
+linspace(0,1,25));
+
+x = cos(u);
+y = sin(u);
+z = v;
+
+surf(x,y,z)
+</pre>
+<div class="autopermalink" data-description="Subsection: Parametric Surfaces"><a href="#parametric-surfaces" title="Copy heading and permalink for Subsection: Parametric Surfaces" aria-label="Copy heading and permalink for Subsection: Parametric Surfaces">🔗</a></div></section><section class="subsection" id="finding-critical-points"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Points</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+syms x y
+
+f = x^3 - 3*x*y + y^3;
+
+fx = diff(f,x);
+fy = diff(f,y);
+
+solve([fx==0,fy==0],[x,y])
+</pre>
+<div class="autopermalink" data-description="Subsection: Critical Points"><a href="#finding-critical-points" title="Copy heading and permalink for Subsection: Critical Points" aria-label="Copy heading and permalink for Subsection: Critical Points">🔗</a></div></section><section class="subsection" id="plotting-multiple-surfaces"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Plotting Multiple Surfaces</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+hold on
+
+surf(x,y,z1)
+
+surf(x,y,z2)
+
+hold off
+</pre>
+<div class="para" id="plotting-multiple-surfaces-3">Use transparency if surfaces overlap.<div class="autopermalink" data-description="Paragraph"><a href="#plotting-multiple-surfaces-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+alpha(0.6)
+</pre>
+<div class="autopermalink" data-description="Subsection: Plotting Multiple Surfaces"><a href="#plotting-multiple-surfaces" title="Copy heading and permalink for Subsection: Plotting Multiple Surfaces" aria-label="Copy heading and permalink for Subsection: Plotting Multiple Surfaces">🔗</a></div></section><section class="subsection" id="useful-commands"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Useful Commands</span>
+</h3>
+<pre class="code-display tex2jax_ignore clipboardable">
+help surf
+help contour
+help quiver
+help plot3
+
+clear
+clc
+close all
+</pre>
+<ul class="disc" id="useful-commands-3">
+<li id="useful-commands-3-1">
+<div class="para" id="p-derived-useful-commands-3-1">
+<code class="code-inline tex2jax_ignore">surf</code> creates a surface plot.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-2">
+<div class="para" id="p-derived-useful-commands-3-2">
+<code class="code-inline tex2jax_ignore">contour</code> creates level curves.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-3">
+<div class="para" id="p-derived-useful-commands-3-3">
+<code class="code-inline tex2jax_ignore">plot3</code> plots space curves.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-4">
+<div class="para" id="p-derived-useful-commands-3-4">
+<code class="code-inline tex2jax_ignore">quiver</code> plots vector fields.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-5">
+<div class="para" id="p-derived-useful-commands-3-5">
+<code class="code-inline tex2jax_ignore">meshgrid</code> creates plotting grids.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-6">
+<div class="para" id="p-derived-useful-commands-3-6">
+<code class="code-inline tex2jax_ignore">diff</code> computes symbolic derivatives.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="useful-commands-3-7">
+<div class="para" id="p-derived-useful-commands-3-7">
+<code class="code-inline tex2jax_ignore">int</code> computes symbolic integrals.</div>
+<div class="autopermalink" data-description="Item"><a href="#useful-commands-3-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Useful Commands"><a href="#useful-commands" title="Copy heading and permalink for Subsection: Useful Commands" aria-label="Copy heading and permalink for Subsection: Useful Commands">🔗</a></div></section><div class="autopermalink" data-description="Section: MATLAB Tips for Multivariable Calculus"><a href="#matlab-multivariable-calculus" title="Copy heading and permalink for Section: MATLAB Tips for Multivariable Calculus" aria-label="Copy heading and permalink for Section: MATLAB Tips for Multivariable Calculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-week-05.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-07.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="notes-week-04.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-05.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
