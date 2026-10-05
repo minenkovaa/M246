@@ -39,6 +39,7 @@
       <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
       <xi:include href="./notes/week04.ptx"/>
+      <xi:include href="./notes/matlab-tips-calc3.ptx"/>
       <xi:include href="./notes/week05.ptx"/>
       <xi:include href="./notes/week06.ptx"/>
       <xi:include href="./notes/week07.ptx"/>
