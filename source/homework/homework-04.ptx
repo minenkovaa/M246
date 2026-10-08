@@ -4,12 +4,15 @@
 
   <title>Homework 4</title>
 
-  <p>
-  In this activity you will use partial derivatives, critical points,
-  and the Second Derivative Test to classify extrema of functions of
-  two variables. You will then compare your analytic results with
+  <introduction>
+    <p>
+      <alert>Instructions:</alert> Complete the exercises where you need to use partial derivatives to find and classify critical points of functions of
+  two variables. Please aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab4_YourLastName.m and  then compare your analytic results with
   graphical representations produced in MATLAB.
-  </p>
+  You may also use MATLAB to double-check your calculations, but you must show your work.
+    </p>
+  </introduction>
+
 
 
     <exercise>
@@ -51,7 +54,7 @@
       </statement>
     </exercise>
 
-    <listing><p>
+    <p>
       The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above.
 <cd>
 clc
@@ -93,7 +96,7 @@ grid on
 view(45,30)
 
 </cd></p>
-    </listing>
+    
   </subsection>
 
   <subsection>
