@@ -161,7 +161,7 @@ T = subs(f,[x y],[a b]) ...
 
     </subsection>
 
-    <subsection xml:id="3d-curves">
+    <subsection>
         <title>Space Curves</title>
 
 <cd>

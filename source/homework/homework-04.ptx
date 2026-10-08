@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+
+  <title>Partial Derivatives and Optimization</title>
+
+  <p>
+  In this activity you will use partial derivatives, critical points,
+  and the Second Derivative Test to classify extrema of functions of
+  two variables. You will then compare your analytic results with
+  graphical representations produced in MATLAB.
+  </p>
+
+
+    <exercise>
+      <statement>
+      For the following functions, find the critical points and classify them using the Second Derivative Test. 
+       <ol>
+          <li>Compute <m>f_x</m> and <m>f_y</m>.</li>
+          <li>Find all critical points.</li>
+          <li>Compute <m>f_{xx}</m>, <m>f_{yy}</m>, and <m>f_{xy}</m>.</li>
+          <li>Calculate <m>D=f_{xx}f_{yy}-(f_{xy})^2</m>.</li>
+          <li>Classify the critical points.</li>
+          <li>Evaluate the function at the critical points.</li>
+          <li> Graph the function using MATLAB and identify the critical points on the graph.</li>
+          <li>Explain how the graph confirms your classification by answering the reflection questions.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <p>
+    Consider the functions
+    <me>f(x,y)=x^2+y^2-4x+2y+7;</me>
+    <me>f(x,y)=x-x^2-3y^2-6y;</me>
+    <me>f(x,y)=x^3+y^3-3xy;</me>
+    <me>f(x,y)=(x^2-1)^2+y^2;</me>
+    <me>f(x,y)=-(x^2+y^2-1)^2.</me>
+    </p>
+    <subsection>
+    <title>MATLAB Investigation</title>
+
+    <exercise>
+      <statement>
+        For each function:
+        <ol>
+          <li>Create a surface plot using <c>surf</c>.</li>
+          <li>Mark all critical points on the graph.</li>
+          <li>Include the resulting figure in your work.</li>
+          <li>Compare the graph with your classification obtained from the Second Derivative Test.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <listing><p>
+      The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above.
+<cd>
+clc
+clear
+close all
+
+[x,y] = meshgrid(-4:0.05:4,-4:0.05:4);
+
+z = 4*x + 6*y - x.^2 - y.^2;   % replace with desired function
+
+figure
+surf(x,y,z)
+shading interp
+colormap jet
+hold on
+
+% Critical point example
+x_crit = 2;
+y_crit = 3;
+f_crit = 4*x_crit + 6*y_crit - x_crit^2 - y_crit^2; % replace with desired function
+plot3(x_crit,y_crit,f_crit,'ko','MarkerFaceColor','r','MarkerSize',8)
+
+%For curves
+t = linspace(0,2*pi,200);
+
+xc = cos(t);
+yc = sin(t);
+zc = zeros(size(t));
+
+hold on
+plot3(xc,yc,zc,'r','LineWidth',4)
+
+xlabel('x')
+ylabel('y')
+zlabel('f(x,y)')
+title('Surface Plot')
+
+grid on
+view(45,30)
+
+</cd></p>
+    </listing>
+  </subsection>
+
+  <subsection>
+    <title>Reflection Questions after you investigate each function</title>
+
+    <exercise>
+      <statement>
+        Write a short response to the following questions.
+        <ol>
+          <li>How does a local maximum appear on a surface plot?</li>
+          <li>How does a local minimum appear on a surface plot?</li>
+          <li>How can a saddle point be identified graphically?</li>
+          <li>Which function had more than one minimum?</li>
+          <li>Which function had infinitely many maxima?</li>
+          <li>Did the graphical results agree with the Second Derivative Test in each case?</li>
+          <li>What advantages are gained by using both calculus and visualization?</li>
+        </ol>
+      </statement>
+    </exercise>
+  </subsection>
+
+</worksheet>
