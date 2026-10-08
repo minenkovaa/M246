@@ -1783,6 +1783,51 @@ var ptx_lunr_docs = [
   "body": " Practice Problem 3 (3×3 Matrix)  Consider the matrix     Find the characteristic polynomial .  Work:  ________________________________________  ________________________________________    Find all eigenvalues of (they can be repeated).  ____________  ____________  ____________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Construct the matrix whose columns are the eigenvectors.   ____________________    Construct the diagonal matrix .   ____________________    Write the diagonalization and use MATLAB to verify it.  ________________________________________    "
 },
 {
+  "id": "homework-5",
+  "level": "1",
+  "url": "homework-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Partial Derivatives and Optimization",
+  "body": " Partial Derivatives and Optimization  In this activity you will use partial derivatives, critical points, and the Second Derivative Test to classify extrema of functions of two variables. You will then compare your analytic results with graphical representations produced in MATLAB.   For the following functions, find the critical points and classify them using the Second Derivative Test.  Compute and .  Find all critical points.  Compute , , and .  Calculate .  Classify the critical points.  Evaluate the function at the critical points.  Graph the function using MATLAB and identify the critical points on the graph.  Explain how the graph confirms your classification by answering the reflection questions.     Consider the functions        MATLAB Investigation   For each function:  Create a surface plot using surf .  Mark all critical points on the graph.  Include the resulting figure in your work.  Compare the graph with your classification obtained from the Second Derivative Test.     The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above. clc clear close all [x,y] = meshgrid(-4:0.05:4,-4:0.05:4); z = 4*x + 6*y - x.^2 - y.^2; % replace with desired function figure surf(x,y,z) shading interp colormap jet hold on % Critical point example x_crit = 2; y_crit = 3; f_crit = 4*x_crit + 6*y_crit - x_crit^2 - y_crit^2; % replace with desired function plot3(x_crit,y_crit,f_crit,'ko','MarkerFaceColor','r','MarkerSize',8) %For curves t = linspace(0,2*pi,200); xc = cos(t); yc = sin(t); zc = zeros(size(t)); hold on plot3(xc,yc,zc,'r','LineWidth',4) xlabel('x') ylabel('y') zlabel('f(x,y)') title('Surface Plot') grid on view(45,30)     Reflection Questions after you investigate each function   Write a short response to the following questions.  How does a local maximum appear on a surface plot?  How does a local minimum appear on a surface plot?  How can a saddle point be identified graphically?  Which function had more than one minimum?  Which function had infinitely many maxima?  Did the graphical results agree with the Second Derivative Test in each case?  What advantages are gained by using both calculus and visualization?      "
+},
+{
+  "id": "homework-5-3",
+  "level": "2",
+  "url": "homework-5.html#homework-5-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": " For the following functions, find the critical points and classify them using the Second Derivative Test.  Compute and .  Find all critical points.  Compute , , and .  Calculate .  Classify the critical points.  Evaluate the function at the critical points.  Graph the function using MATLAB and identify the critical points on the graph.  Explain how the graph confirms your classification by answering the reflection questions.    "
+},
+{
+  "id": "homework-5-5-2",
+  "level": "2",
+  "url": "homework-5.html#homework-5-5-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " For each function:  Create a surface plot using surf .  Mark all critical points on the graph.  Include the resulting figure in your work.  Compare the graph with your classification obtained from the Second Derivative Test.    "
+},
+{
+  "id": "homework-5-5-3",
+  "level": "2",
+  "url": "homework-5.html#homework-5-5-3",
+  "type": "Listing",
+  "number": "135",
+  "title": "",
+  "body": "The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above. clc clear close all [x,y] = meshgrid(-4:0.05:4,-4:0.05:4); z = 4*x + 6*y - x.^2 - y.^2; % replace with desired function figure surf(x,y,z) shading interp colormap jet hold on % Critical point example x_crit = 2; y_crit = 3; f_crit = 4*x_crit + 6*y_crit - x_crit^2 - y_crit^2; % replace with desired function plot3(x_crit,y_crit,f_crit,'ko','MarkerFaceColor','r','MarkerSize',8) %For curves t = linspace(0,2*pi,200); xc = cos(t); yc = sin(t); zc = zeros(size(t)); hold on plot3(xc,yc,zc,'r','LineWidth',4) xlabel('x') ylabel('y') zlabel('f(x,y)') title('Surface Plot') grid on view(45,30)  "
+},
+{
+  "id": "homework-5-6-2",
+  "level": "2",
+  "url": "homework-5.html#homework-5-6-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Write a short response to the following questions.  How does a local maximum appear on a surface plot?  How does a local minimum appear on a surface plot?  How can a saddle point be identified graphically?  Which function had more than one minimum?  Which function had infinitely many maxima?  Did the graphical results agree with the Second Derivative Test in each case?  What advantages are gained by using both calculus and visualization?    "
+},
+{
   "id": "resources",
   "level": "1",
   "url": "resources.html",
@@ -1796,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "134",
+  "number": "137",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
