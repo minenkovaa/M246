@@ -494,9 +494,9 @@ eBookConfig.enable_chatcodes =  false;
 <section class="worksheet" id="homework-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homework 4</span><div class="print-links"><a href="?printpreview=homework-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<div class="para" id="homework-5-2">In this activity you will use partial derivatives, critical points, and the Second Derivative Test to classify extrema of functions of two variables. You will then compare your analytic results with graphical representations produced in MATLAB.<div class="autopermalink" data-description="Paragraph"><a href="#homework-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="exercise exercise-like" id="homework-5-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>For the following functions, find the critical points and classify them using the Second Derivative Test. <ol class="lower-alpha lower-alpha-level-1" id="homework-5-3-1-1">
+<section class="introduction" id="homework-5-2"><div class="para" id="homework-5-2-1">
+<em class="alert">Instructions:</em> Complete the exercises where you need to use partial derivatives to find and classify critical points of functions of two variables. Please aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab4_YourLastName.m and  then compare your analytic results with graphical representations produced in MATLAB. You may also use MATLAB to double-check your calculations, but you must show your work.<div class="autopermalink" data-description="Paragraph"><a href="#homework-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="homework-5-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>For the following functions, find the critical points and classify them using the Second Derivative Test. <ol class="lower-alpha lower-alpha-level-1" id="homework-5-3-1-1">
 <li id="homework-5-3-1-1-1">
 <div class="para" id="p-derived-homework-5-3-1-1-1">Compute <span class="process-math">\(f_x\)</span> and <span class="process-math">\(f_y\text{.}\)</span>
 </div>
@@ -583,7 +583,51 @@ f(x,y)=-(x^2+y^2-1)^2.
 <div class="autopermalink" data-description="Item 2.4"><a href="#homework-5-5-2-1-1-4" title="Copy heading and permalink for Item 2.4" aria-label="Copy heading and permalink for Item 2.4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#homework-5-5-2" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><figure class="listing figure-like" id="homework-5-5-3"><figcaption><span class="type">Listing</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">135<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Listing 135"><a href="#homework-5-5-3" title="Copy heading and permalink for Listing 135" aria-label="Copy heading and permalink for Listing 135">🔗</a></div></figcaption><div class="listing__contents"></div></figure><div class="autopermalink" data-description="Subsection: MATLAB Investigation"><a href="#homework-5-5" title="Copy heading and permalink for Subsection: MATLAB Investigation" aria-label="Copy heading and permalink for Subsection: MATLAB Investigation">🔗</a></div></section><section class="subsection" id="homework-5-6"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#homework-5-5-2" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article><div class="para logical" id="homework-5-5-3">
+<div class="para">The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above.</div>
+<pre class="code-display tex2jax_ignore clipboardable">
+clc
+clear
+close all
+
+[x,y] = meshgrid(-4:0.05:4,-4:0.05:4);
+
+z = 4*x + 6*y - x.^2 - y.^2;   % replace with desired function
+
+figure
+surf(x,y,z)
+shading interp
+colormap jet
+hold on
+
+% Critical point example
+x_crit = 2;
+y_crit = 3;
+f_crit = 4*x_crit + 6*y_crit - x_crit^2 - y_crit^2; % replace with desired function
+plot3(x_crit,y_crit,f_crit,'ko','MarkerFaceColor','r','MarkerSize',8)
+
+%For curves
+t = linspace(0,2*pi,200);
+
+xc = cos(t);
+yc = sin(t);
+zc = zeros(size(t));
+
+hold on
+plot3(xc,yc,zc,'r','LineWidth',4)
+
+xlabel('x')
+ylabel('y')
+zlabel('f(x,y)')
+title('Surface Plot')
+
+grid on
+view(45,30)
+
+</pre>
+<div class="autopermalink" data-description="Paragraph"><a href="#homework-5-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: MATLAB Investigation"><a href="#homework-5-5" title="Copy heading and permalink for Subsection: MATLAB Investigation" aria-label="Copy heading and permalink for Subsection: MATLAB Investigation">🔗</a></div></section><section class="subsection" id="homework-5-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Reflection Questions after you investigate each function</span>
 </h3>
 <article class="exercise exercise-like" id="homework-5-6-2"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>Write a short response to the following questions. <ol class="decimal" id="homework-5-6-2-1-1">
