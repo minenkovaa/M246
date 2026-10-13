@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="stations-coordinates">
+    <title>Cartesian, Cylindrical, and Spherical Coordinates</title>
+
+
+    <exercise workspace="2 inches">
+        <title>Cylindrical Surfaces</title>
+
+        <statement>
+            <p>Rewrite each surface in cylindrical coordinates.</p>
+
+            <ol label="1">
+                <li><m>x^2+y^2=9</m></li>
+                <li><m>x^2+y^2=4z</m></li>
+                <li><m>x^2+y^2+z^2=25</m></li>
+            </ol>
+
+            <p>
+                Which equation becomes the simplest? Explain.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="2 inches">
+        <title>Spherical Surfaces</title>
+
+        <statement>
+            <p>Rewrite each surface in spherical coordinates.</p>
+
+            <ol label="1">
+                <li><m>x^2+y^2+z^2=16</m></li>
+                <li><m>x^2+y^2+z^2=36,\; z\ge0</m></li>
+                <li><m>z=\sqrt{x^2+y^2}</m></li>
+            </ol>
+
+            <p>
+                What geometric objects do these equations represent?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="2 inches">
+        <title>Coordinate System Detective</title>
+
+        <statement>
+            <p>
+                Determine the best coordinate system for each surface.
+            </p>
+
+            <ol label="1">
+                <li><m>z=5</m></li>
+                <li><m>x^2+y^2=16</m></li>
+                <li><m>x^2+y^2+z^2=49</m></li>
+                <li><m>z=x^2+y^2</m></li>
+                <li><m>z=\sqrt{x^2+y^2}</m></li>
+            </ol>
+        </statement>
+    </exercise>
+
+    <exercise workspace="2 inches">
+        <title>Match the Surface</title>
+
+        <statement>
+            <p>Match each equation with the correct geometric object.</p>
+
+            <ol label="A">
+                <li><m>r=3</m></li>
+                <li><m>\rho=4</m></li>
+                <li><m>z=2</m></li>
+                <li><m>\phi=\pi/3</m></li>
+            </ol>
+
+            <p>
+                Objects: sphere, cone, horizontal plane, cylinder.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="2 inches">
+        <title>Mixed Challenge</title>
+
+        <statement>
+            <p>
+                For each surface:
+            </p>
+
+            <ol>
+                <li>Identify the best coordinate system.</li>
+                <li>Rewrite the equation.</li>
+                <li>Explain why your coordinate choice is best.</li>
+            </ol>
+
+            <p><m>x^2+y^2=25,\; 0\le z\le 6</m></p>
+
+            <p><m>x^2+y^2+z^2=64</m></p>
+
+            <p><m>z=x^2+y^2</m></p>
+
+            <p><m>x^2+y^2=4z^2</m></p>
+        </statement>
+    </exercise>
+</worksheet>

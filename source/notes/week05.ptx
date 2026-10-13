@@ -262,6 +262,55 @@ where <m>R</m> is the unit disk.
 </example>
 
 </subsection>
+<subsection>  
+  <title>Cylindrical Coordinates</title>
+  
+  <p>
+    Cylindrical coordinates are useful for describing surfaces of revolution and other 3D shapes with circular symmetry.
+  </p>
+  <definition>
+    <p>
+      Cylindrical coordinates are defined by
+      <me>
+        x = r\cos\theta, \quad y = r\sin\theta, \quad z = z.
+      </me>
+    </p>
+  </definition>
+  <theorem>
+    <p>
+      The volume element in cylindrical coordinates is given by
+      <me>
+        dV = r\,dr\,d\theta\,dz.
+      </me>
+    </p>
+  </theorem>
+</subsection>
+<subsection>
+  <title>Spherical Coordinates</title>
+  
+  <p>
+    Spherical coordinates are useful for describing spheres and other 3D shapes with radial symmetry.
+  </p>
+  <definition>
+    <p>
+      Spherical coordinates are defined by
+      <me>
+        x = \rho\sin\phi\cos\theta, \quad y = \rho\sin\phi\sin\theta, \quad z = \rho\cos\phi,
+      </me>
+      where <m>\rho</m> is the radial distance, <m>\phi</m> is the polar angle, and <m>\theta</m> is the azimuthal angle.
+    </p>
+  </definition>
+  <theorem>
+    <p>
+      The volume element in spherical coordinates is given by
+      <me>
+        dV = \rho^2 \sin\phi\,d\rho\,d\phi\,d\theta.
+      </me>
+    </p>
+  </theorem>
+</subsection>
+
+  
 
 <subsection>
 

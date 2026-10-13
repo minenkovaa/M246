@@ -73,6 +73,7 @@
       <xi:include href="./activities/inverse-activity.ptx"/>
       <xi:include href="./activities/systems-activity.ptx"/>
       <xi:include href="./activities/modelingLA-activity.ptx"/>
+      <xi:include href="./activities/coordinates-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
