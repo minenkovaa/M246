@@ -1,21 +1,589 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-05">
-  <title>Week 5: Multiple integrals; vector calculus</title>
+<section xml:id="notes-week-06w">
+  <title>Week 6: Multiple integrals; vector calculus</title>
 
-  <subsection>
-    <title>Tuesday</title>
+<subsection>
+<title>Double Integrals and Signed Volume</title>
 
-    <p> Multiple integrals and their properties.
-    </p>
-  </subsection>
+<p>
+The definite integral of a function of one variable measures signed area.
+For functions of two variables, a double integral measures signed volume.
+</p>
+
+<definition>
+<p>
+
+For a function <m>f(x,y)</m> defined on a region <m>R</m>,
+
+<me>
+\iint_R f(x,y)\,dA
+</me>
+
+represents the accumulated value of <m>f</m> over the region.
+
+</p>
+</definition>
+
+subsection
+<image width="50%">
+<latex-image>
+\begin{tikzpicture}
+\draw[->] (0,0)--(-1.5,-1.5) node[right]{$x$};
+\draw[->] (0,0)--(2,0) node[left]{$y$};
+\draw[->] (0,0)--(0,3) node[above]{$z$};
+
+\draw (1,-.5) ellipse (1.3 and .7);
+\node at (1,-.5){$R$};
+
+\draw[thick]
+(.5,1)--(2,2)--(1.5,3)--(-.5,2)--cycle;
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<caption>
+A double integral accumulates values over a planar region.
+</caption>
+
+subsection
+
+</subsection>
+
+<subsection>
+
+<title>Iterated Integrals</title>
+
+<p>
+Most double integrals you will encounter are evaluated as repeated one-variable integrals.
+</p>
+
+<theorem>
+
+<me>
+\iint_R f(x,y)\,dA
+=
+\int_a^b\int_{c(x)}^{d(x)} f(x,y)\,dy\,dx.
+</me>
+
+</theorem>
+
+<example>
+
+<statement>
+
+Evaluate
+
+<me>
+\int_0^1\int_0^2 (x+y)\,dy\,dx.
+</me>
+
+</statement>
+<solution>
+  <me>
+\int_0^1\int_0^2 (x+y)\,dy\,dx = \int_0^1 \left[xy + \frac{y^2}{2}\right]_0^2 dx =
+</me>
+  
+<me>
+= \int_0^1 (2x + 2) dx = \left[x^2 + 2x\right]_0^1 = 3.
+</me>
+</solution>
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Changing the Order of Integration</title>
+
+<p>
+Sometimes reversing the order of integration greatly simplifies a problem.
+</p>
+
+<activity>
+
+Sketch the region described by
+
+<me>
+\int_0^1
+\int_x^1
+f(x,y)\,dy\,dx.
+</me>
+
+Rewrite the integral with the order reversed.
+<solution>
+  <image width="50%">
+    <shortdescription></shortdescription>
+    <latex-image>
+      \begin{tikzpicture}
+\draw[->] (-.5,0)--(1.5,0);
+\draw[->] (0,-.5)--(0,1.5);
+\draw[thick,fill=blue!20] (0,0)--(1,1)--(0,1)--cycle;
+\draw[->,thick,blue] (0,0.5)--(1,0.5);
+\node at (1.5,-0.2){$x$};
+\node at (-0.2,1.5){$y$};
+
+\draw[->] (2.5,-0.5)--(2.5,1.5);
+\draw[->] (2,0)--(4,0);
+\draw[thick,fill=red!20] (2.5,0)--(3.5,1)--(2.5,1)--cycle;
+\draw[->,thick,red] (3,0)--(3,1.5);
+\node at (4,-.2){$x$};
+\node at (2.3,1.5){$y$};
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+  <p>
+The region is a triangle with vertices at (0,0), (1,1), and (0,1). The integral can be rewritten as
+<md>
+ \int_0^1
+\int_x^1
+f(x,y)\,dy\,dx=\int_0^1
+\int_0^y
+f(x,y)\,dx\,dy.
+</md>
+
+  </p>
+</solution>
+</activity>
+
+</subsection>
+
+<subsection>
+
+<title>Applications</title>
+
+<definition>
+
+Average value of a function:
+
+<me>
+f_{avg}
+=
+\frac{1}{A(R)}
+\iint_R f(x,y)\,dA.
+</me>
+
+</definition>
+
+<example>
+<p>
+  
+Suppose <m>f(x,y)</m> represents temperature distribution over a metal plate.
+Interpret
+
+<me>
+\frac{1}{A(R)}
+\iint_Rf\,dA.
+</me>
+
+</p>
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Polar Coordinates</title>
+
+<p>
+Circular regions are often easier to describe using polar coordinates.
+</p>
+
+<definition>
+
+<me>
+x=r\cos\theta,
+\qquad
+y=r\sin\theta.
+</me>
+
+</definition>
+
+<theorem>
+
+<me>
+dA=r\,dr\,d\theta.
+</me>
+
+</theorem>
+
+subsection
+
+<image width="40%">
+<latex-image>
+\begin{tikzpicture}
+
+\draw[->] (-2,0)--(2,0);
+\draw[->] (0,-2)--(0,2);
+
+\draw (0,0) circle (1.4);
+
+\draw[thick,->] (0,0)--(1,.9);
+
+\draw (.5,0) arc (0:42:.5);
+
+\node at (.8,.25){$\theta$};
+\node at (.7,.8){$r$};
+\node at (1.5,1.5){$x$};
+\node at (-1.5,1.5){$y$};
+\end{tikzpicture}
+</latex-image>
+</image>
+
+subsection
+
+<example>
+<p>
+Evaluate
+
+<me>
+\iint_R (x^2+y^2)\,dA
+</me>
+
+where <m>R</m> is the unit disk.
+
+</p>
+<solution>
+  <p>
+    In polar coordinates, <m>x = r\cos\theta</m> and <m>y = r\sin\theta</m>, so <m>x^2 + y^2 = r^2</m>. The integral becomes
+    <me>
+      \iint_R (x^2+y^2)\,dA = \int_0^{2\pi} \int_0^1 r^2 \cdot r\,dr\,d\theta = \int_0^{2\pi} \int_0^1 r^3\,dr\,d\theta.
+    </me>
+    Evaluating the inner integral,
+    <me>
+      \int_0^1 r^3\,dr = \left[\frac{r^4}{4}\right]_0^1 = \frac{1}{4}.
+    </me>
+    Therefore,
+    <me>
+      \int_0^{2\pi} \frac{1}{4}\,d\theta = \frac{1}{4} \cdot 2\pi = \frac{\pi}{2}.
+    </me>
+  </p>
+</solution>
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Vector Fields</title>
+
+<p>
+A vector field assigns a vector to every point in a region.
+</p>
+
+<definition>
+<p>
+<me>
+\mathbf F(x,y)
+=
+\langle P(x,y),Q(x,y)\rangle.
+</me>
+is a vector-function of two variables with two components.</p>
+</definition>
+
+<example>
+<p>
+Interpret and graph the vector field
+
+<me>
+\mathbf F(x,y)=\langle -y,x\rangle.
+</me>
+</p>
+<solution>
+  <p>
+    The vector field <m>\mathbf F(x,y)=\langle -y,x\rangle</m> represents a rotational flow around the origin. At any point <m>(x,y)</m>, the vector points in the direction of the tangent to the circle centered at the origin passing through that point.
+  </p>
+  <image>
+  <latex-image>
+      \begin{tikzpicture}
+        \draw[->,thick] (-3,0)--(3,0) node[right]{$x$};
+        \draw[->,thick] (0,-3)--(0,3) node[above]{$y$};
+        \foreach \x in {-2,-1,0,1,2} {
+          \foreach \y in {-2,-1,0,1,2} {
+            \draw[->,blue] (\x,\y) -- ++(-\y,\x);
+          }
+        } 
+      \end{tikzpicture}
+    </latex-image>
+    
+  </image>
+</solution>
+</example>
 
 
-  <subsection>
-    <title>Thursday</title>
+</subsection>
 
-    <p> Vector calculus.
-    </p>
-  </subsection>
+<subsection>
+
+<title>The Gradient</title>
+
+<p>
+The gradient links scalar functions and vector fields.
+</p>
+
+<me>
+\nabla f
+=
+\left\langle
+f_x,
+f_y
+\right\rangle.
+</me>
+
+<theorem>
+
+<p>The gradient points in the direction of greatest increase.
+</p>
+</theorem>
+
+<example>
+<p>
+Find the gradient of
+
+<me>
+f(x,y)=x^2+y^2.
+</me>
+</p>
+<solution>
+  <p>
+    The gradient is computed as follows:
+    <me>
+      \nabla f = \left\langle \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} \right\rangle = \left\langle 2x, 2y \right\rangle.
+    </me>
+    Therefore, the gradient vector at any point <m>(x,y)</m> is <m>\langle 2x, 2y \rangle</m>, which points radially outward from the origin, indicating the direction of greatest increase of the function <m>f(x,y) = x^2 + y^2</m>.
+  </p>
+</solution>
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Divergence</title>
+
+<p>
+Divergence measures expansion or compression of a vector field.
+</p>
+
+<definition>
+<p>Divergence is defined as
+<me>
+Div(\mathbf F) = \nabla\cdot \mathbf F
+=
+\frac{\partial P}{\partial x}
++
+\frac{\partial Q}{\partial y}.
+</me>
+</p>
+</definition>
+
+
+<sidebyside>
+
+
+
+<image width="40%">
+<shortdescription>Positive divergence:
+vectors spread outward.</shortdescription>
+<latex-image>
+\begin{tikzpicture}
+\draw[->] (0,0)--(1,.5);
+\draw[->] (0,0.5)--(.5,1.5);
+\draw[->] (0,1)--(.5,1.7);
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+
+<image width="40%">
+<shortdescription>Negative divergence:
+vectors move inward.</shortdescription>
+<latex-image>
+\begin{tikzpicture}
+\draw[->] (0,0)--(-1,-.5);
+\draw[->] (-1,-.5)--(-.5,-1.5);
+\draw[->] (-.5,-1.5)--(.5,-1);    
+\draw[->] (.5,-1)--(1,-.5);
+\draw[->] (1,-.5)--(1.5,0);
+\draw[->] (0,0)--(1,.5);
+\draw[->] (1,.5)--(.5,1.5);
+\draw[->] (.5,1.5)--(-.5,1);
+\draw[->] (-.5,1)--(-1,.5);
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+</sidebyside>
+
+
+<example>
+
+Compute the divergence of
+
+<me>
+\mathbf F
+=
+\langle x,y\rangle.
+</me>
+
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Curl</title>
+
+<p>
+Curl measures local rotation.
+</p>
+
+<definition>
+
+For a planar vector field,
+
+<me>
+\operatorname{curl}(\mathbf F)
+=
+\frac{\partial Q}{\partial x}
+-
+\frac{\partial P}{\partial y}.
+</me>
+
+</definition>
+
+<image width="45%">
+<latex-image>
+\begin{tikzpicture}
+
+\draw[->] (0,0)--(1,.5);
+\draw[->] (1,.5)--(.5,1.5);
+\draw[->] (.5,1.5)--(-.5,1);
+\draw[->] (-.5,1)--(0,0);
+
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+<example>
+
+Find the curl of
+
+<me>
+\mathbf F
+=
+\langle -y,x\rangle.
+</me>
+
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Line Integrals</title>
+
+<p>
+A line integral accumulates values along a curve.
+</p>
+
+<definition>
+
+<me>
+\int_C \mathbf F\cdot d\mathbf r.
+</me>
+
+</definition>
+
+<p>
+Physical interpretation:
+work done by a force field.
+</p>
+
+<example>
+
+Compute the work done by
+
+<me>
+\mathbf F=\langle 1,2\rangle
+</me>
+
+along a straight path.
+
+</example>
+
+</subsection>
+
+<subsection>
+
+<title>Conservative Vector Fields</title>
+
+<definition>
+
+A vector field is conservative if
+
+<me>
+\mathbf F=\nabla f
+</me>
+
+for some potential function <m>f</m>.
+
+</definition>
+
+<theorem>
+
+For a conservative field,
+
+<me>
+\int_C\mathbf F\cdot d\mathbf r
+=
+f(B)-f(A).
+</me>
+
+</theorem>
+
+<activity>
+
+Find a potential function for
+
+<me>
+\mathbf F=\langle 2x,2y\rangle.
+</me>
+
+</activity>
+
+</subsection>
+
+<subsection>
+
+<title>Big Picture</title>
+
+
+<image width="60%">
+<latex-image>
+\begin{tikzpicture}[node distance=3cm]
+
+\node (f) {$f$};
+
+\node[right of=f] (g) {$\nabla f$};
+
+\node[right of=g] (d) {$\nabla\cdot \mathbf F$};
+
+\node[below of=g] (c) {$\mathrm{curl}(\mathbf F)$};
+
+\draw[->] (f)--(g);
+\draw[->] (g)--(d);
+\draw[->] (g)--(c);
+
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</subsection>
+
+
 
 </section>
