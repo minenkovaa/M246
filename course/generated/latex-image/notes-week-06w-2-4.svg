@@ -16,5 +16,8 @@
 <use data-text="z" xlink:href="#font_1_4" transform="matrix(9.963098,0,0,-9.963098,41.082147,6.2096636)"/>
 <path transform="matrix(1.00005,0,0,-1.00005,43.61827,94.774089)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M65.19774-14.17339C65.19774-3.21445 48.69926 5.66927 28.3468 5.66927 7.99434 5.66927-8.50412-3.21445-8.50412-14.17339-8.50412-25.13232 7.99434-34.01607 28.3468-34.01607 48.69926-34.01607 65.19774-25.13232 65.19774-14.17339ZM28.3468-14.17339"/>
 <use data-text="R" xlink:href="#font_1_1" transform="matrix(9.963098,0,0,-9.963098,68.14549,112.35196)"/>
-<path transform="matrix(1.00005,0,0,-1.00005,43.61827,94.774089)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M14.17339 28.3468 56.69362 56.69362 42.5202 85.04042-14.17339 56.69362Z"/>
+<g>
+<path transform="matrix(1.00005,0,0,-1.00005,43.61827,94.774089)" d="M14.17339 0 28.3468 28.3468 56.69362 42.5202 42.5202 14.17339Z" fill="#ccccff" fill-opacity=".5"/>
+<path transform="matrix(1.00005,0,0,-1.00005,43.61827,94.774089)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" stroke-opacity=".5" d="M14.17339 0 28.3468 28.3468 56.69362 42.5202 42.5202 14.17339Z"/>
+</g>
 </svg>

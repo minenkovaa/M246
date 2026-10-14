@@ -14,7 +14,7 @@
 <path transform="matrix(.7433049,-.66895,-.66896346,-.74329,85.61139,33.453264)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000000" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
 <path transform="matrix(1.00002,0,0,-1,57.789796,58.492)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M14.17339 0C14.17339 3.5016 12.87555 6.88167 10.53271 9.48381"/>
 <use data-text="&#x03b8;" xlink:href="#font_1_1" transform="matrix(9.962799,0,0,-9.9626,77.991199,54.865)"/>
-<use data-text="r" xlink:href="#font_1_2" transform="matrix(9.962799,0,0,-9.9626,75.24715,37.959)"/>
-<use data-text="x" xlink:href="#font_1_3" transform="matrix(9.962799,0,0,-9.9626,97.46359,18.117)"/>
-<use data-text="y" xlink:href="#font_1_4" transform="matrix(9.962799,0,0,-9.9626,12.647888,17.147999)"/>
+<use data-text="r" xlink:href="#font_1_2" transform="matrix(9.962799,0,0,-9.9626,76.381168,39.66)"/>
+<use data-text="x" xlink:href="#font_1_3" transform="matrix(9.962799,0,0,-9.9626,103.132709,74.81)"/>
+<use data-text="y" xlink:href="#font_1_4" transform="matrix(9.962799,0,0,-9.9626,40.99546,11.479)"/>
 </svg>
