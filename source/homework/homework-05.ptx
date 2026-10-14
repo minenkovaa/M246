@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="hw-triple-integrals-surfaces">
+    <title>Homework 5</title>
+
+    <introduction>
+        <p>
+            For each problem:
+        </p>
+        <ol>
+            <li>Sketch the solid.</li>
+            <li>Determine the most appropriate coordinate system.</li>
+            <li>Set up a triple integral for the volume: <m>\iiint_RdV</m>.</li>
+            <li>Evaluate the integral.</li>
+        </ol>
+        <p>
+            The following MATLAB code can be used as a template to create surface plots for each of the surfaces and how to integrate over the solids bounded by them. Modify the function definition in the code to match each of the surfaces listed above.
+
+        <cd>
+        clf
+hold on
+axis equal
+
+% Sphere (upper hemisphere)
+[x,y] = meshgrid(linspace(-4,4,150));
+
+sphereTop = sqrt(16 - x.^2 - y.^2);
+sphereTop(imag(sphereTop)~=0) = NaN;
+
+surf(x,y,sphereTop,...
+     'FaceAlpha',0.4,...
+     'EdgeColor','none',...
+     'FaceColor','blue')
+
+% Paraboloid
+zpar = x.^2 + y.^2;
+
+surf(x,y,zpar,...
+     'FaceAlpha',0.5,...
+     'EdgeColor','none',...
+     'FaceColor','red')
+
+xlabel('x')
+ylabel('y')
+zlabel('z')
+title('Region Between Sphere and Paraboloid')
+
+legend('Sphere','Paraboloid')
+
+view(135,25)
+camlight
+lighting gouraud
+
+%here is a template for integration as well. You will need to determine the bounds of integration for each variable based on the surfaces and the region of interest.
+       syms rho phi theta %In case you want to use spherical coordinates, you can use these variables. If you want to use cylindrical coordinates, you can use r, theta, z instead.
+
+V = int(int(int(rho^2*sin(phi), ... %the Jacobian (the function that was an extra in dV) is rho^2*sin(phi)
+        rho,lower_bound_rho,upper_bound_rho), ...  %put the actual bounds once you figure them out.
+        phi,lower_bound_phi,upper_bound_phi), ...
+        theta,lower_bound_theta,upper_bound_theta);
+
+simplify(V)</cd>
+</p>
+    </introduction>
+
+    <exercise workspace="2 inches">
+        <title>Problem 1: Cylinder Inside a Sphere</title>
+        
+
+        <statement>
+            <p>
+                Find the volume of the solid inside the sphere
+            </p>
+
+            <me>
+                x^2+y^2+z^2=25
+            </me>
+
+            <p>
+                and outside the cylinder
+            </p>
+
+            <me>
+                x^2+y^2=9.
+            </me>
+        </statement>
+
+        <hint>
+            <p>
+                Use cylindrical coordinates.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise workspace="2 inches" xml:id="hw-cone-sphere">
+        <title>Problem 2: Between a Cone and a Sphere</title>
+
+        <statement>
+            <p>
+                Find the volume enclosed by the sphere
+            </p>
+
+            <me>
+                x^2+y^2+z^2=36
+            </me>
+
+            <p>
+                and above the cone
+            </p>
+
+            <me>
+                z=\sqrt{x^2+y^2}.
+            </me>
+        </statement>
+
+        <hint>
+            <p>
+                Convert the cone to spherical coordinates and use spherical coordinates
+                for the volume integral.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise workspace="2 inches" xml:id="hw-paraboloid-plane">
+        <title>Problem 3: Between a Paraboloid and a Plane</title>
+
+        <statement>
+            <p>
+                Find the volume enclosed by
+            </p>
+
+            <me>
+                z=x^2+y^2
+            </me>
+
+            <p>
+                and
+            </p>
+
+            <me>
+                z=9.
+            </me>
+        </statement>
+
+        <hint>
+            <p>
+                Find the circle where the two surfaces intersect.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise workspace="2 inches" xml:id="hw-two-paraboloids">
+        <title>Problem 4: Between Two Paraboloids</title>
+
+        <statement>
+            <p>
+                Find the volume of the solid between
+            </p>
+
+            <me>
+                z=x^2+y^2
+            </me>
+
+            <p>
+                and
+            </p>
+
+            <me>
+                z=12-x^2-y^2.
+            </me>
+        </statement>
+
+        <hint>
+            <p>
+                Find the intersection curve first.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise workspace="2 inches" xml:id="hw-cone-inside-sphere">
+        <title>Problem 5: Cone Inside a Sphere</title>
+
+        <statement>
+            <p>
+                Find the volume of the solid inside the sphere
+            </p>
+
+            <me>
+                x^2+y^2+z^2=64
+            </me>
+
+            <p>
+                and above the cone
+            </p>
+
+            <me>
+                x^2+y^2=3z^2.
+            </me>
+        </statement>
+
+        <hint>
+            <p>
+                Rewrite the cone in spherical coordinates and determine the
+                corresponding value of <m>\phi</m>.
+            </p>
+        </hint>
+    </exercise>
+
+    <exercise workspace="2 inches"  xml:id="hw-challenge">
+        <title>Optional Challenge Problem</title>
+
+        <statement>
+            <p>
+                Find the volume enclosed between the sphere
+            </p>
+
+            <me>
+                x^2+y^2+z^2=16
+            </me>
+
+            <p>
+                and the paraboloid
+            </p>
+
+            <me>
+                z=x^2+y^2.
+            </me>
+
+            <p>
+                Choose an appropriate coordinate system and justify your choice.
+            </p>
+        </statement>
+    </exercise>
+
+</worksheet>
