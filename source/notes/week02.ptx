@@ -476,6 +476,7 @@ where <m>A_{1j}</m> is the matrix obtained by deleting row
 </p>
 
 <image>
+  <shortdescription>A diagram illustrating first-row cofactor expansion for a 3x3 matrix and the resulting 2x2 minor.</shortdescription>
   <caption>First-row cofactor expansion and the associated minor matrix.</caption>
   <description>
     A three-by-three matrix is shown with its first row and first column

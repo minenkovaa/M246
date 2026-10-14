@@ -32,6 +32,7 @@ target along infinitely many paths.
 </p>
 
 <image width="50%">
+<shortdescription>A point in the plane approached along several different paths, illustrating why limits in multiple variables depend on direction.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 
@@ -125,6 +126,7 @@ The slope of this curve determines a partial derivative.
 </p>
 
 <image width="70%">
+<shortdescription>A surface with a vertical slice showing how a fixed x-value creates a curve whose slope gives a partial derivative.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 \draw[fill=gray!20] plot[smooth]
@@ -239,6 +241,7 @@ What if we move in an arbitrary direction?
 
 
 <image width="60%">
+<shortdescription>A contour-style diagram showing a point P with elevation contours and two directional arrows for hiking through the terrain.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 
@@ -448,7 +451,9 @@ local minima from Calculus I.
 
 <title>From One Dimension to Two Dimensions</title>
 
-<image width="70%"><latex-image>
+<image width="70%">
+<shortdescription>A comparison of contour and coordinate sketches illustrating how two-variable optimization extends one-variable ideas.</shortdescription>
+<latex-image>
 \begin{tikzpicture}
 \draw[thick,fill=gray!20]
 plot[smooth]
@@ -579,6 +584,7 @@ dimension.
 </p>
 
 <image width="55%">
+<shortdescription>A saddle surface with arrows showing that the function increases along one direction and decreases along a perpendicular direction.</shortdescription>
 <latex-image>\begin{tikzpicture}[scale=0.5]
 \draw[line width=1pt,fill=gray!20]
   plot[smooth]

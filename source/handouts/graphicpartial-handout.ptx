@@ -30,6 +30,7 @@ limits in one variable.
 </goals>
 
 <image width="60%">
+<shortdescription>Several colored curves approaching the same point in the plane, illustrating how multiple paths can lead to different limit behaviors.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 
@@ -74,6 +75,7 @@ Describe a strategy for showing a limit does NOT exist.
 <title>Reading Slopes from Surfaces</title>
 
 <image width="70%">
+<shortdescription>A 3D surface diagram with a vertical slice showing how fixing x produces a curve whose slope indicates a partial derivative.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 \draw[fill=gray!20] plot[smooth]
@@ -193,6 +195,7 @@ calculus.
 
 <p>
 <image width="80%">
+<shortdescription>Contour maps showing a hill, valley, and mountain pass with labeled points A, B, C, and D for classification.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 

@@ -25,8 +25,8 @@ represents the accumulated value of <m>f</m> over the region.
 </p>
 </definition>
 
-subsection
 <image width="50%">
+<shortdescription>A three-dimensional sketch showing a planar region labeled R with x-, y-, and z-axes.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 \draw[->] (0,0)--(-1.5,-1.5) node[right]{$x$};
@@ -36,17 +36,10 @@ subsection
 \draw (1,-.5) ellipse (1.3 and .7);
 \node at (1,-.5){$R$};
 
-\draw[thick]
-(.5,1)--(2,2)--(1.5,3)--(-.5,2)--cycle;
+\draw[thick,smooth,fill=blue!20,opacity=.5] (0.5,0)--(1,1)--(2,1.5)--(1.5,0.5)--cycle;
 \end{tikzpicture}
 </latex-image>
 </image>
-
-<caption>
-A double integral accumulates values over a planar region.
-</caption>
-
-subsection
 
 </subsection>
 
@@ -113,7 +106,7 @@ f(x,y)\,dy\,dx.
 Rewrite the integral with the order reversed.
 <solution>
   <image width="50%">
-    <shortdescription></shortdescription>
+    <shortdescription>Two triangular regions in the xy-plane showing the original and reversed order of integration for a double integral.</shortdescription>
     <latex-image>
       \begin{tikzpicture}
 \draw[->] (-.5,0)--(1.5,0);
@@ -123,12 +116,12 @@ Rewrite the integral with the order reversed.
 \node at (1.5,-0.2){$x$};
 \node at (-0.2,1.5){$y$};
 
-\draw[->] (2.5,-0.5)--(2.5,1.5);
-\draw[->] (2,0)--(4,0);
-\draw[thick,fill=red!20] (2.5,0)--(3.5,1)--(2.5,1)--cycle;
-\draw[->,thick,red] (3,0)--(3,1.5);
-\node at (4,-.2){$x$};
-\node at (2.3,1.5){$y$};
+\draw[->] (-2.5,-0.5)--(-2.5,1.5);
+\draw[->] (-3,0)--(-1,0);
+\draw[thick,fill=red!20] (-2.5,0)--(-2.5,1)--(-1.5,1)--cycle;
+\draw[->,thick,red] (-2,0)--(-2,1.5);
+\node at (-1,-.2){$x$};
+\node at (-2.7,1.5){$y$};
       \end{tikzpicture}
     </latex-image>
   </image>
@@ -207,9 +200,10 @@ dA=r\,dr\,d\theta.
 
 </theorem>
 
-subsection
+
 
 <image width="40%">
+<shortdescription>A polar coordinate diagram with a radius r, angle theta, and the Cartesian axes shown for a point in the plane.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 
@@ -223,14 +217,12 @@ subsection
 \draw (.5,0) arc (0:42:.5);
 
 \node at (.8,.25){$\theta$};
-\node at (.7,.8){$r$};
-\node at (1.5,1.5){$x$};
-\node at (-1.5,1.5){$y$};
+\node at (.74,.74){$r$};
+\node at (1.7,-.5){$x$};
+\node at (-.5,1.7){$y$};
 \end{tikzpicture}
 </latex-image>
 </image>
-
-subsection
 
 <example>
 <p>
@@ -343,6 +335,7 @@ Interpret and graph the vector field
     The vector field <m>\mathbf F(x,y)=\langle -y,x\rangle</m> represents a rotational flow around the origin. At any point <m>(x,y)</m>, the vector points in the direction of the tangent to the circle centered at the origin passing through that point.
   </p>
   <image>
+  <shortdescription>Vector field diagram showing rotational arrows swirling around the origin in a clockwise pattern.</shortdescription>
   <latex-image>
       \begin{tikzpicture}
         \draw[->,thick] (-3,0)--(3,0) node[right]{$x$};
@@ -431,34 +424,33 @@ Div(\mathbf F) = \nabla\cdot \mathbf F
 
 
 
-<image width="40%">
+<image width="30%">
 <shortdescription>Positive divergence:
 vectors spread outward.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
-\draw[->] (0,0)--(1,.5);
-\draw[->] (0,0.5)--(.5,1.5);
-\draw[->] (0,1)--(.5,1.7);
+\draw[->] (0,0)--(1,0);
+\draw[->] (0,0.5)--(1,1);
+\draw[->] (0,1)--(1,1.2);
+\draw[->] (0,-0.5)--(1,-1);
+\draw[->] (0,-1)--(1,-1.2);
 \end{tikzpicture}
 </latex-image>
 </image>
 
 
 
-<image width="40%">
+<image width="30%">
 <shortdescription>Negative divergence:
 vectors move inward.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
-\draw[->] (0,0)--(-1,-.5);
-\draw[->] (-1,-.5)--(-.5,-1.5);
-\draw[->] (-.5,-1.5)--(.5,-1);    
-\draw[->] (.5,-1)--(1,-.5);
-\draw[->] (1,-.5)--(1.5,0);
-\draw[->] (0,0)--(1,.5);
-\draw[->] (1,.5)--(.5,1.5);
-\draw[->] (.5,1.5)--(-.5,1);
-\draw[->] (-.5,1)--(-1,.5);
+\draw[->] (0,0)--(1,0);
+\draw[->] (0,-.5)--(1,-0.2);
+\draw[->] (0,-1)--(1,-0.7);
+\draw[->] (0,.5)--(1,0.2);
+\draw[->] (0,1)--(1,0.7);
+
 \end{tikzpicture}
 </latex-image>
 </image>
@@ -468,7 +460,7 @@ vectors move inward.</shortdescription>
 
 
 <example>
-
+<p>
 Compute the divergence of
 
 <me>
@@ -476,6 +468,16 @@ Compute the divergence of
 =
 \langle x,y\rangle.
 </me>
+</p>
+<solution>
+  <p>
+    The divergence is computed as follows:
+    <me>
+      Div(\mathbf F) = \nabla\cdot \mathbf F = \frac{\partial x}{\partial x} + \frac{\partial y}{\partial y} = 1 + 1 = 2.
+    </me>
+    Therefore, the divergence of the vector field <m>\mathbf F = \langle x, y \rangle</m> is constant and equal to 2, indicating that the field is uniformly expanding at every point in the plane.
+  </p>
+</solution> 
 
 </example>
 
@@ -490,20 +492,28 @@ Curl measures local rotation.
 </p>
 
 <definition>
-
-For a planar vector field,
+<p>
+For a vector field <m> \mathbf F = \langle P(x,y), Q(x,y), R(x,y) \rangle</m>, the curl is defined as
 
 <me>
-\operatorname{curl}(\mathbf F)
-=
-\frac{\partial Q}{\partial x}
--
-\frac{\partial P}{\partial y}.
+\operatorname{curl}(\mathbf F)=\begin{vmatrix}
+\mathbf i &amp; \mathbf j &amp; \mathbf k \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\
+P &amp; Q &amp; R
+\end{vmatrix}
+</me><me>
+= 
+\left\langle
+\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z},
+\frac{\partial P}{\partial z} - \frac{\partial R}{\partial x},
+\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}
+\right\rangle.
 </me>
-
+</p>
 </definition>
 
 <image width="45%">
+<shortdescription>A closed loop of arrows illustrating the local rotation of a vector field around a point.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 
@@ -518,14 +528,24 @@ For a planar vector field,
 
 
 <example>
-
+<p>
 Find the curl of
 
 <me>
 \mathbf F
 =
-\langle -y,x\rangle.
+\langle -y,x,x+yz\rangle.
 </me>
+</p>
+<solution>
+  <p>
+    The curl is computed as follows:
+    <me>
+      \operatorname{curl}(\mathbf F) = \nabla \times \mathbf F = \left\langle \frac{\partial (x+yz)}{\partial y} - \frac{\partial x}{\partial z}, \frac{\partial (-y)}{\partial z} - \frac{\partial (x+yz)}{\partial x}, \frac{\partial
+  x}{\partial y} - \frac{\partial (-y)}{\partial x} \right\rangle = \left\langle z - 0, 0 - 1, 0 - 0 \right\rangle = \langle z, -1, 0 \rangle.
+    </me>
+  </p>
+</solution>
 
 </example>
 
@@ -536,7 +556,7 @@ Find the curl of
 <title>Line Integrals</title>
 
 <p>
-A line integral accumulates values along a curve.
+A line integral adds values along a curve.
 </p>
 
 <definition>
@@ -553,7 +573,7 @@ work done by a force field.
 </p>
 
 <example>
-
+<p>
 Compute the work done by
 
 <me>
@@ -561,8 +581,19 @@ Compute the work done by
 </me>
 
 along a straight path.
+</p>
+<solution>
+  <p>
+    The work done by the constant force field <m>\mathbf F = \langle 1, 2 \rangle</m> along a straight path from point <m>A</m> to point <m>B</m> can be computed using the line integral:
+    <me>
+      W = \int_C \mathbf F \cdot d\mathbf r = \mathbf F \cdot \mathbf d = \langle 1, 2 \rangle \cdot \langle x_B - x_A, y_B - y_A \rangle = 1(x_B - x_A) + 2(y_B - y_A).
+    </me>
+    This formula gives the total work done by the force field along the straight path from <m>A</m> to <m>B</m>.
+  </p>
+</solution>
 
 </example>
+
 
 </subsection>
 
@@ -571,6 +602,7 @@ along a straight path.
 <title>Conservative Vector Fields</title>
 
 <definition>
+<p>
 
 A vector field is conservative if
 
@@ -578,12 +610,13 @@ A vector field is conservative if
 \mathbf F=\nabla f
 </me>
 
-for some potential function <m>f</m>.
+for some potential function <m>f</m>. 
+</p>
 
 </definition>
 
 <theorem>
-
+  <p>
 For a conservative field,
 
 <me>
@@ -591,17 +624,19 @@ For a conservative field,
 =
 f(B)-f(A).
 </me>
+</p>
 
 </theorem>
 
 <activity>
+<p>
 
 Find a potential function for
 
 <me>
 \mathbf F=\langle 2x,2y\rangle.
 </me>
-
+</p>
 </activity>
 
 </subsection>
@@ -612,6 +647,7 @@ Find a potential function for
 
 
 <image width="60%">
+<shortdescription>A flow diagram showing scalar field f leading to the gradient, divergence, and curl of a vector field.</shortdescription>
 <latex-image>
 \begin{tikzpicture}[node distance=3cm]
 
