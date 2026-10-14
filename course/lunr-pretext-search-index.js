@@ -2107,6 +2107,69 @@ var ptx_lunr_docs = [
   "body": " Write a short response to the following questions.  How does a local maximum appear on a surface plot?  How does a local minimum appear on a surface plot?  How can a saddle point be identified graphically?  Which function had more than one minimum?  Which function had infinitely many maxima?  Did the graphical results agree with the Second Derivative Test in each case?  What advantages are gained by using both calculus and visualization?    "
 },
 {
+  "id": "hw-triple-integrals-surfaces",
+  "level": "1",
+  "url": "hw-triple-integrals-surfaces.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 5",
+  "body": " Homework 5   For each problem:   Sketch the solid.  Determine the most appropriate coordinate system.  Set up a triple integral for the volume: .  Evaluate the integral.   The following MATLAB code can be used as a template to create surface plots for each of the surfaces and how to integrate over the solids bounded by them. Modify the function definition in the code to match each of the surfaces listed above. clf hold on axis equal % Sphere (upper hemisphere) [x,y] = meshgrid(linspace(-4,4,150)); sphereTop = sqrt(16 - x.^2 - y.^2); sphereTop(imag(sphereTop)~=0) = NaN; surf(x,y,sphereTop,... 'FaceAlpha',0.4,... 'EdgeColor','none',... 'FaceColor','blue') % Paraboloid zpar = x.^2 + y.^2; surf(x,y,zpar,... 'FaceAlpha',0.5,... 'EdgeColor','none',... 'FaceColor','red') xlabel('x') ylabel('y') zlabel('z') title('Region Between Sphere and Paraboloid') legend('Sphere','Paraboloid') view(135,25) camlight lighting gouraud %here is a template for integration as well. You will need to determine the bounds of integration for each variable based on the surfaces and the region of interest. syms rho phi theta %In case you want to use spherical coordinates, you can use these variables. If you want to use cylindrical coordinates, you can use r, theta, z instead. V = int(int(int(rho^2*sin(phi), ... %the Jacobian (the function that was an extra in dV) is rho^2*sin(phi) rho,lower_bound_rho,upper_bound_rho), ... %put the actual bounds once you figure them out. phi,lower_bound_phi,upper_bound_phi), ... theta,lower_bound_theta,upper_bound_theta); simplify(V)     Problem 1: Cylinder Inside a Sphere   Find the volume of the solid inside the sphere   and outside the cylinder     Use cylindrical coordinates.     Problem 2: Between a Cone and a Sphere   Find the volume enclosed by the sphere   and above the cone     Convert the cone to spherical coordinates and use spherical coordinates for the volume integral.     Problem 3: Between a Paraboloid and a Plane   Find the volume enclosed by   and     Find the circle where the two surfaces intersect.     Problem 4: Between Two Paraboloids   Find the volume of the solid between   and     Find the intersection curve first.     Problem 5: Cone Inside a Sphere   Find the volume of the solid inside the sphere   and above the cone     Rewrite the cone in spherical coordinates and determine the corresponding value of .     Optional Challenge Problem   Find the volume enclosed between the sphere   and the paraboloid   Choose an appropriate coordinate system and justify your choice.    "
+},
+{
+  "id": "hw-triple-integrals-surfaces-3",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-triple-integrals-surfaces-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1: Cylinder Inside a Sphere.",
+  "body": " Problem 1: Cylinder Inside a Sphere   Find the volume of the solid inside the sphere   and outside the cylinder     Use cylindrical coordinates.   "
+},
+{
+  "id": "hw-cone-sphere",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-cone-sphere",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2: Between a Cone and a Sphere.",
+  "body": " Problem 2: Between a Cone and a Sphere   Find the volume enclosed by the sphere   and above the cone     Convert the cone to spherical coordinates and use spherical coordinates for the volume integral.   "
+},
+{
+  "id": "hw-paraboloid-plane",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-paraboloid-plane",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3: Between a Paraboloid and a Plane.",
+  "body": " Problem 3: Between a Paraboloid and a Plane   Find the volume enclosed by   and     Find the circle where the two surfaces intersect.   "
+},
+{
+  "id": "hw-two-paraboloids",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-two-paraboloids",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4: Between Two Paraboloids.",
+  "body": " Problem 4: Between Two Paraboloids   Find the volume of the solid between   and     Find the intersection curve first.   "
+},
+{
+  "id": "hw-cone-inside-sphere",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-cone-inside-sphere",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5: Cone Inside a Sphere.",
+  "body": " Problem 5: Cone Inside a Sphere   Find the volume of the solid inside the sphere   and above the cone     Rewrite the cone in spherical coordinates and determine the corresponding value of .   "
+},
+{
+  "id": "hw-challenge",
+  "level": "2",
+  "url": "hw-triple-integrals-surfaces.html#hw-challenge",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Optional Challenge Problem.",
+  "body": " Optional Challenge Problem   Find the volume enclosed between the sphere   and the paraboloid   Choose an appropriate coordinate system and justify your choice.   "
+},
+{
   "id": "resources",
   "level": "1",
   "url": "resources.html",
