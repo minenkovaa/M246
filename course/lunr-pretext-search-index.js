@@ -1945,6 +1945,60 @@ var ptx_lunr_docs = [
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
 {
+  "id": "handouts-11",
+  "level": "1",
+  "url": "handouts-11.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Line and Surface Integrals",
+  "body": " Line and Surface Integrals   Evaluate the scalar line integral.   where is the curve given by .   Find .  Compute .  Rewrite the integral in terms of .  Evaluate.     Find the circulation of the vector field around the unit circle oriented counterclockwise.     Parameterize the curve.  Compute .  Rewrite the integral in terms of the parameter.  Evaluate.     Consider the vector field   Evaluate the line integral   from to using two different paths. Determine whether the integral depends on the path.   Straight line path  Path along a curve     Compute the flux of the vector field   through the portion of the plane   lying above the square    Determine an upward-pointing unit normal vector.  Compute on the surface.  Set up the flux integral.  Evaluate the integral.    Since the surface is the horizontal plane , think what the upward unit normal vector is.     Evaluate a scalar surface integral over a paraboloid over a disk .    "
+},
+{
+  "id": "handouts-11-2",
+  "level": "2",
+  "url": "handouts-11.html#handouts-11-2",
+  "type": "Checkpoint",
+  "number": "158",
+  "title": "",
+  "body": " Evaluate the scalar line integral.   where is the curve given by .   Find .  Compute .  Rewrite the integral in terms of .  Evaluate.   "
+},
+{
+  "id": "handouts-11-3",
+  "level": "2",
+  "url": "handouts-11.html#handouts-11-3",
+  "type": "Checkpoint",
+  "number": "159",
+  "title": "",
+  "body": " Find the circulation of the vector field around the unit circle oriented counterclockwise.     Parameterize the curve.  Compute .  Rewrite the integral in terms of the parameter.  Evaluate.   "
+},
+{
+  "id": "handouts-11-4",
+  "level": "2",
+  "url": "handouts-11.html#handouts-11-4",
+  "type": "Checkpoint",
+  "number": "160",
+  "title": "",
+  "body": " Consider the vector field   Evaluate the line integral   from to using two different paths. Determine whether the integral depends on the path.   Straight line path  Path along a curve   "
+},
+{
+  "id": "handouts-11-5",
+  "level": "2",
+  "url": "handouts-11.html#handouts-11-5",
+  "type": "Checkpoint",
+  "number": "161",
+  "title": "",
+  "body": " Compute the flux of the vector field   through the portion of the plane   lying above the square    Determine an upward-pointing unit normal vector.  Compute on the surface.  Set up the flux integral.  Evaluate the integral.    Since the surface is the horizontal plane , think what the upward unit normal vector is.   "
+},
+{
+  "id": "handouts-11-6",
+  "level": "2",
+  "url": "handouts-11.html#handouts-11-6",
+  "type": "Checkpoint",
+  "number": "162",
+  "title": "",
+  "body": " Evaluate a scalar surface integral over a paraboloid over a disk .   "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -2183,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "160",
+  "number": "165",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
