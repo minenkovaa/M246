@@ -838,14 +838,15 @@ Find a potential function for
 \begin{tikzpicture}
 % Surface 
 \fill[blue!20] (0,0) ellipse (3cm and 1.3cm); 
-\draw (0,0) ellipse (3cm and 1.3cm); 
+\fill[blue!20] (0,0.5) ellipse (2.7cm and 1.3cm); 
+\draw[red, dashed] (0,0) ellipse (3cm and 1.3cm); 
 % Boundary 
-\draw[red,very thick] (-3,0) arc[start angle=180,end angle=360,x radius=3cm,y radius=1.3cm]; 
+\draw[->,red,very thick] (-3,0) arc[start angle=180,end angle=357,x radius=2.98cm,y radius=1.3cm]; 
 \node[red] at (3.4,-0.2) {$\partial S$}; 
 \node at (0,-0.2) {$S$}; 
 % Normal vector 
-\draw[thick,->] (0,0) -- (0,2); 
-\node[right] at (0,1.8) {$\mathbf n$}; 
+\draw[thick,->] (0,1.7) -- (0,2.2); 
+\node[right] at (0,2) {$\vec{\mathbf n}$}; 
 \end{tikzpicture}
 </latex-image>
       </image>

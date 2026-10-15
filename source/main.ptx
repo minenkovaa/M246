@@ -89,6 +89,7 @@
       <xi:include href="./handouts/vectorsurface-handout.ptx"/>
       <xi:include href="./handouts/graphicpartial-handout.ptx"/>      
       <xi:include href="./handouts/partial-handout.ptx"/>
+      <xi:include href="./handouts/line-surface-integral-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

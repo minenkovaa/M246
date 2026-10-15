@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<handout>
+<title>Line and Surface Integrals</title>
+<exercise workspace="2in">
+<p>Evaluate the scalar line integral.</p>
+
+<me>
+\int_C (x+y)\, ds,
+</me>
+<p>where <m>C</m> is the curve given by <m>r(t)=\langle t,t^2\rangle,\quad 0\le t\le1</m>.
+</p>
+<ol>
+    <li>Find <m>r'(t)</m>.</li>
+    <li>Compute <m>ds</m>.</li>
+    <li>Rewrite the integral in terms of <m>t</m>.</li>
+    <li>Evaluate.</li>
+</ol>
+</exercise>
+
+<exercise workspace="2in">
+<p>Find the circulation of the vector field around the unit circle oriented counterclockwise.</p>
+
+<me>
+\oint_C \mathbf F\cdot d\mathbf r
+</me>
+
+<md>
+\mathbf F=\langle -y,x\rangle
+</md>
+<ol>
+    <li>Parameterize the curve.</li>
+    <li>Compute <m>d\mathbf r</m>.</li>
+    <li>Rewrite the integral in terms of the parameter.</li>
+    <li>Evaluate.</li>
+</ol>
+</exercise>
+<exercise workspace="2in">
+<p>
+Consider the vector field
+</p>
+
+<me>\mathbf{F}(x,y)=\langle 2x,\,2y\rangle.</me>
+
+<p>
+Evaluate the line integral
+</p>
+
+<me>\int_C \mathbf{F}\cdot d\mathbf{r}</me>
+
+<p>
+from <m>(0,0)</m> to <m>(1,1)</m> using two different paths.
+Determine whether the integral depends on the path.</p>
+
+<ul>
+<li>Straight line path</li>
+<li> Path along a curve</li>
+</ul>
+</exercise>
+<exercise workspace="2in">
+  
+        <p>
+            Compute the flux of the vector field
+        </p>
+
+        <me>\mathbf{F}=\langle x,y,z\rangle</me>
+
+        <p>
+            through the portion of the plane
+        </p>
+
+        <me>z=2</me>
+
+        <p>
+            lying above the square
+        </p>
+
+        <me>0\le x\le 1,\qquad 0\le y\le 1.</me>
+   
+
+   
+        <ol>
+            <li>Determine an upward-pointing unit normal vector.</li>
+            <li>Compute <m>\mathbf{F}\cdot\mathbf{n}</m> on the surface.</li>
+            <li>Set up the flux integral.</li>
+            <li>Evaluate the integral.</li>
+        </ol>
+    
+
+    <hint>
+        <p>
+            Since the surface is the horizontal plane <m>z=2</m>,
+            think what the upward unit normal vector is.
+        </p>
+    </hint>
+
+   
+</exercise>
+
+<exercise workspace="2in">
+<p>Evaluate a scalar surface integral over a paraboloid <m>z=x^2+y^2</m> over a disk <m>x^2+y^2\le 1</m>.</p>
+
+<me>
+\iint_S z\, dS.
+</me>
+
+</exercise>
+</handout>
