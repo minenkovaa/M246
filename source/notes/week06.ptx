@@ -3,19 +3,498 @@
 <section xml:id="notes-week-06">
   <title>Week 6: First-order ODEs (separable, linear, exact)</title>
 
-  <subsection>
-    <title>Tuesday</title>
+ <subsection xml:id="first-order-ode-notes">
 
-    <p> First-order ODEs: separable and linear equations.
-    </p>
-  </subsection>
+<title>First-Order Ordinary Differential Equations</title>
+
+<p>
+<strong>Source:</strong> These notes are adapted from
+<xref ref="lamar-first-order"/>.
+</p>
+
+<remark xml:id="lamar-first-order">
+<p>
+Paul Dawkins, <q>First Order Differential Equations</q>,
+Paul's Online Math Notes,
+<link url="https://tutorial.math.lamar.edu/classes/de/introfirstorder.aspx">https://tutorial.math.lamar.edu/classes/de/introfirstorder.aspx</link>.
+</p>
+</remark>
+
+<introduction>
+<p>
+Differential equations arise when a quantity and its rate of change are related.
+Examples include population growth, radioactive decay, cooling processes,
+mixing problems, and engineering systems.
+</p>
+
+<p>
+A <term>first-order ordinary differential equation</term> is an equation involving an
+unknown function <m>y(t)</m> and its first derivative.
+</p>
+
+<md>
+
+\frac{dy}{dt}=f(y,t)
+
+</md>
+
+<p>
+Unlike algebraic equations, there is no single method that solves all
+first-order differential equations. Instead, we identify the type of equation
+and apply an appropriate solution technique.
+</p>
+</introduction>
+</subsection>
 
 
-  <subsection>
-    <title>Thursday</title>
+<subsection xml:id="modeling">
 
-    <p> First-order ODEs: exact equations.
-    </p>
-  </subsection>
+<title>Modeling with First-Order Differential Equations</title>
+
+<p>
+Many engineering and scientific applications lead naturally to first-order
+differential equations.
+</p>
+
+<examples>
+<ul>
+<li>Population growth and decay</li>
+<li>Mixing problems</li>
+<li>Radioactive decay</li>
+<li>Cooling and heating processes</li>
+<li>Velocity of falling objects</li>
+</ul>
+</examples>
+
+<p>
+The modeling process usually follows these steps:
+</p>
+
+<ol>
+<li>Define the unknown quantity.</li>
+<li>Identify how the quantity changes over time.</li>
+<li>Write a differential equation describing the relationship.</li>
+<li>Solve the differential equation.</li>
+<li>Interpret the solution in context.</li>
+</ol>
+
+<example>
+<title>Concrete Curing on a Bridge Deck</title>
+
+<statement>
+
+<p>
+After a bridge deck is poured, engineers monitor the concrete temperature
+to ensure proper curing. Suppose the temperature <m>T(t)</m> of the concrete
+decreases at a rate proportional to the difference between the concrete
+temperature and the surrounding air temperature of <m>20^\circ\text{C}</m>.
+</p>
+<p>
+The rate of cooling is proportional to the temperature difference
+between the concrete and the surrounding air.
+</p>
+<md>
+\frac{dT}{dt}=-k(T-20),
+</md>
+<p>
+where <m>k>0</m> is a proportionality constant.
+</p>
+</statement>
+
+</example>
+</subsection>
+
+
+<subsection xml:id="classification">
+
+<title>Classifying First-Order Differential Equations</title>
+
+<p>
+When presented with a differential equation, the first step is to identify its
+form.
+</p>
+
+<p>
+Some important classes of first-order differential equations include:
+</p>
+
+<ul>
+<li>Separable equations</li>
+<li>Linear equations</li>
+<li>Exact equations</li>
+<li>Bernoulli equations</li>
+</ul>
+
+<p>
+The goal is to recognize which solution method can be applied.
+</p>
+
+</subsection>
+
+<subsection xml:id="separable-equations">
+
+<title>Separable Differential Equations</title>
+
+<definition>
+<p>
+A differential equation is <term>separable</term> if it can be written in the form
+</p>
+
+<md>
+
+N(y)\frac{dy}{dx}=M(x)
+
+</md>
+
+<p>
+or equivalently
+</p>
+
+<md>
+
+\frac{dy}{dx}=f(x)g(y).
+
+</md>
+</definition>
+
+<subsubsection>
+
+<title>Solution Strategy</title>
+
+<ol>
+<li>Move all <m>y</m>-terms to one side and all <m>x</m>-terms to the other.</li>
+
+<li>Integrate both sides.</li>
+
+<li>Solve for <m>y</m>, if possible.</li>
+
+<li>Use the initial condition if one is provided.</li>
+</ol>
+
+</subsubsection>
+
+<example>
+<statement>
+<p>Solve the differential equation</p>
+
+<md>
+
+\frac{dy}{dx}=3x^2.
+
+</md>
+</statement>
+
+<solution>
+<p>Integrate both sides.</p>
+
+<md>
+
+\int dy=\int 3x^2\,dx
+
+</md>
+
+<md>
+
+y=x^3+C.
+
+</md>
+</solution>
+</example>
+
+</subsection>
+
+<subsection xml:id="difflinear-equations">
+
+<title>Linear Differential Equations</title>
+
+<definition>
+<p>
+A first-order linear differential equation has the form
+</p>
+
+<md>
+
+y'+p(x)y=g(x).
+
+</md>
+</definition>
+
+<p>
+These equations are solved using an integrating factor.
+</p>
+
+<subsubsection>
+
+<title>Integrating Factor</title>
+
+<p>
+For
+</p>
+
+<md>
+
+y'+p(x)y=g(x),
+
+</md>
+
+<p>
+the integrating factor is
+</p>
+
+<md>
+
+\mu(x)=e^{\int p(x)\,dx}.
+
+</md>
+
+<p>
+Multiplying the differential equation by <m>\mu(x)</m> transforms the left-hand
+side into a product derivative:
+</p>
+
+<md>
+
+\frac{d}{dx}\big(\mu(x)y\big)=\mu(x)g(x).
+
+</md>
+
+<p>
+Integrate both sides and solve for <m>y</m>.
+</p>
+
+</subsubsection>
+
+<example>
+<statement>
+<p>Solve</p>
+
+<md>
+
+y'+2y=e^{-2x}.
+
+</md>
+</statement>
+
+<solution>
+<p>
+The integrating factor is
+</p>
+
+<md>
+
+\mu(x)=e^{\int 2\,dx}=e^{2x}.
+
+</md>
+
+<p>
+Multiply by <m>e^{2x}</m>:
+</p>
+
+<md>
+
+e^{2x}y'+2e^{2x}y=1.
+
+</md>
+
+<md>
+
+\frac{d}{dx}(e^{2x}y)=1.
+
+</md>
+
+<p>
+Integrating gives
+</p>
+
+<md>
+
+e^{2x}y=x+C.
+
+</md>
+
+<p>
+Therefore,
+</p>
+
+<md>
+
+y=e^{-2x}(x+C).
+
+</md>
+</solution>
+</example>
+
+</subsection>
+
+<subsection xml:id="exact-equations">
+
+<title>Exact Differential Equations</title>
+
+<definition>
+<p>
+A differential equation written as
+</p>
+
+<md>
+
+M(x,y)\,dx+N(x,y)\,dy=0
+
+</md>
+
+<p>
+is exact if
+</p>
+
+<md>
+
+\frac{\partial M}{\partial y}
+=
+\frac{\partial N}{\partial x}.
+
+</md>
+</definition>
+
+<p>
+When an equation is exact, there exists a potential function
+<m>F(x,y)</m> such that
+</p>
+
+<md>
+
+dF=M\,dx+N\,dy.
+
+</md>
+
+<p>
+The solution is obtained by finding <m>F(x,y)</m> and setting
+</p>
+
+<md>
+
+F(x,y)=C.
+
+</md>
+
+</subsection>
+
+<subsection xml:id="bernoulli-equations">
+
+<title>Bernoulli Differential Equations</title>
+
+<definition>
+<p>
+A Bernoulli equation has the form
+</p>
+
+<md>
+
+y'+p(x)y=q(x)y^n,
+
+</md>
+
+<p>
+where <m>n\neq 0</m> and <m>n\neq 1</m>.
+</p>
+</definition>
+
+<p>
+These equations can be transformed into linear equations through the
+substitution
+</p>
+
+<md>
+
+v=y^{1-n}.
+
+</md>
+
+<p>
+After substitution, solve the resulting linear differential equation.
+</p>
+
+</subsection>
+
+<subsection xml:id="initial-value-problems">
+
+<title>Initial Value Problems</title>
+
+<definition>
+<p>
+An <term>initial value problem</term> (IVP) consists of a differential equation
+together with an initial condition.
+</p>
+
+<md>
+
+\frac{dy}{dx}=f(x,y),
+\qquad
+y(x_0)=y_0.
+
+</md>
+</definition>
+
+<p>
+The differential equation determines a family of solutions, while the
+initial condition identifies one specific solution.
+</p>
+
+</subsection>
+
+<subsection xml:id="euler-method-preview">
+
+<title>Numerical Approximation: Euler's Method</title>
+
+<p>
+Not all differential equations can be solved analytically. One common
+numerical technique is Euler's Method.
+</p>
+
+<p>
+Starting from <m>(x_n,y_n)</m>, the next approximation is computed using
+</p>
+
+<md>
+
+y_{n+1}
+=
+y_n+h\,f(x_n,y_n),
+
+</md>
+
+<p>
+where <m>h</m> is the step size.
+</p>
+
+<p>
+Euler's Method follows the tangent line to generate approximate solution
+values.
+</p>
+
+</subsection>
+
+<subsection xml:id="summary">
+
+<title>Summary</title>
+
+<p>
+When solving a first-order differential equation:
+</p>
+
+<ol>
+<li>Identify the type of differential equation.</li>
+<li>Select an appropriate solution method.</li>
+<li>Find the general solution.</li>
+<li>Apply initial conditions when given.</li>
+<li>Interpret the solution in context.</li>
+</ol>
+
+<p>
+The most common first-order differential equations encountered in an
+introductory course are separable, linear, exact, and Bernoulli equations.
+Recognizing the structure of an equation is often the most important step in
+finding its solution.
+</p>
+
+</subsection>
 
 </section>
