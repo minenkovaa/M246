@@ -13,6 +13,10 @@
     <tabular>
     <col width="0.35\textwidth"/>
     <col width="0.5\textwidth"/>
+      <row header="yes">
+        <cell>Activity</cell>
+        <cell>Description</cell>
+      </row>
       <row>
         <cell><alert>Mission Possible: Find the Solution</alert></cell>
         <cell>Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions. </cell></row>
@@ -26,6 +30,11 @@
     <col right="minor" width="33%"/>
     <col width="33%"/>
 
+  <row header="yes">
+    <cell>System 1</cell>
+    <cell>System 2</cell>
+    <cell>System 3</cell>
+  </row>
   <row>
     <cell>
       <m>

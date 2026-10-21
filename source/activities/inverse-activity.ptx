@@ -11,6 +11,10 @@
       We are setting up our routine:
     </p>
     <tabular>
+      <row header="yes">
+        <cell>Activity</cell>
+        <cell>Description</cell>
+      </row>
       <row>
         <cell>1. Think-pair-share</cell>
         <cell>What does inverse mean for numbers?</cell></row>  <row>

@@ -728,6 +728,7 @@ Find a potential function for
     </p>
 
       <image width="60%">
+      <shortdescription>Two labeled boxes, Derivative and Integral, illustrating their connection in integral theorems.</shortdescription>
       <latex-image>
         \begin{tikzpicture}
           \draw (0,0) rectangle (10,6);
@@ -757,6 +758,7 @@ Find a potential function for
     </p>
 
       <image width="45%">
+      <shortdescription>A curve labeled C joining endpoints A and B, illustrating the path used in the Fundamental Theorem for Line Integrals.</shortdescription>
       <latex-image>
         \begin{tikzpicture}
         % Endpoints 
@@ -797,6 +799,7 @@ Find a potential function for
     </p>
 
       <image width="50%">
+      <shortdescription>A positively oriented closed curve C surrounding a shaded region R, illustrating Green's Theorem.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 % Region 
@@ -834,6 +837,7 @@ Find a potential function for
     </p>
 
       <image width="55%">
+      <shortdescription>An oriented surface S with a boundary curve and an upward-pointing normal vector.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 % Surface 
@@ -874,6 +878,7 @@ Find a potential function for
     </p>
 
       <image width="50%">
+      <shortdescription>A closed region E with arrows pointing outward across its boundary, illustrating flux through a closed surface.</shortdescription>
 <latex-image>
 \begin{tikzpicture}
 % Region E 

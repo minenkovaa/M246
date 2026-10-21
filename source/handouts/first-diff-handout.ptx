@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<handout>
+<title>Identifying First-Order Differential Equations</title>
+
+<introduction>
+
+<p>
+Visit each station and work with your group to answer the questions.
+Do not focus on completing the entire solution. Instead, focus on
+identifying the type of differential equation and determining the next step
+in the solution process.
+</p>
+
+<p>
+At each station:
+</p>
+
+<ol>
+<li>Identify the type of differential equation.</li>
+<li>Explain how you recognized it.</li>
+<li>Determine the next step in the solution process.</li>
+<li>Record your reasoning.</li>
+</ol>
+
+</introduction>
+
+<!-- Station 1 -->
+
+<exercise workspace="2in">
+
+<p>
+Consider the differential equation
+</p>
+
+<me>
+\frac{dy}{dx}=xy+x.
+</me>
+
+<p>
+Hints:
+</p>
+
+<ul>
+<li>Can you separate the variables?</li>
+<li>Can all <m>x</m>-terms be placed on one side and all <m>y</m>-terms on the other?</li>
+</ul>
+
+<p>
+Complete the following:
+</p>
+
+<ol>
+<li>What type of differential equation is this?</li>
+<li>How do you know?</li>
+<li>What would be your next step?</li>
+</ol>
+
+</exercise>
+
+<workspace/>
+
+<!-- Station 2 -->
+
+<exercise workspace="2in">
+
+
+<p>
+Consider the differential equation
+</p>
+
+<me>
+y'+3y=6.
+</me>
+
+<p>
+Hints:
+</p>
+
+<ul>
+<li>Does the equation match the form <m>y'+p(x)y=g(x)</m>?</li>
+<li>If so, what is the integrating factor?</li>
+</ul>
+
+<p>
+Complete the following:
+</p>
+
+<ol>
+<li>What type of differential equation is this?</li>
+<li>How do you know?</li>
+<li>What would be your next step?</li>
+</ol>
+
+</exercise>
+
+<workspace/>
+
+<!-- Station 3 -->
+
+<exercise workspace="2in">
+
+
+<p>
+Consider the differential equation
+</p>
+
+<me>
+(2xy+4)\,dx+(x^2+3)\,dy=0.
+</me>
+
+<p>
+Hints:
+</p>
+
+<ul>
+<li>Identify <m>M(x,y)</m> and <m>N(x,y)</m>.</li>
+<li>Compute <m>\frac{\partial M}{\partial y}</m>.</li>
+<li>Compute <m>\frac{\partial N}{\partial x}</m>.</li>
+<li>Compare the two derivatives.</li>
+</ul>
+
+<p>
+Complete the following:
+</p>
+
+<ol>
+<li>What type of differential equation is this?</li>
+<li>How do you know?</li>
+<li>What would be your next step?</li>
+</ol>
+
+</exercise>
+
+<workspace/>
+
+<!-- Station 4 -->
+
+<exercise workspace="2in">
+
+<p>
+Consider the differential equation
+</p>
+
+<me>
+y'+2y=xy^3.
+</me>
+
+<p>
+Hints:
+</p>
+
+<ul>
+<li>Does the equation fit the form <m>y'+p(x)y=q(x)y^n</m>?</li>
+<li>What is the value of <m>n</m>?</li>
+<li>What substitution is commonly used?</li>
+</ul>
+
+<p>
+Complete the following:
+</p>
+
+<ol>
+<li>What type of differential equation is this?</li>
+<li>How do you know?</li>
+<li>What would be your next step?</li>
+</ol>
+
+</exercise>
+
+<workspace/>
+
+<!-- Station 5 -->
+
+<exercise workspace="2in">
+
+<p>
+The temperature of freshly poured concrete on a bridge deck is
+<m>80^\circ\text{C}</m>.
+The surrounding air temperature is <m>20^\circ\text{C}</m>.
+Engineers assume the cooling rate is proportional to the difference
+between the concrete temperature and the air temperature.
+</p>
+
+<p>
+Hints:
+</p>
+
+<ul>
+<li>What quantity is changing?</li>
+<li>What quantity determines the rate of change?</li>
+<li>What does the phrase “proportional to” suggest?</li>
+</ul>
+
+<p>
+Complete the following:
+</p>
+
+<ol>
+<li>Define a variable for temperature.</li>
+<li>Write a differential equation that models the situation.</li>
+<li>What type of differential equation is it?</li>
+<li>What solution method would you use?</li>
+</ol>
+
+</exercise>
+
+
+</handout>
