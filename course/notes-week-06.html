@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.5';
+eBookConfig.runestone_version = '8.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.3adcbea95009347b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.7a45395f326e122c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -377,8 +377,22 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="notes-week-06.html" class="internal"><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#first-order-ode-notes" class="internal"><span class="title">First-Order Ordinary Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#modeling" class="internal"><span class="title">Modeling with First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#classification" class="internal"><span class="title">Classifying First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06.html#separable-equations" class="internal"><span class="title">Separable Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06.html#separable-equations-3" class="internal"><span class="title">Solution Strategy</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06.html#difflinear-equations" class="internal"><span class="title">Linear Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06.html#difflinear-equations-4" class="internal"><span class="title">Integrating Factor</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#exact-equations" class="internal"><span class="title">Exact Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#bernoulli-equations" class="internal"><span class="title">Bernoulli Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#initial-value-problems" class="internal"><span class="title">Initial Value Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#euler-method-preview" class="internal"><span class="title">Numerical Approximation: Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#summary" class="internal"><span class="title">Summary</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -487,6 +501,10 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="hw-triple-integrals-surfaces.html" class="internal"><span class="title">Homework 5</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="hw-multi-modeling.html" class="internal"><span class="title">Homework 6</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="hw-multi-modeling.html#civil-engineering-problem" class="internal"><span class="title">Highway Drainage and Stormwater Management Design Project</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -500,17 +518,392 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-06"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span>
 </h2>
-<section class="subsection" id="notes-week-06-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
+<section class="subsection" id="first-order-ode-notes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">First-Order Ordinary Differential Equations</span>
 </h3>
-<div class="para" id="notes-week-06-2-2">First-order ODEs: separable and linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-06-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="first-order-ode-notes-2">Source: These notes are adapted from <a href="notes-week-06.html#lamar-first-order" class="xref" data-knowl="./knowl/xref/lamar-first-order.html" data-reveal-label="Reveal" data-close-label="Close" title="Remark 115">Remark 115</a>.<div class="autopermalink" data-description="Paragraph"><a href="#first-order-ode-notes-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-06-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-06-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
+<article class="remark remark-like" id="lamar-first-order"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">115</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="lamar-first-order-1">Paul Dawkins, “First Order Differential Equations”, Paul’s Online Math Notes, https://tutorial.math.lamar.edu/classes/de/introfirstorder.aspx.<div class="autopermalink" data-description="Paragraph"><a href="#lamar-first-order-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 115"><a href="#lamar-first-order" title="Copy heading and permalink for Remark 115" aria-label="Copy heading and permalink for Remark 115">🔗</a></div></article><section class="introduction" id="first-order-ode-notes-4"><div class="para" id="first-order-ode-notes-4-1">Differential equations arise when a quantity and its rate of change are related. Examples include population growth, radioactive decay, cooling processes, mixing problems, and engineering systems.<div class="autopermalink" data-description="Paragraph"><a href="#first-order-ode-notes-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="first-order-ode-notes-4-2">A <dfn class="terminology">first-order ordinary differential equation</dfn> is an equation involving an unknown function <span class="process-math">\(y(t)\)</span> and its first derivative.<div class="autopermalink" data-description="Paragraph"><a href="#first-order-ode-notes-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="first-order-ode-notes-4-3">
+\begin{equation*}
+\frac{dy}{dt}=f(y,t)
+\end{equation*}
+</div>
+<div class="para" id="first-order-ode-notes-4-4">Unlike algebraic equations, there is no single method that solves all first-order differential equations. Instead, we identify the type of equation and apply an appropriate solution technique.<div class="autopermalink" data-description="Paragraph"><a href="#first-order-ode-notes-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Subsection: First-Order Ordinary Differential Equations"><a href="#first-order-ode-notes" title="Copy heading and permalink for Subsection: First-Order Ordinary Differential Equations" aria-label="Copy heading and permalink for Subsection: First-Order Ordinary Differential Equations">🔗</a></div></section><section class="subsection" id="modeling"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Modeling with First-Order Differential Equations</span>
 </h3>
-<div class="para" id="notes-week-06-3-2">First-order ODEs: exact equations.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-06-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="modeling-2">Many engineering and scientific applications lead naturally to first-order differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#modeling-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-06-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 6: First-order ODEs (separable, linear, exact)"><a href="#notes-week-06" title="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)" aria-label="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)">🔗</a></div></section></div>
+<ul class="disc" id="modeling-3-1">
+<li id="modeling-3-1-1">
+<div class="para" id="p-derived-modeling-3-1-1">Population growth and decay</div>
+<div class="autopermalink" data-description="Item"><a href="#modeling-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="modeling-3-1-2">
+<div class="para" id="p-derived-modeling-3-1-2">Mixing problems</div>
+<div class="autopermalink" data-description="Item"><a href="#modeling-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="modeling-3-1-3">
+<div class="para" id="p-derived-modeling-3-1-3">Radioactive decay</div>
+<div class="autopermalink" data-description="Item"><a href="#modeling-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="modeling-3-1-4">
+<div class="para" id="p-derived-modeling-3-1-4">Cooling and heating processes</div>
+<div class="autopermalink" data-description="Item"><a href="#modeling-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="modeling-3-1-5">
+<div class="para" id="p-derived-modeling-3-1-5">Velocity of falling objects</div>
+<div class="autopermalink" data-description="Item"><a href="#modeling-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="modeling-4">The modeling process usually follows these steps:<div class="autopermalink" data-description="Paragraph"><a href="#modeling-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="modeling-5">
+<li id="modeling-5-1">
+<div class="para" id="p-derived-modeling-5-1">Define the unknown quantity.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#modeling-5-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="modeling-5-2">
+<div class="para" id="p-derived-modeling-5-2">Identify how the quantity changes over time.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#modeling-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="modeling-5-3">
+<div class="para" id="p-derived-modeling-5-3">Write a differential equation describing the relationship.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#modeling-5-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="modeling-5-4">
+<div class="para" id="p-derived-modeling-5-4">Solve the differential equation.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#modeling-5-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="modeling-5-5">
+<div class="para" id="p-derived-modeling-5-5">Interpret the solution in context.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#modeling-5-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<details id="modeling-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">116</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Concrete Curing on a Bridge Deck.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="modeling-6-2-1">After a bridge deck is poured, engineers monitor the concrete temperature to ensure proper curing. Suppose the temperature <span class="process-math">\(T(t)\)</span> of the concrete decreases at a rate proportional to the difference between the concrete temperature and the surrounding air temperature of <span class="process-math">\(20^\circ\text{C}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#modeling-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="modeling-6-2-2">The rate of cooling is proportional to the temperature difference between the concrete and the surrounding air.<div class="autopermalink" data-description="Paragraph"><a href="#modeling-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="modeling-6-2-3">
+\begin{equation*}
+\frac{dT}{dt}=-k(T-20),
+\end{equation*}
+</div>
+<div class="para" id="modeling-6-2-4">where <span class="process-math">\(k&gt;0\)</span> is a proportionality constant.<div class="autopermalink" data-description="Paragraph"><a href="#modeling-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 116: Concrete Curing on a Bridge Deck"><a href="#modeling-6" title="Copy heading and permalink for Example 116: Concrete Curing on a Bridge Deck" aria-label="Copy heading and permalink for Example 116: Concrete Curing on a Bridge Deck">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Modeling with First-Order Differential Equations"><a href="#modeling" title="Copy heading and permalink for Subsection: Modeling with First-Order Differential Equations" aria-label="Copy heading and permalink for Subsection: Modeling with First-Order Differential Equations">🔗</a></div></section><section class="subsection" id="classification"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classifying First-Order Differential Equations</span>
+</h3>
+<div class="para" id="classification-2">When presented with a differential equation, the first step is to identify its form.<div class="autopermalink" data-description="Paragraph"><a href="#classification-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="classification-3">Some important classes of first-order differential equations include:<div class="autopermalink" data-description="Paragraph"><a href="#classification-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="classification-4">
+<li id="classification-4-1">
+<div class="para" id="p-derived-classification-4-1">Separable equations</div>
+<div class="autopermalink" data-description="Item"><a href="#classification-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="classification-4-2">
+<div class="para" id="p-derived-classification-4-2">Linear equations</div>
+<div class="autopermalink" data-description="Item"><a href="#classification-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="classification-4-3">
+<div class="para" id="p-derived-classification-4-3">Exact equations</div>
+<div class="autopermalink" data-description="Item"><a href="#classification-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="classification-4-4">
+<div class="para" id="p-derived-classification-4-4">Bernoulli equations</div>
+<div class="autopermalink" data-description="Item"><a href="#classification-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="classification-5">The goal is to recognize which solution method can be applied.<div class="autopermalink" data-description="Paragraph"><a href="#classification-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Classifying First-Order Differential Equations"><a href="#classification" title="Copy heading and permalink for Subsection: Classifying First-Order Differential Equations" aria-label="Copy heading and permalink for Subsection: Classifying First-Order Differential Equations">🔗</a></div></section><section class="subsection" id="separable-equations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separable Differential Equations</span>
+</h3>
+<article class="definition definition-like" id="separable-equations-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">117</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="separable-equations-2-1">A differential equation is <dfn class="terminology">separable</dfn> if it can be written in the form<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="separable-equations-2-2">
+\begin{equation*}
+N(y)\frac{dy}{dx}=M(x)
+\end{equation*}
+</div>
+<div class="para" id="separable-equations-2-3">or equivalently<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="separable-equations-2-4">
+\begin{equation*}
+\frac{dy}{dx}=f(x)g(y).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 117"><a href="#separable-equations-2" title="Copy heading and permalink for Definition 117" aria-label="Copy heading and permalink for Definition 117">🔗</a></div></article><section class="subsubsection" id="separable-equations-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solution Strategy</span>
+</h4>
+<ol class="decimal" id="separable-equations-3-2">
+<li id="separable-equations-3-2-1">
+<div class="para" id="p-derived-separable-equations-3-2-1">Move all <span class="process-math">\(y\)</span>-terms to one side and all <span class="process-math">\(x\)</span>-terms to the other.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#separable-equations-3-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="separable-equations-3-2-2">
+<div class="para" id="p-derived-separable-equations-3-2-2">Integrate both sides.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#separable-equations-3-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="separable-equations-3-2-3">
+<div class="para" id="p-derived-separable-equations-3-2-3">Solve for <span class="process-math">\(y\text{,}\)</span> if possible.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#separable-equations-3-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="separable-equations-3-2-4">
+<div class="para" id="p-derived-separable-equations-3-2-4">Use the initial condition if one is provided.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#separable-equations-3-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsubsection: Solution Strategy"><a href="#separable-equations-3" title="Copy heading and permalink for Subsubsection: Solution Strategy" aria-label="Copy heading and permalink for Subsubsection: Solution Strategy">🔗</a></div></section><details id="separable-equations-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">118</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="separable-equations-4-1-1">Solve the differential equation<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="separable-equations-4-1-2">
+\begin{equation*}
+\frac{dy}{dx}=3x^2.
+\end{equation*}
+</div>
+<div class="solutions"><details id="separable-equations-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="separable-equations-4-2-1">Integrate both sides.<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="separable-equations-4-2-2">
+\begin{equation*}
+\int dy=\int 3x^2\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="separable-equations-4-2-3">
+\begin{equation*}
+y=x^3+C.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 118.1"><a href="#separable-equations-4-2" title="Copy heading and permalink for Solution 118.1" aria-label="Copy heading and permalink for Solution 118.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 118"><a href="#separable-equations-4" title="Copy heading and permalink for Example 118" aria-label="Copy heading and permalink for Example 118">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Separable Differential Equations"><a href="#separable-equations" title="Copy heading and permalink for Subsection: Separable Differential Equations" aria-label="Copy heading and permalink for Subsection: Separable Differential Equations">🔗</a></div></section><section class="subsection" id="difflinear-equations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Differential Equations</span>
+</h3>
+<article class="definition definition-like" id="difflinear-equations-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">119</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="difflinear-equations-2-1">A first-order linear differential equation has the form<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-2-2">
+\begin{equation*}
+y'+p(x)y=g(x).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 119"><a href="#difflinear-equations-2" title="Copy heading and permalink for Definition 119" aria-label="Copy heading and permalink for Definition 119">🔗</a></div></article><div class="para" id="difflinear-equations-3">These equations are solved using an integrating factor.<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsubsection" id="difflinear-equations-4"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integrating Factor</span>
+</h4>
+<div class="para" id="difflinear-equations-4-2">For<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-4-3">
+\begin{equation*}
+y'+p(x)y=g(x),
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-4-4">the integrating factor is<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-4-5">
+\begin{equation*}
+\mu(x)=e^{\int p(x)\,dx}.
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-4-6">Multiplying the differential equation by <span class="process-math">\(\mu(x)\)</span> transforms the left-hand side into a product derivative:<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-4-7">
+\begin{equation*}
+\frac{d}{dx}\big(\mu(x)y\big)=\mu(x)g(x).
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-4-8">Integrate both sides and solve for <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Integrating Factor"><a href="#difflinear-equations-4" title="Copy heading and permalink for Subsubsection: Integrating Factor" aria-label="Copy heading and permalink for Subsubsection: Integrating Factor">🔗</a></div></section><details id="difflinear-equations-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">120</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="difflinear-equations-5-1-1">Solve<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-1-2">
+\begin{equation*}
+y'+2y=e^{-2x}.
+\end{equation*}
+</div>
+<div class="solutions"><details id="difflinear-equations-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="difflinear-equations-5-2-1">The integrating factor is<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-2">
+\begin{equation*}
+\mu(x)=e^{\int 2\,dx}=e^{2x}.
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-5-2-3">Multiply by <span class="process-math">\(e^{2x}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-4">
+\begin{equation*}
+e^{2x}y'+2e^{2x}y=1.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-5">
+\begin{equation*}
+\frac{d}{dx}(e^{2x}y)=1.
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-5-2-6">Integrating gives<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-7">
+\begin{equation*}
+e^{2x}y=x+C.
+\end{equation*}
+</div>
+<div class="para" id="difflinear-equations-5-2-8">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-9">
+\begin{equation*}
+y=e^{-2x}(x+C).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 120.1"><a href="#difflinear-equations-5-2" title="Copy heading and permalink for Solution 120.1" aria-label="Copy heading and permalink for Solution 120.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 120"><a href="#difflinear-equations-5" title="Copy heading and permalink for Example 120" aria-label="Copy heading and permalink for Example 120">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Linear Differential Equations"><a href="#difflinear-equations" title="Copy heading and permalink for Subsection: Linear Differential Equations" aria-label="Copy heading and permalink for Subsection: Linear Differential Equations">🔗</a></div></section><section class="subsection" id="exact-equations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exact Differential Equations</span>
+</h3>
+<article class="definition definition-like" id="exact-equations-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">121</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="exact-equations-2-1">A differential equation written as<div class="autopermalink" data-description="Paragraph"><a href="#exact-equations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="exact-equations-2-2">
+\begin{equation*}
+M(x,y)\,dx+N(x,y)\,dy=0
+\end{equation*}
+</div>
+<div class="para" id="exact-equations-2-3">is exact if<div class="autopermalink" data-description="Paragraph"><a href="#exact-equations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="exact-equations-2-4">
+\begin{equation*}
+\frac{\partial M}{\partial y}
+=
+\frac{\partial N}{\partial x}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 121"><a href="#exact-equations-2" title="Copy heading and permalink for Definition 121" aria-label="Copy heading and permalink for Definition 121">🔗</a></div></article><div class="para" id="exact-equations-3">When an equation is exact, there exists a potential function <span class="process-math">\(F(x,y)\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#exact-equations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="exact-equations-4">
+\begin{equation*}
+dF=M\,dx+N\,dy.
+\end{equation*}
+</div>
+<div class="para" id="exact-equations-5">The solution is obtained by finding <span class="process-math">\(F(x,y)\)</span> and setting<div class="autopermalink" data-description="Paragraph"><a href="#exact-equations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="exact-equations-6">
+\begin{equation*}
+F(x,y)=C.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsection: Exact Differential Equations"><a href="#exact-equations" title="Copy heading and permalink for Subsection: Exact Differential Equations" aria-label="Copy heading and permalink for Subsection: Exact Differential Equations">🔗</a></div></section><section class="subsection" id="bernoulli-equations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bernoulli Differential Equations</span>
+</h3>
+<article class="definition definition-like" id="bernoulli-equations-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">122</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="bernoulli-equations-2-1">A Bernoulli equation has the form<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-2-2">
+\begin{equation*}
+y'+p(x)y=q(x)y^n,
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-2-3">where <span class="process-math">\(n\neq 0\)</span> and <span class="process-math">\(n\neq 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 122"><a href="#bernoulli-equations-2" title="Copy heading and permalink for Definition 122" aria-label="Copy heading and permalink for Definition 122">🔗</a></div></article><div class="para" id="bernoulli-equations-3">These equations can be transformed into linear equations through the substitution<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-4">
+\begin{equation*}
+v=y^{1-n}.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-5">After substitution, solve the resulting linear differential equation.<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Bernoulli Differential Equations"><a href="#bernoulli-equations" title="Copy heading and permalink for Subsection: Bernoulli Differential Equations" aria-label="Copy heading and permalink for Subsection: Bernoulli Differential Equations">🔗</a></div></section><section class="subsection" id="initial-value-problems"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Initial Value Problems</span>
+</h3>
+<article class="definition definition-like" id="initial-value-problems-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">123</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="initial-value-problems-2-1">An <dfn class="terminology">initial value problem</dfn> (IVP) consists of a differential equation together with an initial condition.<div class="autopermalink" data-description="Paragraph"><a href="#initial-value-problems-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="initial-value-problems-2-2">
+\begin{equation*}
+\frac{dy}{dx}=f(x,y),
+\qquad
+y(x_0)=y_0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 123"><a href="#initial-value-problems-2" title="Copy heading and permalink for Definition 123" aria-label="Copy heading and permalink for Definition 123">🔗</a></div></article><div class="para" id="initial-value-problems-3">The differential equation determines a family of solutions, while the initial condition identifies one specific solution.<div class="autopermalink" data-description="Paragraph"><a href="#initial-value-problems-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Initial Value Problems"><a href="#initial-value-problems" title="Copy heading and permalink for Subsection: Initial Value Problems" aria-label="Copy heading and permalink for Subsection: Initial Value Problems">🔗</a></div></section><section class="subsection" id="euler-method-preview"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Numerical Approximation: Euler’s Method</span>
+</h3>
+<div class="para" id="euler-method-preview-2">Not all differential equations can be solved analytically. One common numerical technique is Euler’s Method.<div class="autopermalink" data-description="Paragraph"><a href="#euler-method-preview-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="euler-method-preview-3">Starting from <span class="process-math">\((x_n,y_n)\text{,}\)</span> the next approximation is computed using<div class="autopermalink" data-description="Paragraph"><a href="#euler-method-preview-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="euler-method-preview-4">
+\begin{equation*}
+y_{n+1}
+=
+y_n+h\,f(x_n,y_n),
+\end{equation*}
+</div>
+<div class="para" id="euler-method-preview-5">where <span class="process-math">\(h\)</span> is the step size.<div class="autopermalink" data-description="Paragraph"><a href="#euler-method-preview-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="euler-method-preview-6">Euler’s Method follows the tangent line to generate approximate solution values.<div class="autopermalink" data-description="Paragraph"><a href="#euler-method-preview-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Numerical Approximation: Euler’s Method"><a href="#euler-method-preview" title="Copy heading and permalink for Subsection: Numerical Approximation: Euler’s Method" aria-label="Copy heading and permalink for Subsection: Numerical Approximation: Euler’s Method">🔗</a></div></section><section class="subsection" id="summary"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para" id="summary-2">When solving a first-order differential equation:<div class="autopermalink" data-description="Paragraph"><a href="#summary-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="summary-3">
+<li id="summary-3-1">
+<div class="para" id="p-derived-summary-3-1">Identify the type of differential equation.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#summary-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="summary-3-2">
+<div class="para" id="p-derived-summary-3-2">Select an appropriate solution method.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#summary-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="summary-3-3">
+<div class="para" id="p-derived-summary-3-3">Find the general solution.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#summary-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="summary-3-4">
+<div class="para" id="p-derived-summary-3-4">Apply initial conditions when given.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#summary-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="summary-3-5">
+<div class="para" id="p-derived-summary-3-5">Interpret the solution in context.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#summary-3-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="summary-4">The most common first-order differential equations encountered in an introductory course are separable, linear, exact, and Bernoulli equations. Recognizing the structure of an equation is often the most important step in finding its solution.<div class="autopermalink" data-description="Paragraph"><a href="#summary-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Summary"><a href="#summary" title="Copy heading and permalink for Subsection: Summary" aria-label="Copy heading and permalink for Subsection: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 6: First-order ODEs (separable, linear, exact)"><a href="#notes-week-06" title="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)" aria-label="Copy heading and permalink for Section: Week 6: First-order ODEs (separable, linear, exact)">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="notes-week-06w.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-07.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

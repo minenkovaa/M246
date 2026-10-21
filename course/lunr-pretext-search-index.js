@@ -1195,7 +1195,97 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 6: First-order ODEs (separable, linear, exact)",
-  "body": " Week 6: First-order ODEs (separable, linear, exact)   Tuesday  First-order ODEs: separable and linear equations.    Thursday  First-order ODEs: exact equations.   "
+  "body": " Week 6: First-order ODEs (separable, linear, exact)   First-Order Ordinary Differential Equations   Source: These notes are adapted from .   Paul Dawkins, First Order Differential Equations , Paul's Online Math Notes, https:\/\/tutorial.math.lamar.edu\/classes\/de\/introfirstorder.aspx .    Differential equations arise when a quantity and its rate of change are related. Examples include population growth, radioactive decay, cooling processes, mixing problems, and engineering systems.  A first-order ordinary differential equation is an equation involving an unknown function and its first derivative.   Unlike algebraic equations, there is no single method that solves all first-order differential equations. Instead, we identify the type of equation and apply an appropriate solution technique.     Modeling with First-Order Differential Equations  Many engineering and scientific applications lead naturally to first-order differential equations.    Population growth and decay  Mixing problems  Radioactive decay  Cooling and heating processes  Velocity of falling objects    The modeling process usually follows these steps:   Define the unknown quantity.  Identify how the quantity changes over time.  Write a differential equation describing the relationship.  Solve the differential equation.  Interpret the solution in context.    Concrete Curing on a Bridge Deck   After a bridge deck is poured, engineers monitor the concrete temperature to ensure proper curing. Suppose the temperature of the concrete decreases at a rate proportional to the difference between the concrete temperature and the surrounding air temperature of .  The rate of cooling is proportional to the temperature difference between the concrete and the surrounding air.   where is a proportionality constant.      Classifying First-Order Differential Equations  When presented with a differential equation, the first step is to identify its form.  Some important classes of first-order differential equations include:   Separable equations  Linear equations  Exact equations  Bernoulli equations   The goal is to recognize which solution method can be applied.    Separable Differential Equations   A differential equation is separable if it can be written in the form   or equivalently     Solution Strategy   Move all -terms to one side and all -terms to the other.  Integrate both sides.  Solve for , if possible.  Use the initial condition if one is provided.      Solve the differential equation     Integrate both sides.        Linear Differential Equations   A first-order linear differential equation has the form    These equations are solved using an integrating factor.   Integrating Factor  For   the integrating factor is   Multiplying the differential equation by transforms the left-hand side into a product derivative:   Integrate both sides and solve for .     Solve     The integrating factor is   Multiply by :    Integrating gives   Therefore,       Exact Differential Equations   A differential equation written as   is exact if    When an equation is exact, there exists a potential function such that   The solution is obtained by finding and setting     Bernoulli Differential Equations   A Bernoulli equation has the form   where and .   These equations can be transformed into linear equations through the substitution   After substitution, solve the resulting linear differential equation.    Initial Value Problems   An initial value problem (IVP) consists of a differential equation together with an initial condition.    The differential equation determines a family of solutions, while the initial condition identifies one specific solution.    Numerical Approximation: Euler's Method  Not all differential equations can be solved analytically. One common numerical technique is Euler's Method.  Starting from , the next approximation is computed using   where is the step size.  Euler's Method follows the tangent line to generate approximate solution values.    Summary  When solving a first-order differential equation:   Identify the type of differential equation.  Select an appropriate solution method.  Find the general solution.  Apply initial conditions when given.  Interpret the solution in context.   The most common first-order differential equations encountered in an introductory course are separable, linear, exact, and Bernoulli equations. Recognizing the structure of an equation is often the most important step in finding its solution.   "
+},
+{
+  "id": "lamar-first-order",
+  "level": "2",
+  "url": "notes-week-06.html#lamar-first-order",
+  "type": "Remark",
+  "number": "115",
+  "title": "",
+  "body": " Paul Dawkins, First Order Differential Equations , Paul's Online Math Notes, https:\/\/tutorial.math.lamar.edu\/classes\/de\/introfirstorder.aspx .  "
+},
+{
+  "id": "first-order-ode-notes-4-2",
+  "level": "2",
+  "url": "notes-week-06.html#first-order-ode-notes-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "first-order ordinary differential equation "
+},
+{
+  "id": "modeling-6",
+  "level": "2",
+  "url": "notes-week-06.html#modeling-6",
+  "type": "Example",
+  "number": "116",
+  "title": "Concrete Curing on a Bridge Deck.",
+  "body": " Concrete Curing on a Bridge Deck   After a bridge deck is poured, engineers monitor the concrete temperature to ensure proper curing. Suppose the temperature of the concrete decreases at a rate proportional to the difference between the concrete temperature and the surrounding air temperature of .  The rate of cooling is proportional to the temperature difference between the concrete and the surrounding air.   where is a proportionality constant.   "
+},
+{
+  "id": "separable-equations-2",
+  "level": "2",
+  "url": "notes-week-06.html#separable-equations-2",
+  "type": "Definition",
+  "number": "117",
+  "title": "",
+  "body": " A differential equation is separable if it can be written in the form   or equivalently   "
+},
+{
+  "id": "separable-equations-4",
+  "level": "2",
+  "url": "notes-week-06.html#separable-equations-4",
+  "type": "Example",
+  "number": "118",
+  "title": "",
+  "body": "  Solve the differential equation     Integrate both sides.     "
+},
+{
+  "id": "difflinear-equations-2",
+  "level": "2",
+  "url": "notes-week-06.html#difflinear-equations-2",
+  "type": "Definition",
+  "number": "119",
+  "title": "",
+  "body": " A first-order linear differential equation has the form   "
+},
+{
+  "id": "difflinear-equations-5",
+  "level": "2",
+  "url": "notes-week-06.html#difflinear-equations-5",
+  "type": "Example",
+  "number": "120",
+  "title": "",
+  "body": "  Solve     The integrating factor is   Multiply by :    Integrating gives   Therefore,    "
+},
+{
+  "id": "exact-equations-2",
+  "level": "2",
+  "url": "notes-week-06.html#exact-equations-2",
+  "type": "Definition",
+  "number": "121",
+  "title": "",
+  "body": " A differential equation written as   is exact if   "
+},
+{
+  "id": "bernoulli-equations-2",
+  "level": "2",
+  "url": "notes-week-06.html#bernoulli-equations-2",
+  "type": "Definition",
+  "number": "122",
+  "title": "",
+  "body": " A Bernoulli equation has the form   where and .  "
+},
+{
+  "id": "initial-value-problems-2",
+  "level": "2",
+  "url": "notes-week-06.html#initial-value-problems-2",
+  "type": "Definition",
+  "number": "123",
+  "title": "",
+  "body": " An initial value problem (IVP) consists of a differential equation together with an initial condition.   "
 },
 {
   "id": "notes-week-07",
@@ -1292,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "115",
+  "number": "124",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1355,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "116",
+  "number": "125",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1418,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "117",
+  "number": "126",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1436,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "118",
+  "number": "127",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1535,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "119",
+  "number": "128",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -1544,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "120",
+  "number": "129",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -1553,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "121",
+  "number": "130",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -1562,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "122",
+  "number": "131",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -1571,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "123",
+  "number": "132",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -1589,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "124",
+  "number": "133",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -1598,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "125",
+  "number": "134",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -1607,7 +1697,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "126",
+  "number": "135",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -1616,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "127",
+  "number": "136",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -1625,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "128",
+  "number": "137",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
@@ -1643,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-2",
   "type": "Checkpoint",
-  "number": "129",
+  "number": "138",
   "title": "Find the Inverse.",
   "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
 },
@@ -1652,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-3",
   "type": "Checkpoint",
-  "number": "130",
+  "number": "139",
   "title": "Verify the Inverse.",
   "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
 },
@@ -1661,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-4",
   "type": "Checkpoint",
-  "number": "131",
+  "number": "140",
   "title": "Error Analysis.",
   "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
 },
@@ -1670,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-5",
   "type": "Checkpoint",
-  "number": "132",
+  "number": "141",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
 },
@@ -1679,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-6",
   "type": "Checkpoint",
-  "number": "133",
+  "number": "142",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
@@ -1697,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-2",
   "type": "Checkpoint",
-  "number": "134",
+  "number": "143",
   "title": "Find the Determinant.",
   "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
 },
@@ -1706,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-3",
   "type": "Checkpoint",
-  "number": "135",
+  "number": "144",
   "title": "Determinant of a Product.",
   "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
 },
@@ -1715,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-4",
   "type": "Checkpoint",
-  "number": "136",
+  "number": "145",
   "title": "Can You Add Determinants?",
   "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
 },
@@ -1724,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-5",
   "type": "Checkpoint",
-  "number": "137",
+  "number": "146",
   "title": "Effect of Row Operations.",
   "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
 },
@@ -1733,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-6",
   "type": "Checkpoint",
-  "number": "138",
+  "number": "147",
   "title": "Determinants of Inverses and Transposes.",
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
@@ -1751,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-2",
   "type": "Checkpoint",
-  "number": "139",
+  "number": "148",
   "title": "Cement Mixing.",
   "body": " Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.  "
 },
@@ -1760,7 +1850,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-3",
   "type": "Checkpoint",
-  "number": "140",
+  "number": "149",
   "title": "Step 1: Linear system as a mathematical model.",
   "body": " Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.  "
 },
@@ -1769,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-4",
   "type": "Checkpoint",
-  "number": "141",
+  "number": "150",
   "title": "Step 2: Solve using Gaussian Elimination.",
   "body": " Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.  "
 },
@@ -1778,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-5",
   "type": "Checkpoint",
-  "number": "142",
+  "number": "151",
   "title": "Step 3: Interpretation.",
   "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
 },
@@ -1796,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-3",
   "type": "Checkpoint",
-  "number": "143",
+  "number": "152",
   "title": "Recognizing Surfaces.",
   "body": " Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).        "
 },
@@ -1805,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-4",
   "type": "Checkpoint",
-  "number": "144",
+  "number": "153",
   "title": "Intersections of Surfaces.",
   "body": " Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and   "
 },
@@ -1814,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-5",
   "type": "Checkpoint",
-  "number": "145",
+  "number": "154",
   "title": "Possible Intersections of Two Spheres.",
   "body": " Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .   "
 },
@@ -1823,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-6",
   "type": "Checkpoint",
-  "number": "146",
+  "number": "155",
   "title": "Vector Operations.",
   "body": " Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.   "
 },
@@ -1832,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-7",
   "type": "Checkpoint",
-  "number": "147",
+  "number": "156",
   "title": "Orthogonal Vectors.",
   "body": " Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?   "
 },
@@ -1850,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-3",
   "type": "Checkpoint",
-  "number": "148",
+  "number": "157",
   "title": "How Many Ways Can You Approach a Point?",
   "body": " How Many Ways Can You Approach a Point?   Investigate why limits in several variables are more complicated than limits in one variable.    Several colored curves approaching the same point in the plane, illustrating how multiple paths can lead to different limit behaviors.     How many different paths can approach a point in the plane?  Why might this create challenges when evaluating limits?  Describe a strategy for showing a limit does NOT exist.   "
 },
@@ -1859,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-4",
   "type": "Checkpoint",
-  "number": "149",
+  "number": "158",
   "title": "Reading Slopes from Surfaces.",
   "body": " Reading Slopes from Surfaces   A 3D surface diagram with a vertical slice showing how fixing x produces a curve whose slope indicates a partial derivative.     What does fixing create?  What information does the slope of the curve provide?  What do you think measures?  How would the interpretation change for ?   "
 },
@@ -1868,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-5",
   "type": "Checkpoint",
-  "number": "150",
+  "number": "159",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let      Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -1877,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-6",
   "type": "Checkpoint",
-  "number": "151",
+  "number": "160",
   "title": "Which Points Matter?",
   "body": " Which Points Matter?  The figure below contains three separate contour maps.   The upper-left map represents a hill. Elevation increases as you move toward the center of the nested contours.  The upper-right map represents a valley. Elevation decreases as you move toward the center of the nested contours.  The lower map represents a mountain pass. Moving through the center in one direction increases elevation, while moving through the center in a perpendicular direction decreases elevation.   Points , , , and are marked for investigation. Use only the contour information to classify the points before using any calculus.    Contour maps showing a hill, valley, and mountain pass with labeled points A, B, C, and D for classification.      Identify all local maxima.  Identify all local minima.  Identify all saddle points.  Identify points that are neither.  Defend your reasoning using geometry.   "
 },
@@ -1886,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-7",
   "type": "Checkpoint",
-  "number": "152",
+  "number": "161",
   "title": "Where Can a Maximum Occur?",
   "body": " Where Can a Maximum Occur?  A continuous function is defined on an open disk and another one on a closed triangle.   Must a maximum exist?  Must a minimum exist?  Where can a maximum occur? (inside? edge? vertex?)  Construct examples supporting your answer.   "
 },
@@ -1904,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-3",
   "type": "Checkpoint",
-  "number": "153",
+  "number": "162",
   "title": "A Limit That Does Not Exist.",
   "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
 },
@@ -1913,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-4",
   "type": "Checkpoint",
-  "number": "154",
+  "number": "163",
   "title": "First and Second Partial Derivatives.",
   "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
 },
@@ -1922,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-5",
   "type": "Checkpoint",
-  "number": "155",
+  "number": "164",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -1931,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-6",
   "type": "Checkpoint",
-  "number": "156",
+  "number": "165",
   "title": "Critical Point and Hessian: Local Maximum.",
   "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
 },
@@ -1940,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-7",
   "type": "Checkpoint",
-  "number": "157",
+  "number": "166",
   "title": "Critical Point and Hessian: Local Minimum.",
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
@@ -1958,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-2",
   "type": "Checkpoint",
-  "number": "158",
+  "number": "167",
   "title": "",
   "body": " Evaluate the scalar line integral.   where is the curve given by .   Find .  Compute .  Rewrite the integral in terms of .  Evaluate.   "
 },
@@ -1967,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-3",
   "type": "Checkpoint",
-  "number": "159",
+  "number": "168",
   "title": "",
   "body": " Find the circulation of the vector field around the unit circle oriented counterclockwise.     Parameterize the curve.  Compute .  Rewrite the integral in terms of the parameter.  Evaluate.   "
 },
@@ -1976,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-4",
   "type": "Checkpoint",
-  "number": "160",
+  "number": "169",
   "title": "",
   "body": " Consider the vector field   Evaluate the line integral   from to using two different paths. Determine whether the integral depends on the path.   Straight line path  Path along a curve   "
 },
@@ -1985,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-5",
   "type": "Checkpoint",
-  "number": "161",
+  "number": "170",
   "title": "",
   "body": " Compute the flux of the vector field   through the portion of the plane   lying above the square    Determine an upward-pointing unit normal vector.  Compute on the surface.  Set up the flux integral.  Evaluate the integral.    Since the surface is the horizontal plane , think what the upward unit normal vector is.   "
 },
@@ -1994,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-6",
   "type": "Checkpoint",
-  "number": "162",
+  "number": "171",
   "title": "",
   "body": " Evaluate a scalar surface integral over a paraboloid over a disk .   "
 },
@@ -2224,6 +2314,24 @@ var ptx_lunr_docs = [
   "body": " Optional Challenge Problem   Find the volume enclosed between the sphere   and the paraboloid   Choose an appropriate coordinate system and justify your choice.   "
 },
 {
+  "id": "hw-multi-modeling",
+  "level": "1",
+  "url": "hw-multi-modeling.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 6",
+  "body": " Homework 6   For each part of the problem set up the corresponding math concepts, use techniques that we discussed and then double check everything with MATLAB.  The MATLAB code at the end of the homework can be used as a template.    Highway Drainage and Stormwater Management Design Project   A growing community is constructing a new highway interchange through an area that regularly experiences flooding during heavy rainstorms. Civil engineers must determine whether the proposed roadway and stormwater retention pond will adequately manage runoff while remaining within budget.  The roadway elevation is modeled by   where is measured in meters.  The retention pond depth is modeled by   over the elliptical region   The city has imposed the land-use constraint .  A major storm is expected to generate of runoff.  Excavation cost is modeled by , where is the pond volume. Roadway grading cost is modeled by   where evaluated at . The total project cost is   The project budget is $20,000.      Part 1: Roadway Surface Analysis  Compute the first-order partial derivatives of the roadway surface and determine the gradient vector .  Evaluate the gradient at .  Interpret your results by determining:   the direction of steepest ascent,  the direction water will naturally flow,  appropriate locations for drainage structures or culverts.      Part 2: Retention Pond Analysis  Compute and .  Locate the critical point(s) of the pond surface and determine the maximum depth.  Use your derivatives to discuss:   where excavation is deepest,  where side slopes are steepest,  engineering implications for safety and maintenance.      Part 3: Stormwater Storage Capacity  Develop a double-integral model for the pond volume:   Use the transformation   to simplify the integral.  to rewrite the integral in terms of and . For this transformation, the area element (taking into account the Jacobian) is   State whether the proposed pond provides sufficient flood protection.     Part 4: Pond Design Optimization  The city would like to know whether changing the shape of the pond could increase storage while keeping the same available land area.  Express the pond volume in terms of and .  Apply the constraint and determine whether changing the shape of the ellipse affects storage capacity.  Discuss at least two practical engineering factors that may influence the final choice of pond geometry.     Part 5: Cost Analysis  Evaluate the gradient magnitude   Use this result and your volume calculation to determine:   ,  ,  .   Compare the total project cost to the budget of $20,000 and determine whether the design is economically feasible.  Identify which component contributes most significantly to the overall project cost.     Part 6: Engineering Recommendation  Prepare a final engineering recommendation for the city.  Your recommendation should address:   How roadway topography affects drainage patterns.  Locations for storm drains or culverts.  Whether the pond can manage the designed storm.  Whether the project satisfies budget constraints.  Whether the city should approve, modify, or redesign the proposed system.   Support your recommendation using the mathematical results obtained in the previous parts.     Extension Challenge  Suppose engineers can increase the maximum pond depth from meters to meters.  The pond is now modeled by   Develop a formula for the volume .  Determine the minimum value of needed to store of stormwater while keeping construction costs as low as possible.  Provide both a mathematical and engineering justification for your conclusion.      %% Civil Engineering Design Project % Highway Drainage and Stormwater Management % Multivariable Calculus Modeling Activity clear; clc; close all %% GIVEN INFORMATION % Pond parameters a = ?; % semi-major axis (m) b = ?; % semi-minor axis (m) % Runoff volume (m^3) runoff = ?; %% PART 1: ROADWAY SURFACE ANALYSIS syms x y % Roadway elevation function h = ?; % Compute partial derivatives hx = diff(h,x); hy = diff(h,y); disp('dh\/dx =') pretty(hx) disp('dh\/dy =') pretty(hy) % Gradient vector grad_h = [hx hy]; disp('Gradient vector:') disp(grad_h) % Evaluate gradient at (0,0) grad0 = subs(grad_h,[x y],[0 0]); disp('Gradient at (0,0):') disp(vpa(grad0)) % Magnitude of gradient G = norm(double(grad0)); fprintf('Gradient magnitude = %.4f\\n',G); %% PART 2: POND SURFACE ANALYSIS syms x y a b z = ?; zx = diff(z,x); zy = diff(z,y); disp('dz\/dx =') pretty(zx) disp('dz\/dy =') pretty(zy) % Find critical points critical_x = solve(zx==0,x); critical_y = solve(zy==0,y); disp('Critical point:') disp([critical_x critical_y]) %% PART 3: POND VOLUME syms r theta a b % Adjusted polar coordinate transformation for an ellipse x_r = ?; y_r = ?; % Define transformed depth function z_r = ?; % Jacobian which is a part of the dA J = a*b*r; disp('Jacobian =') pretty(J) % Volume integral V = int(int(z_r*J,r,0,1),theta,0,2*pi); disp('Volume formula:') disp(simplify(V)) %% Evaluate volume for a = 5 and b = 4 V_num = double(subs(V,[a b],[5 4])); fprintf('Pond volume = %.2f m^3\\n',V_num); %% Compare with runoff if V_num > runoff disp('Pond capacity exceeds runoff volume.') else disp('Additional storage is required.') end %% PART 4: DESIGN OPTIMIZATION syms a b V_ab = simplify(V); disp('Volume in terms of a and b:') pretty(V_ab) % Apply land-use constraint ab = 20 V_constraint = simplify(subs(V_ab,a,20\/b)); disp('Volume with constraint ab = 20:') pretty(V_constraint) %% PART 5: COST ANALYSIS % Recompute numerical values a = ?; b = ?; V_num = double(subs(V,[a b],[5 4])); % Gradient magnitude found in Part 1 G = ?; % Cost calculations CG = ?; CE = ?; CT = CG + CE; fprintf('\\nRoadway grading cost = $%.2f\\n',CG); fprintf('Excavation cost = $%.2f\\n',CE); fprintf('Total project cost = $%.2f\\n',CT); budget = ?; if le(CT,budget) % CT is less than or equal to budget disp('Project is within budget.') else disp('Project exceeds budget.') end %% PART 6: VISUALIZATION % Create a surface plot of the pond a = ?; b = ?; [X,Y] = meshgrid(linspace(-a,a,100), ... linspace(-b,b,100)); Z = ?; % Restrict to elliptical region mask = X.^2\/a^2 + Y.^2\/b^2 <= 1; Z(~mask) = NaN; figure surf(X,Y,Z) xlabel('x (m)') ylabel('y (m)') zlabel('Depth (m)') title('Retention Pond Surface') shading interp colorbar %% EXTENSION CHALLENGE syms d a b % New pond depth model z_ext = d - r^2; Vd = int(int(z_ext*(a*b*r),r,0,1),theta,0,2*pi); Vd = simplify(Vd); disp('Volume as a function of d:') pretty(Vd) % Apply land-use constraint ab = 20 Vd20 = simplify(subs(Vd,a,20\/b)); disp('Volume under constraint ab = 20:') pretty(Vd20) % Solve for minimum d when V = 400 m^3 d_required = solve(Vd20 == 400,d); disp('Required pond depth:') disp(vpa(d_required))   "
+},
+{
+  "id": "civil-engineering-modeling",
+  "level": "2",
+  "url": "hw-multi-modeling.html#civil-engineering-modeling",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Part 1: Roadway Surface Analysis  Compute the first-order partial derivatives of the roadway surface and determine the gradient vector .  Evaluate the gradient at .  Interpret your results by determining:   the direction of steepest ascent,  the direction water will naturally flow,  appropriate locations for drainage structures or culverts.      Part 2: Retention Pond Analysis  Compute and .  Locate the critical point(s) of the pond surface and determine the maximum depth.  Use your derivatives to discuss:   where excavation is deepest,  where side slopes are steepest,  engineering implications for safety and maintenance.      Part 3: Stormwater Storage Capacity  Develop a double-integral model for the pond volume:   Use the transformation   to simplify the integral.  to rewrite the integral in terms of and . For this transformation, the area element (taking into account the Jacobian) is   State whether the proposed pond provides sufficient flood protection.     Part 4: Pond Design Optimization  The city would like to know whether changing the shape of the pond could increase storage while keeping the same available land area.  Express the pond volume in terms of and .  Apply the constraint and determine whether changing the shape of the ellipse affects storage capacity.  Discuss at least two practical engineering factors that may influence the final choice of pond geometry.     Part 5: Cost Analysis  Evaluate the gradient magnitude   Use this result and your volume calculation to determine:   ,  ,  .   Compare the total project cost to the budget of $20,000 and determine whether the design is economically feasible.  Identify which component contributes most significantly to the overall project cost.     Part 6: Engineering Recommendation  Prepare a final engineering recommendation for the city.  Your recommendation should address:   How roadway topography affects drainage patterns.  Locations for storm drains or culverts.  Whether the pond can manage the designed storm.  Whether the project satisfies budget constraints.  Whether the city should approve, modify, or redesign the proposed system.   Support your recommendation using the mathematical results obtained in the previous parts.     Extension Challenge  Suppose engineers can increase the maximum pond depth from meters to meters.  The pond is now modeled by   Develop a formula for the volume .  Determine the minimum value of needed to store of stormwater while keeping construction costs as low as possible.  Provide both a mathematical and engineering justification for your conclusion.    "
+},
+{
   "id": "resources",
   "level": "1",
   "url": "resources.html",
@@ -2237,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "165",
+  "number": "174",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
