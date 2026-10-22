@@ -670,31 +670,40 @@ N(y)\frac{dy}{dx}=M(x)
 <div class="autopermalink" data-description="Item 4"><a href="#separable-equations-3-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Subsubsection: Solution Strategy"><a href="#separable-equations-3" title="Copy heading and permalink for Subsubsection: Solution Strategy" aria-label="Copy heading and permalink for Subsubsection: Solution Strategy">🔗</a></div></section><details id="separable-equations-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">118</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="separable-equations-4-1-1">Solve the differential equation<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Subsubsection: Solution Strategy"><a href="#separable-equations-3" title="Copy heading and permalink for Subsubsection: Solution Strategy" aria-label="Copy heading and permalink for Subsubsection: Solution Strategy">🔗</a></div></section><details id="separable-equations-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">118</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="separable-equations-4-1-1">Classify and solve the differential equation<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="separable-equations-4-1-2">
 \begin{equation*}
-\frac{dy}{dx}=3x^2.
+\frac{dy}{dx}=\frac{x^2+1}{y(y^2+4)}.
 \end{equation*}
 </div>
 <div class="solutions"><details id="separable-equations-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="separable-equations-4-2-1">Integrate both sides.<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="separable-equations-4-2-1">This equation is <em class="emphasis">separable</em>.<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="separable-equations-4-2-2">
 \begin{equation*}
-\int dy=\int 3x^2\,dx
+y(y^2+4)\,dy=(x^2+1)\,dx.
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="separable-equations-4-2-3">
+<div class="para" id="separable-equations-4-2-3">Integrate both sides:<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="separable-equations-4-2-4">
 \begin{equation*}
-y=x^3+C.
+\int (y^3+4y)\,dy=\int (x^2+1)\,dx.
 \end{equation*}
+</div>
+<div class="displaymath process-math" id="separable-equations-4-2-5">
+\begin{equation*}
+\frac{y^4}{4}+2y^2=\frac{x^3}{3}+x+C.
+\end{equation*}
+</div>
+<div class="para" id="separable-equations-4-2-6">This implicit equation is the general solution.<div class="autopermalink" data-description="Paragraph"><a href="#separable-equations-4-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 118.1"><a href="#separable-equations-4-2" title="Copy heading and permalink for Solution 118.1" aria-label="Copy heading and permalink for Solution 118.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 118"><a href="#separable-equations-4" title="Copy heading and permalink for Example 118" aria-label="Copy heading and permalink for Example 118">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Separable Differential Equations"><a href="#separable-equations" title="Copy heading and permalink for Subsection: Separable Differential Equations" aria-label="Copy heading and permalink for Subsection: Separable Differential Equations">🔗</a></div></section><section class="subsection" id="difflinear-equations"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Checkpoint 118"><a href="#separable-equations-4" title="Copy heading and permalink for Checkpoint 118" aria-label="Copy heading and permalink for Checkpoint 118">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Separable Differential Equations"><a href="#separable-equations" title="Copy heading and permalink for Subsection: Separable Differential Equations" aria-label="Copy heading and permalink for Subsection: Separable Differential Equations">🔗</a></div></section><section class="subsection" id="difflinear-equations"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Differential Equations</span>
 </h3>
 <article class="definition definition-like" id="difflinear-equations-2"><h4 class="heading">
@@ -735,52 +744,57 @@ y'+p(x)y=g(x),
 </div>
 <div class="para" id="difflinear-equations-4-8">Integrate both sides and solve for <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection: Integrating Factor"><a href="#difflinear-equations-4" title="Copy heading and permalink for Subsubsection: Integrating Factor" aria-label="Copy heading and permalink for Subsubsection: Integrating Factor">🔗</a></div></section><details id="difflinear-equations-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">120</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="difflinear-equations-5-1-1">Solve<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Subsubsection: Integrating Factor"><a href="#difflinear-equations-4" title="Copy heading and permalink for Subsubsection: Integrating Factor" aria-label="Copy heading and permalink for Subsubsection: Integrating Factor">🔗</a></div></section><details id="difflinear-equations-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">120</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="difflinear-equations-5-1-1">Classify and solve the differential equation<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="difflinear-equations-5-1-2">
 \begin{equation*}
-y'+2y=e^{-2x}.
+(x^2+1)\frac{dy}{dx}+2xy=\sin x.
 \end{equation*}
 </div>
 <div class="solutions"><details id="difflinear-equations-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="difflinear-equations-5-2-1">The integrating factor is<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="difflinear-equations-5-2-1">Divide by <span class="process-math">\(x^2+1\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="difflinear-equations-5-2-2">
 \begin{equation*}
-\mu(x)=e^{\int 2\,dx}=e^{2x}.
+y'+\frac{2x}{x^2+1}y=\frac{\sin x}{x^2+1}.
 \end{equation*}
 </div>
-<div class="para" id="difflinear-equations-5-2-3">Multiply by <span class="process-math">\(e^{2x}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="difflinear-equations-5-2-3">This is a <em class="emphasis">linear first-order differential equation</em>.<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="difflinear-equations-5-2-4">
-\begin{equation*}
-e^{2x}y'+2e^{2x}y=1.
-\end{equation*}
+<div class="para" id="difflinear-equations-5-2-4">The integrating factor is<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="difflinear-equations-5-2-5">
 \begin{equation*}
-\frac{d}{dx}(e^{2x}y)=1.
+\mu(x)
+=e^{\int \frac{2x}{x^2+1}\,dx}
+=e^{\ln(x^2+1)}
+=x^2+1.
 \end{equation*}
 </div>
-<div class="para" id="difflinear-equations-5-2-6">Integrating gives<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="difflinear-equations-5-2-6">Multiplying through by the integrating factor gives<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="difflinear-equations-5-2-7">
 \begin{equation*}
-e^{2x}y=x+C.
+\frac{d}{dx}\big((x^2+1)y\big)=\sin x.
 \end{equation*}
 </div>
-<div class="para" id="difflinear-equations-5-2-8">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="difflinear-equations-5-2-8">Integrating:<div class="autopermalink" data-description="Paragraph"><a href="#difflinear-equations-5-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="difflinear-equations-5-2-9">
 \begin{equation*}
-y=e^{-2x}(x+C).
+(x^2+1)y=-\cos x+C.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="difflinear-equations-5-2-10">
+\begin{equation*}
+y=\frac{-\cos x+C}{x^2+1}.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Solution 120.1"><a href="#difflinear-equations-5-2" title="Copy heading and permalink for Solution 120.1" aria-label="Copy heading and permalink for Solution 120.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 120"><a href="#difflinear-equations-5" title="Copy heading and permalink for Example 120" aria-label="Copy heading and permalink for Example 120">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Linear Differential Equations"><a href="#difflinear-equations" title="Copy heading and permalink for Subsection: Linear Differential Equations" aria-label="Copy heading and permalink for Subsection: Linear Differential Equations">🔗</a></div></section><section class="subsection" id="exact-equations"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Checkpoint 120"><a href="#difflinear-equations-5" title="Copy heading and permalink for Checkpoint 120" aria-label="Copy heading and permalink for Checkpoint 120">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Linear Differential Equations"><a href="#difflinear-equations" title="Copy heading and permalink for Subsection: Linear Differential Equations" aria-label="Copy heading and permalink for Subsection: Linear Differential Equations">🔗</a></div></section><section class="subsection" id="exact-equations"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exact Differential Equations</span>
 </h3>
 <article class="definition definition-like" id="exact-equations-2"><h4 class="heading">
@@ -840,11 +854,86 @@ v=y^{1-n}.
 </div>
 <div class="para" id="bernoulli-equations-5">After substitution, solve the resulting linear differential equation.<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Bernoulli Differential Equations"><a href="#bernoulli-equations" title="Copy heading and permalink for Subsection: Bernoulli Differential Equations" aria-label="Copy heading and permalink for Subsection: Bernoulli Differential Equations">🔗</a></div></section><section class="subsection" id="initial-value-problems"><h3 class="heading hide-type">
+<details id="bernoulli-equations-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">123</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="bernoulli-equations-6-1-1">Classify and solve the differential equation<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-1-2">
+\begin{equation*}
+y'+\frac{2}{x}y=x^3y^{-2}.
+\end{equation*}
+</div>
+<div class="solutions"><details id="bernoulli-equations-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="bernoulli-equations-6-2-1">This is a <em class="emphasis">Bernoulli equation</em> with <span class="process-math">\(n=-2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="bernoulli-equations-6-2-2">Let<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-3">
+\begin{equation*}
+v=y^{1-(-2)}=y^3.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-4">Then<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-5">
+\begin{equation*}
+v'=3y^2y'.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-6">Multiply the differential equation by <span class="process-math">\(3y^2\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-7">
+\begin{equation*}
+v'+\frac{6}{x}v=3x^3.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-8">This is linear in <span class="process-math">\(v\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="bernoulli-equations-6-2-9">The integrating factor is<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-10">
+\begin{equation*}
+\mu(x)=e^{\int 6/x\,dx}=x^6.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-11">Multiply through by <span class="process-math">\(x^6\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-12">
+\begin{equation*}
+\frac{d}{dx}(x^6v)=3x^9.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-13">Integrate:<div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-14">
+\begin{equation*}
+x^6v=\frac{3}{10}x^{10}+C.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-15">
+\begin{equation*}
+v=\frac{3}{10}x^4+\frac{C}{x^6}.
+\end{equation*}
+</div>
+<div class="para" id="bernoulli-equations-6-2-16">Substitute back <span class="process-math">\(v=y^3\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#bernoulli-equations-6-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-17">
+\begin{equation*}
+y^3=\frac{3}{10}x^4+\frac{C}{x^6}.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="bernoulli-equations-6-2-18">
+\begin{equation*}
+y=\left(\frac{3}{10}x^4+\frac{C}{x^6}\right)^{1/3}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 123.1"><a href="#bernoulli-equations-6-2" title="Copy heading and permalink for Solution 123.1" aria-label="Copy heading and permalink for Solution 123.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Checkpoint 123"><a href="#bernoulli-equations-6" title="Copy heading and permalink for Checkpoint 123" aria-label="Copy heading and permalink for Checkpoint 123">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Bernoulli Differential Equations"><a href="#bernoulli-equations" title="Copy heading and permalink for Subsection: Bernoulli Differential Equations" aria-label="Copy heading and permalink for Subsection: Bernoulli Differential Equations">🔗</a></div></section><section class="subsection" id="initial-value-problems"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Initial Value Problems</span>
 </h3>
 <article class="definition definition-like" id="initial-value-problems-2"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">123</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">124</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="initial-value-problems-2-1">An <dfn class="terminology">initial value problem</dfn> (IVP) consists of a differential equation together with an initial condition.<div class="autopermalink" data-description="Paragraph"><a href="#initial-value-problems-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -855,7 +944,7 @@ v=y^{1-n}.
 y(x_0)=y_0.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Definition 123"><a href="#initial-value-problems-2" title="Copy heading and permalink for Definition 123" aria-label="Copy heading and permalink for Definition 123">🔗</a></div></article><div class="para" id="initial-value-problems-3">The differential equation determines a family of solutions, while the initial condition identifies one specific solution.<div class="autopermalink" data-description="Paragraph"><a href="#initial-value-problems-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 124"><a href="#initial-value-problems-2" title="Copy heading and permalink for Definition 124" aria-label="Copy heading and permalink for Definition 124">🔗</a></div></article><div class="para" id="initial-value-problems-3">The differential equation determines a family of solutions, while the initial condition identifies one specific solution.<div class="autopermalink" data-description="Paragraph"><a href="#initial-value-problems-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection: Initial Value Problems"><a href="#initial-value-problems" title="Copy heading and permalink for Subsection: Initial Value Problems" aria-label="Copy heading and permalink for Subsection: Initial Value Problems">🔗</a></div></section><section class="subsection" id="euler-method-preview"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Numerical Approximation: Euler’s Method</span>
