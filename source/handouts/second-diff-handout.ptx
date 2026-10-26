@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<handout>
+    <title>Methods for Solving Second-Order Differential Equations</title>
+
+    <introduction>
+
+        <p>
+            In this activity you will work through five stations involving
+            major concepts and solution methods for second-order differential
+            equations.
+        </p>
+
+        <p>
+            For each station:
+        </p>
+
+        <ol>
+            <li workspace="1 in">Show all work.</li>
+            <li workspace="1 in">Explain your reasoning.</li>
+            <li workspace="1 in">Compare your solution with your group members.</li>
+            <li workspace="1 in">Be prepared to present your work to the class.</li>
+        </ol>
+
+    </introduction>
+
+    <subsection xml:id="student-template">
+        <title>Work Template</title>
+
+        <p>
+            Use the following structure for each problem.
+        </p>
+
+        <ol>
+            <li workspace="1 in">Identify the method that should be used.</li>
+            <li workspace="1 in">Show all intermediate calculations.</li>
+            <li workspace="1 in">Write the final answer clearly.</li>
+            <li workspace="1 in">Verify your result whenever possible.</li>
+        </ol>
+
+    </subsection>
+
+        
+        <exercise>
+        <title>Fundamental Sets of Solutions and the Wronskian</title>
+
+        <p>
+            Determine whether the given functions form a fundamental set of
+            solutions for the differential equation.
+        </p>
+<ol><li workspace="1 in">
+            <p>
+                Consider
+            </p>
+
+            <me>
+                y''-5y'+6y=0.
+            </me>
+
+            <p>
+                Determine whether
+            </p>
+
+            <me>
+                y_1=e^{2x},
+                \qquad
+                y_2=e^{3x}
+            </me>
+
+            <p>
+                form a fundamental set of solutions.
+            </p>
+
+            <p>
+                Compute the Wronskian.
+            </p>
+        </li><li workspace="1 in">
+        
+            <p>
+                Consider
+            </p>
+
+            <me>
+                y''-4y'+4y=0.
+            </me>
+
+            <p>
+                Determine whether
+            </p>
+
+            <me>
+                y_1=e^{2x},
+                \qquad
+                y_2=2e^{2x}
+            </me>
+
+            <p>
+                form a fundamental set of solutions.
+            </p>
+            </li>   <li workspace="1 in">
+            
+            <p>
+                Verify that
+            </p>
+
+            <me>
+                y_1=\cos x,
+                \qquad
+                y_2=\sin x
+            </me>
+
+            <p>
+                are solutions of
+            </p>
+
+            <me>
+                y''+y=0.
+            </me>
+
+            <p>
+                Compute the Wronskian and determine whether they form a
+                fundamental set of solutions.
+            </p>
+            </li></ol>
+        </exercise>
+
+        <exercise>
+        <title>Undetermined Coefficients</title>
+<ol><li workspace="2 in">
+            <p>Solve using undetermined coefficients.</p>
+
+            <me>
+                y''-3y'+2y=4e^{3x}.
+            </me></li><li workspace="2 in">
+
+            <p>Solve using undetermined coefficients.</p>
+
+            <me>
+                y''+4y=8\cos(2x).
+            </me>
+
+            <p>
+                Pay careful attention to resonance.
+            </p>
+            </li><li workspace="2 in">
+
+            <p>Solve using undetermined coefficients.</p>
+
+            <me>
+                y''+y'-2y=(x+1)e^x.
+            </me>
+            </li></ol>
+        </exercise>
+
+        <exercise>
+        <title>Reduction of Order</title>
+<ol><li workspace="2in">
+            <p>
+                One solution of
+            </p>
+
+            <me>
+                y''-4y'+4y=0
+            </me>
+
+            <p>
+                is
+            </p>
+
+            <me>
+                y_1=e^{2x}.
+            </me>
+
+            <p>
+                Use reduction of order to find a second linearly independent
+                solution.
+            </p>
+            </li><li workspace="2in">
+
+            <p>
+                One solution of
+            </p>
+
+            <me>
+                x^2y''-3xy'+4y=0
+            </me>
+
+            <p>
+                is
+            </p>
+
+            <me>
+                y_1=x^2.
+            </me>
+
+            <p>
+                Use reduction of order to find a second solution.
+            </p></li></ol>
+        </exercise>
+  
+        <exercise>
+          <title>Complementary and Particular Solutions</title>
+<ol><li workspace="2in">
+            <p>
+                Find the complementary solution, a particular solution,
+                and the general solution.
+            </p>
+
+            <me>
+                y''+5y'+6y=12e^{-x}.
+            </me>
+            </li><li workspace="2in">
+
+            <p>
+                Find the complementary solution, a particular solution,
+                and the general solution.
+            </p>
+
+            <me>
+                y''+9y=18\sin(3x).
+            </me></li></ol>
+        </exercise>
+
+        <exercise>
+
+        <title>Variation of Parameters</title>
+        <ol>
+<li workspace="2in"><p>   Solve using variation of parameters.
+            </p>
+            <me>
+                y''+y=\sec x.
+            </me>
+    </li><li workspace="2in">         <p>   Solve using variation of parameters.
+            </p>
+
+            <me>
+                y''-y=\frac{1}{1+e^x}.
+            </me>
+
+            <p>
+                Keep your answer in integral form if necessary.
+            </p>
+            </li><li workspace="2in">
+    <p>
+        Solve the following differential equation using variation of
+        parameters.
+    </p>
+
+    <me>
+        x^2y''-3xy'+4y=x^3,
+        \qquad x>0.
+    </me>
+
+    <p>
+        Begin by finding the complementary solution. Then use variation of
+        parameters to obtain a particular solution.
+    </p>
+
+    <p>
+        Simplify your final answer as much as possible.
+    </p>
+        </li></ol>
+        </exercise>
+
+</handout>

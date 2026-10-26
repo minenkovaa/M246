@@ -228,6 +228,11 @@ and 10 "for presentation".
       </p>
     </subsection>
 
+  <p>
+    <strong> Acknowledgement:</strong> Portions of the MATLAB and PreTeXt code used in this course were developed with assistance from Microsoft Copilot. 
+    All generated content was reviewed, tested, and adapted for instructional use by the course instructor.
+  </p>
+
   <!-- include policies -->
   <xi:include href="./policies.ptx"/>
 

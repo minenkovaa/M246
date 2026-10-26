@@ -2,20 +2,559 @@
 
 <section xml:id="notes-week-07">
   <title>Week 7: Second-order linear ODEs</title>
+<subsection xml:id="second-order-introduction">
+    <title>Introduction to Second-Order Differential Equations</title>
 
-  <subsection>
-    <title>Tuesday</title>
+    <introduction>
+        <p>
+            After studying this section, you should be able to:
+        </p>
 
-    <p> Second-order linear ODEs with constant coefficients.
+        <ol>
+            <li>Define a second-order differential equation.</li>
+            <li>Distinguish between linear and nonlinear differential equations.</li>
+            <li>Distinguish between homogeneous and nonhomogeneous equations.</li>
+            <li>Explain why exponential functions are used to solve constant-coefficient differential equations.</li>
+            <li>Form the characteristic equation.</li>
+            <li>Determine solutions corresponding to distinct real roots, repeated roots, and complex roots.</li>
+            <li>Describe common methods used to solve nonhomogeneous equations.</li>
+            <li>Apply variation of parameters to find particular solutions.</li>
+        </ol>
+    </introduction>
+
+    <p>
+        A second-order differential equation is an equation involving the second
+        derivative of an unknown function. Many mathematical models from
+        physics and engineering naturally lead to second-order differential
+        equations.
     </p>
-  </subsection>
 
+    <definition xml:id="def-second-order">
+        <title>Second-Order Differential Equation</title>
 
-  <subsection>
-    <title>Thursday</title>
+        <p>
+            A second-order differential equation is an equation involving the
+            second derivative of an unknown function.
+        </p>
 
-    <p> Second-order linear ODEs with variable coefficients.
-    </p>
-  </subsection>
+        <me>
+            F(x,y,y',y'')=0
+        </me>
+    </definition>
+
+    <example xml:id="ex-second-order">
+        <title>Examples</title>
+
+        <p>The following are second-order differential equations.</p>
+
+        <me>
+            y''+4y'-5y=0
+        </me>
+
+        <me>
+            x^2y''+xy'-3y=\sin x
+        </me>
+
+        <me>
+            y''=(y')^2
+        </me>
+    </example>
+    </subsection>
+
+    <subsection xml:id="linear-second-order">
+        <title>Linear Second-Order Differential Equations</title>
+
+        <p>
+            The standard form of a linear second-order differential equation is
+        </p>
+
+        <me>
+            a(x)y''+b(x)y'+c(x)y=g(x)
+        </me>
+
+        <p>
+            where <m>a(x)\neq 0</m>.
+        </p>
+
+        <definition xml:id="def-homogeneous">
+            <title>Homogeneous Equation</title>
+
+            <p>
+                If
+                <m>g(x)=0</m>,
+                then
+            </p>
+
+            <me>
+                a(x)y''+b(x)y'+c(x)y=0
+            </me>
+
+            <p>
+                is called a homogeneous differential equation.
+            </p>
+        </definition>
+
+        <definition xml:id="def-nonhomogeneous">
+            <title>Nonhomogeneous Equation</title>
+
+            <p>
+                If
+                <m>g(x)\neq 0</m>,
+                then the equation is called nonhomogeneous.
+            </p>
+        </definition>
+
+        <example xml:id="ex-nonhomogeneous">
+            <title>A Nonhomogeneous Equation</title>
+
+            <me>
+                y''-3y'+2y=e^x
+            </me>
+
+            <p>
+                This is a nonhomogeneous linear differential equation.
+            </p>
+        </example>
+    </subsection>
+
+    <subsection xml:id="constant-coefficient">
+        <title>Constant-Coefficient Equations</title>
+
+        <p>
+            In this part we focus primarily on equations of the form
+        </p>
+
+        <me>
+            ay''+by'+cy=0
+        </me>
+
+        <p>
+            where <m>a</m>, <m>b</m>, and <m>c</m> are constants.
+        </p>
+    </subsection>
+
+    <subsection xml:id="why-exponentials">
+        <title>Why Exponential Functions?</title>
+
+        <p>
+            Exponential functions are useful because differentiation preserves
+            their basic form.
+        </p>
+
+        <p>
+            Suppose
+        </p>
+
+        <me>
+            y=e^{\lambdax}
+        </me>
+
+        <p>
+            Then
+        </p>
+
+        <me>
+            y'=\lambda e^{\lambda x}
+        </me>
+
+        <me>
+            y''=\lambda^2 e^{\lambda x}
+        </me>
+
+        <p>
+            Substituting these expressions into
+        </p>
+
+        <me>
+            ay''+by'+cy=0
+        </me>
+
+        <p>
+            gives
+        </p>
+
+        <me>
+            a(\lambda^2e^{\lambda x})+b(\lambda e^{\lambda x})+ce^{\lambda x}=0
+        </me>
+
+        <p>
+            Factoring out <m>e^{\lambda x}</m> yields
+        </p>
+
+        <me>
+            e^{\lambda x}(a\lambda^2+b\lambda+c)=0
+        </me>
+
+        <p>
+            Since <m>e^{\lambda x}\neq0</m>, we obtain
+        </p>
+
+        <me>
+            a\lambda^2+b\lambda+c=0
+        </me>
+
+        <p>
+            This algebraic equation is called the characteristic equation.
+        </p>
+    </subsection>
+
+    <subsection xml:id="characteristic-roots">
+        <title>Solutions from Characteristic Roots</title>
+
+        <theorem xml:id="thm-characteristic-roots">
+            <title>Characteristic Root Cases</title>
+
+            <p>
+                Consider
+            </p>
+
+            <me>
+                ay''+by'+cy=0.
+            </me>
+
+            <p>
+                Let
+            </p>
+
+            <me>
+                a\lambda^2+b\lambda+c=0
+            </me>
+
+            <p>
+                be its characteristic equation.
+            </p>
+
+            <ol>
+                <li>
+                    If the roots are distinct real numbers
+                    <m>\lambda_1</m> and <m>\lambda_2</m>, then
+                    <me>
+                        y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}.
+                    </me>
+                </li>
+
+                <li>
+                    If the root <m>\lambda</m> is repeated, then
+                    <me>
+                        y=C_1e^{\lambda x}+C_2xe^{\lambda x}.
+                    </me>
+                </li>
+
+                <li>
+                    If the roots are
+                    <m>\alpha\pm\beta i</m>, then
+                    <me>
+                        y=e^{\alpha x}
+                        \left(
+                        C_1\cos(\beta x)
+                        +
+                        C_2\sin(\beta x)
+                        \right).
+                    </me>
+                </li>
+            </ol>
+        </theorem>
+      <p>  To determine the constants <m> C_1 </m> and <m> C_2 </m>, we need two conditions, usually given as
+        <me>
+            y(x_0)=y_0\quad\text{and}\quad y'(x_0)=y_1.
+        </me>
+        </p>
+        <example>
+          Find the solution of
+          <me>
+            y''-3y'+2y=0,\quad y(0)=1,\quad y'(0)=0.
+          </me>
+          <solution>
+            <p>
+              The characteristic equation is
+            </p>  
+            <me> 
+              \lambda^2-3\lambda+2=0.
+            </me>
+            <p>
+              The roots are <m>\lambda_1=1</m> and <m>\lambda_2=2</m>. Thus the general solution is
+            </p>
+            <me>
+              y=C_1e^x+C_2e^{2x}.
+            </me>
+            <p>
+              Using the initial conditions, we have
+            </p>
+            <me>
+              y(0)=C_1+C_2=1
+            </me>
+            <me>
+              y'(0)=C_1+2C_2=0
+            </me>
+            <p>
+              Solving this system of equations, we find <m>C_1=2</m> and <m>C_2=-1</m>. Therefore, the solution is
+            </p>
+            <me>
+              y=2e^x-e^{2x}.
+            </me>
+          </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="nonhomogeneous-methods">
+        <title>Methods for Nonhomogeneous Equations</title>
+
+        <p>
+            For a nonhomogeneous equation
+        </p>
+
+        <me>
+            ay''+by'+cy=g(x),
+        </me>
+
+        <p>
+            the general solution has the form
+        </p>
+
+        <me>
+            y=y_c+y_p,
+        </me>
+
+        <p>
+            where <m>y_c</m> is the complementary solution and
+            <m>y_p</m> is a particular solution.
+        </p>
+
+        <p>
+            Common methods for finding particular solutions include:
+        </p>
+
+        <ul>
+            <li>Method of Undetermined Coefficients</li>
+            <li>Variation of Parameters</li>
+            <li>Reduction of Order</li>
+            <li>Power Series Methods</li>
+        </ul>
+    </subsection>
+
+    <subsection xml:id="variation-of-parameters">
+        <title>Variation of Parameters</title>
+
+        <p>
+            Variation of parameters is one of the most general methods for
+            finding particular solutions of linear differential equations.
+            Unlike undetermined coefficients, it may be used for variable-
+            coefficient equations.
+        </p>
+
+        <p>
+            Consider
+        </p>
+
+        <me>
+            y''+p(x)y'+q(x)y=g(x).
+        </me>
+
+        <p>
+            Suppose the corresponding homogeneous equation has linearly
+            independent solutions <m>y_1(x)</m> and <m>y_2(x)</m>.
+        </p>
+
+        <p>
+            Then
+        </p>
+
+        <me>
+            y_c=C_1y_1+C_2y_2.
+        </me>
+
+        <p>
+            Variation of parameters replaces the constants by functions:
+        </p>
+
+        <me>
+            y_p=u_1(x)y_1(x)+u_2(x)y_2(x).
+        </me>
+
+        <p>
+            Define the Wronskian
+        </p>
+
+        <me>
+            W=\begin{vmatrix}
+            y_1 &amp; y_2 \\
+            y_1' &amp; y_2'
+            \end{vmatrix}=y_1y_2'-y_1'y_2.
+        </me>
+
+        <p>
+            The functions <m>u_1</m> and <m>u_2</m> satisfy
+        </p>
+
+        <me>
+            u_1'=-\frac{y_2g}{W}
+        </me>
+
+        <me>
+            u_2'=\frac{y_1g}{W}
+        </me>
+
+        <p>
+            Integrating gives
+        </p>
+
+        <me>
+            u_1=\int -\frac{y_2g}{W}\,dx
+        </me>
+
+        <me>
+            u_2=\int \frac{y_1g}{W}\,dx
+        </me>
+
+        <p>
+            A particular solution is
+        </p>
+
+        <me>
+            y_p=u_1y_1+u_2y_2,
+        </me>
+
+        <p>
+            and the complete solution is
+        </p>
+
+        <me>
+            y=y_c+y_p.
+        </me>
+    </subsection>
+
+    <example xml:id="ex-vop-cauchy-euler">
+        <title>Variation of Parameters for a Variable-Coefficient Equation</title>
+
+        <p>Solve</p>
+
+        <me>
+            x^2y''-2xy'+2y=x^2,
+            \qquad x>0.
+        </me>
+
+        <solution>
+            <p>
+                Divide by <m>x^2</m>.
+            </p>
+
+            <me>
+                y''-\frac{2}{x}y'+\frac{2}{x^2}y=1.
+            </me>
+
+            <p>
+                Solve the homogeneous equation by trying
+                <m>y=x^{\lambda}</m>.
+            </p>
+
+            <me>
+                \lambda(\lambda-1)-2\lambda+2=0
+            </me>
+
+            <me>
+                \lambda^2-3\lambda+2=0
+            </me>
+
+            <me>
+                (\lambda-1)(\lambda-2)=0.
+            </me>
+
+            <p>
+                Thus
+            </p>
+
+            <me>
+                y_1=x,
+                \qquad
+                y_2=x^2.
+            </me>
+
+            <p>
+                The complementary solution is
+            </p>
+
+            <me>
+                y_c=C_1x+C_2x^2.
+            </me>
+
+            <p>
+                Compute the Wronskian.
+            </p>
+
+            <me>
+                W=
+                \begin{vmatrix}
+                x &amp; x^2\\
+                1 &amp; 2x
+                \end{vmatrix}
+                =x^2.
+            </me>
+
+            <p>
+                Since <m>g(x)=1</m>,
+            </p>
+
+            <me>
+                u_1'
+                =
+                -\frac{x^2}{x^2}
+                =
+                -1
+            </me>
+
+            <me>
+                u_2'
+                =
+                \frac{x}{x^2}
+                =
+                \frac1x
+            </me>
+
+            <p>
+                Integrating gives
+            </p>
+
+            <me>
+                u_1=-x,
+                \qquad
+                u_2=\ln x.
+            </me>
+
+            <p>
+                Therefore
+            </p>
+
+            <me>
+                y_p
+                =
+                (-x)(x)+(\ln x)(x^2)
+            </me>
+
+            <me>
+                y_p=-x^2+x^2\ln x.
+            </me>
+
+            <p>
+                Since <m>-x^2</m> belongs to the complementary solution,
+                we may absorb it into the constant <m>C_2</m>.
+            </p>
+
+            <p>
+                Hence,
+            </p>
+
+            <me>
+                y_p=x^2\ln x.
+            </me>
+
+            <p>
+                The solution is
+            </p>
+
+            <me>
+                y=C_1x+C_2x^2+x^2\ln x.
+            </me>
+        </solution>
+    </example>
 
 </section>

@@ -91,6 +91,8 @@
       <xi:include href="./handouts/partial-handout.ptx"/>
       <xi:include href="./handouts/line-surface-integral-handout.ptx"/>
       <xi:include href="./handouts/first-diff-handout.ptx"/>
+      <xi:include href="./handouts/second-diff-handout.ptx"/>
+      <xi:include href="./handouts/second-diff2-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
@@ -103,6 +105,8 @@
     <xi:include href="./homework/homework-04.ptx"/>
     <xi:include href="./homework/homework-05.ptx"/>
     <xi:include href="./homework/homework-06.ptx"/>
+    <xi:include href="./homework/homework-07.ptx"/>
+    
     
 
     </chapter>

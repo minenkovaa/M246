@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+
+  <title>Homework 07</title>
+
+  <introduction>
+    <p>
+      <alert>Instructions:</alert> Complete the exercises and please aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab7_YourLastName.m and  then compare your analytic results with
+  graphical representations produced in MATLAB.
+  You may also use MATLAB to double-check your calculations, but you must show your work.
+
+            Solve each differential equation using the most appropriate method.
+            Clearly identify the type of differential equation before solving.
+            Show all work and verify your solutions whenever possible.
+        </p>
+
+    </introduction>
+
+    <exercise workspace="1 in">
+        <title>Separable Differential Equation</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            \frac{dy}{dx}
+            =
+            \frac{x^2+1}{y(y^2+4)}.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Linear First-Order Equation</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            (x^2+1)\frac{dy}{dx}+2xy=\sin x.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Bernoulli Equation</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            y'+\frac{2}{x}y=x^3y^{-2},
+            \qquad x>0.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Distinct Real Roots</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            2y''+3y'-9y=0.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Repeated Roots</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            9y''-12y'+4y=0.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Complex Roots</title>
+
+        <p>Solve the differential equation.</p>
+
+        <me>
+            y''+2y'+10y=0.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Fundamental Solutions and Wronskian</title>
+
+        <p>
+            Consider the differential equation
+        </p>
+
+        <me>
+            y''+y=0.
+        </me>
+
+        <p>
+            Verify that
+        </p>
+
+        <me>
+            y_1=\cos x,
+            \qquad
+            y_2=\sin x
+        </me>
+
+        <p>
+            are solutions of the differential equation.
+            Compute the Wronskian and determine whether the functions form
+            a fundamental set of solutions.
+        </p>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Undetermined Coefficients</title>
+
+        <p>
+            Find the general solution of
+        </p>
+
+        <me>
+            y''-3y'+2y=(x+1)e^x.
+        </me>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Reduction of Order</title>
+
+        <p>
+            One solution of
+        </p>
+
+        <me>
+            y''-4y'+4y=0
+        </me>
+
+        <p>
+            is
+        </p>
+
+        <me>
+            y_1=e^{2x}.
+        </me>
+
+        <p>
+            Use reduction of order to find a second linearly independent
+            solution and write the general solution.
+        </p>
+
+    </exercise>
+
+    <exercise workspace="1 in">
+        <title>Problem 10: Variation of Parameters</title>
+
+        <p>
+            Solve the differential equation using variation of parameters.
+        </p>
+
+        <me>
+            y''+y=\sec x.
+        </me>
+
+    </exercise>
+<subsection>
+    <title>MATLAB Tips for Differential Equations</title>
+
+    <p>
+        MATLAB can help verify your work, perform symbolic integration,
+        solve characteristic equations, and check solutions. The commands
+        below use the Symbolic Math Toolbox.
+    </p>
+
+    <subsubsection>
+        <title>Finding Characteristic Roots</title>
+
+        <p>
+            Example: Solve
+        </p>
+
+        <me>
+            2r^2+3r-9=0.
+        </me>
+
+        <p>MATLAB commands:</p>
+
+<cd>
+syms r
+solve(2*r^2 + 3*r - 9 == 0, r)
+</cd>
+
+        <p>
+            MATLAB returns the characteristic roots.
+        </p>
+
+    </subsubsection>
+
+    <subsubsection>
+        <title>Symbolic Integration</title>
+
+        <p>
+            Example:
+        </p>
+
+        <me>
+            \int x^2\ln(x)\,dx
+        </me>
+
+<cd>
+syms x
+int(x^2*log(x), x)
+</cd>
+
+        <p>
+            MATLAB uses <m>log(x)</m> for the natural logarithm.
+        </p>
+
+    </subsubsection>
+
+    <subsubsection>
+        <title>Variation of Parameters Integrals</title>
+
+        <p>
+            Suppose variation of parameters requires
+        </p>
+
+        <me>
+            u_1=-\int \ln(x)\,dx.
+        </me>
+
+<cd>
+syms x
+u1 = -int(log(x),x)
+</cd>
+
+        <p>
+            MATLAB returns
+        </p>
+
+        <me>
+            -x\ln(x)+x.
+        </me>
+
+    </subsubsection>
+
+    <subsubsection>
+        <title>Computing a Wronskian</title>
+
+        <p>
+            Given
+        </p>
+
+        <me>
+            y_1=x^2,
+            \qquad
+            y_2=x^2\ln(x),
+        </me>
+
+        <p>
+            the Wronskian can be computed directly.
+        </p>
+
+<cd>
+syms x
+
+y1 = x^2;
+y2 = x^2*log(x);
+
+W = det([y1 y2;
+         diff(y1,x) diff(y2,x)]);
+
+simplify(W)
+</cd>
+
+    </subsubsection>
+
+    <subsubsection>
+        <title>Checking a Solution</title>
+
+        <p>
+            Suppose you believe that
+        </p>
+
+        <me>
+            y=C_1e^{-2t}\cos(4t)+C_2e^{-2t}\sin(4t)
+        </me>
+
+        <p>
+            solves
+        </p>
+
+        <me>
+            y''+4y'+20y=0.
+        </me>
+
+<cd>
+syms t C1 C2
+
+y = exp(-2*t)*(C1*cos(4*t)+C2*sin(4*t));
+
+simplify(diff(y,t,2) + 4*diff(y,t) + 20*y)
+</cd>
+
+        <p>
+            MATLAB should return zero if the solution is correct.
+        </p>
+
+    </subsubsection>
+
+    <subsubsection>
+        <title>Solving an ODE with dsolve</title>
+
+        <p>
+            Example:
+        </p>
+
+        <me>
+            y''+4y'+20y=0,
+            \qquad
+            y(0)=1,
+            \qquad
+            y'(0)=0.
+        </me>
+
+<cd>
+syms y(t)
+
+Dy = diff(y,t);
+
+ode = diff(y,t,2) + 4*diff(y,t) + 20*y == 0;
+
+cond1 = y(0)==1;
+cond2 = Dy(0)==0;
+
+sol = dsolve(ode,[cond1 cond2])
+</cd>
+
+        <p>
+            MATLAB returns the solution satisfying the initial conditions.
+        </p>
+
+    </subsubsection>
+</subsection>
+
+</worksheet>
