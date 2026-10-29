@@ -556,5 +556,199 @@
             </me>
         </solution>
     </example>
+<subsection xml:id="reduction-of-order">
+    <title>Reduction of Order</title>
 
+    <p>
+        Reduction of order is a method used to find a second linearly
+        independent solution of a homogeneous second-order differential
+        equation when one solution is already known.
+    </p>
+
+    <p>
+        Consider the differential equation
+    </p>
+
+    <me>
+        y''+p(x)y'+q(x)y=0.
+    </me>
+
+    <p>
+        Suppose one solution, <m>y_1(x)</m>, is known. To find a second
+        solution, we assume that it has the form
+    </p>
+
+    <me>
+        y_2=v(x)y_1(x),
+    </me>
+
+    <p>
+        where <m>v(x)</m> is an unknown function.
+    </p>
+
+    <p>
+        The procedure is:
+    </p>
+
+    <ol>
+        <li>Assume <m>y_2=v(x)y_1(x)</m>.</li>
+        <li>Compute <m>y_2'</m> and <m>y_2''</m>.</li>
+        <li>Substitute into the differential equation.</li>
+        <li>Simplify to obtain an equation involving <m>v</m>.</li>
+        <li>Solve for <m>v</m>.</li>
+        <li>Substitute back into <m>y_2=v(x)y_1(x)</m>.</li>
+        <li>Write the general solution using both independent solutions.</li>
+    </ol>
+
+    <example xml:id="reduction-order-example">
+        <title>Finding a Second Solution by Reduction of Order</title>
+
+        <p>
+            One solution of the differential equation
+        </p>
+
+        <me>
+            y''-4y'+4y=0
+        </me>
+
+        <p>
+            is
+        </p>
+
+        <me>
+            y_1=e^{2x}.
+        </me>
+
+        <p>
+            Use reduction of order to find a second linearly independent
+            solution and write the general solution.
+        </p>
+
+        <solution>
+
+            <p>
+                Since one solution is already known, assume a second solution
+                has the form
+            </p>
+
+            <me>
+                y_2=v(x)y_1.
+            </me>
+
+            <p>
+                Substituting <m>y_1=e^{2x}</m> gives
+            </p>
+
+            <me>
+                y_2=v(x)e^{2x}.
+            </me>
+
+            <p>
+                Compute the derivatives.
+            </p>
+
+            <me>
+                y_2'
+                =
+                v'e^{2x}
+                +
+                2ve^{2x}
+            </me>
+
+            <me>
+                y_2''
+                =
+                v''e^{2x}
+                +
+                4v'e^{2x}
+                +
+                4ve^{2x}.
+            </me>
+
+            <p>
+                Substitute into the differential equation.
+            </p>
+
+            <me>
+                \left(v''e^{2x}+4v'e^{2x}+4ve^{2x}\right)
+                -
+                4\left(v'e^{2x}+2ve^{2x}\right)
+                +
+                4ve^{2x}
+                =
+                0.
+            </me>
+
+            <p>
+                Simplifying,
+            </p>
+
+            <me>
+                v''e^{2x}=0.
+            </me>
+
+            <p>
+                Since <m>e^{2x}\neq0</m>,
+            </p>
+
+            <me>
+                v''=0.
+            </me>
+
+            <p>
+                Integrate twice.
+            </p>
+
+            <me>
+                v'=C_1
+            </me>
+
+            <me>
+                v=C_1x+C_2.
+            </me>
+
+            <p>
+                Therefore,
+            </p>
+
+            <me>
+                y_2=(C_1x+C_2)e^{2x}.
+            </me>
+
+            <p>
+                The term <m>C_2e^{2x}</m> reproduces the known solution
+                <m>y_1</m>, so it does not provide a new independent solution.
+            </p>
+
+            <p>
+                Choosing <m>C_1=1</m> and <m>C_2=0</m> gives
+            </p>
+
+            <me>
+                y_2=xe^{2x}.
+            </me>
+
+            <p>
+                Therefore, a fundamental set of solutions is
+            </p>
+
+            <me>
+                y_1=e^{2x},
+                \qquad
+                y_2=xe^{2x}.
+            </me>
+
+            <p>
+                The general solution is
+            </p>
+
+            <me>
+                y=C_1e^{2x}+C_2xe^{2x}.
+            </me>
+
+        </solution>
+
+    </example>
+
+</subsection>
 </section>

@@ -122,7 +122,7 @@
                 Describe the resulting motion.
             </li>
         </ol>
-<image width="50%">
+<image width="30%">
     <shortdescription>Undamped spring-mass system.</shortdescription>
 
     <latex-image>
@@ -194,7 +194,7 @@
                 Explain whether the system oscillates.
             </li>
         </ol>
-<image width="50%">
+<image width="30%">
     <shortdescription>Spring-mass-damper system.</shortdescription>
 
     <latex-image>
@@ -280,7 +280,7 @@ decoration={coil,aspect=0.4,segment length=4pt,amplitude=4pt}]
                 automatic door systems.
             </li>
         </ol>
-<image width="50%">
+<image width="30%">
     <shortdescription>Door angular displacement diagram.</shortdescription>
     <latex-image>
 \begin{tikzpicture}
@@ -370,6 +370,72 @@ decoration={coil,aspect=0.4,segment length=4pt,amplitude=4pt}]
             Lq''+Rq'+\frac{1}{C}q=0.
         </me>
 
+<image width="30%">
+    <shortdescription>  RLC Circuit Diagram  </shortdescription>
+    <latex-image>
+\begin{tikzpicture}
+
+% Left wire
+\draw (0,0) -- (0,2);
+
+% Battery
+\draw (-0.2,0.6) -- (0.2,0.6);
+\draw (-0.4,1.0) -- (0.4,1.0);
+\node[left] at (-0.4,0.8) {$E(t)$};
+
+% Top wire to inductor
+\draw (0,2) -- (1,2);
+
+% Inductor
+\draw
+(1,2)
+arc (180:0:0.2)
+arc (180:0:0.2)
+arc (180:0:0.2)
+arc (180:0:0.2);
+
+\node[above] at (1.8,2.4) {$L$};
+
+% Wire to resistor
+\draw (2.6,2) -- (3.2,2);
+
+% Resistor
+\draw
+(3.2,2)
+-- (3.4,2.2)
+-- (3.6,1.8)
+-- (3.8,2.2)
+-- (4.0,1.8)
+-- (4.2,2.2)
+-- (4.4,1.8)
+-- (4.6,2);
+
+\node[above] at (3.9,2.4) {$R$};
+
+% Wire to capacitor
+\draw (4.6,2) -- (5.4,2);
+
+% Capacitor
+\draw (5.6,1.4) -- (5.6,2.6);
+\draw (5.9,1.4) -- (5.9,2.6);
+
+\node[above] at (5.75,2.8) {$C$};
+
+% Right side
+\draw (5.9,2) -- (6.5,2);
+\draw (6.5,2) -- (6.5,0);
+
+% Bottom wire
+\draw (6.5,0) -- (0,0);
+
+% Current arrow
+\draw[->] (2.8,1.3) -- (4.2,1.3);
+\node[above] at (3.5,1.3) {$i(t)$};
+
+\end{tikzpicture}
+    </latex-image>
+    
+</image>
         <ol>
             <li>
                 Derive the differential equation governing the charge.
@@ -411,7 +477,6 @@ decoration={coil,aspect=0.4,segment length=4pt,amplitude=4pt}]
             C_2\sin(4t)
             \right).
         </me>
-
         <ol>
             <li>
                 Determine the characteristic roots.
@@ -422,6 +487,31 @@ decoration={coil,aspect=0.4,segment length=4pt,amplitude=4pt}]
             </li>
 
             <li>
+<image width="30%">
+    <shortdescription>Measured damped oscillation diagram</shortdescription>
+     <latex-image>
+\begin{tikzpicture}
+
+\draw[->] (0,-2.5)--(7,-2.5);
+\draw[->] (0,-2.5)--(0,2.5);
+
+\draw[domain=0:6,samples=150,smooth]
+plot(\x,{2*exp(-0.3*\x)*cos(deg(3*\x))});
+
+\draw[dashed]
+plot[domain=0:6]
+(\x,{2*exp(-0.3*\x)});
+
+\draw[dashed]
+plot[domain=0:6]
+(\x,{-2*exp(-0.3*\x)});
+
+\node at (6.5,-2.8) {$t$};
+\node at (-0.3,2.3) {$x$};
+
+\end{tikzpicture}
+    </latex-image>
+</image>
                 Determine a differential equation having this solution.
             </li>
 
@@ -459,7 +549,7 @@ decoration={coil,aspect=0.4,segment length=4pt,amplitude=4pt}]
             </li>
 
             <li>
-                What physical behavior corresponds to:
+               <p> What physical behavior corresponds to:</p>
                 <ul>
                     <li>distinct real roots,</li>
                     <li>a repeated root,</li>
