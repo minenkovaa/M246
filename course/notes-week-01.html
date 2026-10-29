@@ -405,6 +405,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#characteristic-roots" class="internal"><span class="title">Solutions from Characteristic Roots</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#nonhomogeneous-methods" class="internal"><span class="title">Methods for Nonhomogeneous Equations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#variation-of-parameters" class="internal"><span class="title">Variation of Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#reduction-of-order" class="internal"><span class="title">Reduction of Order</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -829,8 +830,8 @@ E_3=\begin{bmatrix}
 \begin{equation*}
 \bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d}&amp; \enclose{circle}{e}&amp;\enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\text{\textcircled{\ensuremath{d}}}&amp; \text{\textcircled{\ensuremath{e}}}&amp;\text{\textcircled{\ensuremath{f}}}\\
 \fbox{g} &amp; \fbox{h} &amp; \fbox{i}
 \end{bmatrix}
 \end{equation*}
@@ -838,17 +839,17 @@ A=\begin{bmatrix}
 <div class="displaymath process-math" id="elementary-matrices-3-6">
 \begin{equation*}
 E_1A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}
+\text{\textcircled{\ensuremath{d}}} &amp; \text{\textcircled{\ensuremath{e}}} &amp; \text{\textcircled{\ensuremath{f}}}
 \end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-7">
 \begin{equation*}
 E_2A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\text{\textcircled{\ensuremath{d}}} &amp; \text{\textcircled{\ensuremath{e}}} &amp; \text{\textcircled{\ensuremath{f}}}\\
 \fbox{3g}&amp; \fbox{3h}&amp;\fbox{3i}
 \end{bmatrix}\ (\text{scale row }3 \text{ by }3)
 \end{equation*}
@@ -856,8 +857,8 @@ E_2A=\begin{bmatrix}
 <div class="displaymath process-math" id="elementary-matrices-3-8">
 \begin{equation*}
 E_3A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{4a+d} &amp; \enclose{circle}{4b+e} &amp; \enclose{circle}{4c+f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\text{\textcircled{\ensuremath{4a+d}}} &amp; \text{\textcircled{\ensuremath{4b+e}}} &amp; \text{\textcircled{\ensuremath{4c+f}}}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}
 \end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).
 \end{equation*}
@@ -868,36 +869,36 @@ E_3A=\begin{bmatrix}
 \begin{equation*}
 \bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a}&amp;\text{\textcircled{\ensuremath{b}}}&amp; \fbox{c}\\
+\boxed{d}&amp; \text{\textcircled{\ensuremath{e}}}&amp;\fbox{f}\\
+\boxed{g} &amp; \text{\textcircled{\ensuremath{h}}} &amp; \fbox{i}
 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-11">
 \begin{equation*}
 AE_1=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{box}{c}&amp; \enclose{circle}{b}\\
-\enclose{roundedbox}{d}&amp; \enclose{box}{f}&amp;\enclose{circle}{e}\\
-\enclose{roundedbox}{g} &amp; \enclose{box}{i} &amp; \enclose{circle}{h}
+\boxed{a}&amp;\fbox{c}&amp; \text{\textcircled{\ensuremath{b}}}\\
+\boxed{d}&amp;\fbox{f}&amp;\text{\textcircled{\ensuremath{e}}}\\
+\boxed{g} &amp; \fbox{i} &amp; \text{\textcircled{\ensuremath{h}}}
 \end{bmatrix}\ (\text{swap columns }2\leftrightarrow 3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-12">
 \begin{equation*}
 AE_2=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{3c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{3f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{3i}
+\boxed{a}&amp;\text{\textcircled{\ensuremath{b}}}&amp; \fbox{3c}\\
+\boxed{d}&amp;\text{\textcircled{\ensuremath{e}}}&amp;\fbox{3f}\\
+\boxed{g} &amp; \text{\textcircled{\ensuremath{h}}} &amp; \fbox{3i}
 \end{bmatrix}\ (\text{scale column }3 \text{ by }3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-13">
 \begin{equation*}
 AE_3=\begin{bmatrix}
-\enclose{roundedbox}{a+4b}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d+4e} &amp; \enclose{circle}{e} &amp; \enclose{box}{f}\\
-\enclose{roundedbox}{g+4h} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a+4b}&amp;\text{\textcircled{\ensuremath{b}}}&amp; \fbox{c}\\
+\boxed{d+4e} &amp; \text{\textcircled{\ensuremath{e}}} &amp; \fbox{f}\\
+\boxed{g+4h} &amp; \text{\textcircled{\ensuremath{h}}} &amp; \fbox{i}
 \end{bmatrix} (\text{column }1\to\text{column }1+4\,\text{column }2).
 \end{equation*}
 </div>

@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus        Course Information  This is the syllabus for M246 Applied Math for CE for Fall 2026. It is a 4 credit course.   Instructor  Dr. Anastasia Minenkova, Dana Hall 237, minenkova@hartford.edu .    Office Hours  Tue,Thu 1:00-2:00 p.m., Fridays or by appointment, Dana Hall 237.    Class meets  on TTh 8:05-9:45 a.m. in Dana Hall 205    Course Description  Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)    Prerequisite  M145.        Course Overview   By the end of the semester, you should be able to:    successfully complete computations, including solving systems of equations and computing eigenvalues.    demonstrate understanding of solving certain types of ordinary differential equations.    analyze or describe the existence\/uniqueness of a solution to a partial differential equation.    compute the partial derivatives of functions of several variables and use this to solve various problems, including optimization problems.    utilize integration you did in Calculus II to three (or more) dimensions.        Assessments and Grades   Important Dates (tentative)   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.    Grade Breakdown      Assignment Category  Percentage of Grade    Homework  20%    Class Participation (including Reflection Posts)  20%    MATLAB Labs  20%    Project  10%    Presentations  10%    Midterm Exams  20%    Final Exam  10%       Assessment of Mathematical Engagement  Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.   Homework  Homework problems will be assigned for each topic. 1 homework assignment will be dropped.   Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. They will count towards your participation part of the grade.   In-Class Participation  Throughout the semester, we will engage in active learning activities such as gallery walks, group problem-solving, and practice sessions during class. These activities are designed to help you develop mathematical reasoning, communicate your ideas, and learn from your peers. Your participation may include contributing to group discussions, working through problems collaboratively, and sharing solutions or strategies. Consistent, meaningful engagement in these activities will count toward the participation portion of your grade.   Midterms and Final  The exams are cumulative in a sense that you will need to know some previous material in order to successfully solve the problems. The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). The exams are open book. If you have special accommodations please talk to me as soon as you can.   MATLAB Computational Labs  The goals of these labs are to familiarize students with MatLab (which, as a UHart student, you can get for free here: https:\/\/www.hartford.edu\/academics\/resources\/matlab\/MATLAB.html) and to use the concepts from differential equations and linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! The grade will consist of 20 points: 10 \"for correctness\" and 10 \"for presentation\".       Acknowledgement: Portions of the MATLAB and PreTeXt code used in this course were developed with assistance from Microsoft Copilot. All generated content was reviewed, tested, and adapted for instructional use by the course instructor.    Course Policies   Attendance  Attendance is expected and critical to your success, and you will be missed if you are absent. Showing up is a key to success in all aspects of life. At the same time, I realize that it may be necessary for you to miss some class meetings due to work, family commitments, and so forth. In that case, let me know of your absence, and we can come up with a plan to help you stay up-to-date.  One important note though: in this class, just like in every other class, missing a day of class, even with a perfectly valid excuse, does not excuse you from learning what was covered that day. As your instructor, I will try to help you catch up, but this will take more work than it would have if you were in class.    Late work  All assignments have due dates; these exist to help you manage your workload and help me manage getting you feedback in a timely manner. To help motivate you to keep these deadlines, turning in your work on or before the due date will have the following benefits:   Approximately 5% free points on the assignment (for most work that I manually grade).    You will be among the first students to receive feedback\/grades on the assignment.    Opportunity to revise submitted work for a better grade.    Less stress about upcoming work and easier\/better learning for the next topic in class.   Additionally, most assignments will have an absolute cut-off for late work one week after the official due date. This is intended to give you a little flexibility but also not let old work pile up on top of you; sometimes it is just better to start with a clean slate and dive into the next thing.  Of course, life can happen and you don't owe me an explanation for why you might occasionally miss a deadline. Just let me know if you will be handing in something late and when I can expect it. This should not occur regularly; if you are having trouble meeting deadlines consistently, let's chat and make a plan.    Class Preparation and Attendance  While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.   Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking HERE   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy HERE To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880) title9@hartford.edu or mckenna@hartford.edu ; Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.    Generative AI  Generative AI tools (such as ChatGPT, Google Gemini, or CoPilot) are everywhere and present exciting opportunities. Some tasks AI can help us with can clear the way for more important things; but AI can also rob us of the opportunity to do the important things ourselves. It is your responsibility to ensure that you use these tools with academic integrity.  What does this mean? Ask yourself what you hope to get out of this course. I really hope your answer involves learning new skills, becoming a better thinker, and understanding mathematics at a deeper level (even if these goals are in service to eventually getting a better paying and more fulfilling job).  AI tools might be able to help you achieve these goals. Here are a few example prompts that you might find useful and are completely inline with these goals.    I am trying to learn the concept . Give me a sample question and ask me to find the answer and explain how I found it to you. Then ask me some followup questions, acting like a student I am tutoring on the topic. Make sure I can explain everything sufficiently so you can understand the concepts involved.      My professor gave me this sample quiz question: . Generate 5 additional questions that are similar in style and difficulty and ask me to give you the answers. Don't give me solutions until I have done so, but point out any errors I might have made.      Here is an example from my textbook: . Make up a similar question and walk me through a solution step my step, asking me to ask questions after each step to make sure I really understand the process.       Warning: As good as AI has become recently, it is still not great at mathematics, so anything you get out of a generative AI tool should be approached with a fair amount of skepticism. This is also a good way to learn mathematics though: play find the mistake in what AI gives you!  To be clear, you should NOT use AI tools to shortcut the learning process. Getting someone else to do your work for you (even if that someone is a robot) is plagiarism and a violation of the academic integrity policy. If you have any doubt about whether you are using AI productively, I'd love to have a conversation about it with you.    "
+  "body": " Syllabus        Course Information  This is the syllabus for M246 Applied Math for CE for Fall 2026. It is a 4 credit course.   Instructor  Dr. Anastasiia Minenkova, Dana Hall 237, minenkova@hartford.edu .    Office Hours  Tue,Thu 1:00-2:00 p.m., Fridays or by appointment, Dana Hall 237.    Class meets  on TTh 8:05-9:45 a.m. in Dana Hall 205    Course Description  Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)    Prerequisite  M145.        Course Overview   By the end of the semester, you should be able to:    successfully complete computations, including solving systems of equations and computing eigenvalues.    demonstrate understanding of solving certain types of ordinary differential equations.    analyze or describe the existence\/uniqueness of a solution to a partial differential equation.    compute the partial derivatives of functions of several variables and use this to solve various problems, including optimization problems.    utilize integration you did in Calculus II to three (or more) dimensions.        Assessments and Grades   Important Dates (tentative)   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.    Grade Breakdown      Assignment Category  Percentage of Grade    Homework  20%    Class Participation (including Reflection Posts)  20%    MATLAB Labs  20%    Project  10%    Presentations  10%    Midterm Exams  20%    Final Exam  10%       Assessment of Mathematical Engagement  Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.   Homework  Homework problems will be assigned for each topic. 1 homework assignment will be dropped.   Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. They will count towards your participation part of the grade.   In-Class Participation  Throughout the semester, we will engage in active learning activities such as gallery walks, group problem-solving, and practice sessions during class. These activities are designed to help you develop mathematical reasoning, communicate your ideas, and learn from your peers. Your participation may include contributing to group discussions, working through problems collaboratively, and sharing solutions or strategies. Consistent, meaningful engagement in these activities will count toward the participation portion of your grade.   Midterms and Final  The exams are cumulative in a sense that you will need to know some previous material in order to successfully solve the problems. The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). The exams are open book. If you have special accommodations please talk to me as soon as you can.   MATLAB Computational Labs  The goals of these labs are to familiarize students with MatLab (which, as a UHart student, you can get for free here: https:\/\/www.hartford.edu\/academics\/resources\/matlab\/MATLAB.html) and to use the concepts from differential equations and linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! The grade will consist of 20 points: 10 \"for correctness\" and 10 \"for presentation\".       Acknowledgement: Portions of the MATLAB and PreTeXt code used in this course were developed with assistance from Microsoft Copilot. All generated content was reviewed, tested, and adapted for instructional use by the course instructor.    Course Policies   Attendance  Attendance is expected and critical to your success, and you will be missed if you are absent. Showing up is a key to success in all aspects of life. At the same time, I realize that it may be necessary for you to miss some class meetings due to work, family commitments, and so forth. In that case, let me know of your absence, and we can come up with a plan to help you stay up-to-date.  One important note though: in this class, just like in every other class, missing a day of class, even with a perfectly valid excuse, does not excuse you from learning what was covered that day. As your instructor, I will try to help you catch up, but this will take more work than it would have if you were in class.    Late work  All assignments have due dates; these exist to help you manage your workload and help me manage getting you feedback in a timely manner. To help motivate you to keep these deadlines, turning in your work on or before the due date will have the following benefits:   Approximately 5% free points on the assignment (for most work that I manually grade).    You will be among the first students to receive feedback\/grades on the assignment.    Opportunity to revise submitted work for a better grade.    Less stress about upcoming work and easier\/better learning for the next topic in class.   Additionally, most assignments will have an absolute cut-off for late work one week after the official due date. This is intended to give you a little flexibility but also not let old work pile up on top of you; sometimes it is just better to start with a clean slate and dive into the next thing.  Of course, life can happen and you don't owe me an explanation for why you might occasionally miss a deadline. Just let me know if you will be handing in something late and when I can expect it. This should not occur regularly; if you are having trouble meeting deadlines consistently, let's chat and make a plan.    Class Preparation and Attendance  While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.   Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking HERE   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy HERE To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880) title9@hartford.edu or mckenna@hartford.edu ; Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.    Generative AI  Generative AI tools (such as ChatGPT, Google Gemini, or CoPilot) are everywhere and present exciting opportunities. Some tasks AI can help us with can clear the way for more important things; but AI can also rob us of the opportunity to do the important things ourselves. It is your responsibility to ensure that you use these tools with academic integrity.  What does this mean? Ask yourself what you hope to get out of this course. I really hope your answer involves learning new skills, becoming a better thinker, and understanding mathematics at a deeper level (even if these goals are in service to eventually getting a better paying and more fulfilling job).  AI tools might be able to help you achieve these goals. Here are a few example prompts that you might find useful and are completely inline with these goals.    I am trying to learn the concept . Give me a sample question and ask me to find the answer and explain how I found it to you. Then ask me some followup questions, acting like a student I am tutoring on the topic. Make sure I can explain everything sufficiently so you can understand the concepts involved.      My professor gave me this sample quiz question: . Generate 5 additional questions that are similar in style and difficulty and ask me to give you the answers. Don't give me solutions until I have done so, but point out any errors I might have made.      Here is an example from my textbook: . Make up a similar question and walk me through a solution step my step, asking me to ask questions after each step to make sure I really understand the process.       Warning: As good as AI has become recently, it is still not great at mathematics, so anything you get out of a generative AI tool should be approached with a fair amount of skepticism. This is also a good way to learn mathematics though: play find the mistake in what AI gives you!  To be clear, you should NOT use AI tools to shortcut the learning process. Getting someone else to do your work for you (even if that someone is a robot) is plagiarism and a violation of the academic integrity policy. If you have any doubt about whether you are using AI productively, I'd love to have a conversation about it with you.    "
 },
 {
   "id": "sec-course-info-2",
@@ -1303,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 7: Second-order linear ODEs",
-  "body": " Week 7: Second-order linear ODEs   Introduction to Second-Order Differential Equations   After studying this section, you should be able to:   Define a second-order differential equation.  Distinguish between linear and nonlinear differential equations.  Distinguish between homogeneous and nonhomogeneous equations.  Explain why exponential functions are used to solve constant-coefficient differential equations.  Form the characteristic equation.  Determine solutions corresponding to distinct real roots, repeated roots, and complex roots.  Describe common methods used to solve nonhomogeneous equations.  Apply variation of parameters to find particular solutions.    A second-order differential equation is an equation involving the second derivative of an unknown function. Many mathematical models from physics and engineering naturally lead to second-order differential equations.   Second-Order Differential Equation  A second-order differential equation is an equation involving the second derivative of an unknown function.     Examples  The following are second-order differential equations.        Linear Second-Order Differential Equations  The standard form of a linear second-order differential equation is   where .   Homogeneous Equation  If , then   is called a homogeneous differential equation.    Nonhomogeneous Equation  If , then the equation is called nonhomogeneous.    A Nonhomogeneous Equation   This is a nonhomogeneous linear differential equation.     Constant-Coefficient Equations  In this part we focus primarily on equations of the form   where , , and are constants.    Why Exponential Functions?  Exponential functions are useful because differentiation preserves their basic form.  Suppose   Then    Substituting these expressions into   gives   Factoring out yields   Since , we obtain   This algebraic equation is called the characteristic equation.    Solutions from Characteristic Roots   Characteristic Root Cases  Consider   Let   be its characteristic equation.   If the roots are distinct real numbers and , then   If the root is repeated, then   If the roots are , then     To determine the constants and , we need two conditions, usually given as   Find the solution of   The characteristic equation is   The roots are and . Thus the general solution is   Using the initial conditions, we have    Solving this system of equations, we find and . Therefore, the solution is       Methods for Nonhomogeneous Equations  For a nonhomogeneous equation   the general solution has the form   where is the complementary solution and is a particular solution.  Common methods for finding particular solutions include:   Method of Undetermined Coefficients  Variation of Parameters  Reduction of Order  Power Series Methods     Variation of Parameters  Variation of parameters is one of the most general methods for finding particular solutions of linear differential equations. Unlike undetermined coefficients, it may be used for variable- coefficient equations.  Consider   Suppose the corresponding homogeneous equation has linearly independent solutions and .  Then   Variation of parameters replaces the constants by functions:   Define the Wronskian   The functions and satisfy    Integrating gives    A particular solution is   and the complete solution is     Variation of Parameters for a Variable-Coefficient Equation  Solve    Divide by .   Solve the homogeneous equation by trying .     Thus   The complementary solution is   Compute the Wronskian.   Since ,    Integrating gives   Therefore    Since belongs to the complementary solution, we may absorb it into the constant .  Hence,   The solution is     "
+  "body": " Week 7: Second-order linear ODEs   Introduction to Second-Order Differential Equations   After studying this section, you should be able to:   Define a second-order differential equation.  Distinguish between linear and nonlinear differential equations.  Distinguish between homogeneous and nonhomogeneous equations.  Explain why exponential functions are used to solve constant-coefficient differential equations.  Form the characteristic equation.  Determine solutions corresponding to distinct real roots, repeated roots, and complex roots.  Describe common methods used to solve nonhomogeneous equations.  Apply variation of parameters to find particular solutions.    A second-order differential equation is an equation involving the second derivative of an unknown function. Many mathematical models from physics and engineering naturally lead to second-order differential equations.   Second-Order Differential Equation  A second-order differential equation is an equation involving the second derivative of an unknown function.     Examples  The following are second-order differential equations.        Linear Second-Order Differential Equations  The standard form of a linear second-order differential equation is   where .   Homogeneous Equation  If , then   is called a homogeneous differential equation.    Nonhomogeneous Equation  If , then the equation is called nonhomogeneous.    A Nonhomogeneous Equation   This is a nonhomogeneous linear differential equation.     Constant-Coefficient Equations  In this part we focus primarily on equations of the form   where , , and are constants.    Why Exponential Functions?  Exponential functions are useful because differentiation preserves their basic form.  Suppose   Then    Substituting these expressions into   gives   Factoring out yields   Since , we obtain   This algebraic equation is called the characteristic equation.    Solutions from Characteristic Roots   Characteristic Root Cases  Consider   Let   be its characteristic equation.   If the roots are distinct real numbers and , then   If the root is repeated, then   If the roots are , then     To determine the constants and , we need two conditions, usually given as   Find the solution of   The characteristic equation is   The roots are and . Thus the general solution is   Using the initial conditions, we have    Solving this system of equations, we find and . Therefore, the solution is       Methods for Nonhomogeneous Equations  For a nonhomogeneous equation   the general solution has the form   where is the complementary solution and is a particular solution.  Common methods for finding particular solutions include:   Method of Undetermined Coefficients  Variation of Parameters  Reduction of Order  Power Series Methods     Variation of Parameters  Variation of parameters is one of the most general methods for finding particular solutions of linear differential equations. Unlike undetermined coefficients, it may be used for variable- coefficient equations.  Consider   Suppose the corresponding homogeneous equation has linearly independent solutions and .  Then   Variation of parameters replaces the constants by functions:   Define the Wronskian   The functions and satisfy    Integrating gives    A particular solution is   and the complete solution is     Variation of Parameters for a Variable-Coefficient Equation  Solve    Divide by .   Solve the homogeneous equation by trying .     Thus   The complementary solution is   Compute the Wronskian.   Since ,    Integrating gives   Therefore    Since belongs to the complementary solution, we may absorb it into the constant .  Hence,   The solution is      Reduction of Order  Reduction of order is a method used to find a second linearly independent solution of a homogeneous second-order differential equation when one solution is already known.  Consider the differential equation   Suppose one solution, , is known. To find a second solution, we assume that it has the form   where is an unknown function.  The procedure is:   Assume .  Compute and .  Substitute into the differential equation.  Simplify to obtain an equation involving .  Solve for .  Substitute back into .  Write the general solution using both independent solutions.    Finding a Second Solution by Reduction of Order  One solution of the differential equation   is   Use reduction of order to find a second linearly independent solution and write the general solution.   Since one solution is already known, assume a second solution has the form   Substituting gives   Compute the derivatives.    Substitute into the differential equation.   Simplifying,   Since ,   Integrate twice.    Therefore,   The term reproduces the known solution , so it does not provide a new independent solution.  Choosing and gives   Therefore, a fundamental set of solutions is   The general solution is      "
 },
 {
   "id": "def-second-order",
@@ -1376,6 +1376,15 @@ var ptx_lunr_docs = [
   "number": "132",
   "title": "Variation of Parameters for a Variable-Coefficient Equation.",
   "body": " Variation of Parameters for a Variable-Coefficient Equation  Solve    Divide by .   Solve the homogeneous equation by trying .     Thus   The complementary solution is   Compute the Wronskian.   Since ,    Integrating gives   Therefore    Since belongs to the complementary solution, we may absorb it into the constant .  Hence,   The solution is    "
+},
+{
+  "id": "reduction-order-example",
+  "level": "2",
+  "url": "notes-week-07.html#reduction-order-example",
+  "type": "Example",
+  "number": "133",
+  "title": "Finding a Second Solution by Reduction of Order.",
+  "body": " Finding a Second Solution by Reduction of Order  One solution of the differential equation   is   Use reduction of order to find a second linearly independent solution and write the general solution.   Since one solution is already known, assume a second solution has the form   Substituting gives   Compute the derivatives.    Substitute into the differential equation.   Simplifying,   Since ,   Integrate twice.    Therefore,   The term reproduces the known solution , so it does not provide a new independent solution.  Choosing and gives   Therefore, a fundamental set of solutions is   The general solution is    "
 },
 {
   "id": "notes-week-08",
@@ -1463,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "133",
+  "number": "134",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1526,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "134",
+  "number": "135",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1589,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "135",
+  "number": "136",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1607,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "136",
+  "number": "137",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1706,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "137",
+  "number": "138",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -1715,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "138",
+  "number": "139",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -1724,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "139",
+  "number": "140",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -1733,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "140",
+  "number": "141",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -1742,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "141",
+  "number": "142",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -1760,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "142",
+  "number": "143",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -1769,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "143",
+  "number": "144",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -1778,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "144",
+  "number": "145",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -1787,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "145",
+  "number": "146",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -1796,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "146",
+  "number": "147",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
@@ -1814,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-2",
   "type": "Checkpoint",
-  "number": "147",
+  "number": "148",
   "title": "Find the Inverse.",
   "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
 },
@@ -1823,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-3",
   "type": "Checkpoint",
-  "number": "148",
+  "number": "149",
   "title": "Verify the Inverse.",
   "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
 },
@@ -1832,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-4",
   "type": "Checkpoint",
-  "number": "149",
+  "number": "150",
   "title": "Error Analysis.",
   "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
 },
@@ -1841,7 +1850,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-5",
   "type": "Checkpoint",
-  "number": "150",
+  "number": "151",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
 },
@@ -1850,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-6",
   "type": "Checkpoint",
-  "number": "151",
+  "number": "152",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
@@ -1868,7 +1877,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-2",
   "type": "Checkpoint",
-  "number": "152",
+  "number": "153",
   "title": "Find the Determinant.",
   "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
 },
@@ -1877,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-3",
   "type": "Checkpoint",
-  "number": "153",
+  "number": "154",
   "title": "Determinant of a Product.",
   "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
 },
@@ -1886,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-4",
   "type": "Checkpoint",
-  "number": "154",
+  "number": "155",
   "title": "Can You Add Determinants?",
   "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
 },
@@ -1895,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-5",
   "type": "Checkpoint",
-  "number": "155",
+  "number": "156",
   "title": "Effect of Row Operations.",
   "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
 },
@@ -1904,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-6",
   "type": "Checkpoint",
-  "number": "156",
+  "number": "157",
   "title": "Determinants of Inverses and Transposes.",
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
@@ -1922,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-2",
   "type": "Checkpoint",
-  "number": "157",
+  "number": "158",
   "title": "Cement Mixing.",
   "body": " Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.  "
 },
@@ -1931,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-3",
   "type": "Checkpoint",
-  "number": "158",
+  "number": "159",
   "title": "Step 1: Linear system as a mathematical model.",
   "body": " Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.  "
 },
@@ -1940,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-4",
   "type": "Checkpoint",
-  "number": "159",
+  "number": "160",
   "title": "Step 2: Solve using Gaussian Elimination.",
   "body": " Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.  "
 },
@@ -1949,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-5",
   "type": "Checkpoint",
-  "number": "160",
+  "number": "161",
   "title": "Step 3: Interpretation.",
   "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
 },
@@ -1967,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-3",
   "type": "Checkpoint",
-  "number": "161",
+  "number": "162",
   "title": "Recognizing Surfaces.",
   "body": " Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).        "
 },
@@ -1976,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-4",
   "type": "Checkpoint",
-  "number": "162",
+  "number": "163",
   "title": "Intersections of Surfaces.",
   "body": " Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and   "
 },
@@ -1985,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-5",
   "type": "Checkpoint",
-  "number": "163",
+  "number": "164",
   "title": "Possible Intersections of Two Spheres.",
   "body": " Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .   "
 },
@@ -1994,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-6",
   "type": "Checkpoint",
-  "number": "164",
+  "number": "165",
   "title": "Vector Operations.",
   "body": " Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.   "
 },
@@ -2003,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-7",
   "type": "Checkpoint",
-  "number": "165",
+  "number": "166",
   "title": "Orthogonal Vectors.",
   "body": " Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?   "
 },
@@ -2021,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-3",
   "type": "Checkpoint",
-  "number": "166",
+  "number": "167",
   "title": "How Many Ways Can You Approach a Point?",
   "body": " How Many Ways Can You Approach a Point?   Investigate why limits in several variables are more complicated than limits in one variable.    Several colored curves approaching the same point in the plane, illustrating how multiple paths can lead to different limit behaviors.     How many different paths can approach a point in the plane?  Why might this create challenges when evaluating limits?  Describe a strategy for showing a limit does NOT exist.   "
 },
@@ -2030,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-4",
   "type": "Checkpoint",
-  "number": "167",
+  "number": "168",
   "title": "Reading Slopes from Surfaces.",
   "body": " Reading Slopes from Surfaces   A 3D surface diagram with a vertical slice showing how fixing x produces a curve whose slope indicates a partial derivative.     What does fixing create?  What information does the slope of the curve provide?  What do you think measures?  How would the interpretation change for ?   "
 },
@@ -2039,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-5",
   "type": "Checkpoint",
-  "number": "168",
+  "number": "169",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let      Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -2048,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-6",
   "type": "Checkpoint",
-  "number": "169",
+  "number": "170",
   "title": "Which Points Matter?",
   "body": " Which Points Matter?  The figure below contains three separate contour maps.   The upper-left map represents a hill. Elevation increases as you move toward the center of the nested contours.  The upper-right map represents a valley. Elevation decreases as you move toward the center of the nested contours.  The lower map represents a mountain pass. Moving through the center in one direction increases elevation, while moving through the center in a perpendicular direction decreases elevation.   Points , , , and are marked for investigation. Use only the contour information to classify the points before using any calculus.    Contour maps showing a hill, valley, and mountain pass with labeled points A, B, C, and D for classification.      Identify all local maxima.  Identify all local minima.  Identify all saddle points.  Identify points that are neither.  Defend your reasoning using geometry.   "
 },
@@ -2057,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-7",
   "type": "Checkpoint",
-  "number": "170",
+  "number": "171",
   "title": "Where Can a Maximum Occur?",
   "body": " Where Can a Maximum Occur?  A continuous function is defined on an open disk and another one on a closed triangle.   Must a maximum exist?  Must a minimum exist?  Where can a maximum occur? (inside? edge? vertex?)  Construct examples supporting your answer.   "
 },
@@ -2075,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-3",
   "type": "Checkpoint",
-  "number": "171",
+  "number": "172",
   "title": "A Limit That Does Not Exist.",
   "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
 },
@@ -2084,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-4",
   "type": "Checkpoint",
-  "number": "172",
+  "number": "173",
   "title": "First and Second Partial Derivatives.",
   "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
 },
@@ -2093,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-5",
   "type": "Checkpoint",
-  "number": "173",
+  "number": "174",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -2102,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-6",
   "type": "Checkpoint",
-  "number": "174",
+  "number": "175",
   "title": "Critical Point and Hessian: Local Maximum.",
   "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
 },
@@ -2111,7 +2120,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-7",
   "type": "Checkpoint",
-  "number": "175",
+  "number": "176",
   "title": "Critical Point and Hessian: Local Minimum.",
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
@@ -2129,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-2",
   "type": "Checkpoint",
-  "number": "176",
+  "number": "177",
   "title": "",
   "body": " Evaluate the scalar line integral.   where is the curve given by .   Find .  Compute .  Rewrite the integral in terms of .  Evaluate.   "
 },
@@ -2138,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-3",
   "type": "Checkpoint",
-  "number": "177",
+  "number": "178",
   "title": "",
   "body": " Find the circulation of the vector field around the unit circle oriented counterclockwise.     Parameterize the curve.  Compute .  Rewrite the integral in terms of the parameter.  Evaluate.   "
 },
@@ -2147,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-4",
   "type": "Checkpoint",
-  "number": "178",
+  "number": "179",
   "title": "",
   "body": " Consider the vector field   Evaluate the line integral   from to using two different paths. Determine whether the integral depends on the path.   Straight line path  Path along a curve   "
 },
@@ -2156,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-5",
   "type": "Checkpoint",
-  "number": "179",
+  "number": "180",
   "title": "",
   "body": " Compute the flux of the vector field   through the portion of the plane   lying above the square    Determine an upward-pointing unit normal vector.  Compute on the surface.  Set up the flux integral.  Evaluate the integral.    Since the surface is the horizontal plane , think what the upward unit normal vector is.   "
 },
@@ -2165,7 +2174,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-6",
   "type": "Checkpoint",
-  "number": "180",
+  "number": "181",
   "title": "",
   "body": " Evaluate a scalar surface integral over a paraboloid over a disk .   "
 },
@@ -2183,7 +2192,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-3",
   "type": "Checkpoint",
-  "number": "181",
+  "number": "182",
   "title": "",
   "body": " Consider the differential equation   Hints:   Can you separate the variables?  Can all -terms be placed on one side and all -terms on the other?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2192,7 +2201,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-5",
   "type": "Checkpoint",
-  "number": "182",
+  "number": "183",
   "title": "",
   "body": " Consider the differential equation   Hints:   Does the equation match the form ?  If so, what is the integrating factor?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2201,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-7",
   "type": "Checkpoint",
-  "number": "183",
+  "number": "184",
   "title": "",
   "body": " Consider the differential equation   Hints:   Identify and .  Compute .  Compute .  Compare the two derivatives.   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2210,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-9",
   "type": "Checkpoint",
-  "number": "184",
+  "number": "185",
   "title": "",
   "body": " Consider the differential equation   Hints:   Does the equation fit the form ?  What is the value of ?  What substitution is commonly used?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2219,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-11",
   "type": "Checkpoint",
-  "number": "185",
+  "number": "186",
   "title": "",
   "body": " The temperature of freshly poured concrete on a bridge deck is . The surrounding air temperature is . Engineers assume the cooling rate is proportional to the difference between the concrete temperature and the air temperature.  Hints:   What quantity is changing?  What quantity determines the rate of change?  What does the phrase “proportional to” suggest?   Complete the following:   Define a variable for temperature.  Write a differential equation that models the situation.  What type of differential equation is it?  What solution method would you use?   "
 },
@@ -2237,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-4",
   "type": "Checkpoint",
-  "number": "186",
+  "number": "187",
   "title": "Fundamental Sets of Solutions and the Wronskian.",
   "body": " Fundamental Sets of Solutions and the Wronskian  Determine whether the given functions form a fundamental set of solutions for the differential equation.   Consider   Determine whether   form a fundamental set of solutions.  Compute the Wronskian.   Consider   Determine whether   form a fundamental set of solutions.    Verify that   are solutions of   Compute the Wronskian and determine whether they form a fundamental set of solutions.   "
 },
@@ -2246,7 +2255,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-5",
   "type": "Checkpoint",
-  "number": "187",
+  "number": "188",
   "title": "Undetermined Coefficients.",
   "body": " Undetermined Coefficients   Solve using undetermined coefficients.   Solve using undetermined coefficients.   Pay careful attention to resonance.   Solve using undetermined coefficients.    "
 },
@@ -2255,7 +2264,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-6",
   "type": "Checkpoint",
-  "number": "188",
+  "number": "189",
   "title": "Reduction of Order.",
   "body": " Reduction of Order   One solution of   is   Use reduction of order to find a second linearly independent solution.   One solution of   is   Use reduction of order to find a second solution.  "
 },
@@ -2264,7 +2273,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-7",
   "type": "Checkpoint",
-  "number": "189",
+  "number": "190",
   "title": "Complementary and Particular Solutions.",
   "body": " Complementary and Particular Solutions   Find the complementary solution, a particular solution, and the general solution.    Find the complementary solution, a particular solution, and the general solution.   "
 },
@@ -2273,7 +2282,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-8",
   "type": "Checkpoint",
-  "number": "190",
+  "number": "191",
   "title": "Variation of Parameters.",
   "body": " Variation of Parameters   Solve using variation of parameters.    Solve using variation of parameters.   Keep your answer in integral form if necessary.   Solve the following differential equation using variation of parameters.   Begin by finding the complementary solution. Then use variation of parameters to obtain a particular solution.  Simplify your final answer as much as possible.   "
 },
@@ -2284,14 +2293,14 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Engineering Modeling Activity: Building and Solving Second-Order Differential Equations",
-  "body": " Engineering Modeling Activity: Building and Solving Second-Order Differential Equations   Engineers frequently develop differential equations directly from physical systems. In this activity, your task is not only to solve differential equations but also to construct the mathematical model from a physical description.  For each scenario:   Identify the relevant physical quantities.  Write the governing physical law.  Develop the differential equation.  Identify the coefficients.  Classify the roots of the characteristic equation.  Solve the differential equation.  Interpret the physical meaning of the solution.     Reference Formulas and Hints  The following engineering relationships may be useful.   Newton's Second Law     Hooke's Law (Spring Force)   where is the spring constant.    Damping Force   where is the damping coefficient.    Series RLC Circuit   where represents charge.     Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.      Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.      Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.      Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.     RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?     Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.  Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.    Reflection Questions   How does increasing the damping coefficient affect the characteristic roots?  What physical behavior corresponds to:  distinct real roots,  a repeated root,  complex roots?    Why do oscillatory systems lead naturally to complex roots?  What similarities did you observe between mechanical and electrical systems?    "
+  "body": " Engineering Modeling Activity: Building and Solving Second-Order Differential Equations   Engineers frequently develop differential equations directly from physical systems. In this activity, your task is not only to solve differential equations but also to construct the mathematical model from a physical description.  For each scenario:   Identify the relevant physical quantities.  Write the governing physical law.  Develop the differential equation.  Identify the coefficients.  Classify the roots of the characteristic equation.  Solve the differential equation.  Interpret the physical meaning of the solution.     Reference Formulas and Hints  The following engineering relationships may be useful.   Newton's Second Law     Hooke's Law (Spring Force)   where is the spring constant.    Damping Force   where is the damping coefficient.    Series RLC Circuit   where represents charge.     Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.      Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.      Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.      Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.     RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?     Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.    Measured damped oscillation diagram   Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.    Reflection Questions   How does increasing the damping coefficient affect the characteristic roots?   What physical behavior corresponds to:   distinct real roots,  a repeated root,  complex roots?    Why do oscillatory systems lead naturally to complex roots?  What similarities did you observe between mechanical and electrical systems?    "
 },
 {
   "id": "handouts-14-3-3",
   "level": "2",
   "url": "handouts-14.html#handouts-14-3-3",
   "type": "Definition",
-  "number": "191",
+  "number": "192",
   "title": "Newton’s Second Law.",
   "body": " Newton's Second Law   "
 },
@@ -2300,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-3-4",
   "type": "Definition",
-  "number": "192",
+  "number": "193",
   "title": "Hooke’s Law (Spring Force).",
   "body": " Hooke's Law (Spring Force)   where is the spring constant.  "
 },
@@ -2309,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-3-5",
   "type": "Definition",
-  "number": "193",
+  "number": "194",
   "title": "Damping Force.",
   "body": " Damping Force   where is the damping coefficient.  "
 },
@@ -2318,7 +2327,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-3-6",
   "type": "Definition",
-  "number": "194",
+  "number": "195",
   "title": "Series RLC Circuit.",
   "body": " Series RLC Circuit   where represents charge.  "
 },
@@ -2327,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-4",
   "type": "Checkpoint",
-  "number": "195",
+  "number": "196",
   "title": "Undamped Spring-Mass System.",
   "body": " Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.    "
 },
@@ -2336,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-5",
   "type": "Checkpoint",
-  "number": "196",
+  "number": "197",
   "title": "Vibration Isolation Mount.",
   "body": " Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.    "
 },
@@ -2345,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-6",
   "type": "Checkpoint",
-  "number": "197",
+  "number": "198",
   "title": "Critically Damped Door Closer.",
   "body": " Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.    "
 },
@@ -2354,7 +2363,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-7",
   "type": "Checkpoint",
-  "number": "198",
+  "number": "199",
   "title": "Designing for a Desired Response.",
   "body": " Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.   "
 },
@@ -2363,18 +2372,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-14.html#handouts-14-8",
   "type": "Checkpoint",
-  "number": "199",
+  "number": "200",
   "title": "RLC Circuit Modeling.",
-  "body": " RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?   "
+  "body": " RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?   "
 },
 {
   "id": "handouts-14-9",
   "level": "2",
   "url": "handouts-14.html#handouts-14-9",
   "type": "Checkpoint",
-  "number": "200",
+  "number": "201",
   "title": "Challenge Activity: Reverse Engineering a System.",
-  "body": " Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.  Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.  "
+  "body": " Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.    Measured damped oscillation diagram   Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.  "
 },
 {
   "id": "homework-2",
@@ -2732,7 +2741,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "203",
+  "number": "204",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
 }
