@@ -332,17 +332,13 @@ For each solution below:
 
 <p>
 A student writes
-</p>
-
-<md>
+<m>
 \frac{1}{s(s+1)}
 =
 \frac{1}{s}
 +
 \frac{1}{s+1}
-</md>
-
-<p>
+</m>
 and concludes
 </p>
 
@@ -359,16 +355,14 @@ and concludes
 
 <p>
 A student claims
-</p>
-
-<md>
+<m>
 \mathcal{L}^{-1}
 \left\{
 \frac{e^{-3s}}{s^2}
 \right\}
 =
 t-3.
-</md>
+</m></p>
 
 <p>Problem C: Complex Eigenvalues</p>
 
@@ -388,13 +382,9 @@ For the system
 
 <p>
 a student finds
-</p>
-
-<md>
+<m>
 \lambda=2\pm3i
-</md>
-
-<p>
+</m> 
 and concludes:
 </p>
 
@@ -409,16 +399,12 @@ and concludes:
 <p>Problem D: Initial Value Problems</p>
 
 <p>
-A student is solving
-</p>
-
-<md>
+A student is solving 
+<m>
 y'+2y=0,
 \qquad
 y(0)=3
-</md>
-
-<p>
+</m> 
 and writes
 </p>
 
