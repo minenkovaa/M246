@@ -3,19 +3,294 @@
 <section xml:id="notes-week-10">
   <title>Week 10: Heat and wave equations </title>
 
-  <subsection>
-    <title>Tuesday</title>
 
-    <p> Heat and wave equations and their solution.
-    </p>
-  </subsection>
+<subsection xml:id="w10-heat">
+<title>The Heat Equation</title>
+
+<definition>
+<title>One-Dimensional Heat Equation</title>
+<statement>
+<md>u_t=ku_{xx}</md>
+<p>Here <m>u(x,t)</m> is temperature and <m>k</m> is the thermal diffusivity.</p>
+</statement>
+</definition>
+
+<table>
+<title>Interpretation of the Heat Equation</title>
+<tabular>
+<row><cell>Term</cell><cell>Meaning</cell></row>
+<row><cell><m>u_t</m></cell><cell>Rate of temperature change</cell></row>
+<row><cell><m>u_{xx}</m></cell><cell>Curvature of temperature profile</cell></row>
+<row><cell><m>k</m></cell><cell>Thermal diffusivity</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w10-separation">
+<title>Separation of Variables</title>
+
+<definition>
+<title>Separated Solution</title>
+<statement>
+<md>u(x,t)=X(x)T(t)</md>
+</statement>
+</definition>
+
+<p>Substituting into the heat equation yields</p>
+<md>XT'=kX''T</md>
+<md>\frac{T'}{kT}=\frac{X''}{X}=-\lambda</md>
+
+<p>This produces two ordinary differential equations.</p>
+<md>X''+\lambda X=0</md>
+<md>T'+k\lambda T=0</md>
+
+<image width="50%">
+    <latex-image>
+\begin{tikzpicture}
+\draw[-&gt;] (0,0)--(6,0) node[right]{$x$};
+\draw[-&gt;] (0,0)--(0,3) node[above]{$u$};
+
+\draw[blue,thick]
+plot[smooth]
+coordinates{
+(0,0)
+(1,.9)
+(2,1.5)
+(3,1.8)
+(4,1.5)
+(5,.9)
+(6,0)
+};
+
+\draw[red,dashed,thick]
+plot[smooth]
+coordinates{
+(0,0)
+(1,.5)
+(2,.8)
+(3,1)
+(4,.8)
+(5,.5)
+(6,0)
+};
+
+\node[blue] at (4.5,2.1) {$t=0$};
+\node[red] at (4.5,1.1) {$t&gt;0$};
+\end{tikzpicture}
+    </latex-image>
+</image>
+</subsection>
 
 
-  <subsection>
-    <title>Thursday</title>
+<subsection xml:id="w10-heat-example">
+<title>Heat Equation on a Finite Rod</title>
 
-    <p> Physical interpretation of heat and wave equations.
-    </p>
-  </subsection>
+<example>
+<title>Heat Equation with Zero Boundary Conditions</title>
+<statement>
+<md>u_t=ku_{xx}, \qquad 0&lt;x&lt;L</md>
+<md>u(0,t)=0, \qquad u(L,t)=0</md>
+<md>u(x,0)=f(x)</md>
+</statement>
 
+<solution>
+<p>The spatial problem becomes</p>
+<md>X''+\lambda X=0</md>
+<md>X(0)=0, \qquad X(L)=0</md>
+
+<p>The eigenfunctions are</p>
+<md>X_n(x)=\sin\left(\frac{n\pi x}{L}\right)</md>
+
+<p>The time factors are</p>
+<md>T_n(t)=e^{-kn^2\pi^2t/L^2}</md>
+
+<p>The solution is</p>
+<md>
+u(x,t)=\sum_{n=1}^{\infty} b_n
+\sin\left(\frac{n\pi x}{L}\right)
+e^{-kn^2\pi^2t/L^2}
+</md>
+</solution>
+</example>
+
+<remark>
+<title>Interpretation</title>
+<p>Higher-frequency modes decay faster, causing temperature distributions to become smoother over time.</p>
+</remark>
+</subsection>
+
+<subsection xml:id="w10-wave">
+<title>The Wave Equation</title>
+
+<definition>
+<title>One-Dimensional Wave Equation</title>
+<statement>
+<md>u_{tt}=c^2u_{xx}</md>
+<p>Here <m>u(x,t)</m> is displacement and <m>c</m> is the wave speed.</p>
+</statement>
+</definition>
+
+<table>
+<title>Interpretation of the Wave Equation</title>
+<tabular>
+<row><cell>Term</cell><cell>Meaning</cell></row>
+<row><cell><m>u_{tt}</m></cell><cell>Acceleration</cell></row>
+<row><cell><m>u_{xx}</m></cell><cell>Curvature</cell></row>
+<row><cell><m>c</m></cell><cell>Wave speed</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w10-wave-example">
+<title>Vibrating String Example</title>
+<image width="50%">
+    <latex-image>
+\begin{tikzpicture}
+\draw[-&gt;] (0,0)--(6.5,0);
+
+\draw[thick,domain=0:6,samples=100]
+plot (\x,{1.2*sin(180*\x/6)});
+
+\fill (0,0) circle(2pt);
+\fill (6,0) circle(2pt);
+
+\node[below] at (0,0) {$0$};
+\node[below] at (6,0) {$L$};
+\end{tikzpicture}
+    </latex-image>
+</image>
+<example>
+<title>String Fixed at Both Ends</title>
+<statement>
+<md>u_{tt}=c^2u_{xx}</md>
+<md>u(0,t)=0,\qquad u(L,t)=0</md>
+<md>u(x,0)=f(x),\qquad u_t(x,0)=g(x)</md>
+</statement>
+
+<solution>
+<p>Separation of variables again yields</p>
+<md>X_n(x)=\sin\left(\frac{n\pi x}{L}\right)</md>
+
+<p>The time-dependent functions satisfy</p>
+<md>T''+c^2\lambda T=0</md>
+
+<p>The general solution is</p>
+<md>
+u(x,t)=\sum_{n=1}^{\infty}
+\left[A_n\cos\left(\frac{n\pi ct}{L}\right)
++B_n\sin\left(\frac{n\pi ct}{L}\right)\right]
+\sin\left(\frac{n\pi x}{L}\right)
+</md>
+</solution>
+</example>
+</subsection>
+
+<subsection xml:id="w10-comparison">
+<title>Comparing the Heat and Wave Equations</title>
+
+<table>
+<title>Heat versus Wave Equation</title>
+<tabular>
+<row><cell>Feature</cell><cell>Heat Equation</cell><cell>Wave Equation</cell></row>
+<row><cell>PDE Type</cell><cell>Parabolic</cell><cell>Hyperbolic</cell></row>
+<row><cell>Process</cell><cell>Diffusion</cell><cell>Propagation</cell></row>
+<row><cell>Time Derivative</cell><cell>First Order</cell><cell>Second Order</cell></row>
+<row><cell>Long-Term Behavior</cell><cell>Approaches equilibrium</cell><cell>Continues oscillating</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w10-matlab">
+<title>MATLAB Visualization</title>
+
+<program language="matlab">
+L = 1;
+x = linspace(0,L,100);
+t = linspace(0,0.5,100);
+[X,T] = meshgrid(x,t);
+U = exp(-pi^2*T).*sin(pi*X);
+surf(X,T,U)
+xlabel('Position')
+ylabel('Time')
+zlabel('Temperature')
+title('Heat Equation Solution')
+</program>
+
+<program language="matlab">
+x = linspace(0,1,200);
+for t = 0:0.02:4
+    u = sin(pi*x).*cos(pi*t);
+    plot(x,u,'LineWidth',2)
+    axis([0 1 -1.1 1.1])
+    drawnow
+end
+</program>
+</subsection>
+
+<subsection xml:id="w10-fd">
+<title>Finite Difference Methods</title>
+
+<definition>
+<title>Finite Difference Approximation</title>
+<statement>
+<md>u_t\approx\frac{u_i^{n+1}-u_i^n}{\Delta t}</md>
+<md>u_{xx}\approx\frac{u_{i+1}^n-2u_i^n+u_{i-1}^n}{(\Delta x)^2}</md>
+</statement>
+</definition>
+
+<p>For the heat equation, the explicit finite-difference scheme is</p>
+
+<md>
+u_i^{n+1}=u_i^n+r(u_{i+1}^n-2u_i^n+u_{i-1}^n)
+</md>
+
+<md>
+r=\frac{k\Delta t}{(\Delta x)^2}
+</md>
+
+<remark>
+<title>Stability Condition</title>
+<md>r\le\frac12</md>
+</remark>
+
+<program language="matlab">
+L = 1;
+dx = 0.1;
+dt = 0.005;
+r = dt/dx^2;
+</program>
+</subsection>
+
+<subsection xml:id="w10-error">
+<title>Numerical versus Exact Solutions</title>
+
+<p>For</p>
+<md>u_t=u_{xx},\qquad u(x,0)=\sin(\pi x)</md>
+
+<p>The exact solution is</p>
+<md>u(x,t)=e^{-\pi^2 t}\sin(\pi x)</md>
+
+<table>
+<title>Error Measures</title>
+<tabular>
+<row><cell>Measure</cell><cell>Formula</cell></row>
+<row><cell>Absolute Error</cell><cell><m>|u-u_h|</m></cell></row>
+<row><cell>Relative Error</cell><cell><m>|u-u_h|/|u|</m></cell></row>
+</tabular>
+</table>
+
+<activity>
+<title>Grid Refinement</title>
+<ol>
+<li>Compute a finite-difference solution.</li>
+<li>Compare with the exact solution.</li>
+<li>Reduce <m>\Delta x</m> and <m>\Delta t</m>.</li>
+<li>Observe how the error changes.</li>
+</ol>
+</activity>
+</subsection>
+
+<summary>
+<p>The heat equation models diffusion, while the wave equation models propagation. Separation of variables and Fourier series provide analytical solutions, while finite-difference methods provide numerical approximations when exact solutions are unavailable.</p>
+</summary>
 </section>

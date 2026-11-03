@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Systems of ODEs and Laplace Transforms</title>
+
+<introduction>
+
+<p>
+Work collaboratively with your group to complete the problems at each
+station. Show all calculations, justify all classifications, and discuss
+your reasoning with your teammates. Use the phase-plane figures whenever
+appropriate.
+</p>
+
+</introduction>
+
+<exercise workspace="1in">
+
+<title>Modeling with Systems of Differential Equations</title>
+
+<p>
+Consider the system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+4 &amp;  -2\\
+1 &amp;  1
+\end{bmatrix}
+\mathbf{x}.
+</md>
+
+<ol>
+
+<li>
+Identify the coefficient matrix.
+</li>
+
+<li>
+How many dependent variables are present?
+</li>
+
+<li>
+Determine the trace and determinant.
+</li>
+
+<li>
+Write the characteristic polynomial.
+</li>
+
+<li>
+Without solving the system completely, predict whether the equilibrium
+will be stable or unstable.
+</li>
+
+<li>
+Give one real-world application that could be modeled by a system of
+differential equations.
+</li>
+
+</ol>
+
+</exercise>
+
+<exercise workspace="1in">
+
+<title>Real Eigenvalues and Phase Portraits</title>
+
+<p>
+Consider the system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+-5 &amp;  2\\
+-2 &amp;  -1
+\end{bmatrix}
+\mathbf{x}.
+</md>
+
+<ol>
+
+<li>
+Find the characteristic polynomial.
+</li>
+
+<li>
+Determine the eigenvalues.
+</li>
+
+<li>
+Find an eigenvector corresponding to each eigenvalue.
+</li>
+
+<li>
+Classify the equilibrium point.
+</li>
+
+<li>
+Determine whether the origin is stable or unstable.
+</li>
+
+<li>
+Explain how the eigenvalues predict the long-term behavior of the system.
+</li>
+
+</ol>
+
+<p>
+Reference Phase Portrait:
+</p>
+<image width="50%">
+<latex-image>
+\begin{tikzpicture}
+
+\draw[->] (-3,0)--(3,0);
+\draw[->] (0,-3)--(0,3);
+
+\draw[dashed] (-2.5,-2.5)--(2.5,2.5);
+
+\draw[->] (-2,1) .. controls (-1,.3) .. (-.3,.1);
+\draw[->] (-2,2.2) .. controls (-.7,.8) .. (-.2,.2);
+
+\draw[->] (2,-1) .. controls (1,-.3) .. (.3,-.1);
+\draw[->] (2,-2.2) .. controls (.7,-.8) .. (.2,-.2);
+
+\draw[->] (-2.2,-2.2)--(-1,-1);
+\draw[->] (2.2,2.2)--(1,1);
+
+\fill (0,0) circle (2pt);
+
+\end{tikzpicture}
+</latex-image>
+</image>
+<p>
+Which classification from the course notes best matches this figure?
+</p>
+
+</exercise>
+
+<exercise workspace="1in">
+
+<title>Complex Eigenvalues</title>
+
+<p>
+Consider the system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+2 &amp;  -3\\
+3 &amp;  2
+\end{bmatrix}
+\mathbf{x}.
+</md>
+
+<ol>
+
+<li>
+Find the characteristic polynomial.
+</li>
+
+<li>
+Determine the eigenvalues.
+</li>
+
+<li>
+Identify
+<m>\alpha</m>
+and
+<m>\beta</m>.
+</li>
+
+<li>
+Classify the equilibrium point.
+</li>
+
+<li>
+Is the origin stable or unstable?
+</li>
+
+<li>
+Will trajectories spiral inward or outward?
+</li>
+
+<li>
+Write the exponential factor appearing in the solution.
+</li>
+
+</ol>
+
+<p>
+Reference Phase Portrait:
+</p>
+<image width="50%">
+<latex-image>
+\begin{tikzpicture}[scale=.9]
+
+\draw[->] (-3,0)--(3,0);
+\draw[->] (0,-3)--(0,3);
+
+\draw[
+domain=0:6*pi,
+samples=300,
+smooth,
+->]
+plot ({0.08*\x*cos(\x r)},
+      {0.08*\x*sin(\x r)});
+
+\fill (0,0) circle (2pt);
+
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+Explain how the phase portrait matches the eigenvalues.
+</p>
+
+</exercise>
+
+<exercise workspace="1in">
+
+<title>Laplace Transform Matching</title>
+
+<p>
+Match each function with its Laplace transform.
+</p>
+
+<table>
+
+<tabular>
+
+<row>
+<cell>Function</cell>
+<cell>Transform</cell>
+</row>
+
+<row>
+<cell><m>1</m></cell>
+<cell>____________________</cell>
+</row>
+
+<row>
+<cell><m>e^{2t}</m></cell>
+<cell>____________________</cell>
+</row>
+
+<row>
+<cell><m>\sin(3t)</m></cell>
+<cell>____________________</cell>
+</row>
+
+<row>
+<cell><m>\cos(2t)</m></cell>
+<cell>____________________</cell>
+</row>
+
+</tabular>
+
+</table>
+
+<p>
+Available transforms:
+</p>
+
+<md>
+\frac{1}{s},
+\qquad
+\frac{1}{s-2},
+\qquad
+\frac{3}{s^2+9},
+\qquad
+\frac{s}{s^2+4}.
+</md>
+
+<ol>
+
+<li>
+Which transform pair was easiest to identify?
+</li>
+
+<li>
+Which transform pair required the most discussion?
+</li>
+
+</ol>
+
+
+</exercise>
+
+<exercise workspace="1in">
+<title>Inverse Laplace Transforms</title>
+
+<p>
+Determine each inverse Laplace transform.
+</p>
+
+<ol>
+
+<li>
+
+<md>
+\mathcal{L}^{-1}
+\left\{
+\frac{5}{s+4}
+\right\}
+</md>
+
+</li>
+
+<li>
+
+<md>
+\mathcal{L}^{-1}
+\left\{
+\frac{2}{s^2}
+\right\}
+</md>
+
+</li>
+
+<li>
+
+<md>
+\mathcal{L}^{-1}
+\left\{
+\frac{s}{s^2+9}
+\right\}
+</md>
+
+</li>
+
+<li>
+
+<md>
+\mathcal{L}^{-1}
+\left\{
+\frac{1}{s(s+1)}
+\right\}
+</md>
+
+<p>
+Use partial fraction decomposition.
+</p>
+
+</li>
+
+</ol>
+
+</exercise>
+
+<exercise>
+<p>
+Consider the three-dimensional system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+1 &amp;  1 &amp;  0\\
+0 &amp;  1 &amp;  1\\
+0 &amp;  0 &amp;  2
+\end{bmatrix}
+\mathbf{x}.
+</md>
+
+<ol>
+
+<li>
+Find the eigenvalues.
+</li>
+
+<li>
+Which eigenvalue dominates the long-term behavior?
+</li>
+
+<li>
+As
+<m>t\to\infty</m>,
+does the origin appear stable or unstable?
+</li>
+
+<li>
+Explain your reasoning.
+</li>
+
+</ol>
+
+</exercise>
+
+</handout>

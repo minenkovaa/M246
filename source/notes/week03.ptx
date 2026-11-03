@@ -588,12 +588,12 @@
   <p>Indeed,</p>
 
   <me>
+    \begin{aligned}
     0\text{ is an eigenvalue}
-    \iff
-    (A-0I)x=Ax=0
-    \text{ has a nontrivial solution}
-    \iff
-    A\text{ is not invertible}.
+    &amp;\iff (A-0I)x=Ax=0 \\
+    &amp;\qquad\text{has a nontrivial solution} \\
+    &amp;\iff A\text{ is not invertible}.
+    \end{aligned}
   </me>
 </remark>
 <section xml:id="independent-eigenvectors">

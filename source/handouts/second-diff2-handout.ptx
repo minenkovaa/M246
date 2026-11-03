@@ -28,60 +28,6 @@
         </ol>
 
     </introduction>
-
-    <subsection>
-        <title>Reference Formulas and Hints</title>
-
-        <p>
-            The following engineering relationships may be useful.
-        </p>
-
-        <definition>
-            <title>Newton's Second Law</title>
-
-            <me>
-                \sum F = m a = m\frac{d^2x}{dt^2}
-            </me>
-        </definition>
-
-        <definition>
-            <title>Hooke's Law (Spring Force)</title>
-
-            <me>
-                F_s=-kx
-            </me>
-
-            <p>
-                where <m>k</m> is the spring constant.
-            </p>
-        </definition>
-
-        <definition>
-            <title>Damping Force</title>
-
-            <me>
-                F_d=-c\frac{dx}{dt}
-            </me>
-
-            <p>
-                where <m>c</m> is the damping coefficient.
-            </p>
-        </definition>
-
-        <definition>
-            <title>Series RLC Circuit</title>
-
-            <me>
-                Lq''+Rq'+\frac{1}{C}q=E(t)
-            </me>
-
-            <p>
-                where <m>q(t)</m> represents charge.
-            </p>
-        </definition>
-
-    </subsection>
-
     <exercise workspace="2in">
         <title>Undamped Spring-Mass System</title>
 

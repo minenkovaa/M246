@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Presentation Instructions</title>
+  <h2>MATH 246: Applied Mathematics for Civil Engineering Presentation</h2>
+
+<p><strong>Presentation Length:</strong> 10 minutes</p>
+
+<h3>Objective</h3>
+<p>
+Choose a civil engineering application that uses one of the mathematical topics covered in MATH 246:
+</p>
+
+<ul>
+    <li>Linear Algebra</li>
+    <li>Ordinary Differential Equations (ODEs)</li>
+    <li>Multivariable Calculus</li>
+    <li>Partial Differential Equations (PDEs) (optional)</li>
+</ul>
+
+<p>
+Your presentation should explain how mathematics is used to model, analyze, or solve a real civil engineering problem.
+</p>
+
+
+<h3>Suggested Presentation Structure</h3>
+
+<ol>
+    <li>
+        <strong>Title Slide</strong>
+        <ul>
+            <li>Presentation title</li>
+            <li>Your name</li>
+            <li>MATH 246</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Introduction</strong>
+        <ul>
+            <li>Describe the engineering problem.</li>
+            <li>Explain why it is important in civil engineering.</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Mathematical Background</strong>
+        <ul>
+            <li>Introduce the relevant mathematical concept(s).</li>
+            <li>Define important equations, variables, and assumptions.</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Engineering Application</strong>
+        <ul>
+            <li>Describe the real-world system.</li>
+            <li>Explain how the mathematics is used.</li>
+            <li>Include diagrams, graphs, images, or examples when appropriate.</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Case Studies / Scenarios</strong>
+        <ul>
+            <li>Compare at least two scenarios, conditions, or parameter choices.</li>
+            <li>Discuss how the mathematical model predicts different outcomes.</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Conclusions</strong>
+        <ul>
+            <li>Summarize key findings.</li>
+            <li>Explain the importance of mathematics in engineering decision-making.</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>References</strong>
+        <ul>
+            <li>Cite all sources used, including images and AI tools (if applicable).</li>
+        </ul>
+    </li>
+</ol>
+
+
+<h3>Suggested Topics</h3>
+
+<h4>Ordinary Differential Equations (ODEs)</h4>
+<ul>
+    <li>Bridge Vibrations Under Traffic Loads (second-order ODEs, damping, oscillations)</li>
+    <li>Earthquake Response of Buildings (forced second-order ODEs, resonance)</li>
+    <li>Skyscraper Sway Due to Wind Loads (harmonic motion, damping)</li>
+    <li>Water Level Changes in Reservoirs (first-order ODEs, rates of change)</li>
+    <li>Filling and Draining Water Tanks (separable differential equations)</li>
+    <li>Foundation Settlement Over Time (first-order ODE models)</li>
+    <li>Pollutant Decay in Water Treatment Systems (exponential decay models)</li>
+    <li>Vehicle Suspension Systems for Construction Equipment (second-order ODEs)</li>
+    <li>Suspension Bridge Oscillations (coupled differential equations)</li>
+    <li>Water Demand Forecasting for Growing Communities (logistic growth models)</li>
+</ul>
+
+<h4>Linear Algebra</h4>
+<ul>
+    <li>Traffic Flow in Urban Road Networks (systems of linear equations, matrices)</li>
+    <li>Force Analysis in Truss Bridges (matrix methods, equilibrium equations)</li>
+    <li>Water Distribution Networks (linear systems, matrix modeling)</li>
+    <li>Structural Stability Analysis (eigenvalues and eigenvectors)</li>
+    <li>Finite Element Modeling of Structures (stiffness matrices, linear systems)</li>
+</ul>
+
+<h4>Multivariable Calculus</h4>
+<ul>
+    <li>Rainwater Runoff on Terrain Surfaces (gradients, partial derivatives, directional derivatives)</li>
+    <li>Optimization of Water Tank Design (Lagrange multipliers, constrained optimization)</li>
+    <li>Earthwork Volume Calculations for Highway Construction (double and triple integrals)</li>
+</ul>
+
+
+<h3>Artificial Intelligence (AI) Use Policy</h3>
+
+<p>
+The use of AI tools such as Microsoft Copilot, ChatGPT, Gemini, Claude, or similar tools is permitted for this assignment.
+</p>
+
+<p><strong>If AI is used:</strong></p>
+
+<ul>
+    <li>You must disclose the use of AI in your References or Acknowledgments slide.</li>
+    <li>You are responsible for verifying the accuracy of all information, calculations, equations, citations, and images included in your presentation.</li>
+    <li>AI-generated content may contain errors, incorrect calculations, misleading explanations, or fabricated references.</li>
+    <li>Students remain fully responsible for the quality, accuracy, and academic integrity of their work.</li>
+    <li>Any sources suggested by AI should be independently verified before being included in the presentation.</li>
+</ul>
+
+<p><strong>Example Disclosure:</strong></p>
+
+<p>
+    Microsoft Copilot was used to assist with brainstorming, outlining, and explaining mathematical concepts. All content was reviewed and verified by the presenter.
+</p>
+
+
+</worksheet>

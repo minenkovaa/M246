@@ -12,6 +12,10 @@
 <tabular bottom="minor">
 <title>Matrices <m>A,B,C</m> and vectors <m>u,v</m></title>
 
+  <col width="8%"/>
+  <col width="22%"/>
+  <col width="22%"/>
+  <col width="22%"/>
 
   <row header="yes" bottom="major">
     <cell><p>#</p></cell>

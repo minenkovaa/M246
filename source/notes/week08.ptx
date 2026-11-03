@@ -1,21 +1,536 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-08">
-  <title>Week 8: Systems; Laplace transform; numerical intro</title>
+<section xml:id="notes-week8">
+<title>Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</title>
 
-  <subsection>
-    <title>Tuesday</title>
+<ol>
+<li><p>Solve systems of linear differential equations using eigenvalues and eigenvectors.</p></li>
+<li><p>Interpret phase-plane behavior from eigenvalue classifications.</p></li>
+<li><p>Apply Laplace transforms to solve initial value problems.</p></li>
+<li><p>Use partial fraction decomposition, step functions, and convolution.</p></li>
+<li><p>Compare analytical and numerical solution techniques.</p></li>
+<li><p>Investigate numerical error and step-size effects.</p></li>
+<li><p>Use MATLAB to implement and compare numerical methods.</p></li>
+</ol>
 
-    <p> Systems of ODEs and their solution.
-    </p>
-  </subsection>
+<subsection xml:id="week8-systems">
+<title>Systems of Differential Equations</title>
 
+<p>Many applications involve several dependent variables that interact simultaneously. Such models naturally lead to systems of differential equations.</p>
 
-  <subsection>
-    <title>Thursday</title>
+<md>
+\mathbf{x}'=A\mathbf{x}
+</md>
 
-    <p> Laplace transform and its application to solving ODEs; introduction to numerical methods for ODEs.
-    </p>
-  </subsection>
+<table>
+<title>Applications of Systems</title>
+<tabular>
+<row><cell>Application</cell><cell>Variables</cell></row>
+<row><cell>Population Models</cell><cell>Predator and prey populations</cell></row>
+<row><cell>Electrical Circuits</cell><cell>Current and voltage</cell></row>
+<row><cell>Mechanical Systems</cell><cell>Position and velocity</cell></row>
+</tabular>
+</table>
 
+<subsubsection>
+<title>Solving Systems Using Eigenvalues</title>
+
+<p>If <m>\lambda</m> is an eigenvalue of <m>A</m> with eigenvector <m>\mathbf{v}</m>, then</p>
+
+<md>
+\mathbf{x}(t)=e^{\lambda t}\mathbf{v}
+</md>
+
+<p>is a solution of the system.</p>
+
+<example>
+<title>Worked Example</title>
+<statement>
+<md>
+\mathbf{x}'=
+\begin{bmatrix}3 &amp; 1\\1 &amp; 3\end{bmatrix}
+\mathbf{x}
+</md>
+
+<p>The characteristic equation gives eigenvalues</p>
+
+<md>
+\lambda_1=4,
+\qquad
+\lambda_2=2.
+</md>
+
+<p>Corresponding eigenvectors are</p>
+
+<md>
+\mathbf{v}_1=
+\begin{bmatrix}1\\1\end{bmatrix},
+\qquad
+\mathbf{v}_2=
+\begin{bmatrix}1\\-1\end{bmatrix}.
+</md>
+
+<p>The general solution is</p>
+
+<md>
+\mathbf{x}(t)=
+ c_1e^{4t}\mathbf{v}_1+
+ c_2e^{2t}\mathbf{v}_2.
+</md>
+</statement>
+</example>
+
+<table>
+<title>Eigenvalue Classification Summary</title>
+<tabular>
+<row><cell>Eigenvalues</cell><cell>Classification</cell><cell>General Solution Form</cell><cell>Phase Portrait</cell></row>
+<row><cell>Both negative</cell><cell>Stable Node</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>Trajectories approach origin </cell></row>
+<row><cell>Both positive</cell><cell>Unstable Node</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>Trajectories move away</cell></row>
+<row><cell>Opposite signs</cell><cell>Saddle</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>One stable and one unstable direction</cell></row>
+<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&lt;0</m></cell><cell>Stable Spiral</cell><cell><m>e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))</m></cell><cell>Spiral inward</cell></row>
+<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&gt;0</m></cell><cell>Unstable Spiral</cell><cell><m>e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))</m></cell><cell>Spiral outward</cell></row>
+<row><cell><m>\pm i\beta</m></cell><cell>Center</cell><cell>Oscillatory solution</cell><cell>Closed orbits</cell></row>
+</tabular>
+</table>
+<sidebyside>
+  <image width="10%">
+    <latex-image>\begin{tikzpicture}
+\draw[-&gt;] (-2.5,0)--(2.5,0);
+\draw[-&gt;] (0,-2.5)--(0,2.5);
+
+\foreach \x in {-2,-1,1,2}
+{
+\draw[-&gt;] (\x,\x)--(.5*\x,.5*\x);
+\draw[-&gt;] (\x,-\x)--(.5*\x,-.5*\x);
+}
+
+\fill (0,0) circle (2pt);
+\node[right] at (0,0) {$0$};
+\end{tikzpicture}
+    </latex-image>
+</image>
+<image width="10%">
+    <latex-image>\begin{tikzpicture}
+\draw[-&gt;] (-2.5,0)--(2.5,0);
+\draw[-&gt;] (0,-2.5)--(0,2.5);
+
+\draw[thick,-&gt;] (-2,0)--(-1,0);
+\draw[thick,-&gt;] (2,0)--(1,0);
+
+\draw[thick,-&gt;] (0,.5)--(0,1.5);
+\draw[thick,-&gt;] (0,-.5)--(0,-1.5);
+
+\fill (0,0) circle (2pt);\end{tikzpicture}
+    </latex-image>
+</image>
+<image width="10%">
+    <latex-image>\begin{tikzpicture}
+\draw[-&gt;] (-2.5,0)--(2.5,0);
+\draw[-&gt;] (0,-2.5)--(0,2.5);
+
+\draw[domain=0:5*pi,samples=200,-&gt;]
+plot ({0.15*\x*cos(\x r)},{0.15*\x*sin(\x r)});
+
+\fill (0,0) circle (2pt);
+\end{tikzpicture}
+    </latex-image>
+</image>
+</sidebyside>
+<remark>
+<title>Notation</title>
+
+<ul>
+
+<li>
+<m>\mathbf{x}(t)</m> denotes the solution vector.
+</li>
+
+<li>
+<m>\lambda</m> denotes an eigenvalue of the coefficient matrix
+<m>A</m>.
+</li>
+
+<li>
+<m>\mathbf{v}</m> denotes an eigenvector corresponding to
+<m>\lambda</m>.
+</li>
+
+<li>
+<m>\mathbf{v}_1,\mathbf{v}_2</m> are eigenvectors associated with
+distinct eigenvalues
+<m>\lambda_1,\lambda_2</m>.
+</li>
+
+<li>
+<m>c_1,c_2</m> are arbitrary constants determined by the initial
+conditions.
+</li>
+
+<li>
+<m>\alpha</m> and <m>\beta</m> denote the real and imaginary parts of a
+complex eigenvalue
+<m>\lambda=\alpha\pm i\beta</m>.
+</li>
+
+<li>
+<m>\mathbf{v}=\mathbf{p}+i\mathbf{q}</m> denotes a complex eigenvector,
+where
+<m>\mathbf{p}</m> and
+<m>\mathbf{q}</m>
+are real vectors.
+</li>
+
+<li>
+For complex eigenvalues, the real-valued solution is obtained from the
+vectors
+<m>\mathbf{p}</m>
+and
+<m>\mathbf{q}</m>:
+</li>
+
+<md>
+\mathbf{x}(t)
+=
+e^{\alpha t}
+\left[
+c_1
+\left(
+\mathbf{p}\cos(\beta t)
+-
+\mathbf{q}\sin(\beta t)
+\right)
++
+c_2
+\left(
+\mathbf{p}\sin(\beta t)
++
+\mathbf{q}\cos(\beta t)
+\right)
+\right].
+</md>
+
+</ul>
+</remark>
+<example xml:id="example-complex-eigenvalues">
+<title>Complex Eigenvalues</title>
+
+<statement>
+
+<p>
+Solve the system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+1 &amp; -2\\
+2 &amp; 1
+\end{bmatrix}
+\mathbf{x}.
+</md>
+
+</statement>
+
+<solution>
+
+<p>
+Compute the characteristic polynomial:
+</p>
+
+<md>
+\det(A-\lambda I)
+=
+\begin{vmatrix}
+1-\lambda &amp; -2\\
+2 &amp; 1-\lambda
+\end{vmatrix}
+=0.
+</md>
+
+<md>
+(1-\lambda)^2+4=0.
+</md>
+
+<p>
+The eigenvalues are
+</p>
+
+<md>
+\lambda
+=
+1\pm 2i.
+</md>
+
+<p>
+Choose the eigenvalue
+<m>\lambda=1+2i</m>.
+Solving
+<m>(A-\lambda I)\mathbf{v}=0</m>
+gives the eigenvector
+</p>
+
+<md>
+\mathbf{v}
+=
+\begin{bmatrix}
+1\\
+-i
+\end{bmatrix}.
+</md>
+
+<p>
+Write the eigenvector as
+</p>
+
+<md>
+\mathbf{v}
+=
+\mathbf{p}
++
+i\mathbf{q},
+</md>
+
+<p>
+where
+</p>
+
+<md>
+\mathbf{p}
+=
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix},
+\qquad
+\mathbf{q}
+=
+\begin{bmatrix}
+0\\
+-1
+\end{bmatrix}.
+</md>
+
+<p>
+Using the complex solution formula,
+</p>
+
+<md>
+\mathbf{x}(t)
+=
+e^{t}
+\left[
+c_1
+\left(
+\mathbf{p}\cos(2t)
+-
+\mathbf{q}\sin(2t)
+\right)
++
+c_2
+\left(
+\mathbf{p}\sin(2t)
++
+\mathbf{q}\cos(2t)
+\right)
+\right].
+</md>
+
+<p>
+Substituting
+<m>\mathbf{p}</m>
+and
+<m>\mathbf{q}</m>
+gives
+</p>
+
+<md>
+\mathbf{x}(t)
+=
+c_1e^t
+\begin{bmatrix}
+\cos(2t)\\
+\sin(2t)
+\end{bmatrix}
++
+c_2e^t
+\begin{bmatrix}
+\sin(2t)\\
+-\cos(2t)
+\end{bmatrix}.
+</md>
+
+</solution>
+
+</example>
+<remark>
+<title>Geometric Interpretation</title>
+
+<p>
+The eigenvalues
+<m>1\pm2i</m>
+have positive real part
+<m>\alpha=1</m>.
+The factor
+<m>e^t</m>
+causes solutions to grow, while the
+<m>\sin(2t)</m>
+and
+<m>\cos(2t)</m>
+terms produce oscillation.
+Therefore trajectories spiral away from the origin, and the equilibrium is an
+<em>unstable spiral</em>.
+</p>
+
+</remark>
+
+</subsubsection>
+</subsection>
+
+<subsection xml:id="week8-laplace">
+<title>Laplace Transforms</title>
+
+<definition>
+<title>Laplace Transform</title>
+<statement>
+<md>
+\mathcal{L}\{f(t)\}=F(s)=\int_0^{\infty}e^{-st}f(t)\,dt
+</md>
+</statement>
+</definition>
+
+<table>
+<title>Common Laplace Transforms</title>
+<tabular>
+<row><cell>Function</cell><cell>Transform</cell></row>
+<row><cell><m>1</m></cell><cell><m>1/s</m></cell></row>
+<row><cell><m>t</m></cell><cell><m>1/s^2</m></cell></row>
+<row><cell><m>e^{at}</m></cell><cell><m>1/(s-a)</m></cell></row>
+<row><cell><m>\sin(at)</m></cell><cell><m>a/(s^2+a^2)</m></cell></row>
+<row><cell><m>\cos(at)</m></cell><cell><m>s/(s^2+a^2)</m></cell></row>
+</tabular>
+</table>
+
+<table>
+<title>Inverse Laplace Transforms</title>
+<tabular>
+<row><cell><m>F(s)</m></cell><cell><m>f(t)</m></cell></row>
+<row><cell><m>1/(s-a)</m></cell><cell><m>e^{at}</m></cell></row>
+<row><cell><m>1/s^2</m></cell><cell><m>t</m></cell></row>
+<row><cell><m>s/(s^2+a^2)</m></cell><cell><m>\cos(at)</m></cell></row>
+<row><cell><m>a/(s^2+a^2)</m></cell><cell><m>\sin(at)</m></cell></row>
+</tabular>
+</table>
+
+<example>
+<title>Solving an IVP</title>
+<statement>
+<md>y'+2y=0,\qquad y(0)=3</md>
+<md>sY-3+2Y=0</md>
+<md>Y=\frac{3}{s+2}</md>
+<md>y(t)=3e^{-2t}</md>
+</statement>
+</example>
+
+<subsubsection>
+<title>Partial Fraction Decomposition</title>
+<table>
+<title>PFD Guide</title>
+<tabular>
+<row><cell>Denominator</cell><cell>Form</cell></row>
+<row><cell><m>(s-a)(s-b)</m></cell><cell><m>A/(s-a)+B/(s-b)</m></cell></row>
+<row><cell><m>(s-a)^2</m></cell><cell><m>A/(s-a)+B/(s-a)^2</m></cell></row>
+<row><cell><m>s^2+a^2</m></cell><cell><m>(As+B)/(s^2+a^2)</m></cell></row>
+</tabular>
+</table>
+
+<example>
+<title>PFD Example</title>
+<statement>
+<md>\frac{1}{s(s+1)}=\frac{1}{s}-\frac{1}{s+1}</md>
+<md>\mathcal{L}^{-1}=1-e^{-t}</md>
+</statement>
+</example>
+</subsubsection>
+
+<subsubsection>
+<title>Unit Step Functions</title>
+<md>u_c(t)=\begin{cases}0,&amp;t&lt;c\\1,&amp;t\ge c\end{cases}</md>
+<md>\mathcal{L}\{u_c(t)f(t-c)\}=e^{-cs}F(s)</md>
+</subsubsection>
+
+<subsubsection>
+<title>Convolution</title>
+<md>(f*g)(t)=\int_0^t f(\tau)g(t-\tau)d\tau</md>
+<md>\mathcal{L}\{f*g\}=F(s)G(s)</md>
+</subsubsection>
+</subsection>
+
+<subsection xml:id="week8-numerical">
+<title>Numerical Methods</title>
+
+<definition>
+<title>Euler's Method</title>
+<statement>
+<md>y_{n+1}=y_n+h f(t_n,y_n)</md>
+</statement>
+</definition>
+
+<table>
+<title>Accuracy of Numerical Methods</title>
+<tabular>
+<row><cell>Method</cell><cell>Global Error</cell></row>
+<row><cell>Euler</cell><cell><m>O(h)</m></cell></row>
+<row><cell>Improved Euler</cell><cell><m>O(h^2)</m></cell></row>
+<row><cell>RK4</cell><cell><m>O(h^4)</m></cell></row>
+</tabular>
+</table>
+
+<definition>
+<title>Error Measures</title>
+<statement>
+<md>\text{Absolute Error}=|y-y_h|</md>
+<md>\text{Relative Error}=\frac{|y-y_h|}{|y|}</md>
+</statement>
+</definition>
+
+<example>
+<title>Euler Method</title>
+<statement>
+<md>y'=y,\quad y(0)=1,\quad h=0.1</md>
+<md>y_1=1+0.1(1)=1.1</md>
+</statement>
+</example>
+
+<program language="matlab">
+f = @(t,y) y;
+h = 0.1;
+tE = 0:h:1;
+yE = zeros(size(tE));
+yE(1)=1;
+for n=1:length(tE)-1
+    yE(n+1)=yE(n)+h*yE(n);
+end
+[tO,yO]=ode45(f,[0 1],1);
+plot(tE,yE,'ro-')
+hold on
+plot(tO,yO,'b')
+plot(tE,exp(tE),'k')
+legend('Euler','ode45','Exact')
+</program>
+
+<activity>
+<title>Investigating Error and Step Size</title>
+<ol>
+<li>Apply Euler's method with several step sizes.</li>
+<li>Estimate the solution at <m>t=1</m>.</li>
+<li>Compare with the exact solution.</li>
+<li>Discuss how the error changes as <m>h</m> decreases.</li>
+</ol>
+</activity>
+</subsection>
+
+<summary>
+<p>Systems of differential equations may be solved using eigenvalues and eigenvectors. Laplace transforms provide an alternative approach for solving initial value problems, while numerical methods provide approximations when exact solutions are difficult or unavailable.</p>
+</summary>
 </section>

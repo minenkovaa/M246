@@ -16,115 +16,119 @@
       <table>
         <title>Weekly Topics, Activities, and Deliverables</title>
         <tabular>
+          <col width="8%"/>
+          <col width="18%"/>
+          <col width="33%"/>
+          <col width="25%"/>
           <row header="yes">
-            <cell>Week</cell>
-            <cell>Module</cell>
-            <cell>Topics</cell>
-            <cell>Activities</cell>
+            <cell><p>Week</p></cell>
+            <cell><p>Module</p></cell>
+            <cell><p>Topics</p></cell>
+            <cell><p>Activities</p></cell>
           </row>
 
           <row>
-            <cell>0</cell>
-            <cell>Introduction and Review</cell>
-            <cell>Syllabus and Course Expectations</cell>
-            <cell>Practice</cell>
+            <cell><p>0</p></cell>
+            <cell><p>Introduction and Review</p></cell>
+            <cell><p>Syllabus and Course Expectations</p></cell>
+            <cell><p>Practice</p></cell>
           </row>
 
           <row>
-            <cell>1</cell>
-            <cell>Linear Algebra</cell>
-            <cell>Matrix operations; properties</cell>
-            <cell>Lecture and practice</cell>
+            <cell><p>1</p></cell>
+            <cell><p>Linear Algebra</p></cell>
+            <cell><p>Matrix operations; properties</p></cell>
+            <cell><p>Lecture and practice</p></cell>
           </row>
           <row>
-            <cell>2</cell>
-            <cell>Linear Algebra</cell>
-            <cell>Determinants; inverses; rank</cell>
-            <cell>Problem set</cell>
-          </row>
-
-          <row>
-            <cell>3</cell>
-            <cell>Linear Algebra</cell>
-            <cell>Systems; eigenvalues and eigenvectors</cell>
-            <cell>Workshop and MATLAB demo</cell>
+            <cell><p>2</p></cell>
+            <cell><p>Linear Algebra</p></cell>
+            <cell><p>Determinants; inverses; rank</p></cell>
+            <cell><p>Problem set</p></cell>
           </row>
 
           <row>
-            <cell>4</cell>
-            <cell>Multivariable Calculus</cell>
-            <cell>Partial derivatives; higher-order derivatives</cell>
-            <cell>Lecture and concept check</cell>
+            <cell><p>3</p></cell>
+            <cell><p>Linear Algebra</p></cell>
+            <cell><p>Systems; eigenvalues and eigenvectors</p></cell>
+            <cell><p>Workshop and MATLAB demo</p></cell>
           </row>
 
           <row>
-            <cell>5</cell>
-            <cell>Multivariable Calculus</cell>
-            <cell>Multiple integrals; vector calculus</cell>
-            <cell>Problem set and visualization</cell>
+            <cell><p>4</p></cell>
+            <cell><p>Multivariable Calculus</p></cell>
+            <cell><p>Partial derivatives; higher-order derivatives</p></cell>
+            <cell><p>Lecture and concept check</p></cell>
           </row>
 
           <row>
-            <cell>6</cell>
-            <cell>ODE</cell>
-            <cell>First-order ODEs (separable, linear, exact)</cell>
-            <cell>Lecture and stations</cell>
+            <cell><p>5</p></cell>
+            <cell><p>Multivariable Calculus</p></cell>
+            <cell><p>Multiple integrals; vector calculus</p></cell>
+            <cell><p>Problem set and visualization</p></cell>
           </row>
 
           <row>
-            <cell>7</cell>
-            <cell>ODE</cell>
-            <cell>Second-order linear ODEs</cell>
-            <cell>Worked examples</cell>
+            <cell><p>6</p></cell>
+            <cell><p>ODE</p></cell>
+            <cell><p>First-order ODEs (separable, linear, exact)</p></cell>
+            <cell><p>Lecture and stations</p></cell>
           </row>
 
           <row>
-            <cell>8</cell>
-            <cell>ODE</cell>
-            <cell>Systems; Laplace transforms; numerical introduction</cell>
-            <cell>Lab demo and review</cell>
+            <cell><p>7</p></cell>
+            <cell><p>ODE</p></cell>
+            <cell><p>Second-order linear ODEs</p></cell>
+            <cell><p>Worked examples</p></cell>
           </row>
 
           <row>
-            <cell>9</cell>
-            <cell>PDE</cell>
-            <cell>Classification; physical interpretation</cell>
-            <cell>Lecture and exercises</cell>
+            <cell><p>8</p></cell>
+            <cell><p>ODE</p></cell>
+            <cell><p>Systems; Laplace transforms; numerical introduction</p></cell>
+            <cell><p>Lab demo and review</p></cell>
           </row>
 
           <row>
-            <cell>10</cell>
-            <cell>PDE</cell>
-            <cell>Heat and wave equations</cell>
-            <cell>Workshop and computational check</cell>
+            <cell><p>9</p></cell>
+            <cell><p>PDE</p></cell>
+            <cell><p>Classification; physical interpretation</p></cell>
+            <cell><p>Lecture and exercises</p></cell>
           </row>
 
           <row>
-            <cell>11</cell>
-            <cell>Applications</cell>
-            <cell>Model formulation</cell>
-            <cell>Project Proposal</cell>
+            <cell><p>10</p></cell>
+            <cell><p>PDE</p></cell>
+            <cell><p>Heat and wave equations</p></cell>
+            <cell><p>Workshop and computational check</p></cell>
           </row>
 
           <row>
-            <cell>12</cell>
-            <cell>Applications</cell>
-            <cell>Analytical vs. numerical methods</cell>
-            <cell>Progress Check</cell>
+            <cell><p>11</p></cell>
+            <cell><p>Applications</p></cell>
+            <cell><p>Model formulation</p></cell>
+            <cell><p>Project Proposal</p></cell>
           </row>
 
           <row>
-            <cell>13</cell>
-            <cell>Applications</cell>
-            <cell>Computational tools; visualization</cell>
-            <cell>Technical Draft</cell>
+            <cell><p>12</p></cell>
+            <cell><p>Applications</p></cell>
+            <cell><p>Analytical vs. numerical methods</p></cell>
+            <cell><p>Progress Check</p></cell>
           </row>
 
           <row>
-            <cell>14</cell>
-            <cell>Integration</cell>
-            <cell>Comprehensive review</cell>
-            <cell>Presentations; Final Report; Final Exam</cell>
+            <cell><p>13</p></cell>
+            <cell><p>Applications</p></cell>
+            <cell><p>Computational tools; visualization</p></cell>
+            <cell><p>Technical Draft</p></cell>
+          </row>
+
+          <row>
+            <cell><p>14</p></cell>
+            <cell><p>Integration</p></cell>
+            <cell><p>Comprehensive review</p></cell>
+            <cell><p>Presentations; Final Report; Final Exam</p></cell>
           </row>
 
         </tabular>
@@ -139,28 +143,28 @@
         <li>
           <em>Linear Algebra: An Interactive Introduction</em>,
           Text:
-          <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">https://ximera.osu.edu/oerlinalg/LinearAlgebra</url>
+          <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">Ximera online text</url>
         </li>
           <li>
           <em>Interactive Linear Algebra</em>,
           LibreTexts:
-          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)</url>
+          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)">Interactive Linear Algebra at LibreTexts</url>
         </li>
 
         <li>
           <em>APEX Calculus, Volume 3</em>:
-          <url href="https://www.apexcalculus.com/volume-3/">https://www.apexcalculus.com/volume-3/</url>
+          <url href="https://www.apexcalculus.com/volume-3/">APEX Calculus, Volume 3</url>
         </li>
 
         <li>
           <em>Paul’s Online Notes: Differential Equations and PDEs</em>:
-          <url href="https://tutorial.math.lamar.edu/Classes/DE/DE.aspx">https://tutorial.math.lamar.edu/Classes/DE/DE.aspx</url>
+          <url href="https://tutorial.math.lamar.edu/Classes/DE/DE.aspx">Paul’s online differential equations notes</url>
         </li>
 
         <li>
           <em>Numerical Methods with Applications</em>,
           Engineering LibreTexts:
-          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)</url>
+          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)">Numerical Methods at Engineering LibreTexts</url>
         </li>
         </ul>
       </list>

@@ -10,16 +10,18 @@
       We are setting up our routine:
     </p>
     <tabular>
+      <col width="25%"/>
+      <col width="63%"/>
       <row header="yes">
-        <cell>Activity</cell>
-        <cell>Description</cell>
+        <cell><p>Activity</p></cell>
+        <cell><p>Description</p></cell>
       </row>
       <row>
-        <cell>1. Think-pair-share</cell>
-        <cell>Which of the matrix operations work the same for real numbers. </cell></row>
+        <cell><p>1. Think-pair-share</p></cell>
+        <cell><p>Which of the matrix operations work the same for real numbers.</p></cell></row>
          <row>
-        <cell>2. Gallery Walk:</cell>
-        <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
+        <cell><p>2. Gallery Walk:</p></cell>
+        <cell><p>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</p></cell>
       </row>
     </tabular>
   </introduction>

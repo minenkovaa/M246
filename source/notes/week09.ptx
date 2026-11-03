@@ -1,21 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-09">
-  <title>Week 9: PDE, their Classification; physical interpretation</title>
 
-  <subsection>
-    <title>Tuesday</title>
+<title>Week 9: Partial Differential Equations and Their Classification</title>
 
-    <p>  Classification of PDEs.
-    </p>
-  </subsection>
+<ol>
+  <caption>Learning Outcomes</caption>
+    <li><p>Define a partial differential equation (PDE).</p></li>
+    <li><p>Distinguish between ODEs and PDEs.</p></li>
+    <li><p>Determine the order and linearity of a PDE.</p></li>
+    <li><p>Classify second-order PDEs as elliptic, parabolic, or hyperbolic.</p></li>
+    <li><p>Interpret PDEs in physical applications.</p></li>
+    <li><p>Understand the role of boundary and initial conditions.</p></li>
+    <li><p>Analyze simple PDE models arising in science and engineering.</p></li>
+</ol>
 
+<subsection xml:id="w9-intro">
+<title>Introduction to Partial Differential Equations</title>
 
-  <subsection>
-    <title>Thursday</title>
+<definition>
+<title>Partial Differential Equation</title>
+<statement>
+<p>A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.</p>
+<md>F(x,y,u,u_x,u_y,u_{xx},u_{xy},\ldots)=0</md>
+</statement>
+</definition>
 
-    <p> Physical interpretation of PDEs.
-    </p>
-  </subsection>
+<example>
+<title>ODE versus PDE</title>
+<statement>
+<md>\frac{dy}{dt}=y</md>
+<p>This is an ODE because there is only one independent variable.</p>
+<md>u_t=u_{xx}</md>
+<p>This is a PDE because the solution depends on both position and time.</p>
+</statement>
+</example>
+</subsection>
+
+<subsection xml:id="w9-order">
+<title>Order and Linearity</title>
+
+<definition>
+<title>Order</title>
+<statement>
+<p>The order of a PDE is determined by its highest derivative.</p>
+</statement>
+</definition>
+
+<table>
+<title>Examples</title>
+<tabular>
+<row><cell>Equation</cell><cell>Order</cell><cell>Linear?</cell></row>
+<row><cell><m>u_t=u_{xx}</m></cell><cell>2</cell><cell>Yes</cell></row>
+<row><cell><m>u_t=uu_x</m></cell><cell>1</cell><cell>No</cell></row>
+<row><cell><m>u_{tt}=c^2u_{xx}</m></cell><cell>2</cell><cell>Yes</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w9-classification">
+<title>Classification of Second-Order PDEs</title>
+
+<md>
+Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
+</md>
+
+<md>
+\Delta=B^2-4AC
+</md>
+
+<image width="50%">
+    <latex-image>
+\begin{tikzpicture}[node distance=1cm]
+\node[draw,rounded corners] (pde)
+{Second-Order PDE};
+
+\node[draw,below left=1.5cm and 2cm of pde]
+(ell)
+{Elliptic};
+
+\node[draw,below=1.5cm of pde]
+(par)
+{Parabolic};
+
+\node[draw,below right=1.5cm and 2cm of pde]
+(hyp)
+{Hyperbolic};
+
+\draw[-&gt;] (pde)--(ell);
+\draw[-&gt;] (pde)--(par);
+\draw[-&gt;] (pde)--(hyp);
+
+\node[left=.2cm of ell]
+{$\Delta&lt;0$};
+
+\node[right=.2cm of par]
+{$\Delta=0$};
+
+\node[right=.2cm of hyp]
+{$\Delta&gt;0$};
+\end{tikzpicture}
+
+    </latex-image>
+</image>
+
+<table>
+<title>PDE Classification</title>
+<tabular>
+<row><cell>Condition</cell><cell>Type</cell><cell>Example</cell><cell>Interpretation</cell></row>
+<row><cell><m>\Delta&lt;0</m></cell><cell>Elliptic</cell><cell><m>u_{xx}+u_{yy}=0</m></cell><cell>Equilibrium</cell></row>
+<row><cell><m>\Delta=0</m></cell><cell>Parabolic</cell><cell><m>u_t=ku_{xx}</m></cell><cell>Diffusion</cell></row>
+<row><cell><m>\Delta&gt;0</m></cell><cell>Hyperbolic</cell><cell><m>u_{tt}=c^2u_{xx}</m></cell><cell>Wave propagation</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w9-physical">
+<title>Physical Interpretation</title>
+
+<table>
+<title>Common PDE Models</title>
+<tabular>
+<row><cell>Equation</cell><cell>Application</cell></row>
+<row><cell><m>u_{xx}+u_{yy}=0</m></cell><cell>Electrostatics and steady-state heat flow</cell></row>
+<row><cell><m>u_t=ku_{xx}</m></cell><cell>Heat conduction and diffusion</cell></row>
+<row><cell><m>u_{tt}=c^2u_{xx}</m></cell><cell>String vibration and sound propagation</cell></row>
+</tabular>
+</table>
+</subsection>
+
+<subsection xml:id="w9-bc-ic">
+<title>Boundary and Initial Conditions</title>
+
+<table>
+<title>Boundary Conditions</title>
+<tabular>
+<row><cell>Type</cell><cell>Form</cell><cell>Meaning</cell></row>
+<row><cell>Dirichlet</cell><cell><m>u(a,t)=A</m></cell><cell>Value specified</cell></row>
+<row><cell>Neumann</cell><cell><m>u_x(a,t)=A</m></cell><cell>Flux specified</cell></row>
+<row><cell>Robin</cell><cell><m>au+bu_x=c</m></cell><cell>Mixed condition</cell></row>
+</tabular>
+</table>
+
+<md>u(x,0)=f(x)</md>
+<p>The initial condition specifies the state of the system at time <m>t=0</m>.</p>
+</subsection>
+
+<subsection xml:id="w9-separation">
+<title>Separation of Variables</title>
+
+<definition>
+<title>Separated Solution</title>
+<statement>
+<md>u(x,t)=X(x)T(t)</md>
+</statement>
+</definition>
+
+<p>Substituting a product solution into a PDE often reduces the problem to two ordinary differential equations.</p>
+</subsection>
+
+<subsection xml:id="w9-heat-example">
+<title>Heat Equation Example</title>
+
+<example>
+<title>Heat Equation on a Finite Rod</title>
+<statement>
+<p>Solve</p>
+<md>
+u_t=u_{xx}, \qquad 0&lt;x&lt;L,
+</md>
+<p>with boundary conditions</p>
+<md>
+u(0,t)=0,
+\qquad
+u(L,t)=0,
+</md>
+<p>and initial condition</p>
+<md>
+u(x,0)=f(x).
+</md>
+</statement>
+<solution>
+<p>Assume a separated solution</p>
+<md>
+u(x,t)=X(x)T(t).
+</md>
+
+<p>Substituting gives</p>
+<md>
+XT'=X''T.
+</md>
+
+<p>Dividing by <m>XT</m> yields</p>
+<md>
+\frac{T'}{T}=\frac{X''}{X}=-\lambda.
+</md>
+
+<p>Two ordinary differential equations follow:</p>
+<md>
+X''+\lambda X=0,
+</md>
+<md>
+T'+\lambda T=0.
+</md>
+
+<p>The boundary conditions imply</p>
+<md>
+X_n(x)=\sin\left(\frac{n\pi x}{L}\right).
+</md>
+
+<p>The time-dependent factors are</p>
+<md>
+T_n(t)=e^{-(n\pi/L)^2t}.
+</md>
+
+<p>Therefore</p>
+<md>
+u(x,t)=\sum_{n=1}^{\infty} b_n
+\sin\left(\frac{n\pi x}{L}\right)
+e^{-(n\pi/L)^2t}.
+</md>
+</solution>
+</example>
+
+<image width="50%">
+    <latex-image>
+\begin{tikzpicture}
+\draw[line width=3pt] (0,0)--(6,0);
+
+\fill (0,0) circle (3pt);
+\fill (6,0) circle (3pt);
+
+\node[above] at (0,0) {$u(0,t)=0$};
+\node[above] at (6,0) {$u(L,t)=0$};
+
+\node[below] at (3,0) {Rod};
+\end{tikzpicture}
+    </latex-image>
+</image>
+<remark>
+<title>Interpretation</title>
+<p>Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.</p>
+</remark>
+</subsection>
+
+<subsection xml:id="w9-matlab">
+<title>MATLAB Visualization of Heat Diffusion</title>
+
+<program language="matlab">
+L = 1;
+x = linspace(0,L,100);
+t = linspace(0,0.5,100);
+[X,T] = meshgrid(x,t);
+U = exp(-pi^2*T).*sin(pi*X);
+surf(X,T,U)
+xlabel('Position')
+ylabel('Time')
+zlabel('Temperature')
+title('Heat Equation Solution')
+shading interp
+colorbar
+</program>
+</subsection>
+
+<summary>
+<p>Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.</p>
+</summary>
 
 </section>

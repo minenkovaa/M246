@@ -15,6 +15,10 @@
     \newcommand{\R}{\mathbb R}
   </macros>
 
+  <numbering>
+    <exercises level="0" />
+  </numbering>
+
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
   <latex-image-preamble>

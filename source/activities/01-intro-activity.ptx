@@ -10,17 +10,19 @@
       We are setting up our routine:
     </p>
     <tabular>
+      <col width="25%"/>
+      <col width="63%"/>
       <row header="yes">
-        <cell>Activity</cell>
-        <cell>Description</cell>
+        <cell><p>Activity</p></cell>
+        <cell><p>Description</p></cell>
       </row>
       <row>
-        <cell>1. Pair-share</cell>
-        <cell>A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.</cell>
+        <cell><p>1. Pair-share</p></cell>
+        <cell><p>A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.</p></cell>
       </row>
          <row>
-        <cell>2. Gallery Walk:</cell>
-        <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
+        <cell><p>2. Gallery Walk:</p></cell>
+        <cell><p>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</p></cell>
       </row>
     </tabular>
   </introduction>

@@ -93,12 +93,13 @@
       <xi:include href="./handouts/first-diff-handout.ptx"/>
       <xi:include href="./handouts/second-diff-handout.ptx"/>
       <xi:include href="./handouts/second-diff2-handout.ptx"/>
+      <xi:include href="./handouts/systems-ode-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
       <title>Homework</title>
 
-
+<xi:include href="./homework/Presentation-instructions.ptx"/>
     <xi:include href="./homework/homework-01.ptx"/>
     <xi:include href="./homework/homework-02.ptx"/>
     <xi:include href="./homework/homework-03.ptx"/>

@@ -11,18 +11,20 @@
       We are setting up our routine:
     </p>
     <tabular>
+      <col width="25%"/>
+      <col width="63%"/>
       <row header="yes">
-        <cell>Activity</cell>
-        <cell>Description</cell>
+        <cell><p>Activity</p></cell>
+        <cell><p>Description</p></cell>
       </row>
       <row>
-        <cell>1. Think-pair-share</cell>
-        <cell>What does inverse mean for numbers?</cell></row>  <row>
-        <cell></cell>
-       <cell> How do you think division works for matrices? What potential issues you might think of? </cell></row>
+        <cell><p>1. Think-pair-share</p></cell>
+        <cell><p>What does inverse mean for numbers?</p></cell></row>  <row>
+        <cell><p></p></cell>
+       <cell><p>How do you think division works for matrices? What potential issues you might think of?</p></cell></row>
          <row>
-        <cell>2. Gallery Walk:</cell>
-        <cell>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</cell>
+        <cell><p>2. Gallery Walk:</p></cell>
+        <cell><p>A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.</p></cell>
       </row>
     </tabular>
   </introduction>

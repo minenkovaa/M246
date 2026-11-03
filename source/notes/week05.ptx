@@ -586,8 +586,17 @@ Find the curl of
   <p>
     The curl is computed as follows:
     <me>
-      \operatorname{curl}(\mathbf F) = \nabla \times \mathbf F = \left\langle \frac{\partial (x+yz)}{\partial y} - \frac{\partial x}{\partial z}, \frac{\partial (-y)}{\partial z} - \frac{\partial (x+yz)}{\partial x}, \frac{\partial
-  x}{\partial y} - \frac{\partial (-y)}{\partial x} \right\rangle = \left\langle z - 0, 0 - 1, 0 - 0 \right\rangle = \langle z, -1, 0 \rangle.
+      \operatorname{curl}(\mathbf F)
+      =
+      \begin{bmatrix}
+      \dfrac{\partial (x+yz)}{\partial y} - \dfrac{\partial x}{\partial z} \\
+      \dfrac{\partial (-y)}{\partial z} - \dfrac{\partial (x+yz)}{\partial x} \\
+      \dfrac{\partial x}{\partial y} - \dfrac{\partial (-y)}{\partial x}
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      z \\ -1 \\ 0
+      \end{bmatrix}.
     </me>
   </p>
 </solution>
@@ -899,19 +908,19 @@ Find a potential function for
     <ul>
       <li>
         Fundamental Theorem for Line Integrals:
-        gradient ↔ line integral.
+        gradient <m>\leftrightarrow</m> line integral.
       </li>
       <li>
         Green's Theorem:
-        boundary curve ↔ planar region.
+        boundary curve <m>\leftrightarrow</m> planar region.
       </li>
       <li>
         Stokes' Theorem:
-        boundary curve ↔ surface.
+        boundary curve <m>\leftrightarrow</m> surface.
       </li>
       <li>
         Divergence Theorem:
-        closed surface ↔ volume.
+        closed surface <m>\leftrightarrow</m> volume.
       </li>
     </ul>
 
