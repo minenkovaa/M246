@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: denver                         *-->
+<!--*  Theme: custom                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -111,7 +111,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
@@ -409,24 +409,48 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-08.html" class="internal"><span class="title">Week 8: Systems; Laplace transform; numerical intro</span></a></div>
+<div class="toc-title-box"><a href="notes-week8.html" class="internal"><span class="title">Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-systems" class="internal"><span class="title">Systems of Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-systems-5" class="internal"><span class="title">Solving Systems Using Eigenvalues</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-laplace" class="internal"><span class="title">Laplace Transforms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-6" class="internal"><span class="title">Partial Fraction Decomposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-7" class="internal"><span class="title">Unit Step Functions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-8" class="internal"><span class="title">Convolution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week8.html#week8-numerical" class="internal"><span class="title">Numerical Methods</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: PDE, their Classification; physical interpretation</span></a></div>
+<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: Partial Differential Equations and Their Classification</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-intro" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order" class="internal"><span class="title">Order and Linearity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical" class="internal"><span class="title">Physical Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-bc-ic" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-heat-example" class="internal"><span class="title">Heat Equation Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-matlab" class="internal"><span class="title">MATLAB Visualization of Heat Diffusion</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-10.html" class="internal"><span class="title">Week 10: Heat and wave equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat" class="internal"><span class="title">The Heat Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat-example" class="internal"><span class="title">Heat Equation on a Finite Rod</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave" class="internal"><span class="title">The Wave Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave-example" class="internal"><span class="title">Vibrating String Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-comparison" class="internal"><span class="title">Comparing the Heat and Wave Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-matlab" class="internal"><span class="title">MATLAB Visualization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-fd" class="internal"><span class="title">Finite Difference Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-error" class="internal"><span class="title">Numerical versus Exact Solutions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -498,24 +522,23 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-handout">
 <div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Engineering Modeling Activity: Building and Solving Second-Order Differential Equations</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-3" class="internal"><span class="title">Reference Formulas and Hints</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-10" class="internal"><span class="title">Reflection Questions</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-9" class="internal"><span class="title">Reflection Questions</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Systems of ODEs and Laplace Transforms</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 01</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 02</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 03</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Presentation Instructions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 02</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 03</span></a></div></li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 04</span></a></div>
+<div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Homework 04</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="hw-05.html" class="internal"><span class="title">Homework 05</span></a></div></li>
@@ -524,16 +547,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="hw-06.html#civil-engineering-problem" class="internal"><span class="title">Highway Drainage and Stormwater Management Design Project</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-8.html" class="internal"><span class="title">Homework 07</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html" class="internal"><span class="title">Homework 07</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="homework-8.html#homework-8-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html#homework-9-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -579,12 +602,17 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
-<th scope="col" class="l m b0 r0 l0 t0 lines">Activity</th>
-<th scope="col" class="l m b0 r0 l0 t0 lines">Description</th>
+<th scope="col" class="l m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="systems-activity-2-2-3-1-1">Activity<div class="autopermalink" data-description="Paragraph"><a href="#systems-activity-2-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0" style="max-width:378px;"><div class="para" id="systems-activity-2-2-3-2-1">Description<div class="autopermalink" data-description="Paragraph"><a href="#systems-activity-2-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></th>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><em class="alert">Mission Possible: Find the Solution</em></td>
-<td class="l m b0 r0 l0 t0 lines">Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions.</td>
+<td class="l m b0 r0 l0 t0" style="max-width:150px;"><div class="para" id="systems-activity-2-2-4-1-1">
+<em class="alert">Mission Possible: Find the Solution</em><div class="autopermalink" data-description="Paragraph"><a href="#systems-activity-2-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:378px;"><div class="para" id="systems-activity-2-2-4-2-1">Analyze and solve the three systems of equations, then state whether each system has one solution, no solution, or infinitely many solutions.<div class="autopermalink" data-description="Paragraph"><a href="#systems-activity-2-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
 </tr>
 </table></div></section><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">

@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: custom                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Applied Mathematics for Civil Engineers">
+<meta property="book:author" content="Dr. Anastasiia Minenkova">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Applied Mathematics for Civil Engineers</span> <span class="subtitle">M 246 Fall 2026</span></a></h1>
+<p class="byline">Dr. Anastasiia Minenkova</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-07.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-09.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-overview" class="internal"><span class="title">Course Overview</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments-2" class="internal"><span class="title">Important Dates (tentative)</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessment-of-mathematical-engagement" class="internal"><span class="title">Assessment of Mathematical Engagement</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#sec-course-policies" class="internal"><span class="title">Course Policies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-2" class="internal"><span class="title">Attendance</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-3" class="internal"><span class="title">Late work</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="syllabus.html#sec-course-policies-4" class="internal"><span class="title">Class Preparation and Attendance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-4-3" class="internal"><span class="title">Collaboration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-4-4" class="internal"><span class="title">Tutoring Availability:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-4-5" class="internal"><span class="title">Calculator Policy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-4-6" class="internal"><span class="title">Cell Phone Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="syllabus.html#sec-course-policies-5" class="internal"><span class="title">Other Important Polices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-5-2" class="internal"><span class="title">Students with Disabilities:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-5-3" class="internal"><span class="title">Title IX and Sexual Assault</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-5-4" class="internal"><span class="title">University of Hartford Mental Health and Wellbeing Statement</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-6" class="internal"><span class="title">Land Acknowledgement Policy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-7" class="internal"><span class="title">Audio/Visual Recording Policy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-policies-8" class="internal"><span class="title">Generative AI</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="outline.html" class="internal"><span class="title">Course Outline</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="outline.html#weekly-outline" class="internal"><span class="title">Weekly Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="outline.html#readings" class="internal"><span class="title">Key Open Educational Resources</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Learning-Outcomes.html" class="internal"><span class="title">Learning Outcomes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#module-1" class="internal"><span class="title">Module 1: Linear Algebra Foundations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#module-2" class="internal"><span class="title">Module 2: Multivariable Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#module-3" class="internal"><span class="title">Module 3: Ordinary Differential Equations (ODE)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#module-4" class="internal"><span class="title">Module 4: Partial Differential Equations (PDE)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#module-5" class="internal"><span class="title">Module 5: Engineering Applications and Modeling</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="matlab-tips.html" class="internal"><span class="title">Useful MATLAB Commands for Linear Algebra with Syntax Tips</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-2" class="internal"><span class="title">Basic Matrix Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-3" class="internal"><span class="title">Matrix Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-4" class="internal"><span class="title">Linear Algebra Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-5" class="internal"><span class="title">Plotting and Visualization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-tips.html#matlab-tips-6" class="internal"><span class="title">Miscellaneous</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1. Matrix operations; properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#learning-outcomes" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#introduction" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#matrix-notation" class="internal"><span class="title">Matrix Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#addition-scalar-multiplication" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#matrix-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#powers" class="internal"><span class="title">Powers of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#transpose" class="internal"><span class="title">Transpose of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#elementary-matrices" class="internal"><span class="title">Elementary Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#quick-recap" class="internal"><span class="title">Quick Recap</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2: Determinants; inverses; rank</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-02.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-02.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-03.html" class="internal"><span class="title">Week 3: Systems; eigenvalues/eigenvectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#linear-equations" class="internal"><span class="title">What is a Linear Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#solutions" class="internal"><span class="title">Solutions and Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#fundamental-questions" class="internal"><span class="title">Two Fundamental Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#matrices-for-systems" class="internal"><span class="title">Systems of Linear Equations and Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#row-operations-review" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#rref-review" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#gaussian-elimination" class="internal"><span class="title">Gaussian Elimination (Algorithm)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#rank" class="internal"><span class="title">Rank of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#geometric-interpretation" class="internal"><span class="title">Geometric Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#pivot-columns" class="internal"><span class="title">Pivot Columns (Visual Explanation)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-15" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-16" class="internal"><span class="title">Eigenvalues and Eigenvectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-week-03.html#independent-eigenvectors" class="internal"><span class="title">Eigenvectors for Distinct Eigenvalues are Independent (E2)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#difference-equations-application" class="internal"><span class="title">Difference Equations Application</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#characteristic-equation" class="internal"><span class="title">Characteristic Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#algebraic-vs-geometric-multiplicity" class="internal"><span class="title">Algebraic vs. Geometric Multiplicity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#similarity" class="internal"><span class="title">Similarity</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-03.html#complex-eigenvalues" class="internal"><span class="title">Complex Eigenvalues</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#complex-eigenvalues-2" class="internal"><span class="title">Complex Numbers (Brief Review)</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-03.html#diagonalization" class="internal"><span class="title">Diagonalization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#diagonalization-3" class="internal"><span class="title">Why It Matters: Powers of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-03.html#diagonalization-14" class="internal"><span class="title">How to Diagonalize a Matrix</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-31" class="internal"><span class="title">Multiplicity Conditions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-05.html" class="internal"><span class="title">Week 5: Partial derivatives; higher-order derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-limits" class="internal"><span class="title">Limits and Continuity</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-05.html#sec-partials" class="internal"><span class="title">Partial Derivatives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-partials-3" class="internal"><span class="title">Coordinate Traces</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-05.html#sec-directional" class="internal"><span class="title">Directional Derivatives and the Gradient</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-directional-3" class="internal"><span class="title">A Hiking Interpretation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-second-partials" class="internal"><span class="title">Higher-Order Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-05.html#sec-optimization" class="internal"><span class="title">Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-optimization-3" class="internal"><span class="title">From One Dimension to Two Dimensions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-05.html#sec-optimization-4" class="internal"><span class="title">Saddle Points</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="matlab-multivariable-calculus.html" class="internal"><span class="title">MATLAB Tips for Multivariable Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#creating-grids" class="internal"><span class="title">Creating a Grid</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#surface-plots" class="internal"><span class="title">Surface Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#contour-plots" class="internal"><span class="title">Contour Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#symbolic-partials" class="internal"><span class="title">Partial Derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#gradient" class="internal"><span class="title">Gradient</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#tangent-plane" class="internal"><span class="title">Tangent Plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#matlab-multivariable-calculus-9" class="internal"><span class="title">Space Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#vector-fields" class="internal"><span class="title">Vector Fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#vector-fields-3d" class="internal"><span class="title">Three-Dimensional Vector Fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#double-integrals" class="internal"><span class="title">Double Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#triple-integrals" class="internal"><span class="title">Triple Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#implicit-surfaces" class="internal"><span class="title">Implicit Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#parametric-surfaces" class="internal"><span class="title">Parametric Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#finding-critical-points" class="internal"><span class="title">Critical Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#plotting-multiple-surfaces" class="internal"><span class="title">Plotting Multiple Surfaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="matlab-multivariable-calculus.html#useful-commands" class="internal"><span class="title">Useful Commands</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-06w.html" class="internal"><span class="title">Week 6: Multiple integrals; vector calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-2" class="internal"><span class="title">Double Integrals and Signed Volume</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-3" class="internal"><span class="title">Iterated Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-4" class="internal"><span class="title">Changing the Order of Integration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-5" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-6" class="internal"><span class="title">Coordinates Type</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-6-3" class="internal"><span class="title">Polar Coordinates</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-6-4" class="internal"><span class="title">Cylindrical Coordinates</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-6-5" class="internal"><span class="title">Spherical Coordinates</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-7" class="internal"><span class="title">Vector Fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-8" class="internal"><span class="title">The Gradient</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-9" class="internal"><span class="title">Divergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-10" class="internal"><span class="title">Curl</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-11" class="internal"><span class="title">Line Integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-12" class="internal"><span class="title">Conservative Vector Fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06w.html#notes-week-06w-13" class="internal"><span class="title">Big Picture</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems" class="internal"><span class="title">Integral Theorems in Multivariable Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-2" class="internal"><span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-3" class="internal"><span class="title">The Fundamental Theorem for Line Integrals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-4" class="internal"><span class="title">Green’s Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-5" class="internal"><span class="title">Stokes’ Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-6" class="internal"><span class="title">Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06w.html#integral-theorems-7" class="internal"><span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-06.html" class="internal"><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#first-order-ode-notes" class="internal"><span class="title">First-Order Ordinary Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#modeling" class="internal"><span class="title">Modeling with First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#classification" class="internal"><span class="title">Classifying First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06.html#separable-equations" class="internal"><span class="title">Separable Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06.html#separable-equations-3" class="internal"><span class="title">Solution Strategy</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-06.html#difflinear-equations" class="internal"><span class="title">Linear Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-06.html#difflinear-equations-4" class="internal"><span class="title">Integrating Factor</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#exact-equations" class="internal"><span class="title">Exact Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#bernoulli-equations" class="internal"><span class="title">Bernoulli Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#initial-value-problems" class="internal"><span class="title">Initial Value Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#euler-method-preview" class="internal"><span class="title">Numerical Approximation: Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#summary" class="internal"><span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-07.html" class="internal"><span class="title">Week 7: Second-order linear ODEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#second-order-introduction" class="internal"><span class="title">Introduction to Second-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#linear-second-order" class="internal"><span class="title">Linear Second-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#constant-coefficient" class="internal"><span class="title">Constant-Coefficient Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#why-exponentials" class="internal"><span class="title">Why Exponential Functions?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#characteristic-roots" class="internal"><span class="title">Solutions from Characteristic Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#nonhomogeneous-methods" class="internal"><span class="title">Methods for Nonhomogeneous Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#variation-of-parameters" class="internal"><span class="title">Variation of Parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#reduction-of-order" class="internal"><span class="title">Reduction of Order</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-week8.html" class="internal"><span class="title">Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-systems" class="internal"><span class="title">Systems of Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-systems-5" class="internal"><span class="title">Solving Systems Using Eigenvalues</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-laplace" class="internal"><span class="title">Laplace Transforms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-6" class="internal"><span class="title">Partial Fraction Decomposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-7" class="internal"><span class="title">Unit Step Functions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-8" class="internal"><span class="title">Convolution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week8.html#week8-numerical" class="internal"><span class="title">Numerical Methods</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: Partial Differential Equations and Their Classification</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-intro" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order" class="internal"><span class="title">Order and Linearity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical" class="internal"><span class="title">Physical Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-bc-ic" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-heat-example" class="internal"><span class="title">Heat Equation Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-matlab" class="internal"><span class="title">MATLAB Visualization of Heat Diffusion</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-10.html" class="internal"><span class="title">Week 10: Heat and wave equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat" class="internal"><span class="title">The Heat Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat-example" class="internal"><span class="title">Heat Equation on a Finite Rod</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave" class="internal"><span class="title">The Wave Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave-example" class="internal"><span class="title">Vibrating String Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-comparison" class="internal"><span class="title">Comparing the Heat and Wave Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-matlab" class="internal"><span class="title">MATLAB Visualization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-fd" class="internal"><span class="title">Finite Difference Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-error" class="internal"><span class="title">Numerical versus Exact Solutions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-11.html" class="internal"><span class="title">Week 11</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-11.html#notes-week-11-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-11.html#notes-week-11-3" class="internal"><span class="title">Thursday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-12.html" class="internal"><span class="title">Week 12</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-12.html#notes-week-12-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-12.html#notes-week-12-3" class="internal"><span class="title">Thursday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-13.html" class="internal"><span class="title">Week 13</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-13.html#notes-week-13-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-13.html#notes-week-13-3" class="internal"><span class="title">Thursday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-14.html" class="internal"><span class="title">Week 14</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-14.html#notes-week-14-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-14.html#notes-week-14-3" class="internal"><span class="title">Thursday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-15.html" class="internal"><span class="title">Week 15</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-15.html#notes-week-15-2" class="internal"><span class="title">Tuesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-15.html#notes-week-15-3" class="internal"><span class="title">Thursday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="matrix-activity2.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="inverse-activity2.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="systems-activity.html" class="internal"><span class="title">Systems of Equations Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="modelingLA-activity.html" class="internal"><span class="title">Modeling Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="stations-coordinates.html" class="internal"><span class="title">Cartesian, Cylindrical, and Spherical Coordinates</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-2.html" class="internal"><span class="title">Review</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-3.html" class="internal"><span class="title">Matrix Activity 1</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-4.html" class="internal"><span class="title">Matrix Activity 2</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-5.html" class="internal"><span class="title">Inverse Matrix Activity</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-6.html" class="internal"><span class="title">Determinants Activity</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-7.html" class="internal"><span class="title">Modeling Activity 1</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-8.html" class="internal"><span class="title">Surfaces and Vectors</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-9.html" class="internal"><span class="title">Exploring Multivariable Calculus</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-10.html" class="internal"><span class="title">Limits, Partial Derivatives, and Optimization</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-11.html" class="internal"><span class="title">Line and Surface Integrals</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-12.html" class="internal"><span class="title">Identifying First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-13.html" class="internal"><span class="title">Methods for Solving Second-Order Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-13.html#student-template" class="internal"><span class="title">Work Template</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-handout">
+<div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Engineering Modeling Activity: Building and Solving Second-Order Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-9" class="internal"><span class="title">Reflection Questions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Systems of ODEs and Laplace Transforms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Presentation Instructions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 02</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 03</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Homework 04</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="hw-05.html" class="internal"><span class="title">Homework 05</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="hw-06.html" class="internal"><span class="title">Homework 06</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="hw-06.html#civil-engineering-problem" class="internal"><span class="title">Highway Drainage and Stormwater Management Design Project</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="homework-9.html" class="internal"><span class="title">Homework 07</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="homework-9.html#homework-9-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Resources.html" class="internal"><span class="title">Resources Used in Preparation of This Course</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="resources.html" class="internal"><span class="title">Resources used in compiling this course</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="resources.html#morereadings" class="internal"><span class="title">Key Open Educational Resources</span></a></div></li></ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week8"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</span>
+</h2>
+<ol class="decimal" id="notes-week8-2">
+<li id="notes-week8-2-1">
+<div class="para" id="notes-week8-2-1-1">Solve systems of linear differential equations using eigenvalues and eigenvectors.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#notes-week8-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="notes-week8-2-2">
+<div class="para" id="notes-week8-2-2-1">Interpret phase-plane behavior from eigenvalue classifications.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#notes-week8-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="notes-week8-2-3">
+<div class="para" id="notes-week8-2-3-1">Apply Laplace transforms to solve initial value problems.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#notes-week8-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="notes-week8-2-4">
+<div class="para" id="notes-week8-2-4-1">Use partial fraction decomposition, step functions, and convolution.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#notes-week8-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="notes-week8-2-5">
+<div class="para" id="notes-week8-2-5-1">Compare analytical and numerical solution techniques.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#notes-week8-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="notes-week8-2-6">
+<div class="para" id="notes-week8-2-6-1">Investigate numerical error and step-size effects.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#notes-week8-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="notes-week8-2-7">
+<div class="para" id="notes-week8-2-7-1">Use MATLAB to implement and compare numerical methods.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#notes-week8-2-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+</ol>
+<section class="subsection" id="week8-systems"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Systems of Differential Equations</span>
+</h3>
+<div class="para" id="week8-systems-2">Many applications involve several dependent variables that interact simultaneously. Such models naturally lead to systems of differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="week8-systems-3">
+\begin{equation*}
+\mathbf{x}'=A\mathbf{x}
+\end{equation*}
+</div>
+<figure class="table table-like" id="week8-systems-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">131<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Applications of Systems<div class="autopermalink" data-description="Table 131: Applications of Systems"><a href="#week8-systems-4" title="Copy heading and permalink for Table 131: Applications of Systems" aria-label="Copy heading and permalink for Table 131: Applications of Systems">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Application</td>
+<td class="l m b0 r0 l0 t0 lines">Variables</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Population Models</td>
+<td class="l m b0 r0 l0 t0 lines">Predator and prey populations</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Electrical Circuits</td>
+<td class="l m b0 r0 l0 t0 lines">Current and voltage</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Mechanical Systems</td>
+<td class="l m b0 r0 l0 t0 lines">Position and velocity</td>
+</tr>
+</table></div></figure><section class="subsubsection" id="week8-systems-5"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Systems Using Eigenvalues</span>
+</h4>
+<div class="para" id="week8-systems-5-2">If <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(A\)</span> with eigenvector <span class="process-math">\(\mathbf{v}\text{,}\)</span> then<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="week8-systems-5-3">
+\begin{equation*}
+\mathbf{x}(t)=e^{\lambda t}\mathbf{v}
+\end{equation*}
+</div>
+<div class="para" id="week8-systems-5-4">is a solution of the system.<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="week8-systems-5-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Worked Example.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="week8-systems-5-5-2-1">
+\begin{equation*}
+\mathbf{x}'=
+\begin{bmatrix}3 &amp; 1\\1 &amp; 3\end{bmatrix}
+\mathbf{x}
+\end{equation*}
+</div>
+<div class="para" id="week8-systems-5-5-2-2">The characteristic equation gives eigenvalues<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="week8-systems-5-5-2-3">
+\begin{equation*}
+\lambda_1=4,
+\qquad
+\lambda_2=2.
+\end{equation*}
+</div>
+<div class="para" id="week8-systems-5-5-2-4">Corresponding eigenvectors are<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-5-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="week8-systems-5-5-2-5">
+\begin{equation*}
+\mathbf{v}_1=
+\begin{bmatrix}1\\1\end{bmatrix},
+\qquad
+\mathbf{v}_2=
+\begin{bmatrix}1\\-1\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="week8-systems-5-5-2-6">The general solution is<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-5-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="week8-systems-5-5-2-7">
+\begin{equation*}
+\mathbf{x}(t)=
+c_1e^{4t}\mathbf{v}_1+
+c_2e^{2t}\mathbf{v}_2.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 38: Worked Example"><a href="#week8-systems-5-5" title="Copy heading and permalink for Example 38: Worked Example" aria-label="Copy heading and permalink for Example 38: Worked Example">🔗</a></div></article></details><figure class="table table-like" id="week8-systems-5-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">133<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Eigenvalue Classification Summary<div class="autopermalink" data-description="Table 133: Eigenvalue Classification Summary"><a href="#week8-systems-5-6" title="Copy heading and permalink for Table 133: Eigenvalue Classification Summary" aria-label="Copy heading and permalink for Table 133: Eigenvalue Classification Summary">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Eigenvalues</td>
+<td class="l m b0 r0 l0 t0 lines">Classification</td>
+<td class="l m b0 r0 l0 t0 lines">General Solution Form</td>
+<td class="l m b0 r0 l0 t0 lines">Phase Portrait</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Both negative</td>
+<td class="l m b0 r0 l0 t0 lines">Stable Node</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Trajectories approach origin</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Both positive</td>
+<td class="l m b0 r0 l0 t0 lines">Unstable Node</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Trajectories move away</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Opposite signs</td>
+<td class="l m b0 r0 l0 t0 lines">Saddle</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">One stable and one unstable direction</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(\alpha\pm i\beta\text{,}\)</span> <span class="process-math">\(\alpha&lt;0\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Stable Spiral</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Spiral inward</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(\alpha\pm i\beta\text{,}\)</span> <span class="process-math">\(\alpha&gt;0\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">Unstable Spiral</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Spiral outward</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\pm i\beta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Center</td>
+<td class="l m b0 r0 l0 t0 lines">Oscillatory solution</td>
+<td class="l m b0 r0 l0 t0 lines">Closed orbits</td>
+</tr>
+</table></div></figure><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33.3333333333333% 33.3333333333333% 33.3333333333333%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/week8-systems-5-7-1.svg" role="img" class="contained"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/week8-systems-5-7-2.svg" role="img" class="contained"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/week8-systems-5-7-3.svg" role="img" class="contained"></div></div>
+</div></div>
+<article class="remark remark-like" id="week8-systems-5-8"><h5 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">134</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Notation.</span>
+</h5>
+<ul class="disc" id="week8-systems-5-8-2">
+<li id="week8-systems-5-8-2-1">
+<div class="para" id="p-derived-week8-systems-5-8-2-1">
+<span class="process-math">\(\mathbf{x}(t)\)</span> denotes the solution vector.</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-2">
+<div class="para" id="p-derived-week8-systems-5-8-2-2">
+<span class="process-math">\(\lambda\)</span> denotes an eigenvalue of the coefficient matrix <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-3">
+<div class="para" id="p-derived-week8-systems-5-8-2-3">
+<span class="process-math">\(\mathbf{v}\)</span> denotes an eigenvector corresponding to <span class="process-math">\(\lambda\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-4">
+<div class="para" id="p-derived-week8-systems-5-8-2-4">
+<span class="process-math">\(\mathbf{v}_1,\mathbf{v}_2\)</span> are eigenvectors associated with distinct eigenvalues <span class="process-math">\(\lambda_1,\lambda_2\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-5">
+<div class="para" id="p-derived-week8-systems-5-8-2-5">
+<span class="process-math">\(c_1,c_2\)</span> are arbitrary constants determined by the initial conditions.</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-6">
+<div class="para" id="p-derived-week8-systems-5-8-2-6">
+<span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\)</span> denote the real and imaginary parts of a complex eigenvalue <span class="process-math">\(\lambda=\alpha\pm i\beta\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-7">
+<div class="para" id="p-derived-week8-systems-5-8-2-7">
+<span class="process-math">\(\mathbf{v}=\mathbf{p}+i\mathbf{q}\)</span> denotes a complex eigenvector, where <span class="process-math">\(\mathbf{p}\)</span> and <span class="process-math">\(\mathbf{q}\)</span> are real vectors.</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="week8-systems-5-8-2-8">
+<div class="para" id="p-derived-week8-systems-5-8-2-8">For complex eigenvalues, the real-valued solution is obtained from the vectors <span class="process-math">\(\mathbf{p}\)</span> and <span class="process-math">\(\mathbf{q}\text{:}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#week8-systems-5-8-2-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Remark 134: Notation"><a href="#week8-systems-5-8" title="Copy heading and permalink for Remark 134: Notation" aria-label="Copy heading and permalink for Remark 134: Notation">🔗</a></div></article><details id="example-complex-eigenvalues" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Complex Eigenvalues.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="example-complex-eigenvalues-2-1">Solve the system<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-2-2">
+\begin{equation*}
+\mathbf{x}'
+=
+\begin{bmatrix}
+1 &amp; -2\\
+2 &amp; 1
+\end{bmatrix}
+\mathbf{x}.
+\end{equation*}
+</div>
+<div class="solutions"><details id="example-complex-eigenvalues-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-complex-eigenvalues-3-1">Compute the characteristic polynomial:<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-2">
+\begin{equation*}
+\det(A-\lambda I)
+=
+\begin{vmatrix}
+1-\lambda &amp; -2\\
+2 &amp; 1-\lambda
+\end{vmatrix}
+=0.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-3">
+\begin{equation*}
+(1-\lambda)^2+4=0.
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-4">The eigenvalues are<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-5">
+\begin{equation*}
+\lambda
+=
+1\pm 2i.
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-6">Choose the eigenvalue <span class="process-math">\(\lambda=1+2i\text{.}\)</span> Solving <span class="process-math">\((A-\lambda I)\mathbf{v}=0\)</span> gives the eigenvector<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-7">
+\begin{equation*}
+\mathbf{v}
+=
+\begin{bmatrix}
+1\\
+-i
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-8">Write the eigenvector as<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-9">
+\begin{equation*}
+\mathbf{v}
+=
+\mathbf{p}
++
+i\mathbf{q},
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-10">where<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-11">
+\begin{equation*}
+\mathbf{p}
+=
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix},
+\qquad
+\mathbf{q}
+=
+\begin{bmatrix}
+0\\
+-1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-12">Using the complex solution formula,<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-13">
+\begin{equation*}
+\mathbf{x}(t)
+=
+e^{t}
+\left[
+c_1
+\left(
+\mathbf{p}\cos(2t)
+-
+\mathbf{q}\sin(2t)
+\right)
++
+c_2
+\left(
+\mathbf{p}\sin(2t)
++
+\mathbf{q}\cos(2t)
+\right)
+\right].
+\end{equation*}
+</div>
+<div class="para" id="example-complex-eigenvalues-3-14">Substituting <span class="process-math">\(\mathbf{p}\)</span> and <span class="process-math">\(\mathbf{q}\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#example-complex-eigenvalues-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-complex-eigenvalues-3-15">
+\begin{equation*}
+\mathbf{x}(t)
+=
+c_1e^t
+\begin{bmatrix}
+\cos(2t)\\
+\sin(2t)
+\end{bmatrix}
++
+c_2e^t
+\begin{bmatrix}
+\sin(2t)\\
+-\cos(2t)
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 39.1"><a href="#example-complex-eigenvalues-3" title="Copy heading and permalink for Solution 39.1" aria-label="Copy heading and permalink for Solution 39.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 39: Complex Eigenvalues"><a href="#example-complex-eigenvalues" title="Copy heading and permalink for Example 39: Complex Eigenvalues" aria-label="Copy heading and permalink for Example 39: Complex Eigenvalues">🔗</a></div></article></details><article class="remark remark-like" id="week8-systems-5-10"><h5 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">136</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Interpretation.</span>
+</h5>
+<div class="para" id="week8-systems-5-10-2">The eigenvalues <span class="process-math">\(1\pm2i\)</span> have positive real part <span class="process-math">\(\alpha=1\text{.}\)</span> The factor <span class="process-math">\(e^t\)</span> causes solutions to grow, while the <span class="process-math">\(\sin(2t)\)</span> and <span class="process-math">\(\cos(2t)\)</span> terms produce oscillation. Therefore trajectories spiral away from the origin, and the equilibrium is an <em class="emphasis">unstable spiral</em>.<div class="autopermalink" data-description="Paragraph"><a href="#week8-systems-5-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 136: Geometric Interpretation"><a href="#week8-systems-5-10" title="Copy heading and permalink for Remark 136: Geometric Interpretation" aria-label="Copy heading and permalink for Remark 136: Geometric Interpretation">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Solving Systems Using Eigenvalues"><a href="#week8-systems-5" title="Copy heading and permalink for Subsubsection: Solving Systems Using Eigenvalues" aria-label="Copy heading and permalink for Subsubsection: Solving Systems Using Eigenvalues">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Systems of Differential Equations"><a href="#week8-systems" title="Copy heading and permalink for Subsection: Systems of Differential Equations" aria-label="Copy heading and permalink for Subsection: Systems of Differential Equations">🔗</a></div></section><section class="subsection" id="week8-laplace"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Laplace Transforms</span>
+</h3>
+<article class="definition definition-like" id="week8-laplace-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Laplace Transform.</span>
+</h4>
+<div class="displaymath process-math" id="week8-laplace-2-2-1">
+\begin{equation*}
+\mathcal{L}\{f(t)\}=F(s)=\int_0^{\infty}e^{-st}f(t)\,dt
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 43: Laplace Transform"><a href="#week8-laplace-2" title="Copy heading and permalink for Definition 43: Laplace Transform" aria-label="Copy heading and permalink for Definition 43: Laplace Transform">🔗</a></div></article><figure class="table table-like" id="week8-laplace-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">138<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Common Laplace Transforms<div class="autopermalink" data-description="Table 138: Common Laplace Transforms"><a href="#week8-laplace-3" title="Copy heading and permalink for Table 138: Common Laplace Transforms" aria-label="Copy heading and permalink for Table 138: Common Laplace Transforms">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Function</td>
+<td class="l m b0 r0 l0 t0 lines">Transform</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1/s\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1/s^2\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^{at}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1/(s-a)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin(at)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a/(s^2+a^2)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos(at)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s/(s^2+a^2)\)</span></td>
+</tr>
+</table></div></figure><figure class="table table-like" id="week8-laplace-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">139<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Inverse Laplace Transforms<div class="autopermalink" data-description="Table 139: Inverse Laplace Transforms"><a href="#week8-laplace-4" title="Copy heading and permalink for Table 139: Inverse Laplace Transforms" aria-label="Copy heading and permalink for Table 139: Inverse Laplace Transforms">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(F(s)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(t)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1/(s-a)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^{at}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1/s^2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s/(s^2+a^2)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos(at)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a/(s^2+a^2)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin(at)\)</span></td>
+</tr>
+</table></div></figure><details id="week8-laplace-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving an IVP.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="week8-laplace-5-2-1">
+\begin{equation*}
+y'+2y=0,\qquad y(0)=3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-5-2-2">
+\begin{equation*}
+sY-3+2Y=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-5-2-3">
+\begin{equation*}
+Y=\frac{3}{s+2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-5-2-4">
+\begin{equation*}
+y(t)=3e^{-2t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 40: Solving an IVP"><a href="#week8-laplace-5" title="Copy heading and permalink for Example 40: Solving an IVP" aria-label="Copy heading and permalink for Example 40: Solving an IVP">🔗</a></div></article></details><section class="subsubsection" id="week8-laplace-6"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial Fraction Decomposition</span>
+</h4>
+<figure class="table table-like" id="week8-laplace-6-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">141<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>PFD Guide<div class="autopermalink" data-description="Table 141: PFD Guide"><a href="#week8-laplace-6-2" title="Copy heading and permalink for Table 141: PFD Guide" aria-label="Copy heading and permalink for Table 141: PFD Guide">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Denominator</td>
+<td class="l m b0 r0 l0 t0 lines">Form</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((s-a)(s-b)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(A/(s-a)+B/(s-b)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((s-a)^2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(A/(s-a)+B/(s-a)^2\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(s^2+a^2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((As+B)/(s^2+a^2)\)</span></td>
+</tr>
+</table></div></figure><details id="week8-laplace-6-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">PFD Example.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="week8-laplace-6-3-2-1">
+\begin{equation*}
+\frac{1}{s(s+1)}=\frac{1}{s}-\frac{1}{s+1}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-6-3-2-2">
+\begin{equation*}
+\mathcal{L}^{-1}=1-e^{-t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 41: PFD Example"><a href="#week8-laplace-6-3" title="Copy heading and permalink for Example 41: PFD Example" aria-label="Copy heading and permalink for Example 41: PFD Example">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection: Partial Fraction Decomposition"><a href="#week8-laplace-6" title="Copy heading and permalink for Subsubsection: Partial Fraction Decomposition" aria-label="Copy heading and permalink for Subsubsection: Partial Fraction Decomposition">🔗</a></div></section><section class="subsubsection" id="week8-laplace-7"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Unit Step Functions</span>
+</h4>
+<div class="displaymath process-math" id="week8-laplace-7-2">
+\begin{equation*}
+u_c(t)=\begin{cases}0,&amp;t&lt;c\\1,&amp;t\ge c\end{cases}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-7-3">
+\begin{equation*}
+\mathcal{L}\{u_c(t)f(t-c)\}=e^{-cs}F(s)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Unit Step Functions"><a href="#week8-laplace-7" title="Copy heading and permalink for Subsubsection: Unit Step Functions" aria-label="Copy heading and permalink for Subsubsection: Unit Step Functions">🔗</a></div></section><section class="subsubsection" id="week8-laplace-8"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Convolution</span>
+</h4>
+<div class="displaymath process-math" id="week8-laplace-8-2">
+\begin{equation*}
+(f*g)(t)=\int_0^t f(\tau)g(t-\tau)d\tau
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-laplace-8-3">
+\begin{equation*}
+\mathcal{L}\{f*g\}=F(s)G(s)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Convolution"><a href="#week8-laplace-8" title="Copy heading and permalink for Subsubsection: Convolution" aria-label="Copy heading and permalink for Subsubsection: Convolution">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Laplace Transforms"><a href="#week8-laplace" title="Copy heading and permalink for Subsection: Laplace Transforms" aria-label="Copy heading and permalink for Subsection: Laplace Transforms">🔗</a></div></section><section class="subsection" id="week8-numerical"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Numerical Methods</span>
+</h3>
+<article class="definition definition-like" id="week8-numerical-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euler’s Method.</span>
+</h4>
+<div class="displaymath process-math" id="week8-numerical-2-2-1">
+\begin{equation*}
+y_{n+1}=y_n+h f(t_n,y_n)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 44: Euler’s Method"><a href="#week8-numerical-2" title="Copy heading and permalink for Definition 44: Euler’s Method" aria-label="Copy heading and permalink for Definition 44: Euler’s Method">🔗</a></div></article><figure class="table table-like" id="week8-numerical-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">144<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Accuracy of Numerical Methods<div class="autopermalink" data-description="Table 144: Accuracy of Numerical Methods"><a href="#week8-numerical-3" title="Copy heading and permalink for Table 144: Accuracy of Numerical Methods" aria-label="Copy heading and permalink for Table 144: Accuracy of Numerical Methods">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Method</td>
+<td class="l m b0 r0 l0 t0 lines">Global Error</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Euler</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(O(h)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Improved Euler</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(O(h^2)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">RK4</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(O(h^4)\)</span></td>
+</tr>
+</table></div></figure><article class="definition definition-like" id="week8-numerical-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Error Measures.</span>
+</h4>
+<div class="displaymath process-math" id="week8-numerical-4-2-1">
+\begin{equation*}
+\text{Absolute Error}=|y-y_h|
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-numerical-4-2-2">
+\begin{equation*}
+\text{Relative Error}=\frac{|y-y_h|}{|y|}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 45: Error Measures"><a href="#week8-numerical-4" title="Copy heading and permalink for Definition 45: Error Measures" aria-label="Copy heading and permalink for Definition 45: Error Measures">🔗</a></div></article><details id="week8-numerical-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euler Method.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="week8-numerical-5-2-1">
+\begin{equation*}
+y'=y,\quad y(0)=1,\quad h=0.1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="week8-numerical-5-2-2">
+\begin{equation*}
+y_1=1+0.1(1)=1.1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 42: Euler Method"><a href="#week8-numerical-5" title="Copy heading and permalink for Example 42: Euler Method" aria-label="Copy heading and permalink for Example 42: Euler Method">🔗</a></div></article></details><div class="code-box"><pre class="program clipboardable"><code class="language-matlab">f = @(t,y) y;
+h = 0.1;
+tE = 0:h:1;
+yE = zeros(size(tE));
+yE(1)=1;
+for n=1:length(tE)-1
+    yE(n+1)=yE(n)+h*yE(n);
+end
+[tO,yO]=ode45(f,[0 1],1);
+plot(tE,yE,'ro-')
+hold on
+plot(tO,yO,'b')
+plot(tE,exp(tE),'k')
+legend('Euler','ode45','Exact')
+</code></pre></div>
+<article class="activity project-like" id="week8-numerical-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Investigating Error and Step Size.</span>
+</h4>
+<ol class="decimal" id="week8-numerical-7-2">
+<li id="week8-numerical-7-2-1">
+<div class="para" id="p-derived-week8-numerical-7-2-1">Apply Euler’s method with several step sizes.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#week8-numerical-7-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="week8-numerical-7-2-2">
+<div class="para" id="p-derived-week8-numerical-7-2-2">Estimate the solution at <span class="process-math">\(t=1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#week8-numerical-7-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="week8-numerical-7-2-3">
+<div class="para" id="p-derived-week8-numerical-7-2-3">Compare with the exact solution.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#week8-numerical-7-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="week8-numerical-7-2-4">
+<div class="para" id="p-derived-week8-numerical-7-2-4">Discuss how the error changes as <span class="process-math">\(h\)</span> decreases.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#week8-numerical-7-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Activity 6: Investigating Error and Step Size"><a href="#week8-numerical-7" title="Copy heading and permalink for Activity 6: Investigating Error and Step Size" aria-label="Copy heading and permalink for Activity 6: Investigating Error and Step Size">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Numerical Methods"><a href="#week8-numerical" title="Copy heading and permalink for Subsection: Numerical Methods" aria-label="Copy heading and permalink for Subsection: Numerical Methods">🔗</a></div></section><div class="para" id="notes-week8-6-1">Systems of differential equations may be solved using eigenvalues and eigenvectors. Laplace transforms provide an alternative approach for solving initial value problems, while numerical methods provide approximations when exact solutions are difficult or unavailable.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week8-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods"><a href="#notes-week8" title="Copy heading and permalink for Section: Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods" aria-label="Copy heading and permalink for Section: Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="notes-week-07.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-09.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

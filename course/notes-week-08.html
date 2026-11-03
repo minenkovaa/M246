@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: denver                         *-->
+<!--*  Theme: custom                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -111,7 +111,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
@@ -416,10 +416,16 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: PDE, their Classification; physical interpretation</span></a></div>
+<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: Partial Differential Equations and Their Classification</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-introduction" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order-linearity" class="internal"><span class="title">Order and Linearity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-worked-classification" class="internal"><span class="title">Worked Classification Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical-interpretation" class="internal"><span class="title">Physical Interpretation of PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#week9-boundary-initial-conditions" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-application" class="internal"><span class="title">Application: Steady-State Temperature Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-matlab" class="internal"><span class="title">MATLAB Visualization</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">

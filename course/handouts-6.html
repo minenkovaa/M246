@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: denver                         *-->
+<!--*  Theme: custom                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -111,7 +111,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
@@ -409,24 +409,48 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-08.html" class="internal"><span class="title">Week 8: Systems; Laplace transform; numerical intro</span></a></div>
+<div class="toc-title-box"><a href="notes-week8.html" class="internal"><span class="title">Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-systems" class="internal"><span class="title">Systems of Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-systems-5" class="internal"><span class="title">Solving Systems Using Eigenvalues</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-laplace" class="internal"><span class="title">Laplace Transforms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-6" class="internal"><span class="title">Partial Fraction Decomposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-7" class="internal"><span class="title">Unit Step Functions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-8" class="internal"><span class="title">Convolution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week8.html#week8-numerical" class="internal"><span class="title">Numerical Methods</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: PDE, their Classification; physical interpretation</span></a></div>
+<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: Partial Differential Equations and Their Classification</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-intro" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order" class="internal"><span class="title">Order and Linearity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical" class="internal"><span class="title">Physical Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-bc-ic" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-heat-example" class="internal"><span class="title">Heat Equation Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-matlab" class="internal"><span class="title">MATLAB Visualization of Heat Diffusion</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-10.html" class="internal"><span class="title">Week 10: Heat and wave equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat" class="internal"><span class="title">The Heat Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat-example" class="internal"><span class="title">Heat Equation on a Finite Rod</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave" class="internal"><span class="title">The Wave Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave-example" class="internal"><span class="title">Vibrating String Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-comparison" class="internal"><span class="title">Comparing the Heat and Wave Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-matlab" class="internal"><span class="title">MATLAB Visualization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-fd" class="internal"><span class="title">Finite Difference Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-error" class="internal"><span class="title">Numerical versus Exact Solutions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -498,24 +522,23 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-handout">
 <div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Engineering Modeling Activity: Building and Solving Second-Order Differential Equations</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-3" class="internal"><span class="title">Reference Formulas and Hints</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-10" class="internal"><span class="title">Reflection Questions</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-9" class="internal"><span class="title">Reflection Questions</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Systems of ODEs and Laplace Transforms</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 01</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 02</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 03</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Presentation Instructions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 02</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 03</span></a></div></li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 04</span></a></div>
+<div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Homework 04</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="hw-05.html" class="internal"><span class="title">Homework 05</span></a></div></li>
@@ -524,16 +547,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="hw-06.html#civil-engineering-problem" class="internal"><span class="title">Highway Drainage and Stormwater Management Design Project</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-8.html" class="internal"><span class="title">Homework 07</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html" class="internal"><span class="title">Homework 07</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="homework-8.html#homework-8-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html#homework-9-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -576,7 +599,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinants Activity</span><div class="print-links"><a href="?printpreview=handouts-6" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
 <details id="handouts-6-2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">153</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Determinant.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Find the Determinant.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-6-2-2">Find the determinant of each matrix.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-alpha lower-alpha-level-1" id="handouts-6-2-3">
@@ -585,28 +608,28 @@ eBookConfig.enable_chatcodes =  false;
 3 &amp; 2\\
 1 &amp; 4
 \end{bmatrix}\)</span></div>
-<div class="autopermalink" data-description="Item 153.a"><a href="#handouts-6-2-3-1" title="Copy heading and permalink for Item 153.a" aria-label="Copy heading and permalink for Item 153.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 19.a"><a href="#handouts-6-2-3-1" title="Copy heading and permalink for Item 19.a" aria-label="Copy heading and permalink for Item 19.a">🔗</a></div>
 </li>
 <li id="handouts-6-2-3-2">
 <div class="para" id="p-derived-handouts-6-2-3-2"><span class="process-math">\(\displaystyle \begin{bmatrix}
 5 &amp; -1\\
 2 &amp; 3
 \end{bmatrix}\)</span></div>
-<div class="autopermalink" data-description="Item 153.b"><a href="#handouts-6-2-3-2" title="Copy heading and permalink for Item 153.b" aria-label="Copy heading and permalink for Item 153.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 19.b"><a href="#handouts-6-2-3-2" title="Copy heading and permalink for Item 19.b" aria-label="Copy heading and permalink for Item 19.b">🔗</a></div>
 </li>
 <li id="handouts-6-2-3-3">
 <div class="para" id="p-derived-handouts-6-2-3-3"><span class="process-math">\(\displaystyle \begin{bmatrix}
 2 &amp; 6\\
 1 &amp; 3
 \end{bmatrix}\)</span></div>
-<div class="autopermalink" data-description="Item 153.c"><a href="#handouts-6-2-3-3" title="Copy heading and permalink for Item 153.c" aria-label="Copy heading and permalink for Item 153.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 19.c"><a href="#handouts-6-2-3-3" title="Copy heading and permalink for Item 19.c" aria-label="Copy heading and permalink for Item 19.c">🔗</a></div>
 </li>
 </ol>
 <div class="para" id="handouts-6-2-4">What does a determinant of <span class="process-math">\(0\)</span> tell you about a matrix?<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 153: Find the Determinant"><a href="#handouts-6-2" title="Copy heading and permalink for Checkpoint 153: Find the Determinant" aria-label="Copy heading and permalink for Checkpoint 153: Find the Determinant">🔗</a></div></article></details><details id="handouts-6-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">154</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinant of a Product.</span>
+<div class="autopermalink" data-description="Checkpoint 19: Find the Determinant"><a href="#handouts-6-2" title="Copy heading and permalink for Checkpoint 19: Find the Determinant" aria-label="Copy heading and permalink for Checkpoint 19: Find the Determinant">🔗</a></div></article></details><details id="handouts-6-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinant of a Product.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-6-3-2">Find the determinants of the matrices below.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="handouts-6-3-3">
@@ -626,29 +649,29 @@ B=
 <li id="handouts-6-3-4-1">
 <div class="para" id="p-derived-handouts-6-3-4-1">Find <span class="process-math">\(\det(A)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 154.a"><a href="#handouts-6-3-4-1" title="Copy heading and permalink for Item 154.a" aria-label="Copy heading and permalink for Item 154.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 20.a"><a href="#handouts-6-3-4-1" title="Copy heading and permalink for Item 20.a" aria-label="Copy heading and permalink for Item 20.a">🔗</a></div>
 </li>
 <li id="handouts-6-3-4-2">
 <div class="para" id="p-derived-handouts-6-3-4-2">Find <span class="process-math">\(\det(B)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 154.b"><a href="#handouts-6-3-4-2" title="Copy heading and permalink for Item 154.b" aria-label="Copy heading and permalink for Item 154.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 20.b"><a href="#handouts-6-3-4-2" title="Copy heading and permalink for Item 20.b" aria-label="Copy heading and permalink for Item 20.b">🔗</a></div>
 </li>
 <li id="handouts-6-3-4-3">
 <div class="para" id="p-derived-handouts-6-3-4-3">Compute <span class="process-math">\(AB\)</span> and find <span class="process-math">\(\det(AB)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 154.c"><a href="#handouts-6-3-4-3" title="Copy heading and permalink for Item 154.c" aria-label="Copy heading and permalink for Item 154.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 20.c"><a href="#handouts-6-3-4-3" title="Copy heading and permalink for Item 20.c" aria-label="Copy heading and permalink for Item 20.c">🔗</a></div>
 </li>
 <li id="handouts-6-3-4-4">
 <div class="para" id="p-derived-handouts-6-3-4-4">Compare <span class="process-math">\(\det(A)\det(B)\)</span> with <span class="process-math">\(\det(AB)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 154.d"><a href="#handouts-6-3-4-4" title="Copy heading and permalink for Item 154.d" aria-label="Copy heading and permalink for Item 154.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 20.d"><a href="#handouts-6-3-4-4" title="Copy heading and permalink for Item 20.d" aria-label="Copy heading and permalink for Item 20.d">🔗</a></div>
 </li>
 </ol>
 <div class="para" id="handouts-6-3-5">Write a rule about determinants and matrix multiplication.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 154: Determinant of a Product"><a href="#handouts-6-3" title="Copy heading and permalink for Checkpoint 154: Determinant of a Product" aria-label="Copy heading and permalink for Checkpoint 154: Determinant of a Product">🔗</a></div></article></details><details id="handouts-6-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">155</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Can You Add Determinants?</span>
+<div class="autopermalink" data-description="Checkpoint 20: Determinant of a Product"><a href="#handouts-6-3" title="Copy heading and permalink for Checkpoint 20: Determinant of a Product" aria-label="Copy heading and permalink for Checkpoint 20: Determinant of a Product">🔗</a></div></article></details><details id="handouts-6-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Can You Add Determinants?</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-6-4-2">Consider the matrices<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="handouts-6-4-3">
@@ -668,34 +691,34 @@ B=
 <li id="handouts-6-4-4-1">
 <div class="para" id="p-derived-handouts-6-4-4-1">Find <span class="process-math">\(\det(A)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 155.a"><a href="#handouts-6-4-4-1" title="Copy heading and permalink for Item 155.a" aria-label="Copy heading and permalink for Item 155.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 21.a"><a href="#handouts-6-4-4-1" title="Copy heading and permalink for Item 21.a" aria-label="Copy heading and permalink for Item 21.a">🔗</a></div>
 </li>
 <li id="handouts-6-4-4-2">
 <div class="para" id="p-derived-handouts-6-4-4-2">Find <span class="process-math">\(\det(B)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 155.b"><a href="#handouts-6-4-4-2" title="Copy heading and permalink for Item 155.b" aria-label="Copy heading and permalink for Item 155.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 21.b"><a href="#handouts-6-4-4-2" title="Copy heading and permalink for Item 21.b" aria-label="Copy heading and permalink for Item 21.b">🔗</a></div>
 </li>
 <li id="handouts-6-4-4-3">
 <div class="para" id="p-derived-handouts-6-4-4-3">Find <span class="process-math">\(\det(A)+\det(B)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 155.c"><a href="#handouts-6-4-4-3" title="Copy heading and permalink for Item 155.c" aria-label="Copy heading and permalink for Item 155.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 21.c"><a href="#handouts-6-4-4-3" title="Copy heading and permalink for Item 21.c" aria-label="Copy heading and permalink for Item 21.c">🔗</a></div>
 </li>
 <li id="handouts-6-4-4-4">
 <div class="para" id="p-derived-handouts-6-4-4-4">Find <span class="process-math">\(A+B\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 155.d"><a href="#handouts-6-4-4-4" title="Copy heading and permalink for Item 155.d" aria-label="Copy heading and permalink for Item 155.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 21.d"><a href="#handouts-6-4-4-4" title="Copy heading and permalink for Item 21.d" aria-label="Copy heading and permalink for Item 21.d">🔗</a></div>
 </li>
 <li id="handouts-6-4-4-5">
 <div class="para" id="p-derived-handouts-6-4-4-5">Find <span class="process-math">\(\det(A+B)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 155.e"><a href="#handouts-6-4-4-5" title="Copy heading and permalink for Item 155.e" aria-label="Copy heading and permalink for Item 155.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 21.e"><a href="#handouts-6-4-4-5" title="Copy heading and permalink for Item 21.e" aria-label="Copy heading and permalink for Item 21.e">🔗</a></div>
 </li>
 </ol>
 <div class="para" id="handouts-6-4-5">Is <span class="process-math">\(\det(A+B)=\det(A)+\det(B)\text{?}\)</span> Explain your conclusion.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 155: Can You Add Determinants?"><a href="#handouts-6-4" title="Copy heading and permalink for Checkpoint 155: Can You Add Determinants?" aria-label="Copy heading and permalink for Checkpoint 155: Can You Add Determinants?">🔗</a></div></article></details><details id="handouts-6-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">156</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Effect of Row Operations.</span>
+<div class="autopermalink" data-description="Checkpoint 21: Can You Add Determinants?"><a href="#handouts-6-4" title="Copy heading and permalink for Checkpoint 21: Can You Add Determinants?" aria-label="Copy heading and permalink for Checkpoint 21: Can You Add Determinants?">🔗</a></div></article></details><details id="handouts-6-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Effect of Row Operations.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-6-5-2">Let<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="handouts-6-5-3">
@@ -709,22 +732,22 @@ B=
 <li id="handouts-6-5-4-1">
 <div class="para" id="p-derived-handouts-6-5-4-1">Find <span class="process-math">\(\det(A)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 156.a"><a href="#handouts-6-5-4-1" title="Copy heading and permalink for Item 156.a" aria-label="Copy heading and permalink for Item 156.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 22.a"><a href="#handouts-6-5-4-1" title="Copy heading and permalink for Item 22.a" aria-label="Copy heading and permalink for Item 22.a">🔗</a></div>
 </li>
 <li id="handouts-6-5-4-2">
 <div class="para" id="p-derived-handouts-6-5-4-2">Swap the two rows and find the new determinant.</div>
-<div class="autopermalink" data-description="Item 156.b"><a href="#handouts-6-5-4-2" title="Copy heading and permalink for Item 156.b" aria-label="Copy heading and permalink for Item 156.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 22.b"><a href="#handouts-6-5-4-2" title="Copy heading and permalink for Item 22.b" aria-label="Copy heading and permalink for Item 22.b">🔗</a></div>
 </li>
 <li id="handouts-6-5-4-3">
 <div class="para" id="p-derived-handouts-6-5-4-3">Multiply the first row by <span class="process-math">\(3\)</span> and find the new determinant.</div>
-<div class="autopermalink" data-description="Item 156.c"><a href="#handouts-6-5-4-3" title="Copy heading and permalink for Item 156.c" aria-label="Copy heading and permalink for Item 156.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 22.c"><a href="#handouts-6-5-4-3" title="Copy heading and permalink for Item 22.c" aria-label="Copy heading and permalink for Item 22.c">🔗</a></div>
 </li>
 </ol>
 <div class="para" id="handouts-6-5-5">Describe how row swaps and row scaling affect a determinant.<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 156: Effect of Row Operations"><a href="#handouts-6-5" title="Copy heading and permalink for Checkpoint 156: Effect of Row Operations" aria-label="Copy heading and permalink for Checkpoint 156: Effect of Row Operations">🔗</a></div></article></details><details id="handouts-6-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">157</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinants of Inverses and Transposes.</span>
+<div class="autopermalink" data-description="Checkpoint 22: Effect of Row Operations"><a href="#handouts-6-5" title="Copy heading and permalink for Checkpoint 22: Effect of Row Operations" aria-label="Copy heading and permalink for Checkpoint 22: Effect of Row Operations">🔗</a></div></article></details><details id="handouts-6-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determinants of Inverses and Transposes.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="handouts-6-6-2">Let<div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="handouts-6-6-3">
@@ -738,33 +761,33 @@ B=
 <li id="handouts-6-6-4-1">
 <div class="para" id="p-derived-handouts-6-6-4-1">Find <span class="process-math">\(\det(A)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 157.a"><a href="#handouts-6-6-4-1" title="Copy heading and permalink for Item 157.a" aria-label="Copy heading and permalink for Item 157.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 23.a"><a href="#handouts-6-6-4-1" title="Copy heading and permalink for Item 23.a" aria-label="Copy heading and permalink for Item 23.a">🔗</a></div>
 </li>
 <li id="handouts-6-6-4-2">
 <div class="para" id="p-derived-handouts-6-6-4-2">Find <span class="process-math">\(A^{-1}\)</span> and then compute <span class="process-math">\(\det(A^{-1})\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 157.b"><a href="#handouts-6-6-4-2" title="Copy heading and permalink for Item 157.b" aria-label="Copy heading and permalink for Item 157.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 23.b"><a href="#handouts-6-6-4-2" title="Copy heading and permalink for Item 23.b" aria-label="Copy heading and permalink for Item 23.b">🔗</a></div>
 </li>
 <li id="handouts-6-6-4-3">
 <div class="para" id="p-derived-handouts-6-6-4-3">Compare <span class="process-math">\(\det(A)\)</span> and <span class="process-math">\(\det(A^{-1})\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 157.c"><a href="#handouts-6-6-4-3" title="Copy heading and permalink for Item 157.c" aria-label="Copy heading and permalink for Item 157.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 23.c"><a href="#handouts-6-6-4-3" title="Copy heading and permalink for Item 23.c" aria-label="Copy heading and permalink for Item 23.c">🔗</a></div>
 </li>
 <li id="handouts-6-6-4-4">
 <div class="para" id="p-derived-handouts-6-6-4-4">Find the transpose <span class="process-math">\(A^T\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 157.d"><a href="#handouts-6-6-4-4" title="Copy heading and permalink for Item 157.d" aria-label="Copy heading and permalink for Item 157.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 23.d"><a href="#handouts-6-6-4-4" title="Copy heading and permalink for Item 23.d" aria-label="Copy heading and permalink for Item 23.d">🔗</a></div>
 </li>
 <li id="handouts-6-6-4-5">
 <div class="para" id="p-derived-handouts-6-6-4-5">Compute <span class="process-math">\(\det(A^T)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item 157.e"><a href="#handouts-6-6-4-5" title="Copy heading and permalink for Item 157.e" aria-label="Copy heading and permalink for Item 157.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 23.e"><a href="#handouts-6-6-4-5" title="Copy heading and permalink for Item 23.e" aria-label="Copy heading and permalink for Item 23.e">🔗</a></div>
 </li>
 </ol>
 <div class="para" id="handouts-6-6-5">Based on your work, write a rule for <span class="process-math">\(\det(A^{-1})\)</span> and a rule for <span class="process-math">\(\det(A^T)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handouts-6-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Checkpoint 157: Determinants of Inverses and Transposes"><a href="#handouts-6-6" title="Copy heading and permalink for Checkpoint 157: Determinants of Inverses and Transposes" aria-label="Copy heading and permalink for Checkpoint 157: Determinants of Inverses and Transposes">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Determinants Activity"><a href="#handouts-6" title="Copy heading and permalink for Handout: Determinants Activity" aria-label="Copy heading and permalink for Handout: Determinants Activity">🔗</a></div></section>
+<div class="autopermalink" data-description="Checkpoint 23: Determinants of Inverses and Transposes"><a href="#handouts-6-6" title="Copy heading and permalink for Checkpoint 23: Determinants of Inverses and Transposes" aria-label="Copy heading and permalink for Checkpoint 23: Determinants of Inverses and Transposes">🔗</a></div></article></details><div class="autopermalink" data-description="Handout: Determinants Activity"><a href="#handouts-6" title="Copy heading and permalink for Handout: Determinants Activity" aria-label="Copy heading and permalink for Handout: Determinants Activity">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="handouts-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts-7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

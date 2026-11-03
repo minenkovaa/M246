@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus        Course Information  This is the syllabus for M246 Applied Math for CE for Fall 2026. It is a 4 credit course.   Instructor  Dr. Anastasiia Minenkova, Dana Hall 237, minenkova@hartford.edu .    Office Hours  Tue,Thu 1:00-2:00 p.m., Fridays or by appointment, Dana Hall 237.    Class meets  on TTh 8:05-9:45 a.m. in Dana Hall 205    Course Description  Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)    Prerequisite  M145.        Course Overview   By the end of the semester, you should be able to:    successfully complete computations, including solving systems of equations and computing eigenvalues.    demonstrate understanding of solving certain types of ordinary differential equations.    analyze or describe the existence\/uniqueness of a solution to a partial differential equation.    compute the partial derivatives of functions of several variables and use this to solve various problems, including optimization problems.    utilize integration you did in Calculus II to three (or more) dimensions.        Assessments and Grades   Important Dates (tentative)   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.    Grade Breakdown      Assignment Category  Percentage of Grade    Homework  20%    Class Participation (including Reflection Posts)  20%    MATLAB Labs  20%    Project  10%    Presentations  10%    Midterm Exams  20%    Final Exam  10%       Assessment of Mathematical Engagement  Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.   Homework  Homework problems will be assigned for each topic. 1 homework assignment will be dropped.   Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. They will count towards your participation part of the grade.   In-Class Participation  Throughout the semester, we will engage in active learning activities such as gallery walks, group problem-solving, and practice sessions during class. These activities are designed to help you develop mathematical reasoning, communicate your ideas, and learn from your peers. Your participation may include contributing to group discussions, working through problems collaboratively, and sharing solutions or strategies. Consistent, meaningful engagement in these activities will count toward the participation portion of your grade.   Midterms and Final  The exams are cumulative in a sense that you will need to know some previous material in order to successfully solve the problems. The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). The exams are open book. If you have special accommodations please talk to me as soon as you can.   MATLAB Computational Labs  The goals of these labs are to familiarize students with MatLab (which, as a UHart student, you can get for free here: https:\/\/www.hartford.edu\/academics\/resources\/matlab\/MATLAB.html) and to use the concepts from differential equations and linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! The grade will consist of 20 points: 10 \"for correctness\" and 10 \"for presentation\".       Acknowledgement: Portions of the MATLAB and PreTeXt code used in this course were developed with assistance from Microsoft Copilot. All generated content was reviewed, tested, and adapted for instructional use by the course instructor.    Course Policies   Attendance  Attendance is expected and critical to your success, and you will be missed if you are absent. Showing up is a key to success in all aspects of life. At the same time, I realize that it may be necessary for you to miss some class meetings due to work, family commitments, and so forth. In that case, let me know of your absence, and we can come up with a plan to help you stay up-to-date.  One important note though: in this class, just like in every other class, missing a day of class, even with a perfectly valid excuse, does not excuse you from learning what was covered that day. As your instructor, I will try to help you catch up, but this will take more work than it would have if you were in class.    Late work  All assignments have due dates; these exist to help you manage your workload and help me manage getting you feedback in a timely manner. To help motivate you to keep these deadlines, turning in your work on or before the due date will have the following benefits:   Approximately 5% free points on the assignment (for most work that I manually grade).    You will be among the first students to receive feedback\/grades on the assignment.    Opportunity to revise submitted work for a better grade.    Less stress about upcoming work and easier\/better learning for the next topic in class.   Additionally, most assignments will have an absolute cut-off for late work one week after the official due date. This is intended to give you a little flexibility but also not let old work pile up on top of you; sometimes it is just better to start with a clean slate and dive into the next thing.  Of course, life can happen and you don't owe me an explanation for why you might occasionally miss a deadline. Just let me know if you will be handing in something late and when I can expect it. This should not occur regularly; if you are having trouble meeting deadlines consistently, let's chat and make a plan.    Class Preparation and Attendance  While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.   Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking HERE   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy HERE To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880) title9@hartford.edu or mckenna@hartford.edu ; Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.    Generative AI  Generative AI tools (such as ChatGPT, Google Gemini, or CoPilot) are everywhere and present exciting opportunities. Some tasks AI can help us with can clear the way for more important things; but AI can also rob us of the opportunity to do the important things ourselves. It is your responsibility to ensure that you use these tools with academic integrity.  What does this mean? Ask yourself what you hope to get out of this course. I really hope your answer involves learning new skills, becoming a better thinker, and understanding mathematics at a deeper level (even if these goals are in service to eventually getting a better paying and more fulfilling job).  AI tools might be able to help you achieve these goals. Here are a few example prompts that you might find useful and are completely inline with these goals.    I am trying to learn the concept . Give me a sample question and ask me to find the answer and explain how I found it to you. Then ask me some followup questions, acting like a student I am tutoring on the topic. Make sure I can explain everything sufficiently so you can understand the concepts involved.      My professor gave me this sample quiz question: . Generate 5 additional questions that are similar in style and difficulty and ask me to give you the answers. Don't give me solutions until I have done so, but point out any errors I might have made.      Here is an example from my textbook: . Make up a similar question and walk me through a solution step my step, asking me to ask questions after each step to make sure I really understand the process.       Warning: As good as AI has become recently, it is still not great at mathematics, so anything you get out of a generative AI tool should be approached with a fair amount of skepticism. This is also a good way to learn mathematics though: play find the mistake in what AI gives you!  To be clear, you should NOT use AI tools to shortcut the learning process. Getting someone else to do your work for you (even if that someone is a robot) is plagiarism and a violation of the academic integrity policy. If you have any doubt about whether you are using AI productively, I'd love to have a conversation about it with you.    "
+  "body": " Syllabus        Course Information  This is the syllabus for M246 Applied Math for CE for Fall 2026. It is a 4 credit course.   Instructor  Dr. Anastasiia Minenkova, Dana Hall 237, minenkova@hartford.edu .    Office Hours  Tue,Thu 1:00-2:00 p.m., Fridays or by appointment, Dana Hall 237.    Class meets  on TTh 8:05-9:45 a.m. in Dana Hall 205    Course Description  Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)    Prerequisite  M145.        Course Overview   By the end of the semester, you should be able to:    successfully complete computations, including solving systems of equations and computing eigenvalues.    demonstrate understanding of solving certain types of ordinary differential equations.    analyze or describe the existence\/uniqueness of a solution to a partial differential equation.    compute the partial derivatives of functions of several variables and use this to solve various problems, including optimization problems.    utilize integration you did in Calculus II to three (or more) dimensions.        Assessments and Grades   Important Dates (tentative)   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.    Grade Breakdown      Assignment Category  Percentage of Grade    Homework  20%    Class Participation (including Reflection Posts)  20%    MATLAB Labs  20%    Project  10%    Presentations  10%    Midterm Exams  20%    Final Exam  10%       Assessment of Mathematical Engagement  Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.   Homework  Homework problems will be assigned for each topic. 1 homework assignment will be dropped.   Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. They will count towards your participation part of the grade.   In-Class Participation  Throughout the semester, we will engage in active learning activities such as gallery walks, group problem-solving, and practice sessions during class. These activities are designed to help you develop mathematical reasoning, communicate your ideas, and learn from your peers. Your participation may include contributing to group discussions, working through problems collaboratively, and sharing solutions or strategies. Consistent, meaningful engagement in these activities will count toward the participation portion of your grade.   Midterms and Final  The exams are cumulative in a sense that you will need to know some previous material in order to successfully solve the problems. The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). The exams are open book. If you have special accommodations please talk to me as soon as you can.   MATLAB Computational Labs  The goals of these labs are to familiarize students with MatLab (which, as a UHart student, you can get for free here: https:\/\/www.hartford.edu\/academics\/resources\/matlab\/MATLAB.html) and to use the concepts from differential equations and linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! The grade will consist of 20 points: 10 \"for correctness\" and 10 \"for presentation\".       Acknowledgement: Portions of the MATLAB and PreTeXt code used in this course were developed with assistance from Microsoft Copilot. All generated content was reviewed, tested, and adapted for instructional use by the course instructor.    Course Policies   Attendance  Attendance is expected and critical to your success, and you will be missed if you are absent. Showing up is a key to success in all aspects of life. At the same time, I realize that it may be necessary for you to miss some class meetings due to work, family commitments, and so forth. In that case, let me know of your absence, and we can come up with a plan to help you stay up-to-date.  One important note though: in this class, just like in every other class, missing a day of class, even with a perfectly valid excuse, does not excuse you from learning what was covered that day. As your instructor, I will try to help you catch up, but this will take more work than it would have if you were in class.    Late work  All assignments have due dates; these exist to help you manage your workload and help me manage getting you feedback in a timely manner. To help motivate you to keep these deadlines, turning in your work on or before the due date will have the following benefits:   Approximately 5% free points on the assignment (for most work that I manually grade).    You will be among the first students to receive feedback\/grades on the assignment.    Opportunity to revise submitted work for a better grade.    Less stress about upcoming work and easier\/better learning for the next topic in class.   Additionally, most assignments will have an absolute cut-off for late work one week after the official due date. This is intended to give you a little flexibility but also not let old work pile up on top of you; sometimes it is just better to start with a clean slate and dive into the next thing.  Of course, life can happen and you don't owe me an explanation for why you might occasionally miss a deadline. Just let me know if you will be handing in something late and when I can expect it. This should not occur regularly; if you are having trouble meeting deadlines consistently, let's chat and make a plan.    Class Preparation and Attendance  While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.   Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking HERE   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy HERE To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880)  Email: title9@hartford.edu or mckenna@hartford.edu   Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.    Generative AI  Generative AI tools (such as ChatGPT, Google Gemini, or CoPilot) are everywhere and present exciting opportunities. Some tasks AI can help us with can clear the way for more important things; but AI can also rob us of the opportunity to do the important things ourselves. It is your responsibility to ensure that you use these tools with academic integrity.  What does this mean? Ask yourself what you hope to get out of this course. I really hope your answer involves learning new skills, becoming a better thinker, and understanding mathematics at a deeper level (even if these goals are in service to eventually getting a better paying and more fulfilling job).  AI tools might be able to help you achieve these goals. Here are a few example prompts that you might find useful and are completely inline with these goals.    I am trying to learn the concept . Give me a sample question and ask me to find the answer and explain how I found it to you. Then ask me some followup questions, acting like a student I am tutoring on the topic. Make sure I can explain everything sufficiently so you can understand the concepts involved.      My professor gave me this sample quiz question: . Generate 5 additional questions that are similar in style and difficulty and ask me to give you the answers. Don't give me solutions until I have done so, but point out any errors I might have made.      Here is an example from my textbook: . Make up a similar question and walk me through a solution step my step, asking me to ask questions after each step to make sure I really understand the process.       Warning: As good as AI has become recently, it is still not great at mathematics, so anything you get out of a generative AI tool should be approached with a fair amount of skepticism. This is also a good way to learn mathematics though: play find the mistake in what AI gives you!  To be clear, you should NOT use AI tools to shortcut the learning process. Getting someone else to do your work for you (even if that someone is a robot) is plagiarism and a violation of the academic integrity policy. If you have any doubt about whether you are using AI productively, I'd love to have a conversation about it with you.    "
 },
 {
   "id": "sec-course-info-2",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Course Outline",
-  "body": " Course Outline   This page provides the weekly outline for M246, including core topics, learning activities, deliverables, and recommended open educational resources (OER).    Weekly Schedule   Weekly Topics, Activities, and Deliverables    Week  Module  Topics  Activities    0  Introduction and Review  Syllabus and Course Expectations  Practice    1  Linear Algebra  Matrix operations; properties  Lecture and practice    2  Linear Algebra  Determinants; inverses; rank  Problem set    3  Linear Algebra  Systems; eigenvalues and eigenvectors  Workshop and MATLAB demo    4  Multivariable Calculus  Partial derivatives; higher-order derivatives  Lecture and concept check    5  Multivariable Calculus  Multiple integrals; vector calculus  Problem set and visualization    6  ODE  First-order ODEs (separable, linear, exact)  Lecture and stations    7  ODE  Second-order linear ODEs  Worked examples    8  ODE  Systems; Laplace transforms; numerical introduction  Lab demo and review    9  PDE  Classification; physical interpretation  Lecture and exercises    10  PDE  Heat and wave equations  Workshop and computational check    11  Applications  Model formulation  Project Proposal    12  Applications  Analytical vs. numerical methods  Progress Check    13  Applications  Computational tools; visualization  Technical Draft    14  Integration  Comprehensive review  Presentations; Final Report; Final Exam       Key Open Educational Resources   Recommended additional readings    Linear Algebra: An Interactive Introduction , Text: https:\/\/ximera.osu.edu\/oerlinalg\/LinearAlgebra    Interactive Linear Algebra , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)      "
+  "body": " Course Outline   This page provides the weekly outline for M246, including core topics, learning activities, deliverables, and recommended open educational resources (OER).    Weekly Schedule   Weekly Topics, Activities, and Deliverables        Week  Module  Topics  Activities    0  Introduction and Review  Syllabus and Course Expectations  Practice    1  Linear Algebra  Matrix operations; properties  Lecture and practice    2  Linear Algebra  Determinants; inverses; rank  Problem set    3  Linear Algebra  Systems; eigenvalues and eigenvectors  Workshop and MATLAB demo    4  Multivariable Calculus  Partial derivatives; higher-order derivatives  Lecture and concept check    5  Multivariable Calculus  Multiple integrals; vector calculus  Problem set and visualization    6  ODE  First-order ODEs (separable, linear, exact)  Lecture and stations    7  ODE  Second-order linear ODEs  Worked examples    8  ODE  Systems; Laplace transforms; numerical introduction  Lab demo and review    9  PDE  Classification; physical interpretation  Lecture and exercises    10  PDE  Heat and wave equations  Workshop and computational check    11  Applications  Model formulation  Project Proposal    12  Applications  Analytical vs. numerical methods  Progress Check    13  Applications  Computational tools; visualization  Technical Draft    14  Integration  Comprehensive review  Presentations; Final Report; Final Exam       Key Open Educational Resources   Recommended additional readings    Linear Algebra: An Interactive Introduction , Text: Ximera online text    Interactive Linear Algebra , LibreTexts: Interactive Linear Algebra at LibreTexts    APEX Calculus, Volume 3 : APEX Calculus, Volume 3    Paul’s Online Notes: Differential Equations and PDEs : Paul’s online differential equations notes    Numerical Methods with Applications , Engineering LibreTexts: Numerical Methods at Engineering LibreTexts      "
 },
 {
   "id": "weekly-outline-2",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "3",
   "title": "Weekly Topics, Activities, and Deliverables",
-  "body": " Weekly Topics, Activities, and Deliverables    Week  Module  Topics  Activities    0  Introduction and Review  Syllabus and Course Expectations  Practice    1  Linear Algebra  Matrix operations; properties  Lecture and practice    2  Linear Algebra  Determinants; inverses; rank  Problem set    3  Linear Algebra  Systems; eigenvalues and eigenvectors  Workshop and MATLAB demo    4  Multivariable Calculus  Partial derivatives; higher-order derivatives  Lecture and concept check    5  Multivariable Calculus  Multiple integrals; vector calculus  Problem set and visualization    6  ODE  First-order ODEs (separable, linear, exact)  Lecture and stations    7  ODE  Second-order linear ODEs  Worked examples    8  ODE  Systems; Laplace transforms; numerical introduction  Lab demo and review    9  PDE  Classification; physical interpretation  Lecture and exercises    10  PDE  Heat and wave equations  Workshop and computational check    11  Applications  Model formulation  Project Proposal    12  Applications  Analytical vs. numerical methods  Progress Check    13  Applications  Computational tools; visualization  Technical Draft    14  Integration  Comprehensive review  Presentations; Final Report; Final Exam    "
+  "body": " Weekly Topics, Activities, and Deliverables        Week  Module  Topics  Activities    0  Introduction and Review  Syllabus and Course Expectations  Practice    1  Linear Algebra  Matrix operations; properties  Lecture and practice    2  Linear Algebra  Determinants; inverses; rank  Problem set    3  Linear Algebra  Systems; eigenvalues and eigenvectors  Workshop and MATLAB demo    4  Multivariable Calculus  Partial derivatives; higher-order derivatives  Lecture and concept check    5  Multivariable Calculus  Multiple integrals; vector calculus  Problem set and visualization    6  ODE  First-order ODEs (separable, linear, exact)  Lecture and stations    7  ODE  Second-order linear ODEs  Worked examples    8  ODE  Systems; Laplace transforms; numerical introduction  Lab demo and review    9  PDE  Classification; physical interpretation  Lecture and exercises    10  PDE  Heat and wave equations  Workshop and computational check    11  Applications  Model formulation  Project Proposal    12  Applications  Analytical vs. numerical methods  Progress Check    13  Applications  Computational tools; visualization  Technical Draft    14  Integration  Comprehensive review  Presentations; Final Report; Final Exam    "
 },
 {
   "id": "oer-list",
@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "List",
   "number": "4",
   "title": "Recommended additional readings",
-  "body": " Recommended additional readings    Linear Algebra: An Interactive Introduction , Text: https:\/\/ximera.osu.edu\/oerlinalg\/LinearAlgebra    Interactive Linear Algebra , LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/eng.libretexts.org\/Bookshelves\/Applied_Mathematics\/Numerical_Methods_with_Applications_(EngLib)    "
+  "body": " Recommended additional readings    Linear Algebra: An Interactive Introduction , Text: Ximera online text    Interactive Linear Algebra , LibreTexts: Interactive Linear Algebra at LibreTexts    APEX Calculus, Volume 3 : APEX Calculus, Volume 3    Paul’s Online Notes: Differential Equations and PDEs : Paul’s online differential equations notes    Numerical Methods with Applications , Engineering LibreTexts: Numerical Methods at Engineering LibreTexts    "
 },
 {
   "id": "Learning-Outcomes",
@@ -149,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#addition-scalar-multiplication-2",
   "type": "Definition",
-  "number": "10",
+  "number": "1",
   "title": "",
   "body": " Let . The sum of and is   "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#addition-scalar-multiplication-3",
   "type": "Example",
-  "number": "11",
+  "number": "1",
   "title": "",
   "body": "   "
 },
@@ -167,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#addition-scalar-multiplication-4",
   "type": "Definition",
-  "number": "12",
+  "number": "2",
   "title": "",
   "body": " Let and . The scalar multiple of by is   "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#addition-scalar-multiplication-5",
   "type": "Example",
-  "number": "13",
+  "number": "2",
   "title": "",
   "body": "   "
 },
@@ -185,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#addition-scalar-multiplication-6",
   "type": "Theorem",
-  "number": "14",
+  "number": "1",
   "title": "",
   "body": "  For matrices of the same size and scalars :    "
 },
@@ -194,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#matrix-multiplication-2",
   "type": "Definition",
-  "number": "15",
+  "number": "3",
   "title": "",
   "body": " If and , then   "
 },
@@ -203,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#matrix-multiplication-5",
   "type": "Example",
-  "number": "16",
+  "number": "3",
   "title": "",
   "body": "  "
 },
@@ -212,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#transpose-2",
   "type": "Definition",
-  "number": "17",
+  "number": "4",
   "title": "",
   "body": " If , then is obtained by turning rows into columns.  "
 },
@@ -221,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#transpose-3",
   "type": "Example",
-  "number": "18",
+  "number": "4",
   "title": "",
   "body": "  "
 },
@@ -230,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#transpose-4",
   "type": "Theorem",
-  "number": "19",
+  "number": "2",
   "title": "",
   "body": "    "
 },
@@ -239,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#elementary-matrices-2",
   "type": "Definition",
-  "number": "20",
+  "number": "5",
   "title": "",
   "body": " An elementary matrix is obtained from the identity matrix by a single elementary row operation.  "
 },
@@ -248,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-01.html#elementary-matrices-3",
   "type": "Example",
-  "number": "21",
+  "number": "5",
   "title": "",
   "body": "Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.      "
 },
@@ -284,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#invertibility-5",
   "type": "Example",
-  "number": "22",
+  "number": "6",
   "title": "The 2 × 2 Case.",
   "body": " The 2 × 2 Case  If   and , then   "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#invertibility-6",
   "type": "Example",
-  "number": "23",
+  "number": "7",
   "title": "Finding an Inverse.",
   "body": " Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives    "
 },
@@ -302,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#inverse-of-inverse-2",
   "type": "Theorem",
-  "number": "24",
+  "number": "3",
   "title": "",
   "body": "  If is invertible, then     Since   the matrix acts as the inverse of . Hence    "
 },
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#inverse-product-2",
   "type": "Theorem",
-  "number": "25",
+  "number": "4",
   "title": "",
   "body": "       Therefore    "
 },
@@ -320,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#rref-2",
   "type": "Definition",
-  "number": "26",
+  "number": "6",
   "title": "",
   "body": "  A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.    "
 },
@@ -329,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#rref-3",
   "type": "Theorem",
-  "number": "27",
+  "number": "5",
   "title": "",
   "body": "  Every matrix is row-equivalent to exactly one RREF.   "
 },
@@ -338,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#inverse-3x3-example",
   "type": "Example",
-  "number": "28",
+  "number": "8",
   "title": "Example: Finding the Inverse of a 3 × 3 Matrix.",
   "body": " Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.  "
 },
@@ -347,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#computing-determinants-9",
   "type": "Example",
-  "number": "29",
+  "number": "9",
   "title": "Cofactor Expansion Example.",
   "body": " Cofactor Expansion Example      "
 },
@@ -356,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#computing-determinants-10",
   "type": "Theorem",
-  "number": "30",
+  "number": "6",
   "title": "Cofactor Expansion Along Any Row or Column.",
   "body": " Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,   "
 },
@@ -365,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-02.html#computing-determinants-11",
   "type": "Example",
-  "number": "31",
+  "number": "10",
   "title": "Determinant of a 4 × 4 Matrix.",
   "body": " Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:   "
 },
@@ -392,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#linear-equations-2",
   "type": "Definition",
-  "number": "32",
+  "number": "7",
   "title": "",
   "body": "  An equation is linear in variables if it can be written as   Here are constants.   "
 },
@@ -401,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#linear-equations-3",
   "type": "Example",
-  "number": "33",
+  "number": "11",
   "title": "",
   "body": " Linear:   Not linear:    "
 },
@@ -410,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#solutions-2",
   "type": "Definition",
-  "number": "34",
+  "number": "8",
   "title": "",
   "body": "  A solution is an ordered -tuple that satisfies every equation in the system.  The set of all solutions is the solution set .   "
 },
@@ -419,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#solutions-3",
   "type": "Example",
-  "number": "35",
+  "number": "12",
   "title": "",
   "body": "  Every vector   is a solution.  "
 },
@@ -428,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#fundamental-questions-3",
   "type": "Definition",
-  "number": "36",
+  "number": "9",
   "title": "",
   "body": "  A system is consistent if it has at least one solution and inconsistent otherwise.   "
 },
@@ -437,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#rref-review-2",
   "type": "Definition",
-  "number": "37",
+  "number": "10",
   "title": "",
   "body": "  A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.    "
 },
@@ -446,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#rref-review-3",
   "type": "Theorem",
-  "number": "38",
+  "number": "7",
   "title": "",
   "body": "  Every matrix is row-equivalent to exactly one RREF.   "
 },
@@ -455,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#rank-2",
   "type": "Definition",
-  "number": "39",
+  "number": "11",
   "title": "",
   "body": "  The rank of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.   "
 },
@@ -473,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-16-2",
   "type": "Definition",
-  "number": "40",
+  "number": "12",
   "title": "",
   "body": " Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .  "
 },
@@ -500,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-17",
   "type": "Example",
-  "number": "43",
+  "number": "13",
   "title": "",
   "body": " Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .  "
 },
@@ -509,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-18",
   "type": "Example",
-  "number": "44",
+  "number": "14",
   "title": "",
   "body": " Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.  "
 },
@@ -518,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-19",
   "type": "Theorem",
-  "number": "45",
+  "number": "8",
   "title": "",
   "body": "  If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.   "
 },
@@ -527,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-21",
   "type": "Example",
-  "number": "46",
+  "number": "15",
   "title": "",
   "body": " What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,   "
 },
@@ -554,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#independent-eigenvectors-2",
   "type": "Theorem",
-  "number": "49",
+  "number": "9",
   "title": "",
   "body": "  If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.   "
 },
@@ -572,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#characteristic-equation-2",
   "type": "Definition",
-  "number": "51",
+  "number": "13",
   "title": "",
   "body": " The characteristic equation of is   The polynomial is called the characteristic polynomial .  "
 },
@@ -590,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#characteristic-equation-4",
   "type": "Example",
-  "number": "53",
+  "number": "16",
   "title": "",
   "body": " For   the characteristic polynomial is   Solve to find the eigenvalues.  "
 },
@@ -599,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#characteristic-equation-5",
   "type": "Example",
-  "number": "54",
+  "number": "17",
   "title": "",
   "body": " Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .  "
 },
@@ -608,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-2",
   "type": "Definition",
-  "number": "55",
+  "number": "14",
   "title": "",
   "body": " Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace    "
 },
@@ -644,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#algebraic-vs-geometric-multiplicity-6",
   "type": "Example",
-  "number": "59",
+  "number": "18",
   "title": "",
   "body": " Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.  "
 },
@@ -653,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#similarity-2",
   "type": "Definition",
-  "number": "60",
+  "number": "15",
   "title": "",
   "body": " Matrices are similar if there exists an invertible matrix such that   Equivalently,   "
 },
@@ -662,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#similarity-3",
   "type": "Theorem",
-  "number": "61",
+  "number": "10",
   "title": "",
   "body": "  If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.   "
 },
@@ -689,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#complex-eigenvalues-3",
   "type": "Theorem",
-  "number": "64",
+  "number": "11",
   "title": "",
   "body": "  If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.   "
 },
@@ -698,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#complex-eigenvalues-4",
   "type": "Example",
-  "number": "65",
+  "number": "19",
   "title": "",
   "body": " For    Therefore, , so the eigenvalues are   "
 },
@@ -707,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#diagonalization-2",
   "type": "Definition",
-  "number": "66",
+  "number": "16",
   "title": "",
   "body": " A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that   "
 },
@@ -716,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#diagonalization-4",
   "type": "Theorem",
-  "number": "67",
+  "number": "12",
   "title": "Diagonalization Theorem.",
   "body": " Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.   "
 },
@@ -725,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#diagonalization-14-2",
   "type": "Algorithm",
-  "number": "68",
+  "number": "13",
   "title": "",
   "body": " To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.   "
 },
@@ -734,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-31-2",
   "type": "Theorem",
-  "number": "69",
+  "number": "14",
   "title": "",
   "body": "  Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .    "
 },
@@ -743,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-32",
   "type": "Example",
-  "number": "70",
+  "number": "20",
   "title": "Full Diagonalization of a Matrix.",
   "body": " Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:    "
 },
@@ -752,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-03.html#notes-week-03-33",
   "type": "Example",
-  "number": "73",
+  "number": "21",
   "title": "A Non-Diagonalizable Matrix.",
   "body": " A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .   "
 },
@@ -779,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#def-limit-2d",
   "type": "Definition",
-  "number": "75",
+  "number": "17",
   "title": "",
   "body": " Let be defined near the point . We say when the values of become arbitrarily close to whenever is sufficiently close to .  "
 },
@@ -788,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-limits-6",
   "type": "Definition",
-  "number": "76",
+  "number": "18",
   "title": "",
   "body": " A function is continuous at if   "
 },
@@ -806,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#def-partials",
   "type": "Definition",
-  "number": "78",
+  "number": "19",
   "title": "",
   "body": " The partial derivative of with respect to is The partial derivative of with respect to is   "
 },
@@ -824,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-partials-6",
   "type": "Example",
-  "number": "80",
+  "number": "22",
   "title": "",
   "body": " Find the first partial derivatives of    and   "
 },
@@ -842,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-directional-4",
   "type": "Definition",
-  "number": "81",
+  "number": "20",
   "title": "",
   "body": " Let be a unit vector. The directional derivative of in the direction is   "
 },
@@ -851,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-directional-5",
   "type": "Definition",
-  "number": "82",
+  "number": "21",
   "title": "",
   "body": " The gradient of is   "
 },
@@ -860,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-directional-6",
   "type": "Theorem",
-  "number": "83",
+  "number": "15",
   "title": "",
   "body": " The gradient points in the direction of greatest increase of a function.  "
 },
@@ -869,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-directional-7",
   "type": "Theorem",
-  "number": "84",
+  "number": "16",
   "title": "",
   "body": " The gradient is perpendicular to level curves.  "
 },
@@ -878,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-second-partials-2",
   "type": "Definition",
-  "number": "85",
+  "number": "22",
   "title": "",
   "body": " Second-order partial derivatives include   "
 },
@@ -887,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-second-partials-3",
   "type": "Example",
-  "number": "86",
+  "number": "23",
   "title": "",
   "body": " Verify Clairaut's theorem for    and therefore Also, so Consequently,   "
 },
@@ -896,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#thm-clairaut",
   "type": "Theorem",
-  "number": "87",
+  "number": "17",
   "title": "",
   "body": " If the mixed partial derivatives are continuous on an open region, then   "
 },
@@ -905,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-optimization-5",
   "type": "Definition",
-  "number": "88",
+  "number": "23",
   "title": "",
   "body": " A point is a critical point if or one or both partial derivatives fail to exist.  "
 },
@@ -914,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-optimization-6",
   "type": "Definition",
-  "number": "89",
+  "number": "24",
   "title": "",
   "body": " For a critical point,   "
 },
@@ -923,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-05.html#sec-optimization-7",
   "type": "Theorem",
-  "number": "90",
+  "number": "18",
   "title": "",
   "body": " Let be a critical point.   If and , then is a local minimum.  If and , then is a local maximum.  If , then is a saddle point.  If , the test is inconclusive.   "
 },
@@ -952,14 +952,14 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 6: Multiple integrals; vector calculus",
-  "body": " Week 6: Multiple integrals; vector calculus   Double Integrals and Signed Volume  The definite integral of a function of one variable measures signed area. For functions of two variables, a double integral measures signed volume.   For a function defined on a region , represents the accumulated value of over the region.    A three-dimensional sketch showing a planar region labeled R with x-, y-, and z-axes.      Iterated Integrals  Most double integrals you will encounter are evaluated as repeated one-variable integrals.      Evaluate          Changing the Order of Integration  Sometimes reversing the order of integration greatly simplifies a problem.  Sketch the region described by Rewrite the integral with the order reversed.   Two triangular regions in the xy-plane showing the original and reversed order of integration for a double integral.    The region is a triangle with vertices at (0,0), (1,1), and (0,1). The integral can be rewritten as       Applications  Average value of a function:    Suppose represents temperature distribution over a metal plate. Interpret      Coordinates Type  In this section we will discuss different coordinate systems that are useful for evaluating integrals in multivariable calculus.   Polar Coordinates  Circular regions are often easier to describe using polar coordinates.         A polar coordinate diagram with a radius r, angle theta, and the Cartesian axes shown for a point in the plane.     Evaluate where is the unit disk.   In polar coordinates, and , so . The integral becomes Evaluating the inner integral, Therefore,       Cylindrical Coordinates  Cylindrical coordinates are useful for describing surfaces of revolution and other 3D shapes with circular symmetry.   Cylindrical coordinates are defined by     Cylindrical coordinate system diagram.     The volume element in cylindrical coordinates is given by      Spherical Coordinates  Spherical coordinates are useful for describing spheres and other 3D shapes with radial symmetry.   Spherical coordinates are defined by where is the radial distance, is the polar angle, and is the azimuthal angle.    Spherical coordinate system diagram.     The volume element in spherical coordinates is given by       Vector Fields  A vector field assigns a vector to every point in a region.    is a vector-function of two variables with two components.    Interpret and graph the vector field    The vector field represents a rotational flow around the origin. At any point , the vector points in the direction of the tangent to the circle centered at the origin passing through that point.   Vector field diagram showing rotational arrows swirling around the origin in a clockwise pattern.        The Gradient  The gradient links scalar functions and vector fields.    The gradient points in the direction of greatest increase.    Find the gradient of    The gradient is computed as follows: Therefore, the gradient vector at any point is , which points radially outward from the origin, indicating the direction of greatest increase of the function .      Divergence  Divergence measures expansion or compression of a vector field.   Divergence is defined as      Positive divergence: vectors spread outward.     Negative divergence: vectors move inward.      Compute the divergence of    The divergence is computed as follows: Therefore, the divergence of the vector field is constant and equal to 2, indicating that the field is uniformly expanding at every point in the plane.      Curl  Curl measures local rotation.   For a vector field , the curl is defined as     A closed loop of arrows illustrating the local rotation of a vector field around a point.     Find the curl of    The curl is computed as follows:       Line Integrals  A line integral adds values along a curve.     Physical interpretation: work done by a force field.   Compute the work done by along a straight path.   The work done by the constant force field along a straight path from point to point can be computed using the line integral: This formula gives the total work done by the force field along the straight path from to .      Conservative Vector Fields   A vector field is conservative if for some potential function .    For a conservative field,     Find a potential function for      Big Picture   A flow diagram showing scalar field f leading to the gradient, divergence, and curl of a vector field.      Integral Theorems in Multivariable Calculus   Overview  Integral theorems connect local derivative information (gradient, curl, divergence) with global quantities such as line, surface, and volume integrals. They provide powerful tools for converting difficult integrals into easier ones.   Two labeled boxes, Derivative and Integral, illustrating their connection in integral theorems.      The Fundamental Theorem for Line Integrals  If is a gradient field and is a curve from to , then   The line integral depends only on the endpoints, not on the path.   A curve labeled C joining endpoints A and B, illustrating the path used in the Fundamental Theorem for Line Integrals.      Green's Theorem  For a positively oriented simple closed curve enclosing a region ,   Green's Theorem converts a boundary line integral into a double integral over the enclosed region.   A positively oriented closed curve C surrounding a shaded region R, illustrating Green's Theorem.      Stokes' Theorem  Let be an oriented surface with boundary . Then   Stokes' Theorem generalizes Green's Theorem to surfaces in three dimensions.   An oriented surface S with a boundary curve and an upward-pointing normal vector.      Divergence Theorem  If is a solid region with boundary surface , then   The total outward flux through a closed surface equals the accumulated divergence inside the volume.   A closed region E with arrows pointing outward across its boundary, illustrating flux through a closed surface.      Summary   Fundamental Theorem for Line Integrals: gradient ↔ line integral.  Green's Theorem: boundary curve ↔ planar region.  Stokes' Theorem: boundary curve ↔ surface.  Divergence Theorem: closed surface ↔ volume.      "
+  "body": " Week 6: Multiple integrals; vector calculus   Double Integrals and Signed Volume  The definite integral of a function of one variable measures signed area. For functions of two variables, a double integral measures signed volume.   For a function defined on a region , represents the accumulated value of over the region.    A three-dimensional sketch showing a planar region labeled R with x-, y-, and z-axes.      Iterated Integrals  Most double integrals you will encounter are evaluated as repeated one-variable integrals.      Evaluate          Changing the Order of Integration  Sometimes reversing the order of integration greatly simplifies a problem.  Sketch the region described by Rewrite the integral with the order reversed.   Two triangular regions in the xy-plane showing the original and reversed order of integration for a double integral.    The region is a triangle with vertices at (0,0), (1,1), and (0,1). The integral can be rewritten as       Applications  Average value of a function:    Suppose represents temperature distribution over a metal plate. Interpret      Coordinates Type  In this section we will discuss different coordinate systems that are useful for evaluating integrals in multivariable calculus.   Polar Coordinates  Circular regions are often easier to describe using polar coordinates.         A polar coordinate diagram with a radius r, angle theta, and the Cartesian axes shown for a point in the plane.     Evaluate where is the unit disk.   In polar coordinates, and , so . The integral becomes Evaluating the inner integral, Therefore,       Cylindrical Coordinates  Cylindrical coordinates are useful for describing surfaces of revolution and other 3D shapes with circular symmetry.   Cylindrical coordinates are defined by     Cylindrical coordinate system diagram.     The volume element in cylindrical coordinates is given by      Spherical Coordinates  Spherical coordinates are useful for describing spheres and other 3D shapes with radial symmetry.   Spherical coordinates are defined by where is the radial distance, is the polar angle, and is the azimuthal angle.    Spherical coordinate system diagram.     The volume element in spherical coordinates is given by       Vector Fields  A vector field assigns a vector to every point in a region.    is a vector-function of two variables with two components.    Interpret and graph the vector field    The vector field represents a rotational flow around the origin. At any point , the vector points in the direction of the tangent to the circle centered at the origin passing through that point.   Vector field diagram showing rotational arrows swirling around the origin in a clockwise pattern.        The Gradient  The gradient links scalar functions and vector fields.    The gradient points in the direction of greatest increase.    Find the gradient of    The gradient is computed as follows: Therefore, the gradient vector at any point is , which points radially outward from the origin, indicating the direction of greatest increase of the function .      Divergence  Divergence measures expansion or compression of a vector field.   Divergence is defined as      Positive divergence: vectors spread outward.     Negative divergence: vectors move inward.      Compute the divergence of    The divergence is computed as follows: Therefore, the divergence of the vector field is constant and equal to 2, indicating that the field is uniformly expanding at every point in the plane.      Curl  Curl measures local rotation.   For a vector field , the curl is defined as     A closed loop of arrows illustrating the local rotation of a vector field around a point.     Find the curl of    The curl is computed as follows:       Line Integrals  A line integral adds values along a curve.     Physical interpretation: work done by a force field.   Compute the work done by along a straight path.   The work done by the constant force field along a straight path from point to point can be computed using the line integral: This formula gives the total work done by the force field along the straight path from to .      Conservative Vector Fields   A vector field is conservative if for some potential function .    For a conservative field,     Find a potential function for      Big Picture   A flow diagram showing scalar field f leading to the gradient, divergence, and curl of a vector field.      Integral Theorems in Multivariable Calculus   Overview  Integral theorems connect local derivative information (gradient, curl, divergence) with global quantities such as line, surface, and volume integrals. They provide powerful tools for converting difficult integrals into easier ones.   Two labeled boxes, Derivative and Integral, illustrating their connection in integral theorems.      The Fundamental Theorem for Line Integrals  If is a gradient field and is a curve from to , then   The line integral depends only on the endpoints, not on the path.   A curve labeled C joining endpoints A and B, illustrating the path used in the Fundamental Theorem for Line Integrals.      Green's Theorem  For a positively oriented simple closed curve enclosing a region ,   Green's Theorem converts a boundary line integral into a double integral over the enclosed region.   A positively oriented closed curve C surrounding a shaded region R, illustrating Green's Theorem.      Stokes' Theorem  Let be an oriented surface with boundary . Then   Stokes' Theorem generalizes Green's Theorem to surfaces in three dimensions.   An oriented surface S with a boundary curve and an upward-pointing normal vector.      Divergence Theorem  If is a solid region with boundary surface , then   The total outward flux through a closed surface equals the accumulated divergence inside the volume.   A closed region E with arrows pointing outward across its boundary, illustrating flux through a closed surface.      Summary   Fundamental Theorem for Line Integrals: gradient line integral.  Green's Theorem: boundary curve planar region.  Stokes' Theorem: boundary curve surface.  Divergence Theorem: closed surface volume.      "
 },
 {
   "id": "notes-week-06w-2-3",
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-2-3",
   "type": "Definition",
-  "number": "91",
+  "number": "25",
   "title": "",
   "body": " For a function defined on a region , represents the accumulated value of over the region.  "
 },
@@ -968,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-3-3",
   "type": "Theorem",
-  "number": "92",
+  "number": "19",
   "title": "",
   "body": "  "
 },
@@ -977,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-3-4",
   "type": "Example",
-  "number": "93",
+  "number": "24",
   "title": "",
   "body": " Evaluate       "
 },
@@ -995,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-5-2",
   "type": "Definition",
-  "number": "94",
+  "number": "26",
   "title": "",
   "body": "Average value of a function:  "
 },
@@ -1004,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-5-3",
   "type": "Example",
-  "number": "95",
+  "number": "25",
   "title": "",
   "body": " Suppose represents temperature distribution over a metal plate. Interpret   "
 },
@@ -1013,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-3-3",
   "type": "Definition",
-  "number": "96",
+  "number": "27",
   "title": "",
   "body": "  "
 },
@@ -1022,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-3-4",
   "type": "Theorem",
-  "number": "97",
+  "number": "20",
   "title": "",
   "body": "  "
 },
@@ -1031,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-3-6",
   "type": "Example",
-  "number": "98",
+  "number": "26",
   "title": "",
   "body": " Evaluate where is the unit disk.   In polar coordinates, and , so . The integral becomes Evaluating the inner integral, Therefore,    "
 },
@@ -1040,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-4-3",
   "type": "Definition",
-  "number": "99",
+  "number": "28",
   "title": "",
   "body": " Cylindrical coordinates are defined by   "
 },
@@ -1049,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-4-5",
   "type": "Theorem",
-  "number": "100",
+  "number": "21",
   "title": "",
   "body": " The volume element in cylindrical coordinates is given by   "
 },
@@ -1058,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-5-3",
   "type": "Definition",
-  "number": "101",
+  "number": "29",
   "title": "",
   "body": " Spherical coordinates are defined by where is the radial distance, is the polar angle, and is the azimuthal angle.  "
 },
@@ -1067,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-6-5-5",
   "type": "Theorem",
-  "number": "102",
+  "number": "22",
   "title": "",
   "body": " The volume element in spherical coordinates is given by   "
 },
@@ -1076,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-7-3",
   "type": "Definition",
-  "number": "103",
+  "number": "30",
   "title": "",
   "body": "  is a vector-function of two variables with two components.  "
 },
@@ -1085,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-7-4",
   "type": "Example",
-  "number": "104",
+  "number": "27",
   "title": "",
   "body": " Interpret and graph the vector field    The vector field represents a rotational flow around the origin. At any point , the vector points in the direction of the tangent to the circle centered at the origin passing through that point.   Vector field diagram showing rotational arrows swirling around the origin in a clockwise pattern.     "
 },
@@ -1094,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-8-4",
   "type": "Theorem",
-  "number": "105",
+  "number": "23",
   "title": "",
   "body": " The gradient points in the direction of greatest increase.  "
 },
@@ -1103,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-8-5",
   "type": "Example",
-  "number": "106",
+  "number": "28",
   "title": "",
   "body": " Find the gradient of    The gradient is computed as follows: Therefore, the gradient vector at any point is , which points radially outward from the origin, indicating the direction of greatest increase of the function .   "
 },
@@ -1112,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-9-3",
   "type": "Definition",
-  "number": "107",
+  "number": "31",
   "title": "",
   "body": " Divergence is defined as   "
 },
@@ -1121,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-9-5",
   "type": "Example",
-  "number": "108",
+  "number": "29",
   "title": "",
   "body": " Compute the divergence of    The divergence is computed as follows: Therefore, the divergence of the vector field is constant and equal to 2, indicating that the field is uniformly expanding at every point in the plane.   "
 },
@@ -1130,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-10-3",
   "type": "Definition",
-  "number": "109",
+  "number": "32",
   "title": "",
   "body": " For a vector field , the curl is defined as   "
 },
@@ -1139,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-10-5",
   "type": "Example",
-  "number": "110",
+  "number": "30",
   "title": "",
   "body": " Find the curl of    The curl is computed as follows:    "
 },
@@ -1148,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-11-3",
   "type": "Definition",
-  "number": "111",
+  "number": "33",
   "title": "",
   "body": "  "
 },
@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-11-5",
   "type": "Example",
-  "number": "112",
+  "number": "31",
   "title": "",
   "body": " Compute the work done by along a straight path.   The work done by the constant force field along a straight path from point to point can be computed using the line integral: This formula gives the total work done by the force field along the straight path from to .   "
 },
@@ -1166,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-12-2",
   "type": "Definition",
-  "number": "113",
+  "number": "34",
   "title": "",
   "body": " A vector field is conservative if for some potential function .  "
 },
@@ -1175,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06w.html#notes-week-06w-12-3",
   "type": "Theorem",
-  "number": "114",
+  "number": "24",
   "title": "",
   "body": " For a conservative field,   "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#modeling-6",
   "type": "Example",
-  "number": "116",
+  "number": "32",
   "title": "Concrete Curing on a Bridge Deck.",
   "body": " Concrete Curing on a Bridge Deck   After a bridge deck is poured, engineers monitor the concrete temperature to ensure proper curing. Suppose the temperature of the concrete decreases at a rate proportional to the difference between the concrete temperature and the surrounding air temperature of .  The rate of cooling is proportional to the temperature difference between the concrete and the surrounding air.   where is a proportionality constant.   "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#separable-equations-2",
   "type": "Definition",
-  "number": "117",
+  "number": "35",
   "title": "",
   "body": " A differential equation is separable if it can be written in the form   or equivalently   "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#separable-equations-4",
   "type": "Checkpoint",
-  "number": "118",
+  "number": "1",
   "title": "",
   "body": "  Classify and solve the differential equation     This equation is separable .   Integrate both sides:    This implicit equation is the general solution.   "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#difflinear-equations-2",
   "type": "Definition",
-  "number": "119",
+  "number": "36",
   "title": "",
   "body": " A first-order linear differential equation has the form   "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#difflinear-equations-5",
   "type": "Checkpoint",
-  "number": "120",
+  "number": "2",
   "title": "",
   "body": "  Classify and solve the differential equation     Divide by :   This is a linear first-order differential equation .  The integrating factor is   Multiplying through by the integrating factor gives   Integrating:     "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#exact-equations-2",
   "type": "Definition",
-  "number": "121",
+  "number": "37",
   "title": "",
   "body": " A differential equation written as   is exact if   "
 },
@@ -1274,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#bernoulli-equations-2",
   "type": "Definition",
-  "number": "122",
+  "number": "38",
   "title": "",
   "body": " A Bernoulli equation has the form   where and .  "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#bernoulli-equations-6",
   "type": "Checkpoint",
-  "number": "123",
+  "number": "3",
   "title": "",
   "body": "  Classify and solve the differential equation     This is a Bernoulli equation with .  Let   Then   Multiply the differential equation by :   This is linear in .  The integrating factor is   Multiply through by :   Integrate:    Substitute back :     "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-06.html#initial-value-problems-2",
   "type": "Definition",
-  "number": "124",
+  "number": "39",
   "title": "",
   "body": " An initial value problem (IVP) consists of a differential equation together with an initial condition.   "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#def-second-order",
   "type": "Definition",
-  "number": "125",
+  "number": "40",
   "title": "Second-Order Differential Equation.",
   "body": " Second-Order Differential Equation  A second-order differential equation is an equation involving the second derivative of an unknown function.   "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#ex-second-order",
   "type": "Example",
-  "number": "126",
+  "number": "33",
   "title": "Examples.",
   "body": " Examples  The following are second-order differential equations.     "
 },
@@ -1328,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#def-homogeneous",
   "type": "Definition",
-  "number": "127",
+  "number": "41",
   "title": "Homogeneous Equation.",
   "body": " Homogeneous Equation  If , then   is called a homogeneous differential equation.  "
 },
@@ -1337,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#def-nonhomogeneous",
   "type": "Definition",
-  "number": "128",
+  "number": "42",
   "title": "Nonhomogeneous Equation.",
   "body": " Nonhomogeneous Equation  If , then the equation is called nonhomogeneous.  "
 },
@@ -1346,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#ex-nonhomogeneous",
   "type": "Example",
-  "number": "129",
+  "number": "34",
   "title": "A Nonhomogeneous Equation.",
   "body": " A Nonhomogeneous Equation   This is a nonhomogeneous linear differential equation.  "
 },
@@ -1355,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#thm-characteristic-roots",
   "type": "Theorem",
-  "number": "130",
+  "number": "25",
   "title": "Characteristic Root Cases.",
   "body": " Characteristic Root Cases  Consider   Let   be its characteristic equation.   If the roots are distinct real numbers and , then   If the root is repeated, then   If the roots are , then    "
 },
@@ -1364,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#characteristic-roots-4",
   "type": "Example",
-  "number": "131",
+  "number": "35",
   "title": "",
   "body": "Find the solution of   The characteristic equation is   The roots are and . Thus the general solution is   Using the initial conditions, we have    Solving this system of equations, we find and . Therefore, the solution is    "
 },
@@ -1373,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#ex-vop-cauchy-euler",
   "type": "Example",
-  "number": "132",
+  "number": "36",
   "title": "Variation of Parameters for a Variable-Coefficient Equation.",
   "body": " Variation of Parameters for a Variable-Coefficient Equation  Solve    Divide by .   Solve the homogeneous equation by trying .     Thus   The complementary solution is   Compute the Wronskian.   Since ,    Integrating gives   Therefore    Since belongs to the complementary solution, we may absorb it into the constant .  Hence,   The solution is    "
 },
@@ -1382,18 +1382,171 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-07.html#reduction-order-example",
   "type": "Example",
-  "number": "133",
+  "number": "37",
   "title": "Finding a Second Solution by Reduction of Order.",
   "body": " Finding a Second Solution by Reduction of Order  One solution of the differential equation   is   Use reduction of order to find a second linearly independent solution and write the general solution.   Since one solution is already known, assume a second solution has the form   Substituting gives   Compute the derivatives.    Substitute into the differential equation.   Simplifying,   Since ,   Integrate twice.    Therefore,   The term reproduces the known solution , so it does not provide a new independent solution.  Choosing and gives   Therefore, a fundamental set of solutions is   The general solution is    "
 },
 {
-  "id": "notes-week-08",
+  "id": "notes-week8",
   "level": "1",
-  "url": "notes-week-08.html",
+  "url": "notes-week8.html",
   "type": "Section",
   "number": "",
-  "title": "Week 8: Systems; Laplace transform; numerical intro",
-  "body": " Week 8: Systems; Laplace transform; numerical intro   Tuesday  Systems of ODEs and their solution.    Thursday  Laplace transform and its application to solving ODEs; introduction to numerical methods for ODEs.   "
+  "title": "Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods",
+  "body": " Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods   Solve systems of linear differential equations using eigenvalues and eigenvectors.  Interpret phase-plane behavior from eigenvalue classifications.  Apply Laplace transforms to solve initial value problems.  Use partial fraction decomposition, step functions, and convolution.  Compare analytical and numerical solution techniques.  Investigate numerical error and step-size effects.  Use MATLAB to implement and compare numerical methods.    Systems of Differential Equations  Many applications involve several dependent variables that interact simultaneously. Such models naturally lead to systems of differential equations.    Applications of Systems   Application Variables  Population Models Predator and prey populations  Electrical Circuits Current and voltage  Mechanical Systems Position and velocity     Solving Systems Using Eigenvalues  If is an eigenvalue of with eigenvector , then   is a solution of the system.   Worked Example    The characteristic equation gives eigenvalues   Corresponding eigenvectors are   The general solution is      Eigenvalue Classification Summary   Eigenvalues Classification General Solution Form Phase Portrait  Both negative Stable Node Trajectories approach origin  Both positive Unstable Node Trajectories move away  Opposite signs Saddle One stable and one unstable direction  , Stable Spiral Spiral inward  , Unstable Spiral Spiral outward  Center Oscillatory solution Closed orbits                Notation    denotes the solution vector.   denotes an eigenvalue of the coefficient matrix .   denotes an eigenvector corresponding to .   are eigenvectors associated with distinct eigenvalues .   are arbitrary constants determined by the initial conditions.   and denote the real and imaginary parts of a complex eigenvalue .   denotes a complex eigenvector, where and are real vectors.  For complex eigenvalues, the real-valued solution is obtained from the vectors and :      Complex Eigenvalues   Solve the system     Compute the characteristic polynomial:    The eigenvalues are   Choose the eigenvalue . Solving gives the eigenvector   Write the eigenvector as   where   Using the complex solution formula,   Substituting and gives      Geometric Interpretation  The eigenvalues have positive real part . The factor causes solutions to grow, while the and terms produce oscillation. Therefore trajectories spiral away from the origin, and the equilibrium is an unstable spiral .      Laplace Transforms   Laplace Transform       Common Laplace Transforms   Function Transform          Inverse Laplace Transforms           Solving an IVP          Partial Fraction Decomposition   PFD Guide   Denominator Form        PFD Example         Unit Step Functions      Convolution       Numerical Methods   Euler's Method       Accuracy of Numerical Methods   Method Global Error  Euler  Improved Euler  RK4     Error Measures        Euler Method       f = @(t,y) y; h = 0.1; tE = 0:h:1; yE = zeros(size(tE)); yE(1)=1; for n=1:length(tE)-1 yE(n+1)=yE(n)+h*yE(n); end [tO,yO]=ode45(f,[0 1],1); plot(tE,yE,'ro-') hold on plot(tO,yO,'b') plot(tE,exp(tE),'k') legend('Euler','ode45','Exact')   Investigating Error and Step Size   Apply Euler's method with several step sizes.  Estimate the solution at .  Compare with the exact solution.  Discuss how the error changes as decreases.      Systems of differential equations may be solved using eigenvalues and eigenvectors. Laplace transforms provide an alternative approach for solving initial value problems, while numerical methods provide approximations when exact solutions are difficult or unavailable.   "
+},
+{
+  "id": "week8-systems-4",
+  "level": "2",
+  "url": "notes-week8.html#week8-systems-4",
+  "type": "Table",
+  "number": "131",
+  "title": "Applications of Systems",
+  "body": " Applications of Systems   Application Variables  Population Models Predator and prey populations  Electrical Circuits Current and voltage  Mechanical Systems Position and velocity   "
+},
+{
+  "id": "week8-systems-5-5",
+  "level": "2",
+  "url": "notes-week8.html#week8-systems-5-5",
+  "type": "Example",
+  "number": "38",
+  "title": "Worked Example.",
+  "body": " Worked Example    The characteristic equation gives eigenvalues   Corresponding eigenvectors are   The general solution is    "
+},
+{
+  "id": "week8-systems-5-6",
+  "level": "2",
+  "url": "notes-week8.html#week8-systems-5-6",
+  "type": "Table",
+  "number": "133",
+  "title": "Eigenvalue Classification Summary",
+  "body": " Eigenvalue Classification Summary   Eigenvalues Classification General Solution Form Phase Portrait  Both negative Stable Node Trajectories approach origin  Both positive Unstable Node Trajectories move away  Opposite signs Saddle One stable and one unstable direction  , Stable Spiral Spiral inward  , Unstable Spiral Spiral outward  Center Oscillatory solution Closed orbits   "
+},
+{
+  "id": "week8-systems-5-8",
+  "level": "2",
+  "url": "notes-week8.html#week8-systems-5-8",
+  "type": "Remark",
+  "number": "134",
+  "title": "Notation.",
+  "body": " Notation    denotes the solution vector.   denotes an eigenvalue of the coefficient matrix .   denotes an eigenvector corresponding to .   are eigenvectors associated with distinct eigenvalues .   are arbitrary constants determined by the initial conditions.   and denote the real and imaginary parts of a complex eigenvalue .   denotes a complex eigenvector, where and are real vectors.  For complex eigenvalues, the real-valued solution is obtained from the vectors and :    "
+},
+{
+  "id": "example-complex-eigenvalues",
+  "level": "2",
+  "url": "notes-week8.html#example-complex-eigenvalues",
+  "type": "Example",
+  "number": "39",
+  "title": "Complex Eigenvalues.",
+  "body": " Complex Eigenvalues   Solve the system     Compute the characteristic polynomial:    The eigenvalues are   Choose the eigenvalue . Solving gives the eigenvector   Write the eigenvector as   where   Using the complex solution formula,   Substituting and gives    "
+},
+{
+  "id": "week8-systems-5-10",
+  "level": "2",
+  "url": "notes-week8.html#week8-systems-5-10",
+  "type": "Remark",
+  "number": "136",
+  "title": "Geometric Interpretation.",
+  "body": " Geometric Interpretation  The eigenvalues have positive real part . The factor causes solutions to grow, while the and terms produce oscillation. Therefore trajectories spiral away from the origin, and the equilibrium is an unstable spiral .  "
+},
+{
+  "id": "week8-laplace-2",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-2",
+  "type": "Definition",
+  "number": "43",
+  "title": "Laplace Transform.",
+  "body": " Laplace Transform     "
+},
+{
+  "id": "week8-laplace-3",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-3",
+  "type": "Table",
+  "number": "138",
+  "title": "Common Laplace Transforms",
+  "body": " Common Laplace Transforms   Function Transform        "
+},
+{
+  "id": "week8-laplace-4",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-4",
+  "type": "Table",
+  "number": "139",
+  "title": "Inverse Laplace Transforms",
+  "body": " Inverse Laplace Transforms         "
+},
+{
+  "id": "week8-laplace-5",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-5",
+  "type": "Example",
+  "number": "40",
+  "title": "Solving an IVP.",
+  "body": " Solving an IVP        "
+},
+{
+  "id": "week8-laplace-6-2",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-6-2",
+  "type": "Table",
+  "number": "141",
+  "title": "PFD Guide",
+  "body": " PFD Guide   Denominator Form      "
+},
+{
+  "id": "week8-laplace-6-3",
+  "level": "2",
+  "url": "notes-week8.html#week8-laplace-6-3",
+  "type": "Example",
+  "number": "41",
+  "title": "PFD Example.",
+  "body": " PFD Example      "
+},
+{
+  "id": "week8-numerical-2",
+  "level": "2",
+  "url": "notes-week8.html#week8-numerical-2",
+  "type": "Definition",
+  "number": "44",
+  "title": "Euler’s Method.",
+  "body": " Euler's Method     "
+},
+{
+  "id": "week8-numerical-3",
+  "level": "2",
+  "url": "notes-week8.html#week8-numerical-3",
+  "type": "Table",
+  "number": "144",
+  "title": "Accuracy of Numerical Methods",
+  "body": " Accuracy of Numerical Methods   Method Global Error  Euler  Improved Euler  RK4   "
+},
+{
+  "id": "week8-numerical-4",
+  "level": "2",
+  "url": "notes-week8.html#week8-numerical-4",
+  "type": "Definition",
+  "number": "45",
+  "title": "Error Measures.",
+  "body": " Error Measures      "
+},
+{
+  "id": "week8-numerical-5",
+  "level": "2",
+  "url": "notes-week8.html#week8-numerical-5",
+  "type": "Example",
+  "number": "42",
+  "title": "Euler Method.",
+  "body": " Euler Method      "
+},
+{
+  "id": "week8-numerical-7",
+  "level": "2",
+  "url": "notes-week8.html#week8-numerical-7",
+  "type": "Activity",
+  "number": "6",
+  "title": "Investigating Error and Step Size.",
+  "body": " Investigating Error and Step Size   Apply Euler's method with several step sizes.  Estimate the solution at .  Compare with the exact solution.  Discuss how the error changes as decreases.   "
 },
 {
   "id": "notes-week-09",
@@ -1401,8 +1554,98 @@ var ptx_lunr_docs = [
   "url": "notes-week-09.html",
   "type": "Section",
   "number": "",
-  "title": "Week 9: PDE, their Classification; physical interpretation",
-  "body": " Week 9: PDE, their Classification; physical interpretation   Tuesday  Classification of PDEs.    Thursday  Physical interpretation of PDEs.   "
+  "title": "Week 9: Partial Differential Equations and Their Classification",
+  "body": " Week 9: Partial Differential Equations and Their Classification   Learning Outcomes  Define a partial differential equation (PDE).  Distinguish between ODEs and PDEs.  Determine the order and linearity of a PDE.  Classify second-order PDEs as elliptic, parabolic, or hyperbolic.  Interpret PDEs in physical applications.  Understand the role of boundary and initial conditions.  Analyze simple PDE models arising in science and engineering.    Introduction to Partial Differential Equations   Partial Differential Equation   A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.      ODE versus PDE    This is an ODE because there is only one independent variable.   This is a PDE because the solution depends on both position and time.      Order and Linearity   Order   The order of a PDE is determined by its highest derivative.     Examples   Equation Order Linear?  2 Yes  1 No  2 Yes      Classification of Second-Order PDEs        PDE Classification   Condition Type Example Interpretation  Elliptic Equilibrium  Parabolic Diffusion  Hyperbolic Wave propagation      Physical Interpretation   Common PDE Models   Equation Application  Electrostatics and steady-state heat flow  Heat conduction and diffusion  String vibration and sound propagation      Boundary and Initial Conditions   Boundary Conditions   Type Form Meaning  Dirichlet Value specified  Neumann Flux specified  Robin Mixed condition     The initial condition specifies the state of the system at time .    Separation of Variables   Separated Solution      Substituting a product solution into a PDE often reduces the problem to two ordinary differential equations.    Heat Equation Example   Heat Equation on a Finite Rod   Solve   with boundary conditions   and initial condition     Assume a separated solution   Substituting gives   Dividing by yields   Two ordinary differential equations follow:    The boundary conditions imply   The time-dependent factors are   Therefore         Interpretation  Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.     MATLAB Visualization of Heat Diffusion  L = 1; x = linspace(0,L,100); t = linspace(0,0.5,100); [X,T] = meshgrid(x,t); U = exp(-pi^2*T).*sin(pi*X); surf(X,T,U) xlabel('Position') ylabel('Time') zlabel('Temperature') title('Heat Equation Solution') shading interp colorbar    Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.   "
+},
+{
+  "id": "w9-intro-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-intro-2",
+  "type": "Definition",
+  "number": "46",
+  "title": "Partial Differential Equation.",
+  "body": " Partial Differential Equation   A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.    "
+},
+{
+  "id": "w9-intro-3",
+  "level": "2",
+  "url": "notes-week-09.html#w9-intro-3",
+  "type": "Example",
+  "number": "43",
+  "title": "ODE versus PDE.",
+  "body": " ODE versus PDE    This is an ODE because there is only one independent variable.   This is a PDE because the solution depends on both position and time.   "
+},
+{
+  "id": "w9-order-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-order-2",
+  "type": "Definition",
+  "number": "47",
+  "title": "Order.",
+  "body": " Order   The order of a PDE is determined by its highest derivative.   "
+},
+{
+  "id": "w9-order-3",
+  "level": "2",
+  "url": "notes-week-09.html#w9-order-3",
+  "type": "Table",
+  "number": "150",
+  "title": "Examples",
+  "body": " Examples   Equation Order Linear?  2 Yes  1 No  2 Yes   "
+},
+{
+  "id": "w9-classification-5",
+  "level": "2",
+  "url": "notes-week-09.html#w9-classification-5",
+  "type": "Table",
+  "number": "151",
+  "title": "PDE Classification",
+  "body": " PDE Classification   Condition Type Example Interpretation  Elliptic Equilibrium  Parabolic Diffusion  Hyperbolic Wave propagation   "
+},
+{
+  "id": "w9-physical-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-physical-2",
+  "type": "Table",
+  "number": "152",
+  "title": "Common PDE Models",
+  "body": " Common PDE Models   Equation Application  Electrostatics and steady-state heat flow  Heat conduction and diffusion  String vibration and sound propagation   "
+},
+{
+  "id": "w9-bc-ic-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-bc-ic-2",
+  "type": "Table",
+  "number": "153",
+  "title": "Boundary Conditions",
+  "body": " Boundary Conditions   Type Form Meaning  Dirichlet Value specified  Neumann Flux specified  Robin Mixed condition   "
+},
+{
+  "id": "w9-separation-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-separation-2",
+  "type": "Definition",
+  "number": "48",
+  "title": "Separated Solution.",
+  "body": " Separated Solution     "
+},
+{
+  "id": "w9-heat-example-2",
+  "level": "2",
+  "url": "notes-week-09.html#w9-heat-example-2",
+  "type": "Example",
+  "number": "44",
+  "title": "Heat Equation on a Finite Rod.",
+  "body": " Heat Equation on a Finite Rod   Solve   with boundary conditions   and initial condition     Assume a separated solution   Substituting gives   Dividing by yields   Two ordinary differential equations follow:    The boundary conditions imply   The time-dependent factors are   Therefore    "
+},
+{
+  "id": "w9-heat-example-4",
+  "level": "2",
+  "url": "notes-week-09.html#w9-heat-example-4",
+  "type": "Remark",
+  "number": "156",
+  "title": "Interpretation.",
+  "body": " Interpretation  Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.  "
 },
 {
   "id": "notes-week-10",
@@ -1411,7 +1654,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 10: Heat and wave equations",
-  "body": " Week 10: Heat and wave equations   Tuesday  Heat and wave equations and their solution.    Thursday  Physical interpretation of heat and wave equations.   "
+  "body": " Week 10: Heat and wave equations   The Heat Equation   One-Dimensional Heat Equation    Here is temperature and is the thermal diffusivity.     Interpretation of the Heat Equation   Term Meaning  Rate of temperature change  Curvature of temperature profile  Thermal diffusivity      Separation of Variables   Separated Solution      Substituting into the heat equation yields    This produces two ordinary differential equations.         Heat Equation on a Finite Rod   Heat Equation with Zero Boundary Conditions        The spatial problem becomes    The eigenfunctions are   The time factors are   The solution is      Interpretation  Higher-frequency modes decay faster, causing temperature distributions to become smoother over time.     The Wave Equation   One-Dimensional Wave Equation    Here is displacement and is the wave speed.     Interpretation of the Wave Equation   Term Meaning  Acceleration  Curvature  Wave speed      Vibrating String Example      String Fixed at Both Ends        Separation of variables again yields   The time-dependent functions satisfy   The general solution is       Comparing the Heat and Wave Equations   Heat versus Wave Equation   Feature Heat Equation Wave Equation  PDE Type Parabolic Hyperbolic  Process Diffusion Propagation  Time Derivative First Order Second Order  Long-Term Behavior Approaches equilibrium Continues oscillating      MATLAB Visualization  L = 1; x = linspace(0,L,100); t = linspace(0,0.5,100); [X,T] = meshgrid(x,t); U = exp(-pi^2*T).*sin(pi*X); surf(X,T,U) xlabel('Position') ylabel('Time') zlabel('Temperature') title('Heat Equation Solution')  x = linspace(0,1,200); for t = 0:0.02:4 u = sin(pi*x).*cos(pi*t); plot(x,u,'LineWidth',2) axis([0 1 -1.1 1.1]) drawnow end    Finite Difference Methods   Finite Difference Approximation       For the heat equation, the explicit finite-difference scheme is     Stability Condition    L = 1; dx = 0.1; dt = 0.005; r = dt\/dx^2;    Numerical versus Exact Solutions  For   The exact solution is    Error Measures   Measure Formula  Absolute Error  Relative Error     Grid Refinement   Compute a finite-difference solution.  Compare with the exact solution.  Reduce and .  Observe how the error changes.      The heat equation models diffusion, while the wave equation models propagation. Separation of variables and Fourier series provide analytical solutions, while finite-difference methods provide numerical approximations when exact solutions are unavailable.   "
+},
+{
+  "id": "w10-heat-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-heat-2",
+  "type": "Definition",
+  "number": "49",
+  "title": "One-Dimensional Heat Equation.",
+  "body": " One-Dimensional Heat Equation    Here is temperature and is the thermal diffusivity.   "
+},
+{
+  "id": "w10-heat-3",
+  "level": "2",
+  "url": "notes-week-10.html#w10-heat-3",
+  "type": "Table",
+  "number": "158",
+  "title": "Interpretation of the Heat Equation",
+  "body": " Interpretation of the Heat Equation   Term Meaning  Rate of temperature change  Curvature of temperature profile  Thermal diffusivity   "
+},
+{
+  "id": "w10-separation-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-separation-2",
+  "type": "Definition",
+  "number": "50",
+  "title": "Separated Solution.",
+  "body": " Separated Solution     "
+},
+{
+  "id": "w10-heat-example-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-heat-example-2",
+  "type": "Example",
+  "number": "45",
+  "title": "Heat Equation with Zero Boundary Conditions.",
+  "body": " Heat Equation with Zero Boundary Conditions        The spatial problem becomes    The eigenfunctions are   The time factors are   The solution is    "
+},
+{
+  "id": "w10-heat-example-3",
+  "level": "2",
+  "url": "notes-week-10.html#w10-heat-example-3",
+  "type": "Remark",
+  "number": "161",
+  "title": "Interpretation.",
+  "body": " Interpretation  Higher-frequency modes decay faster, causing temperature distributions to become smoother over time.  "
+},
+{
+  "id": "w10-wave-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-wave-2",
+  "type": "Definition",
+  "number": "51",
+  "title": "One-Dimensional Wave Equation.",
+  "body": " One-Dimensional Wave Equation    Here is displacement and is the wave speed.   "
+},
+{
+  "id": "w10-wave-3",
+  "level": "2",
+  "url": "notes-week-10.html#w10-wave-3",
+  "type": "Table",
+  "number": "163",
+  "title": "Interpretation of the Wave Equation",
+  "body": " Interpretation of the Wave Equation   Term Meaning  Acceleration  Curvature  Wave speed   "
+},
+{
+  "id": "w10-wave-example-3",
+  "level": "2",
+  "url": "notes-week-10.html#w10-wave-example-3",
+  "type": "Example",
+  "number": "46",
+  "title": "String Fixed at Both Ends.",
+  "body": " String Fixed at Both Ends        Separation of variables again yields   The time-dependent functions satisfy   The general solution is    "
+},
+{
+  "id": "w10-comparison-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-comparison-2",
+  "type": "Table",
+  "number": "165",
+  "title": "Heat versus Wave Equation",
+  "body": " Heat versus Wave Equation   Feature Heat Equation Wave Equation  PDE Type Parabolic Hyperbolic  Process Diffusion Propagation  Time Derivative First Order Second Order  Long-Term Behavior Approaches equilibrium Continues oscillating   "
+},
+{
+  "id": "w10-fd-2",
+  "level": "2",
+  "url": "notes-week-10.html#w10-fd-2",
+  "type": "Definition",
+  "number": "52",
+  "title": "Finite Difference Approximation.",
+  "body": " Finite Difference Approximation      "
+},
+{
+  "id": "w10-fd-6",
+  "level": "2",
+  "url": "notes-week-10.html#w10-fd-6",
+  "type": "Remark",
+  "number": "167",
+  "title": "Stability Condition.",
+  "body": " Stability Condition   "
+},
+{
+  "id": "w10-error-6",
+  "level": "2",
+  "url": "notes-week-10.html#w10-error-6",
+  "type": "Table",
+  "number": "168",
+  "title": "Error Measures",
+  "body": " Error Measures   Measure Formula  Absolute Error  Relative Error   "
+},
+{
+  "id": "w10-error-7",
+  "level": "2",
+  "url": "notes-week-10.html#w10-error-7",
+  "type": "Activity",
+  "number": "7",
+  "title": "Grid Refinement.",
+  "body": " Grid Refinement   Compute a finite-difference solution.  Compare with the exact solution.  Reduce and .  Observe how the error changes.   "
 },
 {
   "id": "notes-week-11",
@@ -1465,14 +1825,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Introduction Activity",
-  "body": " Introduction Activity    We are setting up our routine:    Activity  Description    1. Pair-share  A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.    2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine        A rancher has 1400 feet of fencing in which to construct adjacent, equally sized rectangular pens, as shown below. What dimensions should these pens have to maximize the enclosed area?      A power line is to be run to an offshore facility in the manner described in Example 4.3.6. in APEX Calculus Online. The offshore facility is miles at sea and miles along the shoreline from the power plant. It costs per mile to lay a power line underground and to run the line underwater. How much of the power line should be run underground? What is the minimum overall cost?      Find the surface area of the described solid of revolution, formed by revolving y=2x on [0,1] about the x-axis.      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much work is done pulling the entire rope to the top of the building?      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much rope is pulled in when half of the total work is done?    "
+  "body": " Introduction Activity    We are setting up our routine:      Activity  Description    1. Pair-share  A quick, structured activity where you first think about a question individually and then discuss their ideas with a nearby classmate before sharing with the whole room.    2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine        A rancher has 1400 feet of fencing in which to construct adjacent, equally sized rectangular pens, as shown below. What dimensions should these pens have to maximize the enclosed area?      A power line is to be run to an offshore facility in the manner described in Example 4.3.6. in APEX Calculus Online. The offshore facility is miles at sea and miles along the shoreline from the power plant. It costs per mile to lay a power line underground and to run the line underwater. How much of the power line should be run underground? What is the minimum overall cost?      Find the surface area of the described solid of revolution, formed by revolving y=2x on [0,1] about the x-axis.      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much work is done pulling the entire rope to the top of the building?      A 100 ft rope, weighing 0.1 lb\/ft, hangs over the edge of a tall building. How much rope is pulled in when half of the total work is done?    "
 },
 {
   "id": "activity-01-intro-activity-3",
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "134",
+  "number": "169",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1528,14 +1888,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Matrix Activity 1",
-  "body": " Matrix Activity 1    We are setting up our routine:    Activity  Description    1. Think-pair-share  Which of the matrix operations work the same for real numbers.   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine       Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.     Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.     Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?     Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?     Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.    "
+  "body": " Matrix Activity 1    We are setting up our routine:      Activity  Description    1. Think-pair-share  Which of the matrix operations work the same for real numbers.   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine       Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.     Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.     Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?     Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?     Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.    "
 },
 {
   "id": "matrix-activity-3",
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "135",
+  "number": "170",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1591,14 +1951,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Matrix Activity 2",
-  "body": " Matrix Activity 2    We are setting up our routine:    Activity  Description    1. Think-pair-share  What does multiplication by given matrices do to the picture?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Matrix Transformations     Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
+  "body": " Matrix Activity 2    We are setting up our routine:      Activity  Description    1. Think-pair-share  What does multiplication by given matrices do to the picture?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Matrix Transformations     Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
 },
 {
   "id": "matrix-activity2-4",
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "136",
+  "number": "171",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1609,14 +1969,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Inverse Matrix Activity",
-  "body": " Inverse Matrix Activity    We are setting up our routine:    Activity  Description    1. Think-pair-share  What does inverse mean for numbers?    How do you think division works for matrices? What potential issues you might think of?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
+  "body": " Inverse Matrix Activity    We are setting up our routine:      Activity  Description    1. Think-pair-share  What does inverse mean for numbers?    How do you think division works for matrices? What potential issues you might think of?   2. Gallery Walk:  A collaborative activity where you move around the room in small groups to examine, discuss, and leave written feedback on various content stations or your solutions displayed on the board.      Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine     "
 },
 {
   "id": "inverse-activity2-3",
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "137",
+  "number": "172",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1715,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-2",
   "type": "Checkpoint",
-  "number": "138",
+  "number": "4",
   "title": "Matrix Addition.",
   "body": " Matrix Addition  Given    Compute .  Verify whether .  What property does this illustrate?  Explain why matrices must have the same dimensions to be added.   "
 },
@@ -1724,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-3",
   "type": "Checkpoint",
-  "number": "139",
+  "number": "5",
   "title": "Matrix Subtraction.",
   "body": " Matrix Subtraction  Given    Find .  Find .  Compare the results.  Is matrix subtraction commutative? Explain using your results.   "
 },
@@ -1733,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-4",
   "type": "Checkpoint",
-  "number": "140",
+  "number": "6",
   "title": "Scalar Multiplication.",
   "body": " Scalar Multiplication  Given    Calculate .  Calculate .  Describe what happens to each matrix entry during scalar multiplication.  How does scalar multiplication affect the values in a matrix?   "
 },
@@ -1742,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-5",
   "type": "Checkpoint",
-  "number": "141",
+  "number": "7",
   "title": "Identity Matrix.",
   "body": " Identity Matrix  Given    Compute .  Compute .  Compare each result with matrix .  Why is the identity matrix called the multiplicative identity?   "
 },
@@ -1751,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-3.html#handouts-3-6",
   "type": "Checkpoint",
-  "number": "142",
+  "number": "8",
   "title": "Zero Matrix.",
   "body": " Zero Matrix  Given    Compute .  Compute .  Compute .  Compare the role of the zero in numbers and matrices.   "
 },
@@ -1769,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-2",
   "type": "Checkpoint",
-  "number": "143",
+  "number": "9",
   "title": "Commutativity.",
   "body": " Commutativity  Given    Compute .  Compute .  Verify whether .  What multiplying by does to ?   "
 },
@@ -1778,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-3",
   "type": "Checkpoint",
-  "number": "144",
+  "number": "10",
   "title": "Divisors of Zero.",
   "body": " Divisors of Zero  Given    Compute .  Compute .  Verify whether .  What multiplying by from the left does to and why?   "
 },
@@ -1787,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-4",
   "type": "Checkpoint",
-  "number": "145",
+  "number": "11",
   "title": "Is solving matrix equations easy?!",
   "body": " Is solving matrix equations easy?!  Given    Compute .  Compute .  Verify whether .  Does it agree with what we know about numbers?   "
 },
@@ -1796,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-5",
   "type": "Checkpoint",
-  "number": "146",
+  "number": "12",
   "title": "Transpose and Matrix Multiplication.",
   "body": " Transpose and Matrix Multiplication  Given    Compute .  Compute .  Compute and .  Compute .  Compute .  Based on your computations, describe what taking the transpose does to the order of matrix multiplication.   "
 },
@@ -1805,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-4.html#handouts-4-6",
   "type": "Checkpoint",
-  "number": "147",
+  "number": "13",
   "title": "Distributive Property of Matrix Multiplication.",
   "body": " Distributive Property of Matrix Multiplication  Given    Compute .  Compute .  Compute .  Compute .  Compute .  Verify whether .  How does this property compare with the distributive property of multiplication over addition for real numbers?   "
 },
@@ -1823,7 +2183,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-2",
   "type": "Checkpoint",
-  "number": "148",
+  "number": "14",
   "title": "Find the Inverse.",
   "body": " Find the Inverse     Compute the inverses if possible.  How can you tell whether a matrix has no inverse?   "
 },
@@ -1832,7 +2192,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-3",
   "type": "Checkpoint",
-  "number": "149",
+  "number": "15",
   "title": "Verify the Inverse.",
   "body": " Verify the Inverse      Compute  Compute  If two matrices are inverses, what should their product be?   "
 },
@@ -1841,7 +2201,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-4",
   "type": "Checkpoint",
-  "number": "150",
+  "number": "16",
   "title": "Error Analysis.",
   "body": " Error Analysis  A student found the inverse below.  Original matrix:   Student's work:    Identify the mistake(s).  Find the correct inverse.  Explain the correct procedure for finding the inverse of a matrix.   "
 },
@@ -1850,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-5",
   "type": "Checkpoint",
-  "number": "151",
+  "number": "17",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .      Find the inverse of the coefficient matrix.  Multiply both sides by the inverse(from left or right?).  State the solution matrix.   "
 },
@@ -1859,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-5.html#handouts-5-6",
   "type": "Checkpoint",
-  "number": "152",
+  "number": "18",
   "title": "Solve a Matrix Equation.",
   "body": " Solve a Matrix Equation  Use inverse matrices to solve for .   Where: x = number of Product A sold y = number of Product B sold   Use an inverse matrix to solve for x and y. Interpret your answer in context. Explain why an inverse matrix method might not work.   "
 },
@@ -1877,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-2",
   "type": "Checkpoint",
-  "number": "153",
+  "number": "19",
   "title": "Find the Determinant.",
   "body": " Find the Determinant  Find the determinant of each matrix.             What does a determinant of tell you about a matrix?  "
 },
@@ -1886,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-3",
   "type": "Checkpoint",
-  "number": "154",
+  "number": "20",
   "title": "Determinant of a Product.",
   "body": " Determinant of a Product  Find the determinants of the matrices below.      Find .  Find .  Compute and find .  Compare with .   Write a rule about determinants and matrix multiplication.  "
 },
@@ -1895,7 +2255,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-4",
   "type": "Checkpoint",
-  "number": "155",
+  "number": "21",
   "title": "Can You Add Determinants?",
   "body": " Can You Add Determinants?  Consider the matrices      Find .  Find .  Find .  Find .  Find .   Is ? Explain your conclusion.  "
 },
@@ -1904,7 +2264,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-5",
   "type": "Checkpoint",
-  "number": "156",
+  "number": "22",
   "title": "Effect of Row Operations.",
   "body": " Effect of Row Operations  Let      Find .  Swap the two rows and find the new determinant.  Multiply the first row by and find the new determinant.   Describe how row swaps and row scaling affect a determinant.  "
 },
@@ -1913,7 +2273,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-6.html#handouts-6-6",
   "type": "Checkpoint",
-  "number": "157",
+  "number": "23",
   "title": "Determinants of Inverses and Transposes.",
   "body": " Determinants of Inverses and Transposes  Let      Find .  Find and then compute .  Compare and .  Find the transpose .  Compute .   Based on your work, write a rule for and a rule for .  "
 },
@@ -1931,7 +2291,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-2",
   "type": "Checkpoint",
-  "number": "158",
+  "number": "24",
   "title": "Cement Mixing.",
   "body": " Cement Mixing  Problem Statement:  In practice, engineers use mix-design standards and testing to achieve 4000 psi compressive strength. A compressive strength of 4000 psi is commonly specified for:  Residential foundations  Garage slabs  Basement walls  Parking structures  Sidewalks subjected to freeze-thaw cycles  Bridge decks and bridge approaches  Reinforced concrete beams and columns in moderate-load structures  This is a purely mathematical exercise that does not necessarily correspond to the real instruction on cement mixing.   Concrete Mix Feasibility Problem A contractor must prepare a batch of concrete for a bridge deck. The concrete mixture consists of three ingredients: cement, sand, and gravel. The contractor must determine the mass of each ingredient to satisfy the following requirements.    The total mass of the concrete batch must be 1,000 kilograms.    The mass of sand must be twice the mass of cement.    The mass of gravel must be three times the mass of cement.    Determine whether a feasible mix exists and if it does, find the masses of each ingredient.  "
 },
@@ -1940,7 +2300,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-3",
   "type": "Checkpoint",
-  "number": "159",
+  "number": "25",
   "title": "Step 1: Linear system as a mathematical model.",
   "body": " Step 1: Linear system as a mathematical model  Write the information provided as a linear system of equations and then in a matrix form explaining what variables, which you used, represent.  "
 },
@@ -1949,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-4",
   "type": "Checkpoint",
-  "number": "160",
+  "number": "26",
   "title": "Step 2: Solve using Gaussian Elimination.",
   "body": " Step 2: Solve using Gaussian Elimination  Use Gaussian elimination to solve the linear system from Step 1 if it is solvable.  "
 },
@@ -1958,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-7.html#handouts-7-5",
   "type": "Checkpoint",
-  "number": "161",
+  "number": "27",
   "title": "Step 3: Interpretation.",
   "body": " Step 3: Interpretation  What does the solution mean in the context of the problem? If there is no solution, explain why.  "
 },
@@ -1976,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-3",
   "type": "Checkpoint",
-  "number": "162",
+  "number": "28",
   "title": "Recognizing Surfaces.",
   "body": " Recognizing Surfaces  For each equation below:   Identify the surface.  Explain how you recognized it.  Sketch the surface (use Geogebra 3D to help).        "
 },
@@ -1985,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-4",
   "type": "Checkpoint",
-  "number": "163",
+  "number": "29",
   "title": "Intersections of Surfaces.",
   "body": " Intersections of Surfaces  For each pair of surfaces:   Find the intersection.  Describe the geometric object obtained.  State where it lies in space.  Sketch the surfaces and their intersection.    and    and   "
 },
@@ -1994,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-5",
   "type": "Checkpoint",
-  "number": "164",
+  "number": "30",
   "title": "Possible Intersections of Two Spheres.",
   "body": " Possible Intersections of Two Spheres  Suppose two spheres have centers and , and let denote the distance between their centers.  List and describe all possible intersections of two spheres.   Describe each possible geometric intersection.  Draw a sketch for each case.  State the relationship between the radii and the distance .   "
 },
@@ -2003,7 +2363,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-6",
   "type": "Checkpoint",
-  "number": "165",
+  "number": "31",
   "title": "Vector Operations.",
   "body": " Vector Operations  Let    Compute .  Find .  Compute .  Compute .  Verify that the cross product is orthogonal to both vectors.   "
 },
@@ -2012,7 +2372,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-8.html#handouts-8-7",
   "type": "Checkpoint",
-  "number": "166",
+  "number": "32",
   "title": "Orthogonal Vectors.",
   "body": " Orthogonal Vectors  Let    Find a nonzero vector such that   Find a nonzero vector that is orthogonal to both and .  Explain how you found .  What geometric relationship exists among , , and ?   "
 },
@@ -2030,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-3",
   "type": "Checkpoint",
-  "number": "167",
+  "number": "33",
   "title": "How Many Ways Can You Approach a Point?",
   "body": " How Many Ways Can You Approach a Point?   Investigate why limits in several variables are more complicated than limits in one variable.    Several colored curves approaching the same point in the plane, illustrating how multiple paths can lead to different limit behaviors.     How many different paths can approach a point in the plane?  Why might this create challenges when evaluating limits?  Describe a strategy for showing a limit does NOT exist.   "
 },
@@ -2039,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-4",
   "type": "Checkpoint",
-  "number": "168",
+  "number": "34",
   "title": "Reading Slopes from Surfaces.",
   "body": " Reading Slopes from Surfaces   A 3D surface diagram with a vertical slice showing how fixing x produces a curve whose slope indicates a partial derivative.     What does fixing create?  What information does the slope of the curve provide?  What do you think measures?  How would the interpretation change for ?   "
 },
@@ -2048,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-5",
   "type": "Checkpoint",
-  "number": "169",
+  "number": "35",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let      Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -2057,7 +2417,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-6",
   "type": "Checkpoint",
-  "number": "170",
+  "number": "36",
   "title": "Which Points Matter?",
   "body": " Which Points Matter?  The figure below contains three separate contour maps.   The upper-left map represents a hill. Elevation increases as you move toward the center of the nested contours.  The upper-right map represents a valley. Elevation decreases as you move toward the center of the nested contours.  The lower map represents a mountain pass. Moving through the center in one direction increases elevation, while moving through the center in a perpendicular direction decreases elevation.   Points , , , and are marked for investigation. Use only the contour information to classify the points before using any calculus.    Contour maps showing a hill, valley, and mountain pass with labeled points A, B, C, and D for classification.      Identify all local maxima.  Identify all local minima.  Identify all saddle points.  Identify points that are neither.  Defend your reasoning using geometry.   "
 },
@@ -2066,7 +2426,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-9.html#handouts-9-7",
   "type": "Checkpoint",
-  "number": "171",
+  "number": "37",
   "title": "Where Can a Maximum Occur?",
   "body": " Where Can a Maximum Occur?  A continuous function is defined on an open disk and another one on a closed triangle.   Must a maximum exist?  Must a minimum exist?  Where can a maximum occur? (inside? edge? vertex?)  Construct examples supporting your answer.   "
 },
@@ -2084,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-3",
   "type": "Checkpoint",
-  "number": "172",
+  "number": "38",
   "title": "A Limit That Does Not Exist.",
   "body": " A Limit That Does Not Exist  Consider    Evaluate   Evaluate   Based on parts (a) and (b), what might you expect for   Investigate the limit along   Hint: Substitute into the formula.   Determine whether exists.  Explain why checking only the coordinate axes is not sufficient.   "
 },
@@ -2093,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-4",
   "type": "Checkpoint",
-  "number": "173",
+  "number": "39",
   "title": "First and Second Partial Derivatives.",
   "body": " First and Second Partial Derivatives  Let    Find .  Find .  Find .  Find .  Find .  Find .  Compare and .  State a theorem that explains your observation.   "
 },
@@ -2102,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-5",
   "type": "Checkpoint",
-  "number": "174",
+  "number": "40",
   "title": "Directional Derivative and Elevation.",
   "body": " Directional Derivative and Elevation  Let   Consider the point .   Find .  Evaluate .  Convert to a unit vector.  Find the directional derivative at in the direction .  Interpret the directional derivative geometrically.  What does your answer say about the elevation of the surface as you move in the direction ?   "
 },
@@ -2111,7 +2471,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-6",
   "type": "Checkpoint",
-  "number": "175",
+  "number": "41",
   "title": "Critical Point and Hessian: Local Maximum.",
   "body": " Critical Point and Hessian: Local Maximum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix   Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a maximum.   "
 },
@@ -2120,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-10.html#handouts-10-7",
   "type": "Checkpoint",
-  "number": "176",
+  "number": "42",
   "title": "Critical Point and Hessian: Local Minimum.",
   "body": " Critical Point and Hessian: Local Minimum  Consider    Find all first partial derivatives.  Find all critical points.  Compute the Hessian matrix.  Evaluate the Hessian at each critical point.  Use the Second Derivative Test.  Classify the critical point.  Graph the surface in GeoGebra 3D.  Describe the shape near the critical point and explain why it is a minimum.   "
 },
@@ -2138,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-2",
   "type": "Checkpoint",
-  "number": "177",
+  "number": "43",
   "title": "",
   "body": " Evaluate the scalar line integral.   where is the curve given by .   Find .  Compute .  Rewrite the integral in terms of .  Evaluate.   "
 },
@@ -2147,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-3",
   "type": "Checkpoint",
-  "number": "178",
+  "number": "44",
   "title": "",
   "body": " Find the circulation of the vector field around the unit circle oriented counterclockwise.     Parameterize the curve.  Compute .  Rewrite the integral in terms of the parameter.  Evaluate.   "
 },
@@ -2156,7 +2516,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-4",
   "type": "Checkpoint",
-  "number": "179",
+  "number": "45",
   "title": "",
   "body": " Consider the vector field   Evaluate the line integral   from to using two different paths. Determine whether the integral depends on the path.   Straight line path  Path along a curve   "
 },
@@ -2165,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-5",
   "type": "Checkpoint",
-  "number": "180",
+  "number": "46",
   "title": "",
   "body": " Compute the flux of the vector field   through the portion of the plane   lying above the square    Determine an upward-pointing unit normal vector.  Compute on the surface.  Set up the flux integral.  Evaluate the integral.    Since the surface is the horizontal plane , think what the upward unit normal vector is.   "
 },
@@ -2174,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-11.html#handouts-11-6",
   "type": "Checkpoint",
-  "number": "181",
+  "number": "47",
   "title": "",
   "body": " Evaluate a scalar surface integral over a paraboloid over a disk .   "
 },
@@ -2192,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-3",
   "type": "Checkpoint",
-  "number": "182",
+  "number": "48",
   "title": "",
   "body": " Consider the differential equation   Hints:   Can you separate the variables?  Can all -terms be placed on one side and all -terms on the other?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2201,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-5",
   "type": "Checkpoint",
-  "number": "183",
+  "number": "49",
   "title": "",
   "body": " Consider the differential equation   Hints:   Does the equation match the form ?  If so, what is the integrating factor?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2210,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-7",
   "type": "Checkpoint",
-  "number": "184",
+  "number": "50",
   "title": "",
   "body": " Consider the differential equation   Hints:   Identify and .  Compute .  Compute .  Compare the two derivatives.   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2219,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-9",
   "type": "Checkpoint",
-  "number": "185",
+  "number": "51",
   "title": "",
   "body": " Consider the differential equation   Hints:   Does the equation fit the form ?  What is the value of ?  What substitution is commonly used?   Complete the following:   What type of differential equation is this?  How do you know?  What would be your next step?   "
 },
@@ -2228,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-12.html#handouts-12-11",
   "type": "Checkpoint",
-  "number": "186",
+  "number": "52",
   "title": "",
   "body": " The temperature of freshly poured concrete on a bridge deck is . The surrounding air temperature is . Engineers assume the cooling rate is proportional to the difference between the concrete temperature and the air temperature.  Hints:   What quantity is changing?  What quantity determines the rate of change?  What does the phrase “proportional to” suggest?   Complete the following:   Define a variable for temperature.  Write a differential equation that models the situation.  What type of differential equation is it?  What solution method would you use?   "
 },
@@ -2246,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-4",
   "type": "Checkpoint",
-  "number": "187",
+  "number": "53",
   "title": "Fundamental Sets of Solutions and the Wronskian.",
   "body": " Fundamental Sets of Solutions and the Wronskian  Determine whether the given functions form a fundamental set of solutions for the differential equation.   Consider   Determine whether   form a fundamental set of solutions.  Compute the Wronskian.   Consider   Determine whether   form a fundamental set of solutions.    Verify that   are solutions of   Compute the Wronskian and determine whether they form a fundamental set of solutions.   "
 },
@@ -2255,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-5",
   "type": "Checkpoint",
-  "number": "188",
+  "number": "54",
   "title": "Undetermined Coefficients.",
   "body": " Undetermined Coefficients   Solve using undetermined coefficients.   Solve using undetermined coefficients.   Pay careful attention to resonance.   Solve using undetermined coefficients.    "
 },
@@ -2264,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-6",
   "type": "Checkpoint",
-  "number": "189",
+  "number": "55",
   "title": "Reduction of Order.",
   "body": " Reduction of Order   One solution of   is   Use reduction of order to find a second linearly independent solution.   One solution of   is   Use reduction of order to find a second solution.  "
 },
@@ -2273,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-7",
   "type": "Checkpoint",
-  "number": "190",
+  "number": "56",
   "title": "Complementary and Particular Solutions.",
   "body": " Complementary and Particular Solutions   Find the complementary solution, a particular solution, and the general solution.    Find the complementary solution, a particular solution, and the general solution.   "
 },
@@ -2282,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handouts-13.html#handouts-13-8",
   "type": "Checkpoint",
-  "number": "191",
+  "number": "57",
   "title": "Variation of Parameters.",
   "body": " Variation of Parameters   Solve using variation of parameters.    Solve using variation of parameters.   Keep your answer in integral form if necessary.   Solve the following differential equation using variation of parameters.   Begin by finding the complementary solution. Then use variation of parameters to obtain a particular solution.  Simplify your final answer as much as possible.   "
 },
@@ -2293,97 +2653,124 @@ var ptx_lunr_docs = [
   "type": "Handout",
   "number": "",
   "title": "Engineering Modeling Activity: Building and Solving Second-Order Differential Equations",
-  "body": " Engineering Modeling Activity: Building and Solving Second-Order Differential Equations   Engineers frequently develop differential equations directly from physical systems. In this activity, your task is not only to solve differential equations but also to construct the mathematical model from a physical description.  For each scenario:   Identify the relevant physical quantities.  Write the governing physical law.  Develop the differential equation.  Identify the coefficients.  Classify the roots of the characteristic equation.  Solve the differential equation.  Interpret the physical meaning of the solution.     Reference Formulas and Hints  The following engineering relationships may be useful.   Newton's Second Law     Hooke's Law (Spring Force)   where is the spring constant.    Damping Force   where is the damping coefficient.    Series RLC Circuit   where represents charge.     Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.      Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.      Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.      Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.     RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?     Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.    Measured damped oscillation diagram   Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.    Reflection Questions   How does increasing the damping coefficient affect the characteristic roots?   What physical behavior corresponds to:   distinct real roots,  a repeated root,  complex roots?    Why do oscillatory systems lead naturally to complex roots?  What similarities did you observe between mechanical and electrical systems?    "
+  "body": " Engineering Modeling Activity: Building and Solving Second-Order Differential Equations   Engineers frequently develop differential equations directly from physical systems. In this activity, your task is not only to solve differential equations but also to construct the mathematical model from a physical description.  For each scenario:   Identify the relevant physical quantities.  Write the governing physical law.  Develop the differential equation.  Identify the coefficients.  Classify the roots of the characteristic equation.  Solve the differential equation.  Interpret the physical meaning of the solution.     Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.      Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.      Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.      Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.     RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?     Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.    Measured damped oscillation diagram   Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.    Reflection Questions   How does increasing the damping coefficient affect the characteristic roots?   What physical behavior corresponds to:   distinct real roots,  a repeated root,  complex roots?    Why do oscillatory systems lead naturally to complex roots?  What similarities did you observe between mechanical and electrical systems?    "
 },
 {
-  "id": "handouts-14-3-3",
+  "id": "handouts-14-3",
   "level": "2",
-  "url": "handouts-14.html#handouts-14-3-3",
-  "type": "Definition",
-  "number": "192",
-  "title": "Newton’s Second Law.",
-  "body": " Newton's Second Law   "
-},
-{
-  "id": "handouts-14-3-4",
-  "level": "2",
-  "url": "handouts-14.html#handouts-14-3-4",
-  "type": "Definition",
-  "number": "193",
-  "title": "Hooke’s Law (Spring Force).",
-  "body": " Hooke's Law (Spring Force)   where is the spring constant.  "
-},
-{
-  "id": "handouts-14-3-5",
-  "level": "2",
-  "url": "handouts-14.html#handouts-14-3-5",
-  "type": "Definition",
-  "number": "194",
-  "title": "Damping Force.",
-  "body": " Damping Force   where is the damping coefficient.  "
-},
-{
-  "id": "handouts-14-3-6",
-  "level": "2",
-  "url": "handouts-14.html#handouts-14-3-6",
-  "type": "Definition",
-  "number": "195",
-  "title": "Series RLC Circuit.",
-  "body": " Series RLC Circuit   where represents charge.  "
+  "url": "handouts-14.html#handouts-14-3",
+  "type": "Checkpoint",
+  "number": "58",
+  "title": "Undamped Spring-Mass System.",
+  "body": " Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.    "
 },
 {
   "id": "handouts-14-4",
   "level": "2",
   "url": "handouts-14.html#handouts-14-4",
   "type": "Checkpoint",
-  "number": "196",
-  "title": "Undamped Spring-Mass System.",
-  "body": " Undamped Spring-Mass System  A 2 kg mass is attached to a spring with spring constant 18 N\/m. The mass is released from an initial displacement of 0.10 m with zero initial velocity.   Draw a free-body diagram and identify all forces.  Using Newton's Second Law and Hooke's Law, derive the differential equation governing the motion.  Put the equation into standard form .  Form the characteristic equation.  Determine the roots and classify them.  Solve the initial value problem.  Describe the resulting motion.    Undamped spring-mass system.    "
+  "number": "59",
+  "title": "Vibration Isolation Mount.",
+  "body": " Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.    "
 },
 {
   "id": "handouts-14-5",
   "level": "2",
   "url": "handouts-14.html#handouts-14-5",
   "type": "Checkpoint",
-  "number": "197",
-  "title": "Vibration Isolation Mount.",
-  "body": " Vibration Isolation Mount  A 5 kg instrument package is mounted on a vibration isolation system consisting of a spring with spring constant 80 N\/m and a damper with damping coefficient 40 N·s\/m.  The displacement from equilibrium is denoted by .   Write expressions for the spring force and damping force.  Apply Newton's Second Law.  Derive the governing differential equation.  Identify the coefficients , , and .  Determine the characteristic equation.  Classify the roots as distinct real, repeated, or complex.  Explain whether the system oscillates.    Spring-mass-damper system.    "
+  "number": "60",
+  "title": "Critically Damped Door Closer.",
+  "body": " Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.    "
 },
 {
   "id": "handouts-14-6",
   "level": "2",
   "url": "handouts-14.html#handouts-14-6",
   "type": "Checkpoint",
-  "number": "198",
-  "title": "Critically Damped Door Closer.",
-  "body": " Critically Damped Door Closer  An engineer is designing a hydraulic door closer. The angular displacement of the door is modeled by   The system parameters are    Write the differential equation.  Determine the characteristic equation.  Compute the roots.  Determine whether the system is underdamped, overdamped, or critically damped.  Find the general solution.  Explain why engineers often prefer this behavior in automatic door systems.    Door angular displacement diagram.    "
+  "number": "61",
+  "title": "Designing for a Desired Response.",
+  "body": " Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.   "
 },
 {
   "id": "handouts-14-7",
   "level": "2",
   "url": "handouts-14.html#handouts-14-7",
   "type": "Checkpoint",
-  "number": "199",
-  "title": "Designing for a Desired Response.",
-  "body": " Designing for a Desired Response  A 4 kg machine component is mounted on a spring with spring constant   The engineer wants the system to be critically damped.   Write the differential equation involving the unknown damping coefficient .  Form the characteristic equation.  Determine the value of required for critical damping.  Compute the repeated root.  Write the corresponding general solution.   "
+  "number": "62",
+  "title": "RLC Circuit Modeling.",
+  "body": " RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?   "
 },
 {
   "id": "handouts-14-8",
   "level": "2",
   "url": "handouts-14.html#handouts-14-8",
   "type": "Checkpoint",
-  "number": "200",
-  "title": "RLC Circuit Modeling.",
-  "body": " RLC Circuit Modeling  A series RLC circuit contains   After disconnecting the voltage source, the charge satisfies    RLC Circuit Diagram     Derive the differential equation governing the charge.  Write the characteristic equation.  Solve for the roots.  Find the general solution.  Compare the resulting equation with a spring-mass-damper system. Which term represents damping?   "
-},
-{
-  "id": "handouts-14-9",
-  "level": "2",
-  "url": "handouts-14.html#handouts-14-9",
-  "type": "Checkpoint",
-  "number": "201",
+  "number": "63",
   "title": "Challenge Activity: Reverse Engineering a System.",
   "body": " Challenge Activity: Reverse Engineering a System  An engineer measures the displacement of a vibrating system and determines that the motion is    Determine the characteristic roots.  Construct the characteristic equation.    Measured damped oscillation diagram   Determine a differential equation having this solution.  Identify values of , , and if the equation is put into the form    Can multiple choices of , , and produce the same solution? Explain.  "
+},
+{
+  "id": "handouts-15",
+  "level": "1",
+  "url": "handouts-15.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Systems of ODEs and Laplace Transforms",
+  "body": " Systems of ODEs and Laplace Transforms   Work collaboratively with your group to complete the problems at each station. Show all calculations, justify all classifications, and discuss your reasoning with your teammates. Use the phase-plane figures whenever appropriate.    Modeling with Systems of Differential Equations  Consider the system    Identify the coefficient matrix.  How many dependent variables are present?  Determine the trace and determinant.  Write the characteristic polynomial.  Without solving the system completely, predict whether the equilibrium will be stable or unstable.  Give one real-world application that could be modeled by a system of differential equations.     Real Eigenvalues and Phase Portraits  Consider the system    Find the characteristic polynomial.  Determine the eigenvalues.  Find an eigenvector corresponding to each eigenvalue.  Classify the equilibrium point.  Determine whether the origin is stable or unstable.  Explain how the eigenvalues predict the long-term behavior of the system.   Reference Phase Portrait:     Which classification from the course notes best matches this figure?    Complex Eigenvalues  Consider the system    Find the characteristic polynomial.  Determine the eigenvalues.  Identify and .  Classify the equilibrium point.  Is the origin stable or unstable?  Will trajectories spiral inward or outward?  Write the exponential factor appearing in the solution.   Reference Phase Portrait:     Explain how the phase portrait matches the eigenvalues.    Laplace Transform Matching  Match each function with its Laplace transform.     Function  Transform     ____________________     ____________________     ____________________     ____________________     Available transforms:    Which transform pair was easiest to identify?  Which transform pair required the most discussion?     Inverse Laplace Transforms  Determine each inverse Laplace transform.              Use partial fraction decomposition.      Consider the three-dimensional system    Find the eigenvalues.  Which eigenvalue dominates the long-term behavior?  As , does the origin appear stable or unstable?  Explain your reasoning.    "
+},
+{
+  "id": "handouts-15-3",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-3",
+  "type": "Checkpoint",
+  "number": "64",
+  "title": "Modeling with Systems of Differential Equations.",
+  "body": " Modeling with Systems of Differential Equations  Consider the system    Identify the coefficient matrix.  How many dependent variables are present?  Determine the trace and determinant.  Write the characteristic polynomial.  Without solving the system completely, predict whether the equilibrium will be stable or unstable.  Give one real-world application that could be modeled by a system of differential equations.   "
+},
+{
+  "id": "handouts-15-4",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-4",
+  "type": "Checkpoint",
+  "number": "65",
+  "title": "Real Eigenvalues and Phase Portraits.",
+  "body": " Real Eigenvalues and Phase Portraits  Consider the system    Find the characteristic polynomial.  Determine the eigenvalues.  Find an eigenvector corresponding to each eigenvalue.  Classify the equilibrium point.  Determine whether the origin is stable or unstable.  Explain how the eigenvalues predict the long-term behavior of the system.   Reference Phase Portrait:     Which classification from the course notes best matches this figure?  "
+},
+{
+  "id": "handouts-15-5",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-5",
+  "type": "Checkpoint",
+  "number": "66",
+  "title": "Complex Eigenvalues.",
+  "body": " Complex Eigenvalues  Consider the system    Find the characteristic polynomial.  Determine the eigenvalues.  Identify and .  Classify the equilibrium point.  Is the origin stable or unstable?  Will trajectories spiral inward or outward?  Write the exponential factor appearing in the solution.   Reference Phase Portrait:     Explain how the phase portrait matches the eigenvalues.  "
+},
+{
+  "id": "handouts-15-6",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-6",
+  "type": "Checkpoint",
+  "number": "67",
+  "title": "Laplace Transform Matching.",
+  "body": " Laplace Transform Matching  Match each function with its Laplace transform.     Function  Transform     ____________________     ____________________     ____________________     ____________________     Available transforms:    Which transform pair was easiest to identify?  Which transform pair required the most discussion?   "
+},
+{
+  "id": "handouts-15-7",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-7",
+  "type": "Checkpoint",
+  "number": "68",
+  "title": "Inverse Laplace Transforms.",
+  "body": " Inverse Laplace Transforms  Determine each inverse Laplace transform.              Use partial fraction decomposition.    "
+},
+{
+  "id": "handouts-15-8",
+  "level": "2",
+  "url": "handouts-15.html#handouts-15-8",
+  "type": "Checkpoint",
+  "number": "69",
+  "title": "",
+  "body": " Consider the three-dimensional system    Find the eigenvalues.  Which eigenvalue dominates the long-term behavior?  As , does the origin appear stable or unstable?  Explain your reasoning.   "
 },
 {
   "id": "homework-2",
@@ -2391,53 +2778,8 @@ var ptx_lunr_docs = [
   "url": "homework-2.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Homework 01",
-  "body": " Homework 01    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors   #  Matrix A  Matrix B  Matrix C  Vector u  Vector v    1                  2                 3                    Add matrices: and .     Scale matrices by a real number: .     Perform matrix-vector multiplication: and .     Perform matrix-matrix multiplication: , , and .     Compute the transpose of a matrix: , , and .    "
-},
-{
-  "id": "homework-2-4",
-  "level": "2",
-  "url": "homework-2.html#homework-2-4",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  Add matrices: and .   "
-},
-{
-  "id": "homework-2-5",
-  "level": "2",
-  "url": "homework-2.html#homework-2-5",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": " Scale matrices by a real number: .   "
-},
-{
-  "id": "homework-2-6",
-  "level": "2",
-  "url": "homework-2.html#homework-2-6",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": " Perform matrix-vector multiplication: and .   "
-},
-{
-  "id": "homework-2-7",
-  "level": "2",
-  "url": "homework-2.html#homework-2-7",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": " Perform matrix-matrix multiplication: , , and .   "
-},
-{
-  "id": "homework-2-8",
-  "level": "2",
-  "url": "homework-2.html#homework-2-8",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": " Compute the transpose of a matrix: , , and .   "
+  "title": "Presentation Instructions",
+  "body": " Presentation Instructions  MATH 246: Applied Mathematics for Civil Engineering Presentation  Presentation Length: 10 minutes  Objective  Choose a civil engineering application that uses one of the mathematical topics covered in MATH 246:   Linear Algebra  Ordinary Differential Equations (ODEs)  Multivariable Calculus  Partial Differential Equations (PDEs) (optional)   Your presentation should explain how mathematics is used to model, analyze, or solve a real civil engineering problem.  Suggested Presentation Structure    Title Slide   Presentation title  Your name  MATH 246     Introduction   Describe the engineering problem.  Explain why it is important in civil engineering.     Mathematical Background   Introduce the relevant mathematical concept(s).  Define important equations, variables, and assumptions.     Engineering Application   Describe the real-world system.  Explain how the mathematics is used.  Include diagrams, graphs, images, or examples when appropriate.     Case Studies \/ Scenarios   Compare at least two scenarios, conditions, or parameter choices.  Discuss how the mathematical model predicts different outcomes.     Conclusions   Summarize key findings.  Explain the importance of mathematics in engineering decision-making.     References   Cite all sources used, including images and AI tools (if applicable).     Suggested Topics  Ordinary Differential Equations (ODEs)   Bridge Vibrations Under Traffic Loads (second-order ODEs, damping, oscillations)  Earthquake Response of Buildings (forced second-order ODEs, resonance)  Skyscraper Sway Due to Wind Loads (harmonic motion, damping)  Water Level Changes in Reservoirs (first-order ODEs, rates of change)  Filling and Draining Water Tanks (separable differential equations)  Foundation Settlement Over Time (first-order ODE models)  Pollutant Decay in Water Treatment Systems (exponential decay models)  Vehicle Suspension Systems for Construction Equipment (second-order ODEs)  Suspension Bridge Oscillations (coupled differential equations)  Water Demand Forecasting for Growing Communities (logistic growth models)   Linear Algebra   Traffic Flow in Urban Road Networks (systems of linear equations, matrices)  Force Analysis in Truss Bridges (matrix methods, equilibrium equations)  Water Distribution Networks (linear systems, matrix modeling)  Structural Stability Analysis (eigenvalues and eigenvectors)  Finite Element Modeling of Structures (stiffness matrices, linear systems)   Multivariable Calculus   Rainwater Runoff on Terrain Surfaces (gradients, partial derivatives, directional derivatives)  Optimization of Water Tank Design (Lagrange multipliers, constrained optimization)  Earthwork Volume Calculations for Highway Construction (double and triple integrals)   Artificial Intelligence (AI) Use Policy  The use of AI tools such as Microsoft Copilot, ChatGPT, Gemini, Claude, or similar tools is permitted for this assignment.  If AI is used:   You must disclose the use of AI in your References or Acknowledgments slide.  You are responsible for verifying the accuracy of all information, calculations, equations, citations, and images included in your presentation.  AI-generated content may contain errors, incorrect calculations, misleading explanations, or fabricated references.  Students remain fully responsible for the quality, accuracy, and academic integrity of their work.  Any sources suggested by AI should be independently verified before being included in the presentation.   Example Disclosure:  Microsoft Copilot was used to assist with brainstorming, outlining, and explaining mathematical concepts. All content was reviewed and verified by the presenter.  "
 },
 {
   "id": "homework-3",
@@ -2445,8 +2787,8 @@ var ptx_lunr_docs = [
   "url": "homework-3.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Homework 02",
-  "body": " Homework 02    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors   #  Matrix A  Matrix B  Matrix C    1              Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.     Compute the determinants of .     Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .   "
+  "title": "Homework 01",
+  "body": " Homework 01    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors         #  Matrix A  Matrix B  Matrix C  Vector u  Vector v    1                  2                 3                    Add matrices: and .     Scale matrices by a real number: .     Perform matrix-vector multiplication: and .     Perform matrix-matrix multiplication: , , and .     Compute the transpose of a matrix: , , and .    "
 },
 {
   "id": "homework-3-4",
@@ -2455,7 +2797,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.   "
+  "body": "  Add matrices: and .   "
 },
 {
   "id": "homework-3-5",
@@ -2464,7 +2806,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": " Compute the determinants of .   "
+  "body": " Scale matrices by a real number: .   "
 },
 {
   "id": "homework-3-6",
@@ -2473,12 +2815,66 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": " Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .  "
+  "body": " Perform matrix-vector multiplication: and .   "
+},
+{
+  "id": "homework-3-7",
+  "level": "2",
+  "url": "homework-3.html#homework-3-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": " Perform matrix-matrix multiplication: , , and .   "
+},
+{
+  "id": "homework-3-8",
+  "level": "2",
+  "url": "homework-3.html#homework-3-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Compute the transpose of a matrix: , , and .   "
 },
 {
   "id": "homework-4",
   "level": "1",
   "url": "homework-4.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 02",
+  "body": " Homework 02    Instructions: Complete all the exercises below and aim to submit your work by the due date. as for the MATLAB Lab, create an .m file titled Lab1_YourLastName.m and perform all the operations you need for your homework. Solve all the problems for each set of matrices and vectors below. You may use MATLAB to double-check your calculations, but you must show your work.    Matrices and vectors       #  Matrix A  Matrix B  Matrix C    1              Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.     Compute the determinants of .     Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .   "
+},
+{
+  "id": "homework-4-4",
+  "level": "2",
+  "url": "homework-4.html#homework-4-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Use Gaussian Elimination determine whether matrices . and are invertible, and if they are, find their inverses.   "
+},
+{
+  "id": "homework-4-5",
+  "level": "2",
+  "url": "homework-4.html#homework-4-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Compute the determinants of .   "
+},
+{
+  "id": "homework-4-6",
+  "level": "2",
+  "url": "homework-4.html#homework-4-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not? Then find the determinant of , , and .  "
+},
+{
+  "id": "homework-5",
+  "level": "1",
+  "url": "homework-5.html",
   "type": "Worksheet",
   "number": "",
   "title": "Homework 03",
@@ -2487,7 +2883,7 @@ var ptx_lunr_docs = [
 {
   "id": "practice-2x2",
   "level": "2",
-  "url": "homework-4.html#practice-2x2",
+  "url": "homework-5.html#practice-2x2",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Practice Problem 1 (2×2 Matrix).",
@@ -2496,7 +2892,7 @@ var ptx_lunr_docs = [
 {
   "id": "practice-3x3",
   "level": "2",
-  "url": "homework-4.html#practice-3x3",
+  "url": "homework-5.html#practice-3x3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Practice Problem 2 (3×3 Matrix).",
@@ -2505,43 +2901,43 @@ var ptx_lunr_docs = [
 {
   "id": "practice2-3x3",
   "level": "2",
-  "url": "homework-4.html#practice2-3x3",
+  "url": "homework-5.html#practice2-3x3",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Practice Problem 3 (3×3 Matrix).",
   "body": " Practice Problem 3 (3×3 Matrix)  Consider the matrix     Find the characteristic polynomial .  Work:  ________________________________________  ________________________________________    Find all eigenvalues of (they can be repeated).  ____________  ____________  ____________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Find an eigenvector corresponding to .  Work:  ________________________________________  ________________________________________  ____________________    Construct the matrix whose columns are the eigenvectors.   ____________________    Construct the diagonal matrix .   ____________________    Write the diagonalization and use MATLAB to verify it.  ________________________________________    "
 },
 {
-  "id": "homework-5",
+  "id": "homework-6",
   "level": "1",
-  "url": "homework-5.html",
+  "url": "homework-6.html",
   "type": "Worksheet",
   "number": "",
   "title": "Homework 04",
   "body": " Homework 04    Instructions: Complete the exercises where you need to use partial derivatives to find and classify critical points of functions of two variables. Please aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab4_YourLastName.m and then compare your analytic results with graphical representations produced in MATLAB. You may also use MATLAB to double-check your calculations, but you must show your work.    For the following functions, find the critical points and classify them using the Second Derivative Test.  Compute and .  Find all critical points.  Compute , , and .  Calculate .  Classify the critical points.  Evaluate the function at the critical points.  Graph the function using MATLAB and identify the critical points on the graph.  Explain how the graph confirms your classification by answering the reflection questions.     Consider the functions        MATLAB Investigation   For each function:  Create a surface plot using surf .  Mark all critical points on the graph.  Include the resulting figure in your work.  Compare the graph with your classification obtained from the Second Derivative Test.     The following MATLAB code can be used as a template to create surface plots for each function. Modify the function definition in the code to match each of the functions listed above. clc clear close all [x,y] = meshgrid(-4:0.05:4,-4:0.05:4); z = 4*x + 6*y - x.^2 - y.^2; % replace with desired function figure surf(x,y,z) shading interp colormap jet hold on % Critical point example x_crit = 2; y_crit = 3; f_crit = 4*x_crit + 6*y_crit - x_crit^2 - y_crit^2; % replace with desired function plot3(x_crit,y_crit,f_crit,'ko','MarkerFaceColor','r','MarkerSize',8) %For curves t = linspace(0,2*pi,200); xc = cos(t); yc = sin(t); zc = zeros(size(t)); hold on plot3(xc,yc,zc,'r','LineWidth',4) xlabel('x') ylabel('y') zlabel('f(x,y)') title('Surface Plot') grid on view(45,30)    Reflection Questions after you investigate each function   Write a short response to the following questions.  How does a local maximum appear on a surface plot?  How does a local minimum appear on a surface plot?  How can a saddle point be identified graphically?  Which function had more than one minimum?  Which function had infinitely many maxima?  Did the graphical results agree with the Second Derivative Test in each case?  What advantages are gained by using both calculus and visualization?      "
 },
 {
-  "id": "homework-5-3",
+  "id": "homework-6-3",
   "level": "2",
-  "url": "homework-5.html#homework-5-3",
+  "url": "homework-6.html#homework-6-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": " For the following functions, find the critical points and classify them using the Second Derivative Test.  Compute and .  Find all critical points.  Compute , , and .  Calculate .  Classify the critical points.  Evaluate the function at the critical points.  Graph the function using MATLAB and identify the critical points on the graph.  Explain how the graph confirms your classification by answering the reflection questions.    "
 },
 {
-  "id": "homework-5-5-2",
+  "id": "homework-6-5-2",
   "level": "2",
-  "url": "homework-5.html#homework-5-5-2",
+  "url": "homework-6.html#homework-6-5-2",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": " For each function:  Create a surface plot using surf .  Mark all critical points on the graph.  Include the resulting figure in your work.  Compare the graph with your classification obtained from the Second Derivative Test.    "
 },
 {
-  "id": "homework-5-6-2",
+  "id": "homework-6-6-2",
   "level": "2",
-  "url": "homework-5.html#homework-5-6-2",
+  "url": "homework-6.html#homework-6-6-2",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
@@ -2629,99 +3025,99 @@ var ptx_lunr_docs = [
   "body": "  Part 1: Roadway Surface Analysis  Compute the first-order partial derivatives of the roadway surface and determine the gradient vector .  Evaluate the gradient at .  Interpret your results by determining:   the direction of steepest ascent,  the direction water will naturally flow,  appropriate locations for drainage structures or culverts.      Part 2: Retention Pond Analysis  Compute and .  Locate the critical point(s) of the pond surface and determine the maximum depth.  Use your derivatives to discuss:   where excavation is deepest,  where side slopes are steepest,  engineering implications for safety and maintenance.      Part 3: Stormwater Storage Capacity  Develop a double-integral model for the pond volume:   Use the transformation   to simplify the integral.  to rewrite the integral in terms of and . For this transformation, the area element (taking into account the Jacobian) is   State whether the proposed pond provides sufficient flood protection.     Part 4: Pond Design Optimization  The city would like to know whether changing the shape of the pond could increase storage while keeping the same available land area.  Express the pond volume in terms of and .  Apply the constraint and determine whether changing the shape of the ellipse affects storage capacity.  Discuss at least two practical engineering factors that may influence the final choice of pond geometry.     Part 5: Cost Analysis  Evaluate the gradient magnitude   Use this result and your volume calculation to determine:   ,  ,  .   Compare the total project cost to the budget of $20,000 and determine whether the design is economically feasible.  Identify which component contributes most significantly to the overall project cost.     Part 6: Engineering Recommendation  Prepare a final engineering recommendation for the city.  Your recommendation should address:   How roadway topography affects drainage patterns.  Locations for storm drains or culverts.  Whether the pond can manage the designed storm.  Whether the project satisfies budget constraints.  Whether the city should approve, modify, or redesign the proposed system.   Support your recommendation using the mathematical results obtained in the previous parts.     Extension Challenge  Suppose engineers can increase the maximum pond depth from meters to meters.  The pond is now modeled by   Develop a formula for the volume .  Determine the minimum value of needed to store of stormwater while keeping construction costs as low as possible.  Provide both a mathematical and engineering justification for your conclusion.    "
 },
 {
-  "id": "homework-8",
+  "id": "homework-9",
   "level": "1",
-  "url": "homework-8.html",
+  "url": "homework-9.html",
   "type": "Worksheet",
   "number": "",
   "title": "Homework 07",
   "body": " Homework 07    Instructions: Complete the exercises and please aim to submit your work by the due date. As for the MATLAB Lab, create an .m file titled Lab7_YourLastName.m and then compare your analytic results with graphical representations produced in MATLAB. You may also use MATLAB to double-check your calculations, but you must show your work. Solve each differential equation using the most appropriate method. Clearly identify the type of differential equation before solving. Show all work and verify your solutions whenever possible.    Separable Differential Equation  Solve the differential equation.     Linear First-Order Equation  Solve the differential equation.     Bernoulli Equation  Solve the differential equation.     Distinct Real Roots  Solve the differential equation.     Repeated Roots  Solve the differential equation.     Complex Roots  Solve the differential equation.     Fundamental Solutions and Wronskian  Consider the differential equation   Verify that   are solutions of the differential equation. Compute the Wronskian and determine whether the functions form a fundamental set of solutions.    Undetermined Coefficients  Find the general solution of     Reduction of Order  One solution of   is   Use reduction of order to find a second linearly independent solution and write the general solution.    Problem 10: Variation of Parameters  Solve the differential equation using variation of parameters.     MATLAB Tips for Differential Equations  MATLAB can help verify your work, perform symbolic integration, solve characteristic equations, and check solutions. The commands below use the Symbolic Math Toolbox.   Finding Characteristic Roots  Example: Solve   MATLAB commands:  syms r solve(2*r^2 + 3*r - 9 == 0, r)  MATLAB returns the characteristic roots.    Symbolic Integration  Example:   syms x int(x^2*log(x), x)  MATLAB uses for the natural logarithm.    Variation of Parameters Integrals  Suppose variation of parameters requires   syms x u1 = -int(log(x),x)  MATLAB returns     Computing a Wronskian  Given   the Wronskian can be computed directly.  syms x y1 = x^2; y2 = x^2*log(x); W = det([y1 y2; diff(y1,x) diff(y2,x)]); simplify(W)    Checking a Solution  Suppose you believe that   solves   syms t C1 C2 y = exp(-2*t)*(C1*cos(4*t)+C2*sin(4*t)); simplify(diff(y,t,2) + 4*diff(y,t) + 20*y)  MATLAB should return zero if the solution is correct.    Solving an ODE with dsolve  Example:   syms y(t) Dy = diff(y,t); ode = diff(y,t,2) + 4*diff(y,t) + 20*y == 0; cond1 = y(0)==1; cond2 = Dy(0)==0; sol = dsolve(ode,[cond1 cond2])  MATLAB returns the solution satisfying the initial conditions.    "
 },
 {
-  "id": "homework-8-3",
+  "id": "homework-9-3",
   "level": "2",
-  "url": "homework-8.html#homework-8-3",
+  "url": "homework-9.html#homework-9-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Separable Differential Equation.",
   "body": " Separable Differential Equation  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-4",
+  "id": "homework-9-4",
   "level": "2",
-  "url": "homework-8.html#homework-8-4",
+  "url": "homework-9.html#homework-9-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Linear First-Order Equation.",
   "body": " Linear First-Order Equation  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-5",
+  "id": "homework-9-5",
   "level": "2",
-  "url": "homework-8.html#homework-8-5",
+  "url": "homework-9.html#homework-9-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Bernoulli Equation.",
   "body": " Bernoulli Equation  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-6",
+  "id": "homework-9-6",
   "level": "2",
-  "url": "homework-8.html#homework-8-6",
+  "url": "homework-9.html#homework-9-6",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "Distinct Real Roots.",
   "body": " Distinct Real Roots  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-7",
+  "id": "homework-9-7",
   "level": "2",
-  "url": "homework-8.html#homework-8-7",
+  "url": "homework-9.html#homework-9-7",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "Repeated Roots.",
   "body": " Repeated Roots  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-8",
+  "id": "homework-9-8",
   "level": "2",
-  "url": "homework-8.html#homework-8-8",
+  "url": "homework-9.html#homework-9-8",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "Complex Roots.",
   "body": " Complex Roots  Solve the differential equation.   "
 },
 {
-  "id": "homework-8-9",
+  "id": "homework-9-9",
   "level": "2",
-  "url": "homework-8.html#homework-8-9",
+  "url": "homework-9.html#homework-9-9",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "Fundamental Solutions and Wronskian.",
   "body": " Fundamental Solutions and Wronskian  Consider the differential equation   Verify that   are solutions of the differential equation. Compute the Wronskian and determine whether the functions form a fundamental set of solutions.  "
 },
 {
-  "id": "homework-8-10",
+  "id": "homework-9-10",
   "level": "2",
-  "url": "homework-8.html#homework-8-10",
+  "url": "homework-9.html#homework-9-10",
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "Undetermined Coefficients.",
   "body": " Undetermined Coefficients  Find the general solution of   "
 },
 {
-  "id": "homework-8-11",
+  "id": "homework-9-11",
   "level": "2",
-  "url": "homework-8.html#homework-8-11",
+  "url": "homework-9.html#homework-9-11",
   "type": "Worksheet Exercise",
   "number": "9",
   "title": "Reduction of Order.",
   "body": " Reduction of Order  One solution of   is   Use reduction of order to find a second linearly independent solution and write the general solution.  "
 },
 {
-  "id": "homework-8-12",
+  "id": "homework-9-12",
   "level": "2",
-  "url": "homework-8.html#homework-8-12",
+  "url": "homework-9.html#homework-9-12",
   "type": "Worksheet Exercise",
   "number": "10",
   "title": "Problem 10: Variation of Parameters.",
@@ -2734,16 +3130,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Resources used in compiling this course",
-  "body": " Resources used in compiling this course        Key Open Educational Resources   Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)      "
+  "body": " Resources used in compiling this course        Key Open Educational Resources   Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: Applied Linear Algebra and Differential Equations at LibreTexts    APEX Calculus, Volume 3 : APEX Calculus, Volume 3    Paul’s Online Notes: Differential Equations and PDEs : Paul’s online differential equations notes    Numerical Methods with Applications , Engineering LibreTexts: Numerical Methods with Applications at LibreTexts      "
 },
 {
   "id": "oer-list2",
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "204",
+  "number": "174",
   "title": "Recommended additional readings",
-  "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: https:\/\/math.libretexts.org\/Bookshelves\/Differential_Equations\/Applied_Linear_Algebra_and_Differential_Equations_(Chasnov)    APEX Calculus, Volume 3 : https:\/\/www.apexcalculus.com\/volume-3\/    Paul’s Online Notes: Differential Equations and PDEs : https:\/\/tutorial.math.lamar.edu\/Classes\/DE\/DE.aspx    Numerical Methods with Applications , Engineering LibreTexts: https:\/\/math.libretexts.org\/Workbench\/Numerical_Methods_with_Applications_(Kaw)    "
+  "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: Applied Linear Algebra and Differential Equations at LibreTexts    APEX Calculus, Volume 3 : APEX Calculus, Volume 3    Paul’s Online Notes: Differential Equations and PDEs : Paul’s online differential equations notes    Numerical Methods with Applications , Engineering LibreTexts: Numerical Methods with Applications at LibreTexts    "
 }
 ]
 

@@ -9,12 +9,12 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: denver                         *-->
+<!--*  Theme: custom                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 9: PDE, their Classification; physical interpretation</title>
+<title>Week 9: Partial Differential Equations and Their Classification</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -111,7 +111,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week-08.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-week8.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -148,7 +148,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
@@ -409,24 +409,48 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-08.html" class="internal"><span class="title">Week 8: Systems; Laplace transform; numerical intro</span></a></div>
+<div class="toc-title-box"><a href="notes-week8.html" class="internal"><span class="title">Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-systems" class="internal"><span class="title">Systems of Differential Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-systems-5" class="internal"><span class="title">Solving Systems Using Eigenvalues</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week8.html#week8-laplace" class="internal"><span class="title">Laplace Transforms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-6" class="internal"><span class="title">Partial Fraction Decomposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-7" class="internal"><span class="title">Unit Step Functions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week8.html#week8-laplace-8" class="internal"><span class="title">Convolution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week8.html#week8-numerical" class="internal"><span class="title">Numerical Methods</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: PDE, their Classification; physical interpretation</span></a></div>
+<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: Partial Differential Equations and Their Classification</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-intro" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order" class="internal"><span class="title">Order and Linearity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical" class="internal"><span class="title">Physical Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-bc-ic" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-heat-example" class="internal"><span class="title">Heat Equation Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-matlab" class="internal"><span class="title">MATLAB Visualization of Heat Diffusion</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-week-10.html" class="internal"><span class="title">Week 10: Heat and wave equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat" class="internal"><span class="title">The Heat Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-heat-example" class="internal"><span class="title">Heat Equation on a Finite Rod</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave" class="internal"><span class="title">The Wave Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-wave-example" class="internal"><span class="title">Vibrating String Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-comparison" class="internal"><span class="title">Comparing the Heat and Wave Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-matlab" class="internal"><span class="title">MATLAB Visualization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-fd" class="internal"><span class="title">Finite Difference Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#w10-error" class="internal"><span class="title">Numerical versus Exact Solutions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -498,24 +522,23 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-handout">
 <div class="toc-title-box"><a href="handouts-14.html" class="internal"><span class="title">Engineering Modeling Activity: Building and Solving Second-Order Differential Equations</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-3" class="internal"><span class="title">Reference Formulas and Hints</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-10" class="internal"><span class="title">Reflection Questions</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-9" class="internal"><span class="title">Reflection Questions</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Systems of ODEs and Laplace Transforms</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 01</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 02</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 03</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Presentation Instructions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 02</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 03</span></a></div></li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Homework 04</span></a></div>
+<div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Homework 04</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-5.html#homework-5-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-5" class="internal"><span class="title">MATLAB Investigation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="homework-6.html#homework-6-6" class="internal"><span class="title">Reflection Questions after you investigate each function</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="hw-05.html" class="internal"><span class="title">Homework 05</span></a></div></li>
@@ -524,16 +547,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="hw-06.html#civil-engineering-problem" class="internal"><span class="title">Highway Drainage and Stormwater Management Design Project</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-worksheet">
-<div class="toc-title-box"><a href="homework-8.html" class="internal"><span class="title">Homework 07</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html" class="internal"><span class="title">Homework 07</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="homework-8.html#homework-8-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="homework-9.html#homework-9-13" class="internal"><span class="title">MATLAB Tips for Differential Equations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-8.html#homework-8-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-3" class="internal"><span class="title">Finding Characteristic Roots</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-4" class="internal"><span class="title">Symbolic Integration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-5" class="internal"><span class="title">Variation of Parameters Integrals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-6" class="internal"><span class="title">Computing a Wronskian</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-7" class="internal"><span class="title">Checking a Solution</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="homework-9.html#homework-9-13-8" class="internal"><span class="title">Solving an ODE with dsolve</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -548,21 +571,320 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-09"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 9: PDE, their Classification; physical interpretation</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 9: Partial Differential Equations and Their Classification</span>
 </h2>
-<section class="subsection" id="notes-week-09-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
-</h3>
-<div class="para" id="notes-week-09-2-2">Classification of PDEs.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="notes-week-09-2">
+<li id="notes-week-09-2-2">
+<div class="para" id="notes-week-09-2-2-1">Define a partial differential equation (PDE).<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-09-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-09-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
-</h3>
-<div class="para" id="notes-week-09-3-2">Physical interpretation of PDEs.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#notes-week-09-2-2" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="notes-week-09-2-3">
+<div class="para" id="notes-week-09-2-3-1">Distinguish between ODEs and PDEs.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-09-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 9: PDE, their Classification; physical interpretation"><a href="#notes-week-09" title="Copy heading and permalink for Section: Week 9: PDE, their Classification; physical interpretation" aria-label="Copy heading and permalink for Section: Week 9: PDE, their Classification; physical interpretation">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Item 2"><a href="#notes-week-09-2-3" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="notes-week-09-2-4">
+<div class="para" id="notes-week-09-2-4-1">Determine the order and linearity of a PDE.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#notes-week-09-2-4" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="notes-week-09-2-5">
+<div class="para" id="notes-week-09-2-5-1">Classify second-order PDEs as elliptic, parabolic, or hyperbolic.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#notes-week-09-2-5" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="notes-week-09-2-6">
+<div class="para" id="notes-week-09-2-6-1">Interpret PDEs in physical applications.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#notes-week-09-2-6" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="notes-week-09-2-7">
+<div class="para" id="notes-week-09-2-7-1">Understand the role of boundary and initial conditions.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#notes-week-09-2-7" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="notes-week-09-2-8">
+<div class="para" id="notes-week-09-2-8-1">Analyze simple PDE models arising in science and engineering.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#notes-week-09-2-8" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+</ol>
+<section class="subsection" id="w9-intro"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction to Partial Differential Equations</span>
+</h3>
+<article class="definition definition-like" id="w9-intro-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial Differential Equation.</span>
+</h4>
+<div class="para" id="w9-intro-2-2-1">A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.<div class="autopermalink" data-description="Paragraph"><a href="#w9-intro-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-intro-2-2-2">
+\begin{equation*}
+F(x,y,u,u_x,u_y,u_{xx},u_{xy},\ldots)=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 46: Partial Differential Equation"><a href="#w9-intro-2" title="Copy heading and permalink for Definition 46: Partial Differential Equation" aria-label="Copy heading and permalink for Definition 46: Partial Differential Equation">🔗</a></div></article><details id="w9-intro-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">ODE versus PDE.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="w9-intro-3-2-1">
+\begin{equation*}
+\frac{dy}{dt}=y
+\end{equation*}
+</div>
+<div class="para" id="w9-intro-3-2-2">This is an ODE because there is only one independent variable.<div class="autopermalink" data-description="Paragraph"><a href="#w9-intro-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-intro-3-2-3">
+\begin{equation*}
+u_t=u_{xx}
+\end{equation*}
+</div>
+<div class="para" id="w9-intro-3-2-4">This is a PDE because the solution depends on both position and time.<div class="autopermalink" data-description="Paragraph"><a href="#w9-intro-3-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 43: ODE versus PDE"><a href="#w9-intro-3" title="Copy heading and permalink for Example 43: ODE versus PDE" aria-label="Copy heading and permalink for Example 43: ODE versus PDE">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Introduction to Partial Differential Equations"><a href="#w9-intro" title="Copy heading and permalink for Subsection: Introduction to Partial Differential Equations" aria-label="Copy heading and permalink for Subsection: Introduction to Partial Differential Equations">🔗</a></div></section><section class="subsection" id="w9-order"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Order and Linearity</span>
+</h3>
+<article class="definition definition-like" id="w9-order-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Order.</span>
+</h4>
+<div class="para" id="w9-order-2-2-1">The order of a PDE is determined by its highest derivative.<div class="autopermalink" data-description="Paragraph"><a href="#w9-order-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 47: Order"><a href="#w9-order-2" title="Copy heading and permalink for Definition 47: Order" aria-label="Copy heading and permalink for Definition 47: Order">🔗</a></div></article><figure class="table table-like" id="w9-order-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">150<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Examples<div class="autopermalink" data-description="Table 150: Examples"><a href="#w9-order-3" title="Copy heading and permalink for Table 150: Examples" aria-label="Copy heading and permalink for Table 150: Examples">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Equation</td>
+<td class="l m b0 r0 l0 t0 lines">Order</td>
+<td class="l m b0 r0 l0 t0 lines">Linear?</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_t=u_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">Yes</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_t=uu_x\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">No</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{tt}=c^2u_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">Yes</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Subsection: Order and Linearity"><a href="#w9-order" title="Copy heading and permalink for Subsection: Order and Linearity" aria-label="Copy heading and permalink for Subsection: Order and Linearity">🔗</a></div></section><section class="subsection" id="w9-classification"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classification of Second-Order PDEs</span>
+</h3>
+<div class="displaymath process-math" id="w9-classification-2">
+\begin{equation*}
+Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="w9-classification-3">
+\begin{equation*}
+\Delta=B^2-4AC
+\end{equation*}
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/w9-classification-4.svg" role="img" class="contained"></div>
+<figure class="table table-like" id="w9-classification-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">151<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>PDE Classification<div class="autopermalink" data-description="Table 151: PDE Classification"><a href="#w9-classification-5" title="Copy heading and permalink for Table 151: PDE Classification" aria-label="Copy heading and permalink for Table 151: PDE Classification">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Condition</td>
+<td class="l m b0 r0 l0 t0 lines">Type</td>
+<td class="l m b0 r0 l0 t0 lines">Example</td>
+<td class="l m b0 r0 l0 t0 lines">Interpretation</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta&lt;0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Elliptic</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{xx}+u_{yy}=0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Equilibrium</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta=0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Parabolic</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_t=ku_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Diffusion</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta&gt;0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Hyperbolic</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{tt}=c^2u_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Wave propagation</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Subsection: Classification of Second-Order PDEs"><a href="#w9-classification" title="Copy heading and permalink for Subsection: Classification of Second-Order PDEs" aria-label="Copy heading and permalink for Subsection: Classification of Second-Order PDEs">🔗</a></div></section><section class="subsection" id="w9-physical"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Physical Interpretation</span>
+</h3>
+<figure class="table table-like" id="w9-physical-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">152<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Common PDE Models<div class="autopermalink" data-description="Table 152: Common PDE Models"><a href="#w9-physical-2" title="Copy heading and permalink for Table 152: Common PDE Models" aria-label="Copy heading and permalink for Table 152: Common PDE Models">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Equation</td>
+<td class="l m b0 r0 l0 t0 lines">Application</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{xx}+u_{yy}=0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Electrostatics and steady-state heat flow</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_t=ku_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Heat conduction and diffusion</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{tt}=c^2u_{xx}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">String vibration and sound propagation</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Subsection: Physical Interpretation"><a href="#w9-physical" title="Copy heading and permalink for Subsection: Physical Interpretation" aria-label="Copy heading and permalink for Subsection: Physical Interpretation">🔗</a></div></section><section class="subsection" id="w9-bc-ic"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Boundary and Initial Conditions</span>
+</h3>
+<figure class="table table-like" id="w9-bc-ic-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">153<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Boundary Conditions<div class="autopermalink" data-description="Table 153: Boundary Conditions"><a href="#w9-bc-ic-2" title="Copy heading and permalink for Table 153: Boundary Conditions" aria-label="Copy heading and permalink for Table 153: Boundary Conditions">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Type</td>
+<td class="l m b0 r0 l0 t0 lines">Form</td>
+<td class="l m b0 r0 l0 t0 lines">Meaning</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Dirichlet</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u(a,t)=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Value specified</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Neumann</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_x(a,t)=A\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Flux specified</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Robin</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(au+bu_x=c\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Mixed condition</td>
+</tr>
+</table></div></figure><div class="displaymath process-math" id="w9-bc-ic-3">
+\begin{equation*}
+u(x,0)=f(x)
+\end{equation*}
+</div>
+<div class="para" id="w9-bc-ic-4">The initial condition specifies the state of the system at time <span class="process-math">\(t=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#w9-bc-ic-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Boundary and Initial Conditions"><a href="#w9-bc-ic" title="Copy heading and permalink for Subsection: Boundary and Initial Conditions" aria-label="Copy heading and permalink for Subsection: Boundary and Initial Conditions">🔗</a></div></section><section class="subsection" id="w9-separation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separation of Variables</span>
+</h3>
+<article class="definition definition-like" id="w9-separation-2"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separated Solution.</span>
+</h4>
+<div class="displaymath process-math" id="w9-separation-2-2-1">
+\begin{equation*}
+u(x,t)=X(x)T(t)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 48: Separated Solution"><a href="#w9-separation-2" title="Copy heading and permalink for Definition 48: Separated Solution" aria-label="Copy heading and permalink for Definition 48: Separated Solution">🔗</a></div></article><div class="para" id="w9-separation-3">Substituting a product solution into a PDE often reduces the problem to two ordinary differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#w9-separation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Separation of Variables"><a href="#w9-separation" title="Copy heading and permalink for Subsection: Separation of Variables" aria-label="Copy heading and permalink for Subsection: Separation of Variables">🔗</a></div></section><section class="subsection" id="w9-heat-example"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Heat Equation Example</span>
+</h3>
+<details id="w9-heat-example-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Heat Equation on a Finite Rod.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="w9-heat-example-2-2-1">Solve<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-2-2">
+\begin{equation*}
+u_t=u_{xx}, \qquad 0&lt;x&lt;L,
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-2-3">with boundary conditions<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-2-4">
+\begin{equation*}
+u(0,t)=0,
+\qquad
+u(L,t)=0,
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-2-5">and initial condition<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-2-6">
+\begin{equation*}
+u(x,0)=f(x).
+\end{equation*}
+</div>
+<div class="solutions"><details id="w9-heat-example-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="w9-heat-example-2-3-1">Assume a separated solution<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-2">
+\begin{equation*}
+u(x,t)=X(x)T(t).
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-3">Substituting gives<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-4">
+\begin{equation*}
+XT'=X''T.
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-5">Dividing by <span class="process-math">\(XT\)</span> yields<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-6">
+\begin{equation*}
+\frac{T'}{T}=\frac{X''}{X}=-\lambda.
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-7">Two ordinary differential equations follow:<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-8">
+\begin{equation*}
+X''+\lambda X=0,
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-9">
+\begin{equation*}
+T'+\lambda T=0.
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-10">The boundary conditions imply<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-11">
+\begin{equation*}
+X_n(x)=\sin\left(\frac{n\pi x}{L}\right).
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-12">The time-dependent factors are<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-13">
+\begin{equation*}
+T_n(t)=e^{-(n\pi/L)^2t}.
+\end{equation*}
+</div>
+<div class="para" id="w9-heat-example-2-3-14">Therefore<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-2-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="w9-heat-example-2-3-15">
+\begin{equation*}
+u(x,t)=\sum_{n=1}^{\infty} b_n
+\sin\left(\frac{n\pi x}{L}\right)
+e^{-(n\pi/L)^2t}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Solution 44.1"><a href="#w9-heat-example-2-3" title="Copy heading and permalink for Solution 44.1" aria-label="Copy heading and permalink for Solution 44.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 44: Heat Equation on a Finite Rod"><a href="#w9-heat-example-2" title="Copy heading and permalink for Example 44: Heat Equation on a Finite Rod" aria-label="Copy heading and permalink for Example 44: Heat Equation on a Finite Rod">🔗</a></div></article></details><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/w9-heat-example-3.svg" role="img" class="contained"></div>
+<article class="remark remark-like" id="w9-heat-example-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">156</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interpretation.</span>
+</h4>
+<div class="para" id="w9-heat-example-4-2">Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 156: Interpretation"><a href="#w9-heat-example-4" title="Copy heading and permalink for Remark 156: Interpretation" aria-label="Copy heading and permalink for Remark 156: Interpretation">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Heat Equation Example"><a href="#w9-heat-example" title="Copy heading and permalink for Subsection: Heat Equation Example" aria-label="Copy heading and permalink for Subsection: Heat Equation Example">🔗</a></div></section><section class="subsection" id="w9-matlab"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">MATLAB Visualization of Heat Diffusion</span>
+</h3>
+<div class="code-box"><pre class="program clipboardable"><code class="language-matlab">L = 1;
+x = linspace(0,L,100);
+t = linspace(0,0.5,100);
+[X,T] = meshgrid(x,t);
+U = exp(-pi^2*T).*sin(pi*X);
+surf(X,T,U)
+xlabel('Position')
+ylabel('Time')
+zlabel('Temperature')
+title('Heat Equation Solution')
+shading interp
+colorbar
+</code></pre></div>
+<div class="autopermalink" data-description="Subsection: MATLAB Visualization of Heat Diffusion"><a href="#w9-matlab" title="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion" aria-label="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion">🔗</a></div></section><div class="para" id="notes-week-09-11-1">Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section: Week 9: Partial Differential Equations and Their Classification"><a href="#notes-week-09" title="Copy heading and permalink for Section: Week 9: Partial Differential Equations and Their Classification" aria-label="Copy heading and permalink for Section: Week 9: Partial Differential Equations and Their Classification">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-week-08.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="notes-week8.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
