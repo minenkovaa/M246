@@ -227,132 +227,224 @@ Explain how the phase portrait matches the eigenvalues.
 
 <exercise workspace="1in">
 
-<title>Laplace Transform Matching</title>
+
+<title>What Does the Transform Tell You?</title>
 
 <p>
-Match each function with its Laplace transform.
+For each transform, identify:
 </p>
+
+<ol>
+
+<li>
+The original function.
+</li>
+
+<li>
+The technique you would use.
+</li>
+
+<li>
+Whether the problem involves:
+<ul>
+<li>basic transform tables,</li>
+<li>partial fractions,</li>
+<li>the shifting theorem,</li>
+<li>the derivative property, or</li>
+<li>convolution.</li>
+</ul>
+</li>
+
+</ol>
 
 <table>
 
 <tabular>
 
 <row>
-<cell>Function</cell>
 <cell>Transform</cell>
+<cell>Original Function</cell>
+<cell>Technique</cell>
 </row>
 
 <row>
-<cell><m>1</m></cell>
-<cell>____________________</cell>
+<cell>
+<m>
+\frac{1}{s(s+2)}
+</m>
+</cell>
+<cell>____________</cell>
+<cell>____________</cell>
 </row>
 
 <row>
-<cell><m>e^{2t}</m></cell>
-<cell>____________________</cell>
+<cell>
+<m>
+\frac{e^{-3s}}{s^2}
+</m>
+</cell>
+<cell>____________</cell>
+<cell>____________</cell>
 </row>
 
 <row>
-<cell><m>\sin(3t)</m></cell>
-<cell>____________________</cell>
+<cell>
+<m>
+\frac{s-2}{(s-2)^2+9}
+</m>
+</cell>
+<cell>____________</cell>
+<cell>____________</cell>
 </row>
 
 <row>
-<cell><m>\cos(2t)</m></cell>
-<cell>____________________</cell>
+<cell>
+<m>
+\frac{1}{s^2(s+1)}
+</m>
+</cell>
+<cell>____________</cell>
+<cell>____________</cell>
 </row>
 
 </tabular>
 
 </table>
 
-<p>
-Available transforms:
-</p>
-
-<md>
-\frac{1}{s},
-\qquad
-\frac{1}{s-2},
-\qquad
-\frac{3}{s^2+9},
-\qquad
-\frac{s}{s^2+4}.
-</md>
-
-<ol>
-
-<li>
-Which transform pair was easiest to identify?
-</li>
-
-<li>
-Which transform pair required the most discussion?
-</li>
-
-</ol>
-
-
 </exercise>
 
 <exercise workspace="1in">
-<title>Inverse Laplace Transforms</title>
+
+<title>Spot the Mistakes</title>
 
 <p>
-Determine each inverse Laplace transform.
+For each solution below:
 </p>
 
 <ol>
+<li>Identify the mistake.</li>
+<li>Name the relevant theorem, property, or concept.</li>
+<li>Correct the work.</li>
+</ol>
 
-<li>
 
-<md>
-\mathcal{L}^{-1}
-\left\{
-\frac{5}{s+4}
-\right\}
-</md>
+<p>Problem A: Partial Fractions</p>
 
-</li>
-
-<li>
+<p>
+A student writes
+</p>
 
 <md>
-\mathcal{L}^{-1}
-\left\{
-\frac{2}{s^2}
-\right\}
+\frac{1}{s(s+1)}
+=
+\frac{1}{s}
++
+\frac{1}{s+1}
 </md>
 
-</li>
-
-<li>
-
-<md>
-\mathcal{L}^{-1}
-\left\{
-\frac{s}{s^2+9}
-\right\}
-</md>
-
-</li>
-
-<li>
+<p>
+and concludes
+</p>
 
 <md>
 \mathcal{L}^{-1}
 \left\{
 \frac{1}{s(s+1)}
 \right\}
+=
+1+e^{-t}.
+</md>
+
+<p>Problem B: Shifting Theorem</p>
+
+<p>
+A student claims
+</p>
+
+<md>
+\mathcal{L}^{-1}
+\left\{
+\frac{e^{-3s}}{s^2}
+\right\}
+=
+t-3.
+</md>
+
+<p>Problem C: Complex Eigenvalues</p>
+
+<p>
+For the system
+</p>
+
+<md>
+\mathbf{x}'
+=
+\begin{bmatrix}
+2 &amp; -3\\
+3 &amp; 2
+\end{bmatrix}
+\mathbf{x},
 </md>
 
 <p>
-Use partial fraction decomposition.
+a student finds
 </p>
 
-</li>
+<md>
+\lambda=2\pm3i
+</md>
 
-</ol>
+<p>
+and concludes:
+</p>
+
+<p>
+"The origin is a center."
+</p>
+
+
+
+
+
+<p>Problem D: Initial Value Problems</p>
+
+<p>
+A student is solving
+</p>
+
+<md>
+y'+2y=0,
+\qquad
+y(0)=3
+</md>
+
+<p>
+and writes
+</p>
+
+<md>
+\mathcal{L}\{y'\}
+=
+sY.
+</md>
+
+<p>
+The student continues:
+</p>
+
+<md>
+sY+2Y=0
+</md>
+
+<md>
+Y=0
+</md>
+
+<md>
+y(t)=0.
+</md>
+
+
 
 </exercise>
 
