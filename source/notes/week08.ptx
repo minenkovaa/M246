@@ -87,14 +87,16 @@
 <row><cell>Both negative</cell><cell>Stable Node</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>Trajectories approach origin </cell></row>
 <row><cell>Both positive</cell><cell>Unstable Node</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>Trajectories move away</cell></row>
 <row><cell>Opposite signs</cell><cell>Saddle</cell><cell><m>c_1e^{\lambda_1 t}\mathbf{v}_1+c_2e^{\lambda_2 t}\mathbf{v}_2</m></cell><cell>One stable and one unstable direction</cell></row>
-<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&lt;0</m></cell><cell>Stable Spiral</cell><cell><m>e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))</m></cell><cell>Spiral inward</cell></row>
-<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&gt;0</m></cell><cell>Unstable Spiral</cell><cell><m>e^{\alpha t}(c_1\mathbf{p}(t)+c_2\mathbf{q}(t))</m></cell><cell>Spiral outward</cell></row>
+<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&lt;0</m></cell><cell>Stable Spiral</cell><cell><m>e^{\alpha t}(c_1\mathbf{p}\cos(\beta t)-c_2\mathbf{q}\sin(\beta t))</m></cell><cell>Spiral inward</cell></row>
+<row><cell><m>\alpha\pm i\beta</m>, <m>\alpha&gt;0</m></cell><cell>Unstable Spiral</cell><cell><m>+e^{\alpha t}(c_1\mathbf{q}\cos(\beta t)+c_2\mathbf{q}\sin(\beta t))</m></cell><cell>Spiral outward</cell></row>
 <row><cell><m>\pm i\beta</m></cell><cell>Center</cell><cell>Oscillatory solution</cell><cell>Closed orbits</cell></row>
 </tabular>
 </table>
 <sidebyside>
   <image width="10%">
+  <shortdescription>Stable Node</shortdescription>
     <latex-image>\begin{tikzpicture}
+    \node at (0,2.5) {Eigenvalues negative};
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);
 
@@ -105,11 +107,13 @@
 }
 
 \fill (0,0) circle (2pt);
-\node[right] at (0,0) {$0$};
+\node[right] at (0.2,-0.2) {$0$};
 \end{tikzpicture}
     </latex-image>
 </image>
 <image width="10%">
+<shortdescription>Saddle</shortdescription>
+<caption>Eigenvalues of opposite sign</caption>
     <latex-image>\begin{tikzpicture}
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);
@@ -124,6 +128,8 @@
     </latex-image>
 </image>
 <image width="10%">
+    <shortdescription>Unstable Spiral</shortdescription>
+<caption>Eigenvalues with positive real part</caption>
     <latex-image>\begin{tikzpicture}
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);

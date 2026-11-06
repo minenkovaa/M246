@@ -1,0 +1,523 @@
+<worksheet>
+<title>Homework 08</title>
+
+<p>
+Show all work and justify your reasoning whenever possible.
+</p>
+
+<exercise workspace="2 inches">
+<title> Matrix Basics</title>
+
+<p>
+Consider the system
+</p>
+
+<me>
+\mathbf{x}'=
+\begin{bmatrix}
+3 &amp;  -1\\
+2 &amp;  0
+\end{bmatrix}
+\mathbf{x}.
+</me>
+
+<ol>
+<li>Identify the coefficient matrix.</li>
+<li>Find the trace.</li>
+<li>Find the determinant.</li>
+<li>Write the characteristic polynomial.</li>
+<li>Without solving the system, predict whether the origin is stable or unstable. Why or why not?</li>
+   <li>Now solve the system completely and verify your prediction.</li> 
+</ol>
+
+</exercise>
+
+
+<exercise workspace="2 inches">
+<title> Real Eigenvalues</title>
+
+<p>
+Consider
+</p>
+
+<me>
+\mathbf{x}'=
+\begin{bmatrix}
+2 &amp;  1\\
+1 &amp;  2
+\end{bmatrix}
+\mathbf{x}.
+</me>
+
+<ol>
+<li>Find the characteristic polynomial.</li>
+<li>Find the eigenvalues.</li>
+<li>Find an eigenvector corresponding to each eigenvalue.</li>
+<li>Without solving the system, predict whether the origin is stable or unstable. Why or why not?</li>
+    <li> Now solve the system completely and verify your prediction. </li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Complex Eigenvalues</title>
+
+<p>
+Consider
+</p>
+
+<me>
+\mathbf{x}'=
+\begin{bmatrix}
+1 &amp;  -4\\
+4 &amp;  1
+\end{bmatrix}
+\mathbf{x}.
+</me>
+
+<ol>
+<li>Find the eigenvalues.</li>
+<li>Identify α and β.</li>
+<li>Will trajectories spiral inward or outward? Determine whether the origin is stable or unstable. Why?</li>
+    <li> Now solve the system completely and verify your prediction. </li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Interpreting Eigenvalues</title>
+
+<p>
+Match each eigenvalue pattern with the most appropriate classification.
+</p>
+
+<ol>
+<li>λ₁ > 0, λ₂ > 0</li>
+<li>λ₁ &lt; 0, λ₂ &lt; 0</li>
+<li>One positive, one negative eigenvalue</li>
+<li>α ± βi with α > 0</li>
+<li>α ± βi with α &lt; 0</li>
+<li>±βi</li>
+</ol>
+
+<p>
+Possible classifications:
+Node, Saddle, Spiral Sink, Spiral Source, Center.
+</p>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Three-Dimensional Systems</title>
+
+<p>
+Consider
+</p>
+
+<me>
+\mathbf{x}'=
+\begin{bmatrix}
+6 &amp; -3 &amp; -4 \\
+4 &amp; -1 &amp; -4 \\
+3 &amp; -3 &amp; -1
+\end{bmatrix}
+\mathbf{x}.
+</me>
+
+<ol>
+<li>Find the eigenvalues.</li>
+<li>Which eigenvalue dominates long-term behavior?</li>
+<li>What happens as t→∞?</li>
+<li>Is the origin stable or unstable?</li>
+<li>Now solve the system completely and verify your prediction.</li>
+</ol>
+
+</exercise>
+
+<exercise workspace="1 inch">
+<title> Basic Laplace Transforms</title>
+
+<p>
+Find the Laplace transform of each function.
+</p>
+
+<ol>
+<li><m>f(t)=4</m></li>
+<li><m>f(t)=e^{3t}</m></li>
+<li><m>f(t)=\sin(5t)</m></li>
+<li><m>f(t)=\cos(2t)</m></li>
+<li><m>f(t)=t</m></li>
+<li><m>f(t)=t^2</m></li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Inverse Laplace Transforms</title>
+
+<p>
+Find the inverse Laplace transform of each expression.
+</p>
+
+<ol>
+<li><m>\frac{1}{(s^2+4)(s+4)}</m></li>
+<li><m>\frac{6+2s}{s^2+36}</m></li>
+<li><m>\frac{s}{(s-1)^2+25}</m></li>
+<li><m>\frac{1}{s^2(s+1)}</m></li>
+<li><m>\frac{2}{(s^2-5s+6). }</m></li>
+</ol>
+
+</exercise>
+
+
+<exercise workspace="2 inches">
+<title> Shifting Theorem</title>
+
+<p>
+Find the inverse Laplace transform.
+</p>
+
+<ol>
+<li><m>\frac{e^{-2s}}{s}</m></li>
+<li><m>\frac{e^{-4s}}{s^2}</m></li>
+<li><m>\frac{5e^{-3s}}{s^2+25}</m></li>
+</ol>
+
+<p>
+Express answers using unit-step notation.
+</p>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Initial Value Problems</title>
+
+<p>
+Solve using Laplace transforms.
+</p>
+<me>
+1.\; y'+3y=0,
+\qquad
+y(0)=4
+</me>
+
+<me>
+2.\; y''+y=0,
+\qquad
+y(0)=1,
+\qquad
+y'(0)=0
+</me>
+
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title> Error Analysis</title>
+
+<p>
+For each statement:
+</p>
+
+<ol>
+<li>Identify whether it is correct or incorrect.</li>
+<li>Explain the mistake.</li>
+<li>Give the correct statement.</li>
+</ol>
+
+<p>
+(A)
+</p>
+
+<me>
+\mathcal{L}\{e^{-2t}\}
+=
+\frac{1}{s-2}
+</me>
+
+<p>
+(B)
+</p>
+
+<me>
+\mathcal{L}^{-1}
+\left\{
+\frac{e^{-3s}}s
+\right\}
+=
+(t-3)e^{3t}
+</me>
+
+<p>
+(C)
+</p>
+
+<me>
+\mathcal{L}\{y'\}=sY
+</me>
+
+<p>
+when <m>y(0)=5.</m>
+</p>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title>Matching Game</title>
+
+<p>
+Match each function to its Laplace transform.
+</p>
+
+<tabular>
+<row>
+<cell>1</cell>
+<cell><m>e^{-t}</m></cell>
+</row>
+<row>
+<cell>2</cell>
+<cell><m>\sin(4t)</m></cell>
+</row>
+<row>
+<cell>3</cell>
+<cell><m>\cos(3t)</m></cell>
+</row>
+<row>
+<cell>4</cell>
+<cell><m>1</m></cell>
+</row>
+</tabular>
+
+<p>
+Transforms:
+</p>
+
+<ol>
+<li><m>s/(s^2+9)</m></li>
+<li><m>1/(s+1)</m></li>
+<li><m>1/s</m></li>
+<li><m>4/(s^2+16)</m></li>
+</ol>
+
+</exercise>
+
+<exercise workspace="2 inches">
+<title>Modeling Fantasy</title>
+
+<p>
+Describe a real-world situation that could be modeled by:
+</p>
+
+<ol>
+<li>A system of differential equations.</li>
+<li>An exponential decay function.</li>
+<li>A delayed (shifted) input represented by a unit-step function.</li>
+</ol>
+
+<p>
+Explain why the model is appropriate.
+</p>
+
+</exercise>
+
+<subsection>
+<title>MATLAB Reference: Systems of Differential Equations and Laplace Transforms</title>
+
+<p>
+The following MATLAB commands may be useful when exploring systems of differential equations,
+phase portraits, eigenvalues, eigenvectors, Laplace transforms, and inverse Laplace transforms.
+You are encouraged to modify the examples and investigate how changing parameters affects the results.
+</p>
+
+<subsubsection>
+<title>Complete Systems Analysis Template</title>
+
+<p>
+Replace the matrix <m>A</m> with the system from a homework problem.
+</p>
+
+<cd>
+clear
+clc
+
+A = [-5  2;
+     -2 -1];
+
+[V,D] = eig(A);
+
+disp('Eigenvalues')
+disp(diag(D))
+
+disp('Eigenvectors')
+disp(V)
+
+[x,y] = meshgrid(-10:0.5:10,-10:0.5:10);
+
+u = A(1,1)*x + A(1,2)*y;
+v = A(2,1)*x + A(2,2)*y;
+
+figure
+h = gobjects(1,6);
+labels = cell(1,6);
+
+h(1) = quiver(x,y,u,v);
+labels{1} = 'Vector field';
+
+hold on
+
+f = @(t,X) A*X;
+
+for k = -2:2
+    idx = k + 4;   % 2 to 6
+    [t,X] = ode45(f,[0 5],[k+1;k-1]);
+    h(idx) = plot(X(:,1),X(:,2),'LineWidth',2);
+    labels{idx} = sprintf('IC [%d; %d]',k+1,k-1);
+end
+
+grid on
+axis equal
+xlim([-10 10])
+ylim([-10 10])
+
+legend(h,labels,'Location','best')
+title('Phase Portrait')
+xlabel('x')
+ylabel('y')
+</cd>
+
+</subsubsection>
+
+<subsubsection>
+<title>Computing Laplace Transforms</title>
+
+<p>
+Define symbolic variables and compute a Laplace transform.
+</p>
+
+<cd>
+syms t s
+
+f = exp(-2*t);
+
+F = laplace(f,t,s)
+
+pretty(F)
+</cd>
+
+<p>
+Expected output:
+</p>
+
+<me>
+F(s) = \frac{1}{s+2}.
+</me>
+
+</subsubsection>
+<subsubsection>
+<title>Inverse Laplace Transforms</title>
+
+<cd>
+syms s t
+
+F = 1/(s+3);
+
+f = ilaplace(F,s,t)
+
+pretty(f)
+</cd>
+
+<p>
+Expected output:
+</p>
+
+<me>
+e^{-3t}.
+</me>
+
+</subsubsection>
+
+<subsubsection>
+<title>Shifting Theorem and Unit Step Functions</title>
+
+<p>
+Delayed step function:
+</p>
+
+<cd>
+syms s t
+
+F = exp(-2*s)/s;
+
+f = ilaplace(F,s,t)
+
+pretty(f)
+</cd>
+
+<p>
+Expected output (Heaviside step function):
+</p>
+
+<me>
+u(t-2).
+</me>
+
+<p>
+Delayed ramp:
+</p>
+
+<cd>
+syms s t
+
+F = exp(-3*s)/s^2;
+
+ilaplace(F,s,t)
+</cd>
+
+<p>
+Expected output:
+</p>
+
+<me>
+(t-3)u(t-3).
+</me>
+
+</subsubsection>
+
+<subsubsection>
+<title>Solving Initial Value Problems</title>
+
+<p>
+Solve
+</p>
+
+<me>
+y' + 2y = 0,
+\qquad
+y(0)=3.
+</me>
+
+<cd>
+syms y(t)
+
+ode = diff(y,t) + 2*y == 0;
+
+cond = y(0) == 3;
+
+sol = dsolve(ode,cond)
+
+pretty(sol)
+</cd>
+
+<p>
+Expected output:
+</p>
+
+<me>
+y(t)=3e^{-2t}.
+</me>
+
+</subsubsection>
+</subsection>
+
+
+</worksheet>
