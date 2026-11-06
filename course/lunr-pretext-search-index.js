@@ -1393,7 +1393,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods",
-  "body": " Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods   Solve systems of linear differential equations using eigenvalues and eigenvectors.  Interpret phase-plane behavior from eigenvalue classifications.  Apply Laplace transforms to solve initial value problems.  Use partial fraction decomposition, step functions, and convolution.  Compare analytical and numerical solution techniques.  Investigate numerical error and step-size effects.  Use MATLAB to implement and compare numerical methods.    Systems of Differential Equations  Many applications involve several dependent variables that interact simultaneously. Such models naturally lead to systems of differential equations.    Applications of Systems   Application Variables  Population Models Predator and prey populations  Electrical Circuits Current and voltage  Mechanical Systems Position and velocity     Solving Systems Using Eigenvalues  If is an eigenvalue of with eigenvector , then   is a solution of the system.   Worked Example    The characteristic equation gives eigenvalues   Corresponding eigenvectors are   The general solution is      Eigenvalue Classification Summary   Eigenvalues Classification General Solution Form Phase Portrait  Both negative Stable Node Trajectories approach origin  Both positive Unstable Node Trajectories move away  Opposite signs Saddle One stable and one unstable direction  , Stable Spiral Spiral inward  , Unstable Spiral Spiral outward  Center Oscillatory solution Closed orbits                Notation    denotes the solution vector.   denotes an eigenvalue of the coefficient matrix .   denotes an eigenvector corresponding to .   are eigenvectors associated with distinct eigenvalues .   are arbitrary constants determined by the initial conditions.   and denote the real and imaginary parts of a complex eigenvalue .   denotes a complex eigenvector, where and are real vectors.  For complex eigenvalues, the real-valued solution is obtained from the vectors and :      Complex Eigenvalues   Solve the system     Compute the characteristic polynomial:    The eigenvalues are   Choose the eigenvalue . Solving gives the eigenvector   Write the eigenvector as   where   Using the complex solution formula,   Substituting and gives      Geometric Interpretation  The eigenvalues have positive real part . The factor causes solutions to grow, while the and terms produce oscillation. Therefore trajectories spiral away from the origin, and the equilibrium is an unstable spiral .      Laplace Transforms   Laplace Transform       Common Laplace Transforms   Function Transform          Inverse Laplace Transforms           Solving an IVP          Partial Fraction Decomposition   PFD Guide   Denominator Form        PFD Example         Unit Step Functions      Convolution       Numerical Methods   Euler's Method       Accuracy of Numerical Methods   Method Global Error  Euler  Improved Euler  RK4     Error Measures        Euler Method       f = @(t,y) y; h = 0.1; tE = 0:h:1; yE = zeros(size(tE)); yE(1)=1; for n=1:length(tE)-1 yE(n+1)=yE(n)+h*yE(n); end [tO,yO]=ode45(f,[0 1],1); plot(tE,yE,'ro-') hold on plot(tO,yO,'b') plot(tE,exp(tE),'k') legend('Euler','ode45','Exact')   Investigating Error and Step Size   Apply Euler's method with several step sizes.  Estimate the solution at .  Compare with the exact solution.  Discuss how the error changes as decreases.      Systems of differential equations may be solved using eigenvalues and eigenvectors. Laplace transforms provide an alternative approach for solving initial value problems, while numerical methods provide approximations when exact solutions are difficult or unavailable.   "
+  "body": " Week 8: Systems of ODEs, Laplace Transforms, and Numerical Methods   Solve systems of linear differential equations using eigenvalues and eigenvectors.  Interpret phase-plane behavior from eigenvalue classifications.  Apply Laplace transforms to solve initial value problems.  Use partial fraction decomposition, step functions, and convolution.  Compare analytical and numerical solution techniques.  Investigate numerical error and step-size effects.  Use MATLAB to implement and compare numerical methods.    Systems of Differential Equations  Many applications involve several dependent variables that interact simultaneously. Such models naturally lead to systems of differential equations.    Applications of Systems   Application Variables  Population Models Predator and prey populations  Electrical Circuits Current and voltage  Mechanical Systems Position and velocity     Solving Systems Using Eigenvalues  If is an eigenvalue of with eigenvector , then   is a solution of the system.   Worked Example    The characteristic equation gives eigenvalues   Corresponding eigenvectors are   The general solution is      Eigenvalue Classification Summary   Eigenvalues Classification General Solution Form Phase Portrait  Both negative Stable Node Trajectories approach origin  Both positive Unstable Node Trajectories move away  Opposite signs Saddle One stable and one unstable direction  , Stable Spiral Spiral inward  , Unstable Spiral Spiral outward  Center Oscillatory solution Closed orbits      Stable Node     Saddle  Eigenvalues of opposite sign     Unstable Spiral  Eigenvalues with positive real part      Notation    denotes the solution vector.   denotes an eigenvalue of the coefficient matrix .   denotes an eigenvector corresponding to .   are eigenvectors associated with distinct eigenvalues .   are arbitrary constants determined by the initial conditions.   and denote the real and imaginary parts of a complex eigenvalue .   denotes a complex eigenvector, where and are real vectors.  For complex eigenvalues, the real-valued solution is obtained from the vectors and :      Complex Eigenvalues   Solve the system     Compute the characteristic polynomial:    The eigenvalues are   Choose the eigenvalue . Solving gives the eigenvector   Write the eigenvector as   where   Using the complex solution formula,   Substituting and gives      Geometric Interpretation  The eigenvalues have positive real part . The factor causes solutions to grow, while the and terms produce oscillation. Therefore trajectories spiral away from the origin, and the equilibrium is an unstable spiral .      Laplace Transforms   Laplace Transform       Common Laplace Transforms   Function Transform          Inverse Laplace Transforms           Solving an IVP          Partial Fraction Decomposition   PFD Guide   Denominator Form        PFD Example         Unit Step Functions      Convolution       Numerical Methods   Euler's Method       Accuracy of Numerical Methods   Method Global Error  Euler  Improved Euler  RK4     Error Measures        Euler Method       f = @(t,y) y; h = 0.1; tE = 0:h:1; yE = zeros(size(tE)); yE(1)=1; for n=1:length(tE)-1 yE(n+1)=yE(n)+h*yE(n); end [tO,yO]=ode45(f,[0 1],1); plot(tE,yE,'ro-') hold on plot(tO,yO,'b') plot(tE,exp(tE),'k') legend('Euler','ode45','Exact')   Investigating Error and Step Size   Apply Euler's method with several step sizes.  Estimate the solution at .  Compare with the exact solution.  Discuss how the error changes as decreases.      Systems of differential equations may be solved using eigenvalues and eigenvectors. Laplace transforms provide an alternative approach for solving initial value problems, while numerical methods provide approximations when exact solutions are difficult or unavailable.   "
 },
 {
   "id": "week8-systems-4",
@@ -3122,6 +3122,123 @@ var ptx_lunr_docs = [
   "number": "10",
   "title": "Problem 10: Variation of Parameters.",
   "body": " Problem 10: Variation of Parameters  Solve the differential equation using variation of parameters.   "
+},
+{
+  "id": "homework-10",
+  "level": "1",
+  "url": "homework-10.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 08",
+  "body": " Homework 08  Show all work and justify your reasoning whenever possible.   Matrix Basics  Consider the system    Identify the coefficient matrix.  Find the trace.  Find the determinant.  Write the characteristic polynomial.  Without solving the system, predict whether the origin is stable or unstable. Why or why not?  Now solve the system completely and verify your prediction.     Real Eigenvalues  Consider    Find the characteristic polynomial.  Find the eigenvalues.  Find an eigenvector corresponding to each eigenvalue.  Without solving the system, predict whether the origin is stable or unstable. Why or why not?  Now solve the system completely and verify your prediction.     Complex Eigenvalues  Consider    Find the eigenvalues.  Identify α and β.  Will trajectories spiral inward or outward? Determine whether the origin is stable or unstable. Why?  Now solve the system completely and verify your prediction.     Interpreting Eigenvalues  Match each eigenvalue pattern with the most appropriate classification.   λ₁ > 0, λ₂ > 0  λ₁ < 0, λ₂ < 0  One positive, one negative eigenvalue  α ± βi with α > 0  α ± βi with α < 0  ±βi   Possible classifications: Node, Saddle, Spiral Sink, Spiral Source, Center.    Three-Dimensional Systems  Consider    Find the eigenvalues.  Which eigenvalue dominates long-term behavior?  What happens as t→∞?  Is the origin stable or unstable?  Now solve the system completely and verify your prediction.     Basic Laplace Transforms  Find the Laplace transform of each function.            Inverse Laplace Transforms  Find the inverse Laplace transform of each expression.           Shifting Theorem  Find the inverse Laplace transform.       Express answers using unit-step notation.    Initial Value Problems  Solve using Laplace transforms.      Error Analysis  For each statement:   Identify whether it is correct or incorrect.  Explain the mistake.  Give the correct statement.   (A)   (B)   (C)   when     Matching Game  Match each function to its Laplace transform.    1     2     3     4     Transforms:          Modeling Fantasy  Describe a real-world situation that could be modeled by:   A system of differential equations.  An exponential decay function.  A delayed (shifted) input represented by a unit-step function.   Explain why the model is appropriate.    MATLAB Reference: Systems of Differential Equations and Laplace Transforms  The following MATLAB commands may be useful when exploring systems of differential equations, phase portraits, eigenvalues, eigenvectors, Laplace transforms, and inverse Laplace transforms. You are encouraged to modify the examples and investigate how changing parameters affects the results.   Complete Systems Analysis Template  Replace the matrix with the system from a homework problem.  clear clc A = [-5 2; -2 -1]; [V,D] = eig(A); disp('Eigenvalues') disp(diag(D)) disp('Eigenvectors') disp(V) [x,y] = meshgrid(-10:0.5:10,-10:0.5:10); u = A(1,1)*x + A(1,2)*y; v = A(2,1)*x + A(2,2)*y; figure h = gobjects(1,6); labels = cell(1,6); h(1) = quiver(x,y,u,v); labels{1} = 'Vector field'; hold on f = @(t,X) A*X; for k = -2:2 idx = k + 4; % 2 to 6 [t,X] = ode45(f,[0 5],[k+1;k-1]); h(idx) = plot(X(:,1),X(:,2),'LineWidth',2); labels{idx} = sprintf('IC [%d; %d]',k+1,k-1); end grid on axis equal xlim([-10 10]) ylim([-10 10]) legend(h,labels,'Location','best') title('Phase Portrait') xlabel('x') ylabel('y')    Computing Laplace Transforms  Define symbolic variables and compute a Laplace transform.  syms t s f = exp(-2*t); F = laplace(f,t,s) pretty(F)  Expected output:     Inverse Laplace Transforms  syms s t F = 1\/(s+3); f = ilaplace(F,s,t) pretty(f)  Expected output:     Shifting Theorem and Unit Step Functions  Delayed step function:  syms s t F = exp(-2*s)\/s; f = ilaplace(F,s,t) pretty(f)  Expected output (Heaviside step function):   Delayed ramp:  syms s t F = exp(-3*s)\/s^2; ilaplace(F,s,t)  Expected output:     Solving Initial Value Problems  Solve   syms y(t) ode = diff(y,t) + 2*y == 0; cond = y(0) == 3; sol = dsolve(ode,cond) pretty(sol)  Expected output:     "
+},
+{
+  "id": "homework-10-3",
+  "level": "2",
+  "url": "homework-10.html#homework-10-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Matrix Basics.",
+  "body": " Matrix Basics  Consider the system    Identify the coefficient matrix.  Find the trace.  Find the determinant.  Write the characteristic polynomial.  Without solving the system, predict whether the origin is stable or unstable. Why or why not?  Now solve the system completely and verify your prediction.   "
+},
+{
+  "id": "homework-10-4",
+  "level": "2",
+  "url": "homework-10.html#homework-10-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Real Eigenvalues.",
+  "body": " Real Eigenvalues  Consider    Find the characteristic polynomial.  Find the eigenvalues.  Find an eigenvector corresponding to each eigenvalue.  Without solving the system, predict whether the origin is stable or unstable. Why or why not?  Now solve the system completely and verify your prediction.   "
+},
+{
+  "id": "homework-10-5",
+  "level": "2",
+  "url": "homework-10.html#homework-10-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Complex Eigenvalues.",
+  "body": " Complex Eigenvalues  Consider    Find the eigenvalues.  Identify α and β.  Will trajectories spiral inward or outward? Determine whether the origin is stable or unstable. Why?  Now solve the system completely and verify your prediction.   "
+},
+{
+  "id": "homework-10-6",
+  "level": "2",
+  "url": "homework-10.html#homework-10-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Interpreting Eigenvalues.",
+  "body": " Interpreting Eigenvalues  Match each eigenvalue pattern with the most appropriate classification.   λ₁ > 0, λ₂ > 0  λ₁ < 0, λ₂ < 0  One positive, one negative eigenvalue  α ± βi with α > 0  α ± βi with α < 0  ±βi   Possible classifications: Node, Saddle, Spiral Sink, Spiral Source, Center.  "
+},
+{
+  "id": "homework-10-7",
+  "level": "2",
+  "url": "homework-10.html#homework-10-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Three-Dimensional Systems.",
+  "body": " Three-Dimensional Systems  Consider    Find the eigenvalues.  Which eigenvalue dominates long-term behavior?  What happens as t→∞?  Is the origin stable or unstable?  Now solve the system completely and verify your prediction.   "
+},
+{
+  "id": "homework-10-8",
+  "level": "2",
+  "url": "homework-10.html#homework-10-8",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Basic Laplace Transforms.",
+  "body": " Basic Laplace Transforms  Find the Laplace transform of each function.          "
+},
+{
+  "id": "homework-10-9",
+  "level": "2",
+  "url": "homework-10.html#homework-10-9",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Inverse Laplace Transforms.",
+  "body": " Inverse Laplace Transforms  Find the inverse Laplace transform of each expression.         "
+},
+{
+  "id": "homework-10-10",
+  "level": "2",
+  "url": "homework-10.html#homework-10-10",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Shifting Theorem.",
+  "body": " Shifting Theorem  Find the inverse Laplace transform.       Express answers using unit-step notation.  "
+},
+{
+  "id": "homework-10-11",
+  "level": "2",
+  "url": "homework-10.html#homework-10-11",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "Initial Value Problems.",
+  "body": " Initial Value Problems  Solve using Laplace transforms.    "
+},
+{
+  "id": "homework-10-12",
+  "level": "2",
+  "url": "homework-10.html#homework-10-12",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "Error Analysis.",
+  "body": " Error Analysis  For each statement:   Identify whether it is correct or incorrect.  Explain the mistake.  Give the correct statement.   (A)   (B)   (C)   when   "
+},
+{
+  "id": "homework-10-13",
+  "level": "2",
+  "url": "homework-10.html#homework-10-13",
+  "type": "Worksheet Exercise",
+  "number": "11",
+  "title": "Matching Game.",
+  "body": " Matching Game  Match each function to its Laplace transform.    1     2     3     4     Transforms:        "
+},
+{
+  "id": "homework-10-14",
+  "level": "2",
+  "url": "homework-10.html#homework-10-14",
+  "type": "Worksheet Exercise",
+  "number": "12",
+  "title": "Modeling Fantasy.",
+  "body": " Modeling Fantasy  Describe a real-world situation that could be modeled by:   A system of differential equations.  An exponential decay function.  A delayed (shifted) input represented by a unit-step function.   Explain why the model is appropriate.  "
 },
 {
   "id": "resources",
