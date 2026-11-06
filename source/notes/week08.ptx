@@ -96,7 +96,7 @@
   <image width="10%">
   <shortdescription>Stable Node</shortdescription>
     <latex-image>\begin{tikzpicture}
-    \node at (0,2.5) {Eigenvalues negative};
+    \node at (0,3) {Eigenvalues negative};
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);
 
@@ -113,8 +113,8 @@
 </image>
 <image width="10%">
 <shortdescription>Saddle</shortdescription>
-<caption>Eigenvalues of opposite sign</caption>
     <latex-image>\begin{tikzpicture}
+    \node at (0,3) {Eigenvalues opposite signs};
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);
 
@@ -129,8 +129,8 @@
 </image>
 <image width="10%">
     <shortdescription>Unstable Spiral</shortdescription>
-<caption>Eigenvalues with positive real part</caption>
     <latex-image>\begin{tikzpicture}
+    \node at (0,3) {Eigenvalues complex with positive real part};
 \draw[-&gt;] (-2.5,0)--(2.5,0);
 \draw[-&gt;] (0,-2.5)--(0,2.5);
 
