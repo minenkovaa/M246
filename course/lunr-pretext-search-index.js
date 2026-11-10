@@ -1555,7 +1555,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 9: Partial Differential Equations and Their Classification",
-  "body": " Week 9: Partial Differential Equations and Their Classification   Learning Outcomes  Define a partial differential equation (PDE).  Distinguish between ODEs and PDEs.  Determine the order and linearity of a PDE.  Classify second-order PDEs as elliptic, parabolic, or hyperbolic.  Interpret PDEs in physical applications.  Understand the role of boundary and initial conditions.  Analyze simple PDE models arising in science and engineering.    Introduction to Partial Differential Equations   Partial Differential Equation   A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.      ODE versus PDE    This is an ODE because there is only one independent variable.   This is a PDE because the solution depends on both position and time.      Order and Linearity   Order   The order of a PDE is determined by its highest derivative.     Examples   Equation Order Linear?  2 Yes  1 No  2 Yes      Classification of Second-Order PDEs        PDE Classification   Condition Type Example Interpretation  Elliptic Equilibrium  Parabolic Diffusion  Hyperbolic Wave propagation      Physical Interpretation   Common PDE Models   Equation Application  Electrostatics and steady-state heat flow  Heat conduction and diffusion  String vibration and sound propagation      Boundary and Initial Conditions   Boundary Conditions   Type Form Meaning  Dirichlet Value specified  Neumann Flux specified  Robin Mixed condition     The initial condition specifies the state of the system at time .    Separation of Variables   Separated Solution      Substituting a product solution into a PDE often reduces the problem to two ordinary differential equations.    Heat Equation Example   Heat Equation on a Finite Rod   Solve   with boundary conditions   and initial condition     Assume a separated solution   Substituting gives   Dividing by yields   Two ordinary differential equations follow:    The boundary conditions imply   The time-dependent factors are   Therefore         Interpretation  Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.     MATLAB Visualization of Heat Diffusion  L = 1; x = linspace(0,L,100); t = linspace(0,0.5,100); [X,T] = meshgrid(x,t); U = exp(-pi^2*T).*sin(pi*X); surf(X,T,U) xlabel('Position') ylabel('Time') zlabel('Temperature') title('Heat Equation Solution') shading interp colorbar    Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.   "
+  "body": " Week 9: Partial Differential Equations and Their Classification   Learning Outcomes  Define a partial differential equation (PDE).  Distinguish between ODEs and PDEs.  Determine the order and linearity of a PDE.  Classify second-order PDEs as elliptic, parabolic, or hyperbolic.  Interpret PDEs in physical applications.  Understand the role of boundary and initial conditions.  Analyze simple PDE models arising in science and engineering.    Introduction to Partial Differential Equations   Partial Differential Equation   A partial differential equation (PDE) is an equation involving an unknown function of several independent variables and one or more partial derivatives.      ODE versus PDE    This is an ODE because there is only one independent variable.   This is a PDE because the solution depends on both position and time.      Order and Linearity   Order   The order of a PDE is determined by its highest derivative.     Examples   Equation Order Linear?  2 Yes  1 No  2 Yes      Classification of Second-Order PDEs        PDE Classification   Condition Type Example Interpretation  Elliptic Equilibrium  Parabolic Diffusion  Hyperbolic Wave propagation      Classification of a Second-Order PDE in Three Variables  Consider the second-order partial differential equation To classify the equation, we examine only its principal (second-order) part and write it in the standard form Comparing coefficients gives   The associated symmetric coefficient matrix is The eigenvalues of this matrix are   Following the multidimensional classification criterion, one determines the type of the PDE from the signs of the eigenvalues of the coefficient matrix. As noted by Walet, in dimensions higher than two, elliptic equations have eigenvalues of the same sign, hyperbolic equations have eigenvalues with mixed signs, and parabolic equations have at least one zero eigenvalue. Since the matrix has two positive eigenvalues and one negative eigenvalue, its signature is Therefore the equation is hyperbolic .   The partial differential equation is hyperbolic.   This example illustrates a useful general principle for second-order PDEs in three variables: form the symmetric matrix associated with the second-order terms and classify the equation from the signs of its eigenvalues. This replaces the discriminant test used for equations in two variables.  Following the classification criterion for PDEs in more than two variables, one examines the eigenvalues of the symmetric coefficient matrix associated with the principal part of the equation. If all eigenvalues have the same sign, the equation is elliptic; if the signs are mixed, it is hyperbolic; and if at least one eigenvalue is zero, it is parabolic. See Walet, \"2.3: More than 2D\" .    Physical Interpretation   Common PDE Models   Equation Application  Electrostatics and steady-state heat flow  Heat conduction and diffusion  String vibration and sound propagation      Boundary and Initial Conditions   Boundary Conditions   Type Form Meaning  Dirichlet Value specified  Neumann Flux specified  Robin Mixed condition     The initial condition specifies the state of the system at time .    Separation of Variables   Separated Solution      Substituting a product solution into a PDE often reduces the problem to two ordinary differential equations.    Heat Equation Example   Heat Equation on a Finite Rod   Solve   with boundary conditions   and initial condition     Assume a separated solution   Substituting gives   Dividing by yields   Two ordinary differential equations follow:    The boundary conditions imply   The time-dependent factors are   Therefore         Interpretation  Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.     MATLAB Visualization of Heat Diffusion  L = 1; x = linspace(0,L,100); t = linspace(0,0.5,100); [X,T] = meshgrid(x,t); U = exp(-pi^2*T).*sin(pi*X); surf(X,T,U) xlabel('Position') ylabel('Time') zlabel('Temperature') title('Heat Equation Solution') shading interp colorbar    Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.   "
 },
 {
   "id": "w9-intro-2",
@@ -1603,11 +1603,20 @@ var ptx_lunr_docs = [
   "body": " PDE Classification   Condition Type Example Interpretation  Elliptic Equilibrium  Parabolic Diffusion  Hyperbolic Wave propagation   "
 },
 {
+  "id": "subsec-classification-example-3d-6",
+  "level": "2",
+  "url": "notes-week-09.html#subsec-classification-example-3d-6",
+  "type": "Remark",
+  "number": "152",
+  "title": "",
+  "body": "This example illustrates a useful general principle for second-order PDEs in three variables: form the symmetric matrix associated with the second-order terms and classify the equation from the signs of its eigenvalues. This replaces the discriminant test used for equations in two variables. "
+},
+{
   "id": "w9-physical-2",
   "level": "2",
   "url": "notes-week-09.html#w9-physical-2",
   "type": "Table",
-  "number": "152",
+  "number": "153",
   "title": "Common PDE Models",
   "body": " Common PDE Models   Equation Application  Electrostatics and steady-state heat flow  Heat conduction and diffusion  String vibration and sound propagation   "
 },
@@ -1616,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-09.html#w9-bc-ic-2",
   "type": "Table",
-  "number": "153",
+  "number": "154",
   "title": "Boundary Conditions",
   "body": " Boundary Conditions   Type Form Meaning  Dirichlet Value specified  Neumann Flux specified  Robin Mixed condition   "
 },
@@ -1643,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-09.html#w9-heat-example-4",
   "type": "Remark",
-  "number": "156",
+  "number": "157",
   "title": "Interpretation.",
   "body": " Interpretation  Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.  "
 },
@@ -1670,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-heat-3",
   "type": "Table",
-  "number": "158",
+  "number": "159",
   "title": "Interpretation of the Heat Equation",
   "body": " Interpretation of the Heat Equation   Term Meaning  Rate of temperature change  Curvature of temperature profile  Thermal diffusivity   "
 },
@@ -1697,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-heat-example-3",
   "type": "Remark",
-  "number": "161",
+  "number": "162",
   "title": "Interpretation.",
   "body": " Interpretation  Higher-frequency modes decay faster, causing temperature distributions to become smoother over time.  "
 },
@@ -1715,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-wave-3",
   "type": "Table",
-  "number": "163",
+  "number": "164",
   "title": "Interpretation of the Wave Equation",
   "body": " Interpretation of the Wave Equation   Term Meaning  Acceleration  Curvature  Wave speed   "
 },
@@ -1733,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-comparison-2",
   "type": "Table",
-  "number": "165",
+  "number": "166",
   "title": "Heat versus Wave Equation",
   "body": " Heat versus Wave Equation   Feature Heat Equation Wave Equation  PDE Type Parabolic Hyperbolic  Process Diffusion Propagation  Time Derivative First Order Second Order  Long-Term Behavior Approaches equilibrium Continues oscillating   "
 },
@@ -1751,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-fd-6",
   "type": "Remark",
-  "number": "167",
+  "number": "168",
   "title": "Stability Condition.",
   "body": " Stability Condition   "
 },
@@ -1760,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-week-10.html#w10-error-6",
   "type": "Table",
-  "number": "168",
+  "number": "169",
   "title": "Error Measures",
   "body": " Error Measures   Measure Formula  Absolute Error  Relative Error   "
 },
@@ -1832,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
   "type": "List",
-  "number": "169",
+  "number": "170",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1895,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity.html#matrix-activity-3",
   "type": "List",
-  "number": "170",
+  "number": "171",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1958,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "matrix-activity2.html#matrix-activity2-4",
   "type": "List",
-  "number": "171",
+  "number": "172",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -1976,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "inverse-activity2.html#inverse-activity2-3",
   "type": "List",
-  "number": "172",
+  "number": "173",
   "title": "Steps of Gallery Walk:",
   "body": " Steps of Gallery Walk:    Assign Roles and Norms    Come up with a Solution and Write it on the Board    Rotate and Analyze    Leave Feedback    Return and Refine    "
 },
@@ -2773,6 +2782,24 @@ var ptx_lunr_docs = [
   "body": " Consider the three-dimensional system    Find the eigenvalues.  Which eigenvalue dominates the long-term behavior?  As , does the origin appear stable or unstable?  Explain your reasoning.   "
 },
 {
+  "id": "handouts-16",
+  "level": "1",
+  "url": "handouts-16.html",
+  "type": "Handout",
+  "number": "",
+  "title": "Partial Differential Equations",
+  "body": " Partial Differential Equations   Show all work and justify your conclusions. Explain geometric meanings whenever appropriate.  clear; clc; % Geometry parameters a = 1; % width b = 1; % height % Create PDE model model = createpde(); % Rectangle geometry: [3 4 x1 x2 x3 x4 y1 y2 y3 y4] R1 = [3 4 0 a a 0 0 0 b b]'; gd = R1; ns = char('R1'); ns = ns'; sf = 'R1'; dl = decsg(gd,sf,ns); geometryFromEdges(model,dl); % PDE coefficients: specifyCoefficients(model,... 'm',0,... 'd',0,... 'c',1,... 'a',0,... 'f',0); % Generate mesh generateMesh(model,'Hmax',0.04); % Boundary conditions % % Edge numbering: % pdegplot(model,'EdgeLabels','on') % Run once to verify edge numbers. % Left edge applyBoundaryCondition(model,... 'dirichlet',... 'Edge',4,... 'u',0); % Bottom edge applyBoundaryCondition(model,... 'dirichlet',... 'Edge',1,... 'u',0); % Right edge applyBoundaryCondition(model,... 'dirichlet',... 'Edge',2,... 'u',0); % Top edge: u = 100*sin(pi*x\/a) applyBoundaryCondition(model,... 'dirichlet',... 'Edge',3,... 'u',@(location,state) ... 100*sin(pi*location.x\/a)); % Solve result = solvepde(model); u = result.NodalSolution; %% Surface plot figure; pdeplot(model,... 'XYData',u,... 'ZData',u,... 'Mesh','off'); title('Solution of Laplace Equation'); xlabel('x'); ylabel('y'); zlabel('u(x,y)'); colorbar; view(45,30); %% Contour plot figure; pdeplot(model,... 'XYData',u,... 'Contour','on',... 'ColorMap','jet'); title('Temperature Contours'); xlabel('x'); ylabel('y'); colorbar; axis equal;    Laplace Equation  Solve Laplace's equation   on the rectangle , subject to    Assume a separated solution . Derive the separated ordinary differential equations.      Apply the boundary conditions at and to determine the eigenvalues and eigenfunctions.      Solve the corresponding equation for .      Use the boundary condition at to simplify the solution.     Write the general series solution.      Apply the boundary condition at and determine the coefficients.      Write the final solution and verify all boundary conditions.       "
+},
+{
+  "id": "handouts-16-3",
+  "level": "2",
+  "url": "handouts-16.html#handouts-16-3",
+  "type": "Checkpoint",
+  "number": "70",
+  "title": "Laplace Equation.",
+  "body": " Laplace Equation  Solve Laplace's equation   on the rectangle , subject to    Assume a separated solution . Derive the separated ordinary differential equations.      Apply the boundary conditions at and to determine the eigenvalues and eigenfunctions.      Solve the corresponding equation for .      Use the boundary condition at to simplify the solution.     Write the general series solution.      Apply the boundary condition at and determine the coefficients.      Write the final solution and verify all boundary conditions.      "
+},
+{
   "id": "homework-2",
   "level": "1",
   "url": "homework-2.html",
@@ -3254,7 +3281,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "resources.html#oer-list2",
   "type": "List",
-  "number": "174",
+  "number": "175",
   "title": "Recommended additional readings",
   "body": " Recommended additional readings    Applied Linear Algebra and Differential Equations , LibreTexts: Applied Linear Algebra and Differential Equations at LibreTexts    APEX Calculus, Volume 3 : APEX Calculus, Volume 3    Paul’s Online Notes: Differential Equations and PDEs : Paul’s online differential equations notes    Numerical Methods with Applications , Engineering LibreTexts: Numerical Methods with Applications at LibreTexts    "
 }

@@ -102,15 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.6';
+eBookConfig.runestone_version = '8.4.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/prefix-runtime.7e2ee203f2ecd6c8.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.35a40fea06647cf2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.7062ede5334282a6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -432,6 +431,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-intro" class="internal"><span class="title">Introduction to Partial Differential Equations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-order" class="internal"><span class="title">Order and Linearity</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-classification" class="internal"><span class="title">Classification of Second-Order PDEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#subsec-classification-example-3d" class="internal"><span class="title">Classification of a Second-Order PDE in Three Variables</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-physical" class="internal"><span class="title">Physical Interpretation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-bc-ic" class="internal"><span class="title">Boundary and Initial Conditions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#w9-separation" class="internal"><span class="title">Separation of Variables</span></a></div></li>
@@ -525,6 +525,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="handouts-14.html#handouts-14-9" class="internal"><span class="title">Reflection Questions</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-15.html" class="internal"><span class="title">Systems of ODEs and Laplace Transforms</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="handouts-16.html" class="internal"><span class="title">Partial Differential Equations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -691,7 +692,7 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 </div>
 <div class="displaymath process-math" id="w9-classification-3">
 \begin{equation*}
-\Delta=B^2-4AC
+\mathcal{D}=B^2-4AC
 \end{equation*}
 </div>
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/w9-classification-4.svg" role="img" class="contained"></div>
@@ -703,27 +704,98 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 <td class="l m b0 r0 l0 t0 lines">Interpretation</td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta&lt;0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\mathcal{D}&lt;0\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Elliptic</td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{xx}+u_{yy}=0\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Equilibrium</td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta=0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\mathcal{D}=0\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Parabolic</td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_t=ku_{xx}\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Diffusion</td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\Delta&gt;0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\mathcal{D}&gt;0\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Hyperbolic</td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(u_{tt}=c^2u_{xx}\)</span></td>
 <td class="l m b0 r0 l0 t0 lines">Wave propagation</td>
 </tr>
-</table></div></figure><div class="autopermalink" data-description="Subsection: Classification of Second-Order PDEs"><a href="#w9-classification" title="Copy heading and permalink for Subsection: Classification of Second-Order PDEs" aria-label="Copy heading and permalink for Subsection: Classification of Second-Order PDEs">🔗</a></div></section><section class="subsection" id="w9-physical"><h3 class="heading hide-type">
+</table></div></figure><div class="autopermalink" data-description="Subsection: Classification of Second-Order PDEs"><a href="#w9-classification" title="Copy heading and permalink for Subsection: Classification of Second-Order PDEs" aria-label="Copy heading and permalink for Subsection: Classification of Second-Order PDEs">🔗</a></div></section><section class="subsection" id="subsec-classification-example-3d"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classification of a Second-Order PDE in Three Variables</span>
+</h3>
+<div class="para logical" id="subsec-classification-example-3d-2">
+<div class="para">Consider the second-order partial differential equation</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-2-1">
+\begin{equation*}
+u_{xy}+u_{xz}-u_{yz}=0.
+\end{equation*}
+</div>
+<div class="para">To classify the equation, we examine only its principal (second-order) part and write it in the standard form</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-2-2">
+\begin{equation*}
+Au_{xx}+Bu_{yy}+Cu_{zz}
++2Du_{xy}+2Eu_{xz}+2Fu_{yz}=0.
+\end{equation*}
+</div>
+<div class="para">Comparing coefficients gives</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-2-3">
+\begin{equation*}
+A=B=C=0,\qquad
+D=\frac12,\qquad
+E=\frac12,\qquad
+F=-\frac12.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-classification-example-3d-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-classification-example-3d-3">
+<div class="para">The associated symmetric coefficient matrix is</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-3-1">
+\begin{equation*}
+M=
+\begin{pmatrix}
+0 &amp; \frac12 &amp; \frac12\\
+\frac12 &amp; 0 &amp; -\frac12\\
+\frac12 &amp; -\frac12 &amp; 0
+\end{pmatrix}.
+\end{equation*}
+</div>
+<div class="para">The eigenvalues of this matrix are</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-3-2">
+\begin{equation*}
+\lambda_1=\frac12,\qquad
+\lambda_2=\frac12,\qquad
+\lambda_3=-1.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-classification-example-3d-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-classification-example-3d-4">
+<div class="para">Following the multidimensional classification criterion, one determines the type of the PDE from the signs of the eigenvalues of the coefficient matrix. As noted by Walet, in dimensions higher than two, elliptic equations have eigenvalues of the same sign, hyperbolic equations have eigenvalues with mixed signs, and parabolic equations have at least one zero eigenvalue. Since the matrix <span class="process-math">\(M\)</span> has two positive eigenvalues and one negative eigenvalue, its signature is</div>
+<div class="displaymath process-math" id="subsec-classification-example-3d-4-2">
+\begin{equation*}
+(+,+,-).
+\end{equation*}
+</div>
+<div class="para">Therefore the equation is <em class="emphasis">hyperbolic</em>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-classification-example-3d-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-classification-example-3d-5">The partial differential equation<div class="displaymath process-math" id="subsec-classification-example-3d-5-1-1">
+\begin{equation*}
+u_{xy}+u_{xz}-u_{yz}=0
+\end{equation*}
+</div>is hyperbolic.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-classification-example-3d-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="remark remark-like" id="subsec-classification-example-3d-6"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">152</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<span class="process-math">\(B^2-AC\)</span><div class="autopermalink" data-description="Remark 152"><a href="#subsec-classification-example-3d-6" title="Copy heading and permalink for Remark 152" aria-label="Copy heading and permalink for Remark 152">🔗</a></div></article><div class="para" id="subsec-classification-example-3d-7">Following the classification criterion for PDEs in more than two variables, one examines the eigenvalues of the symmetric coefficient matrix associated with the principal part of the equation. If all eigenvalues have the same sign, the equation is elliptic; if the signs are mixed, it is hyperbolic; and if at least one eigenvalue is zero, it is parabolic. See <a class="external" href="https://math.libretexts.org/Bookshelves/Differential_Equations/Partial_Differential_Equations_(Walet)/02%3A_Classication_of_Partial_Dierential_Equations/2.03%3A_More_than_2D" target="_blank">Walet, "2.3: More than 2D"</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-classification-example-3d-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Classification of a Second-Order PDE in Three Variables"><a href="#subsec-classification-example-3d" title="Copy heading and permalink for Subsection: Classification of a Second-Order PDE in Three Variables" aria-label="Copy heading and permalink for Subsection: Classification of a Second-Order PDE in Three Variables">🔗</a></div></section><section class="subsection" id="w9-physical"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Physical Interpretation</span>
 </h3>
-<figure class="table table-like" id="w9-physical-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">152<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Common PDE Models<div class="autopermalink" data-description="Table 152: Common PDE Models"><a href="#w9-physical-2" title="Copy heading and permalink for Table 152: Common PDE Models" aria-label="Copy heading and permalink for Table 152: Common PDE Models">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="w9-physical-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">153<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Common PDE Models<div class="autopermalink" data-description="Table 153: Common PDE Models"><a href="#w9-physical-2" title="Copy heading and permalink for Table 153: Common PDE Models" aria-label="Copy heading and permalink for Table 153: Common PDE Models">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">Equation</td>
 <td class="l m b0 r0 l0 t0 lines">Application</td>
@@ -743,7 +815,7 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 </table></div></figure><div class="autopermalink" data-description="Subsection: Physical Interpretation"><a href="#w9-physical" title="Copy heading and permalink for Subsection: Physical Interpretation" aria-label="Copy heading and permalink for Subsection: Physical Interpretation">🔗</a></div></section><section class="subsection" id="w9-bc-ic"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Boundary and Initial Conditions</span>
 </h3>
-<figure class="table table-like" id="w9-bc-ic-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">153<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Boundary Conditions<div class="autopermalink" data-description="Table 153: Boundary Conditions"><a href="#w9-bc-ic-2" title="Copy heading and permalink for Table 153: Boundary Conditions" aria-label="Copy heading and permalink for Table 153: Boundary Conditions">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="w9-bc-ic-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">154<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Boundary Conditions<div class="autopermalink" data-description="Table 154: Boundary Conditions"><a href="#w9-bc-ic-2" title="Copy heading and permalink for Table 154: Boundary Conditions" aria-label="Copy heading and permalink for Table 154: Boundary Conditions">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">Type</td>
 <td class="l m b0 r0 l0 t0 lines">Form</td>
@@ -873,11 +945,11 @@ e^{-(n\pi/L)^2t}.
 </div></details></div>
 <div class="autopermalink" data-description="Example 44: Heat Equation on a Finite Rod"><a href="#w9-heat-example-2" title="Copy heading and permalink for Example 44: Heat Equation on a Finite Rod" aria-label="Copy heading and permalink for Example 44: Heat Equation on a Finite Rod">🔗</a></div></article></details><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/w9-heat-example-3.svg" role="img" class="contained"></div>
 <article class="remark remark-like" id="w9-heat-example-4"><h4 class="heading">
-<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">156</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interpretation.</span>
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">157</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interpretation.</span>
 </h4>
 <div class="para" id="w9-heat-example-4-2">Each Fourier mode decays exponentially. Higher-frequency modes decay more rapidly, causing the temperature profile to become smoother over time.<div class="autopermalink" data-description="Paragraph"><a href="#w9-heat-example-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 156: Interpretation"><a href="#w9-heat-example-4" title="Copy heading and permalink for Remark 156: Interpretation" aria-label="Copy heading and permalink for Remark 156: Interpretation">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Heat Equation Example"><a href="#w9-heat-example" title="Copy heading and permalink for Subsection: Heat Equation Example" aria-label="Copy heading and permalink for Subsection: Heat Equation Example">🔗</a></div></section><section class="subsection" id="w9-matlab"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Remark 157: Interpretation"><a href="#w9-heat-example-4" title="Copy heading and permalink for Remark 157: Interpretation" aria-label="Copy heading and permalink for Remark 157: Interpretation">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Heat Equation Example"><a href="#w9-heat-example" title="Copy heading and permalink for Subsection: Heat Equation Example" aria-label="Copy heading and permalink for Subsection: Heat Equation Example">🔗</a></div></section><section class="subsection" id="w9-matlab"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">MATLAB Visualization of Heat Diffusion</span>
 </h3>
 <div class="code-box"><pre class="program clipboardable"><code class="language-matlab">L = 1;
@@ -893,7 +965,7 @@ title('Heat Equation Solution')
 shading interp
 colorbar
 </code></pre></div>
-<div class="autopermalink" data-description="Subsection: MATLAB Visualization of Heat Diffusion"><a href="#w9-matlab" title="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion" aria-label="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion">🔗</a></div></section><div class="para" id="notes-week-09-11-1">Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Subsection: MATLAB Visualization of Heat Diffusion"><a href="#w9-matlab" title="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion" aria-label="Copy heading and permalink for Subsection: MATLAB Visualization of Heat Diffusion">🔗</a></div></section><div class="para" id="notes-week-09-12-1">Partial differential equations model quantities that vary in both space and time. Second-order PDEs are classified as elliptic, parabolic, or hyperbolic. The heat equation provides a fundamental example of a parabolic PDE and can be solved using separation of variables and Fourier series.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-09-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section: Week 9: Partial Differential Equations and Their Classification"><a href="#notes-week-09" title="Copy heading and permalink for Section: Week 9: Partial Differential Equations and Their Classification" aria-label="Copy heading and permalink for Section: Week 9: Partial Differential Equations and Their Classification">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
