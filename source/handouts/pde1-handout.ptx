@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<handout>
+<title>Partial Differential Equations</title>
+
+<introduction>
+<p>
+Show all work and justify your conclusions. Explain geometric meanings whenever appropriate.
+
+</p>
+<cd>
+clear; clc;
+
+% Geometry parameters
+a = 1;      % width
+b = 1;      % height
+
+% Create PDE model
+model = createpde();
+
+% Rectangle geometry: [3 4 x1 x2 x3 x4 y1 y2 y3 y4]
+R1 = [3 4 0 a a 0 0 0 b b]';
+gd = R1;
+ns = char('R1');
+ns = ns';
+sf = 'R1';
+
+dl = decsg(gd,sf,ns);
+geometryFromEdges(model,dl);
+
+% PDE coefficients:
+specifyCoefficients(model,...
+    'm',0,...
+    'd',0,...
+    'c',1,...
+    'a',0,...
+    'f',0);
+
+% Generate mesh
+generateMesh(model,'Hmax',0.04);
+
+% Boundary conditions
+%
+% Edge numbering:
+% pdegplot(model,'EdgeLabels','on')
+% Run once to verify edge numbers.
+
+% Left edge
+applyBoundaryCondition(model,...
+    'dirichlet',...
+    'Edge',4,...
+    'u',0);
+
+% Bottom edge
+applyBoundaryCondition(model,...
+    'dirichlet',...
+    'Edge',1,...
+    'u',0);
+
+% Right edge
+applyBoundaryCondition(model,...
+    'dirichlet',...
+    'Edge',2,...
+    'u',0);
+
+% Top edge: u = 100*sin(pi*x/a)
+applyBoundaryCondition(model,...
+    'dirichlet',...
+    'Edge',3,...
+    'u',@(location,state) ...
+         100*sin(pi*location.x/a));
+
+% Solve
+result = solvepde(model);
+u = result.NodalSolution;
+
+%% Surface plot
+
+figure;
+pdeplot(model,...
+    'XYData',u,...
+    'ZData',u,...
+    'Mesh','off');
+
+title('Solution of Laplace Equation');
+xlabel('x');
+ylabel('y');
+zlabel('u(x,y)');
+colorbar;
+view(45,30);
+
+%% Contour plot
+
+figure;
+pdeplot(model,...
+    'XYData',u,...
+    'Contour','on',...
+    'ColorMap','jet');
+
+title('Temperature Contours');
+xlabel('x');
+ylabel('y');
+colorbar;
+axis equal;
+
+</cd>
+
+</introduction>
+<exercise workspace="2in">
+<title>Laplace Equation</title>
+
+
+  <p>Solve Laplace's equation</p>
+
+  <me>\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0</me>
+
+  <p>on the rectangle <m>0&lt;x&lt;a</m>, <m>0&lt;y&lt;b</m> subject to</p>
+
+  <md>
+    <mrow>u(0,y)=0</mrow>
+    <mrow>u(a,y)=0</mrow>
+    <mrow>u(x,0)=0</mrow>
+    <mrow>u(x,b)=100\sin\left(\frac{\pi x}{a}\right)</mrow>
+  </md>
+  
+
+  <ol><li>
+    <p>
+      Assume a separated solution
+      <m>u(x,y)=X(x)Y(y)</m>.
+      Derive the separated ordinary differential equations.
+    </p>
+
+    <p><fillin characters="60"/></p>
+
+    <p><fillin characters="60"/></p>
+  </li>
+
+  <li>
+    <p>
+      Apply the boundary conditions at
+      <m>x=0</m> and <m>x=a</m> to determine the
+      eigenvalues and eigenfunctions.
+    </p>
+
+    <p><fillin characters="60"/></p>
+
+    <p><fillin characters="60"/></p>
+  </li>
+
+  <li>
+    <p>
+      Solve the corresponding equation for
+      <m>Y(y)</m>.
+    </p>
+
+    <p><fillin characters="60"/></p>
+
+    <p><fillin characters="60"/></p>
+  </li>
+
+  <li>
+    <p>
+      Use the boundary condition at
+      <m>y=0</m> to simplify the solution.
+    </p>
+
+    <p><fillin characters="60"/></p>
+  </li>
+
+  <li>
+    <p>
+      Write the general series solution.
+    </p>
+
+    <p><fillin characters="80"/></p>
+
+    <p><fillin characters="80"/></p>
+  </li>
+
+  <li>
+    <p>
+      Apply the boundary condition at
+      <m>y=b</m> and determine the coefficients.
+    </p>
+
+    <p><fillin characters="80"/></p>
+
+    <p><fillin characters="80"/></p>
+  </li>
+
+  <li>
+    <p>
+      Write the final solution and verify all boundary conditions.
+    </p>
+
+    <p><fillin characters="100"/></p>
+
+    <p><fillin characters="100"/></p>
+  </li>
+  </ol>
+</exercise>
+</handout>

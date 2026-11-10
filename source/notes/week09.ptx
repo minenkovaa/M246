@@ -66,7 +66,7 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 </md>
 
 <md>
-\Delta=B^2-4AC
+\mathcal{D}=B^2-4AC
 </md>
 
 <image width="50%">
@@ -92,13 +92,13 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 \draw[-&gt;] (pde)--(hyp);
 
 \node[left=.2cm of ell]
-{$\Delta&lt;0$};
+{$\mathcal{D}&lt;0$};
 
 \node[right=.2cm of par]
-{$\Delta=0$};
+{$\mathcal{D}=0$};
 
 \node[right=.2cm of hyp]
-{$\Delta&gt;0$};
+{$\mathcal{D}&gt;0$};
 \end{tikzpicture}
 
     </latex-image>
@@ -108,11 +108,94 @@ Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G
 <title>PDE Classification</title>
 <tabular>
 <row><cell>Condition</cell><cell>Type</cell><cell>Example</cell><cell>Interpretation</cell></row>
-<row><cell><m>\Delta&lt;0</m></cell><cell>Elliptic</cell><cell><m>u_{xx}+u_{yy}=0</m></cell><cell>Equilibrium</cell></row>
-<row><cell><m>\Delta=0</m></cell><cell>Parabolic</cell><cell><m>u_t=ku_{xx}</m></cell><cell>Diffusion</cell></row>
-<row><cell><m>\Delta&gt;0</m></cell><cell>Hyperbolic</cell><cell><m>u_{tt}=c^2u_{xx}</m></cell><cell>Wave propagation</cell></row>
+<row><cell><m>\mathcal{D}&lt;0</m></cell><cell>Elliptic</cell><cell><m>u_{xx}+u_{yy}=0</m></cell><cell>Equilibrium</cell></row>
+<row><cell><m>\mathcal{D}=0</m></cell><cell>Parabolic</cell><cell><m>u_t=ku_{xx}</m></cell><cell>Diffusion</cell></row>
+<row><cell><m>\mathcal{D}&gt;0</m></cell><cell>Hyperbolic</cell><cell><m>u_{tt}=c^2u_{xx}</m></cell><cell>Wave propagation</cell></row>
 </tabular>
 </table>
+</subsection>
+<subsection xml:id="subsec-classification-example-3d">
+  <title>Classification of a Second-Order PDE in Three Variables</title>
+
+  <p>
+    Consider the second-order partial differential equation
+    <me>
+      u_{xy}+u_{xz}-u_{yz}=0.
+    </me>
+    To classify the equation, we examine only its principal (second-order)
+    part and write it in the standard form
+    <me>
+      Au_{xx}+Bu_{yy}+Cu_{zz}
+      +2Du_{xy}+2Eu_{xz}+2Fu_{yz}=0.
+    </me>
+    Comparing coefficients gives
+    <me>
+      A=B=C=0,\qquad
+      D=\frac12,\qquad
+      E=\frac12,\qquad
+      F=-\frac12.
+    </me>
+  </p>
+
+  <p>
+    The associated symmetric coefficient matrix is
+    <me>
+      M=
+      \begin{pmatrix}
+      0 &amp; \frac12 &amp; \frac12\\
+      \frac12 &amp; 0 &amp; -\frac12\\
+      \frac12 &amp; -\frac12 &amp; 0
+      \end{pmatrix}.
+    </me>
+    The eigenvalues of this matrix are
+    <me>
+      \lambda_1=\frac12,\qquad
+      \lambda_2=\frac12,\qquad
+      \lambda_3=-1.
+    </me>
+  </p>
+
+  <p>
+    Following the multidimensional classification criterion, one determines
+    the type of the PDE from the signs of the eigenvalues of the coefficient
+    matrix. As noted by Walet, in dimensions higher than two,
+    elliptic equations have eigenvalues of the same sign, hyperbolic
+    equations have eigenvalues with mixed signs, and parabolic equations
+    have at least one zero eigenvalue. 
+    Since the matrix <m>M</m> has two positive eigenvalues and one negative
+    eigenvalue, its signature is
+    <me>
+      (+,+,-).
+    </me>
+    Therefore the equation is <em>hyperbolic</em>.
+  </p>
+
+  <p>
+    <strong>
+      The partial differential equation
+      <me>
+        u_{xy}+u_{xz}-u_{yz}=0
+      </me>
+      is hyperbolic.
+    </strong>
+  </p>
+
+  <remark>
+    This example illustrates a useful general principle for second-order PDEs
+    in three variables: form the symmetric matrix associated with the
+    second-order terms and classify the equation from the signs of its
+    eigenvalues. This replaces the discriminant test
+    <m>B^2-AC</m> used for equations in two variables.
+  </remark>
+
+<p>
+  Following the classification criterion for PDEs in more than two variables,
+  one examines the eigenvalues of the symmetric coefficient matrix associated
+  with the principal part of the equation. If all eigenvalues have the same
+  sign, the equation is elliptic; if the signs are mixed, it is hyperbolic;
+  and if at least one eigenvalue is zero, it is parabolic. See
+  <url href="https://math.libretexts.org/Bookshelves/Differential_Equations/Partial_Differential_Equations_(Walet)/02%3A_Classication_of_Partial_Dierential_Equations/2.03%3A_More_than_2D">Walet, "2.3: More than 2D"</url>.
+</p>
 </subsection>
 
 <subsection xml:id="w9-physical">

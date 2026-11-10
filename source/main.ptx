@@ -94,6 +94,7 @@
       <xi:include href="./handouts/second-diff-handout.ptx"/>
       <xi:include href="./handouts/second-diff2-handout.ptx"/>
       <xi:include href="./handouts/systems-ode-handout.ptx"/>
+      <xi:include href="./handouts/pde1-handout.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">
